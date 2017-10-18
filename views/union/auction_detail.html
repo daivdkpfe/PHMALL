@@ -50,10 +50,27 @@
         margin-top: 15px;
     }
     .goods_price{
-        margin-top: 25px;
-        height: 30px;
+        margin-top: 10px;
+        height: 22px;
+        text-indent: 10px;
+        line-height: 22px;
+        font-size: 13px;
+        color: #adadad;
         width: 100vw;
     }
+    .goods_price p{
+        height: 22px;
+        text-indent: 10px;
+        line-height: 22px;
+        font-size: 13px;
+        color: #adadad;
+
+    }
+    .dqcj{
+        color: #b70029 !important;
+        font-size: 24px !important;
+    }
+    /*当前出价*/
     .point{
         margin-right: 10px;
     }
@@ -150,6 +167,7 @@
         width: 100px;
         margin-left: 8px;
     }
+
     .weui-navbar:after{
         border-bottom:none;
     }
@@ -165,6 +183,7 @@
         background-color:white;
     }
     .weui-navbar{
+        z-index: 1;
         font-weight: bold;
         background-color:white ;
     }
@@ -598,14 +617,15 @@
         height:14px;
         background: #fcff00;
     }
-    .countdown{
-        text-align: right;
-        color: white;
-    }
+
     .goods_end{
         line-height: 44px;
         color: white;
         font-size: 16px;
+    }
+    .countdown{
+        width: 100vw;
+        border-bottom: 1px solid rgb(239,239,244);
     }
     .more{
         height: 30px;
@@ -622,6 +642,113 @@
         text-align: center;
         color: white;
         background: linear-gradient(to right,#ffa500,#ff802a);
+    }
+    .tl{
+        width: 50vw;
+        text-align: left;
+    }
+    .tr{
+        width: 50vw;
+        text-align: right;
+    }
+    .bt1{
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .join_log{
+        height:96px;
+        width: 100vw;
+    }
+    .log_title{
+        margin: 0 10px;
+        font-size: 15px;
+        text-indent: 10px;
+        color: #454545;
+        line-height:35px;
+        height:35px;
+    }
+    .log_title p{
+        width: 50%;
+    }
+    .log_list_div{
+        width: 100vw;
+        margin-top: 10px;
+        height:40px;
+
+    }
+    .log_div{
+        width: 105px;
+        height:40px;
+        background: white;
+        border-radius: 6px;
+        margin:0 10px;
+    }
+    .tag{
+
+        width: 37px;
+        height:22px;
+        background: #fc1047;
+        border-radius: 4px;
+        position: relative;
+        top:-11px;
+        color: white;
+        font-size: 13px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .log_div p{
+        text-indent: 3px;
+        height:20px;
+        line-height: 20px;
+        font-size: 13px;
+        color: #454545;
+    }
+    .assure_div{
+        width: 100vw;
+        position: absolute;
+
+        background: white;
+        bottom: 0;
+    }
+    .text_div{
+        margin: 0 10px;
+        font-size: 15px;
+        color: #454545;
+        line-height: 25px;
+        padding-top: 10px;
+    }
+    .agree_div{
+        margin:15px 10px;
+    }
+    xy{
+        font-size: 15px;
+        color: #00a0e9;
+    }
+    .weui-popup__modals{
+        width: 100vw;
+        height:100vh;
+        display: block;
+        background: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+    .sure{
+        width: 50vw;
+        height:49px;
+        background: linear-gradient(to right,#fdd765,#feb900);
+        text-align: center;
+        color: #fefefe;
+        line-height:49px;
+        font-size: 18px;
+    }
+    .cancel{
+        width: 50vw;
+        height:49px;
+        background: linear-gradient(to right,#ffa500,#ff802a);
+        text-align: center;
+        color: #fefefe;
+        line-height:49px;
+        font-size: 18px;
     }
 </style>
 <div id="big_div">
@@ -650,33 +777,33 @@
             </div>
             <!--商品名-->
 
+            <div class="goods_price"><p class="fl">当前出价:</p><p class="dqcj fl">₱ {{goods_price}}</p></div>
+            <div class="goods_price countdown">剩余时间：</div>
+
+            <div class="goods_price"><p class="fl tl sl1">保证金:₱ {{bzj}}</p><p class="fl tl sl1">加价幅度:₱ {{bid_add}}</p></div>
+            <div class="goods_price bt1"><p class="fl tl sl1">起拍价:₱ {{start_price}}</p><p class="fl tl sl1">封顶价格:₱ {{end_price}}</p></div>
 
 
-            <div class="goods_price_group" v-if="setp==4">
-                <p class="price fl">₱ <c class="blod">{{all_prices}}</c></p>
-                <div class="info">
-                    <p class="market_price">2999</p>
-                    <p class="stored">已出价3200次</p>
-                </div>
-                <div class="right" >
-                    <img class="time_ico" src="images/default_wap/time.png" alt="">
-                    <div class="daojishi" v-if="end_date>0">
-                        <div class="countdown">距离结束:</div>
-                    </div>
-                    <!--倒计时-->
-
-                    <div class="goods_end" v-if="end_date<=0">該拍賣已結束</div>
-                </div>
-            </div>
-            <div class="db">
-                <div class="fxdb">
-                    <img src="images/default_wap/bz.png" alt=""><p>菲信擔保</p>
-                </div>
-            </div>
-            <!--菲信擔保-->
 
     </div>
     <!--商品-->
+
+    <div class="join_log">
+        <div class="log_title">
+            <p class="fl" style="text-align: left">竞拍记录</p><p class="fl" style="text-align: right">更多></p>
+        </div>
+        <div class="log_list_div">
+            <div class="log_div fl">
+                <div class="tag fl">领先</div>
+                <p class="fl">admin</p>
+                <p class="fl">₱6600.00</p>
+            </div>
+            <div class="log_div fl"></div>
+            <div class="log_div fl"></div>
+        </div>
+    </div>
+
+
 
     <div class="shop_div">
         <div class="shop_top">
@@ -697,12 +824,8 @@
         <div class="weui-navbar">
             <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
                 商品详情
-                <img src="images/default_wap/selected.png" alt="">
             </a>
-            <a class="weui-navbar__item" href="#tab2">
-                商品评价
-                <img src="images/default_wap/selected.png" alt="">
-            </a>
+
 
         </div>
         <div class="weui-tab__bd">
@@ -713,25 +836,7 @@
                 </div>
 
             </div>
-            <div id="tab2" class="weui-tab__bd-item">
-                <div class="comment_div" v-for="comment in comments">
-                    <div class="comment_head">
-                        <img v-bind:src="'http://www.phmall.com.ph/union/'+comment.user_info[0].member_image" class="header_logo" alt=""><p class="header_id">{{comment.from_id}}</p>
-                    </div>
-                    <div class="comment_time">
-                        <p>{{comment.reg_date}}</p>
-                    </div>
-                    <div class="comment_main">
-                        <div>{{comment.comment}}</div>
-                        <!--<img src="images/default_wap/1.png" alt="">-->
-                        <!--<img src="images/default_wap/2.png" alt="">-->
-                    </div>
 
-                <div class="comment_more">
-                    <p>更多</p><img src="images/default_wap/more.png" alt="">
-                </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- 容器 -->
@@ -778,12 +883,27 @@
 
 
     <div class="shoping_div">
-        <p class="baoming" v-if="!baoming">报名交保证金</p>
+        <p class="baoming" v-if="!baoming && !assure_show" @click="assure()">报名交保证金</p>
+        <p class="sure fl" v-if="!baoming && assure_show">确定</p>        <p class="cancel fl" v-if="!baoming && assure_show">取消</p>
+
         <p class="chujia" v-if="baoming">出价</p>
     </div>
     <!--購物欄-->
 
 
+
+
+        <div class="weui-popup__modals"  v-if="assure_show">
+            <div class="assure_div" >
+                <div class="text_div">
+                <p>系统将在你的账户中扣除 ₱ 6600.00 作为拍卖的保证金，此保证金不予退还</p>
+                <p>当前账户余额 ₱ 6600.00 ，如果资金不足,请充值</p>
+                </div>
+                <div class="agree_div"><p class="fl">我接受</p><xy class="fl">《拍卖协议》</xy></div>
+                <div style="height: 100px;"></div>
+            </div>
+
+        </div>
 
 
 
@@ -814,14 +934,67 @@
             setp:'4',
             baoming:false,
             end_date:0,
-            wait:"距离结束:"
+            bzj:0,
+            wait:"距离结束:",
+            bid_add:0,
+            jj:0,
+            assure_show:false
         },
         methods:{
-
+            assure:function () {
+                this.assure_show=true;
+            }
         },
         mounted:function () {
             var t=this;
+            $.ajaxSettings.async = false;
+            $.post("./product",{uid:'<%= uid %>',setp:"4"},function(result){
+                console.log(result);
 
+
+
+
+                t.end_date=result[0].end_date-(Date.parse(new Date())/1000);
+                console.log(t.end_date);
+
+
+
+
+                t.goods_name=result["0"].goods_name;
+                t.goods_price=result["0"].goods_sale_price;
+                t.shop_uid=result["0"].supplier_id;
+                var goods_main=result['0'].goods_main.replace(new RegExp('src="/english',"gm"),'src="http://www.phmall.com.ph');
+                goods_main=goods_main.replace(new RegExp('src="/union',"gm"),'src="http://www.phmall.com.ph/union');
+                goods_main=goods_main.replace(/<script>/g, "<c>");
+                goods_main=goods_main.replace(/<\/script>/g, "</c>");
+                t.goods_main=goods_main;
+                t.shop_name=result["0"].shop_list.shop_name;
+                t.shop_logo=result["0"].shop_list.up_logo;
+                t.goods_stock=result['0'].goods_stock;
+                t.jrgwc_file=result['0'].goods_file1;
+                var imgs=[];
+                imgs.push=("xx");
+                imgs['imgbig']=result['0'].goods_file1;
+                var imgss=[];
+                imgss.push(imgs);
+                t.gallery=imgss;
+                t.bzj=result["0"].assure;
+                t.bid_add=result[0].bid_add;
+                t.start_price=result[0].start_price;
+                t.end_price=result[0].end_price;
+
+
+//        猜你喜欢
+                var cat_uid=1;
+                var cat="supplier_cat";
+                if(result["0"].supplier_cat>0){cat_uid=result["0"].supplier_cat;cat="supplier_cat"}
+                if(result["0"].supplier_cat2>0){cat_uid=result["0"].supplier_cat2;cat="supplier_cat2"}
+                if(result["0"].supplier_cat3>0){cat_uid=result["0"].supplier_cat3;cat="supplier_cat3"}
+                $.post("./product/get_cnxh",{cat_uid:cat_uid,cat:cat,setp:"4"},function(result){
+                    t.cnxh=result;
+                });
+
+            });
             $.post('/union/auction_detail/assure',{uid:'<%= uid %>'},function (result) {
                 console.log(result);
                 if(result!=0 && result.length>0)
@@ -832,6 +1005,7 @@
             
             $.post('/union/auction_detail/join',{uid:'<%= uid %>'},function (result) {
                 console.log(result);
+                t.goods_price=result[0].price
             })
 
         }
@@ -847,80 +1021,19 @@
 
 
 
-    $.ajaxSettings.async = false;
-    $.post("./product",{uid:'<%= uid %>',setp:"4"},function(result){
-        console.log(result);
 
-
-
-
-        page.end_date=result[0].end_date-(Date.parse(new Date())/1000);
-        console.log(page.end_date);
-
-
-
-
-        page.goods_name=result["0"].goods_name;
-        page.goods_price=result["0"].goods_sale_price;
-        page.shop_uid=result["0"].supplier_id;
-        var goods_main=result['0'].goods_main.replace(new RegExp('src="/english',"gm"),'src="http://www.phmall.com.ph');
-        goods_main=goods_main.replace(new RegExp('src="/union',"gm"),'src="http://www.phmall.com.ph/union');
-        goods_main=goods_main.replace(/<script>/g, "<c>");
-        goods_main=goods_main.replace(/<\/script>/g, "</c>");
-        page.goods_main=goods_main;
-        page.shop_name=result["0"].shop_list.shop_name;
-        page.shop_logo=result["0"].shop_list.up_logo;
-        page.goods_stock=result['0'].goods_stock;
-        page.jrgwc_file=result['0'].goods_file1;
-        var imgs=[];
-        imgs.push=("xx");
-        imgs['imgbig']=result['0'].goods_file1;
-        var imgss=[];
-        imgss.push(imgs);
-        page.gallery=imgss;
-
-
-
-
-
-
-//        猜你喜欢
-        var cat_uid=1;
-        var cat="supplier_cat";
-        if(result["0"].supplier_cat>0){cat_uid=result["0"].supplier_cat;cat="supplier_cat"}
-        if(result["0"].supplier_cat2>0){cat_uid=result["0"].supplier_cat2;cat="supplier_cat2"}
-        if(result["0"].supplier_cat3>0){cat_uid=result["0"].supplier_cat3;cat="supplier_cat3"}
-        $.post("./product/get_cnxh",{cat_uid:cat_uid,cat:cat,setp:"4"},function(result){
-            page.cnxh=result;
-        });
-
-
-
-
-
-    });
 
     $.post("./product/get_gallery",{uid:'<%= uid %>',setp:"4"},function(result){
 
         if(result.length>0)
         {
-
             page.gallery=(result);
         }
 
-
     });//輪播
 
-    console.log("sss");
-    $.post("./product/get_comment",{uid:'<%= uid %>',setp:"4"},function(result){
 
-        if(result.length>0)
-        {
-            result[0]['reg_date']=new Date(parseInt(result[0]['reg_date']) *1000 ).toLocaleString().replace(/\d{1,2}:\d{1,2}:\d{1,2}$/,'').replace(' ','');
-            page.comments=result;
-        }
 
-    });//評論
 
 
 
@@ -959,13 +1072,11 @@
             s="0"+s;
         }
         var a=(d=="00")?"":'<span>'+d+'</span>:';
-        var b=(h=="00")?"":'<span>'+(parseInt(d*24)+parseInt(h))+'</span>:';
+        var b=(h=="00")?"":'<span>'+parseInt(h)+'</span>:';
         var c=(m=="00")?"":'<span>'+m+'</span>:';
         var d=(s=="00")?"":'<span>'+s+'</span>';
-        if(page.setp==4)
-        {
-            $('.countdown').html('距离结束:'+b+c+d);
-        }
+
+            $('.countdown').html('剩余时间:'+a+b+c+d);
 
         t = t -1;
     }

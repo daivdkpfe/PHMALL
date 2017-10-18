@@ -39,7 +39,7 @@ router.post('/join',function (req,res,next) {
     var g_uid=req.body.uid;
 
     async function run() {
-        var join=await sqlasnyc('select * from `mvm_goods_auction_join` where g_uid=? order by register_date desc limit 3');
+        var join=await sqlasnyc('select * from `mvm_goods_auction_join` where g_uid=? order by register_date desc limit 3',[g_uid]);
         res.json(join);
     }
     run();
