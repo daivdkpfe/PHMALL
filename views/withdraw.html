@@ -192,6 +192,10 @@
         color: white;
         margin: 20px auto;
     }
+    .weui-popup__modal{
+        background: rgba(0,0,0,0.48);
+
+    }
 </style>
 <div class="big_div">
     <div class="h44 header">
@@ -242,12 +246,18 @@
             <p class="withdraw_money_title">充值金额</p>
             <div class="input_div">₱<input type="text" class="withdraw_money_input" placeholder="请输入金额"></div>
         </div>
-        <div class="btn">确定</div>
+        <div class="btn"  @click="open_popup()">确定</div>
+
     </div>
 
 
 
+    <div id="xx" class="weui-popup__container">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
 
+        </div>
+    </div>
 
 </div>
 
@@ -262,7 +272,9 @@
             group_list:[]
         },
         methods:{
-
+            open_popup:function () {
+                $("#xx").popup();
+            }
         }
     });
 
