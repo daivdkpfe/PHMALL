@@ -1,0 +1,298 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .weui-navbar{
+        overflow: scroll;
+        height:44px;
+        padding-left: 10px;
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background: white;
+        color: #ff8000;
+    }
+    .weui-navbar__item{
+        width: 80px;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar:after{
+        border:none;
+    }
+    .weui-navbar__item{
+        color: #181818;
+        font-size: 13px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .weui-navbar__item img{
+        height:4px;
+        display: none;
+    }
+    .weui-bar__item--on img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .weui-tab__bd{
+        width: 100vw;
+
+    }
+    .weui-tab{
+
+    }
+    .hide1{
+        width: 327px;
+        float: left;
+        height: 44px;
+        overflow: hidden;
+    }
+    .hide{
+        width: 100vw;
+        overflow:hidden;
+        overflow: scroll;
+        height:44px;
+
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .show{
+        width: 1200px;
+        height:44px;
+    }
+    .categroy{
+        width:68px;
+        margin-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: #181818;
+
+    }
+    .rq{
+        background: white;
+        height: 44px;
+        width: 100vw;
+    }
+    .selected{
+        font-size: 13px;
+        color: #ff8000;
+    }
+    .categroy img{
+        height: 4px;
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        display: none;
+    }
+    .selected img{
+        display: block;
+    }
+    .down{
+        float: left;
+        height:15px;
+        margin: 14.5px 16.5px;
+    }
+    .down_div{
+        float: left;
+        width:48px;
+        height: 44px;
+    }
+    .auction_list{
+        width: 100vw;
+
+    }
+    .auction_div{
+        width: 100vw;
+        height:103px;
+        border-bottom: 1px solid rgb(239,239,244);
+        background: white;
+    }
+    .goods_img{
+        width: 83px;
+        height:83px;
+        margin: 10px;
+    }
+    .right_txt{
+        width: 250px;
+        font-size: 15px;
+        color: #454545;
+
+        line-height: 20px;
+    }
+    .goods_name{
+        margin-top: 7px;
+    }
+    .goods_pricce{
+        font-size: 20px;
+        color: #FF8200;
+        line-height: 28px;
+    }
+    .goods_pricce d{
+        font-size: 13px;
+        color: #454545;
+    }
+    .goods_one_pricce{
+        font-size: 13px;
+        color: #454545;
+        line-height: 20px;
+    }
+    .time{
+        font-size: 13px;
+        color: #454545;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                拍卖疯抢
+            </p>
+        </div>
+    </div>
+
+
+    <div class="rq">
+        <!-- 容器 -->
+        <div class="weui-tab">
+            <div class="hide1">
+                <div class="hide">
+                    <div class="show" >
+
+                        <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:select==index+1}"  v-on:click="get_cate(index,cate.uid)">
+                            {{cate.category_name}}
+                            <img src="images/default_wap/select.png" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="down_div"><img class="down" src="images/default_wap/down.png" alt=""></div>
+        </div>
+    </div>
+    <!--滚动栏-->
+
+
+    <div class="auction_list">
+        <div class="auction_div" v-for="auction in auction_list">
+            <a :href="'./union/auction_detail?uid='+auction.uid">
+            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+auction.goods_file1" class="goods_img fl" alt="">
+            <p class="goods_name fl right_txt sl1">{{auction.goods_name}}</p>
+            <p class="fl right_txt sl1 goods_pricce"><d>起拍价  </d>₱ {{auction.start_price}}</p>
+            <p class="fl right_txt sl1 goods_one_pricce"><d>一口价  </d>₱ {{auction.end_price}}</p>
+            <p class="fl right_txt sl1 time countdown"></p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select:1,
+            down:false,
+            index:0,
+            cat:'',
+            start:0,
+            cates:[],
+            t:100,
+            auction_list:[]
+        },
+        methods:{
+            get_cate:function (index,cate_uid) {
+                this.select=index+1;
+            }
+        },
+        mounted:function () {
+            var t=this;
+            $.post("./category",{},function (result) {
+                page.cates=result;
+                page.cat=result[0].uid;
+
+                $.post('./auction',{cat:t.cat,start:t.start},function (result) {
+                    console.log(result);
+                    if(result!=0 && result.length>0)
+                    {
+                        result.forEach(function (item,index) {
+                            t.auction_list.push(item);
+                            t.start++;
+                        })
+                    }
+                })
+
+            });
+
+        }
+    });
+
+
+
+
+    var t =page.t;//秒数
+    function showtime(){
+
+        var d = parseInt(t/3600/24);
+        if(d<10){
+            d="0"+d;
+        }
+        var h = parseInt((t%(3600*24))/3600);
+        if(h<10){
+            h="0"+h;
+        }
+        var m = parseInt((t%(3600*24))%3600/60);
+        if(m<10){
+            m="0"+m;
+        }
+        var s = parseInt((t%(3600*24))%60);
+        if(s<10){
+            s="0"+s;
+        }
+        var a=(d=="00")?"":'<span>'+d+' </span>天 ';
+        var b=(h=="00")?"":'<span>'+ h+' </span> 时 ';
+        var c=(m=="00")?"":'<span>'+m+' </span> 分 ';
+        var d=(s=="00")?"":'<span>'+s+' </span> 秒';
+        $('.countdown').html('剩余时间:  '+a+b+c+d);
+        t = t -1;
+    }
+    showtime();
+    setInterval("showtime()",1000);
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

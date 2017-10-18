@@ -1,0 +1,1274 @@
+<% include header_index.html %>
+<link rel="stylesheet" href="images/default_wap/weui2.css"/>
+<style>
+    body{
+        background: #efeff4;
+    }
+    .header{
+        background: #fff;
+        width: 100vw;
+    }
+    .back{
+        float: left;
+        margin-left: 10px;
+        width: 30px;
+        margin-top: 7px;
+    }
+    .grzx{
+        font-size: 15px;
+        color: #121212;
+        line-height: 44px;
+        float: right;
+        margin-right: 10px;
+    }
+    .gelan{
+        height:20px;
+        width: 1px;
+        margin: 12px 10px;
+        background: rgb(214,214,214);
+        float: right;
+    }
+    .shopcart{
+        height:30px;
+        float: right;
+        margin-top: 7px;
+    }
+    .swiper-slide{
+        width: 100vw;
+        height:100vw;
+    }
+    .swiper-slide img{
+        width: 100vw;
+        height:100vw;
+    }
+    .goods_name{
+        font-size: 18px;
+        color: #121212;
+        margin-left: 11px;
+        width: 353px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .goods_price{
+        margin-top: 25px;
+        height: 30px;
+        width: 100vw;
+    }
+    .point{
+        margin-right: 10px;
+    }
+    .price{
+        margin-left: 10px;
+        font-size: 20px;
+        color:#b70029;
+
+    }
+    .point_num{
+        color: #feba03;
+    }
+    .db{
+        height:30px;
+        width: 100vw;
+        margin-top: 21px;
+        border-top: 1px solid #efeff4;
+    }
+    .db img{
+        width: 12px;
+        margin-left: 12px;
+        margin-right: 11px;
+        margin-top: 8px;
+        float: left;
+    }
+    .db p{
+        float: left;
+        line-height: 30px;
+        font-size: 10px;
+    }
+    .top{
+        background: white;
+    }
+    .shop_div{
+        height: 134px;
+        margin: 10px auto;
+        width: 100vw;
+        background: white;
+    }
+    .shop_top{
+        height: 90px;
+        width: 100vw;
+        margin: 0 auto;
+        border-bottom:1px solid #efeff4;
+    }
+    .shop_top img{
+        width: 70px;
+        height:70px;
+        margin: 10px;
+        float: left;
+    }
+    .shop_name{
+        color: #121212;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 9px;
+        float: left;
+        width: 250px;
+    }
+    .xy img{
+        width: 15px;
+        height:15px;
+        float: none;
+        margin: 0;
+        margin-top: 3px;
+        margin-left: 7px;
+    }
+    .xy{
+        font-size: 13px;
+        color: #adadad;
+        width: 250px;
+    }
+    .scort{
+        color: #adadad;
+        font-size: 13px;
+    }
+    .scort c{
+        color: #ffbc07;
+    }
+    .shop_bottom{
+        height:44px;
+    }
+    .shop_bottom img{
+        width: 17px;
+        margin-left: 148px;
+        margin-top: 11px;
+        float: left;
+    }
+    .shop_bottom p{
+        font-size: 13px;
+        color: #ffbc07;
+        line-height: 44px;
+        float: left;
+        width: 100px;
+        margin-left: 8px;
+    }
+    .weui-navbar:after{
+        border-bottom:none;
+    }
+    /*容器*/
+    .weui-navbar__item{
+        color: #535353;
+        font-size: 17px;
+    }
+    .weui-navbar__item:active{
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background-color:white;
+    }
+    .weui-navbar{
+        font-weight: bold;
+        background-color:white ;
+    }
+    .weui-navbar__item:after{
+        border-right: none;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        font-size: 17px;
+        color: #ff9300;
+    }
+    .weui-navbar__item.weui-bar__item--on img{
+        display: block;
+    }
+    #tab1 .weui_article{
+        margin: 0 10px;
+    }
+    #tab1 *{
+        max-width: 355px;
+    }
+    #tab1,#tab2{
+        background: white;
+    }
+    .er-code{
+        width: 100vw;
+        height:264px;
+        background: white;
+        margin-top: 10px;
+    }
+    .er-code_title{
+        line-height: 44px;
+        font-size: 17px;
+        color: #121212;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    #code{
+        margin: 0 auto;
+        width: 200px;
+    }
+    .cnxh{
+        background: white;
+        margin-top: 10px;
+    }
+    .cnxh .h44 img{
+        margin-top: 7px;
+        margin-left: 10px;
+        width: 5px;
+        float: left;
+    }
+    .cnxh .h44 p{
+        line-height: 44px;
+        float: left;
+        font-size: 17px;
+        color: #121212;
+        font-weight: bold;
+        margin-left: 7px;
+    }
+    .goods_div{
+        width: 187px;
+        height: 277px;
+        float: left;
+        background: white;
+    }
+    .goods_file{
+        width: 167px;
+        height:167px;
+        margin: 10px auto 18px auto;
+        display: block;
+    }
+    .cnxh_goods_name{
+        font-size: 14px;
+        color: #121212;
+        margin-left: 15px;
+        width: 157px;
+        height:40px;
+        font-weight: bold;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .cnxh_goods_price{
+        margin-left: 15px;
+        margin-top: 15px;
+        color: #b70029;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .no_more{
+        height:109px;
+        width: 100vw;
+        float: left;
+    }
+    .no_more p{
+        font-size: 15px;
+        color: #c5cad8;
+        width: 100vw;
+        text-align: center;
+        line-height:30px;
+    }
+    .shoping_div{
+        width: 100vw;
+        height:49px;
+        background: rgba(255,255,255,0.97);
+        float: left;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        z-index: 999;
+    }
+    .shoping_button_div{
+        width: 25px;
+        height: 49px;
+        float: left;
+        margin-left: 20px;
+    }
+    .shoping_button_div img{
+        width: 25px;
+        height: 25px;
+        margin-top: 6px;
+        float: left;
+    }
+    .shoping_button_div p{
+        float: left;
+        font-size: 10px;
+        color: #535353;
+    }
+    .ljgm,.jrgwc{
+        height:49px;
+        width: 110px;
+        color: white;
+        float: right;
+        line-height: 49px;
+        text-align: center;
+    }
+    .jrgwc{
+        background: linear-gradient(to right,#fdd765,#feb900);
+    }
+    .ljgm{
+        background: linear-gradient(to right,#ffa500,#ff802a);
+    }
+    .weui_article{
+        overflow: hidden;
+    }
+    .weui_article table{
+        max-width: 355px;
+    }
+    .weui-navbar__item img{
+        width: 167px;
+        text-align: center;
+        height: 3px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        display: none;
+    }
+    #tab1:first-child,#tab2:first-child{
+        padding-top: 10px;
+    }
+    #tab1 table{
+        max-width: 355px !important;
+    }
+    .comment_head{
+        height:60px;
+        width: 100vw;
+        background: white;
+    }
+    .header_logo{
+        width: 40px;
+        height:40px;
+        margin: 10px;
+        float: left;
+    }
+    .header_id{
+        font-size: 15px;
+        color: #121212;
+        line-height: 60px;
+        float: left;
+    }
+    .comment_time{
+        width: 355px;
+        font-size: 13px;
+        color: #c5c5c5;
+        line-height: 25px;
+        height:25px;
+        margin: 0 auto;
+    }
+    .comment_main{
+        width: 355px;
+        margin: 0 auto;
+        height: auto;
+        font-size: 13px;
+        line-height: 20px;
+        color: #121212;
+    }
+    .comment_main img{
+        width: 112px;
+        height: 112px;
+        margin-right: 10px;
+        float: left;
+    }
+    .comment_more{
+        width: 355px;
+        margin: 0 10px;
+        border-top: 1px solid rgb(239,239,244);
+        height:36px;
+        float: left;
+        display: block;
+        margin-top: 10px;
+    }
+    .comment_more img{
+        width: 16px;
+        height:16px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+    .comment_more p{
+        float: left;
+        font-size: 13px;
+        margin-left: 166px;
+        color: #535353;
+        line-height: 36px;
+    }
+    .weui-popup__overlay{
+        background: rgba(0,0,0,0.6);
+        opacity: 60;
+    }
+    .jrgwc_div{
+        width: 100vw;
+        float: left;
+        background: white;
+    }
+    .jrgwc_head_div{
+        height: 119px;
+        width: 100vw;
+    }
+    .jrgwc_goods_file{
+        width: 120px;
+        height:120px;
+        margin-left: 10px;
+        border: 2px white solid;
+        border-radius: 5px;
+        position: relative;
+        top: -14px;
+        float: left;
+    }
+    .weui-popup__modal{
+        overflow: inherit;
+    }
+    .jrgwc_goods_price{
+        float: left;
+        font-size: 20px;
+        color: #b70029;
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 220px;
+    }
+    .jrgwc_kc{
+        float: left;
+        font-size: 13px;
+        color: #535353;
+        margin-left: 15px;
+        width: 220px;
+    }
+    .jrgwc_attr{
+        float: left;
+        font-size: 13px;
+        color: #535353;
+        margin-left: 15px;
+        width: 220px;
+        line-height: 30px;
+    }
+    .jrgwc_attr_div{
+        width: 355px;
+        margin: 0 10px;
+        border-top:1px solid #EFEFF4;
+        border-bottom:1px solid #EFEFF4;
+        float: left;
+        padding-bottom: 15px;
+    }
+    .attr_title{
+        width: 355px;
+        float: left;
+        font-size: 13px;
+        color: #535353;
+        line-height: 30px;
+    }
+    .select_attr{
+        width: 106px;
+        height:35px;
+        line-height: 35px;
+        font-size: 13px;
+        color: rgba(83,83,83,0.87);
+        float: left;
+        border: 1px solid rgba(83,83,83,0.31);
+        border-radius: 3px;
+        text-align: center;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-top: 15px;
+        /*#fead00*/
+    }
+    .select_attr_div{
+        width:375px;
+    }
+    .jrgwc_kc_div{
+        height:101px;
+        width: 355px;
+        float: left;
+        margin: 0 10px;
+    }
+    .weui_cell{float: left;margin-top: 15px;}
+    .weui-number{
+        height: 32px;
+        line-height: 30px;
+        color: rgba(83,83,83,0.87);
+    }
+    .weui-number-input{
+        height:32px;
+    }
+    .weui_cell_ft a:active{
+        color: #fead00;
+    }
+    .jrgwc_button,.buy_now_button{
+        height:49px;
+        background: red;
+        width: 100vw;
+        float: left;
+        color: white;
+        line-height: 49px;
+        text-align: center;
+        background: linear-gradient(to right,#FDD765,#feb900);
+    }
+    .select_attr_div:nth-child(2){
+        display: none;
+    }
+
+    .selected_attr{
+        border-color: #Fead00;
+        color:#fead00;
+    }
+    .goods_price_onsale{
+        width: 100vw;
+        height:44px;
+        background: linear-gradient(to right,#ffa500,#ff802a);
+    }
+    .goods_price_group{
+        width: 100vw;
+        height:44px;
+        background: linear-gradient(to right,#7bcfba,#0db4be);
+    }
+    .goods_price_onsale .price,.goods_price_group .price{
+        font-size: 30px;
+        line-height: 44px;
+        color: white;
+    }
+    .goods_price_onsale .info,.goods_price_group .info{
+        width: 100px;
+        float: left;
+    }
+    .goods_price_onsale .market_price,.goods_price_group .market_price{
+        float: left;
+        width: 100px;
+        text-decoration:line-through;
+        margin-top: 4px;
+        text-indent: 10px;
+        text-align: left;
+        color: white;
+        font-size: 13px;
+        float: left;
+    }
+    .goods_price_onsale .stored,.goods_price_group .stored{
+        float: left;
+        width: 100px;
+
+        text-indent: 10px;
+        text-align: left;
+        color: white;
+        font-size: 13px;
+        float: left;
+    }
+    .goods_price_onsale .right,.goods_price_group .right{
+        width: 180px;
+        float: right;
+        height:44px;
+        float: right;
+    }
+    .goods_price_group .right{
+        width: 200px;
+    }
+    .time_ico{
+        width: 28px;
+        height:28px;
+        margin-top: 8px;
+        margin-right: 10px;
+        float: right;
+    }
+    .jindutiao{
+        width: 80px;
+        height:14px;
+        line-height: 14px;
+        font-size: 12px;
+        color: #ff8129;
+        border-radius: 2px;
+        float: right;
+        background: #ffd800;
+        margin-right: 10px;
+    }
+    .daojishi{
+        width: 120px;
+        margin-right: 10px;
+        float: right;
+        height:25px;
+    }
+    .goods_price_group .daojishi{
+        width: auto;
+        line-height: 44px;
+    }
+    .jinduP{
+        width: 80px;
+        position: relative;
+        text-align: center;
+        float: right;
+    }
+    .jindu{
+        position: absolute;
+        width: 40px;
+        height:14px;
+        background: #fcff00;
+    }
+    .countdown{
+        text-align: right;
+        color: white;
+    }
+    .goods_end{
+        line-height: 44px;
+        color: white;
+        font-size: 16px;
+    }
+    .more{
+        height: 30px;
+        width: 30px;
+        float: right;
+        margin-top: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>
+<div id="big_div">
+    <div class="top">
+        <div class="header h44">
+            <img src="images/default_wap/back6x.png" class="back" alt="">
+            <img class="more" src="images/default_wap/more6x.png" alt="">
+            <a href="../cart"><img src="images/default_wap/cart6x.png" class="shopcart" alt=""></a>
+
+        </div>
+        <!--头部-->
+
+        <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="img in gallery">
+                    <img src="images/default_wap/load.png"  v-bind:data-src="'http://www.phmall.com.ph/union/'+img.imgbig" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+
+            <div class="goods_name_div">
+                <p class="goods_name">{{goods_name}}</p>
+            </div>
+            <!--商品名-->
+
+            <div class="goods_price" v-if="setp==1">
+                <p class="price fl">₱ {{all_prices}}</p>
+                <p class="point fr">+積分:
+                    <c class="point_num">{{goods_point}}</c>
+                </p>
+            </div>
+            <!--普通商品價格-->
+            <div class="goods_price_onsale" v-if="setp==2">
+                <p class="price fl">₱ <c class="blod">{{all_prices}}</c></p>
+                <div class="info">
+                    <p class="market_price">2999</p>
+                    <p class="stored">已抢3200件</p>
+                </div>
+                <div class="right" >
+                    <img class="time_ico" src="images/default_wap/time.png" alt="">
+                    <div class="daojishi" v-if="end_date>0">
+                        <div class="countdown"></div>
+                    </div>
+                    <!--倒计时-->
+                    <div class="jindutiao" v-if="end_date>0"><div class="jindu"></div><p class="jinduP">已抢40%</p></div>
+                    <div class="goods_end" v-if="end_date<=0">該商品已被抢光</div>
+                </div>
+
+            </div>
+            <div class="goods_price_group" v-if="setp==3">
+                <p class="price fl">₱ <c class="blod">{{all_prices}}</c></p>
+                <div class="info">
+                    <p class="market_price">2999</p>
+                    <p class="stored">已抢3200件</p>
+                </div>
+                <div class="right" >
+                    <img class="time_ico" src="images/default_wap/time.png" alt="">
+                    <div class="daojishi" v-if="end_date>0">
+                        <div class="countdown">距离结束:</div>
+                    </div>
+                    <!--倒计时-->
+
+                    <div class="goods_end" v-if="end_date<=0">該商品已被抢光</div>
+                </div>
+            </div>
+            <div class="db">
+                <div class="fxdb">
+                    <img src="images/default_wap/bz.png" alt=""><p>菲信擔保</p>
+                </div>
+            </div>
+            <!--菲信擔保-->
+
+    </div>
+    <!--商品-->
+
+    <div class="shop_div">
+        <div class="shop_top">
+            <img v-bind:src="'http://www.phmall.com.ph/union/'+shop_logo" alt="">
+            <p class="shop_name">{{shop_name}}</p>
+            <div class="xy"><p class="fl">信用:</p><img class="fl" src="images/default_wap/lv_20.png" alt=""></div>
+            <div class="scort"><p>[描述: <c>4.8</c> 服務: <c>4.8</c> 快遞: <c>4.8</c> ]</p></div>
+        </div>
+        <div class="shop_bottom">
+            <a v-bind:href="'./index?uid='+shop_uid"><img src="images/default_wap/shop.png" alt=""><p>进入店铺</p></a>
+        </div>
+    </div>
+    <!--店鋪-->
+
+
+
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                商品详情
+                <img src="images/default_wap/selected.png" alt="">
+            </a>
+            <a class="weui-navbar__item" href="#tab2">
+                商品评价
+                <img src="images/default_wap/selected.png" alt="">
+            </a>
+
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="weui_article" v-html="goods_main">
+                    <!--商品详情页开始-->
+                    <!--商品详情页结束-->
+                </div>
+
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <div class="comment_div" v-for="comment in comments">
+                    <div class="comment_head">
+                        <img v-bind:src="'http://www.phmall.com.ph/union/'+comment.user_info[0].member_image" class="header_logo" alt=""><p class="header_id">{{comment.from_id}}</p>
+                    </div>
+                    <div class="comment_time">
+                        <p>{{comment.reg_date}}</p>
+                    </div>
+                    <div class="comment_main">
+                        <div>{{comment.comment}}</div>
+                        <!--<img src="images/default_wap/1.png" alt="">-->
+                        <!--<img src="images/default_wap/2.png" alt="">-->
+                    </div>
+
+                <div class="comment_more">
+                    <p>更多</p><img src="images/default_wap/more.png" alt="">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 容器 -->
+
+
+    <div class="er-code">
+        <div class="h44">
+            <p class="er-code_title">商品二维码</p>
+        </div>
+        <div class="qrimg"></div>
+
+        <div id="code"></div>
+
+    </div>
+    <!--二维码-->
+
+    <div class="cnxh">
+        <div class="h44">
+            <img src="images/default_wap/zsx.png" alt=""><p>猜你喜歡</p>
+        </div>
+        <div class="shop_list">
+
+
+            <div class="goods_div" v-for="goods in cnxh">
+                <a v-bind:href="'./product?uid='+goods.uid+'&setp=<%= setp %>'">
+            <img class="goods_file" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+goods.goods_file1" alt="">
+            <p class="cnxh_goods_name">{{goods.goods_name}}</p>
+            <p class="cnxh_goods_price">
+                ₱ {{goods.goods_sale_price}}
+            </p>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!--猜你喜欢-->
+
+
+    <div class="no_more">
+        <p>沒有更多啦~</p>
+    </div>
+    <!--沒有了-->
+
+
+    <div class="shoping_div">
+
+        <div class="shoping_button_div"><img src="images/default_wap/kf.png" alt="" class="shoping_button"><p>客服</p></div>
+        <div class="shoping_button_div"><a v-bind:href="'./index?uid='+shop_uid"><img src="images/default_wap/shops.png" alt="" class="shoping_button"><p>店铺</p></a></div>
+        <div class="shoping_button_div"><img v-bind:src="favorite_img" alt="" class="shoping_button favorite"><p>收藏</p></div>
+        <!--左边三个按钮-->
+
+        <div class="ljgm"><a href="javascript:;" class="open-popup white" data-target="#about" v-on:click="btn='buy'">立即购买</a></div>
+        <div class="jrgwc"><a href="javascript:;" class="open-popup white" data-target="#about" v-on:click="btn='add'">加入购物车</a></div>
+        <!--右边两个-->
+
+
+        <div id="about" class="weui-popup__container popup-bottom ">
+            <div class="weui-popup__overlay"></div>
+            <div class="weui-popup__modal">
+
+
+                <div class="jrgwc_div">
+                    <div class="jrgwc_head_div">
+                        <img class="jrgwc_goods_file" v-bind:src="'http://www.phmall.com.ph/union/'+jrgwc_file" alt="">
+                        <p class="jrgwc_goods_price">
+                            ₱ {{all_prices}}
+                        </p>
+                        <p class="jrgwc_kc">庫存: {{goods_stock}}</p>
+                        <p class="jrgwc_attr">請選擇: <c v-for="attr in goods_attr"> {{attr[0].name}} </c></p>
+                    </div>
+                    <!--頭部-->
+                    <div class="jrgwc_attr_div" v-for="(attr,indexs) in goods_attr">
+                        <p class="attr_title">{{attr[0].name}}:</p>
+                        <div class="select_attr_div"  v-for="(attr_name,index) in attr"  >
+                            <div class="select_attr" v-bind:class="{selected_attr:(index==select[attr[0].name])}" @click="change(attr[0].name,index)"  v-bind:src="attr_name.value" >{{attr_name.name}}</div>
+                        </div>
+                    </div>
+                    <!--屬性-->
+                    <div class="jrgwc_kc_div">
+                        <p class="attr_title">購買數量:</p>
+                        <div class="weui_cell">
+                            <div style="font-size: 0px;" class="weui_cell_ft">
+                                <a class="weui-number weui-number-sub needsclick">-</a>
+                                <input v-bind:pattern="'[0-'+goods_stock+']*'" class="weui-number-input goods_num" style="width: 50px;" value='0'  data-min="0" v-bind:data-max="goods_stock" data-step="1">
+                                <a class="weui-number weui-number-plus needsclick">+</a>
+                            </div> <div class="weui_cell_ft" style="display: none;"> 0 </div> </div>
+                    </div>
+                    <!--購買數量-->
+                    <div class="jrgwc_button" v-if="btn == 'add'" v-on:click="jrgwc()">
+                        加入购物车
+                    </div>
+                    <div class="buy_now_button" v-if="btn == 'buy'" v-on:click="buy_now()">
+                        立即购买
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!--彈出層-->
+    </div>
+    <!--購物欄-->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script type='text/javascript' src='images/default_wap/swiper.js' charset='utf-8'></script>
+<script>
+    var page=new Vue({
+        el:"#big_div",
+        data:{
+            goods_name:"",
+            goods_point:0,
+            goods_price:"",
+            attr_title:[],
+            select:[],
+            attr_store:[],
+            goods_attr_price:0,
+            gallery:'',
+            comments:'',
+            have_favorite:0,
+            favorite_img:'images/default_wap/favirate.png',
+            btn:1,
+            setp:'<%= setp %>',
+            end_date:0,
+            wait:"距离结束:"
+        },
+        methods:{
+            change:function(name,index) {
+                Vue.set(page.select, name, index);
+                var str="";
+//                console.log(page.goods_attr);
+
+                page.goods_attr.forEach(function (item,index) {
+                    var num=page.select[item[0].name];
+                    console.log(num);
+                    console.log(item);
+                    str=str+"|"+item[0].name+":"+item[num].name;
+                });
+
+
+                page.attr_store.forEach(function (item,index) {
+
+                    if(item.indexOf(str.substr(1))>=0)
+                    {
+                        var arr=item.split("|");
+                        page.goods_attr_price=(arr[arr.length-2]);
+                        page.goods_stock=(arr[arr.length-1]);
+//                        console.log();
+                    }
+                });
+
+            },//修改属性
+            jrgwc:function () {
+
+                var attr="";
+                var attr_txt="";
+                $(".jrgwc_attr_div").each(function () {
+                   attr=attr+$(this).find('.attr_title').eq(0).html();
+                    attr_txt=attr_txt+$(this).find('.attr_title').eq(0).html();
+                   attr=attr+$(this).find('.selected_attr').html()+"\\|";
+                    attr_txt=attr_txt+$(this).find('.selected_attr').html()+"|";
+
+                });
+                attr=attr+"[0-9]{0,99}\\|[0-9]{0,99}";
+
+
+                var goods_num=parseInt($(".goods_num").val());
+
+                var g_uid=parseInt('<%= uid %>');
+
+                var setp=parseInt('<%= setp %>');
+
+
+                $.post('../cart/add',{goods_num:goods_num,g_uid:g_uid,setp:setp,attr:attr,attr_txt:attr_txt},function (result) {
+                    console.log(result);
+                    if(result==1){
+                        $.closePopup()
+                    }
+                })
+            }
+        },
+        computed:{
+            all_prices:function(){
+                return Number(this.goods_attr_price) + Number(this.goods_price)
+            }}
+    });
+
+
+
+
+
+
+
+
+
+    $.ajaxSettings.async = false;
+    $.post("./product",{uid:'<%= uid %>',setp:"<%= setp %>"},function(result){
+      console.log(result);
+
+
+
+        if('<%= setp %>'==2)
+        {
+            //    倒计时
+
+            page.end_date=result[0].end_date-(Date.parse(new Date())/1000);
+            console.log(page.end_date);
+        }
+        if('<%= setp %>'==3)
+        {
+            //    倒计时
+
+            page.end_date=result[0].end_date-(Date.parse(new Date())/1000);
+            console.log(page.end_date);
+        }
+
+
+
+
+
+        page.goods_name=result["0"].goods_name;
+        page.goods_price=result["0"].goods_sale_price;
+        page.shop_uid=result["0"].supplier_id;
+        var goods_main=result['0'].goods_main.replace(new RegExp('src="/english',"gm"),'src="http://www.phmall.com.ph');
+        goods_main=goods_main.replace(new RegExp('src="/union',"gm"),'src="http://www.phmall.com.ph/union');
+        goods_main=goods_main.replace(/<script>/g, "<c>");
+        goods_main=goods_main.replace(/<\/script>/g, "</c>");
+        page.goods_main=goods_main;
+        page.shop_name=result["0"].shop_list.shop_name;
+        page.shop_logo=result["0"].shop_list.up_logo;
+        page.goods_stock=result['0'].goods_stock;
+        page.jrgwc_file=result['0'].goods_file1;
+        var imgs=[];
+        imgs.push=("xx");
+        imgs['imgbig']=result['0'].goods_file1;
+        var imgss=[];
+        imgss.push(imgs);
+        page.gallery=imgss;
+
+        if(result["0"].attr_val.length>0)
+        {
+
+
+//            屬性處理
+            var str=result["0"].attr_val;
+            str=str.split("||");
+            var s=[];
+            var attrss=[];
+            str.forEach(function (item,index) {
+                var ss={};
+                item.split("|").forEach(function(items,indexs)
+                {
+
+                    ss[indexs]={};
+
+                    ss[indexs].name=items.replace(/\([^\)]*\)/g,"");
+                    var arr=items.match(/\([^\)]*\)/g);
+                    if(arr!=null)
+                    {
+                        ss[indexs].value=arr[arr.length-1].replace("(","").replace(")","");
+                    }
+                    else
+                    {
+                        ss[indexs].value=arr;
+                    }
+
+
+                });
+                attrss.push(ss);
+            });
+
+            page.goods_attr=attrss;
+//            屬性處理
+
+        }
+//        屬性圖片
+
+        if(result['0'].attr_store.length>0)
+        {
+
+            var str=result['0'].attr_store;
+            str=str.split("||");
+            var attr_store=[];
+            str.forEach(function (item,index) {
+                attr_store.push(item);
+            });
+
+            page.attr_store=attr_store;
+        }
+
+
+//        猜你喜欢
+        var cat_uid=1;
+        var cat="supplier_cat";
+        if(result["0"].supplier_cat>0){cat_uid=result["0"].supplier_cat;cat="supplier_cat"}
+        if(result["0"].supplier_cat2>0){cat_uid=result["0"].supplier_cat2;cat="supplier_cat2"}
+        if(result["0"].supplier_cat3>0){cat_uid=result["0"].supplier_cat3;cat="supplier_cat3"}
+        $.post("./product/get_cnxh",{cat_uid:cat_uid,cat:cat,setp:"<%= setp %>"},function(result){
+            page.cnxh=result;
+        });
+
+
+
+
+
+    });
+
+
+
+
+
+
+    var t =page.end_date;
+    function showtime(){
+
+        var d = parseInt(t/3600/24);
+        if(d<10){
+            d="0"+d;
+        }
+        var h = parseInt((t%(3600*24))/3600);
+        if(h<10){
+            h="0"+h;
+        }
+        var m = parseInt((t%(3600*24))%3600/60);
+        if(m<10){
+            m="0"+m;
+        }
+        var s = parseInt((t%(3600*24))%60);
+        if(s<10){
+            s="0"+s;
+        }
+        var a=(d=="00")?"":'<span>'+d+'</span>:';
+        var b=(h=="00")?"":'<span>'+parseInt(d*24+h)+'</span>:';
+        var c=(m=="00")?"":'<span>'+m+'</span>:';
+        var d=(s=="00")?"":'<span>'+s+'</span>';
+        if(page.setp==3)
+        {
+            $('.countdown').html('距离结束:'+b+c+d);
+        }
+        else
+        {
+            $('.countdown').html(b+c+d);
+        }
+        t = t -1;
+    }
+    showtime();
+    setInterval("showtime()",1000);
+
+
+
+
+
+
+
+
+
+    $.post("./product/get_gallery",{uid:'<%= uid %>',setp:"<%= setp %>"},function(result){
+
+            if(result.length>0)
+            {
+
+                page.gallery=(result);
+            }
+
+
+    });//輪播
+
+    $.post("./product/get_comment",{uid:'<%= uid %>',setp:"<%= setp %>"},function(result){
+
+        if(result.length>0)
+        {
+            result[0]['reg_date']=new Date(parseInt(result[0]['reg_date']) *1000 ).toLocaleString().replace(/\d{1,2}:\d{1,2}:\d{1,2}$/,'').replace(' ','');
+            page.comments=result;
+        }
+
+    });//評論
+
+
+
+    $.post("../favorite/check_favorite",{f:'<%= uid %>',t:1,m:"<%= setp %>"},function (result) {
+
+        if(result==1)
+        {
+
+            page.favorite_img='images/default_wap/favirate1.png';
+            page.have_favorite=1;
+        }
+        else
+        {
+
+        }
+    });
+
+
+    $('body').on("click",".favorite",function () {
+        if(page.have_favorite==0)
+        {
+            $.post("../favorite/set_favorite",{f:'<%= uid %>',t:1,m:"<%= setp %>",setp:"<%= setp %>"},function (result) {
+                console.log(result);
+                if(result==1)
+                {
+                    page.favorite_img='images/default_wap/favirate1.png';
+                    page.have_favorite=1;
+                }
+                else{
+
+                }
+            })
+        }
+        else
+        {
+            $.post("../favorite/del_favorite",{f:'<%= uid %>',t:1,m:"<%= setp %>",setp:"<%= setp %>"},function (result) {
+                console.log(result);
+                if(result==1)
+                {
+                    page.favorite_img='images/default_wap/favirate.png';
+                    page.have_favorite=0;
+                }
+                else{
+
+                }
+            })
+        }
+    });
+    $(".favorite").click(function () {
+
+    });
+</script>
+
+
+<script type="text/javascript" src="images/default_wap/jquery.qrcode.min.js"></script>
+<script>
+    $("#code").qrcode({
+        render: "table", //table方式
+        width: 200, //宽度
+        height:200, //高度
+        text: window.location.href //任意内容
+    });
+</script>
+
+
+
+<script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+</script>
+<script>
+    function upDownOperation(element)
+    {
+        var _input = element.parent().find('input'),
+                _value = _input.val(),
+                _step = _input.attr('data-step') || 1;
+        //检测当前操作的元素是否有disabled，有则去除
+        element.hasClass('disabled') && element.removeClass('disabled');
+        //检测当前操作的元素是否是操作的添加按钮（.input-num-up）‘是’ 则为加操作，‘否’ 则为减操作
+        if ( element.hasClass('weui-number-plus') )
+        {
+            var _new_value = parseInt( parseFloat(_value) + parseFloat(_step) ),
+                    _max = _input.attr('data-max') || false,
+                    _down = element.parent().find('.weui-number-sub');
+
+            //若执行‘加’操作且‘减’按钮存在class='disabled'的话，则移除‘减’操作按钮的class 'disabled'
+            _down.hasClass('disabled') && _down.removeClass('disabled');
+            if (_max && _new_value >= _max) {
+                _new_value = _max;
+                element.addClass('disabled');
+            }
+        } else {
+            var _new_value = parseInt( parseFloat(_value) - parseFloat(_step) ),
+                    _min = _input.attr('data-min') || false,
+                    _up = element.parent().find('.weui-number-plus');
+            //若执行‘减’操作且‘加’按钮存在class='disabled'的话，则移除‘加’操作按钮的class 'disabled'
+            _up.hasClass('disabled') && _up.removeClass('disabled');
+            if (_min && _new_value <= _min) {
+                _new_value = _min;
+                element.addClass('disabled');
+            }
+        }
+        _input.val( _new_value );
+    }
+    $(function(){
+        $('.weui-number-plus').click(function(){
+            upDownOperation( $(this) );
+        });
+        $('.weui-number-sub').click(function(){
+            upDownOperation( $(this) );
+        });
+        $(".back").click(function () {
+            window.history.back();  //返回上一页
+        })
+    });
+//    倒计时
+
+    $(".more").click(function () {
+
+        $.actions({
+            actions: [{
+                text: "分享到Facebook",
+                className: "color-warning",
+                onClick: function() {
+
+                }
+            }],
+            buttonCancel: "取消"
+
+        });
+
+    });
+
+</script>
+
+
+<% include footer.html %>

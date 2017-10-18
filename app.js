@@ -42,12 +42,13 @@ var news=require('./routes/news');
 var news_detail=require('./routes/news_detail');
 var account=require('./routes/account');
 var withdraw=require('./routes/withdraw');
+var auction=require('./routes/auction');
 //
 
 var unionProduct=require('./routes/union/product');
 var unionIndex=require('./routes/union/index');
 var unionCoupon=require('./routes/union/coupon');
-
+var unionAuction_detail=require('./routes/union/auction_detail');
 // 路由
 var app = express();
 
@@ -112,11 +113,14 @@ app.use('/news',news);
 app.use('/news_detail',news_detail);
 app.use('/account',account);
 app.use('/withdraw',withdraw);
+app.use('/auction',auction);
+
 //
 
 app.use('/union/product',unionProduct);
 app.use('/union/index',unionIndex);
 app.use('/union/coupon',unionCoupon);
+app.use('/union/auction_detail',unionAuction_detail);
 
 // 路由
 
