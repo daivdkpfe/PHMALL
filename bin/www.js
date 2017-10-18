@@ -27,12 +27,14 @@ goods_table[0]="xx";
 goods_table[1]="mvm_goods_table";
 goods_table[2]="mvm_goods_onsale";
 goods_table[3]="mvm_goods_group";
+goods_table[4]='mvm_goods_auction';
 
 global.goods_detail=new Array();
 goods_detail[0]="xx";
 goods_detail[1]="mvm_goods_detail";
 goods_detail[2]="mvm_goods_onsale_detail";
 goods_detail[3]="mvm_goods_group_detail";
+goods_detail[4]="mvm_goods_auction_detail";
 
 
 global.goods_gallery=new Array();
@@ -40,6 +42,7 @@ goods_gallery[0]="xx";
 goods_gallery[1]="mvm_gallery";
 goods_gallery[2]="mvm_onsale_gallery";
 goods_gallery[3]="mvm_group_gallery";
+goods_gallery[4]="mvm_auction_gallery";
 var haveLogin=new Array();
 
 

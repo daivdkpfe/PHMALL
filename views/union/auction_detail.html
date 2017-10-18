@@ -615,6 +615,14 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    .baoming,.chujia{
+        width: 100vw;
+        height:49px;
+        line-height: 44px;
+        text-align: center;
+        color: white;
+        background: linear-gradient(to right,#ffa500,#ff802a);
+    }
 </style>
 <div id="big_div">
     <div class="top">
@@ -642,35 +650,13 @@
             </div>
             <!--商品名-->
 
-            <div class="goods_price" v-if="setp==1">
-                <p class="price fl">₱ {{all_prices}}</p>
-                <p class="point fr">+積分:
-                    <c class="point_num">{{goods_point}}</c>
-                </p>
-            </div>
-            <!--普通商品價格-->
-            <div class="goods_price_onsale" v-if="setp==2">
-                <p class="price fl">₱ <c class="blod">{{all_prices}}</c></p>
-                <div class="info">
-                    <p class="market_price">2999</p>
-                    <p class="stored">已抢3200件</p>
-                </div>
-                <div class="right" >
-                    <img class="time_ico" src="images/default_wap/time.png" alt="">
-                    <div class="daojishi" v-if="end_date>0">
-                        <div class="countdown"></div>
-                    </div>
-                    <!--倒计时-->
-                    <div class="jindutiao" v-if="end_date>0"><div class="jindu"></div><p class="jinduP">已抢40%</p></div>
-                    <div class="goods_end" v-if="end_date<=0">該商品已被抢光</div>
-                </div>
 
-            </div>
-            <div class="goods_price_group" v-if="setp==3">
+
+            <div class="goods_price_group" v-if="setp==4">
                 <p class="price fl">₱ <c class="blod">{{all_prices}}</c></p>
                 <div class="info">
                     <p class="market_price">2999</p>
-                    <p class="stored">已抢3200件</p>
+                    <p class="stored">已出价3200次</p>
                 </div>
                 <div class="right" >
                     <img class="time_ico" src="images/default_wap/time.png" alt="">
@@ -679,7 +665,7 @@
                     </div>
                     <!--倒计时-->
 
-                    <div class="goods_end" v-if="end_date<=0">該商品已被抢光</div>
+                    <div class="goods_end" v-if="end_date<=0">該拍賣已結束</div>
                 </div>
             </div>
             <div class="db">
@@ -770,7 +756,7 @@
 
 
             <div class="goods_div" v-for="goods in cnxh">
-                <a v-bind:href="'./product?uid='+goods.uid+'&setp=<%= setp %>'">
+                <a v-bind:href="'./product?uid='+goods.uid+'&setp=4'">
             <img class="goods_file" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+goods.goods_file1" alt="">
             <p class="cnxh_goods_name">{{goods.goods_name}}</p>
             <p class="cnxh_goods_price">
@@ -792,62 +778,8 @@
 
 
     <div class="shoping_div">
-
-        <div class="shoping_button_div"><img src="images/default_wap/kf.png" alt="" class="shoping_button"><p>客服</p></div>
-        <div class="shoping_button_div"><a v-bind:href="'./index?uid='+shop_uid"><img src="images/default_wap/shops.png" alt="" class="shoping_button"><p>店铺</p></a></div>
-        <div class="shoping_button_div"><img v-bind:src="favorite_img" alt="" class="shoping_button favorite"><p>收藏</p></div>
-        <!--左边三个按钮-->
-
-        <div class="ljgm"><a href="javascript:;" class="open-popup white" data-target="#about" v-on:click="btn='buy'">立即购买</a></div>
-        <div class="jrgwc"><a href="javascript:;" class="open-popup white" data-target="#about" v-on:click="btn='add'">加入购物车</a></div>
-        <!--右边两个-->
-
-
-        <div id="about" class="weui-popup__container popup-bottom ">
-            <div class="weui-popup__overlay"></div>
-            <div class="weui-popup__modal">
-
-
-                <div class="jrgwc_div">
-                    <div class="jrgwc_head_div">
-                        <img class="jrgwc_goods_file" v-bind:src="'http://www.phmall.com.ph/union/'+jrgwc_file" alt="">
-                        <p class="jrgwc_goods_price">
-                            ₱ {{all_prices}}
-                        </p>
-                        <p class="jrgwc_kc">庫存: {{goods_stock}}</p>
-                        <p class="jrgwc_attr">請選擇: <c v-for="attr in goods_attr"> {{attr[0].name}} </c></p>
-                    </div>
-                    <!--頭部-->
-                    <div class="jrgwc_attr_div" v-for="(attr,indexs) in goods_attr">
-                        <p class="attr_title">{{attr[0].name}}:</p>
-                        <div class="select_attr_div"  v-for="(attr_name,index) in attr"  >
-                            <div class="select_attr" v-bind:class="{selected_attr:(index==select[attr[0].name])}" @click="change(attr[0].name,index)"  v-bind:src="attr_name.value" >{{attr_name.name}}</div>
-                        </div>
-                    </div>
-                    <!--屬性-->
-                    <div class="jrgwc_kc_div">
-                        <p class="attr_title">購買數量:</p>
-                        <div class="weui_cell">
-                            <div style="font-size: 0px;" class="weui_cell_ft">
-                                <a class="weui-number weui-number-sub needsclick">-</a>
-                                <input v-bind:pattern="'[0-'+goods_stock+']*'" class="weui-number-input goods_num" style="width: 50px;" value='0'  data-min="0" v-bind:data-max="goods_stock" data-step="1">
-                                <a class="weui-number weui-number-plus needsclick">+</a>
-                            </div> <div class="weui_cell_ft" style="display: none;"> 0 </div> </div>
-                    </div>
-                    <!--購買數量-->
-                    <div class="jrgwc_button" v-if="btn == 'add'" v-on:click="jrgwc()">
-                        加入购物车
-                    </div>
-                    <div class="buy_now_button" v-if="btn == 'buy'" v-on:click="buy_now()">
-                        立即购买
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-        <!--彈出層-->
+        <p class="baoming" v-if="!baoming">报名交保证金</p>
+        <p class="chujia" v-if="baoming">出价</p>
     </div>
     <!--購物欄-->
 
@@ -879,69 +811,24 @@
             have_favorite:0,
             favorite_img:'images/default_wap/favirate.png',
             btn:1,
-            setp:'<%= setp %>',
+            setp:'4',
+            baoming:false,
             end_date:0,
             wait:"距离结束:"
         },
         methods:{
-            change:function(name,index) {
-                Vue.set(page.select, name, index);
-                var str="";
-//                console.log(page.goods_attr);
 
-                page.goods_attr.forEach(function (item,index) {
-                    var num=page.select[item[0].name];
-                    console.log(num);
-                    console.log(item);
-                    str=str+"|"+item[0].name+":"+item[num].name;
-                });
-
-
-                page.attr_store.forEach(function (item,index) {
-
-                    if(item.indexOf(str.substr(1))>=0)
-                    {
-                        var arr=item.split("|");
-                        page.goods_attr_price=(arr[arr.length-2]);
-                        page.goods_stock=(arr[arr.length-1]);
-//                        console.log();
-                    }
-                });
-
-            },//修改属性
-            jrgwc:function () {
-
-                var attr="";
-                var attr_txt="";
-                $(".jrgwc_attr_div").each(function () {
-                   attr=attr+$(this).find('.attr_title').eq(0).html();
-                    attr_txt=attr_txt+$(this).find('.attr_title').eq(0).html();
-                   attr=attr+$(this).find('.selected_attr').html()+"\\|";
-                    attr_txt=attr_txt+$(this).find('.selected_attr').html()+"|";
-
-                });
-                attr=attr+"[0-9]{0,99}\\|[0-9]{0,99}";
-
-
-                var goods_num=parseInt($(".goods_num").val());
-
-                var g_uid=parseInt('<%= uid %>');
-
-                var setp=parseInt('<%= setp %>');
-
-
-                $.post('../cart/add',{goods_num:goods_num,g_uid:g_uid,setp:setp,attr:attr,attr_txt:attr_txt},function (result) {
-                    console.log(result);
-                    if(result==1){
-                        $.closePopup()
-                    }
-                })
-            }
         },
-        computed:{
-            all_prices:function(){
-                return Number(this.goods_attr_price) + Number(this.goods_price)
-            }}
+        mounted:function () {
+            var t=this;
+
+            $.post('/union/auction_detail/assure',{uid:'<%= uid %>'},function (result) {
+                console.log(result);
+            });
+
+        }
+
+
     });
 
 
@@ -953,26 +840,14 @@
 
 
     $.ajaxSettings.async = false;
-    $.post("./product",{uid:'<%= uid %>',setp:"<%= setp %>"},function(result){
-      console.log(result);
+    $.post("./product",{uid:'<%= uid %>',setp:"4"},function(result){
+        console.log(result);
 
 
 
-        if('<%= setp %>'==2)
-        {
-            //    倒计时
 
-            page.end_date=result[0].end_date-(Date.parse(new Date())/1000);
-            console.log(page.end_date);
-        }
-        if('<%= setp %>'==3)
-        {
-            //    倒计时
-
-            page.end_date=result[0].end_date-(Date.parse(new Date())/1000);
-            console.log(page.end_date);
-        }
-
+        page.end_date=result[0].end_date-(Date.parse(new Date())/1000);
+        console.log(page.end_date);
 
 
 
@@ -996,56 +871,9 @@
         imgss.push(imgs);
         page.gallery=imgss;
 
-        if(result["0"].attr_val.length>0)
-        {
 
 
-//            屬性處理
-            var str=result["0"].attr_val;
-            str=str.split("||");
-            var s=[];
-            var attrss=[];
-            str.forEach(function (item,index) {
-                var ss={};
-                item.split("|").forEach(function(items,indexs)
-                {
 
-                    ss[indexs]={};
-
-                    ss[indexs].name=items.replace(/\([^\)]*\)/g,"");
-                    var arr=items.match(/\([^\)]*\)/g);
-                    if(arr!=null)
-                    {
-                        ss[indexs].value=arr[arr.length-1].replace("(","").replace(")","");
-                    }
-                    else
-                    {
-                        ss[indexs].value=arr;
-                    }
-
-
-                });
-                attrss.push(ss);
-            });
-
-            page.goods_attr=attrss;
-//            屬性處理
-
-        }
-//        屬性圖片
-
-        if(result['0'].attr_store.length>0)
-        {
-
-            var str=result['0'].attr_store;
-            str=str.split("||");
-            var attr_store=[];
-            str.forEach(function (item,index) {
-                attr_store.push(item);
-            });
-
-            page.attr_store=attr_store;
-        }
 
 
 //        猜你喜欢
@@ -1054,7 +882,7 @@
         if(result["0"].supplier_cat>0){cat_uid=result["0"].supplier_cat;cat="supplier_cat"}
         if(result["0"].supplier_cat2>0){cat_uid=result["0"].supplier_cat2;cat="supplier_cat2"}
         if(result["0"].supplier_cat3>0){cat_uid=result["0"].supplier_cat3;cat="supplier_cat3"}
-        $.post("./product/get_cnxh",{cat_uid:cat_uid,cat:cat,setp:"<%= setp %>"},function(result){
+        $.post("./product/get_cnxh",{cat_uid:cat_uid,cat:cat,setp:"4"},function(result){
             page.cnxh=result;
         });
 
@@ -1064,12 +892,46 @@
 
     });
 
+    $.post("./product/get_gallery",{uid:'<%= uid %>',setp:"4"},function(result){
+
+        if(result.length>0)
+        {
+
+            page.gallery=(result);
+        }
+
+
+    });//輪播
+
+    console.log("sss");
+    $.post("./product/get_comment",{uid:'<%= uid %>',setp:"4"},function(result){
+
+        if(result.length>0)
+        {
+            result[0]['reg_date']=new Date(parseInt(result[0]['reg_date']) *1000 ).toLocaleString().replace(/\d{1,2}:\d{1,2}:\d{1,2}$/,'').replace(' ','');
+            page.comments=result;
+        }
+
+    });//評論
 
 
 
 
 
-    var t =page.end_date;
+
+
+
+
+    var t=page.end_date;
+    console.log(t);
+    showtime();
+    setInterval("showtime()",1000);
+
+
+
+
+
+
     function showtime(){
 
         var d = parseInt(t/3600/24);
@@ -1089,21 +951,16 @@
             s="0"+s;
         }
         var a=(d=="00")?"":'<span>'+d+'</span>:';
-        var b=(h=="00")?"":'<span>'+parseInt(d*24+h)+'</span>:';
+        var b=(h=="00")?"":'<span>'+(parseInt(d*24)+parseInt(h))+'</span>:';
         var c=(m=="00")?"":'<span>'+m+'</span>:';
         var d=(s=="00")?"":'<span>'+s+'</span>';
-        if(page.setp==3)
+        if(page.setp==4)
         {
             $('.countdown').html('距离结束:'+b+c+d);
         }
-        else
-        {
-            $('.countdown').html(b+c+d);
-        }
+
         t = t -1;
     }
-    showtime();
-    setInterval("showtime()",1000);
 
 
 
@@ -1113,77 +970,15 @@
 
 
 
-    $.post("./product/get_gallery",{uid:'<%= uid %>',setp:"<%= setp %>"},function(result){
-
-            if(result.length>0)
-            {
-
-                page.gallery=(result);
-            }
-
-
-    });//輪播
-
-    $.post("./product/get_comment",{uid:'<%= uid %>',setp:"<%= setp %>"},function(result){
-
-        if(result.length>0)
-        {
-            result[0]['reg_date']=new Date(parseInt(result[0]['reg_date']) *1000 ).toLocaleString().replace(/\d{1,2}:\d{1,2}:\d{1,2}$/,'').replace(' ','');
-            page.comments=result;
-        }
-
-    });//評論
 
 
 
-    $.post("../favorite/check_favorite",{f:'<%= uid %>',t:1,m:"<%= setp %>"},function (result) {
-
-        if(result==1)
-        {
-
-            page.favorite_img='images/default_wap/favirate1.png';
-            page.have_favorite=1;
-        }
-        else
-        {
-
-        }
-    });
 
 
-    $('body').on("click",".favorite",function () {
-        if(page.have_favorite==0)
-        {
-            $.post("../favorite/set_favorite",{f:'<%= uid %>',t:1,m:"<%= setp %>",setp:"<%= setp %>"},function (result) {
-                console.log(result);
-                if(result==1)
-                {
-                    page.favorite_img='images/default_wap/favirate1.png';
-                    page.have_favorite=1;
-                }
-                else{
 
-                }
-            })
-        }
-        else
-        {
-            $.post("../favorite/del_favorite",{f:'<%= uid %>',t:1,m:"<%= setp %>",setp:"<%= setp %>"},function (result) {
-                console.log(result);
-                if(result==1)
-                {
-                    page.favorite_img='images/default_wap/favirate.png';
-                    page.have_favorite=0;
-                }
-                else{
 
-                }
-            })
-        }
-    });
-    $(".favorite").click(function () {
 
-    });
+
 </script>
 
 
@@ -1206,46 +1001,9 @@
     });
 </script>
 <script>
-    function upDownOperation(element)
-    {
-        var _input = element.parent().find('input'),
-                _value = _input.val(),
-                _step = _input.attr('data-step') || 1;
-        //检测当前操作的元素是否有disabled，有则去除
-        element.hasClass('disabled') && element.removeClass('disabled');
-        //检测当前操作的元素是否是操作的添加按钮（.input-num-up）‘是’ 则为加操作，‘否’ 则为减操作
-        if ( element.hasClass('weui-number-plus') )
-        {
-            var _new_value = parseInt( parseFloat(_value) + parseFloat(_step) ),
-                    _max = _input.attr('data-max') || false,
-                    _down = element.parent().find('.weui-number-sub');
 
-            //若执行‘加’操作且‘减’按钮存在class='disabled'的话，则移除‘减’操作按钮的class 'disabled'
-            _down.hasClass('disabled') && _down.removeClass('disabled');
-            if (_max && _new_value >= _max) {
-                _new_value = _max;
-                element.addClass('disabled');
-            }
-        } else {
-            var _new_value = parseInt( parseFloat(_value) - parseFloat(_step) ),
-                    _min = _input.attr('data-min') || false,
-                    _up = element.parent().find('.weui-number-plus');
-            //若执行‘减’操作且‘加’按钮存在class='disabled'的话，则移除‘加’操作按钮的class 'disabled'
-            _up.hasClass('disabled') && _up.removeClass('disabled');
-            if (_min && _new_value <= _min) {
-                _new_value = _min;
-                element.addClass('disabled');
-            }
-        }
-        _input.val( _new_value );
-    }
     $(function(){
-        $('.weui-number-plus').click(function(){
-            upDownOperation( $(this) );
-        });
-        $('.weui-number-sub').click(function(){
-            upDownOperation( $(this) );
-        });
+
         $(".back").click(function () {
             window.history.back();  //返回上一页
         })

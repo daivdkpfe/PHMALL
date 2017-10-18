@@ -13,9 +13,10 @@ router.get('/', function(req, res, next) {
         console.log(a);
     }
     run();*/
-
-    res.render('./auction_detail', { title: 'PHMALL'});
+    console.log("xxoo");
+    res.render('./union/auction_detail', { title: 'PHMALL'});
 
 });
+
 
 module.exports = router;

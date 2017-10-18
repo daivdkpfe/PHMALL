@@ -276,3 +276,524 @@
 [2017-10-18 11:54:47.624] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
 [2017-10-18 11:56:21.809] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
 [2017-10-18 11:59:04.677] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:05:35.784] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:05:35.800] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:06:23.723] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:06:28.833] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2017-10-18 13:06:28.966] [INFO] log_file - SELECT ga.uid,ga.goods_name,ga.goods_file1,ga.goods_status,ga.supplier_id,ga.goods_hit,ga.start_date,ga.end_date, ga.end_price,ga.start_price,ga.bid_add,ga.is_complete FROM `mvm_goods_auction` ga LEFT JOIN `mvm_member_shop` ms ON ga.supplier_id=ms.m_uid WHERE ga.approval=1 AND ms.isSupplier=3 and show_status=1 AND ga.start_date<=? AND ga.end_date>=? ORDER BY ga.start_date ASC LIMIT 0,10    1508303189,1508303189
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:07:58.031] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:07:58.046] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:08:30.371] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:08:30.387] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:08:30.402] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:08:30.418] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:08:36.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:08:36.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:09:34.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:09:34.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:11:07.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:11:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:14:19.476] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:14:19.479] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:14:19.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:14:19.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:14:19.481] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:14:19.481] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:14:19.482] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:14:19.482] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:14:19.483] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:14:19.484] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:14:19.485] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:14:19.485] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:14:19.488] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:14:19.489] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:14:19.490] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:14:19.490] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:14:19.492] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:14:19.492] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:14:19.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:14:19.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:14:19.494] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:14:19.496] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:15:41.825] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:15:41.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:15:41.829] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:15:41.830] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:15:41.830] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:15:41.831] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:15:41.831] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:15:41.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:15:41.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:15:41.834] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:15:41.835] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:15:41.836] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:15:41.838] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:15:41.839] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:15:41.840] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:15:41.841] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:15:41.841] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:15:41.842] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:15:41.842] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:15:41.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:15:41.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:15:41.844] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:15:42.587] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:15:42.593] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:15:57.870] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:15:57.875] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:20:44.961] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:20:44.966] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:20:54.041] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:20:54.044] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:21:33.687] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:21:33.692] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:21:35.806] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:21:35.812] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:22:02.393] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:22:02.395] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:22:56.797] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:22:56.799] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:24:02.130] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:24:02.134] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:24:26.406] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:24:26.409] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:25:29.937] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:25:29.939] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:25:29.956] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_auction`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:25:29.982] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:25:29.994] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:25:32.389] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:25:32.392] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:25:32.403] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_auction`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:25:32.420] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:25:32.431] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:26:43.792] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:26:43.797] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:26:43.815] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_auction`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:26:43.836] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:26:43.845] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:26:49.713] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:26:49.716] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:26:49.716] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:26:49.717] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:26:49.717] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:26:49.718] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:26:49.718] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:26:49.718] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:26:49.721] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:26:49.723] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:26:49.725] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:26:49.725] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:26:49.727] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:26:49.727] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:26:49.728] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:26:49.729] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:26:49.729] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:26:49.730] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:26:49.730] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:26:49.730] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:26:49.731] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:26:49.732] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:26:50.461] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:26:50.464] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:26:50.477] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:26:50.494] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:26:50.507] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:27:23.962] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:27:23.966] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:27:23.978] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:27:23.990] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:27:24.003] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:27:52.266] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:27:52.269] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:27:52.284] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:27:52.296] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:27:52.306] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:27:57.717] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:28:10.074] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:28:10.078] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:28:10.090] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:28:10.104] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:28:10.120] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:28:18.852] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:29:29.225] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:29:29.228] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:29:29.239] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:29:29.251] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:29:29.262] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:29:48.266] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:30:08.837] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:30:08.840] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:30:08.853] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:30:08.867] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:30:08.878] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:30:15.110] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:30:34.006] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:30:50.403] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:30:50.424] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:30:50.439] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:30:50.454] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:30:50.464] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:31:12.908] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:31:12.911] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:31:12.924] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:31:12.939] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:31:12.955] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:39:41.093] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:40:11.262] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:40:11.264] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:40:11.276] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:40:11.295] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:40:11.308] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:41:21.422] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:41:21.429] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:41:21.441] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:41:21.450] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:41:21.463] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:41:27.212] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:41:27.214] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:41:27.224] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:41:27.241] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:41:27.251] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:42:05.392] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:42:35.655] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:43:50.749] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:43:50.753] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:43:50.771] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:43:50.785] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:43:50.798] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:52:50.415] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:52:50.421] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:52:50.422] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:52:50.422] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:52:50.423] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:52:50.423] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:52:50.423] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:52:50.424] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:52:50.424] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:52:50.425] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:52:50.426] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:52:50.426] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:52:50.428] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:52:50.428] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:52:50.429] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:52:50.430] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:52:50.430] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:52:50.431] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:52:50.431] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:52:50.431] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:52:50.432] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:52:50.434] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:54:33.197] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 13:54:33.200] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 13:54:33.201] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 13:54:33.202] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 13:54:33.202] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 13:54:33.203] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 13:54:33.204] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 13:54:33.204] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 13:54:33.205] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 13:54:33.205] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 13:54:33.206] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 13:54:33.207] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 13:54:33.208] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 13:54:33.208] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 13:54:33.209] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 13:54:33.209] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 13:54:33.210] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 13:54:33.210] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 13:54:33.211] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 13:54:33.211] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 13:54:33.211] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 13:54:33.213] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 13:54:37.328] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:54:37.332] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:54:39.917] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:54:39.921] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:55:13.839] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:55:13.844] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:56:04.260] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:56:04.262] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:56:04.273] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:56:04.287] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:56:04.300] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:56:07.982] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:56:07.984] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:56:07.997] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:56:08.016] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:56:08.025] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:57:34.258] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 13:57:34.301] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:57:34.313] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:57:40.140] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:57:40.142] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:57:40.152] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:57:40.171] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 13:57:40.185] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 13:58:33.267] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:58:33.270] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:58:33.283] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 13:59:20.163] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:59:20.167] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:59:40.784] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:59:40.787] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 13:59:44.105] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 13:59:44.108] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:00:28.609] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:00:28.611] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:00:34.831] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:00:34.835] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:00:49.348] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199
+[2017-10-18 14:00:51.321] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:00:51.325] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:02:41.082] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:02:41.085] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:04:43.521] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:04:43.526] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:04:59.144] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:04:59.148] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:04:59.172] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:04:59.184] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:05:40.729] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:05:40.732] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:05:40.748] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:06:33.931] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:06:33.938] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:06:33.953] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:06:33.963] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:06:44.603] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:06:44.606] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:06:44.620] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:06:44.631] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:07:04.598] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:07:04.601] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:07:04.613] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:07:04.629] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:07:11.269] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:07:11.279] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:07:11.300] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:07:11.314] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:07:13.924] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:07:13.927] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:07:13.945] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:07:13.964] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:08:08.049] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:08:08.051] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:08:08.069] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:08:08.078] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:08:21.415] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:08:21.420] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:08:21.436] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:08:21.450] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:08:28.307] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:08:28.309] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:08:28.326] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:08:28.337] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:08:35.527] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:08:35.530] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:08:35.543] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:08:35.557] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:08:55.054] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:08:55.056] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:08:55.070] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:08:55.082] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:09:06.322] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:09:06.324] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:09:06.339] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:09:06.349] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:09:25.750] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:09:25.755] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:09:25.768] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:09:25.779] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:09:25.793] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:10:21.335] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:10:21.337] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:10:21.352] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:10:21.362] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:10:21.375] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:10:49.423] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:10:49.425] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:10:49.443] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:10:49.458] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:10:49.472] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:11:23.394] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:11:23.398] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:11:23.415] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:11:23.426] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:11:23.435] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:11:33.720] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:11:33.723] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:11:33.769] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:11:33.781] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:11:33.791] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:11:50.721] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:11:50.724] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:11:50.741] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:11:50.758] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:11:50.768] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:12:11.139] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:12:11.144] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:12:11.160] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:12:11.171] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:12:11.185] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:13:16.989] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:13:16.993] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:13:17.011] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:13:17.025] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:13:17.034] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:13:35.671] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:13:35.675] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:13:35.689] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:13:35.703] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:13:35.711] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:13:42.505] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:13:42.507] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:13:42.521] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:13:42.531] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:13:42.541] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:14:44.923] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-18 14:14:44.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-18 14:14:44.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-18 14:14:44.927] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-18 14:14:44.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-18 14:14:44.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-18 14:14:44.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-18 14:14:44.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-18 14:14:44.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-18 14:14:44.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-18 14:14:44.931] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-18 14:14:44.932] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-18 14:14:44.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-18 14:14:44.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-18 14:14:44.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-18 14:14:44.934] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-18 14:14:44.935] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-18 14:14:44.935] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-18 14:14:44.935] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-18 14:14:44.936] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-18 14:14:44.936] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-18 14:14:44.937] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-18 14:14:45.948] [INFO] log_file - select t.*,d.* from `mvm_goods_auction` t left join `mvm_goods_auction_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    32
+[2017-10-18 14:14:45.951] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2017-10-18 14:14:45.966] [INFO] log_file - SELECT * FROM `mvm_goods_auction` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    691
+[2017-10-18 14:14:45.978] [INFO] log_file - select * from `mvm_auction_gallery` where goods_id = ?    32
+[2017-10-18 14:14:45.988] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    32,mvm_goods_auction
+[2017-10-18 14:15:18.105] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508284800,1508371199

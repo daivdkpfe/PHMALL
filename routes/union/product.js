@@ -107,7 +107,7 @@ router.post('/get_cnxh',function (req,res,next) {
     }
     sql=[];
     sql.push(req.body.cat_uid);
-   sqlQueryMore("SELECT * FROM `"+table+"` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `"+table+"`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1."+req.body.cat+"=? ORDER BY t1.uid ASC LIMIT 4",sql,function (err,vals,xx) {
+   sqlQueryMore("SELECT * FROM `"+table+"` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1."+req.body.cat+"=? ORDER BY t1.uid ASC LIMIT 4",sql,function (err,vals,xx) {
        console.log(vals);
             if(err) logger.info("Caught exception:"+err);
             res.json(vals);
