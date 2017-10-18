@@ -43,6 +43,9 @@ var news_detail=require('./routes/news_detail');
 var account=require('./routes/account');
 var withdraw=require('./routes/withdraw');
 var auction=require('./routes/auction');
+var funddetails=require('./routes/funddetails');
+
+
 //
 
 var unionProduct=require('./routes/union/product');
@@ -114,6 +117,7 @@ app.use('/news_detail',news_detail);
 app.use('/account',account);
 app.use('/withdraw',withdraw);
 app.use('/auction',auction);
+app.use('/funddetails',funddetails);
 
 //
 
