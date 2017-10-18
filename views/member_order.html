@@ -1,0 +1,599 @@
+<% include header_index.html %>
+
+
+<style>
+    body{
+        background: #efeff4;
+    }
+    .top{
+        height:44px;
+        width: 100vw;
+        background: #FFFFFF;
+    }
+    .z7{
+        position: absolute;
+        z-index: 7;
+        text-align: center;
+        line-height: 44px;
+        font-size: 17px;
+        color: #535353;
+        width: 100vw;
+    }
+    .z8{
+        position: relative;
+        z-index: 8;
+        line-height: 44px;
+        font-size: 13px;
+        color: #535353;
+        margin-left: 10px;
+    }
+    .top img{
+        width: 25px;
+        margin: 10px;
+    }
+    .weui-navbar__item{
+        color: #535353;
+        font-size: 13px;
+        border: none;
+        font-weight:bold;
+    }
+    .weui-navbar:after{
+        border-bottom: none;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        color: #feba03;
+        background: none;
+        border-bottom: 3px solid #feba03;
+    }
+    .order_pannal{
+        margin-top: 5px;
+        min-height: 285px;
+        background:#FFF;
+        width: 100vw;
+    }
+    .order_shop{
+        height: 44px;
+        width: 100vw;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #efeff4;
+    }
+    .order_detail{
+        width: 100vw;
+        height:120px;
+        background: #f8fafd;
+        margin-bottom: 5px;
+    }
+    .shop_png{
+        width: 23px;
+        margin-top: 11px;
+        margin-left: 15px;
+        float: left;
+    }
+    .shop_name{
+        font-weight: bold;
+        font-size: 16px;
+        color: #5a5a5a;
+        line-height: 44px;
+        float: left;
+        margin-left: 18px;
+    }
+    .order_status{
+        font-size: 13px;
+        color: #feba03;
+        line-height: 44px;
+        float: right;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+    .goods_file{
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 14px;
+        float: left;
+    }
+    .goods_name{
+        min-height:45px;
+        float: left;
+        font-size: 15px;
+        color: #5a5a5a;
+        width: 242px;
+        margin-top: 13px;
+        margin-bottom: 4px;
+        max-height:50px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        line-height: 25px;
+    }
+    .goods_attr,.goods_price{
+        font-size: 13px;
+        color: #adadad;
+        float: left;
+        width: 240px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .order_price{
+        width: 100vw;
+        height:40px;
+        margin-top: 20px;
+        font-size: 13px;
+        color: #5a5a5a;
+        border-bottom: 1px solid #efeff4;
+        text-align: right;
+    }
+    .goods_num{
+        color: #feba03;
+    }
+    .ready_price{
+        color: #B70029;
+        font-size: 15px;
+        margin-right: 16px;
+    }
+    .order_button{
+        height:44px;
+        width: 100vw;
+    }
+    .button{
+        height:28px;
+        margin-top: 7px;
+        width:78px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 13px;
+        color: #5a5a5a;
+        float: right;
+        margin-right: 15px;
+        border: 1px solid rgb(197,197,197);
+        border-radius: 3px;
+    }
+    .pj{
+        color: #feba03;
+    }
+    .button_fk,.button_qrsh,.button_pj,.button_qx,.button_sq{
+        display: none;
+    }
+    .status_1 .button_fk{
+        display: block;
+    }
+    .status_1 .button_qx
+    {
+        display: block;
+    }
+    .status_3 .button_sq ,.status_4 .button_sq,.status_5 .button_sq
+    {
+        display: block;
+    }
+    .status_3 .button_qrsh
+    {
+        display: block;
+    }
+    .status_4 .button_qrsh
+    {
+        display: block;
+    }
+    .status_5 .button_pj
+    {
+        display: block;
+    }
+    .top .z8 img{
+        width: 20px;
+        height: 20px;
+        margin-top: 15px;
+    }
+    .pj a{
+        color:#feba03;
+    }
+</style>
+<div class="BigDiv">
+    <div class="weui-pull-to-refresh__layer">
+        <div class='weui-pull-to-refresh__arrow'></div>
+        <div class='weui-pull-to-refresh__preloader'></div>
+        <div class="down">下拉翻页</div>
+        <div class="up">释放翻页</div>
+        <div class="refresh">正在翻页</div>
+    </div>
+    <!--上一页-->
+
+    <div class="top">
+        <p class="z7">{{title}}</p>
+        <p class="z8 fl tl"><img src="images/default_wap/return.png" alt=""></p>
+        <img class="z8 fr tr" src="images/default_wap/search.png" alt="">
+    </div>
+
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                全部
+            </a>
+            <a class="weui-navbar__item" href="#tab1">
+                待付款
+            </a>
+            <a class="weui-navbar__item" href="#tab1">
+                待发货
+            </a>
+            <a class="weui-navbar__item" href="#tab1">
+                待收货
+            </a>
+            <a class="weui-navbar__item" href="#tab1">
+                待评价
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="order_pannal" v-for="order in orders" >
+                    <div v-bind:class="'status_'+order.status_num">
+                        <div class="order_shop" v-bind:uid="order.uid">
+                            <img class="shop_png" src="images/default_wap/shop.png" alt="">
+                            <p class="shop_name">
+                                {{order.shop_name}}
+                            </p>
+                            <p class="order_status">
+                                {{order.status}}
+                            </p>
+                        </div>
+                        <!--顶部店铺栏-->
+                        <div class="order_detail" v-for="good in order.goods_list">
+                            <img class="goods_file" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+good.goods_file" alt="">
+                            <p class="goods_name">{{good.goods_name}}</p>
+                            <p class="goods_attr">數量：{{good.buy_number}}</p>
+                            <p class="goods_price">₱{{good.buy_price}}+{{good.buy_point}} Creands</p>
+                        </div>
+                        <!--商品内容-->
+                        <p class="order_price">
+                            共 <c class="goods_num">{{order.all_number}}</c> 件商品，合计（含运费）<c class="ready_price">₱{{order.goods_amount}}</c>
+                        </p>
+                        <div class="order_button">
+                            <div class="button button_pj pj" v-if="order.allow_uid>0" ><a v-bind:href="'./comment?allow_uid='+order.allow_uid" >评价</a></div>
+                            <div class="button button_qrsh" v-on:click="qrsh(order.uid)">确认收货</div>
+                            <div class="button button_fk">付款</div>
+                            <div class="button button_qx">取消订单</div>
+                            <div class="button button_sq">申请退款</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+    <!--下拉到底部加载-->
+
+
+
+</div>
+
+<script>
+    var start=0;
+    var status=0;
+    var app = new Vue({
+        el: '.BigDiv',
+        data: {
+            shop_name: 'sss',
+            title:"订单中心",
+            orders:[]
+        },
+        methods:{
+            qrsh:function (index) {
+                $.modal({
+                    text: "您确认已收到商品",
+                    buttons: [
+                        { text: "確定",onClick: function(){
+                            //确认收货
+                            $.post("./config_order",{uid:index},function(result){
+                                console.log(result);
+                                $.notification({
+                                    title: result.status,
+                                    text: result.err,
+                                    onClose: function(data) {
+                                    }
+                                });
+                            });
+                        }},
+                        { text:"取消",onClick: function(){ }}
+                    ]
+                });
+            }
+        }
+    });
+
+    $.ajaxSettings.async = false;
+    $.post("./member_order",{start:start,status:status},function(result){
+        console.log(result);
+        if(result.status=="No Login"){
+            window.location.href='./login';
+        }
+        app.orders=result;
+        start=start+10;
+    });
+    $(".top").find(".z8").click(function () {
+        window.history.back();  //返回上一页
+    });
+
+//    下拉到底部加载
+    $(document.body).infinite();
+    $(document.body).infinite(100);
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        setTimeout(function() {
+
+            $.post("./member_order",{start:start,status:status},function(result){
+
+                if(result=='end')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+                else{
+                    app.orders=result;
+                    start=start+10;
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+
+            });
+
+            /*
+            * 加载的内容处理
+            * */
+
+
+
+            loading = false;
+        }, 1500);   //模拟延迟
+    });
+
+
+//    上拉到顶部加载
+    $(document.body).pullToRefresh();
+    $(document.body).on("pull-to-refresh", function() {
+        $(document.body).pullToRefreshDone();
+        if(start==0)
+        {
+            $.modal({
+                title: "警告",
+                text: "已经是第一页",
+                buttons: [
+                    { text: "確定"}
+                ]
+            });
+
+        }
+        else
+        {
+
+            $.post("./member_order",{start:start-10,status:status},function(result){
+                app.orders=result;
+                start=start-10;
+                $('html, body').animate({
+                    scrollTop: $(".BigDiv").offset().top
+                }, 500);
+            });
+        }
+    });
+
+
+
+
+
+
+    //切换选项页
+    $('.weui-navbar__item').eq(0).on('click',function () {
+
+        if($(this).hasClass("weui-bar__item--on"))
+        {
+
+        }
+        else
+        {
+            status=0;
+            start=0;
+            $.post("./member_order",{start:start,status:status},function(result){
+                console.log(result);
+                if(result=='end')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+                else
+                {
+                    app.orders=result;
+
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                    start=start+10;
+                }
+
+            });
+        }
+    });
+    $('.weui-navbar__item').eq(1).on('click',function () {
+
+        if($(this).hasClass("weui-bar__item--on"))
+        {
+
+        }
+        else
+        {
+            status=1;
+            start=0;
+            $.post("./member_order",{start:start,status:status},function(result){
+                if(result=='end')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+                else
+                {
+                    app.orders=result;
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                    start=start+10;
+                }
+
+            });
+        }
+    });
+    $('.weui-navbar__item').eq(2).on('click',function () {
+
+        if($(this).hasClass("weui-bar__item--on"))
+        {
+
+        }
+        else
+        {
+            status=3;
+            start=0;
+            $.post("./member_order",{start:start,status:status},function(result){
+                if(result=='end')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+                else
+                {
+                    app.orders=result;
+
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                    start=start+10;
+                }
+
+            });
+        }
+    });
+    $('.weui-navbar__item').eq(3).on('click',function () {
+
+        if($(this).hasClass("weui-bar__item--on"))
+        {
+
+        }
+        else
+        {
+            status=4;
+            start=0;
+            $.post("./member_order",{start:start,status:status},function(result){
+                if(result=='end')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+                else
+                {
+                    app.orders=result;
+
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                    start=start+10;
+                }
+
+            });
+        }
+    });
+    $('.weui-navbar__item').eq(4).on('click',function () {
+        if($(this).hasClass("weui-bar__item--on"))
+        {
+
+        }
+        else
+        {
+            status=10;
+            start=0;
+            $.post("./member_order/scomment",{start:start,status:status},function(result){
+                console.log(result);
+                if(result=='end')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                }
+                else
+                {
+                    app.orders=result;
+                    $('html, body').animate({
+                        scrollTop: $(".BigDiv").offset().top
+                    }, 500);
+                    start=start+10;
+                }
+
+            });
+        }
+    });
+    $(function () {
+        var status=<%= status %>;
+        if(status>0)
+        {
+            $('.weui-navbar__item').eq(status).trigger('click');
+        }
+    })
+
+
+</script>
+
+
+<% include footer.html %>

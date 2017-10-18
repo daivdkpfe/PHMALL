@@ -1,0 +1,45 @@
+.h120{
+    height:120px;
+    margin: 3px 0 10px 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.weui-tabbar{
+    position: fixed !important;
+}
+.h44{
+    height:44px;
+}
+.tl{
+     text-align: left;
+ }
+.tr{
+    text-align: right;
+}
+.sl1{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.sl2{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.white{
+    color: white;
+}
+.blod{
+    font-weight: bold;
+}
+.weui-loadmore{
+    clear: left;
+}

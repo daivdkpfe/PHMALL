@@ -1,0 +1,359 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .weui-navbar{
+        overflow: scroll;
+        height:44px;
+        padding-left: 10px;
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background: white;
+        color: #ff8000;
+    }
+    .weui-navbar__item{
+        width: 80px;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar:after{
+        border:none;
+    }
+    .weui-navbar__item{
+        color: #181818;
+        font-size: 13px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .weui-navbar__item img{
+        height:4px;
+        display: none;
+    }
+    .weui-bar__item--on img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .weui-tab__bd{
+        width: 100vw;
+
+    }
+    .weui-tab{
+
+    }
+    .hide1{
+        width: 327px;
+        float: left;
+        height: 44px;
+        overflow: hidden;
+    }
+    .hide{
+        width: 100vw;
+        overflow:hidden;
+        overflow: scroll;
+        height:44px;
+
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .show{
+        width: 1100px;
+        height:44px;
+    }
+    .categroy{
+        min-width:68px;
+        margin-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: #181818;
+
+    }
+    .rq{
+        background: white;
+        height: 44px;
+        width: 100vw;
+    }
+    .selected{
+        font-size: 13px;
+        color: #ff8000;
+    }
+    .categroy img{
+        height: 4px;
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        display: none;
+    }
+    .selected img{
+        display: block;
+    }
+    .down{
+        float: left;
+        height:15px;
+        margin: 14.5px 16.5px;
+    }
+    .down_div{
+        float: left;
+        width:48px;
+        height: 44px;
+    }
+    .search_div{
+        width: 100vw;
+        height:44px;
+        background: white;
+    }
+    .search_margin_div{
+        margin: 0 10px;
+        height:44px;
+    }
+    .input_again{
+        width: 40px;
+        height:30px;
+        /*border-top: 7px solid rgba(0,0,0,0);*/
+        margin-top: 7px;
+        float: left;
+        border-radius: 6px 0 0 6px;
+        background: #EEE;
+    }
+    .search_input{
+        width: 260px;
+        height:30px;
+        float: left;
+        border: none;
+        background: #EEE;
+        border-radius: 0 6px 6px 0;
+        margin-top: 7px;
+    }
+    .input_again img{
+        width: 20px;
+        height:20px;
+        margin: 5px 10px;
+    }
+    input,textarea{outline:none;}
+    .btn{
+        width: 55px;
+        text-align: center;
+        height:44px;
+        line-height: 44px;
+    }
+    .news_list_div{
+        width: 100vw;
+        background: white;
+        margin-top: 5px;
+    }
+    .news_div{
+        width: 100vw;
+        height:100px;
+        background: white;
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .news_div .left{
+        width: 265px;
+        height:100px;
+
+    }
+    .news_div .right{
+        width: 90px;
+        height:100px;
+
+    }
+    .m010{
+        margin: 0 10px;
+    }
+    .news_img{
+        width: 80px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .zuozhe,.hot,.time{
+        float: left;
+        color: #adadad;
+        font-size: 15px;
+        width: 33%;
+        height:30px;
+        line-height: 30px;
+    }
+    .time{
+        text-align: right;
+    }
+    .zuozhe{
+        text-align: left;
+    }
+
+    .zuozhe_img,.hot_img{
+        width: 15px;
+        height:15px;
+        display: initial;
+        margin-top: 7.5px;
+    }
+    .Three{
+        height: 30px;
+        margin-top: 3px;
+    }
+    .One{
+        height:57px;
+        font-size: 18px;
+        color: #181818;
+        line-height: 30px;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                资讯热点
+            </p>
+        </div>
+    </div>
+
+
+    <div class="rq">
+        <!-- 容器 -->
+        <div class="weui-tab">
+            <div class="hide1">
+                <div class="hide">
+                    <div class="show" >
+
+                        <div class="categroy" v-for="(news,index) in news_cate" v-if="!down" v-bind:class="{selected:select==index+1}"  v-on:click="get_cate(index,news.board_name_code)">
+                            {{news.board_title}}
+                            <img src="images/default_wap/select.png" alt="">
+                        </div>
+
+                        <div class="categroy" v-if="down">全部分类</div>
+                    </div>
+                </div>
+            </div>
+            <div class="down_div"><img class="down" src="images/default_wap/down.png" alt=""></div>
+        </div>
+
+    </div>
+    <!--滚动栏-->
+
+    <div class="search_div">
+        <div class="search_margin_div">
+            <div class="left">
+                <div class="input_again">
+                    <img src="images/default_wap/search1.png" alt="">
+                </div>
+                <input type="text" class="search_input" placeholder="請輸入你要查找的资讯">
+                <div class="btn fl">搜索</div>
+            </div>
+        </div>
+    </div>
+    <!--搜索div-->
+
+    <div class="news_list_div">
+        <div class="news_div" v-for="news in news_list">
+            <a :href="'news_detail?uid='+news.uid">
+            <div class="m010">
+            <div class="left fl">
+                <div class="One sl2">{{news.board_subject}}</div>
+
+                <div class="Three">
+                    <p class="zuozhe">
+                        <img class="zuozhe_img fl" src="images/default_wap/zuozhe.png" alt="">
+                        {{news.author}}
+                    </p>
+                    <p class="hot">
+                        <img src="images/default_wap/hot.png" class="hot_img fl" alt="">
+                        {{news.board_hit}}
+                    </p>
+                    <p class="time">
+                        {{news.register_date}}
+                    </p>
+                </div>
+            </div>
+            <div class="right fl"><img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+news.cover" class="news_img" alt=""></div>
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select:1,
+            down:false,
+            index:0,
+            news_cate:[],
+            ps_name:'',
+            start:0,
+            news_list:[]
+        },
+        methods:{
+            get_cate:function (index,ps_name) {
+                var t=this;
+                this.select=index+1;
+                this.ps_name=ps_name;
+                this.start=0;
+                $.post('/news/list',{ps_name:t.ps_name,start:t.start},function (results) {
+                    console.log(results);
+                    t.news_list=[];
+                    results.forEach(function (item,index) {
+                        t.news_list.push(item);
+                        t.start++;
+                    });
+                });
+            }
+        },
+        mounted:function () {
+            var t=this;
+            $.post("./news",{},function (result) {
+
+                t.news_cate=result;
+                t.ps_name=result["0"].board_name_code;
+                console.log(t.ps_name);
+                $.post('/news/list',{ps_name:t.ps_name,start:t.start},function (results) {
+                    console.log(results);
+                    results.forEach(function (item,index) {
+                        t.news_list.push(item);
+                        t.start++;
+                    });
+
+                });
+            });
+            //加載列表
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

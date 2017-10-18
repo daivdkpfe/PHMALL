@@ -1,0 +1,278 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .weui-navbar{
+        overflow: scroll;
+        height:44px;
+        padding-left: 10px;
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background: white;
+        color: #ff8000;
+    }
+    .weui-navbar__item{
+        width: 80px;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar:after{
+        border:none;
+    }
+    .weui-navbar__item{
+        color: #181818;
+        font-size: 13px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .weui-navbar__item img{
+        height:4px;
+        display: none;
+    }
+    .weui-bar__item--on img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .weui-tab__bd{
+        width: 100vw;
+
+    }
+    .weui-tab{
+
+    }
+    .hide1{
+        width: 327px;
+        float: left;
+        height: 44px;
+        overflow: hidden;
+    }
+    .hide{
+        width: 100vw;
+        overflow:hidden;
+        overflow: scroll;
+        height:44px;
+
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .show{
+        width: 1200px;
+        height:44px;
+    }
+    .categroy{
+        width:68px;
+        margin-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: #181818;
+
+    }
+    .rq{
+        background: white;
+        height: 44px;
+        width: 100vw;
+    }
+    .selected{
+        font-size: 13px;
+        color: #ff8000;
+    }
+    .categroy img{
+        height: 4px;
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        display: none;
+    }
+    .selected img{
+        display: block;
+    }
+    .down{
+        float: left;
+        height:15px;
+        margin: 14.5px 16.5px;
+    }
+    .down_div{
+        float: left;
+        width:48px;
+        height: 44px;
+    }
+    .withdraw_div{
+        margin: 10px 10px;
+        height:242px;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+
+    .weui-cells{
+        height:80px;
+        margin-top: 0;
+    }
+    .weui-cell{
+        height:80px;
+    }
+    .weui-cell_select .weui-cell__bd:after{
+        display: none;
+    }
+    .weui-select{
+        font-size: 16px;
+        color: #4398c0;
+    }
+    .weui-label{
+        font-size: 16px;
+        color: #343434;
+    }
+    .withdraw_money_div{
+        width: 100%;
+        height:80px;
+
+    }
+    .bank_div{
+        border-bottom: 1px solid rgb(239,239,243);
+    }
+    .withdraw_money_title{
+        line-height: 20px;
+        width: 100%;
+        padding-top: 8px;
+        text-indent: 10px;
+    }
+    .withdraw_money_input{
+        width: 300px;
+        margin-left: 10px;
+        height:30px;
+        border: none;
+        font-size: 30px;
+        color: #343434;
+
+
+    }
+    .input_div{
+        font-size: 30px;
+        color: #343434;
+        text-indent: 10px;
+        line-height: 52px;
+        height:52px;
+        border-bottom: 1px solid rgb(239,239,243);
+    }
+    .btn{
+        width: 300px;
+        height:40px;
+        border-radius: 12px;
+        background: linear-gradient(to right,#fdd765,#feb900);
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        margin: 20px auto;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                提现
+            </p>
+        </div>
+    </div>
+
+    <div class="withdraw_div">
+        <div class="bank_div">
+
+            <div class="weui-cells">
+                <div class="weui-cell weui-cell_select weui-cell_select-after">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">银行</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <select class="weui-select" name="select2">
+                            <option value="1">中国</option>
+                            <option value="2">美国</option>
+                            <option value="3">英国</option>
+                            <option value="1">中国</option>
+                            <option value="2">美国</option>
+                            <option value="3">英国</option>
+                            <option value="1">中国</option>
+                            <option value="2">美国</option>
+                            <option value="3">英国</option>
+                            <option value="1">中国</option>
+                            <option value="2">美国</option>
+                            <option value="3">英国</option>
+                            <option value="1">中国</option>
+                            <option value="2">美国</option>
+                            <option value="3">英国</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="withdraw_money_div">
+            <p class="withdraw_money_title">充值金额</p>
+            <div class="input_div">₱<input type="text" class="withdraw_money_input" placeholder="请输入金额"></div>
+        </div>
+        <div class="btn">确定</div>
+    </div>
+
+
+
+
+
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select:0,
+            down:false,
+            index:0,
+            cates:[],
+            group_list:[]
+        },
+        methods:{
+
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

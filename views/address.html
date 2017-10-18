@@ -1,0 +1,218 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+
+
+
+    .address_list{
+        width: 100vw;
+    }
+    .address_div{
+        width: 100vw;
+        height:120px;
+        background: white;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+    .top{
+        width: 100vw;
+        height:87px;
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .bottom{
+        width: 100vw;
+        height:32px;
+    }
+    .m10{
+        width: 355px;
+        margin: 0 10px;
+    }
+    .recever{
+        line-height: 24px;
+        padding-top: 10px;
+        font-size: 15px;
+        color: #535353;
+        height: 24px;
+    }
+    .address_txt{
+        line-height: 18px;
+        color: #adadad;
+        font-size: 12px;
+    }
+    .left img{
+        width: 15px;
+        height:15px;
+        margin-top: 8.5px;
+        margin-left: 10px;
+    }
+    .left p{
+        font-size: 12px;
+        line-height: 32px;
+        color: #adadad;
+        margin-left: 5px;
+    }
+    .right div{
+        margin-right: 10px;
+        margin-top: 6px;
+    }
+    .right p{
+        font-size: 12px;
+        line-height: 32px;
+        margin-right: 5px;
+    }
+    .weui-switch, .weui-switch-cp__box{
+        width: 37px;
+        height:17px;
+    }
+    .weui-switch-cp__box:after, .weui-switch:after{
+        width: 15px;
+        height:15px;
+    }
+    .weui-switch-cp__box:before, .weui-switch:before{
+        width: 37px;
+        height:17px;
+    }
+    .weui-switch-cp__input:checked~.weui-switch-cp__box, .weui-switch:checked{
+        background: #ff8000;
+        background-color: #ff8000;
+    }
+    .weui-switch-cp__input:checked~.weui-switch-cp__box, .weui-switch:checked
+    {
+        border-color: #ff8000;
+    }
+    .left,.right{
+        margin: 0 10px;
+    }
+    .bottom_div{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        line-height: 44px;
+        text-align: center;
+        font-size: 17px;
+        color: white;
+        background: linear-gradient(to right,#fdd765,#feb900);
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                管理收货地址
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="address_list" v-for="(address,index) in address_list">
+        <div class="address_div">
+            <div class="top">
+                <p class="recever m10">收货人：{{address.consignee}} <d class="fr">address.mobile</d></p>
+                <p class="address_txt sl2 m10">收货地址：{{address.province}} {{address.city}} {{address.county}} {{address.address}}</p>
+            </div>
+            <div class="bottom">
+                <div class="fr left">
+                    <a @click="deletes(address.uid,index)">
+                        <img src="images/default_wap/delete.png" class="fl" alt="">
+                        <p class="detele fl">删除</p>
+                    </a>
+                    <a v-bind:href="'/address_add?uid='+address.uid">
+                    <img src="images/default_wap/edit1.png" class="fl" alt="">
+                    <p class="detele fl">编辑</p>
+                    </a>
+                </div>
+                <div class="fl right">
+                    <p class="fr">默认地址</p>
+                    <div class="weui-cell__ft fr" >
+                        <input class="weui-switch" type="checkbox" @click="selects(address.uid,index)" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="./address_add">
+    <div class="h44 bottom_div">
+        添加新地址
+    </div>
+    </a>
+
+
+
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select:1,
+            address_list:[]
+        },
+        methods:{
+            selects:function (uid,index) {
+                var x=index;
+                $.post('/address/edit',{uid:uid},function (result) {
+                    $('.weui-switch').removeAttr('checked');
+                    $('.weui-switch').eq(x).prop('checked','checked');
+                });
+
+            },
+            deletes:function (uid,index) {
+                var x=this;
+                var bl=false;
+                $.post('/address/delete',{uid:uid},function (result) {
+                    if(result=='1')
+                    {
+                        $.toptip('删除成功','success');
+                        x.address_list.splice(index,1);
+                    }
+                    else
+                    {
+                        $.toptip('删除失败','error');
+                    }
+                });
+            }
+
+        }
+    });
+
+    $.post('/address',{},function (result) {
+        page.address_list=result;
+    })
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

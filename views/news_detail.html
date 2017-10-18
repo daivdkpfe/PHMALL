@@ -1,0 +1,166 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    body{
+        background: rgb(243,243,243);
+    }
+
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .main_div{
+        width: 100vw;
+    }
+    .rq_div{
+        margin: 10px;
+    }
+    .news_title{
+        width: 100%;
+        font-size: 18px;
+        color: #181818;
+        text-align: left;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .one img{
+        width: 15px;
+        margin-top: 7.5px;
+        display: initial;
+    }
+    .one{
+        width: 33%;
+        height:30px;
+        line-height: 30px;
+        font-size: 15px;
+        color: #adadad;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .news_main{
+        text-align: justify;
+        width: 100%;
+    }
+    .news_main *{
+    white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;
+    }
+    .bottom{
+        width: 100%;
+        height:50px;
+    }
+    .before,.after{
+        overflow: hidden;
+        float: left;
+        width: 50%;
+        line-height: 50px;
+        font-size: 13px;
+        color: #adadad;
+        height: 50px;
+    }
+    .before{
+        text-align: left;
+    }
+    .after{
+        text-align: right;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+
+            </p>
+        </div>
+    </div>
+    <div class="main_div">
+        <div class="rq_div">
+           
+            <p class="news_title">{{news_title}}</p>
+            
+            <div class="one fl"><img src="images/default_wap/zuozhe.png" alt="">{{author}}</div>
+            <div class="one fl"><img src="images/default_wap/hot.png" alt="">{{board_hit}}</div>
+            <div class="one fl"><img src="images/default_wap/time.png" alt="">{{time}}</div>
+
+
+            <div class="news_main hh fl" v-html="main"></div>
+
+
+            <div class="bottom">
+                <a :href="'news_detail?uid='+before_uid"><div class="before sl1">上一篇：{{before_title}}</div></a>
+                <a :href="'news_detail?uid='+after_uid"><div class="after sl1">下一篇：{{after_title}}</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            uid:'<%= uid %>',
+            news_title:"",
+            main:"",
+            author:'',
+            board_hit:0,
+            before_title:'',
+            after_title:'',
+            after_uid:0,
+            before_uid:0
+        },
+        methods:{
+
+        },
+        mounted:function () {
+            var t= this;
+            $.post('/news_detail',{uid:this.uid},function (result) {
+                console.log(result);
+                if(result!=0)
+                {
+                    t.news_title=result[0].board_subject;
+                    t.main=result[0].board_body;
+                    t.author=result["0"].author;
+                    t.board_hit=result[0].board_hit;
+                    t.time=result[0].register_date;
+                    t.before_title=result[1]["0"].board_subject;
+                    t.after_title=result[2]["0"].board_subject;
+                    t.before_uid=result[1][0].uid;
+                    t.after_uid=result[2][0].uid;
+                }
+
+
+            })
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

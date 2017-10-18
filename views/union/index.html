@@ -1,0 +1,599 @@
+<% include header_index.html %>
+
+<style>
+	body{
+		background: rgb(233,234,238);
+	}
+	.HeadDiv{
+		width: 100vw;
+		background:white;
+		height: 44px;
+	}
+	.ShopCartDiv{
+		width: 15vw;
+		height:44px;
+		float: left;
+	}
+	.ShopCartDiv img{
+		margin: 6px;
+		float: right;
+		height:24px;
+	}
+
+	#searchBar{
+		float: left;
+		width:60vw;
+	}
+
+	.swiper-container img{
+		width: 100vw;
+		height:169px;
+
+	}
+	.weui-search-bar{
+		background: rgb(233,234,238);
+	}
+	.LoginDiv{
+		height:44px;
+		width: 25vw;
+		float: right;
+	}
+	.LoginDiv img{
+		margin: 6px;
+		float: left;
+		height:30px;
+	 }
+	.LoginDiv p{
+		line-height: 44px;
+		display: block;
+	}
+	.h120{
+		width: 100vw;
+		background: #FFF;
+	}
+	.ShopTop{
+		height: 90px;
+		width: 100vw;
+	}
+	.ShopTopLeft{
+		float: left;
+	}
+	.ShopTopLeft img{
+		width: 70px;
+		height:70px;
+		margin: 10px;
+		float: left;
+	}
+	.ShopTopRight{
+		width: 285px;
+		float: left;
+	}
+
+	.ShopTopRight p{
+		width: 200px;
+		color: #adadad;
+		font-size: 10px;
+	}
+	.ShopName{
+		color: black !important;
+		margin-top: 10px;
+		font-size: 1rem !important;
+		line-height: 34px;
+	}
+	.favirate{
+		margin: 10px;
+		width: 20px;
+	}
+	.GeLan{
+		width: 355px;
+		margin-left: 10px;
+		height:1px;
+		background-color: #efeff4;
+	}
+	.ShopBottom{
+		height:20px;
+		width: 100vw;
+	}
+	.ShopBottom img{
+		float: left;
+		width:20px;
+		margin: 4.5px 10px;
+	}
+	.ShopBottom p{
+		line-height: 29px;
+		float: left;
+		color: #121212;
+		font-size: 10px;
+	}
+	.CateGoods{
+		margin-top: 10px;
+		height: auto;
+		max-height:637px;
+		background: white;
+		width: 100vw;
+	}
+	.CatePng{
+		float: left;
+		width:5px;
+		height:30px;
+		margin: 7px 10px;
+	}
+	.CateName{
+		width: 100vw;
+		float: left;
+		height:44px;
+		line-height: 44px;
+		font-size: 17px;
+		color: #121212;
+	}
+	.GoodsDiv{
+		height: 257px;
+		width: 187px;
+		float: left;
+	}
+	.GoodsPic{
+		width: 167px;
+		height:167px;
+		margin: 0 10px;
+	}
+	.ShuGeLan{
+		float: left;
+		height:257px;
+		width: 1px;
+		background: rgb(214,214,214);
+	}
+	.GoodsName{
+		width: 157px;
+		font-size: 13px;
+		color: #121212;
+		margin-left: 15px;
+	}
+	.GoodsPirce{
+		font-size: 15px;
+		color: #b70029;
+		width: 157px;
+		margin-left: 15px;
+	}
+	.More{
+		width: 100vw;
+		float: left;
+		height:34px;
+		margin-bottom: 10px;
+		border-top:1px solid rgb(214,214,214);
+	}
+	.More p{
+		margin-left: 167px;
+		font-size: 13px;
+		color: #535353;
+		line-height: 34px;
+		float: left;
+	}
+	.More img{
+		width: 13px;
+		height:13px;
+		float: left;
+		margin: 10.5px ;
+	}
+	.back{
+		width: 20px;
+		height: 20px;
+		margin-left: 20px;
+		border-top: 12px solid rgba(0,0,0,0);
+		float: left;
+	}
+	.moreblack{
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		border-top: 12px solid rgba(0,0,0,0);
+		float: right;
+	}
+	.search_div{
+		width: 275px;
+		height:30px;
+		line-height: 30px;
+		background: #f3f3f3;
+		border-radius: 6px;
+		float: left;
+		margin-top: 7px;
+		margin-left: 15px;
+		font-size: 15px;
+		color:#535353;
+	}
+	.search_img{
+		width: 20px;
+		height:20px;
+		margin-left: 10px;
+		margin-top: 5px;
+		float: left;
+	}
+	.search_txt{
+		width: 235px;
+		margin-left: 10px;
+		font-size: 15px;
+		color: #535353;
+		line-height: 30px;
+		border: none;
+		height:30px;
+		line-height: 30px;
+		background: none;
+		outline: none;
+		float: left;
+	}
+	.weui-navbar{
+		background: white;
+		height:44px;
+		line-height: 44px;
+	}
+
+	.weui-navbar__item.weui-bar__item--on{
+		background: white;
+		color: #ff8000;
+		font-size: 14px;
+	}
+	.weui-navbar__item.weui-bar__item--on .select{
+		display: block;
+	}
+	.weui-navbar__item{
+		font-size: 14px;
+		color: #535353;
+		padding: 0;
+	}
+	.weui-navbar+.weui-tab__bd{
+		padding-top: 44px;
+	}
+	.weui-navbar__item:after{
+		border: none;
+	}
+	.weui-navbar:after{
+		border: none;
+	}
+	.select{
+		width: 105px;
+		position: relative;
+		top:-5px;
+		display: none;
+		margin: 0 auto;
+	}
+	.time_xian{
+		width: 177px;
+		margin: 0 auto;
+		color: #454545;
+		font-size: 13px;
+	}
+	hr{
+		width: 50px;
+		float: left;
+		margin-top: 21px;
+	}
+	.time_xian p{
+		float: left;
+		line-height: 44px;
+	}
+	.goods{
+		width: 172px;
+		height:272px;
+		background: white;
+		float: left;
+		margin-left: 10px;
+		border-radius: 6px;
+		overflow: hidden;
+		margin-top: 10px;
+	}
+	.goods_img{
+		width: 172px;
+		height:172px;
+	}
+	.goods_name{
+		width:152px;
+		margin-left: 10px;
+		font-size: 15px;
+		color: black;
+		line-height: 22px;
+	}
+	.goods_price{
+		width:152px;
+		margin-left: 10px;
+		font-size: 15px;
+		color: #b80a2f;
+		line-height: 48px;
+	}
+	.day_list{
+		width: 100vw;
+		clear: left;
+		/* height: 599px; */
+		/* width: 500px; */
+		float: left;
+	}
+	.bottom_div{
+		width: 100vw;
+		background: white;
+		position: fixed;
+		bottom: 0;
+		box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	}
+	.bottom_div div{
+		width: 50vw;
+		height: 44px;
+		line-height: 44px;
+		font-size: 14px;
+		color: #535353;
+		text-align: center;
+	}
+</style>
+
+
+<div class="BigDiv">
+
+
+<div class="HeadDiv">
+	<img src="images/default_wap/return.png" class="back" alt="">
+	<div class="search_div">
+		<img src="images/default_wap/search.png" class="search_img" alt="">
+		<input type="text" name="search" class="search_txt">
+	</div>
+	<img src="images/default_wap/moreblack.png" class="moreblack" alt="">
+</div>
+
+<!--搜索框-->
+
+	<!-- 容器 -->
+	<div class="weui-tab">
+		<div class="weui-navbar">
+			<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+				店铺首页
+				<img src="images/default_wap/select.png" class="select" alt="">
+			</a>
+			<a class="weui-navbar__item" href="#tab2">
+				产品上新
+				<img src="images/default_wap/select.png" class="select" alt="">
+			</a>
+			<a class="weui-navbar__item" href="#tab3">
+				折扣优惠
+				<img src="images/default_wap/select.png" class="select" alt="">
+			</a>
+		</div>
+		<div class="weui-tab__bd">
+			<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+				<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+					<div class="swiper-wrapper" >
+						<div class="swiper-slide" v-for="img in cycle"><img src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+img.img" alt=""></div>
+					</div>
+				</div>
+
+				<!--轮播-->
+				<!--轮播-->
+
+				<div class="h120">
+					<div class="ShopTop">
+						<div class="ShopTopLeft">
+							<img v-bind:src="shop_logo" alt="">
+						</div>
+						<div class="ShopTopRight">
+							<img v-bind:src="favorite_img" class="fr favirate" alt="">
+							<p class="ShopName"> {{shop_name}} </p>
+							<p>信用:</p>
+							<p>联系电话:{{shop_tel}}</p>
+						</div>
+					</div>
+					<div class="GeLan"></div>
+					<div class="ShopBottom">
+						<img src="images/default_wap/baozhang.png" alt="">
+						<p>菲淘网担保</p>
+					</div>
+				</div>
+				<!--店家-->
+
+
+
+				<div class="CateGoods fl" v-for="categroy in cate">
+					<div class="CateName"><img src="images/default_wap/cate.png" class="CatePng" alt="">{{categroy.category_name}}</div>
+					<div class="GoodsDiv" v-for="goods in categroy.goods_list">
+						<a v-bind:href="'./product?uid='+goods.uid+'&setp=1'">
+							<img src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+goods.goods_file1" class="GoodsPic" alt="">
+							<p class="GoodsName sl2">{{goods.goods_name}}</p>
+							<p class="GoodsPirce">₱ {{goods.goods_sale_price}}</p>
+						</a>
+					</div>
+
+					<div class="More"><p>More</p><img src="images/default_wap/Down.png" alt=""></div>
+				</div>
+				<div class="h44"></div>
+
+				<!--分类和商品-->
+			</div>
+			<div id="tab2" class="weui-tab__bd-item">
+
+					<div class="day_list" v-for="goods in nowgoods">
+
+						<div class="time_xian"><hr /><p>{{goods[0].register_date}}</p><hr /></div>
+						<div class="goods" v-for="good in goods">
+							<a v-bind:href="'./product?uid='+good.uid+'&setp=1'">
+							<img class="goods_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+good.goods_file1" alt="">
+							<p class="goods_name sl2">{{good.goods_name}}</p>
+							<p class="goods_price sl1">₱ {{good.goods_sale_price}}</p>
+							</a>
+						</div>
+						</a>
+					</div>
+
+				<div class="h44"></div>
+
+			</div>
+			<div id="tab3" class="weui-tab__bd-item">
+				<div class="goods" v-for="good in discount">
+					<a v-bind:href="'./product?uid='+good.uid+'&setp=1'">
+						<img class="goods_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+good.goods_file1" alt="">
+						<p class="goods_name sl2">{{good.goods_name}}</p>
+						<p class="goods_price sl1">₱ {{good.goods_sale_price}}</p>
+					</a>
+				</div>
+			</div>
+			<div class="h44"></div>
+		</div>
+	</div>
+
+
+<div class="h44 bottom_div">
+	<div class="left fl">联系客服</div>
+	<a href="coupon?supid=<%= uid %>"><div class="right fr">优惠卷</div></a>
+</div>
+
+</div>
+
+
+
+
+<script>
+
+
+
+
+
+	var app = new Vue({
+		el: '.BigDiv',
+		data: {
+			shop_name: '',
+            favorite_img:'images/default_wap/favirate.png',
+			have_favorite:0,
+			cate:[],
+            cycle:[],
+            nowgoods:[],
+			discount:[]
+		}
+	});
+	$.ajaxSettings.async = false;
+	$.getJSON("../index/<%= uid %>/1/get_shop_info/lan",
+			function(data) {
+
+				app.shop_name=data[0]['shop_name'];
+				app.shop_tel=data[0]['tel'];
+				app.shop_logo='http://www.phmall.com.ph/union/'+data[0]['up_logo'];
+				app.cycle=data[0]['cycle'];
+			});
+	$.getJSON("../index/<%= uid %>/1/get_categroy/lan",
+			function(data) {
+
+				app.cate=data;
+			});
+    $.getJSON("../index/<%= uid %>/1/get_shop_new/lan",
+        function(data) {
+//           console.log(data);
+
+			var register_data="";
+            var s="";
+			if(data.length>0)
+			{
+                data.forEach(function (item,index) {
+
+                    if(item.register_date!=register_data)
+                    {
+                        if(register_data=="")
+                        {
+
+
+
+                            s=s+index+",";
+                            register_data=item.register_date;
+                        }
+                        else
+                        {
+                            s=s+"|";
+                            s=s+index+",";
+                            register_data=item.register_date;
+
+                        }
+                    }
+                    else
+                    {
+
+                        s=s+index+",";
+                        register_data=item.register_date;
+
+                    }
+                });
+
+                s=s.replace(",|","|");
+                s=s.replace("|,","|");
+                var arrs=[];
+                var ss=s.split("|");
+                ss.forEach(function (item) {
+
+                    var arr=[];
+                    var xx=item.split(",");
+                    xx.forEach(function (item,index) {
+                        if(item!="")
+                        {
+                            arr.push(data[item]);
+                        }
+
+                    });
+                    arrs.push(arr);
+                });
+                app.nowgoods=arrs;
+
+			}
+
+        });
+    $.getJSON("../index/<%= uid %>/1/get_shop_discount/lan",
+        function(data) {
+           app.discount=data;
+        });
+	
+	$.post("../favorite/check_favorite",{f:'<%= uid %>',t:0,m:""},function (result) {
+
+		if(result==1)
+		{
+            app.favorite_img='images/default_wap/favirate1.png';
+            app.have_favorite=1;
+		}
+    });
+	$("body").on("click",'.favirate',function () {
+        if(app.have_favorite==0)
+        {
+            $.post("../favorite/set_favorite",{f:'<%= uid %>',t:0,m:"",setp:""},function (result) {
+
+                if(result==1)
+                {
+                    app.favorite_img='images/default_wap/favirate1.png';
+                    app.have_favorite=1;
+                }
+                else{
+
+                }
+            })
+        }
+        else
+        {
+            $.post("../favorite/del_favorite",{f:'<%= uid %>',t:0,m:"",setp:""},function (result) {
+
+                if(result==1)
+                {
+                    app.favorite_img='images/default_wap/favirate.png';
+                    app.have_favorite=0;
+                }
+                else{
+
+                }
+            })
+        }
+    })
+
+</script>
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='images/default_wap/swiper.js' charset='utf-8'></script>
+<script>
+	$(".swiper-container").swiper({
+		loop: true,
+		autoplay: 3000
+	});
+</script>
+
+<% include footer.html %>

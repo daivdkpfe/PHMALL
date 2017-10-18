@@ -1,0 +1,152 @@
+<% include header_index.html %>
+
+<style>
+    input,textarea{outline:none;}
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .inputs{
+        width: 355px;
+        margin: 10px;
+        height:44px;
+        border: none;
+        border-radius: 6px;
+        text-indent: 10px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    　::-moz-placeholder {
+
+        text-indent: 10px; /* 没有用 */
+        font-size: 15px;
+        line-height: 44px;
+        color: #adadad;
+    }
+    :-ms-input-placeholder {
+
+        text-indent: 10px;
+        font-size: 15px;
+        line-height: 44px;
+        color: #adadad;
+    }
+    ::-webkit-input-placeholder {
+
+        text-indent: 10px;
+        font-size: 15px;
+        line-height: 44px;
+        color: #adadad;
+    }
+    .btn{
+        width: 355px;
+        margin: 10px;
+        background: rgb(255,127,0);
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        line-height: 44px;
+        height: 44px;
+        border-radius: 6px;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                修改密码
+            </p>
+        </div>
+    </div>
+
+    <input type="password" class="inputs" placeholder="请输入原密码">
+    <input type="password" class="inputs" placeholder="请输入新密码">
+    <input type="password" class="inputs" placeholder="确认新密码">
+    <div class="btn" v-on:click="change()">确认修改</div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select:0,
+            down:false,
+            index:0,
+            cates:[],
+            group_list:[]
+        },
+        methods:{
+            change:function () {
+
+
+
+                if($('.inputs').eq(1).val()!=$('.inputs').eq(2).val())
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "密码不一致，请确认",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                }
+                else
+                {
+                    $.post('./change_pass',{pass1:$('.inputs').eq(0).val(),pass2:$('.inputs').eq(1).val()},function (result) {
+                                        if(result==1)
+                                        {
+                                            $.modal({
+                                                title: "恭喜",
+                                                text: "修改密碼成功",
+                                                buttons: [
+                                                    { text: "確定"}
+                                                ]
+                                            });
+                                        }
+                                        else
+                                        {
+                                            $.modal({
+                                                title: "警告",
+                                                text: "修改失敗，请确认",
+                                                buttons: [
+                                                    { text: "確定"}
+                                                ]
+                                            });
+                                        }
+
+                                    })
+                }
+
+
+
+            }
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

@@ -1,0 +1,406 @@
+<% include header_index.html %>
+
+<style>
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header img{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        z-index: 2;
+        margin: 12px 20px;
+    }
+    .header p{
+        text-align: center;
+        width: 100vw;
+        line-height: 44px;
+        font-size: 17px;
+        color: #535353;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+    }
+    .comment_type{
+        height: 44px;
+        width: 355px;
+        margin: 0 auto;
+        line-height: 47px;
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .comment_type p{
+        font-size: 16px;
+        color: #5a5a5a;
+        line-height:47px;
+        margin-left: 5px;
+        float: left;
+        margin-right: 16px;
+    }
+    .comment_type img{
+        float: left;
+        width: 20px;
+        margin-top: 13.5px;
+        height:20px;
+        margin-right: 14px;
+    }
+    .selected p{
+        color: rgb(254,205,104);
+    }
+    .good_info{
+        width: 100vw;
+        height:120px;
+        background: rgb(248,250,253);
+        margin-top: 10px;
+    }
+    .good_img{
+        width: 100px;
+        height:100px;
+        margin: 10px 15px;
+        float: left;
+    }
+    .goods_info{
+        width: 245px;
+        height:100px;
+        margin-top: 10px;
+        float: left;
+    }
+    .goods_name{
+        font-size: 15px;
+        width: 235px;
+        text-align: left;
+        color: #5a5a5a;
+    }
+    .goods_price{
+        color: #adadad;
+        font-size: 15px;
+        line-height: 35px;
+    }
+    .goods_attr{
+        font-size: 13px;
+        color: #adadad;
+    }
+    .weui_cell_warn{
+        color: red;
+    }
+    .comment_shop_div{
+        margin-top: 10px;
+    }
+    .comment_shop_header{
+        width: 355px;
+        margin: 0 auto;
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .comment_shop_header img{
+        float: left;
+        width: 24px;
+        height:24px;
+        margin-top: 11px;
+    }
+    .comment_shop_header p{
+
+        float: left;
+        line-height: 44px;
+        font-size: 16px;
+        color: #5a5a5a;
+        display: block;
+        margin-left:11px;
+    }
+    .comment_line{
+        font-size: 13px;
+        color: #adadad;
+        margin-left: 15px;
+        margin-right: 29px;
+        height: 44px;
+        line-height: 44px;
+        width: 400px;
+    }
+    .comment_line p{
+        float: left;
+        margin-right: 29px;
+    }
+    .comment_line .zan{
+        width:20px;
+        height:20px;
+        background: url("images/default_wap/zan.png");
+        float: left;
+        margin-right: 35px;
+        margin-top: 15px;
+        background-size:cover;
+    }
+    .comment_line .slected{
+        background: url("images/default_wap/zan1.png");
+        background-size: cover;
+    }
+    .h49{
+        height: 49px;
+    }
+    .comment_now{
+        line-height: 49px;
+        text-align: center;
+        font-size: 17px;
+        color: #fefefe;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        background: linear-gradient(to right,#fdd765,#feb900);
+    }
+    d{
+        margin-right: 10px;
+    }
+
+</style>
+
+<div class="big_div">
+    <div class="h44 header">
+        <img src="images/default_wap/return.png" class="fl back" alt="">
+        <p>商品评价</p>
+    </div>
+    <!--头部-->
+    <div v-for="(order_good,index) in order_goods" v-bind:allow_uid="order_good.uid" class="list_div">
+        <div class="h10"></div>
+    <div class="comment_type">
+        <p>选择评价:</p>
+        <div class="good" v-bind:class="{selected:comment_type[index]==1}" v-on:click="change(index,1)"><img src="images/default_wap/good.png"  alt="" v-if="comment_type[index]!=1"><img src="images/default_wap/good1.png" alt="" v-if="comment_type[index]==1"><p>好评</p></div>
+        <div class="commonly" v-bind:class="{selected:comment_type[index]==0}" v-on:click="change(index,0)"><img src="images/default_wap/commonly.png" v-if="comment_type[index]!=0"  alt=""><img src="images/default_wap/commonly1.png" v-if="comment_type[index]==0"  alt=""><p>中评</p></div>
+        <div class="bed" v-bind:class="{selected:comment_type[index]==-1}" v-on:click="change(index,-1)"><img src="images/default_wap/bed.png"  alt="" v-if="comment_type[index]!=-1"><img src="images/default_wap/bed1.png" alt="" v-if="comment_type[index]==-1"><p>差评</p></div>
+    </div>
+    <!--选择好好评，差评-->
+
+
+
+    <div class="good_info">
+        <img class="good_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+order_good.goods_file1" alt="">
+        <div class="goods_info">
+            <p class="goods_name sl2">{{order_good.goods_name}}</p>
+            <p class="goods_price sl1">₱ {{order_good.buy_price}}</p>
+            <p class="goods_attr sl1"><d v-for="attr in order_good.goods_attr">{{attr}}</d></p>
+        </div>
+    </div>
+    <!--商品列表-->
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea" id="textarea" placeholder="请输入文本" rows="3"></textarea>
+                <div class="weui-textarea-counter"><span id='count'>0</span>/<span id='count_max'>200</span></div>
+            </div>
+        </div>
+    </div>
+    <!--文本域输入框,循环-->
+    </div>
+    <div class="h10"></div>
+    <!--隔断-->
+    <div class="comment_shop_div">
+        <div class="h44 comment_shop_header"><img src="images/default_wap/shop.png" alt=""><p>{{shop_name}}</p></div>
+        <div class="comment_shop_bottom">
+            <div class="comment_line">
+                <p>商品描述:</p>
+                <div class="zan" v-bind:class="{slected:1<=spms}" v-on:click="spms=1"></div>
+                <div class="zan" v-bind:class="{slected:2<=spms}" v-on:click="spms=2"></div>
+                <div class="zan" v-bind:class="{slected:3<=spms}" v-on:click="spms=3"></div>
+                <div class="zan" v-bind:class="{slected:4<=spms}" v-on:click="spms=4"></div>
+                <div class="zan" v-bind:class="{slected:5<=spms}" v-on:click="spms=5"></div>
+            </div>
+            <div class="comment_line">
+                <p>商家态度:</p>
+                <div class="zan" v-bind:class="{slected:1<=sjtd}" v-on:click="sjtd=1"></div>
+                <div class="zan" v-bind:class="{slected:2<=sjtd}" v-on:click="sjtd=2"></div>
+                <div class="zan" v-bind:class="{slected:3<=sjtd}" v-on:click="sjtd=3"></div>
+                <div class="zan" v-bind:class="{slected:4<=sjtd}" v-on:click="sjtd=4"></div>
+                <div class="zan" v-bind:class="{slected:5<=sjtd}" v-on:click="sjtd=5"></div>
+            </div>
+            <div class="comment_line">
+                <p>发货速度:</p>
+                <div class="zan" v-bind:class="{slected:1<=fhsd}" v-on:click="fhsd=1"></div>
+                <div class="zan" v-bind:class="{slected:2<=fhsd}" v-on:click="fhsd=2"></div>
+                <div class="zan" v-bind:class="{slected:3<=fhsd}" v-on:click="fhsd=3"></div>
+                <div class="zan" v-bind:class="{slected:4<=fhsd}" v-on:click="fhsd=4"></div>
+                <div class="zan" v-bind:class="{slected:5<=fhsd}" v-on:click="fhsd=5"></div>
+            </div>
+            <div class="comment_line">
+                <p>物流服务:</p>
+                <div class="zan" v-bind:class="{slected:1<=wlfw}" v-on:click="wlfw=1"></div>
+                <div class="zan" v-bind:class="{slected:2<=wlfw}" v-on:click="wlfw=2"></div>
+                <div class="zan" v-bind:class="{slected:3<=wlfw}" v-on:click="wlfw=3"></div>
+                <div class="zan" v-bind:class="{slected:4<=wlfw}" v-on:click="wlfw=4"></div>
+                <div class="zan" v-bind:class="{slected:5<=wlfw}" v-on:click="wlfw=5"></div>
+            </div>
+        </div>
+    </div>
+    <!--商家評價-->
+    <div class="h49"></div>
+    <div class="comment_now">立即评价</div>
+</div>
+<script>
+    var page=new Vue({
+        el:'.big_div',
+        data:{
+            comment_type:[],
+            spms:0,
+            sjtd:0,
+            fhsd:0,
+            wlfw:0,
+            shop_name:"",
+            order_goods:[],
+            comment:true
+        },
+        methods:{
+            change:function (index,value) {
+                Vue.set( page.comment_type, index, value);
+
+            }
+        },
+        computed:{
+        }
+    })
+</script>
+
+<script>
+    $(function(){
+        var max = $('#count_max').text();
+        $('#textarea').on('input', function(){
+            console.log("xx");
+            var text = $(this).val();
+            var len = text.length;
+            $('#count').text(len);
+            if(len > max){
+                $(this).closest('.weui-cell').addClass('weui_cell_warn');
+            }
+            else{
+                $(this).closest('.weui-cell').removeClass('weui_cell_warn');
+            }
+        });
+    })
+    $(".back").click(function () {
+        window.history.back();  //返回上一页
+    });
+
+    var commentArr={};
+    $.post('/comment',{uid:'<%= allow_uid %>'},function (result) {
+        console.log(result);
+        page.shop_name=result["0"].shop_name;
+        var goods_list=result["0"].goods_list;
+        goods_list.forEach(function(item,index,xx){
+
+            var arr=item.goods_attr.split("|");
+            arr.pop();
+            goods_list[index].goods_attr=arr;
+            page.comment_type.push(1);
+        });
+        page.order_goods=goods_list;
+
+        //上面是顯示的數據，下面是處理要提交的數據
+
+        commentArr['from_id']=result[0].from_id;
+        commentArr['to_id']=result[0].to_id;
+        commentArr['roll']=result[0].roll;
+        commentArr['level']=0;
+        commentArr['comment']=page.spms+"|"+page.sjtd+"|"+page.fhsd+"|"+page.wlfw;
+        commentArr['allow_uid']='<%= allow_uid %>';
+        console.log(commentArr);
+    });
+
+    $(".comment_now").click(function () {
+        if(page.spms==0)
+        {
+            $.modal({
+                title: "警告",
+                text: "請選擇商品描述",
+                buttons: [
+                    { text: "確定"}
+                ]
+            });
+            return false;
+        }
+        if(page.sjtd==0)
+        {
+            $.modal({
+                title: "警告",
+                text: "請選擇商家態度",
+                buttons: [
+                    { text: "確定"}
+                ]
+            });
+            return false;
+        }
+        if(page.fhsd==0)
+        {
+            $.modal({
+                title: "警告",
+                text: "請選擇發貨速度",
+                buttons: [
+                    { text: "確定"}
+                ]
+            });
+            return false;
+        }
+        if(page.wlfw==0)
+        {
+            $.modal({
+                title: "警告",
+                text: "請選擇物流服務",
+                buttons: [
+                    { text: "確定"}
+                ]
+            });
+            return false;
+        }
+
+        if(page.comment)
+        {
+            page.comment=false;
+            var list=[];
+            $(".list_div").each(function (index) {
+                var ss={};
+                ss['order_goods_uid']=$(this).attr('allow_uid');
+                ss['comment_txt']=$(this).find("textarea").val();
+                ss['level']=page.comment_type[index];
+                list.push(ss);
+            });
+            commentArr['goods_list']=list;
+            console.log(commentArr);
+            console.log(JSON.stringify(commentArr));
+//        $.param()
+            $.post("./comment/comment",{xx:JSON.stringify(commentArr)},function (res) {
+                if(res=='success')
+                {
+                    $.modal({
+                        title: "成功",
+                        text: "評論成功",
+                        buttons: [
+                            { text: "確定",onClick: function(){
+                                window.history.back();
+                            }}
+                        ]
+                    });
+
+                }
+                else
+                {
+                    $.modal({
+                        title: "失敗",
+                        text: "評論失敗",
+                        buttons: [
+                            { text: "確定",onClick: function(){
+                                window.history.back();
+                            }}
+                        ]
+                    });
+
+                }
+            });
+        }
+
+
+    })
+
+
+</script>
+
+<!--文本域计数-->
+<% include footer.html %>

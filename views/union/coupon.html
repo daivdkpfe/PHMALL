@@ -1,0 +1,325 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .weui-navbar{
+        overflow: scroll;
+        height:44px;
+        padding-left: 10px;
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background: white;
+        color: #ff8000;
+    }
+    .weui-navbar__item{
+        width: 80px;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar:after{
+        border:none;
+    }
+    .weui-navbar__item{
+        color: #181818;
+        font-size: 13px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .weui-navbar__item img{
+        height:4px;
+        display: none;
+    }
+    .weui-bar__item--on img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .weui-tab__bd{
+        width: 100vw;
+
+    }
+    .weui-tab{
+
+    }
+    .hide1{
+        width: 327px;
+        float: left;
+        height: 44px;
+        overflow: hidden;
+    }
+    .hide{
+        width: 100vw;
+        overflow:hidden;
+        overflow: scroll;
+        height:44px;
+
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .show{
+        width: 1200px;
+        height:44px;
+    }
+    .categroy{
+        width:68px;
+        margin-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: #181818;
+
+    }
+    .rq{
+        background: white;
+        height: 44px;
+        width: 100vw;
+    }
+    .selected{
+        font-size: 13px;
+        color: #ff8000;
+    }
+    .categroy img{
+        height: 4px;
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        display: none;
+    }
+    .selected img{
+        display: block;
+    }
+    .down{
+        float: left;
+        height:15px;
+        margin: 14.5px 16.5px;
+    }
+    .down_div{
+        float: left;
+        width:48px;
+        height: 44px;
+    }
+    .coupon_div{
+        width: 100vw;
+    }
+    .coupon{
+        width: 335px;
+        height: 174px;
+        background: white;
+        margin: 10px auto;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .coupon_header{
+        width: 335px;
+        height:102px;
+
+    }
+    .color1{
+        background: #d47902;
+    }
+    .color2{
+        background: #00e0ce;
+    }
+    .color3{
+        background:#a7bfe8;
+    }
+    .color4{
+        background:#f05053;
+    }
+    .color5{
+        background:#9eda36;
+    }
+    .color6{
+        background:#ffb5de;
+    }
+    .color7{
+        background:#c779d0;
+    }
+    .bl{
+        width: 335px;
+        position: relative;
+        top:-20px;
+    }
+    .coupon_logo{
+        width: 60px;
+        height: 60px;
+        border: 2px solid white;
+        border-radius: 559px;
+        margin: 20px;
+        float: left;
+        margin-left: 10px;
+    }
+    .coupon_shop_name{
+        width: 100px;
+        float: left;
+        color: white;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .coupon_less{
+        float: left;
+        width: 150px;
+        font-size: 13px;
+        color: white;
+    }
+    .coupon_less_num{
+        color: #b80a2f;
+    }
+    .receive_now{
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        background: linear-gradient(to right,#ffe185,#feb900);
+        border-radius: 6px;
+        float: left;
+        position: relative;
+        top: -18px;
+    }
+    .coupon_bottom{
+        width: 335px;
+        height: 72px;
+        float: left;
+    }
+    .coupon_bottom ul{
+        margin-left: 10px;
+        width: 200px;
+        float: left;
+    }
+    .coupon_bottom li{
+        height: auto;
+        width: 200px;
+        font-size: 13px;
+        line-height:36px;
+        height:22px;
+        color: #454545;
+        margin-left: 14px;
+    }
+    .coupon_price{
+        width: 115px;
+        margin-left: 10px;
+        font-size: 28px;
+        color: #b80a2f;
+        float: left;
+    }
+    .no_more{
+        width: 100vw;
+        text-align: center;
+        font-size: 15px;
+        color: #adadad;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                领券中心
+            </p>
+        </div>
+
+    </div>
+    <!--头部-->
+
+    <div class="coupon_list">
+    <div class="coupon_div" v-for="(coupon,index) in coupon_list">
+        <div class="coupon">
+            <div class="coupon_header" v-bind:class="color[index%7]">
+                <img v-bind:src="'http://192.168.0.105/english/union/'+coupon.coupon_img" class="coupon_logo" alt="">
+                <p class="coupon_shop_name sl1">{{coupon.shop_name}}</p>
+                <p class="coupon_less">截止时间:<d class="coupon_less_num">{{coupon.end_date}}</d></p>
+                <p class="receive_now" v-on:click="receive(coupon.uid)">立即抢</p>
+                <img class="bl" src="images/default_wap/bl.png" alt="">
+            </div>
+            <div class="coupon_bottom">
+                <ul>
+                    <li>
+                        <p>在本店消费满 {{coupon.price_lbound}} 立减 {{coupon.discount}}</p>
+                    </li>
+                    <li>
+                        <p>不与本店其他活动叠加使用</p>
+                    </li>
+                </ul>
+                <p class="coupon_price sl1">₱ {{coupon.discount}}</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select:0,
+            down:false,
+            color:['color1','color2','color3','color4','color5','color6','color7'],
+            index:0,
+            coupon_list:[]
+        },
+        methods:{
+            receive:function (uid) {
+               $.post('./coupon/receive',{uid:uid,supid:'<%= supid %>'},function (result) {
+                   if(result==1)
+                   {
+                       $.notification({
+                           title: "领取优惠卷",
+                           text: "领取成功",
+                           onClose: function(data) {
+                           }
+                       });
+                   }
+                   else
+                   {
+                       $.notification({
+                           title: "领取优惠卷",
+                           text: result,
+                           onClose: function(data) {
+                           }
+                       });
+                   }
+               })
+            }
+        }
+    });
+    $.post("./coupon",{supid:'<%= supid %>'},function (result) {
+
+        page.coupon_list=result;
+    });
+
+
+
+
+
+
+
+</script>
+
+<% include footer.html %>

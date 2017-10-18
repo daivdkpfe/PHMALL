@@ -1,0 +1,698 @@
+<% include header_index.html %>
+
+<style>
+	body{
+		background: #f3f3f3;
+		width: 100vw;
+		overflow-x: hidden;
+	}
+	.header{
+		width: 100vw;
+		background: linear-gradient(to right,#ffbb07,#ff8000);
+
+	}
+	.index_logo{
+		width: 35px;
+		display: block;
+		margin: 0 auto;
+		padding-top: 12px;
+	}
+	.header_top{
+		width: 100vw;
+		position:absolute;
+		top: 0;
+		z-index: 2;
+	}
+	.header_top img{
+		width: 20px;
+		margin: 12px 20px;
+	}
+
+	.swiper-container img{
+		width: 100vw;
+
+	}
+	.swiper-slide{
+		width: 100vw;
+		height:143px;
+	}
+	.swiper-slide img{
+		width: 100vw;
+		height:180px;
+	}
+	/*.swiper_bottom img{*/
+		/*width: 100vw;*/
+		/*margin-bottom: 0;*/
+		/*padding-bottom: 0;*/
+		/*border-bottom: 0;*/
+	/*}*/
+	/*.swiper_bottom{*/
+		/*position: relative;*/
+		/*z-index: 2;*/
+		/*top: 7px;*/
+		/*margin-bottom: 0;*/
+		/*padding-bottom: 0;*/
+		/*border-bottom: 0;*/
+	/*}*/
+	.categroy_div{
+		background: white;
+		margin-left: 15px;
+		height:auto;
+		width: 395px;
+	}
+	.cagegroy{
+		width: 50px;
+		background: white;
+		float: left;
+		margin-right: 24px;
+		margin-bottom: 13px;
+	}
+	.cagegroy img{
+		width: 40px;
+		float: left;
+		margin: 0 5px;
+
+	}
+	.cagegroy p{
+		width: 50px;
+		float: left;
+		font-size: 10px;
+		color: #535353;
+	}
+	.categroy_div_big{
+		width: 100vw;
+		float: left;
+		padding-top: 20px;
+		background: white;
+		margin-top: 0;
+		border-top: 0;
+
+	}
+	.coupon_div{
+		width: 100vw;
+		height:160px;
+		float: left;
+		background: white;
+		margin-top: 10px;
+		border-radius: 12px 12px 0 0;
+		overflow: hidden;
+	}
+	.add_img{
+		width: 100vw;
+		float: left;
+		height:100px;
+		margin-bottom: 11px;
+	}
+	.zxrd_img{
+		width: 38px;
+		height: 40px;
+		margin-left: 20px;
+		float: left;
+	}
+	.zxrd_title{
+		color: #454545;
+		font-size: 13px;
+		float: left;
+		margin-left: 34px;
+		line-height: 20px;
+		width: 200px;
+	}
+	.flash_sale{
+		margin-top: 10px;
+		height: 210px;
+		width: 100vw;
+		float: left;
+		border-radius: 12px 12px 0 0;
+		overflow: hidden;
+	}
+	.flash_sale_header{
+		width: 100vw;
+		height:40px;
+		background: white;
+	}
+	.flash_sale_ico{
+		width: 20px;
+		height:20px;
+		margin-top: 10px;
+		margin-left: 20px;
+		float: left;
+	}
+	.flash_sale_title{
+		margin-right: 20px;
+		margin-left: 20px;
+		line-height: 40px;
+		font-size: 18px;
+		color: #b80a2f;
+		float: left;
+	}
+
+
+
+	.inner {
+		border-radius: 6px;
+		width: 100px;
+		height: 149px;
+		background: white;
+		margin-top: 10px;
+		float: left;
+		text-align: left;
+		margin-right: 10px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		overflow: hidden;
+	}
+	.container {
+		margin-left: 20px;
+		height:170px;
+	}
+
+	.display {
+		background: white;
+		width: 100vw;
+		overflow: scroll;
+	}
+	::-webkit-scrollbar {/*隐藏滚轮*/
+		display: none;!important;
+	}
+	.goods_img{
+		width: 100px;
+		height:100px;
+	}
+	.goods_sale_price{
+		font-size: 15px;
+		color: #b80a2f;
+		width: 95px;
+		text-align: left;
+		margin: 0 auto;
+	}
+	.goods_price{
+		font-size: 12px;
+		text-decoration: line-through;
+		color: #454545;
+		width: 95px;
+		text-align: left;
+		margin: 0 auto;
+	}
+	.ad_div1 img{
+		width: 100vw;
+		height:120px;
+	}
+	.ad_div2
+	{
+		background: #EFEFF4;
+		width: 376px;
+		height:201px;
+	}
+	.ad_div2 img{
+		float: left;
+		width: 187px;
+		height:100px;
+		margin-bottom: 1px;
+		margin-right: 1px;
+	}
+	.ad_div3{
+		width: 100vw;
+		height:222px;
+	}
+	.ad_div3 img{
+		border-radius: 24px;
+		margin-top: 11px;
+		margin-left: 20px;
+		width: 335px;
+		height:201px;
+	}
+	.categroy2_div{
+		height:640px;
+		width: 100vw;
+		background: white;
+		border-radius: 12px 12px 0 0;
+		overflow: hidden;
+	}
+	.weui-grid__label{
+		font-size: 15px;
+		color: #454545;
+		line-height: 41px;
+	}
+	.weui-grid__icon{
+		width: 88px;
+		height:88px;
+	}
+	.weui-grid:after{
+		border-bottom: none;
+	}
+	.weui-grids:before{
+		border-top: none;
+	}
+	.weui-grid:before{
+		border-right: none;
+	}
+	.weui-grid{
+		width: 107px;
+		height: 137px;
+		padding: 0;
+		margin: 10px 9px 0 9px;
+		border-radius: 12px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.08);
+
+	}
+	.categroy2_header{
+		height:40px;
+		width: 100vw;
+		border-bottom: 1px solid #EFEFF4;
+	}
+	.categroy2_header_ico{
+		background: url("./images/default_wap/categroy.png");
+		width: 20px;
+		height: 20px;
+		margin: 10px 20px 0 20px;
+		background-size: 20px 20px;
+		float: left;
+	}
+	.categroy2_header_lable{
+		float: left;
+		font-size: 18px;
+		color: #febc09;
+		line-height: 40px;
+	}
+	.ad_div4{
+		width: 100vw;
+		height:120px;
+	}
+	.ad_div4 img{
+		width: 100vw;
+		height:120px;
+	}
+
+	/*瀑布流*/
+	.left{
+		width: 172px;
+		float: left;
+		margin-right: 10px;
+	}
+	.right{
+		width: 172px;
+		float: right;
+
+	}
+	.left div,.right div{
+		margin-top: 10px;
+	}
+	/*瀑布流*/
+	.ppl{
+		width: 355px;
+		margin: 0 auto;
+	}
+	.right_top_ad{
+		width: 172px;
+		height:200px;
+	}
+	.ppl_goods_div{
+		width: 172px;
+		border-radius: 12px;
+		background: white;
+		overflow: hidden;
+	}
+	.ppl_goods_div img{
+		width: 172px;
+		height:172px;
+		float: left;
+	}
+	.ppl_goods_title{
+		width: 152px;
+		padding-left:10px;
+		font-size: 13px;
+		color: #454545;
+	}
+	.ppl_goods_price{
+		width: 152px;
+		padding-left:10px;
+		font-size: 15px;
+		color: #b80a2f;
+	}
+
+
+	.swiper-container{
+		width: 100vw;
+	}
+	.swiper-slide{
+		width: 100vw;
+	}
+	.swiper-wrapper{
+		width: 100vw;
+	}
+
+	.countdown{width:100%;color:#000;line-height: 20px;font-size:14px;padding-top: 10px;
+	}
+	.countdown span{ background:linear-gradient(to right,rgba(255,11,53,1),rgba(173,17,50,1));color: #fff;border-radius: 5px;padding: 3px;}
+</style>
+<div class="big_div">
+
+
+<div class="header h44">
+	<img class="index_logo" src="images/default_wap/index_logo.png" alt="">
+	<div class="header_top h44">
+		<a href="./search"><img src="images/default_wap/index_search.png" class="fl" alt=""></a>
+		<img src="images/default_wap/index_change.png" class="fr" alt="">
+	</div>
+</div>
+<!--头部-->
+<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" v-for="flash in flashs"><a v-bind:href="flash.url"><img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+flash.pic" alt=""></a></div>
+		<!--<div class="swiper-slide"><img src="images/default_wap/1.png" alt=""></div>-->
+		<!--<div class="swiper-slide"><img src="images/default_wap/2.png" alt=""></div>-->
+		<!--<div class="swiper-slide"><img src="images/default_wap/3.png" alt=""></div>-->
+	</div>
+</div>
+
+<!--轮播-->
+
+<div class="categroy_div_big">
+	<div class="categroy_div">
+		<div class="cagegroy"><a href="./category?cat=1"><img src="images/default_wap/categroy01.png" alt=""><p>服装鞋包</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=2"><img src="images/default_wap/categroy02.png" alt=""><p>美妆护理</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=3"><img src="images/default_wap/categroy03.png" alt=""><p>珠宝手表</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=4"><img src="images/default_wap/categroy04.png" alt=""><p>母婴玩具</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=5"><img src="images/default_wap/categroy05.png" alt=""><p>数码家电</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=6"><img src="images/default_wap/categroy06.png" alt=""><p>家居装修</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=7"><img src="images/default_wap/categroy07.png" alt=""><p>户外运动</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=8"><img src="images/default_wap/categroy08.png" alt=""><p>旅游度假</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=9"><img src="images/default_wap/categroy09.png" alt=""><p>吃喝玩乐</p></a></div>
+		<div class="cagegroy"><a href="./category?cat=0"><img src="images/default_wap/categroy10.png" alt=""><p>更多分类</p></a></div>
+	</div>
+</div>
+<!--分类-->
+<div class="coupon_div">
+	<a v-bind:href="coupon.url"><img class="add_img" src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+coupon.pic" alt=""></a>
+	<a href="news"><img class="zxrd_img" src="images/default_wap/zxrd.png" alt=""></a>
+	<p class="zxrd_title">真皮沙发 VS 布艺沙发</p>
+	<p class="zxrd_title">真皮沙发 VS 布艺沙发</p>
+</div>
+<!--咨询热点-->
+
+<div class="flash_sale">
+	<div class="flash_sale_header">
+		<img class="flash_sale_ico" src="images/default_wap/flash_sale_ico.png" alt="">
+		<p class="flash_sale_title">限时秒杀</p>
+		<div class="page-bd-15">
+			<div class="countdown"></div>
+		</div>
+	</div>
+	<div class="display">
+		<div class="container" v-bind:style="'width:'+goods_num+'px;'">
+			<div class="inner" v-for="flash_sale in flash_sales">
+				<a v-bind:href="'http://192.168.0.105:88/union/product?uid='+flash_sale.uid+'&setp=2'"><img class="goods_img" v-bind:data-src="'http://192.168.0.105/english/union/'+flash_sale.goods_file1" src="images/default_wap/load.png" alt="">
+				<p class="goods_sale_price sl1">₱ {{flash_sale.goods_sale_price}}</p>
+				<p class="goods_price sl1">₱ {{flash_sale.price}}</p></a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!--限时秒杀-->
+
+<div class="ad_div1">
+	<a v-bind:href="ad1.url"><img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad1.pic" alt=""></a>
+</div>
+
+<div class="ad_div2">
+	<a v-for="ad2 in ad2s" v-bind:href="ad2.url" ><img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad2.pic" alt=""></a>
+</div>
+
+<div class="ad_div3">
+	<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad3.pic" alt="">
+</div>
+
+<div class="categroy2_div">
+	<div class="categroy2_header">
+		<div class="categroy2_header_ico"></div>
+		<p class="categroy2_header_lable">分类专栏</p>
+	</div>
+	<div class="weui-grids">
+		<a href="category?cat=1" class="weui-grid js_grid">
+		<p class="weui-grid__label">
+			服装鞋包
+		</p>
+		<div class="weui-grid__icon">
+			<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate1.pic" alt="">
+		</div>
+
+		</a>
+		<a  href="category?cat=2" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				美妆护理
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate2.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=3" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				珠宝手表
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate3.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=4" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				母婴玩具
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate4.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=5" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				数码家电
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate5.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=6" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				家居装修
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate6.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=7" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				户外运动
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate7.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=8" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				旅游度假
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate8.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=9" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				吃喝玩乐
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate9.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=10" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				阅读娱乐
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate10.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=11" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				车辆交通
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate11.pic" alt="">
+			</div>
+
+		</a>
+		<a  href="category?cat=12" class="weui-grid js_grid">
+			<p class="weui-grid__label">
+				生活服务
+			</p>
+			<div class="weui-grid__icon">
+				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate12.pic" alt="">
+			</div>
+
+		</a>
+
+	</div>
+</div>
+<!--分类专栏-->
+
+
+<div class="ad_div4">
+	<a v-bind:href="ad4.url"><img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad4.pic" alt=""></a>
+</div>
+<!--广告-->
+
+
+<div class="ppl">
+	<div class="left" id="left" v-html="left"></div>
+	<div class="right" id="right" v-html="right"></div>
+</div>
+<!--瀑布流-->
+
+	<% include bottom_div.html %>
+
+</div>
+
+
+<script>
+
+
+
+var left=0;
+var right=0;
+function add_to_ppl(str) {
+	if(left<right)
+	{
+		page.left=page.left+str;
+		left++;
+	}
+	else
+	{
+		page.right=page.right+str;
+
+		right++;
+	}
+
+}
+
+var page = new Vue({
+	el: '.big_div',
+	data: {
+		flashs:[],
+		coupon:"",
+		left:'',
+		right:"",
+		flash_sales:[],
+		goods_num:0,
+		ad1:'',
+		ad2s:'',
+		ad3:'',
+		ad4:'',
+		cate1:'',
+		cate2:'',
+		cate3:'',
+		cate4:'',
+		cate5:'',
+		cate6:'',
+		cate7:'',
+		cate8:'',
+		cate9:'',
+		cate10:'',
+		cate11:'',
+		cate12:''
+	}
+});
+
+/*開始處理數據*/
+
+$.post("./index",{},function(result){
+	console.log(result);
+	page.flashs=result.default_wap_flash;
+	page.coupon=result.default_wap_coupon["0"];
+	page.ad1=result.default_wap_ad_1["0"];
+	page.ad2s=result.default_wap_ad_2;
+	page.ad3=result.default_wap_ad_3['0'];
+	page.cate1=result.default_wap_categroy_1["0"];
+	page.cate2=result.default_wap_categroy_2["0"];
+	page.cate3=result.default_wap_categroy_3["0"];
+	page.cate4=result.default_wap_categroy_4["0"];
+	page.cate5=result.default_wap_categroy_5["0"];
+	page.cate6=result.default_wap_categroy_6["0"];
+	page.cate7=result.default_wap_categroy_7["0"];
+	page.cate8=result.default_wap_categroy_8["0"];
+	page.cate9=result.default_wap_categroy_9["0"];
+	page.cate10=result.default_wap_categroy_10["0"];
+	page.cate11=result.default_wap_categroy_11["0"];
+	page.cate12=result.default_wap_categroy_12["0"];
+	page.ad4=result.default_wap_ad_4['0'];
+	add_to_ppl('<div style="width: 172px;"><a href="'+result.default_wap_ad_5['0'].url+'"><img class="right_top_ad" src="images/default_wap/load.png" data-src="http://192.168.0.105/english/'+result.default_wap_ad_5['0'].pic+'" alt=""></div></a>');
+	result.default_wap_hot_shop.forEach(function (item,index) {
+
+		add_to_ppl('<div class="ppl_goods_div"><a href="./union/product?uid='+item.goods_id+'&setp=1"><img class="right_top_ad" data-src="http://192.168.0.105/english/'+item.goods_pic+'" src="images/default_wap/load.png" alt=""><p class="ppl_goods_title">'+item.goods_name+'</p><p class="ppl_goods_price">'+item.goods_price+'</p></a></div>');
+
+	});
+
+
+});
+$.post("./index/get_onsale",{},function(result){
+
+	page.flash_sales=result;
+	page.goods_num=result.length*110+20*2;
+});
+$(".weui-tabbar").find("a").eq(0).addClass('weui-bar__item--on').find('img').attr('src','./images/default_wap/index1.png')
+/*開始處理數據*/
+
+</script>
+
+<script>
+	var t =53709;//秒数
+	function showtime(){
+		var d = parseInt(t/3600/24);
+		if(d<10){
+			d="0"+d;
+		}
+		var h = parseInt((t%(3600*24))/3600);
+		if(h<10){
+			h="0"+h;
+		}
+		var m = parseInt((t%(3600*24))%3600/60);
+		if(m<10){
+			m="0"+m;
+		}
+		var s = parseInt((t%(3600*24))%60);
+		if(s<10){
+			s="0"+s;
+		}
+
+		var a=(d=="00")?"":'';
+		var b=(h=="00")?"":'<span>'+h+'</span> :';
+		var c=(m=="00")?"":'<span>'+m+'</span> :';
+		var d=(s=="00")?'<span>'+s+'</span>':'<span>'+s+'</span>';
+		$('.countdown').html(a+b+c+d);
+		t = t -1;
+	}
+	showtime();
+	setInterval("showtime()",1000);
+</script>
+<script>
+	$(document).ready(function () {
+		$(".swiper-container").swiper({
+			loop: true,
+			autoplay: 3000,
+//        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+//        observeParents: true//修改swiper的父元素时，自动初始化swiper
+			observer: true,//修改swiper自己或子元素时，自动初始化swiper
+			observeParents: false,//修改swiper的父元素时，自动初始化swiper
+			onSlideChangeEnd: function (swiper) {
+				swiper.update();
+			}
+		});
+	});
+
+</script>
+<% include footer.html %>

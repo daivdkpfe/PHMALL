@@ -1,0 +1,213 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    body{
+        background: rgb(243,243,243);
+    }
+
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .search_margin_div{
+        margin: 0 10px;
+        height:44px;
+    }
+    .input_again{
+        width: 40px;
+        height:30px;
+        /*border-top: 7px solid rgba(0,0,0,0);*/
+        margin-top: 7px;
+        float: left;
+        border-radius: 6px 0 0 6px;
+        background: #EEE;
+    }
+    .search_input{
+        width: 260px;
+        height:30px;
+        float: left;
+        border: none;
+        background: #EEE;
+        border-radius: 0 6px 6px 0;
+        margin-top: 7px;
+    }
+    .input_again img{
+        width: 20px;
+        height:20px;
+        margin: 5px 10px;
+    }
+    input,textarea{outline:none;}
+    .btn{
+        width: 55px;
+        text-align: center;
+        height:44px;
+        line-height: 44px;
+    }
+    .mt10{
+        margin-top: 10px;
+    }
+    .brand_title{
+        width: 100vw;
+        height:90px;
+        background: white;
+        border-radius: 12px 12px 0 0;
+    }
+    .brand_title img{
+        width: 130px;
+        height:60px;
+        margin-top: 15px;
+        margin-left: 10px
+    }
+    .brand_title_p{
+        width: 200px;
+        line-height:40px;
+    }
+    .brand_title_url{
+        width: 200px;
+        line-height:40px;
+    }
+
+    .product_list{
+        width: 100vw;
+    }
+    .product_div{
+        width: 172px;
+        height:272px;
+        background: white;
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .product_img{
+        width: 172px;
+        height:172px;
+    }
+    .product_name{
+        margin: 0 10px;
+        color: black;
+    }
+    .product_price{
+        margin: 0 10px;
+        color: #b80a2f;
+        line-height: 50px;
+    }
+
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+
+            <div class="search_margin_div">
+                <div class="left">
+                    <div class="input_again">
+                        <img src="images/default_wap/search1.png" alt="">
+                    </div>
+                    <input type="text" class="search_input" placeholder="請輸入你要查找的品牌">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mt10 brand_title">
+        <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+brand_logo" class="fl" alt="">
+        <p class="brand_title_p fl sl1">
+            {{brand_name}}
+        </p>
+        <p class="brand_title_url sl1 fl">品牌官網:<a style="color: black" :href="brand_url">點我訪問</a></p>
+    </div>
+
+
+    <div class="product_list">
+        <div class="product_div" v-for="product in product_list">
+            <a :href="'./union/product?setp=1&uid='+product.uid">
+            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+product.goods_file1" class="product_img" alt="">
+            <p class="product_name sl2">{{product.goods_name}}</p>
+            <p class="sl1 product_price">₱ {{product.goods_sale_price}}</p>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            start:0,
+            cat:'<%= cat %>',
+            product_list:[],
+            brand_name:'',
+            brand_logo:'',
+            brand_url:''
+        },
+        methods:{
+            get_cate:function (index,cate_uid) {
+                this.select=index+1;
+            }
+        },
+        mounted:function () {
+            var s=this;
+            $.post('/brand_product/brand',{cat:this.cat},function (result) {
+                console.log(result);
+                s.brand_name=result[0].brandname;
+                s.brand_logo=result[0].logo;
+                s.brand_url=result[0].weburl;
+            })
+            $.post('./brand_product',{cat:this.cat,start:this.start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length!=0)
+                {
+                    result.forEach(function (item,index) {
+                        s.product_list.push(item);
+                        s.start=s.start+1;
+                    })
+                }
+                else{
+                    $.modal({
+                        title: "警告",
+                        text: "已经没有啦~",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                }
+            });
+        }
+    });
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

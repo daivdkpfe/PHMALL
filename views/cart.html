@@ -1,0 +1,482 @@
+<% include header_index.html %>
+<style>
+    body{
+        background: rgb(239,239,244);
+    }
+    .cart_title{
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        width: 100vw;
+        text-align: center;
+        line-height: 44px;
+    }
+    .header{
+        width: 100vw;
+        height:44px;
+        background: linear-gradient(to right,#ffa500,#ff802a);
+    }
+    .header img{
+        width: 20px;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+    }
+    .shop_ico{
+        width: 23px;
+        height:23px;
+        margin-top: 10.5px;
+        float: left;
+    }
+    .shop_div{
+        padding: 0;
+        height:44px;
+    }
+    .weui-cell__bd p{
+        float: left;
+        line-height: 44px;
+        font-size: 16px;
+        color: #5a5a5a;
+        margin-left: 10px;
+    }
+    .shop_list{
+        border-radius: 12px 12px 0 0;
+    }
+    .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{
+        color: rgb(255,128,0);
+    }
+    .goods_list{
+        clear: left;
+        height: 121px;
+        width: 100vw;
+    }
+    .weui-cell{
+        padding:0;
+    }
+    .goods_img{
+        width: 100px;
+        height:100px;
+        margin-top: 10px;
+        float: left;
+    }
+    .goods_value{
+        height:121px;
+    }
+    .goods_name{
+        float: left;
+        margin-top: 10px;
+        width: 216px;
+        color: #5a5a5a !important;
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+    .goods_attr{
+        width: 216px;
+        color: #adadad !important;
+        line-height: 30px !important;
+        font-size: 13px !important;
+    }
+    .goods_price{
+        width: 180px;
+        font-size: 15px !important;
+        color: #b70029 !important;
+        line-height: 30px !important;
+    }
+    .goods_num{
+        line-height: 30px !important;
+        font-size: 15px !important;
+        color: #adadad !important;
+    }
+    .weui-cell:before{
+        left: 0;
+    }
+    .cnxh{
+        width: 187px;
+        text-align: center;
+        height:30px;
+        margin: 0 auto;
+    }
+    .cnxh hr{
+        width: 50px;
+        float: left;
+        line-height: 30px;
+        margin-top: 10.5px;
+    }
+    .cnxh p{
+        width: 83px;
+        text-align: center;
+        font-size: 13px;
+        color: #454545;
+        line-height: 30px;
+        float: left;
+    }
+    .cnxh_goods_list{
+        width: 100vw;
+        height: auto;
+
+    }
+    .goods_list_div{
+        width: 172px;
+        height:272px;
+        background:white;
+        margin-left: 10px;
+        border-radius: 6px;
+        float: left;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .goods_list_img{
+        width: 172px;
+        height:172px;
+    }
+    .goods_list_name{
+        width: 152px;
+        margin: 0 auto;
+        line-height: 25px;
+        height:50px;
+        font-size: 13px !important;
+        color: #454545 !important;
+    }
+    .goods_list_price{
+        font-size: 15px;
+        color: #b80a2f;
+        width: 152px;
+        margin: 0 auto;
+        line-height: 50px;
+    }
+    .bottom{
+        height:110px;
+    }
+    .settlement_div,.edit_div{
+        width: 100vw;
+        height:49px;
+        background:white;
+        position: fixed;
+        bottom: 53px;
+    }
+
+    .settlement_div .weui-check__label,.edit_div .weui-check__label{
+        margin: 0;
+        height:50px;
+    }
+    .settlement_div .weui-cells_checkbox ,.edit_div .weui-cells_checkbox{
+        margin: 0 ;
+    }
+    .settlement_div .goods_value ,.edit_div .goods_value{
+        height:50px;
+    }
+    .all_select{
+        line-height: 50px !important;
+        color: #454545 !important;
+        font-size: 16px !important;
+    }
+    .settlement_now,.favorite_now,.det_now{
+        width: 100px;
+        height:49px;
+        line-height: 49px;
+        background: linear-gradient(to right,#ffa500,#ff802a);
+        text-align: center;
+    }
+    .settlement_now p,.favorite_now p,.det_now p{
+        width: 100px;
+        text-align: center;
+        margin: 0;
+        color: white;
+        height:49px;
+        line-height: 49px;
+    }
+    .favorite_now{
+        background: #ffa500 !important;
+    }
+    .det_now{
+        background: #ff802a !important;
+    }
+    .settlement_div .shop_list,.edit_div .shop_list{
+        border-radius: 0;
+    }
+    .settlement_info{
+        width: 150px;
+        height:49px;
+    }
+    .freight{
+        width: 130px !important;
+        font-size: 13px !important;
+        color: #adadad !important;
+        height:24px !important;
+        line-height: 24px !important;
+        text-align: right !important;
+    }
+    .all_goods_num{
+        width: 130px !important;
+        font-size: 15px !important;
+
+        height:24px !important;
+        line-height: 24px !important;
+        text-align: right !important;
+    }
+    .all_goods_num c{
+        color: #B70029 !important;
+    }
+    .no_product_img{
+        width: 217px;
+        display: block;
+        height:247px;
+        margin:54px auto;
+    }
+    .edit_div label,.settlement_div label{
+        width: 100px;
+    }
+    .edit_div .weui-check__label:active ,.settlement_div .weui-check__label:active{
+        background: none;
+    }
+</style>
+
+<div class="big_div">
+
+<div class="h44 header">
+    <p class="cart_title h44">购物车({{cart_num}})</p>
+    <img src="images/default_wap/edit.png" alt="" v-on:click="edit_cart()">
+</div>
+
+<div class="have_product">
+<div class="weui-cells weui-cells_checkbox shop_list" v-for="cart_list in carts_list">
+    <label class="weui-cell weui-check__label shop_div">
+        <div class="weui-cell__hd">
+
+        </div>
+        <div class="weui-cell__bd">
+            <img class="shop_ico" src="images/default_wap/shop.png" alt="">
+            <p>{{cart_list["0"].shop_name}}</p>
+        </div>
+    </label>
+
+    <label class="weui-cell weui-check__label goods_list shop_11" v-for="goods in cart_list" v-bind:for="goods.uid+goods.module">
+        <div class="weui-cell__hd">
+            <input type="checkbox" class="weui-check" name="checkbox1" v-bind:id="goods.uid+goods.module" v-on:click="prices()" v-bind:module="goods.module"  v-bind:uid="goods.uid" v-bind:g_uid="goods.g_uid">
+            <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd goods_value">
+            <img class="goods_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+goods.goods_file1" alt="">
+            <p class="goods_name sl2">{{goods.goods_name}}</p>
+            <p class="goods_attr sl1">{{goods.attr}}</p>
+            <p class="goods_price sl1 fl">₱ <d class="good_price">{{goods.cart_price}}</d></p>
+            <p class="fr goods_num">*<d class="good_num">{{goods.cart_num}}</d>  </p>
+        </div>
+    </label>
+
+</div>
+</div>
+<!--一家店鋪-->
+<div class="cnxh">
+    <hr><p>收藏夹</p><hr>
+</div>
+<!--猜你喜欢 文字-->
+<div class="cnxh_goods_list">
+    <div class="goods_list_div" v-for="favorite in favorites">
+        <a v-bind:href="'./union/product?uid='+favorite.f_uid+'&setp=1'">
+        <img src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+favorite.goods_file1" class="goods_list_img" alt="">
+        <p class="goods_list_name sl2">{{favorite.goods_name}}</p>
+        <p class="goods_list_price">₱ {{favorite.goods_sale_price}}</p>
+        </a>
+    </div>
+</div>
+<!--猜你喜欢商品列表-->
+
+
+
+
+<div class="settlement_div" v-if="!edit">
+    <div class="weui-cells weui-cells_checkbox shop_list">
+        <label class="weui-cell weui-check__label goods_list fl" for="settlement">
+            <div class="weui-cell__hd">
+                <input type="checkbox" class="weui-check all_checked" name="checkbox1" id="settlement" v-on:click="all_prices()">
+                <i class="weui-icon-checked"></i>
+            </div>
+            <div class="weui-cell__bd goods_value">
+                <p class="all_select">全选</p>
+
+            </div>
+        </label>
+        <div class="settlement_now fr">
+            <p>结算</p>
+        </div>
+        <div class="settlement_info fr">
+            <p class="freight">不含运费</p>
+            <p class="all_goods_num">合计 <c>₱ {{price}}</c></p>
+        </div>
+    </div>
+</div>
+<!--结算栏-->
+<div class="edit_div" v-if="edit">
+        <div class="weui-cells weui-cells_checkbox shop_list">
+            <label class="weui-cell weui-check__label goods_list fl" for="edit">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check all_checked" name="checkbox1" id="edit" v-on:click="all_prices()">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd goods_value">
+                    <p class="all_select">全选</p>
+
+                </div>
+            </label>
+            <div class="det_now fr" v-on:click="det_shop_cart()">
+                <p>删除</p>
+            </div>
+            <div class="favorite_now fr" v-on:click="set_favorite()">
+                <p>加入收藏夹</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".weui-tabbar").find("a").eq(2).addClass('weui-bar__item--on').find('img').attr('src','./images/default_wap/shop_cart1.png');
+    //        alert($("[name=checkbox1]").attr("checked"));
+</script>
+
+
+<script>
+    var page = new Vue({
+    el: '.big_div',
+    data: {
+        carts_list:[],
+        cart_num:0,
+        all_price:0,
+        price:0,
+        favorites:[],
+        edit:false
+    },
+    methods:{
+        prices:function () {
+            this.price=0;
+            var price=0;
+            var i=0;
+            $(".weui-check:checked").each(function () {
+                if(typeof($(this).parent().parent().find(".goods_price").html()) != "undefined")
+                {
+                    price=price+parseFloat($(this).parent().parent().find(".good_price").html())*parseInt($(this).parent().parent().find(".good_num").html());
+                    i++;
+                }
+
+            });
+            if(i!=$(".weui-check").length-1)
+            {
+
+                $(".all_checked").prop("checked",false);
+            }
+            this.price=price;
+        },
+        //有选中的时候计算
+        all_prices:function () {
+            if($('.all_checked').is(":checked"))
+            {
+                $(".weui-check").each(function () {
+                $(this).prop("checked",true);
+                });
+                this.prices();
+            }
+            else
+            {
+
+                $(".weui-check").each(function () {
+                    $(this).prop("checked",false);
+                });
+                this.prices();
+            }
+        },
+        //全选
+        edit_cart:function () {
+
+            this.edit=!this.edit;
+        },
+//        点击编辑
+        set_favorite:function () {
+            $(".weui-check:checked").each(function () {
+
+               $.post("./favorite/set_favorite",{module:$(this).attr('module'),t:1,f:$(this).attr('g_uid')},function (result) {
+
+               });
+                $.notification({
+                    title: "添加收藏",
+                    text: "收藏成功",
+                    onClose: function(data) {
+
+                    }
+                });
+            });
+        },
+        //添加到收藏
+        det_shop_cart:function () {
+            $(".weui-check:checked").each(function () {
+                var s=$(this);
+                $.post("./cart/detele",{uid:$(this).attr("uid")},function (result) {
+                    if(result==1)
+                    {
+
+                        var parent=s.parent().parent().parent();
+                        s.parent().parent().remove();
+                        if(parent.find('label').length==1)
+                        {
+                            parent.remove();
+                        }
+
+                        $.notification({
+                            title: "移出购物车",
+                            text: "删除成功",
+                            onClose: function(data) {
+                            }
+                        });
+                    }
+                    else{
+                        $.notification({
+                            title: "移出购物车",
+                            text: "删除失败",
+                            onClose: function(data) {
+                            }
+                        });
+                    }
+                });
+
+            });
+        }
+        //移除购物车
+    },
+    computed:{
+
+    }
+});
+</script>
+<!--VUE-->
+<script>
+    $.post('./cart',{},function (result) {
+
+
+       if(result[0].length>0)
+       {
+
+           page.carts_list=result;
+
+           result.forEach(function (item,index) {
+               item.forEach(function (items,indexs) {
+                   page.cart_num=page.cart_num+items.cart_num;
+                   page.all_price=page.all_price+(items.cart_num*items.cart_price);
+               })
+           });
+       }
+       else
+       {
+
+           $(".have_product").html("<img class='no_product_img' src='images/default_wap/no_product.png'>");
+       }
+
+    });
+
+    $.post('/favorite/get_favorite',{t:1,num:4,ism:1},function (result) {
+        console.log(result);
+        page.favorites=result;
+    });
+</script>
+
+<!--数据-->
+<% include bottom_div.html %>
+<!--底部栏-->
+<% include footer.html %>

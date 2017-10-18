@@ -1,0 +1,547 @@
+<% include header_index.html %>
+
+
+<script src="images/default_wap/scoket.js"></script>
+<style>
+    .head{
+        height: 44px;
+        width: 100vw;
+        position: fixed;
+        z-index: 2;
+        top:10px;
+    }
+
+    .head img{
+        width: 25px;
+        height:25px;
+        margin: 9.5px 20px;
+    }
+    .main{
+        width: 100vw;
+        height:100vh;
+
+    }
+    .RegisterMain,.RegisterMainNext{
+        width:100vw;
+        height:100vh;
+
+    }
+    .main img,.RegisterMain img,.RegisterMainNext img{
+        display: block;
+        width: 70px;
+        margin:0 auto;
+        padding-top: 150px;
+        margin-bottom: 20px;
+    }
+    .RegisterMainNext{
+        display: none;
+    }
+    .PHMALL_TITLE{
+        height:30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 24px;
+        color: rgb(255,147,2);
+        margin-bottom: 30px;
+    }
+    .LoginButton,.NextButtons,.RegisterButtons{
+        width: 335px;
+        margin: 0 auto;
+        height:44px;
+        background: linear-gradient(to right,rgb(255,187,6),rgb(255,127,0));
+        color: white;
+        line-height:44px;
+        text-align: center;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+    .RegisterButtons{
+        float: left;
+        margin-left: 20px;
+    }
+    .oauth_div p{
+        float: left;
+        margin: 0 10px;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgb(191,191,191);
+    }
+    .NameInput,.PassInput,.ConPassInput{
+        width: 335px;
+        background: none;
+        margin: 0 20px;
+        height: 45px;
+        border: none;
+        color: #454545;
+        outline: none;
+        font-size: 18px;
+        text-indent: 10px;
+    }
+    .Chose_phone{
+        margin: 0 0 0 20px;
+        width: 75px;
+        float: left;
+        height: 45px;
+        border: none;
+        background: none;
+        color: #454545;
+        outline: none;
+        font-size: 18px;
+        text-align: center;
+        line-height:44px;
+        text-indent: 10px;
+        border-right: 1px solid rgb(255,192,111);
+    }
+    .PhoneNumber{
+        width: 259px;
+        background: none;
+        height: 45px;
+        border: none;
+        color: #454545;
+        outline: none;
+        font-size: 18px;
+        text-indent: 10px;
+    }
+    .PhoneCode{
+        margin: 0 0 0 20px;
+        width: 156px;
+        background: none;
+        height: 45px;
+        border: none;
+        color: #454545;
+        outline: none;
+        font-size: 18px;
+        text-indent: 10px;
+        float: left;
+    }
+    .DaGeLan{
+        width: 335px;
+        height:1px;
+        background: linear-gradient(to right,rgba(255,187,6,0.5),rgba(255,127,0,0.6));
+        margin: 0 20px;
+        margin-bottom: 30px;
+    }
+    .XiaoGeLan{
+        width: 156px;
+        height:1px;
+        background: linear-gradient(to right,rgba(255,187,6,0.5),rgba(255,127,0,0.6));
+        margin: 0 20px;
+        margin-bottom: 30px;
+        float: left;
+        clear: left;
+    }
+    ::-webkit-input-placeholder {
+        text-indent: 10px;
+        background: none;
+        color: #adadad;
+        font-size: 18px;
+    }
+    input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
+    .raf p a{
+        color: #454545;
+        font-size: 15px;
+        margin: 20px;
+    }
+    .weui-actionsheet__cell{
+        color: #f60;
+    }
+    .color-warning{
+        color: #000;
+    }
+    .SendButton{
+        width: 158px;
+        height:44px;
+        background: linear-gradient(to right,rgb(255,187,6),rgb(255,127,0));
+        float: left;
+        margin-left: 20px;
+        border-radius: 6px;
+        color: white;
+        font-size: 18px;
+        line-height: 44px;
+        text-align: center;
+    }
+    .check_id{
+        margin:0px;
+        padding-top: 0!important;
+        width: 20px !important;
+        position: fixed;
+        top: 250px;
+        right:30px;
+    }
+    .NoSendButton{
+        background: #adadad !important;
+    }
+</style>
+<div class="head">
+    <img src="images/default_wap/back.png" class="fl" alt="">
+    <img src="images/default_wap/help.png" class="fr" alt="">
+</div>
+<div class="RegisterMain">
+    <img src="images/default_wap/login_logo.png" alt="">
+    <input type="text" class="NameInput" placeholder="用戶名(唯一不可更改)"><img class="check_id"  alt="">
+    <div class="DaGeLan"></div>
+    <input type="password" class="PassInput" placeholder="密碼">
+    <div class="DaGeLan"></div>
+    <input type="password" class="ConPassInput" placeholder="確認密碼">
+    <div class="DaGeLan"></div>
+    <div class="NextButtons">下一步</div>
+    <div class="raf">
+    </div>
+</div>
+<div class="RegisterMainNext">
+    <img src="images/default_wap/login_logo.png" alt="">
+    <div class="Chose_phone">
+        <p>+63</p>
+    </div>
+    <input type="input" class="PhoneNumber" placeholder="手機號碼">
+    <div class="DaGeLan"></div>
+    <input type="input" class="PhoneCode" placeholder="驗證碼">
+    <div class="SendButton">
+        <p>發送驗證碼</p>
+    </div>
+    <div class="XiaoGeLan"></div>
+    <div class="RegisterButtons">註冊</div>
+    <script>
+        var sock=false;
+        function fun_timedown(time)
+        {
+            if(time=='undefined')
+                time = 60;
+            $(".SendButton").find("p").html(time+"秒");
+            $(".SendButton").css("background","#adadad");
+            time = time-1;
+            if(time>=0)
+            {
+                setTimeout("fun_timedown("+time+")",1000);
+            }else
+            {
+                $(".SendButton").find("p").html("發送驗證碼");
+                $(".SendButton").css("background","linear-gradient(to right,rgb(255,187,6),rgb(255,127,0))");
+                sock=false;
+            }
+        }
+
+
+
+        var socket = io('http://localhost:88');
+        socket.on("check_phone",function (data) {
+
+
+
+
+
+
+            if(data=="1")
+            {
+                $.modal({
+                    title: "警告",
+                    text: "手机号码已被注册使用",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+                sock=false;
+                return false;
+            }
+            else if(data=="-1")
+            {
+                $.modal({
+                    title: "警告",
+                    text: "发送太过频繁，请稍后再试",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+                sock=false;
+                return false;
+            }
+            else if(data=="-9")
+            {
+                fun_timedown(60);
+                return false;
+            }
+        });
+        socket.on('check_id', function (data) {
+            if(data)
+            {
+                $(".check_id").attr("src","images/default_wap/err.png");
+            }
+            else
+            {
+                $(".check_id").attr("src","images/default_wap/yes.png");
+            }
+        });
+
+
+
+        $(".Chose_phone").click(function () {
+            $.actions({
+                actions: [{
+                    text: "+63",
+                    className: "color-warning",
+                    onClick: function() {
+                        $(".Chose_phone").find('p').html("+63");
+                    }
+                }],
+                buttonCancel: "取消"
+            });
+        });//选择区号
+        $(".head").find("img").eq(0).click(function () {
+
+            if($(".RegisterMainNext").is(':visible'))
+            {
+                $(".RegisterMain").show();
+                $(".RegisterMainNext").hide();
+                return false;
+            }
+            if($(".RegisterMain").is(':visible'))
+            {
+
+                window.location.href="./login";
+                return false;
+
+            }
+        });//返回
+        $(".NameInput").focusout(function () {
+            if($(this).val().indexOf(" ") >= 0 || $(this).val().length<=0)
+            {
+                $(".check_id").attr("src","images/default_wap/err.png");
+            }
+            else
+            {
+
+
+                socket.emit("check_id",$(this).val());
+            }
+
+        })//检查用户名
+        $(".NextButtons").click(function () {
+
+            if($(".check_id").attr("src")!="images/default_wap/yes.png")
+            {
+
+                    $.modal({
+                        title: "警告",
+                        text: "用户名已被使用",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    return false;
+
+            }
+            else{
+                var id=$(".NameInput").val();
+                var pass=$(".PassInput").val();
+                var conpass=$(".ConPassInput").val();
+                if(pass!=conpass)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "兩次輸入的密碼不一致",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    return false;
+                }
+                if(!pass.match("^[0-9A-Za-z~!@#$%^&*]{9,99}$") || pass.replace(/[0-9]/g,"").length<2 || pass.replace(/[a-zA-Z]/g,"").length<2)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "Password must be minimum of 9 characters and contain at least 2 alphabets and 2 numbers",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    return false;
+                }
+                $(".RegisterMain").hide();
+                $(".RegisterMainNext").show();
+            }
+
+        });//下一步
+        $(".SendButton").click(function () {
+            if(!sock)
+            {
+                sock=true;
+                var top=$(".PhoneNumber").val().substring(0,1);
+                var toptwo=$(".PhoneNumber").val().substring(0,2);
+                if(top!='9'&&toptwo!='09')
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+
+                    return false;
+                }
+                if(top=='9'&& $(".PhoneNumber").val().length!=10)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+
+                    return false;
+                }
+                if(toptwo=='09'&& $(".PhoneNumber").val().length!=11)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    return false;
+                }
+                if(top=='9')
+                {
+                    var phone_num="0"+$(".PhoneNumber").val();
+                }
+                else{
+                    var phone_num=$(".PhoneNumber").val();
+                }
+                console.log(phone_num);
+                socket.emit("check_phone",phone_num);
+            }
+            else
+            {
+
+            }
+
+        });//发送短信
+        $(".RegisterButtons").click(function () {
+
+
+            var s=1;
+
+
+            if($(".check_id").attr("src")!="images/default_wap/yes.png")
+            {
+
+                $.modal({
+                    title: "警告",
+                    text: "用户名已被使用",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+                s=0;
+
+            }
+            else{
+                var id=$(".NameInput").val();
+                var pass=$(".PassInput").val();
+                var conpass=$(".ConPassInput").val();
+                if(pass!=conpass)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "兩次輸入的密碼不一致",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    s=0;
+                }
+                if(!pass.match("^[0-9A-Za-z~!@#$%^&*]{9,99}$") || pass.replace(/[0-9]/g,"").length<2 || pass.replace(/[a-zA-Z]/g,"").length<2)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "Password must be minimum of 9 characters and contain at least 2 alphabets and 2 numbers",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                    s=0;
+                }
+            }
+
+
+
+
+            var top=$(".PhoneNumber").val().substring(0,1);
+            var toptwo=$(".PhoneNumber").val().substring(0,2);
+            if(top!='9'&&toptwo!='09')
+            {
+                $.modal({
+                    title: "警告",
+                    text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+
+                s=0;
+            }
+            if(top=='9'&& $(".PhoneNumber").val().length!=10)
+            {
+                $.modal({
+                    title: "警告",
+                    text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+
+                s=0;
+            }
+            if(toptwo=='09'&& $(".PhoneNumber").val().length!=11)
+            {
+                $.modal({
+                    title: "警告",
+                    text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+                s=0;
+            }
+            if(top=='9')
+            {
+                var phone_num="0"+$(".PhoneNumber").val();
+            }
+            else{
+                var phone_num=$(".PhoneNumber").val();
+            }
+            if(s)
+            {
+                var login_id=$(".NameInput").val();
+                var pass1=$(".PassInput").val();
+                var member_tel11=$(".PhoneNumber").val();
+                var code=$(".PhoneCode").val();
+                $.post("./register",{login_id:login_id,pass1:pass1,member_tel11:member_tel11,code:code},function(result){
+                    console.log(result);
+                    $.modal({
+                        title: "恭喜",
+                        text: "注册成功",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                });
+            }
+            else
+            {
+                $.modal({
+                    title: "警告",
+                    text: "數據錯誤",
+                    buttons: [
+                        { text: "確定"}
+                    ]
+                });
+            }
+
+        });
+    </script>
+</div>
+
+<% include footer.html %>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  div{
+    width: 100%;
+    height:500px;
+    background: red;
+  }
+</style>
+<body>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="   crossorigin="anonymous"></script>
+<!--<script src="scripts/hichat.js"></script>-->
+<script src="https://unpkg.com/vue"></script>
+
+
+<script>
+  var that = this;
+  this.socket = io.connect();
+  this.socket.on('connect', function() {
+       alert("sss");
+  });
+  this.socket.on('updateLine',function (line) {
+    apps.message=line;
+  })
+  this.socket.on('nickExisted', function(data) {
+    alert("haode"+data); //the server tell me how to do
+  });
+  this.socket.on('sendtwo', function(data) {
+    alert("通知："+data); //the server tell me how to do
+  });
+  this.socket.on('leave', function(data) {
+    alert("通知："+data); //the server tell me how to do
+  });
+  this.socket.on('select', function(data) {
+    console.log(data); //the server tell me how to do
+  });
+  //↑↑↑↑是接收服務器來处理的
+  //↓↓↓↓是发给服务器的
+  function ss() {
+    that.socket.emit('ss', "gxc");//我要在服務器觸發的函數
+  }
+  function one() {
+    that.socket.emit('one', "gxc");//我要在服務器觸發的函數
+  }
+  function two() {
+    that.socket.emit('two', "gxc");//我要在服務器觸發的函數
+  }
+  function sendtwo() {
+    that.socket.emit('sendtwo', "gxc");//我要在服務器觸發的函數
+  }
+  function leavetwo() {
+    that.socket.emit('leavetwo', "gxc");//我要在服務器觸發的函數
+  }
+</script>
+
+
+
+
+<input type="button" class="aa" onclick="ss()" value="test">
+<input type="button" class="aa" onclick="one()" value="1">
+<input type="button" class="aa" onclick="two()" value="2">
+<input type="button" class="aa" onclick="sendtwo()" value="send 2">
+<input type="button" class="aa" onclick="leavetwo()" value="leave 2">
+<input type="button" class="select" value="select">
+<a href="test.html">hi</a>
+
+
+
+
+
+<div></div>
+<div id="app" style="height: 100px;">
+  當前有  {{ message }}   人在綫
+</div>
+
+<h3>文件上传：</h3>
+选择一个文件上传: <br />
+<form method="post" enctype="multipart/form-data" action="/file-upload">
+  <input type="file" name="thumbnail">
+  <input type="submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var apps = new Vue({
+    el: '#app',
+    data: {
+      message: ''
+    }
+  })
+</script>
+<!--vue.js-->
+
+<!--juery-->
+<script>
+  $(".select").click(function () {
+
+    that.socket.emit('select', "gxc");//我要在服務器觸發的函數
+
+  });
+</script>
+</body>
+</html>

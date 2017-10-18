@@ -1,0 +1,203 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .bottom_div{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        line-height: 44px;
+        text-align: center;
+        font-size: 17px;
+        color: white;
+        background: linear-gradient(to right,#7bcfba,#0db4be);
+    }
+    .divs{
+        width: 100vw;
+        background: white;
+        line-height: 44px;
+    }
+    .mt10{
+        margin-top: 10px;
+    }
+    .left_txt{
+        font-size: 15px;
+        color: #535353;
+        width: 150px;
+    }
+    .ml10{
+        margin-left: 10px;
+    }
+    .input_right{
+        border: none;
+        height:44px;
+        width: 205px;
+        text-indent: 10px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    textarea{
+        width: 205px;
+        text-indent: 10px;
+        text-align: right;
+        margin-right: 10px;
+        border: none;
+        height: 100px;
+        line-height: 30px;
+        resize: none;
+    }
+    .h100{
+        height: 100px;
+    }
+    input,textarea{outline:none;}
+</style>
+<script src="images/default_wap/picker.js"></script>
+<script src="images/default_wap/picker-city.js"></script>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                管理收货地址
+            </p>
+        </div>
+    </div>
+
+
+    <div class="mt10 divs h44">
+        <p class="left_txt ml10 fl">收货人</p>
+        <input type="text" v-model="receiver" class="input_right fl">
+    </div>
+
+    <div class="mt10 divs h44">
+        <p class="left_txt ml10 fl">手机号码</p>
+        <input type="text" v-model="phone_num" class="input_right fl" placeholder="请正确填写">
+    </div>
+
+    <div class="mt10 divs h44">
+        <p class="left_txt ml10 fl">所属地区</p>
+        <input type="text" class="input_right fl" v-model="ssx" placeholder="请选择" id="ssx">
+    </div>
+
+    <div class="mt10 divs h100">
+        <p class="left_txt ml10 fl">街道地区</p>
+        <textarea name="input_right fl" v-model="address" cols="30" rows="10" placeholder="请不要重复填写省市区"></textarea>
+        <!--<input type="text" class="input_right fl" style="height: 60px;" placeholder="请选择">-->
+    </div>
+
+    <div class="mt10 divs h44">
+        <p class="left_txt ml10 fl">邮政编码</p>
+        <input type="text" v-model="zipcode" class="input_right fl" placeholder="">
+    </div>
+
+    <div class="h44 bottom_div" @click="submits()">
+        保存
+    </div>
+
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            p:'',
+            c:'',
+            cc:'',
+            receiver:'',
+            phone_num:'',
+            address:'',
+            zipcode:'',
+            ssx:''
+        },
+        methods:{
+            submits:function () {
+
+                $.post("/address_add/edit",{uid:'<%= uid %>',consignee:this.receiver,address:page.address,zipcode:page.zipcode,mobile:page.phone_num,province:page.p,city:page.c,county:page.cc},function (result) {
+                    if(result==0)
+                    {
+                        $.toptip('添加失败','error');
+                    }
+                    else if(result==-1)
+                    {
+                        $.toptip('超过地址数量','error');
+                    }
+                    else if(result==1)
+                    {
+                        $.toptip('添加成功','success');
+                        window.history.back();  //返回上一页
+                    }
+                })
+            }
+        }
+    });
+
+
+    $(function() {
+        $("#ssx").cityPicker({
+            title: "选择省市县",
+            onClose:function (p) {
+                var s=p.value;
+                page.p=s[0];
+                page.c=s[1];
+                page.cc=s[2];
+            }
+        });
+        if('<%= uid %>' == '')
+        {
+//           没有uid，是添加
+        }
+        else
+        {
+//            有UID,获取信息
+            $.post('./address_add',{uid:'<%= uid %>'},function (result) {
+                if(result!='0')
+                {
+                    page.receiver=result["0"].consignee;
+                    page.phone_num=result["0"].mobile;
+                    page.address=result["0"].address;
+                    page.zipcode=result["0"].zipcode;
+                    var ssx='';
+                    page.p=result["0"].province;
+                    page.c=result["0"].city;
+                    page.cc=result["0"].county;
+                    ssx=page.p+" "+page.c+" "+page.cc;
+                    page.ssx=ssx;
+                }
+            })
+        }
+
+
+    });
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

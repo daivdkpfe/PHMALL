@@ -1,0 +1,175 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+
+        background: linear-gradient(to right,#75c7f0,#53abfd)
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+        position: absolute;
+        z-index: 6;
+
+    }
+    .header_div p{
+        font-size: 15px;
+        color:white;
+        line-height: 44px;
+        text-align: center;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .center{
+        text-align: center;
+        width: 100vw;
+        position: absolute;
+    }
+    .yuee_div{
+        width: 100vw;
+        background: linear-gradient(to right,#75c7f0,#53abfd);
+        height: 180px;
+        position: relative;
+        top: -1px;
+    }
+    .account_yue{
+        text-indent: 10px;
+        padding-top: 26px;
+        line-height:24px;
+        color: white;
+        font-size: 15px;
+    }
+    .account_money{
+        text-indent: 10px;
+        color: white;
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 57px;
+
+    }
+    .account_money d{
+        font-weight: bold;
+    }
+    .btn_div{
+        width: 100vw;
+        height:44px;
+        background: white;
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .mt10{
+        margin-top: 10px;
+    }
+    .ml10{
+        margin-left: 10px;
+    }
+    .ico{
+        width: 20px;
+        margin-top: 12px;
+
+    }
+    .btn_title{
+        line-height: 44px;
+        font-size: 15px;
+        color: #454545;
+    }
+    .next{
+        width: 20px;
+        margin-top: 12px;
+        transform: rotateY(-180deg);
+    }
+    .mr10{
+        margin-right: 10px;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return_white.png" class="back fl" alt="">
+            <p class="fr">資金明細</p>
+            <p class="center">
+                我的帳戶
+            </p>
+        </div>
+    </div>
+
+    <div class="yuee_div">
+        <p class="account_yue">帳戶余额:</p>
+        <p class="account_money">₱<d>{{money}}</d></p>
+    </div>
+
+    <div class="btn_div">
+        <img src="images/default_wap/chongzhi.png" class="ico ml10 fl" alt="">
+        <p class="btn_title fl ml10">预付款充值</p>
+        <img class="next fr mr10" src="images/default_wap/return.png" alt="">
+    </div>
+    <div class="btn_div">
+        <a href="./withdraw">
+        <img src="images/default_wap/tixian.png" class="ico ml10 fl" alt="">
+        <p class="btn_title fl ml10">预付款提现</p>
+        <img class="next fr mr10" src="images/default_wap/return.png" alt="">
+        </a>
+    </div>
+    <div class="btn_div">
+        <img src="images/default_wap/tixian.png" class="ico ml10 fl" alt="">
+        <p class="btn_title fl ml10">预付款明细</p>
+        <img class="next fr mr10" src="images/default_wap/return.png" alt="">
+    </div>
+
+
+    <div class="btn_div mt10">
+        <img src="images/default_wap/chongzhi.png" class="ico ml10 fl" alt="">
+        <p class="btn_title fl ml10">积分充值</p>
+        <img class="next fr mr10" src="images/default_wap/return.png" alt="">
+    </div>
+    <div class="btn_div">
+        <img src="images/default_wap/tixian.png" class="ico ml10 fl" alt="">
+        <p class="btn_title fl ml10">积分明细</p>
+        <img class="next fr mr10" src="images/default_wap/return.png" alt="">
+    </div>
+
+
+
+    <div class="btn_div mt10">
+        <img src="images/default_wap/jifenshangcheng.png" class="ico ml10 fl" alt="">
+        <p class="btn_title fl ml10">积分商城</p>
+        <img class="next fr mr10" src="images/default_wap/return.png" alt="">
+    </div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            money:0
+        },
+        methods:{
+            
+        },
+        mounted:function () {
+            var t=this;
+            $.post('./account',{},function (result) {
+                t.money=result[0].member_money;
+            });
+        }
+    });
+    
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

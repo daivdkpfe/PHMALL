@@ -1,0 +1,129 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+        box-shadow:0 10px 100px black
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    body{
+        background: rgb(243,243,243);
+    }
+    .title_left{
+        font-size: 15px;
+        color: #454545;
+        text-indent: 10px;
+        float: left;
+        line-height:44px;
+    }
+    .title_right{
+        font-size: 15px;
+        color: #454545;
+        height:44px;
+        text-indent: 10px;
+        float:right;
+        line-height:44px;
+    }
+    .mt10{
+        margin-top: 10px;
+    }
+    .mb10{
+        margin-bottom: 10px;
+    }
+    .pd10{
+        padding-right: 10px;
+    }
+    #inputs{
+        height:43px;
+        font-size: 15px;
+        color: #454545;
+        border: none;
+        text-align: right;
+    }
+    .divs{
+        height:44px;
+        background: white;
+        width: 100vw;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    input,textarea{outline:none;}
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                账户与安全
+            </p>
+        </div>
+    </div>
+    <div class="divs">
+        <a href="change_pass">
+            <p class="title_left">修改密码</p>
+            <p class="title_right pd10">></p>
+        </a>
+    </div>
+
+    <div class="divs mt10">
+        <a href="change_email">
+        <p class="title_left">修改绑定的邮箱</p>
+        <p class="title_right pd10">{{email}}></p>
+        </a>
+    </div>
+    <div class="divs">
+        <a href="change_phone">
+        <p class="title_left">修改手机号码</p>
+        <p class="title_right pd10">{{phone}}></p>
+        </a>
+    </div>
+
+
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            email:'',
+            phone:''
+        },
+        methods:{
+
+        }
+    });
+
+    $.post("/member_data",{},function (result) {
+        console.log(result);
+        page.phone=result[0].member_tel1;
+
+        page.email=result[0].member_email;
+    });
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

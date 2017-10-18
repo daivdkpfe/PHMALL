@@ -1,0 +1,291 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .inputs{
+        width: 355px;
+        margin: 10px;
+        height:44px;
+        border: none;
+        border-radius: 6px;
+        text-indent: 10px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    　::-moz-placeholder {
+
+        text-indent: 10px; /* 没有用 */
+        font-size: 15px;
+        line-height: 44px;
+        color: #adadad;
+    }
+    :-ms-input-placeholder {
+
+        text-indent: 10px;
+        font-size: 15px;
+        line-height: 44px;
+        color: #adadad;
+    }
+    /*::-webkit-input-placeholder {*/
+
+        /*text-indent: 10px;*/
+        /*font-size: 15px;*/
+        /*line-height: 44px;*/
+        /*color: #adadad;*/
+    /*}*/
+    .text{
+        font-size: 15px;
+        margin: 10px;
+        line-height:25px;
+        width: 355px;
+    }
+    .btn{
+        width: 355px;
+        margin: 10px;
+        background: rgb(255,127,0);
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        line-height: 44px;
+        height: 44px;
+        border-radius: 6px;
+    }
+    .half{
+        width: 167px;
+    }
+    .mr10{
+        margin-right: 10px;
+    }
+    .huise{
+        background: #adadad;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                修改手机号
+            </p>
+        </div>
+    </div>
+
+    <div v-if="page==1">
+
+        <p class="text">您当前绑定的邮箱帐号为：17750935360@189.cn 邮箱帐号</p>
+
+        <div class="btn" v-on:click="send()">发送验证码到邮箱</div>
+    </div>
+    <div v-if="page==2">
+        <input type="text" v-model="code" class="inputs" placeholder="請輸入驗證碼">
+
+        <div class="btn" v-on:click="yanzheng()">验证</div>
+    </div>
+    <div v-if="page==3">
+        <input type="text" class="inputs" v-model="phone_num" placeholder="请输入新手机号">
+        <input type="text" class="inputs half fl" v-model="phone_code"  placeholder="请输入验证码">
+        <div class="btn half fl" class="SendButton" v-bind:class="{huise:sock}" v-on:click="sendcode()">{{daojishi}}</div>
+        <div class="btn fl" v-on:click="submit_change()">确认修改</div>
+    </div>
+</div>
+
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            page:3,
+            code:null,
+            phone_num:null,
+            daojishi:'发送验证码',
+            sock:false,
+            phone_code:null
+        },
+        methods:{
+            send:function () {
+                $.post('/change_phone',{setp:1},function (result) {
+                    if(result==1)
+                    {
+                        $.toptip('发送成功', 'success');
+                        page.page=2;
+                    }
+                    else
+                    {
+                        $.toptip('发送失败', 'error');
+                    }
+                })
+            },
+            yanzheng:function () {
+                $.post('/change_phone',{setp:2,code:this.code},function (result) {
+                    if(result==1)
+                    {
+                        $.toptip('验证成功', 'success');
+                        page.page=3;
+                    }
+                    else
+                    {
+                        $.toptip('验证失败', 'error');
+                    }
+                });
+            },
+            sendcode:function () {
+
+                if(!page.sock && this.phone_num!=null)
+                {
+
+
+                    var s=1;
+                    var top=this.phone_num.substring(0,1);
+                    var toptwo=this.phone_num.substring(0,2);
+                    if(top!='9'&&toptwo!='09')
+                    {
+                        $.modal({
+                            title: "警告",
+                            text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                            buttons: [
+                                { text: "確定"}
+                            ]
+                        });
+
+                        s=0;
+                    }
+                    if(top=='9'&& this.phone_num.length!=10)
+                    {
+                        $.modal({
+                            title: "警告",
+                            text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                            buttons: [
+                                { text: "確定"}
+                            ]
+                        });
+                        s=0;
+
+
+                    }
+                    if(toptwo=='09'&& this.phone_num.length!=11)
+                    {
+                        $.modal({
+                            title: "警告",
+                            text: "Mobile Number must be in 63 9XXXXXXXXX or 63 09XXXXXXXXX format",
+                            buttons: [
+                                { text: "確定"}
+                            ]
+                        });
+                        s=0;
+
+                    }
+                    if(top=='9')
+                    {
+                        this.phone_num="0"+this.phone_num;
+                    }
+                    else{
+                        this.phone_num=this.phone_num;
+                    }
+
+                    if(s==1)
+                    {
+                        $.post('/change_phone/send',{phone:this.phone_num},function (result) {
+                            if(result=='-9')
+                            {
+                                page.sock=true;
+                                $.toptip('發送成功', 'success');
+                                fun_timedown(60);
+                                return false;
+                            }
+                            else if(result=='2')
+                            {
+                                $.toptip('手機號碼已存在', 'error');
+                            }
+                            else if(result=='-1')
+                            {
+                                $.toptip('发送太过频繁，请稍后再发送','error');
+                            }
+                        });
+                    }
+                }
+
+
+
+            },
+            submit_change:function () {
+                if(this.phone_num.length!=10)
+                {
+                    $.modal({
+                        title: "警告",
+                        text: "Mobile Number must be in 63 09XXXXXXXXX format",
+                        buttons: [
+                            { text: "確定"}
+                        ]
+                    });
+                }
+                else{
+                    $.post('/change_phone',{setp:3,phone:this.phone_num,code:this.phone_code},function (result) {
+                        console.log(result);
+                        if(result==1)
+                        {
+                            toptip("修改成功",'success');
+                            window.history.back();  //返回上一页
+                        }
+                        else
+                        {
+                            toptip("修改失敗",'error');
+                        }
+
+                    });
+                }
+
+
+            }
+
+        }
+    });
+
+    function fun_timedown(time)
+    {
+        console.log(time);
+        if(time=='undefined')
+            time = 60;
+        page.daojishi=time+"秒";
+
+        time = time-1;
+        if(time>=0)
+        {
+            setTimeout("fun_timedown("+time+")",1000);
+        }else
+        {
+            page.daojishi="發送驗證碼";
+
+
+            page.sock=false;
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>
