@@ -824,7 +824,15 @@
 
             $.post('/union/auction_detail/assure',{uid:'<%= uid %>'},function (result) {
                 console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    t.baoming=true;
+                }
             });
+            
+            $.post('/union/auction_detail/join',{uid:'<%= uid %>'},function (result) {
+                console.log(result);
+            })
 
         }
 
