@@ -44,7 +44,7 @@ var account=require('./routes/account');
 var withdraw=require('./routes/withdraw');
 var auction=require('./routes/auction');
 var funddetails=require('./routes/funddetails');
-
+var fund_detail=require('./routes/fund_detail');
 
 //
 
@@ -118,7 +118,7 @@ app.use('/account',account);
 app.use('/withdraw',withdraw);
 app.use('/auction',auction);
 app.use('/funddetails',funddetails);
-
+app.use('/fund_detail',fund_detail);
 //
 
 app.use('/union/product',unionProduct);

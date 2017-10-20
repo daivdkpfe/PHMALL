@@ -1,0 +1,129 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+
+
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                詳情
+            </p>
+        </div>
+    </div>
+
+    <div class="weui-form-preview" v-if="show">
+        <div class="weui-form-preview__hd">
+            <label class="weui-form-preview__label">金额</label>
+            <em class="weui-form-preview__value">₱ {{money_add}}</em>
+        </div>
+        <div class="weui-form-preview__bd">
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">类型</label>
+                <span class="weui-form-preview__value">{{type}}</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">时间</label>
+                <span class="weui-form-preview__value">{{register_date}}</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">交易单号</label>
+                <span class="weui-form-preview__value">{{money_sess}}</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">可用余额</label>
+                <span class="weui-form-preview__value">{{money_left}}</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="weui-msg" v-if="!show">
+        <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title">操作失败</h2>
+            <p class="weui-msg__desc">获取失败，请返回</p>
+        </div>
+        <div class="weui-msg__opr-area">
+            <p class="weui-btn-area">
+                <a href="javascript:;" class="weui-btn weui-btn_primary back">返回</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+           uid:'<%= uid %>',
+            show:true,
+            money_add:0,
+            type:'',
+            register_date:'',
+            money_sess:'',
+            money_left:''
+        },
+        methods:{
+
+        },
+        mounted:function () {
+            var t=this;
+            $.post('./fund_detail',{uid:t.uid},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    t.money_add=result[0].money_add;
+                    t.type=result[0].type;
+                    t.register_date=result[0].register_date;
+                    t.money_sess=result[0].money_sess;
+                    t.money_left=result[0].money_left;
+                }
+                else
+                {
+                    t.show=false;
+                }
+            })
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

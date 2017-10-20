@@ -136,7 +136,7 @@
         padding-top: 44px;
     }
     .money{
-        width: 270px;
+        width: 230px;
         line-height: 60px;
         font-size: 20px;
         color: #454545;
@@ -144,7 +144,7 @@
         margin-right: 10px;
     }
     .type_title,.register_date{
-        width: 85px;
+        width: 125px;
         text-align: left;
         height: 30px;
         line-height: 30px;
@@ -170,15 +170,15 @@
         <!-- 容器 -->
         <div class="weui-tab">
             <div class="weui-navbar">
-                <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                <a class="weui-navbar__item weui-bar__item--on" type="0" href="#tab1">
                     全部
                     <img src="images/default_wap/select.png" alt="">
                 </a>
-                <a class="weui-navbar__item" href="#tab2">
+                <a class="weui-navbar__item" href="#tab2" type="1">
                     收入
                     <img src="images/default_wap/select.png" alt="">
                 </a>
-                <a class="weui-navbar__item" href="#tab2">
+                <a class="weui-navbar__item" href="#tab3" type="-1">
                     支出
                     <img src="images/default_wap/select.png" alt="">
                 </a>
@@ -187,15 +187,48 @@
             <div class="weui-tab__bd">
                 <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
                     <div class="log_list_div">
-                        <div class="log_div">
-                            <p class="money fr">₱ 6600.00</p>
-                            <p class="type_title fr">支出</p>
-                            <p class="register_date fr">2017-9-6</p>
+                        <div class="log_div" v-for="log in all_log_list">
+                            <a :href="'fund_detail?uid='+log.uid">
+                            <p class="money fr">₱ {{log.money_add}}</p>
+                            <p class="type_title fr sl1">{{log.type}}</p>
+                            <p class="register_date fr sl1">{{log.register_date}}</p>
+                            </a>
                         </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
                     </div>
                 </div>
                 <div id="tab2" class="weui-tab__bd-item">
-                    <h1>页面二</h1>
+                    <div class="log_list_div">
+                        <div class="log_div" v-for="log in zheng_log_list">
+                            <a :href="'fund_detail?uid='+log.uid">
+                            <p class="money fr">₱ {{log.money_add}}</p>
+                            <p class="type_title fr sl1">{{log.type}}</p>
+                            <p class="register_date fr sl1">{{log.register_date}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                    <div class="log_list_div">
+                        <div class="log_div" v-for="log in fu_log_list">
+                            <a :href="'fund_detail?uid='+log.uid">
+                            <p class="money fr">₱ {{log.money_add}}</p>
+                            <p class="type_title fr sl1">{{log.type}}</p>
+                            <p class="register_date fr sl1">{{log.register_date}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -207,19 +240,121 @@
     var page = new Vue({
         el: '.big_div',
         data: {
-
+            all_start:0,
+            all_log_list:[],
+            fu_start:0,
+            fu_log_list:[],
+            zheng_start:0,
+            zheng_log_list:[],
+            type:0,
         },
         methods:{
             
         },
         mounted:function () {
-            $.post('/funddetails',{type:0},function (result) {
+            var t=this;
+            $.post('/funddetails',{type:0,start:this.all_start},function (result) {
                console.log(result);
+               if(result!=0 && result.length>0)
+               {
+                   result.forEach(function (item,index) {
+                       item.register_date=return_date(item.register_date);
+                       t.all_log_list.push(item);
+                       t.all_start++;
+                   })
+               }
+
+            });
+            $.post('/funddetails',{type:1,start:this.zheng_start},function (result) {
+
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.zheng_log_list.push(item);
+                        t.zheng_start++;
+                    })
+                }
+
+            });
+            $.post('/funddetails',{type:-1,start:this.fu_start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.fu_log_list.push(item);
+                        t.fu_start++;
+                    })
+                }
+
             });
         }
     });
 
+    $(document.body).infinite();
 
+
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+
+
+        var type=$('.weui-bar__item--on').attr('type');
+        var t=page;
+
+        if(type==0)
+        {
+            $.post('/funddetails',{type:0,start:t.all_start},function (result) {
+
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.all_log_list.push(item);
+                        t.all_start++;
+                    })
+
+                }
+                loading = false;
+            });
+        }
+        else if(type==1)
+        {
+            $.post('/funddetails',{type:1,start:t.zheng_start},function (result) {
+
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.zheng_log_list.push(item);
+                        t.zheng_start++;
+                    })
+                }
+                loading = false;
+            });
+
+        }
+        else if(type==-1)
+        {
+            $.post('/funddetails',{type:-1,start:t.fu_start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.fu_log_list.push(item);
+                        t.fu_start++;
+                    })
+                }
+                loading = false;
+            });
+
+        }
+
+
+    });
 </script>
 
 
