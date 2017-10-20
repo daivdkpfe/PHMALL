@@ -6923,3 +6923,185 @@
 [2017-10-20 10:04:20.663] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
 [2017-10-20 10:04:20.664] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
 [2017-10-20 10:04:20.665] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:19:15.541] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:19:15.544] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:19:15.544] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:19:16.831] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    631,admin
+[2017-10-20 10:20:50.562] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    631,admin
+[2017-10-20 10:21:10.763] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    631,admin
+[2017-10-20 10:21:13.843] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:13.844] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:13.846] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:45.006] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    631,admin
+[2017-10-20 10:21:46.924] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:46.926] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:46.929] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:49.627] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    629,admin
+[2017-10-20 10:21:51.388] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:51.392] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:51.393] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:52.577] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    625,admin
+[2017-10-20 10:21:54.365] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:54.370] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:54.371] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:55.999] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    626,admin
+[2017-10-20 10:21:57.993] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:57.996] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:21:57.997] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:25:46.829] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-20 10:25:46.832] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-20 10:25:46.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-20 10:25:46.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-20 10:25:46.834] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-20 10:25:46.834] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-20 10:25:46.835] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-20 10:25:46.836] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-20 10:25:46.837] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-20 10:25:46.838] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-20 10:25:46.840] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-20 10:25:46.841] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-20 10:25:46.842] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-20 10:25:46.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-20 10:25:46.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-20 10:25:46.844] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-20 10:25:46.845] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-20 10:25:46.845] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-20 10:25:46.846] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-20 10:25:46.846] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-20 10:25:46.847] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-20 10:25:46.848] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-20 10:25:49.048] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-10-20 10:25:50.141] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:25:52.246] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-10-20 10:25:54.120] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-10-20 10:26:38.928] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-10-20 10:27:19.175] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-20 10:27:19.180] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-20 10:27:19.180] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-20 10:27:19.181] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-20 10:27:19.181] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-20 10:27:19.182] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-20 10:27:19.183] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-20 10:27:19.183] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-20 10:27:19.184] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-20 10:27:19.184] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-20 10:27:19.185] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-20 10:27:19.186] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-20 10:27:19.186] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-20 10:27:19.187] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-20 10:27:19.187] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-20 10:27:19.188] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-20 10:27:19.188] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-20 10:27:19.188] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-20 10:27:19.189] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-20 10:27:19.189] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-20 10:27:19.190] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-20 10:27:19.191] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-20 10:27:30.332] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:27:58.935] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-20 10:27:58.938] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-20 10:27:58.938] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-20 10:27:58.939] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-20 10:27:58.939] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-20 10:27:58.940] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-20 10:27:58.940] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-20 10:27:58.941] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-20 10:27:58.942] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-20 10:27:58.942] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-20 10:27:58.948] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-20 10:27:58.949] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-20 10:27:58.950] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-20 10:27:58.950] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-20 10:27:58.951] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-20 10:27:58.951] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-20 10:27:58.952] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-20 10:27:58.952] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-20 10:27:58.953] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-20 10:27:58.953] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-20 10:27:58.954] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-20 10:27:58.955] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-20 10:27:59.760] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:28:02.986] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-10-20 10:28:04.004] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:28:10.898] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-10-20 10:28:12.624] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-10-20 10:28:14.439] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:28:14.441] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:28:14.442] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:28:39.970] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:29:34.031] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-10-20 10:29:36.394] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:29:36.396] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:29:36.400] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:29:40.302] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    629,admin
+[2017-10-20 10:29:45.068] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    6666,admin
+[2017-10-20 10:30:08.089] [INFO] log_file - select * from `mvm_money_table` where uid=? and money_id=?    629,admin
+[2017-10-20 10:30:09.751] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:30:09.752] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:30:09.753] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:31:41.897] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-10-20 10:31:45.196] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:31:45.199] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:31:45.206] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:37:32.703] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:39:22.464] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:46:47.302] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:46:47.304] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:46:47.306] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:32.503] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-20 10:47:32.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-20 10:47:32.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-20 10:47:32.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-20 10:47:32.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-20 10:47:32.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-20 10:47:32.507] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-20 10:47:32.508] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-20 10:47:32.509] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-20 10:47:32.510] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-20 10:47:32.510] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-20 10:47:32.510] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-20 10:47:32.511] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-20 10:47:32.511] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-20 10:47:32.512] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-20 10:47:32.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-20 10:47:32.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-20 10:47:32.514] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-20 10:47:32.515] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-20 10:47:32.516] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-20 10:47:32.517] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-20 10:47:32.518] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-20 10:47:34.507] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-10-20 10:47:35.588] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508457600,1508543999
+[2017-10-20 10:47:37.351] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-10-20 10:47:38.563] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-10-20 10:47:40.478] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:40.480] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:40.481] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:44.989] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:44.993] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:44.995] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:47.960] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:47.967] [INFO] log_file - select * from `mvm_money_table` where money_id=?  and money_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:47:47.970] [INFO] log_file - select * from `mvm_money_table` where money_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:49:03.262] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:49:03.264] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:49:03.265] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:49:20.434] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:49:20.437] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:49:20.438] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:02.025] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:02.028] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:02.031] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:52.009] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:52.012] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:52.016] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:50:53.739] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 20,20     admin
+[2017-10-20 10:51:00.791] [INFO] log_file - select * from `mvm_point_table` where uid=? and point_id=?    412,admin
+[2017-10-20 10:51:06.524] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:51:06.526] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 10:51:06.530] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 10:51:08.170] [INFO] log_file - select * from `mvm_point_table` where uid=? and point_id=?    413,admin
+[2017-10-20 11:16:39.606] [INFO] log_file - select * from `mvm_point_table` where uid=? and point_id=?    413,admin
+[2017-10-20 11:16:46.358] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-10-20 11:16:46.360] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-10-20 11:16:46.362] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin

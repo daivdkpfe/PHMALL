@@ -1,0 +1,366 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    .weui-navbar{
+        overflow: scroll;
+        height:44px;
+        padding-left: 10px;
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background: white;
+        color: #ff8000;
+    }
+    .weui-navbar__item{
+        width: 80px;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar:after{
+        border:none;
+    }
+    .weui-navbar__item{
+        color: #181818;
+        font-size: 13px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .weui-navbar__item img{
+        height:4px;
+        display: none;
+    }
+    .weui-bar__item--on img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .weui-tab__bd{
+        width: 100vw;
+
+    }
+    .weui-tab{
+
+    }
+    .hide1{
+        width: 327px;
+        float: left;
+        height: 44px;
+        overflow: hidden;
+    }
+    .hide{
+        width: 100vw;
+        overflow:hidden;
+        overflow: scroll;
+        height:44px;
+
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .show{
+        width: 1200px;
+        height:44px;
+    }
+    .categroy{
+        width:68px;
+        margin-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: #181818;
+
+    }
+    .rq{
+        background: white;
+        height: 44px;
+        width: 100vw;
+    }
+    .selected{
+        font-size: 13px;
+        color: #ff8000;
+    }
+    .categroy img{
+        height: 4px;
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        display: none;
+    }
+    .selected img{
+        display: block;
+    }
+    .down{
+        float: left;
+        height:15px;
+        margin: 14.5px 16.5px;
+    }
+    .down_div{
+        float: left;
+        width:48px;
+        height: 44px;
+    }
+    .log_div{
+        width: 100vw;
+        height:60px;
+        background: white;
+        border-bottom: 1px solid rgb(239,239,244);
+    }
+    .log_list_div{
+        width: 100vw;
+    }
+    .weui-navbar+.weui-tab__bd{
+        padding-top: 44px;
+    }
+    .money{
+        width: 230px;
+        line-height: 60px;
+        font-size: 20px;
+        color: #454545;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .type_title,.register_date{
+        width: 125px;
+        text-align: left;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        color: #adadad;
+    }
+    .type_title{
+        color: #454545;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                积分明细
+            </p>
+        </div>
+    </div>
+
+
+        <!-- 容器 -->
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <a class="weui-navbar__item weui-bar__item--on" type="0" href="#tab1">
+                    全部
+                    <img src="images/default_wap/select.png" alt="">
+                </a>
+                <a class="weui-navbar__item" href="#tab2" type="1">
+                    收入
+                    <img src="images/default_wap/select.png" alt="">
+                </a>
+                <a class="weui-navbar__item" href="#tab3" type="-1">
+                    支出
+                    <img src="images/default_wap/select.png" alt="">
+                </a>
+
+            </div>
+            <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="log_list_div">
+                        <div class="log_div" v-for="log in all_log_list">
+                            <a :href="'point_detail?uid='+log.uid">
+                            <p class="money fr">{{log.point_add}} Point</p>
+                            <p class="type_title fr sl1">{{log.type}}</p>
+                            <p class="register_date fr sl1">{{log.register_date}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
+                </div>
+                <div id="tab2" class="weui-tab__bd-item">
+                    <div class="log_list_div">
+                        <div class="log_div" v-for="log in zheng_log_list">
+                            <a :href="'point__detail?uid='+log.uid">
+                            <p class="money fr">{{log.point_add}} Point</p>
+                            <p class="type_title fr sl1">{{log.type}}</p>
+                            <p class="register_date fr sl1">{{log.register_date}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                    <div class="log_list_div">
+                        <div class="log_div" v-for="log in fu_log_list">
+                            <a :href="'point_detail?uid='+log.uid">
+                            <p class="money fr">{{log.point_add}} Point</p>
+                            <p class="type_title fr sl1">{{log.type}}</p>
+                            <p class="register_date fr sl1">{{log.register_date}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            all_start:0,
+            all_log_list:[],
+            fu_start:0,
+            fu_log_list:[],
+            zheng_start:0,
+            zheng_log_list:[],
+            type:0,
+        },
+        methods:{
+            
+        },
+        mounted:function () {
+            var t=this;
+            $.post('/pointdetails',{type:0,start:this.all_start},function (result) {
+               console.log(result);
+               if(result!=0 && result.length>0)
+               {
+                   result.forEach(function (item,index) {
+                       item.register_date=return_date(item.register_date);
+                       t.all_log_list.push(item);
+                       t.all_start++;
+                   })
+               }
+
+            });
+            $.post('/pointdetails',{type:1,start:this.zheng_start},function (result) {
+
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.zheng_log_list.push(item);
+                        t.zheng_start++;
+                    })
+                }
+
+            });
+            $.post('/pointdetails',{type:-1,start:this.fu_start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.fu_log_list.push(item);
+                        t.fu_start++;
+                    })
+                }
+
+            });
+        }
+    });
+
+    $(document.body).infinite();
+
+
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+
+
+        var type=$('.weui-bar__item--on').attr('type');
+        var t=page;
+
+        if(type==0)
+        {
+            $.post('/pointdetails',{type:0,start:t.all_start},function (result) {
+
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.all_log_list.push(item);
+                        t.all_start++;
+                    })
+
+                }
+                loading = false;
+            });
+        }
+        else if(type==1)
+        {
+            $.post('/pointdetails',{type:1,start:t.zheng_start},function (result) {
+
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.zheng_log_list.push(item);
+                        t.zheng_start++;
+                    })
+                }
+                loading = false;
+            });
+
+        }
+        else if(type==-1)
+        {
+            $.post('/pointdetails',{type:-1,start:t.fu_start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        item.register_date=return_date(item.register_date);
+                        t.fu_log_list.push(item);
+                        t.fu_start++;
+                    })
+                }
+                loading = false;
+            });
+
+        }
+
+
+    });
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>

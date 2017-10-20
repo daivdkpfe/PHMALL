@@ -41,8 +41,8 @@
 
     <div class="weui-form-preview" v-if="show">
         <div class="weui-form-preview__hd">
-            <label class="weui-form-preview__label">金额</label>
-            <em class="weui-form-preview__value">₱ {{money_add}}</em>
+            <label class="weui-form-preview__label">积分</label>
+            <em class="weui-form-preview__value">{{point_add}} Point</em>
         </div>
         <div class="weui-form-preview__bd">
             <div class="weui-form-preview__item">
@@ -63,11 +63,11 @@
             </div>
             <div class="weui-form-preview__item">
                 <label class="weui-form-preview__label">交易单号</label>
-                <span class="weui-form-preview__value">{{money_sess}}</span>
+                <span class="weui-form-preview__value">{{point_sess}}</span>
             </div>
             <div class="weui-form-preview__item">
                 <label class="weui-form-preview__label">可用余额</label>
-                <span class="weui-form-preview__value">{{money_left}}</span>
+                <span class="weui-form-preview__value">{{point_left}}</span>
             </div>
         </div>
 
@@ -96,11 +96,11 @@
         data: {
            uid:'<%= uid %>',
             show:true,
-            money_add:0,
+            point_add:0,
             type:'',
             register_date:'',
-            money_sess:'',
-            money_left:'',
+            point_sess:'',
+            point_left:'',
             approval_date:''
         },
         methods:{
@@ -108,15 +108,15 @@
         },
         mounted:function () {
             var t=this;
-            $.post('./fund_detail',{uid:t.uid},function (result) {
+            $.post('./point_detail',{uid:t.uid},function (result) {
                 console.log(result);
                 if(result!=0 && result.length>0)
                 {
-                    t.money_add=result[0].money_add;
+                    t.point_add=result[0].point_add;
                     t.type=result[0].type;
                     t.register_date=result[0].register_date;
-                    t.money_sess=result[0].money_sess;
-                    t.money_left=result[0].money_left;
+                    t.point_sess=result[0].point_sess;
+                    t.point_left=result[0].point_left;
                     t.approval_date=return_date(result[0].approval_date);
                     t.register_date=return_date(result[0].register_date);
                 }
