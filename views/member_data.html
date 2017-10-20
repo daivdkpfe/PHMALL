@@ -116,7 +116,11 @@
 
     <div class="member_logo_div">
         <p class="title_left">头像</p>
-        <div class="value_rig"><p class="title_right pd10">></p><p class="title_right"><img class="member_logo_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+img" alt=""></p></div>
+        <div class="value_rig"><p class="title_right pd10">></p><p class="title_right"><img class="member_logo_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+img" alt="" @click="upload()"></p></div>
+        <form action="upload/logo_upload" method="post" style="display: none">
+        <input type="file" name="thumbnail" class="chose"  @change="change()">
+            <input type="submit" class="sub">
+        </form>
     </div>
     <div class="member_id_div">
         <p class="title_left">用戶ID</p>
@@ -171,7 +175,12 @@
             zip_code:""
         },
         methods:{
-
+            upload:function () {
+                $('.chose').trigger('click');
+            },
+            change:function () {
+                $('.sub').trigger('click');
+            }
         }
     });
 

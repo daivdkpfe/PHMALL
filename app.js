@@ -48,6 +48,7 @@ var fund_detail=require('./routes/fund_detail');
 var pointdetails=require('./routes/pointdetails');
 var point_detail=require('./routes/point_detail');
 var social_contact=require('./routes/social_contact');
+var upload=require('./routes/upload');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -124,7 +125,7 @@ app.use('/fund_detail',fund_detail);
 app.use('/pointdetails',pointdetails);
 app.use('/point_detail',point_detail);
 app.use('/social_contact',social_contact);
-
+app.use('/upload',upload);
 
 //
 

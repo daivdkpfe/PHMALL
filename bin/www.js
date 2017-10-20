@@ -16,7 +16,9 @@ var log4js = require('log4js');
 var request = require('request');
 var zlib = require('zlib');
 
-
+global.config={
+    web_src:"D:\\phpStudy\\WWW\\english\\images"
+}
 
 
 global.memcached = new Memcached('127.0.0.1:11211');
