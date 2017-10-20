@@ -16,7 +16,7 @@ var log4js = require('log4js');
 var request = require('request');
 var zlib = require('zlib');
 
-global.config={
+global.configss={
     web_src:"D:\\phpStudy\\WWW\\english\\images"
 }
 
