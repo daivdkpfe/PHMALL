@@ -49,6 +49,8 @@ var pointdetails=require('./routes/pointdetails');
 var point_detail=require('./routes/point_detail');
 var social_contact=require('./routes/social_contact');
 var upload=require('./routes/upload');
+var error=require('./routes/error');
+var success=require('./routes/success');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -126,7 +128,8 @@ app.use('/pointdetails',pointdetails);
 app.use('/point_detail',point_detail);
 app.use('/social_contact',social_contact);
 app.use('/upload',upload);
-
+app.use('/error',error);
+app.use('/success',success);
 //
 
 app.use('/union/product',unionProduct);

@@ -17,7 +17,7 @@ var request = require('request');
 var zlib = require('zlib');
 
 global.configss={
-    web_src:"D:\\phpStudy\\WWW\\english\\images"
+    web_src:"../../phpStudy/WWW/english/xx/"
 }
 
 
