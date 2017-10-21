@@ -51,6 +51,7 @@ var social_contact=require('./routes/social_contact');
 var upload=require('./routes/upload');
 var error=require('./routes/error');
 var success=require('./routes/success');
+var supply=require('./routes/supply');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -130,6 +131,7 @@ app.use('/social_contact',social_contact);
 app.use('/upload',upload);
 app.use('/error',error);
 app.use('/success',success);
+app.use('/supply',supply);
 //
 
 app.use('/union/product',unionProduct);

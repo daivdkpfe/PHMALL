@@ -328,6 +328,12 @@
         </div>
     </div>
 </div>
+
+
+<!--数据-->
+<% include bottom_div.html %>
+
+
 <script>
     $(".weui-tabbar").find("a").eq(2).addClass('weui-bar__item--on').find('img').attr('src','./images/default_wap/shop_cart1.png');
     //        alert($("[name=checkbox1]").attr("checked"));
@@ -448,13 +454,9 @@
 <!--VUE-->
 <script>
     $.post('./cart',{},function (result) {
-
-
        if(result[0].length>0)
        {
-
            page.carts_list=result;
-
            result.forEach(function (item,index) {
                item.forEach(function (items,indexs) {
                    page.cart_num=page.cart_num+items.cart_num;
@@ -476,7 +478,6 @@
     });
 </script>
 
-<!--数据-->
-<% include bottom_div.html %>
+
 <!--底部栏-->
 <% include footer.html %>

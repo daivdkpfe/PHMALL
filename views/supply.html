@@ -1,0 +1,334 @@
+<% include header_index.html %>
+
+<style>
+    .header{
+        background: linear-gradient(to right,#ffbb07,#ff8000);
+        width: 100vw;
+    }
+    .ml10{
+        margin-left: 10px;
+
+    }
+    .mt10{
+        margin-top: 10px;
+    }
+    .search_div{
+        width: 20px;
+        height:20px;
+        padding-top: 12px;
+    }
+    .pt10{
+        padding-top: 10px;
+    }
+    .mr10{
+        margin-right: 10px;
+    }
+    .search_div img{
+        width: 20px;
+        height:20px;
+    }
+    .header_title_l{
+        width: 147px;
+        text-align: right;
+        line-height: 44px;
+        height:44px;
+        color: white;
+    }
+    .header_title_r{
+        width: 147px;
+        text-align: left;
+        line-height: 44px;
+        height:44px;
+        color: white;
+    }
+    .weui-navbar{
+        overflow: scroll;
+        height:44px;
+        padding-left: 10px;
+        background: white;
+    }
+    .weui-navbar__item.weui-bar__item--on{
+        background: white;
+        color: #ff8000;
+    }
+    .weui-navbar__item{
+        width: 80px;
+    }
+    .weui-navbar__item:after{
+        border: none;
+    }
+    .weui-navbar:after{
+        border:none;
+    }
+    .weui-navbar__item{
+        color: #181818;
+        font-size: 13px;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    .weui-navbar__item img{
+        height:4px;
+        display: none;
+    }
+    .weui-bar__item--on img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .weui-tab__bd{
+        width: 100vw;
+
+    }
+    .weui-tab{
+
+    }
+    .hide1{
+        width: 327px;
+        float: left;
+        height: 44px;
+        overflow: hidden;
+    }
+    .hide{
+        width: 100vw;
+        overflow:hidden;
+        overflow: scroll;
+        height:44px;
+
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .show{
+        width: 1200px;
+        height:44px;
+    }
+    .categroy{
+        width:68px;
+        margin-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: #181818;
+
+    }
+    .rq{
+        background: white;
+        height: 44px;
+        width: 100vw;
+    }
+    .selected{
+        font-size: 13px;
+        color: #ff8000;
+    }
+    .categroy img{
+        height: 4px;
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        display: none;
+    }
+    .selected img{
+        display: block;
+    }
+    .down{
+        float: left;
+        height:15px;
+        margin: 14.5px 16.5px;
+    }
+    .down_div{
+        float: left;
+        width:48px;
+        height: 44px;
+    }
+    .gg_img{
+        width: 100vw;
+        height:200px;
+    }
+    .gy_list_div{
+        width: 100vw;
+    }
+    .gy_div{
+        width: 375px;
+        height:150px;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: white;
+        border-radius: 6px;
+    }
+    .gy_img{
+        width:130px;
+        margin: 10px;
+    }
+    .gy_title{
+        margin-top: 10px;
+        width: 215px;
+        line-height: 20px;
+        height:40px;
+        font-size: 15px;
+        color: #454545;
+    }
+    .gy_jj{
+        width: 215px;
+        line-height: 17px;
+        height:34px;
+        font-size: 13px;
+        color: #adadad;
+    }
+    .gy_price{
+        font-size: 15px;
+        color: #feb90c;
+        height:40px;
+        line-height: 40px;
+        width: 215px;
+    }
+    .gy_time{
+        font-size: 13px;
+        color: #adadad;
+        line-height: 20px;
+    }
+</style>
+<div class="big_div">
+    <div class="header h44">
+        <div class="fl"><div class="ml10 fl search_div"><img src="images/default_wap/index_search.png" alt=""></div><p class="header_title_l fr mr10">供应</p></div>
+        <div class="fr"><div class="mr10 fr search_div"><img src="images/default_wap/index_search.png" alt="" class=""></div><p class="header_title_r fl ml10">求购</p></div>
+    </div>
+    <div class="gy">
+        <div class="rq">
+            <!-- 容器 -->
+            <div class="weui-tab">
+                <div class="hide1">
+                    <div class="hide">
+                        <div class="show" >
+
+                            <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:supply_select==index+1}"  v-on:click="get_cate(index,cate.uid)">
+                                {{cate.category_name}}
+                                <img src="images/default_wap/select.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="down_div"><img class="down" src="images/default_wap/down.png" alt=""></div>
+            </div>
+
+        </div>
+        <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply_ad" alt="" class="gg_img">
+        <div class="gy_list_div">
+            <div class="gy_div" v-for="supply in supply_list">
+                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply.pic" class="fl gy_img" alt="">
+                <p class="gy_title fl sl2">{{supply.goods_name}}</p>
+                <p class="gy_jj fl sl2">{{supply.intro}}</p>
+                <p class="gy_price fl sl1">价格：{{supply.price}}</p>
+                <p class="gy_time fl sl1">发布时间：{{supply.register_date}}</p>
+            </div>
+            <div class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+            </div>
+        </div>
+    </div>
+
+    <!--滚动栏-->
+</div>
+
+
+
+
+
+<% include bottom_div.html %>
+<script>
+
+    $(".weui-tabbar").find("a").eq(1).addClass('weui-bar__item--on').find('img').attr('src','./images/default_wap/gq1.png');
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            supply_select:1,
+            down:false,
+            supply_index:0,
+            cates:[],
+            supply_list:[],
+            supply_type:1,
+            supply_start:0,
+            supply_ad:''
+        },
+        methods:{
+            get_cate:function (index,cate_uid) {
+                this.supply_select=index+1;
+                this.supply_type=cate_uid;
+                this.supply_list=[];
+                var t=this;
+                this.supply_start=0;
+                $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
+                    console.log(result);
+                    if(result!=0 && result.length>0)
+                    {
+                        result.forEach(function (item,index) {
+                            if(item.price==0 || item.price=='' || item.price==null)
+                            {
+                                item.price='商議';
+                            }
+                            item.register_date=return_date(item.register_date);
+                            t.supply_list.push(item);
+                            t.supply_start++;
+                        })
+                    }
+                });
+            }
+        },
+        mounted:function () {
+            var t=this;
+            $.post("./category",{},function (result) {
+                page.cates=result;
+            });
+            $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        if(item.price==0 || item.price=='' || item.price==null)
+                        {
+                            item.price='商議';
+                        }
+                        item.register_date=return_date(item.register_date);
+                        t.supply_list.push(item);
+                        t.supply_start++;
+                    })
+                }
+            });
+            $.post('./supply/get_ad',{},function (result) {
+                console.log(result);
+                t.supply_ad=result.default_wap_supply.pic;
+            })
+        }
+    });
+
+    $(document.body).infinite();
+
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        var t=page;
+        $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
+            console.log(result);
+            if(result!=0 && result.length>0)
+            {
+                result.forEach(function (item,index) {
+                    if(item.price==0 || item.price=='' || item.price==null)
+                    {
+                        item.price='商議';
+                    }
+                    item.register_date=return_date(item.register_date);
+                    t.supply_list.push(item);
+                    t.supply_start++;
+                });
+                loading = false;
+            }
+        });
+
+    });
+</script>
+<% include footer.html %>

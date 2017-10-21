@@ -462,6 +462,21 @@ router.get('/', function(req, res, next) {
       });
 
     });
+      sqlQueryMore("select * from mvm_ad_table where module='default_wap' and pos='supply'",adsql,function (err,vals,xx) {
+          if(err) logger.info("Caught exception:"+err);
+        console.log("val:"+vals[0]);
+
+
+          vals.forEach(function (item,index) {
+
+              ad_unzip(item['info'],function (unzip) {
+                  memcached.set("default_wap_supply",unzip,3600*24*30,function (err) {});
+              });
+
+          });
+
+
+      });
   });
 
   

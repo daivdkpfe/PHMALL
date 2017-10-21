@@ -10,7 +10,7 @@ console.log("xx");
 
 
 router.get('/', function(req, res, next) {
-    res.render('error', { title:'PHMALL',type: sess[req.query.type]});
+    res.render('errors', { title:'PHMALL',type: sess[req.query.type]});
 });
 
 module.exports = router;
