@@ -189,13 +189,35 @@
         color: #adadad;
         line-height: 20px;
     }
+    .white_block_left{
+        width: 20px;
+        background: white;
+        height: 3px;
+        /* float: right; */
+        position: absolute;
+        right: 203px;
+        z-index: 5;
+        float: right;
+        top: 36px;
+    }
+    .white_block_right{
+        width: 20px;
+        background: white;
+        height: 3px;
+        /* float: right; */
+        position: absolute;
+        right: 153px;
+        z-index: 5;
+        float: right;
+        top: 36px;
+    }
 </style>
 <div class="big_div">
     <div class="header h44">
-        <div class="fl"><div class="ml10 fl search_div"><img src="images/default_wap/index_search.png" alt=""></div><p class="header_title_l fr mr10">供应</p></div>
-        <div class="fr"><div class="mr10 fr search_div"><img src="images/default_wap/index_search.png" alt="" class=""></div><p class="header_title_r fl ml10">求购</p></div>
+        <div class="fl"><div class="ml10 fl search_div"><img src="images/default_wap/index_search.png" alt=""></div><p class="header_title_l fr mr10" @click="type='gy'">供应</p><div v-if="type=='gy'" class="white_block_left"></div></div>
+        <div class="fr"><div class="mr10 fr search_div"><img src="images/default_wap/index_search.png" alt="" class=""></div><p class="header_title_r fl ml10" @click="type='qg'">求购</p><div v-if="type=='qg'" class="white_block_right"></div></div>
     </div>
-    <div class="gy">
+    <div class="gy" v-if="type=='gy'">
         <div class="rq">
             <!-- 容器 -->
             <div class="weui-tab">
@@ -203,7 +225,7 @@
                     <div class="hide">
                         <div class="show" >
 
-                            <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:supply_select==index+1}"  v-on:click="get_cate(index,cate.uid)">
+                            <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:supply_select==index+1}"  v-on:click="get_cate_supply(index,cate.uid)">
                                 {{cate.category_name}}
                                 <img src="images/default_wap/select.png" alt="">
                             </div>
@@ -232,8 +254,51 @@
             </div>
         </div>
     </div>
+    <!--供应-->
 
-    <!--滚动栏-->
+
+
+    <div class="gy" v-if="type=='qg'">
+        <div class="rq">
+            <!-- 容器 -->
+            <div class="weui-tab">
+                <div class="hide1">
+                    <div class="hide">
+                        <div class="show" >
+
+                            <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:buy_select==index+1}"  v-on:click="get_cate_buy(index,cate.uid)">
+                                {{cate.category_name}}
+                                <img src="images/default_wap/select.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="down_div"><img class="down" src="images/default_wap/down.png" alt=""></div>
+            </div>
+
+        </div>
+        <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+buy_ad" alt="" class="gg_img">
+        <div class="gy_list_div">
+            <div class="gy_div" v-for="buy in buy_list">
+                <a :href="'buy_detail?uid='+buy.uid">
+                    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+buy.pic" class="fl gy_img" alt="">
+                    <p class="gy_title fl sl2">{{buy.goods_name}}</p>
+                    <p class="gy_jj fl sl2">{{buy.intro}}</p>
+                    <p class="gy_price fl sl1">价格：{{buy.price}}</p>
+                    <p class="gy_time fl sl1">发布时间：{{buy.register_date}}</p>
+                </a>
+            </div>
+            <div class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+            </div>
+        </div>
+    </div>
+    <!--求购-->
+
+
+
 </div>
 
 
@@ -254,10 +319,21 @@
             supply_list:[],
             supply_type:1,
             supply_start:0,
-            supply_ad:''
+            supply_ad:'',
+
+            buy_select:1,
+
+            buy_index:0,
+
+            buy_list:[],
+            buy_type:1,
+            buy_start:0,
+            buy_ad:'',
+
+            type:'gy'
         },
         methods:{
-            get_cate:function (index,cate_uid) {
+            get_cate_supply:function (index,cate_uid) {
                 this.supply_select=index+1;
                 this.supply_type=cate_uid;
                 this.supply_list=[];
@@ -278,6 +354,28 @@
                         })
                     }
                 });
+            },
+            get_cate_buy:function (index,cate_uid) {
+                this.buy_select=index+1;
+                this.buy_type=cate_uid;
+                this.buy_list=[];
+                var t=this;
+                this.buy_start=0;
+                $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
+                    console.log(result);
+                    if(result!=0 && result.length>0)
+                    {
+                        result.forEach(function (item,index) {
+                            if(item.price==0 || item.price=='' || item.price==null)
+                            {
+                                item.price='商議';
+                            }
+                            item.register_date=return_date(item.register_date);
+                            t.buy_list.push(item);
+                            t.buy_start++;
+                        })
+                    }
+                });
             }
         },
         mounted:function () {
@@ -286,7 +384,7 @@
                 page.cates=result;
             });
             $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
-                console.log(result);
+                console.log('supply'+result);
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -297,6 +395,21 @@
                         item.register_date=return_date(item.register_date);
                         t.supply_list.push(item);
                         t.supply_start++;
+                    })
+                }
+            });
+            $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
+                console.log('buy:'+result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        if(item.price==0 || item.price=='' || item.price==null)
+                        {
+                            item.price='商議';
+                        }
+                        item.register_date=return_date(item.register_date);
+                        t.buy_list.push(item);
+                        t.buy_start++;
                     })
                 }
             });
@@ -314,22 +427,45 @@
         if(loading) return;
         loading = true;
         var t=page;
-        $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
-            console.log(result);
-            if(result!=0 && result.length>0)
-            {
-                result.forEach(function (item,index) {
-                    if(item.price==0 || item.price=='' || item.price==null)
-                    {
-                        item.price='商議';
-                    }
-                    item.register_date=return_date(item.register_date);
-                    t.supply_list.push(item);
-                    t.supply_start++;
-                });
-                loading = false;
-            }
-        });
+        if(page.type=='gy')
+        {
+            $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        if(item.price==0 || item.price=='' || item.price==null)
+                        {
+                            item.price='商議';
+                        }
+                        item.register_date=return_date(item.register_date);
+                        t.supply_list.push(item);
+                        t.supply_start++;
+                    });
+                    loading = false;
+                }
+            });
+        }
+        else
+        {
+            $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
+                console.log('buy:'+result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function (item,index) {
+                        if(item.price==0 || item.price=='' || item.price==null)
+                        {
+                            item.price='商議';
+                        }
+                        item.register_date=return_date(item.register_date);
+                        t.buy_list.push(item);
+                        t.buy_start++;
+                    })
+                    loading = false;
+                }
+            });
+        }
+
 
     });
 </script>

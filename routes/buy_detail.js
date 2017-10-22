@@ -13,14 +13,14 @@ router.get('/', function(req, res, next) {
         console.log(a);
     }
     run();*/
-    res.render('supply_detail', { title: 'PHMALL',uid:req.query.uid});
+    res.render('buy_detail', { title: 'PHMALL',uid:req.query.uid});
 
 });
 
 router.post('/',function (req,res,next) {
     var uid=req.body.uid;
     async function run() {
-        var detail=await sqlasnyc('select * from `mvm_want_supply` where uid=? and approval_date>0',[uid]);
+        var detail=await sqlasnyc('select * from `mvm_want_buy` where uid=? and approval_date>0',[uid]);
         if(detail!=0)
         {
             var member=await sqlasnyc('select member_id,member_image from `mvm_member_table` where uid=?',[detail[0].m_uid]);
@@ -43,19 +43,19 @@ router.post('/submit',function (req,res,next) {
         var address=req.body.address;
         var msg=req.body.msg;
         var m_id=req.session.m_id;
-        var supply_id=req.body.supply_uid;
-        var supply_m_uid=req.body.supply_m_uid;
+        var buy_id=req.body.buy_uid;
+        var buy_m_uid=req.body.buy_m_uid;
         var sql=[];
         sql.push(m_id);
-        sql.push(supply_id);
-        sql.push(supply_m_uid);
+        sql.push(buy_id);
+        sql.push(buy_m_uid);
         sql.push(name);
         sql.push(tel);
         sql.push(address);
         sql.push(msg);
         sql.push(get_now_time());
         async function run() {
-            var a = await sqlasnyc("insert into `mvm_want_supply_msg` set m_id=?,supply_id=?,supply_m_uid=?,name=?,tel=?,address=?,msg=?,register_date=?",sql);
+            var a = await sqlasnyc("insert into `mvm_want_buy_msg` set m_id=?,buy_id=?,buy_m_uid=?,name=?,tel=?,address=?,msg=?,register_date=?",sql);
             res.json(1);
         }
         run();

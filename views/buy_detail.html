@@ -63,7 +63,7 @@
         color: #feb90c;
         font-size: 13px;
     }
-    .supply_img{
+    .buy_img{
         width: 100vw;
         height:100vw;
     }
@@ -226,7 +226,7 @@
         </div>
     </div>
 
-    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+pic" class="supply_img fl" alt="">
+    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+pic" class="buy_img fl" alt="">
 
     <div class="white w100 fl">
         <p class="price">
@@ -289,12 +289,12 @@
             member_image:'',
             sup_uid:0,
             tels:0,
-            supply_m_uid:0
+            buy_m_uid:0
 
         },
         methods:{
             sub:function () {
-                $.post('/supply_detail/submit',{name:this.name,tel:this.tel,address:this.address,msg:this.msg,supply_uid:this.supply_uid,supply_m_uid:this.supply_m_uid},function (result) {
+                $.post('/buy_detail/submit',{name:this.name,tel:this.tel,address:this.address,msg:this.msg,buy_uid:this.buy_uid,buy_m_uid:this.buy_m_uid},function (result) {
                     console.log(result);
                     if(result==1)
                     {
@@ -309,15 +309,15 @@
         },
         mounted:function () {
             var t=this;
-            $.post('./supply_detail',{uid:'<%= uid %>'},function (result) {
+            $.post('./buy_detail',{uid:'<%= uid %>'},function (result) {
                 console.log(result);
                 var detail=result['0'].detail.replace(new RegExp('src="/english',"gm"),'src="http://www.phmall.com.ph');
                 detail=detail.replace(new RegExp('src="/union',"gm"),'src="http://www.phmall.com.ph/union');
                 detail=detail.replace(/<script>/g, "<c>");
                 detail=detail.replace(/<\/script>/g, "</c>");
                 t.detail=detail;
-                t.supply_uid=result[0].uid;
-                t.supply_m_uid=result[0].m_uid;
+                t.buy_uid=result[0].uid;
+                t.buy_m_uid=result[0].m_uid;
 
 
                 if(result[0].price==0 || result[0].price=='' || result[0].price==null)

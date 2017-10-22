@@ -43,3 +43,8 @@
 .weui-loadmore{
     clear: left;
 }
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+input,textarea{outline:none;}
