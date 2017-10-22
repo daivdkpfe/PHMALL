@@ -23,7 +23,7 @@ router.post('/',function (req,res,next) {
 
     async function run() {
 
-        var want_supply = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>=10 AND goods_cat=? ORDER BY approval_date DESC LIMIT "+start+",15",[type]);
+        var want_supply = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT "+start+",15",[type]);
         res.json(want_supply);
     }
     run();
@@ -39,7 +39,7 @@ router.post('/buy',function (req,res,next) {
 
     async function run() {
 
-        var want_buy = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>=10 AND goods_cat=? ORDER BY approval_date DESC LIMIT "+start+",15",[type]);
+        var want_buy = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT "+start+",15",[type]);
         res.json(want_buy);
     }
     run();

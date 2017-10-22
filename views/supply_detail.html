@@ -222,7 +222,7 @@
             <p class="register_date fl">{{register_date}}</p>
         </div>
         <div class="member_right_div">
-            进行中
+            {{status}}
         </div>
     </div>
 
@@ -289,8 +289,8 @@
             member_image:'',
             sup_uid:0,
             tels:0,
-            supply_m_uid:0
-
+            supply_m_uid:0,
+            status:'进行中'
         },
         methods:{
             sub:function () {
@@ -323,6 +323,12 @@
                 if(result[0].price==0 || result[0].price=='' || result[0].price==null)
                 {
                     result[0].price='商议';
+                }
+                if(result==0){
+                    t.status='未审核';
+                }
+                else if(result==10) {
+                    t.status='已结束';
                 }
                 t.tels=result[0].tel;
                 t.price=result[0].price;

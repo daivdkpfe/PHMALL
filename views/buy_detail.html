@@ -222,7 +222,7 @@
             <p class="register_date fl">{{register_date}}</p>
         </div>
         <div class="member_right_div">
-            进行中
+            {{status}}
         </div>
     </div>
 
@@ -289,7 +289,8 @@
             member_image:'',
             sup_uid:0,
             tels:0,
-            buy_m_uid:0
+            buy_m_uid:0,
+            status:'进行中'
 
         },
         methods:{
@@ -319,6 +320,12 @@
                 t.buy_uid=result[0].uid;
                 t.buy_m_uid=result[0].m_uid;
 
+                if(result==0){
+                    t.status='未审核';
+                }
+                else if(result==10) {
+                    t.status='已结束';
+                }
 
                 if(result[0].price==0 || result[0].price=='' || result[0].price==null)
                 {

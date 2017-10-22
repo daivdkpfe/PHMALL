@@ -24,7 +24,6 @@
     .weui-navbar{
         overflow: scroll;
         height:44px;
-        padding-left: 10px;
         background: white;
     }
     .weui-navbar__item.weui-bar__item--on{
@@ -46,6 +45,8 @@
     }
     body{
         background: rgb(243,243,243);
+        width: 100vw;
+        overflow-x: hidden;
     }
     .weui-navbar__item img{
         height:4px;
@@ -58,7 +59,6 @@
     }
     .weui-tab__bd{
         width: 100vw;
-
     }
     .weui-tab{
 
@@ -124,6 +124,78 @@
         height: 44px;
     }
 
+
+
+
+
+
+    .supply_list_div,.buy_list_div{
+        width:100%;
+        background: white;
+    }
+    .supply_div,.buy_div{
+        width: 100vw;
+        height:120px;
+        background: rgb(248,250,253);
+
+    }
+    .supply_pic,.buy_pic{
+        width: 100px;
+        height:100px;
+        margin: 10px;
+
+    }
+    .supply_title,.buy_title{
+        width: 220px;
+        height:40px;
+        line-height: 20px;
+        font-size: 15px;
+        color: #5a5a5a;
+        margin-top: 10px;
+    }
+    .supply_status,.buy_status{
+        width: 245px;
+        height:40px;
+        line-height: 40px;
+        font-size: 13px;
+        color: #adadad;
+        float: left;
+    }
+    .supply_price,.buy_price{
+        font-size: 15px;
+        color: #B70029;
+        text-align: left;
+        width: 122.5px;
+        float: left;
+        line-height: 20px;
+        height:20px;
+    }
+    .supply_num,.buy_num{
+        width: 122.5px;
+        font-size: 13px;
+        color: #adadad;
+        text-align: right;
+        float: left;
+    }
+    .btn_div{
+        width: 20px;
+        height:20px;
+        background: red;
+        margin-top: 10px;
+        background: url("images/default_wap/edit1.png");
+        background-size: 20px 20px;
+        margin-left: 5px;
+    }
+    .fabu_div{
+        width: 50px;
+        height: 50px;
+        background: url('images/default_wap/submit.jpg');
+        border-radius: 50px;
+        background-size: 50px 50px;
+        position: fixed;
+        bottom: 20px;
+        left: 10px;
+    }
 </style>
 <div class="big_div">
     <div class="h44 header">
@@ -160,10 +232,34 @@
             </div>
             <div class="weui-tab__bd">
                 <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-
+                    <div class="fabu_div"></div>
+                    <div class="supply_list_div">
+                        <div class="supply_div" v-for="supply in supply_list">
+                            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply.pic" class="supply_pic fl" alt="">
+                            <p class="supply_title fl sl2">
+                                {{supply.goods_name}}
+                            </p>
+                            <div class="btn_div fl" @click="change_supply(supply.uid)"></div>
+                            <p class="supply_status sl1">状态：{{supply.status}}</p>
+                            <p class="supply_price sl1">价格：{{supply.price}}</p>
+                            <p class="supply_num sl1">数量：{{supply.num}}件</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="tab2" class="weui-tab__bd-item">
-                    <h1>页面二</h1>
+                        <div class="fabu_div"></div>
+                        <div class="buy_list_div">
+                            <div class="buy_div" v-for="buy in buy_list">
+                                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+buy.pic" class="buy_pic fl" alt="">
+                                <p class="buy_title fl sl2">
+                                    {{buy.goods_name}}
+                                </p>
+                                <div class="btn_div fl" @click="change_buy(buy.uid)"></div>
+                                <p class="buy_status sl1">状态：{{buy.status}}</p>
+                                <p class="buy_price sl1">价格：{{buy.price}}</p>
+                                <p class="buy_num sl1">数量：{{buy.num}}件</p>
+                            </div>
+                        </div>
                 </div>
                 <div id="tab3" class="weui-tab__bd-item">
                     <h1>页面三</h1>
@@ -179,32 +275,160 @@
 
 
 
-
 </div>
 
 <script>
     var page = new Vue({
         el: '.big_div',
         data: {
-            select:0,
-            down:false,
-            index:0,
-            cates:[],
-            group_list:[]
+            supply_list:[],
+            buy_list:[],
         },
         methods:{
-            get_cate:function (index,cate_uid) {
-
-
-
-
-                this.select=index+1;
+            change_supply:function(uid){
+               
+                $.actions({
+            actions: [
+                {
+                    text:'查看',
+                    onClick: function(){
+                        window.location.href='./supply_detail?uid='+uid;
+                    }
+                },
+                {
+                    text:'修改',
+                    onClick: function(){
+                        
+                    }
+                },
+                {
+                    text:'結束',
+                    onClick: function(){
+                        $.post("./social_contact/supply/end",{uid:uid},function(result){
+                                console.log(result);
+                                if(result==1)
+                                {
+                                    $.toptip('修改成功','success');
+                                }
+                        })
+                    }
+                },
+                {
+                    text:'刪除',
+                    onClick: function(){
+                        $.post("./social_contact/supply/del",{uid:uid},function(result){
+                            if(result==1)
+                                {
+                                    $.toptip('刪除成功','success');
+                                }
+                        })
+                    }
+                }
+            ],
+            buttonCancel: "取消"
+        });
+            },
+            change_buy:function(uid){
+               
+                $.actions({
+            actions: [
+                {
+                    text:'查看',
+                    onClick: function(){
+                        window.location.href='./buy_detail?uid='+uid;
+                    }
+                },
+                {
+                    text:'修改',
+                    onClick: function(){
+                        
+                    }
+                },
+                {
+                    text:'結束',
+                    onClick: function(){
+                        $.post("./social_contact/buy/end",{uid:uid},function(result){
+                                console.log(result);
+                                if(result==1)
+                                {
+                                    $.toptip('修改成功','success');
+                                }
+                        })
+                    }
+                },
+                {
+                    text:'刪除',
+                    onClick: function(){
+                        $.post("./social_contact/buy/del",{uid:uid},function(result){
+                            if(result==1)
+                                {
+                                    $.toptip('刪除成功','success');
+                                }
+                        })
+                    }
+                }
+            ],
+            buttonCancel: "取消"
+        });
             }
+        },
+        mounted:function () {
+            var t=this;
+            $.post('./social_contact/supply',{},function (result) {
+                console.log(result);
+                if(result!=0)
+                {
+                    result.forEach(function(item,index) {
+                     if(item.approval_date==0){
+                         item.status='未審核';
+
+                     }   
+                     else if(item.approval_date==10)
+                     {
+                         item.status='已結束';
+                     }
+                     else{
+                         item.status='進行中';
+                     }
+
+                     if(item.price==0||item.price==""|| item.price==null)
+                     {
+                         item.price='商議';
+                     }
+                     t.supply_list.push(item);
+                    });
+                    
+                }
+            });
+            $.post('./social_contact/buy',{},function (result) {
+                console.log(result);
+                if(result!=0)
+                {
+                    result.forEach(function(item,index) {
+                     if(item.approval_date==0){
+                         item.status='未審核';
+
+                     }   
+                     else if(item.approval_date==10)
+                     {
+                         item.status='已結束';
+                     }
+                     else{
+                         item.status='進行中';
+                     }
+
+                     if(item.price==0||item.price==""|| item.price==null)
+                     {
+                         item.price='商議';
+                     }
+                     t.buy_list.push(item);
+                    });
+                    
+                }
+            });
         }
     });
-    $.post("./category",{},function (result) {
-        page.cates=result;
-    });
+
 
 </script>
 

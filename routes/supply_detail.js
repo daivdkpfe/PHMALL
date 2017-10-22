@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 router.post('/',function (req,res,next) {
     var uid=req.body.uid;
     async function run() {
-        var detail=await sqlasnyc('select * from `mvm_want_supply` where uid=? and approval_date>0',[uid]);
+        var detail=await sqlasnyc('select * from `mvm_want_supply` where uid=?',[uid]);
         if(detail!=0)
         {
             var member=await sqlasnyc('select member_id,member_image from `mvm_member_table` where uid=?',[detail[0].m_uid]);
