@@ -218,11 +218,13 @@
         <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply_ad" alt="" class="gg_img">
         <div class="gy_list_div">
             <div class="gy_div" v-for="supply in supply_list">
-                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply.pic" class="fl gy_img" alt="">
-                <p class="gy_title fl sl2">{{supply.goods_name}}</p>
-                <p class="gy_jj fl sl2">{{supply.intro}}</p>
-                <p class="gy_price fl sl1">价格：{{supply.price}}</p>
-                <p class="gy_time fl sl1">发布时间：{{supply.register_date}}</p>
+                <a :href="'supply_detail?uid='+supply.uid">
+                    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply.pic" class="fl gy_img" alt="">
+                    <p class="gy_title fl sl2">{{supply.goods_name}}</p>
+                    <p class="gy_jj fl sl2">{{supply.intro}}</p>
+                    <p class="gy_price fl sl1">价格：{{supply.price}}</p>
+                    <p class="gy_time fl sl1">发布时间：{{supply.register_date}}</p>
+                </a>
             </div>
             <div class="weui-loadmore">
                 <i class="weui-loading"></i>

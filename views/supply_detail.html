@@ -1,0 +1,223 @@
+<% include header_index.html %>
+
+<style>
+
+    .header{
+        width: 100vw;
+        background: white;
+    }
+    .header_div{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .header_div img{
+        width: 20px;
+        height:20px;
+        margin-top: 12px;
+    }
+    .header_div p{
+        font-size: 15px;
+        color: #181818;
+        line-height: 44px;
+        text-align: center;
+    }
+    body{
+        background: rgb(243,243,243);
+    }
+    ::-webkit-scrollbar {/*隐藏滚轮*/
+        display: none;!important;
+    }
+    .member_div{
+        height:70px;
+        width: 100vw;
+        background: white;
+    }
+    .member_left_div{
+        width: 50vw;
+        height:70px;
+    }
+    .member_logo{
+        width: 50px;
+        height:50px;
+        margin: 10px;
+    }
+    .member_name{
+        margin-top: 10px;
+        width:100px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #454545;
+    }
+    .register_date{
+        width: 100px;
+        font-size: 13px;
+        color: #adadad;
+    }
+    .member_right_div{
+        width: 167px;
+        margin-right: 10px;
+        text-align: right;
+        float: left;
+        line-height: 70px;
+        color: #feb90c;
+        font-size: 13px;
+    }
+    .supply_img{
+        width: 100vw;
+        height:100vw;
+    }
+    .price{
+        width: 50vw;
+        background: white;
+        float: left;
+        height:44px;
+        line-height: 44px;
+        font-size: 15px;
+        color: #feb90c;
+        text-indent: 10px;
+    }
+    .num{
+        font-size: 15px;
+        float: left;
+        background: white;
+        line-height: 44px;
+        height: 44px;
+        text-align: right;
+        width: 177px;
+        color: #454545;
+    }
+    .white{
+        background: white;
+    }
+    .w100{
+        width: 100vw;
+    }
+    .num d{
+        color: #b80a2f;
+    }
+    .intro{
+        float: left;
+        background: white;
+        height:auto;
+        margin: 0 10px;
+        font-size:15px;
+        color: #adadad;
+        margin-bottom: 15px;
+    }
+    .intro d{
+        color: #454545;
+    }
+    .detail_title,.msg_title{
+        width:100vw;
+        float: left;
+        margin-top: 10px;
+        background: white;
+        text-align: center;
+        line-height: 44px;
+        font-size:15px;
+
+        color: #454545;
+    }
+    .detail{
+        margin:0 10px;
+        background: white;
+        height:auto;
+    }
+    .msg_input_div{
+
+        height:44px;
+        width: 100vw;
+        background: white;
+    }
+    .input_div{
+        margin: 0 10px;
+    }
+    .left{
+        width: 40%;
+        color: #454545;
+        font-size: 15px;
+        line-height: 44px;
+        text-indent: 10px;
+        height:44px;
+        float: left;
+    }
+    .right{
+        width: 60%;
+        float: left;
+    }
+    .msg_input{
+        float: right;
+        margin:7px 10px;
+        height:30px;
+    }
+</style>
+<div class="big_div">
+    <div class="h44 header">
+        <div class="header_div h44">
+            <img src="images/default_wap/return.png" class="back fl" alt="">
+            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            <p>
+                詳情
+            </p>
+        </div>
+    </div>
+
+
+    <div class="member_div">
+        <div class="member_left_div fl">
+            <img src="images/default_wap/load.png" class="member_logo fl" alt="">
+            <p class="member_name fl">admin</p>
+            <p class="register_date fl">2017-7-2</p>
+        </div>
+        <div class="member_right_div">
+            进行中
+        </div>
+    </div>
+
+    <img src="images/default_wap/load.png"  class="supply_img fl" alt="">
+
+    <div class="white w100 fl">
+        <p class="price">
+            价格：商议
+        </p>
+        <p class="num">剩余： <d>10</d>件</p>
+        <p class="intro"><d>简介：</d>效果非常简便vkblnmnfcvhfabgjhgsbdnh了jo累计发u爱妓峰哈部分雕刻技法年开办费几个撒价格可能发布货币环境和妇女代表三朵金花部分速度快宿舍</p>
+    </div>
+
+    <div class="h44 detail_title">详细信息</div>
+    <div class="w100 white fl">
+    <div class="detail fl">
+        sdvfvgujfbuihbiudsfhsfd
+    </div>
+    </div>
+
+    <div class="msg_title h44">我要留言</div>
+    <div class="h44 msg_input_div fl">
+        <div class="h44 input_div">
+            <p class="left">联系姓名：</p>
+            <p class="right"><input type="text" class="msg_input"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+
+        },
+        methods:{
+
+        }
+    });
+
+</script>
+
+
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>
