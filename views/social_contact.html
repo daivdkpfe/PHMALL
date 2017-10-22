@@ -232,7 +232,7 @@
             </div>
             <div class="weui-tab__bd">
                 <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-                    <div class="fabu_div"></div>
+                    
                     <div class="supply_list_div">
                         <div class="supply_div" v-for="supply in supply_list">
                             <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply.pic" class="supply_pic fl" alt="">
@@ -247,7 +247,7 @@
                     </div>
                 </div>
                 <div id="tab2" class="weui-tab__bd-item">
-                        <div class="fabu_div"></div>
+                        
                         <div class="buy_list_div">
                             <div class="buy_div" v-for="buy in buy_list">
                                 <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+buy.pic" class="buy_pic fl" alt="">
@@ -296,12 +296,6 @@
                     }
                 },
                 {
-                    text:'修改',
-                    onClick: function(){
-                        
-                    }
-                },
-                {
                     text:'結束',
                     onClick: function(){
                         $.post("./social_contact/supply/end",{uid:uid},function(result){
@@ -336,12 +330,6 @@
                     text:'查看',
                     onClick: function(){
                         window.location.href='./buy_detail?uid='+uid;
-                    }
-                },
-                {
-                    text:'修改',
-                    onClick: function(){
-                        
                     }
                 },
                 {
