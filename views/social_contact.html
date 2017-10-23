@@ -209,7 +209,7 @@
 
 
     .msg_from_me,.msg_to_me{
-        height: 250px;
+        
         width: 100vw;
         background: white;
         margin-bottom: 10px;
@@ -242,6 +242,38 @@
         width: 15px;
         float: right;
         margin-right: 10px;
+    }
+    .msg_title{
+        margin: 0 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        color: #454545;
+    }
+    .msg_type{
+        color: #fe9b0c;
+    }
+    .msg{
+        font-size: 13px;
+        color: #adadad;
+        margin: 0 10px;
+        line-height: 18px;
+        margin-top: 7px;
+        border-bottom: 1px solid rgb(239, 239, 244);
+    }
+    .msg_bottom{
+        width: 100vw;
+    }
+    .msg_bottom p{
+        margin-left: 10px;
+        font-size: 15px;
+        color: #454545;
+        line-height: 44px;
+        float: left;
+    }
+    .msg_bottom img{
+        width: 20px;
+        margin: 12px;
+        float: left;
     }
 </style>
 <div class="big_div">
@@ -309,12 +341,21 @@
                         </div>
                 </div>
                 <div id="tab3" class="weui-tab__bd-item">
-                    <div class="msg_from_me">
+                    <div class="msg_from_me" v-for="msg in from_me_list">
                         <div class="msg_top">
                                 <img src="images/default_wap/load.png" class="member_logo fl" alt="">
                                 <p class="member_id sl1 fl">adminxx</p>
                                 <p class="register_time sl1 fl">发布时间：2017-7-2</p>
                                 <img src="images/default_wap/clear.png" class="detele_ico" alt="">
+                        </div>
+                        <div class="msg_main">
+                            <p class="sl2 msg_title"><d class="msg_type">[求購]</d>啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題</p>
+                            <p class="msg">{{msg.msg}}</p>
+                        </div>
+                        <div class="msg_bottom h44">
+                            <p>联系方式</p>
+                            <img src="images/default_wap/phone.png" alt="">
+                            <img src="images/default_wap/msg.png" alt="">
                         </div>
                     </div>
                     <div class="msg_from_me"></div>
@@ -339,6 +380,8 @@
         data: {
             supply_list:[],
             buy_list:[],
+            from_me_start:0,
+            from_me_list:[]
         },
         methods:{
             change_supply:function(uid){
@@ -470,6 +513,16 @@
                     
                 }
             });
+            $.post('./social_contact/msg_from_me',{start:t.from_me_start},function(result){
+                console.log(result);
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function(item,index){
+                        t.from_me_start++;
+                        t.from_me_list.push(item);
+                    })
+                }
+            })
         }
     });
 

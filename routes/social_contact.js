@@ -109,4 +109,36 @@ router.post("/buy/del",function(req,res,next){
     }
     run();
 });
+
+
+router.post('/msg_from_me',function(req,res,next){
+    console.log("xx");
+    var m_id=req.session.m_id;
+    var start=parseInt(req.body.start);
+     async function run() {
+
+       var msg=await sqlasnyc( "SELECT * from `mvm_want_buy_msg` where m_id=? union all SELECT * from `mvm_want_supply_msg` where m_id=? order by register_date desc limit "+start+",10",[m_id,m_id]);
+       if(msg!=0)
+       {
+           for (let s in msg)
+           {
+               if(msg[s].type==1)
+               {
+                    var supply=await sqlasnyc('select * from `mvm_want_supply` where uid=?',[msg[s].buy_id]);
+                    msg[s].info=supply[0];
+               }
+               else if(msg[s].type==-1)
+               {
+                var buy=await sqlasnyc('select * from `mvm_want_buy` where uid=?',[msg[s].buy_id]);
+                msg[s].info=buy[0];
+               }
+           }
+       }
+      
+        res.json(msg);
+    }
+    run();
+
+   
+});
 module.exports = router;
