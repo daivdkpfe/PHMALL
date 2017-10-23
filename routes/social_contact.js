@@ -122,15 +122,28 @@ router.post('/msg_from_me',function(req,res,next){
        {
            for (let s in msg)
            {
+               var member_image=await sqlasnyc("select member_image from `mvm_member_table` where member_id=?",[msg[s].m_id]);
+                if(member_image!=0)
+                {
+                    msg[s].member_image=member_image[0].member_image;
+                }
                if(msg[s].type==1)
                {
                     var supply=await sqlasnyc('select * from `mvm_want_supply` where uid=?',[msg[s].buy_id]);
-                    msg[s].info=supply[0];
+                    if(supply!=0)
+                    {
+                         msg[s].info=supply[0];
+                    }
+                   
                }
                else if(msg[s].type==-1)
                {
                 var buy=await sqlasnyc('select * from `mvm_want_buy` where uid=?',[msg[s].buy_id]);
-                msg[s].info=buy[0];
+                if(buy!=0)
+                {
+                     msg[s].info=buy[0];
+                }
+               
                }
            }
        }
@@ -140,5 +153,90 @@ router.post('/msg_from_me',function(req,res,next){
     run();
 
    
+});
+router.post('/msg_to_me',function(req,res,next){
+   
+    var m_id=req.session.m_id;
+    var start=parseInt(req.body.start);
+    var m_uid=req.session.m_uid;
+     async function run() {
+
+       var msg=await sqlasnyc( "SELECT * from `mvm_want_buy_msg` where buy_m_uid=? union all SELECT * from `mvm_want_supply_msg` where supply_m_uid=? order by register_date desc limit "+start+",10",[m_uid,m_uid]);
+        console.log('1');
+       if(msg!=0)
+       {
+           for (let s in msg)
+           {
+               var member_image=await sqlasnyc("select member_image from `mvm_member_table` where member_id=?",[msg[s].m_id]);
+                if(member_image!=0)
+                {
+                    msg[s].member_image=member_image[0].member_image;
+                }
+               if(msg[s].type==1)
+               {
+                    var supply=await sqlasnyc('select * from `mvm_want_supply` where uid=?',[msg[s].buy_id]);
+                    if(supply!=0)
+                    {
+                         msg[s].info=supply[0];
+                    }
+                   
+               }
+               else if(msg[s].type==-1)
+               {
+                var buy=await sqlasnyc('select * from `mvm_want_buy` where uid=?',[msg[s].buy_id]);
+                if(buy!=0)
+                {
+                     msg[s].info=buy[0];
+                }
+               
+               }
+           }
+       }
+      
+        res.json(msg);
+    }
+    run();
+
+   
+});
+router.post('/del_msg/sup',function(req,res,next)
+{
+    var uid=req.body.uid;
+    async function run() {
+       await sqlasnyc('delete from `mvm_want_supply_msg` where uid=?',[uid]);
+        res.json(1);
+        }
+        run();
+});
+router.post('/del_msg/buy',function(req,res,next)
+{
+    var uid=req.body.uid;
+    async function run() {
+       await sqlasnyc('delete from `mvm_want_buy_msg` where uid=?',[uid]);
+        res.json(1);
+        }
+        run();
+});
+router.post('/use_msg/buy',function(req,res,next)
+{
+    var uid=req.body.uid;
+    async function run() {
+       await sqlasnyc('update `mvm_want_buy_msg` set approval_date=? where uid=?',[get_now_time(),uid]);
+       var msg=await sqlasnyc('select buy_id from `mvm_want_buy_msg` where uid=?',[uid]);
+       var buy=await sqlasnyc('update `mvm_want_buy` set approval_date=10 where uid=?',[msg[0].buy_id]);
+        res.json(1);
+        }
+        run();
+});
+router.post('/use_msg/sup',function(req,res,next)
+{
+    var uid=req.body.uid;
+    async function run() {
+       await sqlasnyc('update `mvm_want_supply_msg` set approval_date=? where uid=?',[get_now_time(),uid]);
+       var msg=await sqlasnyc('select supply_id from `mvm_want_supply_msg` where uid=?',[uid]);
+       var buy=await sqlasnyc('update `mvm_want_supply` set approval_date=10 where uid=?',[msg[0].supply_id]);
+        res.json(1);
+        }
+        run();
 });
 module.exports = router;

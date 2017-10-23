@@ -61,9 +61,6 @@
     .weui-tab__bd{
         width: 100vw;
     }
-    .weui-tab{
-
-    }
     .hide1{
         width: 327px;
         float: left;
@@ -78,7 +75,7 @@
 
     }
     ::-webkit-scrollbar {/*隐藏滚轮*/
-        display: none;!important;
+        display: none !important;
     }
     .show{
         width: 1200px;
@@ -275,6 +272,23 @@
         margin: 12px;
         float: left;
     }
+    .to_detail{
+        font-size: 15px;
+        color: #454545;
+        line-height: 44px;
+        height: 44px;
+        float: right;
+        margin-right: 10px;
+        text-align: right;
+        position: absolute;
+        right: 10px;
+        font-weight: bold;
+    }
+    .msg_bottom a{
+        width: 100vw;
+        height: 44px;
+        float: left;
+    }
 </style>
 <div class="big_div">
     <div class="h44 header">
@@ -300,11 +314,11 @@
                     我的求购
                     <img src="images/default_wap/select.png" alt="">
                 </a>
-                <a class="weui-navbar__item" href="#tab3">
+                <a class="weui-navbar__item" href="#tab3" @click="msg_type='from_me'">
                     我的留言
                     <img src="images/default_wap/select.png" alt="">
                 </a>
-                <a class="weui-navbar__item" href="#tab4">
+                <a class="weui-navbar__item" href="#tab4" @click="msg_type='to_me'">
                     别人留言
                     <img src="images/default_wap/select.png" alt="">
                 </a>
@@ -343,26 +357,44 @@
                 <div id="tab3" class="weui-tab__bd-item">
                     <div class="msg_from_me" v-for="msg in from_me_list">
                         <div class="msg_top">
-                                <img src="images/default_wap/load.png" class="member_logo fl" alt="">
-                                <p class="member_id sl1 fl">adminxx</p>
-                                <p class="register_time sl1 fl">发布时间：2017-7-2</p>
-                                <img src="images/default_wap/clear.png" class="detele_ico" alt="">
+                                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+msg.member_image" class="member_logo fl" alt="">
+                                <p class="member_id sl1 fl">{{msg.m_id}}</p>
+                                <p class="register_time sl1 fl">发布时间：{{msg.register_date}}</p>
+                                <img src="images/default_wap/clear.png" class="detele_ico" alt="" @click="del_from_me(msg.uid,msg.type)">
                         </div>
                         <div class="msg_main">
-                            <p class="sl2 msg_title"><d class="msg_type">[求購]</d>啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題啊裏路亞標題</p>
+                            <p class="sl2 msg_title"><d class="msg_type">[{{msg.types}}]</d>{{msg.info.goods_name}}</p>
                             <p class="msg">{{msg.msg}}</p>
                         </div>
                         <div class="msg_bottom h44">
-                            <p>联系方式</p>
-                            <img src="images/default_wap/phone.png" alt="">
-                            <img src="images/default_wap/msg.png" alt="">
+                            <a :href="'msg_detail?uid='+msg.uid+'&type='+msg.type"><p>联系方式<d class="to_detail">></d> </p></a>
                         </div>
                     </div>
-                    <div class="msg_from_me"></div>
-                    <div class="msg_from_me"></div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
                 </div>
                 <div id="tab4" class="weui-tab__bd-item">
-                    <h1>页面四</h1>
+                    <div class="msg_from_me" v-for="msg in to_me_list">
+                        <div class="msg_top">
+                                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+msg.member_image" class="member_logo fl" alt="">
+                                <p class="member_id sl1 fl">{{msg.m_id}}</p>
+                                <p class="register_time sl1 fl">发布时间：{{msg.register_date}}</p>
+                                <img src="images/default_wap/edit1.png" class="detele_ico" alt="" @click="change_from_me(msg.uid,msg.type)">
+                        </div>
+                        <div class="msg_main">
+                            <p class="sl2 msg_title"><d class="msg_type">[{{msg.types}}]</d>{{msg.info.goods_name}}</p>
+                            <p class="msg">{{msg.msg}}</p>
+                        </div>
+                        <div class="msg_bottom h44">
+                            <a :href="'msg_detail?uid='+msg.uid+'&type='+msg.type"><p>联系方式<d class="to_detail">></d> </p></a>
+                        </div>
+                    </div>
+                    <div class="weui-loadmore">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">正在加载</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -381,7 +413,10 @@
             supply_list:[],
             buy_list:[],
             from_me_start:0,
-            from_me_list:[]
+            to_me_start:0,
+            from_me_list:[],
+            to_me_list:[],
+            msg_type:'',
         },
         methods:{
             change_supply:function(uid){
@@ -457,6 +492,82 @@
             ],
             buttonCancel: "取消"
         });
+            },
+            del_from_me:function(uid,type){
+               
+                if(type==1)
+                {
+                    $.post('./social_contact/del_msg/sup',{uid:uid},function(result){
+                            if(result==1)
+                            {
+                                $.toptip('删除成功');
+                            }
+                    })
+                }
+                else
+                {
+                    $.post('./social_contact/del_msg/buy',{uid:uid},function(result){
+                            if(result==1)
+                            {
+                                $.toptip('删除成功');
+                            }
+                    })
+                }
+                
+            },
+            change_from_me:function(uid,type)
+            {
+                $.actions({
+            actions: [
+                {
+                    text:'采纳',
+                    onClick: function(){
+                        if(type==1)
+                        {
+                            $.post('./social_contact/use_msg/sup',{uid:uid},function(result){
+                                    if(result==1)
+                                    {
+                                        $.toptip('采纳成功','success');
+                                    }
+                            })
+                        }
+                        else
+                        {
+                            $.post('./social_contact/use_msg/buy',{uid:uid},function(result){
+                                    if(result==1)
+                                    {
+                                        $.toptip('采纳成功','success');
+                                    }
+                            })
+                        }
+                    }
+                },
+                {
+                    text:'刪除',
+                    onClick: function(){
+                        if(type==1)
+                        {
+                            $.post('./social_contact/del_msg/sup',{uid:uid},function(result){
+                                    if(result==1)
+                                    {
+                                        $.toptip('删除成功');
+                                    }
+                            })
+                        }
+                        else
+                        {
+                            $.post('./social_contact/del_msg/buy',{uid:uid},function(result){
+                                    if(result==1)
+                                    {
+                                        $.toptip('删除成功');
+                                    }
+                            })
+                        }
+                    }
+                }
+            ],
+            buttonCancel: "取消"
+        });
             }
         },
         mounted:function () {
@@ -519,14 +630,95 @@
                 {
                     result.forEach(function(item,index){
                         t.from_me_start++;
+                        item.register_date=return_date(item.register_date);
+                        if(item.type==1)
+                        {
+                            item.types='供应';
+                        }
+                        else
+                        {
+                            item.types='需求'
+                        }
                         t.from_me_list.push(item);
                     })
                 }
-            })
+            });
+            $.post('./social_contact/msg_to_me',{start:t.to_me_start},function(result){
+               
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function(item,index){
+                        t.to_me_start++;
+                        item.register_date=return_date(item.register_date);
+                        if(item.type==1)
+                        {
+                            item.types='供应';
+                        }
+                        else
+                        {
+                            item.types='需求'
+                        }
+                        t.to_me_list.push(item);
+                    })
+                }
+            });
         }
     });
 
-
+    $(document.body).infinite();
+    var loading = false;  //状态标记
+$(document.body).infinite().on("infinite", function() {
+  if(loading) return;
+  loading = true;
+  var t=page;
+  if(page.msg_type=='from_me')
+  {
+    $.post('./social_contact/msg_from_me',{start:t.from_me_start},function(result){
+               
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function(item,index){
+                        t.from_me_start++;
+                        item.register_date=return_date(item.register_date);
+                        if(item.type==1)
+                        {
+                            item.types='供应';
+                        }
+                        else
+                        {
+                            item.types='需求'
+                        }
+                        t.from_me_list.push(item);
+                    });
+                    loading = false;
+                }
+            });
+  }
+  else if(page.msg_type=='to_me')
+  {
+    $.post('./social_contact/msg_to_me',{start:t.to_me_start},function(result){
+               
+                if(result!=0 && result.length>0)
+                {
+                    result.forEach(function(item,index){
+                        t.to_me_start++;
+                        item.register_date=return_date(item.register_date);
+                        if(item.type==1)
+                        {
+                            item.types='供应';
+                        }
+                        else
+                        {
+                            item.types='需求'
+                        }
+                        t.to_me_list.push(item);
+                    });
+                    loading = false;
+                }
+            });
+  }
+ 
+});
 </script>
 
 

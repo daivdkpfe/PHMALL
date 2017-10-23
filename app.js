@@ -55,6 +55,7 @@ var supply=require('./routes/supply');
 var supply_detail=require('./routes/supply_detail');
 var buy_detail=require('./routes/buy_detail');
 var supply_edit=require('./routes/supply_edit');
+var msg_detail=require('./routes/msg_detail');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -138,6 +139,7 @@ app.use('/supply',supply);
 app.use('/supply_detail',supply_detail);
 app.use('/buy_detail',buy_detail);
 app.use('/supply_edit',supply_edit);
+app.use('/msg_detail',msg_detail);
 //
 
 app.use('/union/product',unionProduct);

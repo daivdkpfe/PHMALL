@@ -290,16 +290,23 @@
             sup_uid:0,
             tels:0,
             buy_m_uid:0,
-            status:'进行中'
+            status:'进行中',
+            name:'',
+            address:''
 
         },
         methods:{
             sub:function () {
                 $.post('/buy_detail/submit',{name:this.name,tel:this.tel,address:this.address,msg:this.msg,buy_uid:this.buy_uid,buy_m_uid:this.buy_m_uid},function (result) {
                     console.log(result);
+                    var t=this;
                     if(result==1)
                     {
                         $.toptip('留言成功','success');
+                        t.name="";
+                        t.tel="";
+                        t.address='';
+                        t.msg='';
                     }
                     else if(result==0)
                     {

@@ -290,15 +290,25 @@
             sup_uid:0,
             tels:0,
             supply_m_uid:0,
-            status:'进行中'
+            status:'进行中',
+            name:'',
+            tel:'',
+            address:'',
+            msg:''
         },
         methods:{
             sub:function () {
+                var t=this;
                 $.post('/supply_detail/submit',{name:this.name,tel:this.tel,address:this.address,msg:this.msg,supply_uid:this.supply_uid,supply_m_uid:this.supply_m_uid},function (result) {
                     console.log(result);
                     if(result==1)
                     {
                         $.toptip('留言成功','success');
+                        t.name="";
+                        t.tel="";
+                        t.address='';
+                        t.msg='';
+                        
                     }
                     else if(result==0)
                     {
