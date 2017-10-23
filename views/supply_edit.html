@@ -51,25 +51,16 @@
     var page = new Vue({
         el: '.big_div',
         data: {
-            select:0,
-            down:false,
-            index:0,
-            cates:[],
-            group_list:[]
+            
         },
         methods:{
-            get_cate:function (index,cate_uid) {
-
-
-
-
-                this.select=index+1;
-            }
+           
+        },
+        mounted:function(){
+            
         }
     });
-    $.post("./category",{},function (result) {
-        page.cates=result;
-    });
+    
 
 </script>
 

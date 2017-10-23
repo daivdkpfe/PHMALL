@@ -11599,3 +11599,131 @@
 [2017-10-22 16:35:22.878] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
 [2017-10-22 16:37:54.691] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
 [2017-10-22 16:39:23.414] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:14:11.259] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-22 17:14:11.261] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-22 17:14:11.261] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-22 17:14:11.261] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-22 17:14:11.262] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-22 17:14:11.262] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-22 17:14:11.262] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-22 17:14:11.263] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-22 17:14:11.263] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-22 17:14:11.264] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-22 17:14:11.265] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-22 17:14:11.265] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-22 17:14:11.266] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-22 17:14:11.266] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-22 17:14:11.267] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-22 17:14:11.268] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-22 17:14:11.268] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-22 17:14:11.268] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-22 17:14:11.269] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-22 17:14:11.269] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-22 17:14:11.269] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-22 17:14:11.270] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-22 17:14:11.270] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-22 17:14:25.204] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-10-22 17:14:26.545] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:14:28.180] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-10-22 17:14:29.618] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:14:29.621] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:15:01.797] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:15:01.798] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:16:18.764] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:16:18.766] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:16:22.987] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:16:22.990] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:16:45.180] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:16:45.182] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:20:09.543] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:21:09.996] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:21:17.093] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2017-10-22 17:21:17.103] [INFO] log_file -  SELECT uid,goods_name,goods_sale_price,goods_file1,goods_status,goods_stock,supplier_id,goods_hit FROM `mvm_goods_table` WHERE goods_cat=?  ORDER BY register_date DESC LIMIT 0, 20    11
+[2017-10-22 17:21:19.358] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:21:21.829] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    416
+[2017-10-22 17:21:21.839] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-22 17:21:21.884] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    545
+[2017-10-22 17:21:21.929] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    416
+[2017-10-22 17:21:21.961] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    416,mvm_goods_table
+[2017-10-22 17:23:58.504] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:23:58.506] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:24:09.732] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:24:09.734] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:27:22.103] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:27:22.104] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:28:09.254] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:28:44.949] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:32:09.314] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:32:25.883] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:33:27.015] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:35:06.510] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:35:06.511] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:36:53.503] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:38:10.066] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:38:57.560] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:39:55.344] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-22 17:39:56.210] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:39:56.213] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:40:10.087] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:40:10.094] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:40:33.613] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:40:33.615] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:41:57.809] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:41:57.814] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:42:40.464] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:42:40.465] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:43:22.777] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:43:22.779] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:47:46.683] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:47:46.685] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:47:56.081] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:47:56.083] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:48:06.212] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:48:06.214] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:51:27.377] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:51:27.378] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:51:42.880] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:51:42.882] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:51:48.461] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:51:48.463] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:52:07.265] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-22 17:52:07.269] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-22 17:52:12.150] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508630400,1508716799
+[2017-10-23 08:07:26.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-23 08:07:26.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-23 08:07:26.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-23 08:07:26.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-23 08:07:26.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-23 08:07:26.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-23 08:07:26.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-23 08:07:26.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-23 08:07:26.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-23 08:07:26.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-23 08:07:26.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-23 08:07:26.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-23 08:07:26.979] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-23 08:07:26.982] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-23 08:07:26.983] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-23 08:07:26.983] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-23 08:07:26.984] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-23 08:07:26.985] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-23 08:07:26.985] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-23 08:07:26.986] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-23 08:07:26.986] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-23 08:07:26.988] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-23 08:07:26.989] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-23 08:07:36.303] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508716800,1508803199
+[2017-10-23 08:07:40.474] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508716800,1508803199
+[2017-10-23 08:07:45.474] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-10-23 08:07:46.815] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1508716800,1508803199
+[2017-10-23 08:07:48.330] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-10-23 08:07:50.631] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2017-10-23 08:07:50.633] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2017-10-23 08:08:25.195] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-10-23 08:08:26.812] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2017-10-23 08:08:26.815] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-10-23 08:08:26.821] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-10-23 08:08:35.768] [INFO] log_file - select * from `mvm_want_supply` where uid=?    150
+[2017-10-23 08:08:35.772] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=?    1
+[2017-10-23 08:08:50.560] [INFO] log_file - select * from `mvm_want_supply` where uid=?    150
+[2017-10-23 08:08:50.568] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=?    1

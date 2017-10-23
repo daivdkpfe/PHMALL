@@ -1,3 +1,4 @@
+
 <% include header_index.html %>
 
 <style>
@@ -196,6 +197,52 @@
         bottom: 20px;
         left: 10px;
     }
+
+
+
+
+
+
+
+
+
+
+
+    .msg_from_me,.msg_to_me{
+        height: 250px;
+        width: 100vw;
+        background: white;
+        margin-bottom: 10px;
+    }
+    .msg_top{
+        width: 100vw;
+        height: 70px;
+        border-bottom: 1px solid rgb(239, 239, 244);
+    }
+    .member_logo{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .member_id{
+        width: 250px;
+        line-height: 20px;
+        padding-top: 10px;
+        font-size: 15px;
+        color: #454545;
+    }
+    .register_time{
+        width: 250px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        color: #adadad;
+    }
+    .detele_ico{
+        width: 15px;
+        float: right;
+        margin-right: 10px;
+    }
 </style>
 <div class="big_div">
     <div class="h44 header">
@@ -221,11 +268,11 @@
                     我的求购
                     <img src="images/default_wap/select.png" alt="">
                 </a>
-                <a class="weui-navbar__item" href="#tab2">
+                <a class="weui-navbar__item" href="#tab3">
                     我的留言
                     <img src="images/default_wap/select.png" alt="">
                 </a>
-                <a class="weui-navbar__item" href="#tab2">
+                <a class="weui-navbar__item" href="#tab4">
                     别人留言
                     <img src="images/default_wap/select.png" alt="">
                 </a>
@@ -262,7 +309,16 @@
                         </div>
                 </div>
                 <div id="tab3" class="weui-tab__bd-item">
-                    <h1>页面三</h1>
+                    <div class="msg_from_me">
+                        <div class="msg_top">
+                                <img src="images/default_wap/load.png" class="member_logo fl" alt="">
+                                <p class="member_id sl1 fl">adminxx</p>
+                                <p class="register_time sl1 fl">发布时间：2017-7-2</p>
+                                <img src="images/default_wap/clear.png" class="detele_ico" alt="">
+                        </div>
+                    </div>
+                    <div class="msg_from_me"></div>
+                    <div class="msg_from_me"></div>
                 </div>
                 <div id="tab4" class="weui-tab__bd-item">
                     <h1>页面四</h1>
