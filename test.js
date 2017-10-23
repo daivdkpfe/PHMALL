@@ -3,7 +3,7 @@
  */
 
 
-
+/*666*/
 // 屬性圖片
 /*
 str="Color|pink(images/attr/[1]/26.gif)|purple(images/attr/[1]/5.gif)|red(images/attr/[1]/7.gif)||size|S()|M()|X()";
