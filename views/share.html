@@ -64,7 +64,9 @@
         }
 
         .share_div {
-           background: white;
+            background: white;
+            margin-top: 10px;
+            float: left;
             width: 100vw;
         }
 
@@ -112,11 +114,13 @@
             float: left;
             color: #fe9b0c;
         }
-        .share_main{
+
+        .share_main {
             width: 100vw;
             height: 102px;
         }
-        .goods_name{
+
+        .goods_name {
             margin: 0 10px;
             font-size: 15px;
             color: #454545;
@@ -124,50 +128,60 @@
             margin-top: 10px;
             height: 40px;
         }
-        .share_res{
+
+        .share_res {
             margin: 0 10px;
             font-size: 13px;
             color: #adadad;
             line-height: 18px;
-            height: 36px;
+            
             margin-top: 10px;
         }
-        .share_img_div{
-            
-            border-bottom: 1px solid rgb(239,239,244);
+
+        .share_img_div {
+
+            border-bottom: 1px solid rgb(239, 239, 244);
             background: white;
             width: 365px;
             /* margin: 0 auto; */
             padding: 0 5px;
             padding-bottom: 20px;
         }
-        .two{
-            height: 240px;
+
+        .two {
+            height: 240px !important;
         }
-        .one{
+
+        .one {
             height: 115px;
         }
-        .share_img{
+
+        .share_img {
             width: 115px;
             height: 115px;
             float: left;
             margin-left: 5px;
+            margin-top: 10px;
         }
-        .share_bottom{
+
+        .share_bottom {
             width: 100vw;
             background: white;
             height: 40px;
         }
-        .zan{
+
+        .zan {
             width: 15px;
             margin: 12.5px 10px;
         }
-        .zan_num{
+
+        .zan_num {
             line-height: 40px;
             font-size: 15px;
             color: #fe9b0c;
         }
-        .shop{
+
+        .shop {
             width: 52px;
             height: 20px;
             background: #fe9b0c;
@@ -184,55 +198,159 @@
     <div class="big_div">
         <div class="header h44">
             <div class="header_l">
-                <p class="header_l_title">最新</p>
-                <div class="gelan_l"></div>
+                <p class="header_l_title" @click="change_type('new')">最新</p>
+                <div class="gelan_l" v-if="type=='new'"></div>
             </div>
             <div class="header_r">
-                <p class="header_r_title">最新</p>
-                <div class="gelan_r"></div>
+                <p class="header_r_title" @click="change_type('hot')">最热</p>
+                <div class="gelan_r" v-if="type=='hot'"></div>
             </div>
         </div>
         <!-- 头部 -->
         <div class="share_div_list">
-            <div class="share_div">
+            <div class="share_div" v-for="(share,index) in share_list">
                 <div class="share_top">
-                    <img src="images/default_wap/load.png" class="member_img" alt="">
+                    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+share.member_image" class="member_img"
+                        alt="">
                     <p class="member_id">
-                        member_name
+                        {{share.member_id}}
                     </p>
-                    <p class="register_date">发布时间：2017-7-2</p>
-                    <div class="add_btn">添加好友</div>
+                    <p class="register_date">发布时间：{{share.register_date}}</p>
+                    <div class="add_btn" @click="friend(share.m_uid)">添加好友</div>
                 </div>
                 <div class="share_main">
                     <p class="goods_name sl2">
-                        商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称
+                        {{share.goods_name}}
                     </p>
-                    <p class="share_res sl2">晒单理由：这是一个好东西这是一个好东西这是一个好东西这是一个好东西这是一个好东西这是一个好东西</p>
-                    <div class="share_img_div one">
-                            <img src="images/default_wap/load.png" class="share_img" alt="">
-                            <img src="images/default_wap/load.png" class="share_img" alt="">
-                            <img src="images/default_wap/load.png" class="share_img" alt="">
+                    <p class="share_res">晒单理由：{{share.comment}}</p>
+                    <div class="share_img_div one" v-bind:class="{two:share.pics.length>2}">
+                        <img src="images/default_wap/load.png" class="share_img" alt="" v-for="pic in share.pics" :data-src="'http://www.phmall.com.ph/'+pic">
+
                     </div>
                     <div class="share_bottom">
                         <img src="images/default_wap/zan2.png" class="zan fl" alt="">
-                        <p class="zan_num fl">100人喜欢</p>
-                        <div class="shop">去购买</div>
+                        <p class="zan_num fl" @click="love(share.uid,index)">{{share.love,index}}人喜欢</p>
+                        <a :href="share.url+share.g_uid">
+                            <div class="shop">去购买</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="weui-loadmore">
+            <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+          </div>
     </div>
 
 
     <script>
-    var page=new Vue({
-        el:'.big_div',
-        data:{
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                type: '<%= type %>',
+                start: 0,
+                share_list: []
+            },
+            methods: {
+                love: function (uid, index) {
+                    var t = this;
 
-        },
-        mounted:function(){
-            
-        }
-    })
+
+                    if (localStorage.getItem("love_" + uid)) {
+
+                    } else {
+                        localStorage.setItem("love_" + uid, true);
+                        $.post("./share/love", {
+                            uid: uid
+                        }, function (result) {
+                            if (result == 1) {
+                                t.share_list[index].love++;
+                            } else {
+                                localStorage.setItem("love_" + uid, false);
+                            }
+
+                        })
+                    }
+
+                },
+                friend: function (uid) {
+                    $.post('/share/friend', {
+                        uid: uid
+                    }, function (result) {
+                        console.log(result);
+                        if (result == 0) {
+                            $.toptip("您和对方已经是好友了哦~", 'error');
+                        } else if (result == 1) {
+                            $.toptip('添加好友成功', 'success');
+                        } else {
+                            window.location.href = "./login";
+                        }
+                    });
+                },
+                change_type: function (type) {
+
+                    this.type = type;
+                    this.share_list = [];
+                    var t = this;
+                    this.start = 0;
+                    $.post('/share', {
+                        type: this.type,
+                        start: this.start
+                    }, function (result) {
+                        console.log(result);
+                        if (result != 0 && result.length > 0) {
+                            result.forEach(function (item, index) {
+                                item.register_date = return_date(item.register_date);
+                                t.share_list.push(item);
+                                t.start++;
+                            }, this);
+                        }
+                    });
+                }
+            },
+            mounted: function () {
+                var t = this;
+                $.post('/share', {
+                    type: this.type,
+                    start: this.start
+                }, function (result) {
+                    console.log(result);
+                    if (result != 0 && result.length > 0) {
+                        result.forEach(function (item, index) {
+                            item.register_date = return_date(item.register_date);
+                            t.share_list.push(item);
+                            t.start++;
+                        }, this);
+                    }
+                });
+            }
+        });
+
+
+
+        $(document.body).infinite();
+        var loading = false;  //状态标记
+        $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        var t=page;
+       
+        $.post('/share', {
+                    type: t.type,
+                    start: t.start
+                }, function (result) {
+                    
+                    if (result != 0 && result.length > 0) {
+                        result.forEach(function (item, index) {
+                            item.register_date = return_date(item.register_date);
+                            t.share_list.push(item);
+                            t.start++;
+                        }, this);
+                        loading = false;
+                    }
+                });
+        
+        });
     </script>
     <% include footer.html %>

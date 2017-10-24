@@ -738,10 +738,12 @@ global.unserialize = function (data) {
 
 global.ad_unzip=function(strs,callback){
     const buffer = Buffer.from(strs, 'base64');
+    
     zlib.unzip(buffer, (err, buffer) => {
         if (!err) {
         callback(unserialize(buffer.toString()));
     } else {
+      console.log("erring");
         // handle error
     }
 })
