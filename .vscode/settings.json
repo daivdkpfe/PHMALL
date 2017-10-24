@@ -1,0 +1,6 @@
+{
+    "favorites.resources": [
+        "app.js",
+        "bin\\www.js"
+    ]
+}
