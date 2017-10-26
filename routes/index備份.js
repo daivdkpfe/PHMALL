@@ -36,7 +36,7 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
         }
         if(typeof (data)=='undefined')
         {
-          http.get("http://192.168.0.105/update_cache");
+          http.get("http://192.168.0.109/update_cache");
         }
         else{
           resolve(data);

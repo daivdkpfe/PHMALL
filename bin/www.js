@@ -96,7 +96,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-http.get("http://192.168.0.105:88/update_cache");
+http.get("http://192.168.0.109:88/update_cache");
 var io=socketio.listen(server);
 /**
  * Listen on provided port, on all network interfaces.

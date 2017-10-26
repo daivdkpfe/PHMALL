@@ -1,6 +1,6 @@
 <% include header_index.html %>
 <script>
-    $.post('http://192.168.0.105/english/xx.php',{},function (result) {
+    $.post('http://192.168.0.109/english/xx.php',{},function (result) {
         $('body').html(result);
 
         var obj = eval('(' + result + ')');
