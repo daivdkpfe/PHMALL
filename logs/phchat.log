@@ -8097,3 +8097,578 @@
 [2017-10-27 09:52:04.438] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
 [2017-10-27 09:52:04.456] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
 [2017-10-27 09:52:04.479] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:22:28.981] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:22:28.992] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:22:29.014] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:22:29.040] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:22:29.054] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:22:44.947] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:22:44.950] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:22:44.967] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:22:44.979] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:22:44.988] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:23:15.243] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:23:15.246] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:23:15.263] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:23:15.277] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:23:15.285] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:23:18.041] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:23:18.044] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:23:18.058] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:23:18.073] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:23:18.087] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:25:42.698] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:25:42.701] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:25:42.717] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:25:42.735] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:25:42.744] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:26:09.078] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:26:09.084] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:26:09.107] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:26:09.120] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:26:09.138] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:26:18.538] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:26:18.540] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:26:18.554] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:26:18.568] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:26:18.578] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:26:23.331] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:26:23.334] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:26:23.348] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:26:23.366] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:26:23.378] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:27:38.952] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-27 10:27:38.956] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-27 10:27:38.960] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-27 10:27:38.961] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-27 10:27:38.965] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-27 10:27:38.968] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-27 10:27:38.970] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-27 10:27:38.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-27 10:27:38.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-27 10:27:38.978] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-27 10:27:38.985] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-27 10:27:38.988] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-27 10:27:38.991] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-27 10:27:38.994] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-27 10:27:38.996] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-27 10:27:38.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-27 10:27:38.998] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-27 10:27:39.000] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-27 10:27:39.001] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-27 10:27:39.003] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-27 10:27:39.004] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-27 10:27:39.008] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-27 10:27:39.009] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-27 10:27:39.016] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-10-27 10:28:29.290] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-27 10:28:29.292] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-27 10:28:29.293] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-27 10:28:29.293] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-27 10:28:29.293] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-27 10:28:29.294] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-27 10:28:29.295] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-27 10:28:29.295] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-27 10:28:29.296] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-27 10:28:29.297] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-27 10:28:29.298] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-27 10:28:29.299] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-27 10:28:29.300] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-27 10:28:29.302] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-27 10:28:29.303] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-27 10:28:29.303] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-27 10:28:29.304] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-27 10:28:29.304] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-27 10:28:29.305] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-27 10:28:29.305] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-27 10:28:29.306] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-27 10:28:29.307] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-27 10:28:29.308] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-27 10:28:29.309] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-10-27 10:29:14.051] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509033600,1509119999
+[2017-10-27 10:29:21.856] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:29:21.859] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:29:21.878] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:29:21.890] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:29:21.900] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:29:32.582] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:29:32.596] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:29:32.624] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:29:32.641] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:29:32.662] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:32:15.820] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:32:15.824] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:32:15.841] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:32:15.858] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:32:15.874] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:33:52.602] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:33:52.606] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:33:52.620] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:33:52.642] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:33:52.653] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:33:57.592] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:33:57.603] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:33:57.623] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:33:57.637] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:33:57.646] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:36:33.888] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:36:33.892] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:36:33.908] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:36:33.924] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:36:33.935] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:36:59.775] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:36:59.777] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:36:59.790] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:36:59.805] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:36:59.816] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:51:59.628] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:51:59.637] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:51:59.655] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:51:59.674] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:51:59.684] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:53:13.087] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:53:13.098] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:53:13.117] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:53:13.148] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:53:13.167] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:54:19.974] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:54:19.977] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:54:19.992] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:54:20.006] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:54:20.014] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:55:58.161] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-27 10:55:58.163] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-27 10:55:58.164] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-27 10:55:58.164] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-27 10:55:58.165] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-27 10:55:58.166] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-27 10:55:58.166] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-27 10:55:58.167] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-27 10:55:58.167] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-27 10:55:58.168] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-27 10:55:58.169] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-27 10:55:58.169] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-27 10:55:58.171] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-27 10:55:58.171] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-27 10:55:58.172] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-27 10:55:58.172] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-27 10:55:58.173] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-27 10:55:58.173] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-27 10:55:58.174] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-27 10:55:58.174] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-27 10:55:58.175] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-27 10:55:58.176] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-27 10:55:58.177] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-27 10:55:58.177] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-10-27 10:57:00.458] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-27 10:57:00.460] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-27 10:57:00.461] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-27 10:57:00.461] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-27 10:57:00.462] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-27 10:57:00.462] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-27 10:57:00.463] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-27 10:57:00.463] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-27 10:57:00.464] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-27 10:57:00.465] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-27 10:57:00.469] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-27 10:57:00.470] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-27 10:57:00.472] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-27 10:57:00.473] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-27 10:57:00.474] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-27 10:57:00.476] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-27 10:57:00.477] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-27 10:57:00.478] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-27 10:57:00.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-27 10:57:00.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-27 10:57:00.481] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-27 10:57:00.483] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-27 10:57:00.484] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-27 10:57:00.484] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-10-27 10:57:01.219] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509033600,1509119999
+[2017-10-27 10:57:04.530] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:57:04.533] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:57:04.550] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:57:04.581] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:57:04.590] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:57:07.680] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:57:07.682] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:57:07.701] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:57:07.718] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:57:07.728] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 10:58:24.074] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 10:58:24.080] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 10:58:24.106] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 10:58:24.124] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 10:58:24.146] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:01:27.723] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:01:27.728] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:01:27.755] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:01:27.772] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:01:27.798] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:01:36.088] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:01:36.091] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:01:36.105] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:01:36.131] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:01:36.141] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:26:16.739] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:26:16.746] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:26:16.765] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:26:16.796] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:26:16.806] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:26:30.519] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:26:30.525] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:26:30.552] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:26:30.576] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:26:30.585] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:36:53.389] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:36:53.397] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:36:53.417] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:36:53.436] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:36:53.451] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:40:02.386] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:40:02.393] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:40:02.409] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:40:02.424] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:40:02.435] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:40:21.449] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:40:21.453] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:40:21.477] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:40:21.509] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:40:21.536] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:41:04.648] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:41:04.651] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:41:04.667] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:41:04.679] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:41:04.690] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:42:10.395] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:42:10.397] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:42:10.414] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:42:10.433] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:42:10.442] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:43:13.320] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:43:13.323] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:43:13.342] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:43:13.353] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:43:13.365] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:46:07.155] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:46:07.161] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:46:07.180] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:46:07.210] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:46:07.236] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:46:28.647] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:46:28.649] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:46:28.667] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:46:28.684] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:46:28.696] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:47:49.689] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:47:49.695] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:47:49.712] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:47:49.726] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:47:49.737] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:51:34.111] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:51:34.113] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:51:34.134] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:51:34.147] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:51:34.160] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:54:27.070] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:54:27.072] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:54:27.088] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:54:27.102] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:54:27.113] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:54:52.083] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:54:52.087] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:54:52.111] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:54:52.129] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:54:52.144] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 11:55:45.764] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 11:55:45.767] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 11:55:45.781] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 11:55:45.801] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 11:55:45.813] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:16:05.827] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-27 13:16:05.831] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-27 13:16:05.831] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-27 13:16:05.832] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-27 13:16:05.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-27 13:16:05.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-27 13:16:05.834] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-27 13:16:05.834] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-27 13:16:05.834] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-27 13:16:05.836] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-27 13:16:05.837] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-27 13:16:05.838] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-27 13:16:05.839] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-27 13:16:05.840] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-27 13:16:05.841] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-27 13:16:05.842] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-27 13:16:05.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-27 13:16:05.844] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-27 13:16:05.846] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-27 13:16:05.847] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-27 13:16:05.848] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-27 13:16:05.851] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-27 13:16:05.853] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-27 13:16:05.854] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-10-27 13:17:22.832] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509033600,1509119999
+[2017-10-27 13:17:25.645] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509033600,1509119999
+[2017-10-27 13:17:29.503] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:17:29.513] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:17:29.533] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:17:29.549] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:17:29.566] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:17:59.068] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:17:59.073] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:17:59.093] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:17:59.110] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:17:59.121] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:22:05.086] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:22:05.092] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:22:05.108] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:22:05.127] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:22:05.141] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:24:09.104] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:24:09.108] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:24:09.125] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:24:09.144] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:24:09.157] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:25:50.216] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:25:50.222] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:25:50.253] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:25:50.281] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:25:50.310] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:26:56.925] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:26:56.928] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:26:56.961] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:26:56.988] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:26:57.025] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:27:24.567] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:27:24.570] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:27:24.583] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:27:24.594] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:27:24.608] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:31:38.702] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:31:38.709] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:31:38.726] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:31:38.737] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:31:38.751] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:35:11.144] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:35:11.147] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:35:11.162] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:35:11.178] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:35:11.190] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:35:39.771] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:35:39.778] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:35:39.802] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:35:39.818] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:35:39.829] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:36:25.182] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:36:25.187] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:36:25.204] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:36:25.216] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:36:25.226] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:41:17.741] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:41:17.747] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:41:17.766] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:41:17.780] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:41:17.789] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:43:22.417] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:43:22.420] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:43:22.434] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:43:22.444] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:43:22.465] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:44:12.501] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:44:12.503] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:44:12.518] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:44:12.533] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:44:12.545] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:45:29.342] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:45:29.345] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:45:29.360] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:45:29.378] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:45:29.391] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:45:48.650] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:45:48.653] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:45:48.670] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:45:48.682] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:45:48.695] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:47:21.930] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:47:21.933] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:47:21.950] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:47:21.965] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:47:21.976] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:50:20.591] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:50:20.595] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:50:20.613] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:50:20.626] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:50:20.640] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:50:22.767] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:50:22.770] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:50:22.792] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:50:22.808] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:50:22.816] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 13:57:08.973] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 13:57:08.978] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 13:57:08.994] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 13:57:09.008] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 13:57:09.016] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:02:01.704] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:02:01.708] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:02:01.724] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:02:01.742] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:02:01.758] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:03:24.257] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:03:24.268] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:03:24.283] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:03:24.297] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:03:24.305] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:05:35.757] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:05:35.761] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:05:35.780] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:05:35.795] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:05:35.807] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:06:43.333] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:06:43.338] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:06:43.355] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:06:43.371] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:06:43.380] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:07:05.299] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:07:05.301] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:07:05.315] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:07:05.329] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:07:05.344] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:08:10.813] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:08:10.816] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:08:10.835] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:08:10.856] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:08:10.866] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:12:44.710] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:12:44.717] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:12:44.743] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:12:44.759] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:12:44.769] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:14:14.320] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:14:14.324] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:14:14.339] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:14:14.351] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:14:14.364] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:15:04.839] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:15:04.842] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:15:04.856] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:15:04.881] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:15:04.891] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:15:19.295] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:15:19.298] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:15:19.314] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:15:19.328] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:15:19.336] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:16:34.543] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:16:34.546] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:16:34.565] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:16:34.581] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:16:34.590] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:17:04.260] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:17:04.267] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:17:04.286] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:17:04.303] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:17:04.316] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:17:51.987] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:17:51.990] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:17:52.005] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:17:52.020] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:17:52.029] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:25:55.675] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:25:55.681] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:25:55.695] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:25:55.712] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:25:55.728] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:26:36.977] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:26:36.994] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:26:37.023] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:26:37.034] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:26:37.045] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:28:19.799] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:28:19.803] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:28:19.820] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:28:19.852] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:28:19.905] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 14:30:24.544] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 14:30:24.548] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 14:30:24.565] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 14:30:24.580] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 14:30:24.591] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 16:16:52.501] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-10-27 16:16:52.504] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-10-27 16:16:52.504] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-10-27 16:16:52.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-10-27 16:16:52.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-10-27 16:16:52.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-10-27 16:16:52.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-10-27 16:16:52.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-10-27 16:16:52.507] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-10-27 16:16:52.508] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-10-27 16:16:52.509] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-10-27 16:16:52.510] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-10-27 16:16:52.511] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-10-27 16:16:52.511] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-10-27 16:16:52.512] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-10-27 16:16:52.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-10-27 16:16:52.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-10-27 16:16:52.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-10-27 16:16:52.514] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-10-27 16:16:52.514] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-10-27 16:16:52.515] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-10-27 16:16:52.516] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-10-27 16:16:52.517] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-10-27 16:16:52.518] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-10-27 17:03:19.530] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509033600,1509119999
+[2017-10-27 17:03:24.381] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509033600,1509119999
+[2017-10-27 17:03:27.545] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:03:27.556] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:03:27.573] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:03:27.591] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:03:27.604] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:03:44.871] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:03:44.891] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:03:44.919] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:03:44.936] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:03:44.946] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:06:03.350] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:06:03.355] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:06:03.376] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:06:03.395] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:06:03.404] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:22:51.796] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:22:51.803] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:22:51.819] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:22:51.838] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:22:51.850] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:40:08.823] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:40:08.832] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:40:08.852] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:40:08.866] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:40:08.877] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:41:25.267] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:41:25.269] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:41:25.290] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:41:25.316] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:41:25.327] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:42:48.728] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:42:48.733] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:42:48.754] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:42:48.775] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:42:48.785] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:43:18.760] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:43:18.764] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:43:18.787] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:43:18.823] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:43:18.842] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:44:49.565] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:44:49.569] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:44:49.593] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:44:49.613] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:44:49.631] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
+[2017-10-27 17:45:14.131] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    409
+[2017-10-27 17:45:14.135] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    31
+[2017-10-27 17:45:14.160] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat=? ORDER BY t1.uid ASC LIMIT 4    543
+[2017-10-27 17:45:14.179] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    409
+[2017-10-27 17:45:14.192] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    409,mvm_goods_table
