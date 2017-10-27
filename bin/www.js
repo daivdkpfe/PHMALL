@@ -30,6 +30,7 @@ goods_table[1]="mvm_goods_table";
 goods_table[2]="mvm_goods_onsale";
 goods_table[3]="mvm_goods_group";
 goods_table[4]='mvm_goods_auction';
+goods_table[5]='mvm_goods_change';
 
 global.goods_detail=new Array();
 goods_detail[0]="xx";
@@ -37,6 +38,7 @@ goods_detail[1]="mvm_goods_detail";
 goods_detail[2]="mvm_goods_onsale_detail";
 goods_detail[3]="mvm_goods_group_detail";
 goods_detail[4]="mvm_goods_auction_detail";
+goods_detail[5]="mvm_goods_change_detail";
 
 
 global.goods_gallery=new Array();
@@ -45,6 +47,7 @@ goods_gallery[1]="mvm_gallery";
 goods_gallery[2]="mvm_onsale_gallery";
 goods_gallery[3]="mvm_group_gallery";
 goods_gallery[4]="mvm_auction_gallery";
+goods_gallery[5]="mvm_auction_change";
 var haveLogin=new Array();
 
 
@@ -83,6 +86,7 @@ global.favoriteModule=new Array();
 favoriteModule[1]='product';
 favoriteModule[2]='salegd_detail';
 favoriteModule[3]='group_detail';
+favoriteModule[5]='changegd_detail';
 
 /**
  * Get port from environment and store in Express.
@@ -96,7 +100,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-http.get("http://192.168.0.109:88/update_cache");
+http.get("http://192.168.0.105:88/update_cache");
 var io=socketio.listen(server);
 /**
  * Listen on provided port, on all network interfaces.

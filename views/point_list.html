@@ -1,164 +1,384 @@
 <% include header_index.html %>
-<style>
-      .weui-navbar{
-        overflow: scroll;
-        height:44px;
-        padding-left: 10px;
-        background: white;
-    }
-    .weui-navbar__item.weui-bar__item--on{
-        background: white;
-        color: #ff8000;
-    }
-    .weui-navbar__item{
-        width: 80px;
-    }
-    .weui-navbar__item:after{
-        border: none;
-    }
-    .weui-navbar:after{
-        border:none;
-    }
-    .weui-navbar__item{
-        color: #181818;
-        font-size: 13px;
-    }
-    body{
-        background: rgb(243,243,243);
-    }
-    .weui-navbar__item img{
-        height:4px;
-        display: none;
-    }
-    .weui-bar__item--on img{
-        display: block;
-        margin: 0 auto;
-        margin-top: 7px;
-    }
-    .weui-tab__bd{
-        width: 100vw;
+    <style>
+        .weui-navbar {
+            overflow: scroll;
+            height: 44px;
+            padding-left: 10px;
+            background: white;
+        }
 
-    }
-    .weui-tab{
+        .weui-navbar__item.weui-bar__item--on {
+            background: white;
+            color: #ff8000;
+        }
 
-    }
-    .hide1{
-        width: 327px;
-        float: left;
-        height: 44px;
-        overflow: hidden;
-    }
-    .hide{
-        width: 100vw;
-        overflow:hidden;
-        overflow: scroll;
-        height:44px;
+        .weui-navbar__item {
+            width: 80px;
+        }
 
-    }
-    ::-webkit-scrollbar {/*隐藏滚轮*/
-        display: none;!important;
-    }
-    .show{
-        width: 1200px;
-        height:44px;
-    }
-    .categroy{
-        width:68px;
-        margin-left: 20px;
-        height: 44px;
-        line-height: 44px;
-        float: left;
-        text-align: center;
-        font-size: 13px;
-        color: #181818;
+        .weui-navbar__item:after {
+            border: none;
+        }
 
-    }
-    .rq{
-        background: white;
-        height: 44px;
-        width: 100vw;
-    }
-    .selected{
-        font-size: 13px;
-        color: #ff8000;
-    }
-    .categroy img{
-        height: 4px;
-        position: relative;
-        top: -4px;
-        margin: 0 auto;
-        display: none;
-    }
-    .selected img{
-        display: block;
-    }
-    .down{
-        float: left;
-        height:15px;
-        margin: 14.5px 16.5px;
-    }
-    .down_div{
-        float: left;
-        width:48px;
-        height: 44px;
-    }
-</style>
-<div class="big_div">
+        .weui-navbar:after {
+            border: none;
+        }
+
+        .weui-navbar__item {
+            color: #181818;
+            font-size: 13px;
+        }
+
+        body {
+            background: rgb(243, 243, 243);
+        }
+
+        .weui-navbar__item img {
+            height: 4px;
+            display: none;
+        }
+
+        .weui-bar__item--on img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 7px;
+        }
+
+        .weui-tab__bd {
+            width: 100vw;
+        }
+
+        .weui-tab {}
+
+        .hide1 {
+            width: 327px;
+            float: left;
+            height: 44px;
+            overflow: hidden;
+        }
+
+        .hide {
+            width: 100vw;
+            overflow: hidden;
+            overflow: scroll;
+            height: 44px;
+        }
+
+         ::-webkit-scrollbar {
+            /*隐藏滚轮*/
+            display: none;
+            !important;
+        }
+
+        .show {
+            width: 1200px;
+            height: 44px;
+        }
+
+        .categroy {
+            width: 68px;
+            margin-left: 20px;
+            height: 44px;
+            line-height: 44px;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+            color: #181818;
+        }
+
+        .rq {
+            background: white;
+            height: 44px;
+            width: 100vw;
+        }
+
+        .selected {
+            font-size: 13px;
+            color: #ff8000;
+        }
+
+        .categroy img {
+            height: 4px;
+            position: relative;
+            top: -4px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .selected img {
+            display: block;
+        }
+
+        .down {
+            float: left;
+            height: 15px;
+            margin: 14.5px 16.5px;
+        }
+
+        .down_div {
+            float: left;
+            width: 48px;
+            height: 44px;
+        }
+
+        .point_list_ad {
+            width: 100vw;
+            height: 200px;
+        }
+
+        .point_list_div {
+            width: 100vw;
+        }
+
+        .point_div {
+            margin: 0 10px;
+            height: 150px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .point_img {
+            width: 130px;
+            height: 130px;
+            margin: 10px;
+        }
+
+        .goods_name {
+            width: 195px;
+            font-size: 15px;
+            line-height: 20px;
+            height: 40px;
+            color: #454545;
+            margin-top: 10px;
+        }
+
+        .goods_store {
+            width: 195px;
+            color: #adadad;
+            font-size: 13px;
+            height: 25px;
+            line-height: 25px;
+        }
+
+        .goods_point {
+            width: 195px;
+            color: #fe9b0c;
+            font-size: 15px;
+            line-height: 25px;
+            height: 25px;
+        }
+
+        .goods_price {
+            width: 195px;
+            color: #adadad;
+            font-size: 15px;
+            line-height: 20px;
+            height: 20px;
+        }
+
+        .buy_btn {
+            width: 52px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 13px;
+            color: #fff;
+            background: linear-gradient(to right, #fcd469, #feb900);
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .bottom_div {
+            width: 100vw;
+            height: 49px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: white;
+        }
+
+        .recharge_btn {
+            width: 80px;
+            height: 30px;
+            background: linear-gradient(to right, #fcd469, #feb900);
+            border-radius: 4px;
+            margin-right: 10px;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 9.5px;
+        }
+
+        .my_point {
+            line-height: 49px;
+            font-size: 15px;
+            color: #454545;
+            margin-left: 10px;
+        }
+
+        .point_num {
+            line-height: 49px;
+            font-size: 15px;
+            color: #b00000;
+            margin-left: 5px;
+        }
+    </style>
+    <div class="big_div">
         <top title="积分商城"></top>
 
 
         <div class="rq">
-                <!-- 容器 -->
-                <div class="weui-tab">
-                    <div class="hide1">
-                        <div class="hide">
-                            <div class="show" >
-                               
-                                <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:select==index+1}"  v-on:click="get_cate(index,cate.uid)">
-                                    {{cate.category_name}}
-                                    <img src="images/default_wap/select.png" alt="">
-                                </div>
-        
-                                
+            <!-- 容器 -->
+            <div class="weui-tab">
+                <div class="hide1">
+                    <div class="hide">
+                        <div class="show">
+                            <div class="categroy" v-if="!down" v-bind:class="{selected:select==0}" v-on:click="get_cate(-1,0)">
+                                全部
+                                <img src="images/default_wap/select.png" alt="">
                             </div>
+                            <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:select==index+1}" v-on:click="get_cate(index,cate.uid)">
+                                {{cate.category_name}}
+                                <img src="images/default_wap/select.png" alt="">
+                            </div>
+
+
                         </div>
                     </div>
-                    <div class="down_div"><img class="down" src="images/default_wap/down.png" alt=""></div>
                 </div>
-        
+                <div class="down_div">
+                    <img class="down" src="images/default_wap/down.png" alt="">
+                </div>
             </div>
-            <!--滚动栏-->
 
-            <img src="images/default_wap/load.png" alt="">
-</div>
-<script src="dist/top.bundle.js"></script>
+        </div>
+        <!--滚动栏-->
+
+        <a :href="ad_url">
+            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+ad_img" class="point_list_ad" alt="">
+        </a>
+        <!-- 广告 -->
+
+        <div class="point_list_div" v-for="point in point_list">
+            <div class="point_div">
+                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+point.goods_file1" class="point_img fl"
+                    alt="">
+                <p class="goods_name sl2 fl">{{point.goods_name}}</p>
+                <p class="goods_store sl1 fl">库存:{{point.goods_stock}}</p>
+                <p class="goods_point sl1 fl">积分：{{point.goods_sale_point}}</p>
+                <p class="goods_price sl1 fl">₱ {{point.goods_sale_price}}</p>
+                <a :href="'./union/product?setp=5&uid='+point.uid"><div class="buy_btn fr">兑换</div></a>
+            </div>
+        </div>
+
+        <div class="weui-loadmore">
+            <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+        </div>
+        <div style="height:49px"></div>
+        <div class="bottom_div">
+            <p class="my_point fl">我的积分：</p>
+            <p class="point_num fl">{{point_num}}</p>
+            <div class="recharge_btn fr">立即充值</div>
+        </div>
 
 
-<script>
-    Vue.use(bundle);
-    var page = new Vue({
-        el: '.big_div',
-        data: {
-            select:1,
-            down:false,
-            index:0,
-            cates:[],
-            group_list:[]
-        },
-        methods:{
-            get_cate:function (index,cate_uid) {
+    </div>
+    <script src="dist/top.bundle.js"></script>
 
 
+    <script>
+        Vue.use(bundle);
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                select: 0,
+                down: false,
+                index: 0,
+                cates: [],
+                point_list: [],
+                point_num: 0,
+                ad_img: '',
+                ad_url: '',
+                start: 0,
+                cate_uid: 0
+            },
+            methods: {
+                get_cate: function (index, cate_uid) {
+                    loading = false;
+                    var t = this;
+                    t.point_list = [];
+                    t.start = 0;
+                    t.cate_uid = cate_uid;
 
+                    this.select = index + 1;
 
-                this.select=index+1;
+                    $.post('/point_list', {
+                        start: t.start,
+                        cate_uid: t.cate_uid
+                    }, function (result) {
+                        console.log(result);
+                        if (result != 0) {
+                            result.forEach(function (item, index) {
+                                t.start++;
+                                t.point_list.push(item);
+                            }, this);
+                        }
+                    });
+                }
+            },
+            mounted: function () {
+                var t = this;
+                $.post("./category", {}, function (result) {
+                    page.cates = result;
+                });
+                $.post('./point_list/info', {}, function (result) {
+                    console.log(result);
+                    if (typeof (result.member_point) != 'undefined') {
+                        t.point_num = result.member_point.member_point;
+                    }
+
+                    t.ad_img = result.pic;
+                    t.ad_url = result.url
+                });
+                $.post('/point_list', {
+                    start: t.start,
+                    cate_uid: t.cate_uid
+                }, function (result) {
+                    console.log(result);
+                    if (result != 0) {
+                        result.forEach(function (item, index) {
+                            t.start++;
+                            t.point_list.push(item);
+                        }, this);
+                    }
+                });
+
             }
-        },mounted:function(){
-            $.post("./category",{},function (result) {
-        page.cates=result;
-             });
-        }
-    });
-    
-</script>
-<% include footer.html %>
+        });
+        $(document.body).infinite();
+        var loading = false; //状态标记
+        $(document.body).infinite().on("infinite", function () {
+            if (loading) return;
+            loading = true;
+            var t=page;
+            console.log('load...');
+            console.log(loading);
+                $.post('/point_list', {
+                        start: t.start,
+                        cate_uid: t.cate_uid
+                    }, function (result) {
+                        
+                        if (result != 0) {
+                            result.forEach(function (item, index) {
+                                t.start++;
+                                t.point_list.push(item);
+                            }, this);
+                           
+                        }
+                        loading = false;
+                    });
+        });
+    </script>
+    <% include footer.html %>

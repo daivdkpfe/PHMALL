@@ -377,7 +377,7 @@ var post_data = {
 
 var content={a:'xx'};
 
-postData('http://192.168.0.109/english/xx.php',content,function (result) {
+postData('http://192.168.0.105/english/xx.php',content,function (result) {
     console.log(result);
 });
 

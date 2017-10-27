@@ -70,10 +70,10 @@ $.post("./index",{},function(result){
 	page.cate11=result.default_wap_categroy_11["0"];
 	page.cate12=result.default_wap_categroy_12["0"];
 	page.ad4=result.default_wap_ad_4['0'];
-	add_to_ppl('<div style="width: 172px;"><a href="'+result.default_wap_ad_5['0'].url+'"><img class="right_top_ad" src="images/default_wap/load.png" data-src="http://192.168.0.109/english/'+result.default_wap_ad_5['0'].pic+'" alt=""></div></a>');
+	add_to_ppl('<div style="width: 172px;"><a href="'+result.default_wap_ad_5['0'].url+'"><img class="right_top_ad" src="images/default_wap/load.png" data-src="http://192.168.0.105/english/'+result.default_wap_ad_5['0'].pic+'" alt=""></div></a>');
 	result.default_wap_hot_shop.forEach(function (item,index) {
 
-		add_to_ppl('<div class="ppl_goods_div"><a href="./union/product?uid='+item.goods_id+'&setp=1"><img class="right_top_ad" data-src="http://192.168.0.109/english/'+item.goods_pic+'" src="images/default_wap/load.png" alt=""><p class="ppl_goods_title">'+item.goods_name+'</p><p class="ppl_goods_price">'+item.goods_price+'</p></a></div>');
+		add_to_ppl('<div class="ppl_goods_div"><a href="./union/product?uid='+item.goods_id+'&setp=1"><img class="right_top_ad" data-src="http://192.168.0.105/english/'+item.goods_pic+'" src="images/default_wap/load.png" alt=""><p class="ppl_goods_title">'+item.goods_name+'</p><p class="ppl_goods_price">'+item.goods_price+'</p></a></div>');
 
 	});
 

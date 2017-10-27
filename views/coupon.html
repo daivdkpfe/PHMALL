@@ -275,7 +275,7 @@
     <div class="coupon_div" v-for="(coupon,index) in coupon_list">
         <div class="coupon">
             <div class="coupon_header" v-bind:class="color[index%7]">
-                <img v-bind:src="'http://192.168.0.109/english/union/'+coupon.coupon_img" class="coupon_logo" alt="">
+                <img v-bind:src="'http://192.168.0.105/english/union/'+coupon.coupon_img" class="coupon_logo" alt="">
                 <p class="coupon_shop_name sl1">{{coupon.shop_name}}</p>
                 <p class="coupon_less">截止时间:<d class="coupon_less_num">{{coupon.end_date}}</d></p>
                 <a v-bind:href="'./union/coupon?supid='+coupon.supplier_id"><p class="receive_now">立即抢</p></a>
