@@ -927,6 +927,44 @@ global.post=function (host,path,data,callback) {
 
 }
 
+global.post3000=function (host,path,data,callback) {
+  
+      var http=require('http');
+      var querystring=require('querystring');
+  //发送 http Post 请求
+      var postData=querystring.stringify(data);
+      var options={
+          hostname:host,
+          port:3000,
+          path:path,
+          method:'POST',
+          headers:{
+              //'Content-Type':'application/x-www-form-urlencoded',
+              'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8',
+              'Content-Length':Buffer.byteLength(postData)
+          }
+      }
+      var req=http.request(options, function(res) {
+  
+          /*console.log('Status:',res.statusCode);
+          console.log('headers:',JSON.stringify(res.headers));*/
+          res.setEncoding('utf-8');
+          res.on('data',function(chun){
+  
+              // console.log(chun);
+              callback(chun);
+          });
+          res.on('end',function(){
+  
+          });
+      });
+      req.on('error',function(err){
+          console.error(err);
+      });
+      req.write(postData);
+      req.end();
+  
+  }
 
 
 global.config={};

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var io = require('socket.io');
 var fs = require("fs");
+var request = require('request');
 /* GET home page. */
 
 
@@ -144,7 +145,6 @@ router.post('/', function(req, res, next) {
             if(err) logger.info("Caught exception:"+err);
             if(vals.length>0)
             {
-
                 res.json("重複的ID或手機號碼");
             }
             else
@@ -169,9 +169,6 @@ router.post('/', function(req, res, next) {
                                 var errarr={};
                                 logger.info("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)"+"    "+insdata);
                                 errarr['err']="Register Fail";
-
-
-
                                 res.json(errarr);
                             }
                             else{
@@ -186,6 +183,19 @@ router.post('/', function(req, res, next) {
                                 req.session.m_uid=vals.insertId;
                                 res.json(token_data);
                                 // 插入第三方库成功了
+
+
+                               
+                                post3000('','/register',{
+                                    id:token_data['m_id'],
+                                    username:token_data['m_id'],
+                                    phone:req.body.member_tel11,
+                                    member_pass:md5(req.body.pass1),
+                                    base_pass:new Buffer(req.body.pass1).toString('base64'),
+                                    password:req.body.pass1
+                                },function(result){
+                                    console.log(result);
+                                })
                             }
 
                         });

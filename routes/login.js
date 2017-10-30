@@ -30,6 +30,7 @@ router.post('/', function(req, res, next) {
 
     var username=req.body.username;
     var password=req.body.password;
+    
     console.log(username);
     console.log(password);
     var md5data=(md5(password));
