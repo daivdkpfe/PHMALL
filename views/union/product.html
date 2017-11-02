@@ -59,7 +59,7 @@
         }
 
         .goods_price {
-           
+
             height: 30px;
             width: 100vw;
         }
@@ -724,10 +724,12 @@
             color: white;
             font-size: 16px;
         }
-        .goods_name_div{
+
+        .goods_name_div {
             min-height: 60px;
             overflow: hidden;
         }
+
         .more {
             height: 30px;
             width: 30px;
@@ -736,7 +738,8 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-        .fb_btn{
+
+        .fb_btn {
             width: 62px;
             position: relative;
             right: 10px;
@@ -748,26 +751,29 @@
     </style>
 
 
-<script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId            : '709821129223343',
-        autoLogAppEvents : true,
-        xfbml            : true,
-        version          : 'v2.10'
-      });
-      FB.AppEvents.logPageView();
-    };
-  
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
-      
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '709821129223343',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.10'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 
 
 
@@ -799,10 +805,11 @@
                 <p class="goods_name">{{goods_name}}</p>
 
                 <!-- facebook -->
-                <div class="fb-like fb_btn" data-href="https://www.phmall.com.ph" data-layout="box_count" data-action="like" data-size="large" data-show-faces="false" data-share="false" @click="share()"></div>
+                <div class="fb-like fb_btn" data-href="https://www.phmall.com.ph" data-layout="box_count" data-action="like" data-size="large"
+                    data-show-faces="false" data-share="false" @click="share()"></div>
 
-                           
-              <!-- facebook -->
+
+                <!-- facebook -->
             </div>
             <!--商品名-->
 
@@ -969,9 +976,9 @@
 
 
 
-                        
 
-                        
+
+
 
                         <p class="cnxh_goods_price">
                             ₱ {{goods.goods_sale_price}}
@@ -1163,10 +1170,13 @@
                         }
                     })
                 },
-                share:function(){
+                share: function () {
                     alert("ssfh");
 
-                    console.log($('.fb_btn').html());
+                    FB.ui({
+                        method: 'share',
+                        href: 'https://developers.facebook.com/docs/'
+                    }, function (response) {});
                 }
             },
             computed: {
@@ -1212,11 +1222,10 @@
 
             page.goods_name = result["0"].goods_name;
             page.goods_price = result["0"].goods_sale_price;
-            if(result['0'].goods_sale_point>0)
-            {
+            if (result['0'].goods_sale_point > 0) {
                 page.goods_point = result['0'].goods_sale_point;
             }
-            
+
             page.shop_uid = result["0"].supplier_id;
             var goods_main = result['0'].goods_main.replace(new RegExp('src="/english', "gm"),
                 'src="http://www.phmall.com.ph');
@@ -1431,7 +1440,7 @@
                         page.favorite_img = 'images/default_wap/favirate.png';
                         page.have_favorite = 0;
                     } else {
-                        
+
                     }
                 })
             }
@@ -1512,19 +1521,19 @@
                     text: "分享到Facebook",
                     className: "color-warning",
                     onClick: function () {
-                        
+
                         // $('.fb_btn').trigger("click");
                         FB.ui({
-  method: 'share_open_graph',
-  action_type: 'og.likes',
-  action_properties: JSON.stringify({
-    object:'http://www.phmall.com.ph/',
-  })
-}, function(response){
-  // Debug response (optional)
-  console.log(response);
-});
-                        
+                            method: 'share_open_graph',
+                            action_type: 'og.likes',
+                            action_properties: JSON.stringify({
+                                object: 'http://www.phmall.com.ph/',
+                            })
+                        }, function (response) {
+                            // Debug response (optional)
+                            console.log(response);
+                        });
+
                     }
                 }],
                 buttonCancel: "取消"
