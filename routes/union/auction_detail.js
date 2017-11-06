@@ -4,7 +4,7 @@ var io = require('socket.io');
 var fs = require("fs");
 /* GET home page. */
 
-console.log("xxx");
+
 
 router.get('/', function(req, res, next) {
 

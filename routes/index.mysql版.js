@@ -104,7 +104,7 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
           // And done with the connection.
           connection.release();
           // Handle error after the release.
-          if (error) logger.info("Caught exception:"+err)or;
+          if (error) logger.info("Caught exception:"+error);
           resolve(results);
           // Don't use the connection here, it has been returned to the pool.
         });
