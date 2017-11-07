@@ -11,7 +11,12 @@ router.post('/', function(req, res, next) {
     var arr=[];
     sqlQueryMore("select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0",arr,function (err,category,xx) {
         if(err) logger.info("Caught exception:"+err);
-        res.json(category);
+        var respod={
+            ret:'200',
+            data:category
+        };
+        res.json(respod);
+        
     })
 });
 router.get('/',function (req,res,next) {
@@ -41,7 +46,12 @@ router.post('/get_goods',function (req,res,next) {
                 sql.push(req.body.cat);
             }
             var categroy=await sqlasnyc(sqlstr,sql);
-            res.json(categroy);
+            var respod={
+                ret:'200',
+                data:categroy
+            };
+            res.json(respod);
+            
     }
     run();
 });

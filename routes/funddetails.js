@@ -45,8 +45,22 @@ router.post('/',function (req,res,next) {
     var start=req.body.start;
 
     async function run() {
+        if (req.session.sign && req.session.m_id) {
         var funddetails=await sqlasnyc("select * from `mvm_money_table` where money_id=? "+sqlstr+" order by register_date desc limit "+start+",20 ",[m_id]);
-        res.json(funddetails);
+        var respod={
+            ret:'200',
+            data:funddetails
+        };
+        res.json(respod);
+    }
+    else{
+        var respod={
+            ret:'201',
+            data:{}
+        };
+        res.json(respod);
+    }
+        
     }
 
     run();

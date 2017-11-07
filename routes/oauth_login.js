@@ -18,8 +18,12 @@ router.post('/', function(req, res, next) {
     vals[0]['status']='Logined';
 
 
-
-    res.json(vals);
+    var respod={
+      ret:'200',
+      data:vals
+  };
+  res.json(respod);
+    
   }
 
 
@@ -57,8 +61,12 @@ router.post('/', function(req, res, next) {
       }
 
 
-
-      res.json(vals[0]);
+      var respod={
+        ret:'200',
+        data:vals[0]
+    };
+    res.json(respod);
+     
     }
   });//看看是哪个用户
 });//授权
@@ -77,8 +85,12 @@ router.post('/login',function (req,res,next) {
     vals[0]['status']='Logined';
 
 
-
-    res.json(vals);
+    var respod={
+      ret:'200',
+      data:vals
+  };
+  res.json(respod);
+    
   }
 
 
@@ -148,8 +160,12 @@ router.post('/login',function (req,res,next) {
           }
 
 
-
-            res.json(token_data);
+          var respod={
+            ret:'200',
+            data:token_data
+        };
+        res.json(respod);
+        
         });//插入数据库
     }
     else
@@ -162,8 +178,12 @@ router.post('/login',function (req,res,next) {
       token_data['status']="Fail";
 
 
-
-      res.json(token_data);
+      var respod={
+        ret:'200',
+        data:token_data
+    };
+    res.json(respod);
+      
     }
   });
 

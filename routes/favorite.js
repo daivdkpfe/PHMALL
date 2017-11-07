@@ -7,7 +7,7 @@ var fs = require("fs");
 
 
 router.post('/set_favorite', function(req, res, next) {
-    console.log("xx");
+    
     if(req.session.sign && req.session.m_id) {
         var sql = [];
         sql.push(req.session.m_uid);
@@ -16,7 +16,7 @@ router.post('/set_favorite', function(req, res, next) {
         sql.push(req.body.t);
 
         var sqlstr = "";
-        console.log
+        
         if (req.body.t > 0) {
             console.log("oo");
 
@@ -42,7 +42,12 @@ router.post('/set_favorite', function(req, res, next) {
             {
                 if(check_favorite.length>0)
                 {
-                    res.json(0);//已經收藏過了
+                    var respod={
+                        ret:'200',
+                        data:0
+                    };
+                    res.json(respod);
+                    //已經收藏過了
                 }
                 else
                 {
@@ -65,7 +70,12 @@ router.post('/set_favorite', function(req, res, next) {
                             logger.info("Caught exception:" + err);
                         }else
                         {
-                            res.json(1);//收藏成攻
+                            var respod={
+                                ret:'200',
+                                data:1
+                            };
+                            res.json(respod);
+                            //收藏成攻
                         }
                     })
                 }
@@ -75,7 +85,12 @@ router.post('/set_favorite', function(req, res, next) {
     }
     else
     {
-        res.json(0);
+        var respod={
+            ret:'201',
+            data:0
+        };
+        res.json(respod);
+        
     }
 
 });
@@ -99,7 +114,12 @@ router.post('/del_favorite', function(req, res, next) {
         {
             if(check_favorite.length<0)
             {
-                res.json(0);//已經沒了
+                var respod={
+                    ret:'200',
+                    data:0
+                };
+                res.json(respod);
+                //已經沒了
             }
             else
             {
@@ -112,7 +132,12 @@ router.post('/del_favorite', function(req, res, next) {
                         logger.info("Caught exception:" + err);
                     }else
                     {
-                        res.json(1);//刪除成功
+                        var respod={
+                            ret:'200',
+                            data:1
+                        };
+                        res.json(respod);
+                        //刪除成功
                     }
                 })
             }
@@ -141,11 +166,21 @@ router.post('/check_favorite', function(req, res, next) {
             {
                 if(check_favorite.length>0)
                 {
-                    res.json(1);
+                    var respod={
+                        ret:'200',
+                        data:1
+                    };
+                    res.json(respod);
+                   
                 }
                 else
                 {
-                    res.json(0);
+                    var respod={
+                        ret:'200',
+                        data:0
+                    };
+                    res.json(respod);
+                   
                 }
             }
 
@@ -153,6 +188,10 @@ router.post('/check_favorite', function(req, res, next) {
     }
     else
     {
+        var respod={
+            ret:'201',
+            data:result
+        };
         res.json(0);
     }
 
@@ -238,7 +277,12 @@ router.post('/get_favorite',function (req,res,next) {
 
             }
         }
-        res.json(favorite);
+        var respod={
+            ret:'200',
+            data:favorite
+        };
+        res.json(respod);
+        
     }
     run();
 

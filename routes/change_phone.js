@@ -90,12 +90,22 @@ router.post('/',function (req,res,next) {
 
                                     sqlQueryMore('replace `mvm_lostpass` set user_id=?,lost_type=2,lost_str=?,info=?,lost_time=?',sql,function (err,val,xx) {
                                         if(err)  logger.info("Caught exception:"+err);
-                                        res.json(1);
+                                        var respod={
+                                            ret:'200',
+                                            data:1
+                                        };
+                                        res.json(respod);
+                                        
                                     })
                                 }
                                 else
                                 {
-                                    res.json(0);
+                                    var respod={
+                                        ret:'200',
+                                        data:0
+                                    };
+                                    res.json(respod);
+                                   
                                 }
                         });
 
@@ -104,13 +114,23 @@ router.post('/',function (req,res,next) {
                 }
                 else
                 {
-                    res.json(0);
+                    var respod={
+                        ret:'200',
+                        data:0
+                    };
+                    res.json(respod);
+                    
                 }
 
             }
             else
             {
-                res.json(0);
+                var respod={
+                    ret:'201',
+                    data:0
+                };
+                res.json(respod);
+                
             }
 
         }
@@ -125,16 +145,31 @@ router.post('/',function (req,res,next) {
                   if(lostpass!=0)
                   {
                       await sqlasnyc("DELETE FROM `mvm_lostpass` WHERE user_id=? AND lost_type='2'",[req.session.m_id]);
-                      res.json(1);
+                      var respod={
+                        ret:'200',
+                        data:1
+                    };
+                    res.json(respod);
+                     
                   }
                   else
                   {
-                      res.json(0);
+                    var respod={
+                        ret:'200',
+                        data:0
+                    };
+                    res.json(respod);
+                     
                   }
               }
               else
               {
-                  res.json(0);
+                var respod={
+                    ret:'201',
+                    data:0
+                };
+                res.json(respod);
+                
               }
 
           }
@@ -142,7 +177,7 @@ router.post('/',function (req,res,next) {
     }
     else if(req.body.setp==3)
     {
-        console.log(req.body);
+       
           async function run() {
 
               var send_code=await sqlasnyc("select uid from `mvm_send_code` where end_time>? and type=1 and phone_number=? and code=?",[get_now_time(),'63'+req.body.phone,req.body.code]);
@@ -150,11 +185,21 @@ router.post('/',function (req,res,next) {
               {
                   //進行修改
                   await sqlasnyc('update `mvm_member_table` set member_tel1=? where uid=? and member_id=?',[req.body.phone,req.session.m_uid,req.session.m_id]);
-                  res.json(1);
+                  var respod={
+                    ret:'200',
+                    data:1
+                };
+                res.json(respod);
+                  
               }
               else
               {
-                  res.json(0);
+                var respod={
+                    ret:'200',
+                    data:0
+                };
+                res.json(respod);
+                 
               }
 
           }
@@ -167,7 +212,12 @@ router.post('/send',function (req,res,next) {
         if (req.session.sign && req.session.m_id) {
 
             SendCode(phone,1,function (result) {
-                res.json(result);
+                var respod={
+                    ret:'200',
+                    data:result
+                };
+                res.json(respod);
+                
             })
 
         }

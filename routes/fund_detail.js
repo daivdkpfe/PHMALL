@@ -24,11 +24,28 @@ router.get('/', function(req, res, next) {
     }
 });
 router.post('/',function (req,res,next) {
+    
+
+    
     var uid= req.body.uid;
     var m_id=req.session.m_id;
      async function run() {
+        if(req.session.sign && req.session.m_id){
         var fund=await sqlasnyc("select * from `mvm_money_table` where uid=? and money_id=?",[uid,m_id]);
-        res.json(fund);
+        var respod={
+            ret:'200',
+            data:fund
+        };
+        res.json(respod);
+    }
+    else{
+        var respod={
+            ret:'201',
+            data:{}
+        };
+        res.json(respod);
+    }
+        
     }
     run();
 })

@@ -7,7 +7,7 @@ var sess={
     upload:'上传失败，不支持的类型',
     noknow:'未知错误'
 };
-console.log("xx");
+
 
 
 router.get('/', function(req, res, next) {

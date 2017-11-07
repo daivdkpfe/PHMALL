@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
     run();*/
 
     if (req.session.sign && req.session.m_id) {
-        console.log("xxx");
+        
         res.render('./pointdetails', { title: 'PHMALL'});
     }
     else
@@ -47,7 +47,12 @@ router.post('/',function (req,res,next) {
 
     async function run() {
         var funddetails=await sqlasnyc("select * from `mvm_point_table` where point_id=? "+sqlstr+" order by register_date desc limit "+start+",20 ",[m_id]);
-        res.json(funddetails);
+        var respod={
+            ret:'200',
+            data:funddetails
+        };
+        res.json(respod);
+        
     }
 
     run();

@@ -13,8 +13,11 @@ router.get('/:m_uid/:m_id/:fun/:lan', function(req, res, next) {
         arr[0]="數據不對";
 
 
-
-        res.json(arr);
+        var respod={
+            ret:'200',
+            data:arr
+        };
+        res.json(respod);
     }
     //数据格式对的话继续往下
     //获取用户的信息
@@ -68,8 +71,11 @@ router.get('/:m_uid/:m_id/:fun/:lan', function(req, res, next) {
                 }
 
 
-
-                res.json(results);
+                var respod={
+                    ret:'200',
+                    data:results
+                };
+                res.json(respod);
         })
     }
     else

@@ -30,13 +30,21 @@ router.post('/',function (req,res,next) {
         var m_id=req.session.m_id;
         async function run() {
             var a = await sqlasnyc("select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1",[m_uid,m_id]);
-            res.json(a);
+            var respod={
+                ret:'200',
+                data:a
+            };
+            res.json(respod);
         }
         run();
     }
     else
     {
-        res.json(0);
+        var respod={
+            ret:'201',
+            data:{}
+        };
+        res.json(respod);
     }
 })
 module.exports = router;

@@ -30,11 +30,21 @@ router.post('/',function (req,res,next) {
              var member_data = await sqlasnyc("select uid,member_id,member_class,member_id,member_name,member_sex,member_birthday,member_tel1,member_email,member_zip,province,city,county,member_address,member_image from `mvm_member_table` where uid=? and member_id=? limit 1", sql);
              console.log(member_data[0].member_birthday);
              member_data[0].member_birthday = return_date(member_data[0].member_birthday);
-             res.json(member_data);
+             var respod={
+                ret:'200',
+                data:member_data
+            };
+            res.json(respod);
+            
          }
          else
          {
-             res.json('no login');
+            var respod={
+                ret:'201',
+                data:'no login'
+            };
+            res.json(respod);
+            
          }
    }
    run();
@@ -56,7 +66,12 @@ router.post('/edit',function (req,res,next) {
         key['cc']='county';
         key['z']='member_zip';
         await sqlasnyc("update `mvm_member_table` set "+key[req.body.key]+"=? where uid=? and member_id=?",sql);
-        res.json(1);
+        var respod={
+            ret:'200',
+            data:1
+        };
+        res.json(respod);
+        
     }
     run();
 });

@@ -23,7 +23,12 @@ router.post('/', function(req, res, next) {
             {
                 result['status']='Fail';
                 result['err']="检索不到指定订单，请联系管理员";
-                res.json(result);
+                var respod={
+                    ret:'200',
+                    data:result
+                };
+                res.json(respod);
+               
             }
             else
             {
@@ -33,7 +38,12 @@ router.post('/', function(req, res, next) {
                         if(err) logger.info("Caught exception:"+err);
                         result['status']='Success';
                         result['err']="确认收货成功";
-                        res.json(result);
+                        var respod={
+                            ret:'200',
+                            data:result
+                        };
+                        res.json(respod);
+                        
                             // 确认收货成功了，开始插入评价
 
                         // 分账
@@ -140,7 +150,12 @@ router.post('/', function(req, res, next) {
                 else{
                     result['status']='Fail';
                     result['err']="无法修改订单状态";
-                    res.json(result);
+                    var respod={
+                        ret:'200',
+                        data:result
+                    };
+                    res.json(respod);
+                   
                 }
             }
 
@@ -150,7 +165,12 @@ router.post('/', function(req, res, next) {
     {
         result['status']='Fail';
         result['err']="No Login";
-        res.json(result);
+        var respod={
+            ret:'200',
+            data:result
+        };
+        res.json(respod);
+        
     }
 });
 

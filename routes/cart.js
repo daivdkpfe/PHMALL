@@ -81,15 +81,24 @@ router.post('/', function(req, res, next) {
            arr.push(arrs);
         });
 
+        var respod={
+            ret:'200',
+            data:arr
+        };
+        res.json(respod);
         
-        res.json(arr);
     }
     if (req.session.sign && req.session.m_id) {
         run();
     }
     else
     {
-        res.json("no login");
+        var respod={
+            ret:'201',
+            data:"no login"
+        };
+        res.json(respod);
+        
     }
 });
 router.post('/detele',function (req,res,next) {
@@ -105,7 +114,12 @@ router.post('/detele',function (req,res,next) {
         console.log("pp");
 
         var detele=sqlasnyc('delete from `mvm_cart_table` where m_id=? and uid=?',sql);
-        res.json(1);
+        var respod={
+            ret:'200',
+            data:1
+        };
+        res.json(respod);
+        
     }
 
 
@@ -117,8 +131,13 @@ router.post('/detele',function (req,res,next) {
     }
     else
     {
-        console.log("zz");
-        res.json("no login")
+        
+        var respod={
+            ret:'201',
+            data:"no login"
+        };
+        res.json(respod);
+        
     }
 });
 router.get("/",function (req,res,next) {
@@ -168,11 +187,16 @@ router.post('/add',function (req,res,next) {
             var storeLength=store.length;
             if(store[storeLength-1]<goods_num)
             {
-                res.json("-2");//库存不足
+                var respod={
+                    ret:'200',
+                    data:-2
+                };
+                res.json(respod);
+                
             }
             else
             {
-                console.log(store);
+               
                 var cart_price=parseFloat(g_t[0].goods_sale_price)+parseFloat(store[storeLength-2]);
 
 
@@ -239,7 +263,12 @@ router.post('/add',function (req,res,next) {
                 var cart=await sqlasnyc("select * from `mvm_cart_table` where m_id=? and g_uid=? and goods_table=? and g_type=? and attr=?",sql);
                 if(cart!=0)
                 {
-                    res.json(1);//加入成功，其实购物车已经有这个了
+                    var respod={
+                        ret:'200',
+                        data:1
+                    };
+                    res.json(respod);
+                    //加入成功，其实购物车已经有这个了
                 }
                 else
                 {
@@ -256,8 +285,12 @@ router.post('/add',function (req,res,next) {
                     sql.push(get_now_time());
                     sql.push(g_t[0].supplier_id);
                     var s=await sqlasnyc('insert into `mvm_cart_table` set m_id=?,g_uid=?,cart_price=?,cart_point=?,cart_num=?,attr=?,g_type=?,goods_table=?,module=?,register_date=?,supplier_id=?',sql);
-
-                    res.json(1);//加入成功
+                    var respod={
+                        ret:'200',
+                        data:1
+                    };
+                    res.json(respod);
+                    //加入成功
                 }
 
             }
@@ -268,7 +301,12 @@ router.post('/add',function (req,res,next) {
     }
     if (req.session.sign && req.session.m_id) {
         if (goods_num <= 0) {
-            res.json(-1)//商品数量不对
+            var respod={
+                ret:'200',
+                data:-1
+            };
+            res.json(respod);
+            //商品数量不对
         }
         else
         {
@@ -278,7 +316,12 @@ router.post('/add',function (req,res,next) {
     }
     else
     {
-        res.json(-3)//未登录
+        var respod={
+            ret:'201',
+            data:-3
+        };
+        res.json(respod);
+        
     }
 
 

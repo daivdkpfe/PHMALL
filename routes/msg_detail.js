@@ -37,12 +37,22 @@ router.post("/",function(req,res,next)
   }
   else
   {
-    res.json(0);
+    var respod={
+      ret:'200',
+      data:0
+  };
+  res.json(respod);
+    
     return;
   }
   async function run() {
         var msg = await sqlasnyc(sqlstr,[uid]);
-        res.json(msg);
+        var respod={
+          ret:'200',
+          data:msg
+      };
+      res.json(respod);
+        
     }
     run();
 })

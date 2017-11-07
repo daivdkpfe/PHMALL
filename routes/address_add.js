@@ -32,16 +32,31 @@ router.post('/',function (req,res,next) {
             var address=await sqlasnyc('select * from `mvm_address` where uid=? and m_uid=?',[uid,m_uid]);
             if(address=='0')
             {
-                res.json(0);
+                var respod={
+                    ret:'205',
+                    data:'0'
+                };
+                res.json(respod);
+                
             }
             else
             {
-                res.json(address);
+                var respod={
+                    ret:'200',
+                    data:address
+                };
+                res.json(respod);
+                
             }
         }
         else
         {
-            res.json(0);
+            var respod={
+                ret:'201',
+                data:{}
+            };
+            res.json(respod);
+            
         }
     }
     run();
@@ -67,7 +82,12 @@ router.post('/edit',function (req,res,next) {
         console.log(count.length);
         if(count.length>2)
         {
-            res.json(-1);
+            var respod={
+                ret:'206',
+                data:'-1'
+            };
+            res.json(respod);
+            
             return;
         }
 
@@ -83,7 +103,12 @@ router.post('/edit',function (req,res,next) {
         sql.push(county);
         sql.push(m_uid);
         await sqlasnyc('replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?',sql);
-        res.json(1);
+        var respod={
+            ret:'200',
+            data:'1'
+        };
+        res.json(respod);
+        
     }
     run();
 })

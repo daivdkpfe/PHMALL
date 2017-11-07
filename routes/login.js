@@ -10,7 +10,7 @@ var fs = require("fs");
 
 
 router.post('/', function(req, res, next) {
-    console.log(req.session.sign);
+    
     if(req.session.sign)
     {
         var token_data = {};
@@ -18,7 +18,12 @@ router.post('/', function(req, res, next) {
         token_data['m_uid'] = "None";//用户UID
         token_data['register_time'] = "None"//注册时间
         token_data['status'] = "Logined";
-        res.json(token_data);
+        var respod={
+            ret:'200',
+            data:token_data
+        };
+        res.json(respod);
+        
     }
     else
     {
@@ -31,8 +36,7 @@ router.post('/', function(req, res, next) {
     var username=req.body.username;
     var password=req.body.password;
     
-    console.log(username);
-    console.log(password);
+    
     var md5data=(md5(password));
 
     var base64=new Buffer(password).toString('base64');
@@ -74,7 +78,12 @@ router.post('/', function(req, res, next) {
             token_data['register_time'] = "None";//注册时间
             token_data['status'] = "Fail";
         }
-        res.json(token_data);
+        var respod={
+            ret:'200',
+            data:token_data
+        };
+        res.json(respod);
+        
         });
 });
 
@@ -87,14 +96,24 @@ router.post('/login_out',function (req,res,next) {
         var ret={};
         ret.status='success';
         ret.err='';
-        res.json(ret);
+        var respod={
+            ret:'200',
+            data:ret
+        };
+        res.json(respod);
+        
     }
     else
     {
         var ret={};
         ret.status='error';
         ret.err='No login';
-        res.json(ret);
+        var respod={
+            ret:'200',
+            data:ret
+        };
+        res.json(respod);
+        
     }
 });
 

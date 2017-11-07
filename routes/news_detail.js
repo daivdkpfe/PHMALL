@@ -21,7 +21,12 @@ router.post('/',function (req,res,next) {
         var bamin=await sqlasnyc('select * from `mvm_bmain` where uid=? limit 1',[uid]);
         if(bamin==0)
         {
-            res.json(0);
+            var respod={
+                ret:'200',
+                data:0
+            };
+            res.json(respod);
+            
         }
         else
         {
@@ -30,8 +35,11 @@ router.post('/',function (req,res,next) {
             bamin[2]=after;
             var before=await sqlasnyc('select uid,board_subject from `mvm_bmain` where uid<?  order by uid desc limit 1',[uid]);
             bamin[1]=before;
-
-            res.json(bamin);
+            var respod={
+                ret:'200',
+                data:bamin
+            };
+            res.json(respod);
         }
     }
     run();

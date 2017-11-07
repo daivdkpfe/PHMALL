@@ -71,8 +71,12 @@ router.post('/', function (req, res, next) {
                 }
             }, this);
         }
-
-        res.json(order_share);
+        var respod={
+            ret:'200',
+            data:order_share
+        };
+        res.json(respod);
+        
     }
     run();
 });
@@ -82,7 +86,12 @@ router.post('/love',function(req,res,next){
     {
         async function run() {
             await sqlasnyc("update `mvm_order_share` set love=love+1 where uid =?",[uid]);
-            res.json(1);
+            var respod={
+                ret:'200',
+                data:1
+            };
+            res.json(respod);
+            
             
         }
         run();
@@ -97,9 +106,14 @@ router.post('/friend',function(req,res,next){
     var m_uid=req.session.m_uid;
     if(uid==m_uid)
     {
-        res.json(0);
+        var respod={
+            ret:'200',
+            data:0
+        };
+        res.json(respod);
+        
         return;
-        console.log("xx");
+        
     }
     async function run() {
         if(uid>0)
@@ -111,14 +125,28 @@ router.post('/friend',function(req,res,next){
                 if(friend==0)
                 {
                     await sqlasnyc('insert into `mvm_friend` set member_id=?,member_uid=?,belong_uid=?,register_date=?',[member[0].member_id,uid,m_uid,get_now_time()]);
-                    res.json(1);
+                    var respod={
+                        ret:'200',
+                        data:1
+                    };
+                    res.json(respod);
+                    
                 }
                 else{
-                    res.json(0);
+                    var respod={
+                        ret:'200',
+                        data:0
+                    };
+                    res.json(respod);
+                    
                 }
             }
             else{
-                res.json(0);
+                var respod={
+                    ret:'200',
+                    data:0
+                };
+                res.json(respod);
             }
             
         }

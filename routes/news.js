@@ -18,7 +18,12 @@ router.get('/', function(req, res, next) {
 router.post('/',function (req,res,next) {
     async function run() {
         var a = await sqlasnyc("select * from `mvm_badmin_table` where supplier_id=0 order by od desc",[]);
-        res.json(a);
+        var respod={
+            ret:'200',
+            data:a
+        };
+        res.json(respod);
+        
     }
     run();
 });
@@ -30,7 +35,12 @@ router.post('/list',function (req,res,next) {
         badmin.forEach(function (item,index) {
             badmin[index].register_date=return_date(item.register_date);
         })
-        res.json(badmin);
+        var respod={
+            ret:'200',
+            data:badmin
+        };
+        res.json(respod);
+        
     }
     run();
 })

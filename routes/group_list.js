@@ -33,7 +33,12 @@ router.post('/',function (req,res,next) {
         }
 
         var a = await sqlasnyc(sqlstr,sql);
-        res.json(a);
+        var respod={
+            ret:'200',
+            data:a
+        };
+        res.json(respod);
+        
     }
     run();
 

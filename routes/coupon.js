@@ -48,7 +48,11 @@ router.post("/",function (req,res,next) {
                        s++;
                        if(s==coupon.length)
                        {
-                           res.json(coupon);
+                        var respod={
+                            ret:'200',
+                            data:coupon
+                        };
+                        res.json(respod);
                        }
 
                    })
@@ -57,7 +61,12 @@ router.post("/",function (req,res,next) {
            }
            else
            {
-               res.json("");
+            var respod={
+                ret:'200',
+                data:''
+            };
+            res.json(respod);
+               
            }
 
 

@@ -34,9 +34,13 @@ router.post('/', function(req, res, next) {
             var table=goods_table[req.body.setp];
             var detail=goods_detail[req.body.setp];
 
-            console.log(detail);
+           
             if(typeof(table)=="undefined" || typeof(detail)=="undefined"){
-                res.json("error");
+                var respod={
+                    ret:'204',
+                    data:"error"
+                };
+                res.json(respod);
                 return;
             }
                 // 判斷是不是undefind
@@ -57,7 +61,11 @@ router.post('/', function(req, res, next) {
                 var sql1=[];
                 if(vals.length==0)
                 {
-                    res.json("err");
+                    var respod={
+                        ret:'204',
+                        data:"error"
+                    };
+                    res.json(respod);
                     return;
                 }
                 sql1.push(vals["0"].supplier_id);
@@ -66,8 +74,11 @@ router.post('/', function(req, res, next) {
                     {
                         vals[0]['shop_list']=valss[0];
                     }
-
-                    res.json(vals);
+                    var respod={
+                        ret:'200',
+                        data:vals
+                    };
+                    res.json(respod);
                 })
 
             });
@@ -76,7 +87,11 @@ router.post('/', function(req, res, next) {
     }
     else
     {
-        res.json("err");
+        var respod={
+            ret:'204',
+            data:"error"
+        };
+        res.json(respod);
     }
 
 
@@ -88,13 +103,20 @@ router.post("/get_gallery",function (req,res,next) {
     var sql=[];
     sql.push(req.body.uid);
     if(typeof(goods_gallery[req.body.setp])=="undefined"){
-        res.json("error");
+        var respod={
+            ret:'204',
+            data:"error"
+        };
+        res.json(respod);
         return;
     }
     sqlQueryMore("select * from `"+goods_gallery[req.body.setp]+"` where goods_id = ?",sql,function (err,vals,xx) {
         if(err) logger.info("Caught exception:"+err);
-
-        res.json(vals);
+        var respod={
+            ret:'200',
+            data:vals
+        };
+        res.json(respod);
     });
 });//获取轮播
 
@@ -102,7 +124,11 @@ router.post("/get_gallery",function (req,res,next) {
 router.post('/get_cnxh',function (req,res,next) {
     var table=goods_table[req.body.setp];
     if(typeof(table)=="undefined"){
-        res.json("error");
+        var respod={
+            ret:'204',
+            data:"error"
+        };
+        res.json(respod);
         return;
     }
     sql=[];
@@ -110,14 +136,22 @@ router.post('/get_cnxh',function (req,res,next) {
    sqlQueryMore("SELECT * FROM `"+table+"` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1."+req.body.cat+"=? ORDER BY t1.uid ASC LIMIT 4",sql,function (err,vals,xx) {
        console.log(vals);
             if(err) logger.info("Caught exception:"+err);
-            res.json(vals);
+            var respod={
+                ret:'200',
+                data:vals
+            };
+            res.json(respod);
    })
 });
 
 router.post("/get_comment",function (req,res,next) {
     var table=goods_table[req.body.setp];
     if(typeof(table)=="undefined"){
-        res.json("error");
+        var respod={
+            ret:'204',
+            data:"error"
+        };
+        res.json(respod);
         return;
     }
     var sql=[];
@@ -136,12 +170,20 @@ router.post("/get_comment",function (req,res,next) {
             sqlQueryMore("select member_id,member_image from `mvm_member_table` where member_id=?",sql1,function (errs,valss,xxs) {
                 if(errs) logger.info("Caught exception:"+errs);
                 vals[0]['user_info']=valss;
-                res.json(vals);
+                var respod={
+                    ret:'200',
+                    data:vals
+                };
+                res.json(respod);
             });
         }
         else
         {
-            res.json(vals);
+            var respod={
+                ret:'200',
+                data:vals
+            };
+            res.json(respod);
         }
 
     });

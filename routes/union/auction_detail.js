@@ -25,14 +25,21 @@ router.post('/assure',function (req,res,next) {
         var m_uid=req.session.m_uid;
         async function run() {
             var assure = await sqlasnyc("select * from `mvm_goods_auction_assure` where g_uid=? and m_uid=? limit 1",[g_uid,m_uid]);
-            
-            res.json(assure);
+            var respod={
+                ret:'200',
+                data:assure
+            };
+            res.json(respod);
         }
         run();
     }
     else
     {
-        res.json(0);
+        var respod={
+            ret:'201',
+            data:{}
+        };
+        res.json(respod);
     }
 
 });
@@ -41,7 +48,11 @@ router.post('/join',function (req,res,next) {
 
     async function run() {
         var join=await sqlasnyc('select * from `mvm_goods_auction_join` where g_uid=? order by register_date desc limit 3',[g_uid]);
-        res.json(join);
+        var respod={
+            ret:'200',
+            data:join
+        };
+        res.json(respod);
     }
     run();
 })

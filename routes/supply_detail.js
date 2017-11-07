@@ -28,8 +28,12 @@ router.post('/',function (req,res,next) {
             detail[0].member_image=member[0].member_image;
         }
 
-        console.log(detail);
-        res.json(detail);
+        var respod={
+            ret:'200',
+            data:detail
+        };
+        res.json(respod);
+        
      }
      run();
 });
@@ -56,13 +60,23 @@ router.post('/submit',function (req,res,next) {
         sql.push(get_now_time());
         async function run() {
             var a = await sqlasnyc("insert into `mvm_want_supply_msg` set m_id=?,supply_id=?,supply_m_uid=?,name=?,tel=?,address=?,msg=?,register_date=?",sql);
-            res.json(1);
+            var respod={
+                ret:'200',
+                data:1
+            };
+            res.json(respod);
+            
         }
         run();
     }
     else
     {
-        res.json(0);
+        var respod={
+            ret:'201',
+            data:0
+        };
+        res.json(respod);
+        
     }
 })
 module.exports = router;

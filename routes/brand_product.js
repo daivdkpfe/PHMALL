@@ -22,7 +22,12 @@ router.post('/',function (req,res,next) {
 
      async function run() {
         var brand_product = await sqlasnyc("SELECT uid,goods_name,goods_sale_price,goods_file1,goods_status,goods_stock,supplier_id,goods_hit FROM `mvm_goods_table` WHERE goods_brand=? ORDER BY register_date DESC LIMIT "+start+",15",[cat]);
-         res.json(brand_product);
+        var respod={
+            ret:'200',
+            data:brand_product
+        };
+        res.json(respod);
+        
         }
         run();
 });
@@ -31,8 +36,12 @@ router.post('/brand',function (req,res,next) {
     console.log(cat);
      async function run() {
         var a = await sqlasnyc("SELECT id,brandname,logo,weburl,train FROM `mvm_brand_table` WHERE isCheck='1' AND id=?",[cat]);
-        console.log(a);
-        res.json(a);
+        var respod={
+            ret:'200',
+            data:a
+        };
+        res.json(respod);
+        
     }
     run();
 })

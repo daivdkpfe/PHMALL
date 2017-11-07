@@ -10,7 +10,7 @@ var fs = require("fs");
 
 
 router.get('/', function(req, res, next) {
-    console.log(":ss");
+    
 
         if (req.session.sign && req.session.m_id) {
 
@@ -31,7 +31,7 @@ router.post('/',function (req,res,next) {
     comment_allow_uid.push(req.body.uid);
     sqlQueryMore("select roll,uid,from_id,to_id,shop_name,ordersn from `mvm_comment_allow` where roll='0' and uid=?",comment_allow_uid,function (err,comment_allow,xx) {
         if(err) logger.info("Caught exception:"+err);
-        console.log(comment_allow);
+        
         if(comment_allow.length>0)
         {
             sqlQueryMore('select uid from `mvm_order_info` where ordersn="'+comment_allow[0].ordersn+'"',comment_allow_uid,function (errs,orderinfo,xx) {
@@ -55,7 +55,12 @@ router.post('/',function (req,res,next) {
                                             s++;
                                             if(s==ordergoods.length)
                                             {
-                                                res.json(comment_allow);
+                                                var respod={
+                                                    ret:'200',
+                                                    data:comment_allow
+                                                };
+                                                res.json(respod);
+                                                
                                             }
                                         }
                                     })
@@ -64,7 +69,12 @@ router.post('/',function (req,res,next) {
                             else
                             {
                                 comment_allow[0]['goods_list']="";
-                                res.json(comment_allow);
+                                var respod={
+                                    ret:'200',
+                                    data:comment_allow
+                                };
+                                res.json(respod);
+                                
                             }
 
 
@@ -74,7 +84,12 @@ router.post('/',function (req,res,next) {
                 }
                 else
                 {
-                    res.json("找不到指定訂單，請聯繫管理員");
+                    var respod={
+                        ret:'203',
+                        data:"找不到指定訂單，請聯繫管理員"
+                    };
+                    res.json(respod);
+                    
                 }
             });
 
@@ -82,7 +97,12 @@ router.post('/',function (req,res,next) {
         }
         else
         {
-            res.json("找不到指定訂單，請聯繫管理員");
+            var respod={
+                ret:'203',
+                data:"找不到指定訂單，請聯繫管理員"
+            };
+            res.json(respod);
+            
         }
     });
 });
@@ -182,11 +202,21 @@ router.post('/comment',function (req,res,next) {
     Promise.all([One,Two]).then(function (result) {
         if(result[0]=='success' && result[1]=='success')
         {
-            res.json('success');
+            var respod={
+                ret:'200',
+                data:'success'
+            };
+            res.json(respod);
+            
         }
         else
         {
-            res.json('error');
+            var respod={
+                ret:'200',
+                data:'error'
+            };
+            res.json(respod);
+            
         }
     });
 });

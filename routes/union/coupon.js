@@ -28,7 +28,11 @@ router.post('/',function (req,res,next) {
                 q[i]['sale_price'] = parseInt( q[i]['sale_price']);
                 q[i]['end_date'] =new Date(parseInt( q[i]['end_date']) * 1000).toLocaleString().substring(0,10);
         }
-        res.json(q);
+        var respod={
+            ret:'200',
+            data:q
+        };
+        res.json(respod);
     }
     run();
 });
@@ -45,7 +49,11 @@ router.post('/receive',function (req,res,next) {
             console.log(coupon);
             if(coupon==0)
             {
-                res.json("ERR:The specified discount coupon cannot be searched");
+                var respod={
+                    ret:'203',
+                    data:"ERR:The specified discount coupon cannot be searched"
+                };
+                res.json(respod);
             }
             else
             {
@@ -56,7 +64,11 @@ router.post('/receive',function (req,res,next) {
                     sql.push(req.session.m_uid);
                     var rtl=await sqlasnyc("SELECT uid FROM `mvm_coupon` WHERE cc_uid=? AND m_uid=? LIMIT 1",sql);
                     if(rtl!=0){
-                        res.json("該優惠卷已經領取");
+                        var respod={
+                            ret:'203',
+                            data:"該優惠卷已經領取"
+                        };
+                        res.json(respod);
                     }
                     else
                     {
@@ -84,20 +96,32 @@ router.post('/receive',function (req,res,next) {
                         sql.push(get_now_time());
 
                         await sqlasnyc("insert into `mvm_coupon` set m_uid=?,supplier_id=?,cc_uid=?,name=?,start_date=?,end_date=?,discount=?,price_lbound=?,register_date=?",sql);
-
-                        res.json("1");
+                        
+                        var respod={
+                            ret:'200',
+                            data:"1"
+                        };
+                        res.json(respod);
 
                     }
                 }
                 else
                 {
-                    res.json('ERR:The specified discount coupon cannot be obtained directly');
+                    var respod={
+                        ret:'203',
+                        data:'ERR:The specified discount coupon cannot be obtained directly'
+                    };
+                    res.json(respod);
                 }
             }
         }
         else
         {
-            res.json("no login");
+            var respod={
+                ret:'201',
+                data:"no login"
+            };
+            res.json(respod);
         }
     }
     run();

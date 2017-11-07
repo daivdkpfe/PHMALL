@@ -32,14 +32,24 @@ router.post('/get_member_info', function (req, res, next) {
         sql.push(req.session.m_uid);
         sqlQueryMore('select * from `mvm_member_table` where uid=?', sql, function (err, vals, xx) {
             if (err) logger.info("Caught exception:" + err);
-            res.json(vals);
+            var respod={
+                ret:'200',
+                data:vals
+            };
+            res.json(respod);
+            
         });
         
     } 
     else {
         var rets=[];
-        rets.push({status:0})
-        res.json(rets);
+        rets.push({status:0});
+        var respod={
+            ret:'200',
+            data:rets
+        };
+        res.json(respod);
+        
     }
 
 });

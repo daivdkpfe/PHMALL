@@ -19,8 +19,13 @@ router.post('/',function (req,res,next) {
     var cat=req.body.cat;
     async function run() {
         var a = await sqlasnyc("SELECT id,brandname,logo,weburl,train FROM `mvm_brand_table` WHERE isCheck='1' AND brand_cat=? ORDER BY `id` LIMIT "+parseInt(req.body.start)+",24",[cat]);
-        console.log('sss:'+a);
-        res.json(a);
+        
+        var respod={
+            ret:'200',
+            data:a
+        };
+        res.json(respod);
+        
     }
     run();
 

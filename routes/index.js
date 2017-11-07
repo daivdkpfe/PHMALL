@@ -27,7 +27,12 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
     var arr={};
     arr[0]=lang.data_err;
     console.log(lang.data_err);
-    res.json(arr).end();
+    var respod={
+      ret:'200',
+      data:arr
+  };
+  res.json(respod).end();
+    
   }
 
   if(req.params.fun=="get_categroy")//获取菜单列表和菜单里的商品
@@ -92,7 +97,12 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
       });
       return QueryTwo;
     }).then(function(result2){
-      res.json(result2);
+      var respod={
+        ret:'200',
+        data:result2
+    };
+    res.json(respod);
+      
     });
   }
   else if(req.params.fun=="get_shop_info")//获取店铺信息
@@ -122,15 +132,24 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
       return QueryTwo;
 
     }).then(function(results){
-
-      res.json(results);
+      var respod={
+        ret:'200',
+        data:results
+    };
+    res.json(respod);
+      
     });
   }
   else if(req.params.fun=="get_shop_discount")//獲取折扣商品
   {
     sqlQuery1("SELECT t.uid,t.goods_name,t.goods_file1,t.supplier_id,t.goods_status,t.goods_sale_price,t.goods_hit,t.goods_stock,d.goods_market_price FROM `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid WHERE t.supplier_id=? AND type=3 AND show_status=1 ORDER BY register_date DESC LIMIT 0,8", SqlArr,function (err,vals,fields) {
       if(err) logger.info("Caught exception:"+err);
-      res.json(vals);
+      var respod={
+        ret:'200',
+        data:vals
+    };
+    res.json(respod);
+      
     })
 
   }
@@ -145,7 +164,12 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
         item['register_date']=new Date(parseInt(item['register_date']) *1000 ).toLocaleString().replace(/\d{1,2}:\d{1,2}:\d{1,2}$/,'').replace(' ','');
         return item;
       });
-      res.json(afterEscaps);
+      var respod={
+        ret:'200',
+        data:afterEscaps
+    };
+    res.json(respod);
+     
     })
 
   }
@@ -184,8 +208,12 @@ router.post("/",function (req,res,next) {
       categroys.push(data.default_wap_categroy_11[0]);
       categroys.push(data.default_wap_categroy_12[0]);
       data['categroys']=categroys;
-      console.log(categroys);
-      res.json(data);
+      var respod={
+        ret:'200',
+        data:data
+    };
+    res.json(respod);
+    
   });
 
 });
@@ -214,14 +242,24 @@ router.post("/get_onsale",function (req,res,next){
               console.log(s);
               if(s==vals.length)
               {
-                res.json(vals);
+                var respod={
+                  ret:'200',
+                  data:vals
+              };
+              res.json(respod);
+                
               }
             })
           })
         }
         else
         {
-          res.json("");
+          var respod={
+            ret:'200',
+            data:""
+        };
+        res.json(respod);
+          
         }
 
 
