@@ -25,7 +25,7 @@ router.post('/logo_upload', function(req, res, next) {
 
 
         // AVATAR_UPLOAD_FOLDER =config.web_src;
-        AVATAR_UPLOAD_FOLDER=configss.web_src;
+        AVATAR_UPLOAD_FOLDER=config.web_src;
         var form = new formidable.IncomingForm();   //创建上传表单
         form.encoding = 'utf-8';		//设置编辑
         form.uploadDir = AVATAR_UPLOAD_FOLDER;	 //设置上传目录

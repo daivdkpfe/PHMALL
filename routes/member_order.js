@@ -62,7 +62,11 @@ router.post('/', function(req, res, next) {
                                     }
                                     if(i==vals.length)
                                     {
-                                        res.json(vals);
+                                        var respod={
+                                            ret:'200',
+                                            data:vals
+                                        };
+                                        res.json(respod);
                                     }
 
 
@@ -83,7 +87,11 @@ router.post('/', function(req, res, next) {
             }
             else
             {
-                res.json('end');
+                var respod={
+                    ret:'202',
+                    data:'end'
+                };
+                res.json(respod);
             }
 
 
@@ -95,7 +103,12 @@ router.post('/', function(req, res, next) {
     {
         var token_data={};
         token_data['status']='No Login';
-        res.json(token_data);
+        var respod={
+            ret:'201',
+            data:token_data
+        };
+       
+        res.json(respod);
     }
 });
 router.post('/scomment',function (req,res,next) {
@@ -164,7 +177,11 @@ router.post('/scomment',function (req,res,next) {
                                                 console.log(ss);
                                                 if(ss==comments.length)
                                                 {
-                                                    res.json(return_result);
+                                                    var respod={
+                                                        ret:'200',
+                                                        data:return_result
+                                                    };
+                                                    res.json(respod);
                                                 }
                                             }
                                         });
@@ -184,7 +201,11 @@ router.post('/scomment',function (req,res,next) {
             }
             else
             {
-                res.json('end');
+                var respod={
+                    ret:'202',
+                    data:'end'
+                };
+                res.json(respod);
             }
 
 
@@ -200,7 +221,11 @@ router.post('/scomment',function (req,res,next) {
     {
         var token_data={};
         token_data['status']='No Login';
-        res.json(token_data);
+        var respod={
+            ret:'201',
+            data:token_data
+        };
+        res.json(respod);
     }
 });
 

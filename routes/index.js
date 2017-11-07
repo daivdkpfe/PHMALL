@@ -9,18 +9,24 @@ var http=require ("http");
 
 
 router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
+  var lang=lang_en;
+  if(req.session.language=="ch")
+  {
+    lang=lang_ch;
+  }
   var menu=[];
   var SqlArr=[];
   SqlArr.push(req.params.s_uid-0);
 
   if(req.params.s_uid%1==0 && req.params.m_uid%1==0)
   {
-
+    
   }
   else
   {
     var arr={};
-    arr[0]="數據不對";
+    arr[0]=lang.data_err;
+    console.log(lang.data_err);
     res.json(arr).end();
   }
 
@@ -150,8 +156,13 @@ router.get('/:s_uid/:m_uid/:fun/:lan', function(req, res, next) {
 
 });
 router.get("/",function (req,res,next) {
-
-    res.render('index', { title: 'PHMALL'});
+  var lang=lang_en;
+  if(req.session.language=="ch")
+  {
+    lang=lang_ch;
+  }
+  
+    res.render('index', { title: 'PHMALL',lang:lang,concig:config});
 
 });
 

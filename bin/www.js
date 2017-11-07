@@ -15,10 +15,9 @@ var Memcached = require('memcached');
 var log4js = require('log4js');
 var request = require('request');
 var zlib = require('zlib');
+global.lang_ch=require('../lanuage/lanuage_ch');
+global.lang_en=require("../lanuage/lanuage_en");
 
-global.configss={
-    web_src:"../../phpStudy/WWW/english/xx/"
-}
 
 
 global.memcached = new Memcached('127.0.0.1:11211');
@@ -968,12 +967,15 @@ global.post3000=function (host,path,data,callback) {
 
 
 global.config={};
-config.email_apiUser='phmalladmin';
-config.email_apiKey='FdN1BbbZ5tsma7lX';
-config.email_from='service@mail.phmall.com.ph';
-config.email_fromName='PHMALL';
-config.email_subject='PHMALL:My Website,My Decision .Let\'s Create Your Own Online Shop !.Verification code for email modification';
-
+config.email_apiUser="phmalladmin";
+config.email_apiKey="FdN1BbbZ5tsma7lX";
+config.email_from="service@mail.phmall.com.ph";
+config.email_fromName="PHMALL";
+config.email_subject="PHMALL:My Website,My Decision .Let \' s Create Your Own Online Shop !.Verification code for email modification";
+config.web_src="../../phpStudy/WWW/english/xx/",
+config.img_url="http://192.168.0.105/english/",
+config.union_img_url="http://192.168.0.105/english/union/",
+config.update_url="http://192.168.0.105:88/update_cache",
 
 
 global.SendEmail=function(to,subject,contect,callback)

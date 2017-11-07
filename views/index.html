@@ -411,7 +411,7 @@
 				<a href="./search">
 					<img src="images/default_wap/index_search.png" class="fl" alt="">
 				</a>
-				<img src="images/default_wap/index_change.png" class="fr" alt="">
+				<img @click="changeLang()" src="images/default_wap/index_change.png" class="fr" alt="">
 			</div>
 		</div>
 		<!--头部-->
@@ -726,8 +726,14 @@
 				cate9: '',
 				cate10: '',
 				cate11: '',
-				cate12: ''
+				cate12: '',
+				config:eval('(' + '<%- JSON.stringify(config) %>' + ')')
+			},
+			mounted:function(){
+				console.log('88'+this.config.data_err);
 			}
+				
+			
 		});
 
 		/*開始處理數據*/

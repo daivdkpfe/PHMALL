@@ -2,5 +2,5 @@
  * Created by Administrator on 2017/9/15.
  */
 module.exports = {
-    xx:"sss"
+    data_err:"數據錯誤"
 }
