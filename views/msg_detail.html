@@ -96,7 +96,7 @@
         mounted:function(){
             var t=this;
             $.post('./msg_detail',{uid:this.uid,type:this.type},function(result){
-                console.log(result);
+                result=result.data;
                 if(result==0){
                     window.location.href='./error?type=noknow';
                 }

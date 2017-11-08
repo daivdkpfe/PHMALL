@@ -317,7 +317,7 @@
                 start=0;
 
                 $.post('./coupon',{start:start,cate:cate_uid},function (result) {
-                    console.log(result);
+                    result=result.data;
                     start=start+7;
                     page.coupon_list = [];
                     if(result.length>0)
@@ -338,7 +338,7 @@
     var cate='<%= cate %>';
 
     $.post('./coupon',{start:start,cate:cate},function (result) {
-
+        result=result.data;
         start=start+7;
 
         result.forEach(function(item,index){

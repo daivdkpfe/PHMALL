@@ -537,11 +537,12 @@
         });
     $.getJSON("../index/<%= uid %>/1/get_shop_discount/lan",
         function(data) {
+			data=data.data;
            app.discount=data;
         });
 	
 	$.post("../favorite/check_favorite",{f:'<%= uid %>',t:0,m:""},function (result) {
-
+		result=result.data;
 		if(result==1)
 		{
             app.favorite_img='images/default_wap/favirate1.png';
@@ -552,7 +553,7 @@
         if(app.have_favorite==0)
         {
             $.post("../favorite/set_favorite",{f:'<%= uid %>',t:0,m:"",setp:""},function (result) {
-
+				result=result.data;
                 if(result==1)
                 {
                     app.favorite_img='images/default_wap/favirate1.png';

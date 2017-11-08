@@ -399,8 +399,7 @@
             $(".weui-check:checked").each(function () {
 
                $.post("./favorite/set_favorite",{module:$(this).attr('module'),t:1,f:$(this).attr('g_uid')},function (result) {
-
-               });
+                result=result.data;
                 $.notification({
                     title: "添加收藏",
                     text: "收藏成功",
@@ -408,6 +407,8 @@
 
                     }
                 });
+               });
+                
             });
         },
         //添加到收藏
@@ -415,6 +416,7 @@
             $(".weui-check:checked").each(function () {
                 var s=$(this);
                 $.post("./cart/detele",{uid:$(this).attr("uid")},function (result) {
+                    result=result.data;
                     if(result==1)
                     {
 
@@ -454,6 +456,7 @@
 <!--VUE-->
 <script>
     $.post('./cart',{},function (result) {
+        result=result.data;
        if(result[0].length>0)
        {
            page.carts_list=result;
@@ -473,7 +476,7 @@
     });
 
     $.post('/favorite/get_favorite',{t:1,num:4,ism:1},function (result) {
-        console.log(result);
+        result=result.data;
         page.favorites=result;
     });
 </script>

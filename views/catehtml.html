@@ -188,6 +188,7 @@
         }
     });
     $.post("./category",{},function (result) {
+        result=result.data;
         page.cates=result;
     });
 

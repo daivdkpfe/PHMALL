@@ -318,7 +318,8 @@
                         start: t.start,
                         cate_uid: t.cate_uid
                     }, function (result) {
-                        console.log(result);
+
+                        result=result.data;
                         if (result != 0) {
                             result.forEach(function (item, index) {
                                 t.start++;
@@ -331,10 +332,11 @@
             mounted: function () {
                 var t = this;
                 $.post("./category", {}, function (result) {
+                    result=result.data;
                     page.cates = result;
                 });
                 $.post('./point_list/info', {}, function (result) {
-                    console.log(result);
+                    result=result.data;
                     if (typeof (result.member_point) != 'undefined') {
                         t.point_num = result.member_point.member_point;
                     }
@@ -346,7 +348,7 @@
                     start: t.start,
                     cate_uid: t.cate_uid
                 }, function (result) {
-                    console.log(result);
+                    result=result.data;
                     if (result != 0) {
                         result.forEach(function (item, index) {
                             t.start++;
@@ -369,7 +371,7 @@
                         start: t.start,
                         cate_uid: t.cate_uid
                     }, function (result) {
-                        
+                        result=result.data;
                         if (result != 0) {
                             result.forEach(function (item, index) {
                                 t.start++;

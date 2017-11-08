@@ -1,855 +1,234 @@
-[2017-11-07 08:18:29.561] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-11-07 08:18:29.564] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-11-07 08:18:29.564] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-11-07 08:18:29.565] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-11-07 08:18:29.566] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-11-07 08:18:29.566] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-11-07 08:18:29.568] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-11-07 08:18:29.571] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-11-07 08:18:29.571] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-11-07 08:18:29.573] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-11-07 08:18:29.574] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-11-07 08:18:29.575] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-11-07 08:18:29.578] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-11-07 08:18:29.579] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-11-07 08:18:29.581] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-11-07 08:18:29.582] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-11-07 08:18:29.584] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-11-07 08:18:29.585] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-11-07 08:18:29.587] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-11-07 08:18:29.589] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-11-07 08:18:29.590] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-11-07 08:18:29.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-11-07 08:18:29.594] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-11-07 08:18:29.596] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-11-07 08:21:05.546] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:22:31.104] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:31:38.881] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:32:14.552] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:32:36.952] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:38:17.679] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:44:59.729] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:48:44.404] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:55:35.137] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:56:02.827] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 08:59:36.064] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-11-07 08:59:36.067] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-11-07 08:59:36.068] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-11-07 08:59:36.068] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-11-07 08:59:36.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-11-07 08:59:36.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-11-07 08:59:36.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-11-07 08:59:36.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-11-07 08:59:36.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-11-07 08:59:36.071] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-11-07 08:59:36.072] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-11-07 08:59:36.072] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-11-07 08:59:36.074] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-11-07 08:59:36.074] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-11-07 08:59:36.075] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-11-07 08:59:36.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-11-07 08:59:36.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-11-07 08:59:36.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-11-07 08:59:36.077] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-11-07 08:59:36.077] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-11-07 08:59:36.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-11-07 08:59:36.079] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-11-07 08:59:36.080] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-11-07 08:59:36.080] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-11-07 08:59:58.202] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:00:22.494] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:01:21.781] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-11-07 09:01:21.784] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-11-07 09:01:21.785] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-11-07 09:01:21.785] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-11-07 09:01:21.786] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-11-07 09:01:21.786] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-11-07 09:01:21.786] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-11-07 09:01:21.787] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-11-07 09:01:21.787] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-11-07 09:01:21.788] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-11-07 09:01:21.789] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-11-07 09:01:21.790] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-11-07 09:01:21.791] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-11-07 09:01:21.792] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-11-07 09:01:21.792] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-11-07 09:01:21.794] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-11-07 09:01:21.794] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-11-07 09:01:21.795] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-11-07 09:01:21.795] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-11-07 09:01:21.796] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-11-07 09:01:21.796] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-11-07 09:01:21.798] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-11-07 09:01:21.798] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-11-07 09:01:21.799] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-11-07 09:03:36.782] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:04:38.979] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:04:56.053] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-11-07 09:04:56.056] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-11-07 09:04:56.057] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-11-07 09:04:56.058] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-11-07 09:04:56.059] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-11-07 09:04:56.060] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-11-07 09:04:56.060] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-11-07 09:04:56.061] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-11-07 09:04:56.062] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-11-07 09:04:56.063] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-11-07 09:04:56.064] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-11-07 09:04:56.065] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-11-07 09:04:56.066] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-11-07 09:04:56.067] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-11-07 09:04:56.067] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-11-07 09:04:56.068] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-11-07 09:04:56.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-11-07 09:04:56.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-11-07 09:04:56.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-11-07 09:04:56.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-11-07 09:04:56.071] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-11-07 09:04:56.072] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-11-07 09:04:56.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-11-07 09:04:56.074] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-11-07 09:05:10.430] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:06:07.407] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:08:14.049] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:08:45.975] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:09:09.413] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:10:33.543] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:11:07.475] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    Admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
-[2017-11-07 09:11:20.619] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:11:22.962] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:11:22.976] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:11:22.977] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:11:22.982] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:11:22.983] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:11:22.984] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:11:22.986] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:11:22.990] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:11:22.992] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:11:22.993] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:11:22.995] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:11:23.018] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:11:23.027] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:11:23.028] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:11:23.030] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:11:23.030] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:11:23.031] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:11:23.035] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:11:23.038] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:11:23.042] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:11:23.044] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:11:23.045] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:11:23.046] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:11:23.050] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:11:23.059] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:11:23.061] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:11:23.063] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:11:23.065] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:11:23.066] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:11:23.069] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:11:23.071] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:11:23.072] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:11:23.074] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:11:23.077] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:11:23.082] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:11:23.084] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:11:23.085] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:12:45.269] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:12:46.593] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:12:47.208] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:12:47.213] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:12:47.217] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:12:47.217] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:12:47.219] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:12:47.219] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:12:47.221] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:12:47.223] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:12:47.224] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:12:47.230] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:12:47.231] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:12:47.238] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:12:47.240] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:12:47.241] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:12:47.244] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:12:47.248] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:12:47.248] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:12:47.250] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:12:47.255] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:12:47.256] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:12:47.257] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:12:47.260] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:12:47.261] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:12:47.262] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:12:47.270] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:12:47.271] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:12:47.272] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:12:47.272] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:12:47.275] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:12:47.282] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:12:47.283] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:12:47.284] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:12:47.285] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:12:47.286] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:12:47.287] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:12:47.288] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:12:47.289] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:13:24.462] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-11-07 09:13:24.468] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-11-07 09:13:24.473] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-11-07 09:13:24.474] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-11-07 09:13:24.475] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-11-07 09:13:24.476] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-11-07 09:13:24.477] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-11-07 09:13:24.478] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-11-07 09:13:24.479] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-11-07 09:13:24.481] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-11-07 09:13:24.483] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-11-07 09:13:24.484] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-11-07 09:13:24.486] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-11-07 09:13:24.486] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-11-07 09:13:24.488] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-11-07 09:13:24.489] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-11-07 09:13:24.490] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-11-07 09:13:24.491] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-11-07 09:13:24.492] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-11-07 09:13:24.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-11-07 09:13:24.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-11-07 09:13:24.497] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-11-07 09:13:24.501] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-11-07 09:13:24.501] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-11-07 09:13:36.918] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:15:10.846] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:15:59.008] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    Admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
-[2017-11-07 09:16:00.160] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:16:03.110] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:03.121] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:03.123] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:03.124] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:03.126] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:03.128] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:03.129] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:03.130] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:03.132] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:03.133] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:03.134] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:03.151] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:03.153] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:03.154] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:03.156] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:03.157] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:03.160] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:03.163] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:03.164] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:03.164] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:03.166] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:03.172] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:03.173] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:03.176] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:03.182] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:03.184] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:03.185] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:03.186] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:03.188] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:03.190] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:03.191] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:03.192] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:03.193] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:03.193] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:03.194] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:03.195] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:03.199] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:34.855] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:16:35.787] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:35.791] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:35.792] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:35.793] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:35.793] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:35.794] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:35.794] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:35.795] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:35.796] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:35.796] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:35.796] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:35.799] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:35.801] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:35.803] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:35.806] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:35.807] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:35.808] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:35.809] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:35.810] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:35.811] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:35.812] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:35.812] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:35.816] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:35.816] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:35.825] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:35.827] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:35.832] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:35.833] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:35.834] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:35.835] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:35.837] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:35.838] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:35.840] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:35.842] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:35.845] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:35.847] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:35.852] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:39.494] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:16:40.931] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:40.935] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:40.936] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:40.940] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:40.940] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:40.941] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:40.941] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:40.942] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:40.943] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:40.943] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:40.944] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:40.948] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:40.950] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:40.951] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:40.954] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:40.955] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:40.956] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:40.957] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:40.959] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:40.959] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:40.960] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:40.961] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:40.962] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:40.963] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:40.971] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:40.972] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:40.974] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:40.979] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:40.986] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:40.987] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:40.988] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:40.990] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:40.991] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:40.992] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:40.992] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:40.995] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:40.999] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:42.632] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:42.637] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:42.638] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:42.640] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:42.641] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:42.642] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:42.645] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:42.646] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:42.647] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:42.647] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:42.649] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:42.657] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:42.659] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:42.661] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:42.662] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:42.663] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:42.663] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:42.664] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:42.665] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:42.666] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:42.671] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:42.672] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:42.673] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:42.674] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:42.676] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:42.678] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:42.679] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:42.680] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:42.682] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:42.684] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:42.685] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:42.686] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:42.687] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:42.690] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:42.692] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:42.694] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:42.695] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:43.120] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:43.124] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:43.129] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:43.131] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:43.132] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:43.134] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:43.135] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:43.137] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:43.137] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:43.138] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:43.139] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:43.146] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:43.148] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.150] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:43.151] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:43.152] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:43.152] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:43.152] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:43.159] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.165] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.165] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:43.166] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.167] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.169] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.172] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:43.173] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:43.174] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:43.175] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:43.175] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:43.176] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:43.176] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:43.177] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:43.178] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:43.179] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:43.183] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:43.189] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:43.190] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:43.475] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:43.478] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:43.479] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:43.479] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:43.480] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:43.480] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:43.481] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:43.481] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:43.482] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:43.482] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:43.483] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:43.486] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.488] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:43.489] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:43.498] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:43.499] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:43.499] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:43.501] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:43.502] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.503] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.505] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.507] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:43.508] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.509] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:43.511] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:43.512] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:43.513] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:43.514] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:43.514] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:43.515] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:43.515] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:43.516] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:43.517] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:43.517] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:43.518] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:43.519] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:43.519] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:44.105] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:44.107] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:44.108] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:44.108] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:44.109] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:44.109] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:44.109] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:44.110] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:44.110] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:44.111] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:44.111] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:44.113] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:44.114] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:44.115] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:44.116] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:44.116] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:44.116] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:44.117] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:44.118] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:44.118] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:44.119] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:44.120] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:44.121] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:44.122] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:44.124] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:44.125] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:44.126] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:44.126] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:44.127] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:44.127] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:44.128] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:44.128] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:44.129] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:44.135] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:44.136] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:44.137] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:44.138] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:45.372] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:45.375] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:45.376] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:45.383] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:45.384] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:45.386] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:45.387] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:45.387] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:45.388] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:45.389] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:45.389] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:45.394] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.396] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:45.398] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:45.400] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:45.401] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:45.401] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:45.402] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:45.403] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.403] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:45.404] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.406] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.407] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.416] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.421] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:45.423] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:45.425] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.426] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:45.428] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.429] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:45.430] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:45.430] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:45.431] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:45.432] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:45.432] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:45.433] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.433] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:45.629] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:45.637] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:45.650] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:45.651] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:45.653] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:45.654] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:45.655] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:45.657] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:45.658] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:45.659] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:45.659] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:45.664] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:45.665] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:45.668] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.669] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:45.670] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:45.670] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:45.671] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.673] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.674] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:45.682] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.683] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:45.685] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.686] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.691] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.692] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:45.693] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:45.694] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:45.695] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.696] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:45.697] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.697] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:45.698] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:45.698] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:45.699] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:45.700] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:45.700] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:45.907] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:45.917] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:45.918] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:45.918] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:45.919] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:45.920] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:45.921] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:45.922] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:45.923] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:45.923] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:45.926] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:45.932] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.934] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:45.936] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:45.937] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:45.938] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:45.939] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:45.940] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:45.942] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.943] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.945] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.955] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:45.957] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.959] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:45.966] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:45.968] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:45.969] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:45.970] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.971] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.971] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:45.972] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:45.973] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:45.974] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:45.974] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:45.975] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:45.976] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:45.976] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:46.171] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:16:46.176] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:16:46.176] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:16:46.177] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:16:46.177] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:16:46.177] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:16:46.178] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:16:46.178] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:16:46.178] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:16:46.179] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:16:46.184] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:16:46.187] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:46.190] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:16:46.191] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:16:46.192] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:46.193] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:16:46.194] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:16:46.195] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:46.197] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:46.198] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:16:46.199] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:16:46.201] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:46.202] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:46.202] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:16:46.204] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:16:46.207] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:16:46.208] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:16:46.215] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:46.215] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:46.216] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:16:46.217] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:16:46.217] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:46.218] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:16:46.218] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:16:46.219] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:16:46.220] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:16:46.220] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:16:46.486] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:18:35.989] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:18:38.566] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:34:43.950] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 09:34:54.793] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:34:56.610] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:34:56.626] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:34:56.627] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:34:56.628] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:34:56.629] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:34:56.632] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:34:56.636] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:34:56.636] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:34:56.639] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:34:56.640] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:34:56.640] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:34:56.646] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:56.653] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:34:56.660] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:34:56.660] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:34:56.661] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:34:56.664] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:56.664] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:34:56.667] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:34:56.669] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:56.670] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:34:56.671] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:56.672] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:56.673] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:34:56.674] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:56.679] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:34:56.681] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:34:56.682] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:34:56.683] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:34:56.690] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:34:56.690] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:34:56.691] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:34:56.691] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:34:56.692] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:34:56.693] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:34:56.695] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:34:56.697] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:34:57.593] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:34:58.764] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:34:58.767] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:34:58.767] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:34:58.768] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:34:58.768] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:34:58.769] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:34:58.769] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:34:58.769] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:34:58.770] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:34:58.771] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:34:58.771] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:34:58.773] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:58.779] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:34:58.780] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:34:58.782] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:34:58.782] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:34:58.783] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:34:58.784] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:34:58.785] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:58.786] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:58.789] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:58.792] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:58.793] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:34:58.794] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:34:58.796] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:34:58.797] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:34:58.799] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:34:58.800] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:34:58.810] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:34:58.811] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:34:58.812] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:34:58.812] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:34:58.813] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:34:58.814] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:34:58.814] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:34:58.815] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:34:58.815] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:35:00.827] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:35:07.475] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:38:40.486] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:38:40.490] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:38:40.491] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:38:40.492] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:38:40.492] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:38:40.493] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:38:40.494] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:38:40.494] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:38:40.495] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:38:40.495] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:38:40.496] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:38:40.499] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:40.502] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:38:40.511] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:38:40.513] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:38:40.514] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:38:40.515] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:38:40.517] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:38:40.519] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:40.520] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:38:40.521] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:40.523] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:40.524] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:40.525] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:40.528] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:38:40.529] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:38:40.530] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:38:40.531] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:40.531] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:38:40.532] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:40.532] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:40.533] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:38:40.533] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:38:40.534] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:38:40.534] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:38:40.541] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:38:40.542] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:38:41.877] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:38:42.775] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:38:42.778] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:38:42.778] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:38:42.779] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:38:42.780] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:38:42.780] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:38:42.780] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:38:42.781] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:38:42.781] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:38:42.782] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:38:42.784] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:38:42.788] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:38:42.791] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:38:42.799] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:42.801] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:38:42.801] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:38:42.802] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:38:42.803] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:42.808] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:38:42.810] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:42.812] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:38:42.813] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:42.815] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:42.815] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:42.819] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:38:42.820] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:38:42.821] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:38:42.822] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:42.829] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:42.834] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:42.835] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:38:42.836] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:38:42.837] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:38:42.838] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:38:42.839] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:38:42.839] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:38:42.840] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:38:43.773] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:38:44.672] [INFO] log_file - SELECT o.ordersn,o.uid,o.status,o.goods_amount,g.m_uid,g.shop_name FROM `mvm_order_info` o FORCE INDEX (`username`) left join `mvm_member_shop` g on o.supplier_id=g.m_uid WHERE username=?  ORDER BY addtime DESC LIMIT 0,10    admin
-[2017-11-07 09:38:44.675] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    307
-[2017-11-07 09:38:44.676] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    306
-[2017-11-07 09:38:44.677] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    305
-[2017-11-07 09:38:44.677] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    304
-[2017-11-07 09:38:44.678] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    303
-[2017-11-07 09:38:44.678] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    302
-[2017-11-07 09:38:44.679] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    301
-[2017-11-07 09:38:44.680] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    300
-[2017-11-07 09:38:44.680] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    299
-[2017-11-07 09:38:44.681] [INFO] log_file - SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?    298
-[2017-11-07 09:38:44.693] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:44.695] [INFO] log_file - select * from mvm_goods_group where uid=?    27
-[2017-11-07 09:38:44.697] [INFO] log_file - select * from mvm_goods_onsale where uid=?    22
-[2017-11-07 09:38:44.698] [INFO] log_file - select * from mvm_goods_table where uid=?    412
-[2017-11-07 09:38:44.699] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:44.700] [INFO] log_file - select * from mvm_goods_table where uid=?    1580
-[2017-11-07 09:38:44.701] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:44.702] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:44.703] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:38:44.703] [INFO] log_file - select * from mvm_goods_table where uid=?    409
-[2017-11-07 09:38:44.704] [INFO] log_file - select * from mvm_goods_table where uid=?    416
-[2017-11-07 09:38:44.705] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:44.705] [INFO] log_file - select * from mvm_goods_table where uid=?    1583
-[2017-11-07 09:38:44.708] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887774
-[2017-11-07 09:38:44.708] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150761887761
-[2017-11-07 09:38:44.709] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815945
-[2017-11-07 09:38:44.710] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615525177
-[2017-11-07 09:38:44.711] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150734661255
-[2017-11-07 09:38:44.711] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:38:44.712] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:44.719] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150622122574
-[2017-11-07 09:38:44.720] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615551112
-[2017-11-07 09:38:44.720] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:44.721] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150735815933
-[2017-11-07 09:38:44.722] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615589854
-[2017-11-07 09:38:44.722] [INFO] log_file - select uid from `mvm_comment_allow` where ordersn=? and roll='0'    OD150615558180
-[2017-11-07 09:38:45.630] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:38:47.182] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 09:38:48.589] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2017-11-07 10:03:29.451] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
-[2017-11-07 10:06:12.685] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-11-07 10:06:12.688] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-11-07 10:06:12.688] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-11-07 10:06:12.689] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-11-07 10:06:12.689] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-11-07 10:06:12.690] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-11-07 10:06:12.690] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-11-07 10:06:12.691] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-11-07 10:06:12.691] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-11-07 10:06:12.692] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-11-07 10:06:12.693] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-11-07 10:06:12.694] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-11-07 10:06:12.695] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-11-07 10:06:12.700] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-11-07 10:06:12.701] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-11-07 10:06:12.702] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-11-07 10:06:12.703] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-11-07 10:06:12.703] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-11-07 10:06:12.704] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-11-07 10:06:12.704] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-11-07 10:06:12.706] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-11-07 10:06:12.706] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-11-07 10:06:12.708] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-11-07 10:06:12.709] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-11-07 10:23:14.105] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1509955200,1510041599
+[2017-11-08 08:12:10.126] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 08:12:10.130] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 08:12:10.131] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 08:12:10.131] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 08:12:10.132] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 08:12:10.132] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 08:12:10.133] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 08:12:10.134] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 08:12:10.134] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 08:12:10.135] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 08:12:10.136] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 08:12:10.137] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 08:12:10.138] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 08:12:10.139] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 08:12:10.139] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 08:12:10.140] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 08:12:10.140] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 08:12:10.141] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 08:12:10.141] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 08:12:10.141] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 08:12:10.142] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 08:12:10.143] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 08:12:10.144] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 08:12:10.144] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:05:59.821] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:05:59.825] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:05:59.825] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:05:59.826] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:05:59.826] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:05:59.827] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:05:59.827] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:05:59.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:05:59.828] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:05:59.829] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:05:59.831] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:05:59.833] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:05:59.835] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:05:59.835] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:05:59.836] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:05:59.836] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:05:59.837] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:05:59.837] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:05:59.838] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:05:59.839] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:05:59.840] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:05:59.842] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:05:59.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:05:59.843] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:06:50.962] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:06:50.965] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:06:50.965] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:06:50.966] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:06:50.966] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:06:50.967] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:06:50.968] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:06:50.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:06:50.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:06:50.971] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:06:50.971] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:06:50.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:06:50.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:06:50.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:06:50.976] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:06:50.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:06:50.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:06:50.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:06:50.978] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:06:50.978] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:06:50.979] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:06:50.980] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:06:50.981] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:06:50.982] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:14:23.242] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:14:23.246] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:14:23.248] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:14:23.250] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:14:23.252] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:14:23.253] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:14:23.255] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:14:23.256] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:14:23.258] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:14:23.260] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:14:23.261] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:14:23.263] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:14:23.265] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:14:23.267] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:14:23.268] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:14:23.268] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:14:23.269] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:14:23.269] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:14:23.270] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:14:23.271] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:14:23.272] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:14:23.276] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:14:23.278] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:14:23.280] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:14:41.967] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:14:41.970] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:14:41.970] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:14:41.971] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:14:41.971] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:14:41.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:14:41.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:14:41.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:14:41.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:14:41.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:14:41.976] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:14:41.976] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:14:41.978] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:14:41.979] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:14:41.981] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:14:41.982] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:14:41.983] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:14:41.983] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:14:41.983] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:14:41.984] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:14:41.986] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:14:41.987] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:14:41.988] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:14:41.990] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:15:15.538] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:15:15.541] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:15:15.541] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:15:15.542] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:15:15.542] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:15:15.543] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:15:15.543] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:15:15.544] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:15:15.544] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:15:15.545] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:15:15.548] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:15:15.549] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:15:15.550] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:15:15.550] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:15:15.551] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:15:15.552] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:15:15.552] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:15:15.553] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:15:15.553] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:15:15.553] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:15:15.554] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:15:15.555] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:15:15.556] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:15:15.557] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:17:54.952] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:17:54.955] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:17:54.957] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:17:54.957] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:17:54.958] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:17:54.958] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:17:54.959] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:17:54.960] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:17:54.961] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:17:54.962] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:17:54.964] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:17:54.965] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:17:54.967] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:17:54.967] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:17:54.968] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:17:54.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:17:54.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:17:54.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:17:54.970] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:17:54.970] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:17:54.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:17:54.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:17:54.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:17:54.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:28:08.893] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:28:08.896] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:28:08.896] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:28:08.899] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:28:08.899] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:28:08.900] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:28:08.901] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:28:08.902] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:28:08.902] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:28:08.903] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:28:08.905] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:28:08.906] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:28:08.907] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:28:08.908] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:28:08.910] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:28:08.912] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:28:08.913] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:28:08.916] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:28:08.917] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:28:08.918] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:28:08.919] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:28:08.921] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:28:08.925] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:28:08.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:41:15.100] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:43:54.447] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-08 09:43:54.450] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-08 09:43:54.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-08 09:43:54.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-08 09:43:54.452] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-08 09:43:54.453] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-08 09:43:54.453] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-08 09:43:54.454] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-08 09:43:54.454] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-08 09:43:54.455] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-08 09:43:54.457] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-08 09:43:54.458] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-08 09:43:54.460] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-08 09:43:54.460] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-08 09:43:54.461] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-08 09:43:54.462] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-08 09:43:54.463] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-08 09:43:54.463] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-08 09:43:54.464] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-08 09:43:54.465] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-08 09:43:54.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-08 09:43:54.467] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-08 09:43:54.468] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-08 09:43:54.468] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-08 09:46:50.870] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:47:14.602] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:47:38.866] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:47:43.856] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:47:46.969] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:49:05.283] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:49:35.858] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:49:38.147] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:51:09.340] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:51:52.733] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:52:00.704] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:53:07.187] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:53:13.681] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:53:36.218] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:56:45.925] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-08 09:56:47.179] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999
+[2017-11-08 09:58:54.593] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510041600,1510127999

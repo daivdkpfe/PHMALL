@@ -190,7 +190,7 @@
 		::-webkit-scrollbar {
 			/*隐藏滚轮*/
 			display: none;
-			!important;
+			
 		}
 
 		.goods_img {
@@ -419,7 +419,7 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" v-for="flash in flashs">
 					<a v-bind:href="flash.url">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+flash.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+flash.pic" alt="">
 					</a>
 				</div>
 				<!--<div class="swiper-slide"><img src="images/default_wap/1.png" alt=""></div>-->
@@ -497,7 +497,7 @@
 		<!--分类-->
 		<div class="coupon_div">
 			<a v-bind:href="coupon.url">
-				<img class="add_img" src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+coupon.pic" alt="">
+				<img class="add_img" src="images/default_wap/load.png" v-bind:data-src="config.img_url+coupon.pic" alt="">
 			</a>
 			<a href="news">
 				<img class="zxrd_img" src="images/default_wap/zxrd.png" alt="">
@@ -518,8 +518,8 @@
 			<div class="display">
 				<div class="container" v-bind:style="'width:'+goods_num+'px;'">
 					<div class="inner" v-for="flash_sale in flash_sales">
-						<a v-bind:href="'http://192.168.0.105:88/union/product?uid='+flash_sale.uid+'&setp=2'">
-							<img class="goods_img" v-bind:data-src="'http://192.168.0.105/english/union/'+flash_sale.goods_file1" src="images/default_wap/load.png"
+						<a v-bind:href="'./union/product?uid='+flash_sale.uid+'&setp=2'">
+							<img class="goods_img" v-bind:data-src="config.union_img_url+flash_sale.goods_file1" src="images/default_wap/load.png"
 							    alt="">
 							<p class="goods_sale_price sl1">₱ {{flash_sale.goods_sale_price}}</p>
 							<p class="goods_price sl1">₱ {{flash_sale.price}}</p>
@@ -533,18 +533,18 @@
 
 		<div class="ad_div1">
 			<a v-bind:href="ad1.url">
-				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad1.pic" alt="">
+				<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic" alt="">
 			</a>
 		</div>
 
 		<div class="ad_div2">
 			<a v-for="ad2 in ad2s" v-bind:href="ad2.url">
-				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad2.pic" alt="">
+				<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+ad2.pic" alt="">
 			</a>
 		</div>
 
 		<div class="ad_div3">
-			<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad3.pic" alt="">
+			<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+ad3.pic" alt="">
 		</div>
 
 		<div class="categroy2_div">
@@ -558,7 +558,7 @@
 						服装鞋包
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate1.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate1.pic" alt="">
 					</div>
 
 				</a>
@@ -567,7 +567,7 @@
 						美妆护理
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate2.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate2.pic" alt="">
 					</div>
 
 				</a>
@@ -576,7 +576,7 @@
 						珠宝手表
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate3.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate3.pic" alt="">
 					</div>
 
 				</a>
@@ -585,7 +585,7 @@
 						母婴玩具
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate4.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate4.pic" alt="">
 					</div>
 
 				</a>
@@ -594,7 +594,7 @@
 						数码家电
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate5.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate5.pic" alt="">
 					</div>
 
 				</a>
@@ -603,7 +603,7 @@
 						家居装修
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate6.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate6.pic" alt="">
 					</div>
 
 				</a>
@@ -612,7 +612,7 @@
 						户外运动
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate7.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate7.pic" alt="">
 					</div>
 
 				</a>
@@ -621,7 +621,7 @@
 						旅游度假
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate8.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate8.pic" alt="">
 					</div>
 
 				</a>
@@ -630,7 +630,7 @@
 						吃喝玩乐
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate9.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate9.pic" alt="">
 					</div>
 
 				</a>
@@ -639,7 +639,7 @@
 						阅读娱乐
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate10.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate10.pic" alt="">
 					</div>
 
 				</a>
@@ -648,7 +648,7 @@
 						车辆交通
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate11.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate11.pic" alt="">
 					</div>
 
 				</a>
@@ -657,7 +657,7 @@
 						生活服务
 					</p>
 					<div class="weui-grid__icon">
-						<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+cate12.pic" alt="">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate12.pic" alt="">
 					</div>
 
 				</a>
@@ -669,7 +669,7 @@
 
 		<div class="ad_div4">
 			<a v-bind:href="ad4.url">
-				<img src="images/default_wap/load.png" v-bind:data-src="'http://192.168.0.105/english/'+ad4.pic" alt="">
+				<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+ad4.pic" alt="">
 			</a>
 		</div>
 		<!--广告-->
@@ -727,18 +727,18 @@
 				cate10: '',
 				cate11: '',
 				cate12: '',
-				config:eval('(' + '<%- JSON.stringify(config) %>' + ')')
+				config:<%- JSON.stringify(config) %>,
+				
 			},
 			mounted:function(){
-				console.log('88'+this.config.data_err);
+				console.log(this.config);
 			}
-				
-			
 		});
 
 		/*開始處理數據*/
 
 		$.post("./index", {}, function (result) {
+			result=result.data;
 			console.log(result);
 			page.flashs = result.default_wap_flash;
 			page.coupon = result.default_wap_coupon["0"];
@@ -758,22 +758,23 @@
 			page.cate11 = result.default_wap_categroy_11["0"];
 			page.cate12 = result.default_wap_categroy_12["0"];
 			page.ad4 = result.default_wap_ad_4['0'];
+			
 			add_to_ppl('<div style="width: 172px;"><a href="' + result.default_wap_ad_5['0'].url +
-				'"><img class="right_top_ad" src="images/default_wap/load.png" data-src="http://192.168.0.105/english/' + result
+				'"><img class="right_top_ad" src="images/default_wap/load.png" data-src="' +config.img_url+ad1.pic+ result
 				.default_wap_ad_5['0'].pic + '" alt=""></div></a>');
 			result.default_wap_hot_shop.forEach(function (item, index) {
 
 				add_to_ppl('<div class="ppl_goods_div"><a href="./union/product?uid=' + item.goods_id +
-					'&setp=1"><img class="right_top_ad" data-src="http://192.168.0.105/english/' + item.goods_pic +
+					'&setp=1"><img class="right_top_ad" data-src="'+config.img_url+ad1.pic + item.goods_pic +
 					'" src="images/default_wap/load.png" alt=""><p class="ppl_goods_title">' + item.goods_name +
 					'</p><p class="ppl_goods_price">' + item.goods_price + '</p></a></div>');
 
 			});
-
+			
 
 		});
 		$.post("./index/get_onsale", {}, function (result) {
-
+			result=result.data;
 			page.flash_sales = result;
 			page.goods_num = result.length * 110 + 20 * 2;
 		});

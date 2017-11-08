@@ -254,7 +254,7 @@
         mounted:function () {
             var t=this;
             $.post('/funddetails',{type:0,start:this.all_start},function (result) {
-               console.log(result);
+                result=result.data;
                if(result!=0 && result.length>0)
                {
                    result.forEach(function (item,index) {
@@ -266,7 +266,7 @@
 
             });
             $.post('/funddetails',{type:1,start:this.zheng_start},function (result) {
-
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -278,7 +278,7 @@
 
             });
             $.post('/funddetails',{type:-1,start:this.fu_start},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -307,7 +307,7 @@
         if(type==0)
         {
             $.post('/funddetails',{type:0,start:t.all_start},function (result) {
-
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -323,7 +323,7 @@
         else if(type==1)
         {
             $.post('/funddetails',{type:1,start:t.zheng_start},function (result) {
-
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -339,7 +339,7 @@
         else if(type==-1)
         {
             $.post('/funddetails',{type:-1,start:t.fu_start},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {

@@ -519,7 +519,7 @@
                 var member_tel11=$(".PhoneNumber").val();
                 var code=$(".PhoneCode").val();
                 $.post("./register",{login_id:login_id,pass1:pass1,member_tel11:member_tel11,code:code},function(result){
-                    console.log(result);
+                    result=result.data;
                     $.modal({
                         title: "恭喜",
                         text: "注册成功",

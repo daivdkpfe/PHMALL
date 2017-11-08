@@ -340,7 +340,7 @@
                 var t=this;
                 this.supply_start=0;
                 $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
-                    console.log(result);
+                    result=result.data;
                     if(result!=0 && result.length>0)
                     {
                         result.forEach(function (item,index) {
@@ -362,7 +362,7 @@
                 var t=this;
                 this.buy_start=0;
                 $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
-                    console.log(result);
+                    result=result.data;
                     if(result!=0 && result.length>0)
                     {
                         result.forEach(function (item,index) {
@@ -381,10 +381,11 @@
         mounted:function () {
             var t=this;
             $.post("./category",{},function (result) {
+                result=result.data;
                 page.cates=result;
             });
             $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
-                console.log('supply'+result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -399,7 +400,7 @@
                 }
             });
             $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
-                console.log('buy:'+result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -414,7 +415,7 @@
                 }
             });
             $.post('./supply/get_ad',{},function (result) {
-                console.log(result);
+                result=result.data;
                 t.supply_ad=result.default_wap_supply.pic;
             })
         }
@@ -430,7 +431,7 @@
         if(page.type=='gy')
         {
             $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -449,7 +450,7 @@
         else
         {
             $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
-                console.log('buy:'+result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {

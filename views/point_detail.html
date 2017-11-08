@@ -109,7 +109,7 @@
         mounted:function () {
             var t=this;
             $.post('./point_detail',{uid:t.uid},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     t.point_add=result[0].point_add;

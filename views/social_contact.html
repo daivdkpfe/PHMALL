@@ -433,7 +433,7 @@
                     text:'結束',
                     onClick: function(){
                         $.post("./social_contact/supply/end",{uid:uid},function(result){
-                                console.log(result);
+                            result=result.data;
                                 if(result==1)
                                 {
                                     $.toptip('修改成功','success');
@@ -445,6 +445,7 @@
                     text:'刪除',
                     onClick: function(){
                         $.post("./social_contact/supply/del",{uid:uid},function(result){
+                            result=result.data;
                             if(result==1)
                                 {
                                     $.toptip('刪除成功','success');
@@ -470,7 +471,7 @@
                     text:'結束',
                     onClick: function(){
                         $.post("./social_contact/buy/end",{uid:uid},function(result){
-                                console.log(result);
+                            result=result.data;
                                 if(result==1)
                                 {
                                     $.toptip('修改成功','success');
@@ -482,6 +483,7 @@
                     text:'刪除',
                     onClick: function(){
                         $.post("./social_contact/buy/del",{uid:uid},function(result){
+                            result=result.data;
                             if(result==1)
                                 {
                                     $.toptip('刪除成功','success');
@@ -498,7 +500,8 @@
                 if(type==1)
                 {
                     $.post('./social_contact/del_msg/sup',{uid:uid},function(result){
-                            if(result==1)
+                        result=result.data;
+                        if(result==1)
                             {
                                 $.toptip('删除成功');
                             }
@@ -507,6 +510,7 @@
                 else
                 {
                     $.post('./social_contact/del_msg/buy',{uid:uid},function(result){
+                        result=result.data;
                             if(result==1)
                             {
                                 $.toptip('删除成功');
@@ -525,7 +529,8 @@
                         if(type==1)
                         {
                             $.post('./social_contact/use_msg/sup',{uid:uid},function(result){
-                                    if(result==1)
+                                result=result.data;
+                                if(result==1)
                                     {
                                         $.toptip('采纳成功','success');
                                     }
@@ -534,6 +539,7 @@
                         else
                         {
                             $.post('./social_contact/use_msg/buy',{uid:uid},function(result){
+                                result=result.data;
                                     if(result==1)
                                     {
                                         $.toptip('采纳成功','success');
@@ -548,7 +554,8 @@
                         if(type==1)
                         {
                             $.post('./social_contact/del_msg/sup',{uid:uid},function(result){
-                                    if(result==1)
+                                result=result.data;
+                                if(result==1)
                                     {
                                         $.toptip('删除成功');
                                     }
@@ -557,7 +564,8 @@
                         else
                         {
                             $.post('./social_contact/del_msg/buy',{uid:uid},function(result){
-                                    if(result==1)
+                                result=result.data;
+                                if(result==1)
                                     {
                                         $.toptip('删除成功');
                                     }
@@ -573,7 +581,7 @@
         mounted:function () {
             var t=this;
             $.post('./social_contact/supply',{},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0)
                 {
                     result.forEach(function(item,index) {
@@ -599,7 +607,7 @@
                 }
             });
             $.post('./social_contact/buy',{},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0)
                 {
                     result.forEach(function(item,index) {
@@ -625,7 +633,7 @@
                 }
             });
             $.post('./social_contact/msg_from_me',{start:t.from_me_start},function(result){
-                console.log(result);
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function(item,index){
@@ -644,7 +652,7 @@
                 }
             });
             $.post('./social_contact/msg_to_me',{start:t.to_me_start},function(result){
-               
+                result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function(item,index){
@@ -674,7 +682,7 @@ $(document.body).infinite().on("infinite", function() {
   if(page.msg_type=='from_me')
   {
     $.post('./social_contact/msg_from_me',{start:t.from_me_start},function(result){
-               
+        result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function(item,index){
@@ -697,7 +705,7 @@ $(document.body).infinite().on("infinite", function() {
   else if(page.msg_type=='to_me')
   {
     $.post('./social_contact/msg_to_me',{start:t.to_me_start},function(result){
-               
+        result=result.data;
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function(item,index){

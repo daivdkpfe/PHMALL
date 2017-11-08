@@ -248,7 +248,8 @@
         var name=$('.NameInput').val();
         var pass=$('.PassInput').val();
         $.post("./login",{username:name,password:pass},function(result){
-            console.log(result);
+            
+            result=result.data;
             if(result.status=="Success" && result.m_uid>0)
             {
                 $.notification({

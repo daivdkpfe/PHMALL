@@ -1170,8 +1170,7 @@
                     uid: '<%= uid %>',
                     setp: "4"
                 }, function (result) {
-                    console.log(result);
-
+                    result=result.data;
 
 
 
@@ -1227,6 +1226,7 @@
                         cat: cat,
                         setp: "4"
                     }, function (result) {
+                        result=result.data;
                         t.cnxh = result;
                     });
 
@@ -1234,7 +1234,7 @@
                 $.post('/union/auction_detail/assure', {
                     uid: '<%= uid %>'
                 }, function (result) {
-                    console.log(result);
+                    result=result.data;
                     if (result != 0 && result.length > 0) {
                         t.baoming = true;
                     }
@@ -1243,6 +1243,7 @@
                 $.post('/union/auction_detail/join', {
                     uid: '<%= uid %>'
                 }, function (result) {
+                    result=result.data;
                     console.log(result);
                     t.goods_price = result[0].price
                 })
@@ -1268,7 +1269,7 @@
             uid: '<%= uid %>',
             setp: "4"
         }, function (result) {
-
+            result=result.data;
             if (result.length > 0) {
                 page.gallery = (result);
             }

@@ -135,7 +135,7 @@
         mounted:function () {
             var t= this;
             $.post('/news_detail',{uid:this.uid},function (result) {
-                console.log(result);
+                result=result.data;
                 if(result!=0)
                 {
                     t.news_title=result[0].board_subject;

@@ -253,7 +253,7 @@
             get_cate:function (index,cate_uid) {
 
                 $.post('/group_list',{cate:parseInt(cate_uid)},function (result) {
-                    console.log(result);
+                    result=result.data;
                     page.group_list=result;
                 });
 
@@ -263,10 +263,11 @@
         }
     });
     $.post("./category",{},function (result) {
+        result=result.data;
         page.cates=result;
     });
     $.post('/group_list',{cate:0},function (result) {
-        console.log(result);
+        result=result.data;
         page.group_list=result;
     })
 </script>

@@ -1164,7 +1164,8 @@
                         attr: attr,
                         attr_txt: attr_txt
                     }, function (result) {
-                        console.log(result);
+                        result=result.data;
+                        
                         if (result == 1) {
                             $.closePopup()
                         }
@@ -1199,7 +1200,7 @@
             uid: '<%= uid %>',
             setp: "<%= setp %>"
         }, function (result) {
-            console.log(result);
+            result=result.data;
 
 
 
@@ -1312,6 +1313,7 @@
                 cat: cat,
                 setp: "<%= setp %>"
             }, function (result) {
+                result=result.data;
                 page.cnxh = result;
             });
 
@@ -1372,7 +1374,7 @@
             uid: '<%= uid %>',
             setp: "<%= setp %>"
         }, function (result) {
-
+            result=result.data;
             if (result.length > 0) {
 
                 page.gallery = (result);
@@ -1385,7 +1387,7 @@
             uid: '<%= uid %>',
             setp: "<%= setp %>"
         }, function (result) {
-
+            result=result.data;
             if (result.length > 0) {
                 result[0]['reg_date'] = new Date(parseInt(result[0]['reg_date']) * 1000).toLocaleString().replace(
                     /\d{1,2}:\d{1,2}:\d{1,2}$/, '').replace(' ', '');
@@ -1401,7 +1403,7 @@
             t: 1,
             m: "<%= setp %>"
         }, function (result) {
-
+            result=result.data;
             if (result == 1) {
 
                 page.favorite_img = 'images/default_wap/favirate1.png';
@@ -1420,7 +1422,7 @@
                     m: "<%= setp %>",
                     setp: "<%= setp %>"
                 }, function (result) {
-                    console.log(result);
+                    result=result.data;
                     if (result == 1) {
                         page.favorite_img = 'images/default_wap/favirate1.png';
                         page.have_favorite = 1;
@@ -1435,7 +1437,7 @@
                     m: "<%= setp %>",
                     setp: "<%= setp %>"
                 }, function (result) {
-                    console.log(result);
+                    result=result.data;
                     if (result == 1) {
                         page.favorite_img = 'images/default_wap/favirate.png';
                         page.have_favorite = 0;

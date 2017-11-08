@@ -125,6 +125,7 @@
         methods:{
             send:function () {
                 $.post('/change_phone',{setp:1},function (result) {
+                    result=result.data;
                     if(result==1)
                     {
                         $.toptip('发送成功', 'success');
@@ -138,6 +139,7 @@
             },
             yanzheng:function () {
                 $.post('/change_phone',{setp:2,code:this.code},function (result) {
+                    result=result.data;
                     if(result==1)
                     {
                         $.toptip('验证成功', 'success');
@@ -206,6 +208,7 @@
                     if(s==1)
                     {
                         $.post('/change_phone/send',{phone:this.phone_num},function (result) {
+                            result=result.data;
                             if(result=='-9')
                             {
                                 page.sock=true;
@@ -241,7 +244,7 @@
                 }
                 else{
                     $.post('/change_phone',{setp:3,phone:this.phone_num,code:this.phone_code},function (result) {
-                        console.log(result);
+                        result=result.data;
                         if(result==1)
                         {
                             toptip("修改成功",'success');

@@ -235,10 +235,12 @@
         mounted:function () {
             var t=this;
             $.post("./category",{},function (result) {
+                result=result.data;
                 page.cates=result;
                 page.cat=result[0].uid;
 
                 $.post('./auction',{cat:t.cat,start:t.start},function (result) {
+                    result=result.data;
                     console.log(result);
                     if(result!=0 && result.length>0)
                     {

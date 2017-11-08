@@ -272,6 +272,7 @@
         methods:{
             delete_shop:function (uid) {
                 $.post('/favorite/del_favorite',{f:uid,t:0},function (result) {
+                    result=result.data;
                     if(result==1)
                     {
                         $('.shop_'+uid).remove();
@@ -284,7 +285,7 @@
             if(t.type==0)
             {
                 $.post('/favorite/get_favorite',{t:this.type,num:this.num,s:this.start,ism:1,m:''},function (result) {
-                    console.log(result);
+                    result=result.data;
                     if(t.type==0)
                     {
 
@@ -314,7 +315,7 @@
             else
             {
                 $.post('/favorite/get_favorite',{t:this.type,num:this.num,s:this.start,ism:0},function (result) {
-                    console.log(result);
+                    result=result.data;
                     if(t.type==1)
                     {
 
@@ -355,6 +356,7 @@
             if(page.type==0)
             {
                 $.post('/favorite/get_favorite',{t:page.type,num:page.num,s:page.start,ism:1,m:''},function (result) {
+                    result=result.data;
                     if(result!=0 && result.length>0)
                     {
                         result.forEach(function (item,index) {

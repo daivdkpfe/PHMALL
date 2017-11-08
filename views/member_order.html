@@ -485,7 +485,7 @@
             status=3;
             start=0;
             $.post("./member_order",{start:start,status:status},function(result){
-                if(result.ret=='end')
+                if(result.data=='end')
                 {
                     $.modal({
                         title: "警告",

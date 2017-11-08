@@ -300,7 +300,7 @@
             sub:function () {
                 var t=this;
                 $.post('/supply_detail/submit',{name:this.name,tel:this.tel,address:this.address,msg:this.msg,supply_uid:this.supply_uid,supply_m_uid:this.supply_m_uid},function (result) {
-                    console.log(result);
+                    result=result.data;
                     if(result==1)
                     {
                         $.toptip('留言成功','success');
@@ -320,7 +320,7 @@
         mounted:function () {
             var t=this;
             $.post('./supply_detail',{uid:'<%= uid %>'},function (result) {
-                console.log(result);
+                
                 var detail=result['0'].detail.replace(new RegExp('src="/english',"gm"),'src="http://www.phmall.com.ph');
                 detail=detail.replace(new RegExp('src="/union',"gm"),'src="http://www.phmall.com.ph/union');
                 detail=detail.replace(/<script>/g, "<c>");

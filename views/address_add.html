@@ -136,6 +136,7 @@
             submits:function () {
 
                 $.post("/address_add/edit",{uid:'<%= uid %>',consignee:this.receiver,address:page.address,zipcode:page.zipcode,mobile:page.phone_num,province:page.p,city:page.c,county:page.cc},function (result) {
+                    result=result.data;
                     if(result==0)
                     {
                         $.toptip('添加失败','error');
@@ -173,6 +174,7 @@
         {
 //            有UID,获取信息
             $.post('./address_add',{uid:'<%= uid %>'},function (result) {
+                result=result.data;
                 if(result!='0')
                 {
                     page.receiver=result["0"].consignee;

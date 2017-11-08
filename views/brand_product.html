@@ -27,7 +27,7 @@
     }
 
     ::-webkit-scrollbar {/*隐藏滚轮*/
-        display: none;!important;
+        display: none;
     }
     .search_margin_div{
         margin: 0 10px;
@@ -175,12 +175,14 @@
         mounted:function () {
             var s=this;
             $.post('/brand_product/brand',{cat:this.cat},function (result) {
+                result=result.data;
                 console.log(result);
                 s.brand_name=result[0].brandname;
                 s.brand_logo=result[0].logo;
                 s.brand_url=result[0].weburl;
             })
             $.post('./brand_product',{cat:this.cat,start:this.start},function (result) {
+                result=result.data;
                 console.log(result);
                 if(result!=0 && result.length!=0)
                 {

@@ -273,6 +273,7 @@
                 var s=this.brand_list;
                 var xx=this;
                 $.post('/brand',{cat:cate_uid,start:this.start},function (result) {
+                    result=result.data;
                     if(result!=0 && result.length!=0)
                     {
                         result.forEach(function (item,index) {
@@ -296,9 +297,11 @@
             var s=this.brand_list;
             var xx=this;
             $.post("./category",{},function (result) {
+                result=result.data;
                 page.cates=result;
             });
             $.post('/brand',{cat:'<%= cat %>',start:this.start},function (result) {
+                result=result.data;
                 if(result!=0 && result.length!=0)
                 {
                     result.forEach(function (item,index) {
@@ -333,6 +336,7 @@
         loading = true;
         //下拉到底部更新
         $.post('/brand',{cat:page.cat,start:page.start},function (result) {
+            result=result.data;
             console.log(result);
             if(result!=0 && result.length!=0)
             {

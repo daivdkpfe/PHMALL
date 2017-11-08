@@ -264,6 +264,7 @@
                         $.post("./share/love", {
                             uid: uid
                         }, function (result) {
+                            result=result.data;
                             if (result == 1) {
                                 t.share_list[index].love++;
                             } else {
@@ -278,7 +279,7 @@
                     $.post('/share/friend', {
                         uid: uid
                     }, function (result) {
-                        console.log(result);
+                        result=result.data;
                         if (result == 0) {
                             $.toptip("您和对方已经是好友了哦~", 'error');
                         } else if (result == 1) {
@@ -298,7 +299,7 @@
                         type: this.type,
                         start: this.start
                     }, function (result) {
-                        console.log(result);
+                        result=result.data;
                         if (result != 0 && result.length > 0) {
                             result.forEach(function (item, index) {
                                 item.register_date = return_date(item.register_date);
@@ -315,7 +316,7 @@
                     type: this.type,
                     start: this.start
                 }, function (result) {
-                    console.log(result);
+                    result=result.data;
                     if (result != 0 && result.length > 0) {
                         result.forEach(function (item, index) {
                             item.register_date = return_date(item.register_date);
@@ -340,7 +341,7 @@
                     type: t.type,
                     start: t.start
                 }, function (result) {
-                    
+                    result=result.data;
                     if (result != 0 && result.length > 0) {
                         result.forEach(function (item, index) {
                             item.register_date = return_date(item.register_date);

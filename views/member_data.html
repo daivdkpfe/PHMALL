@@ -185,7 +185,7 @@
     });
 
     $.post("/member_data",{},function (result) {
-        console.log(result);
+        result=result.data;
         page.img=result["0"].member_image;
         page.id=result[0].member_id;
         page.sex=result["0"].member_sex==1?'男':'女';
@@ -205,6 +205,7 @@
                     text:'男',
                     onClick: function(){
                         $.post('/member_data/edit',{key:'s',val:1},function (result) {
+                            result=result.data;
                             page.sex='男';
                             $.toptip('操作成功', 'success');
                         });
@@ -214,6 +215,7 @@
                     text:'女',
                     onClick: function(){
                         $.post('/member_data/edit',{key:'s',val:0},function (result) {
+                            result=result.data;
                             page.sex='女';
                             $.toptip('操作成功', 'success');
                         });
@@ -230,7 +232,7 @@
 
             var time=parseInt((p.value["0"])/1000);
             $.post('/member_data/edit',{key:'b',val:time},function (result) {
-
+                result=result.data;
                 $.toptip('操作成功', 'success');
             });
     }
@@ -241,7 +243,7 @@
        if($(this).val().length>0)
        {
            $.post('/member_data/edit',{key:'a',val:$(this).val()},function (result) {
-
+            result=result.data;
                $.toptip('操作成功', 'success');
            });
        }
@@ -251,7 +253,7 @@
         if($(this).val().length>0)
         {
             $.post('/member_data/edit',{key:'z',val:$(this).val()},function (result) {
-
+                result=result.data;
                 $.toptip('操作成功', 'success');
             });
         }
@@ -264,15 +266,15 @@
             onClose:function (p) {
                 var s=p.value;
                 $.post('/member_data/edit',{key:'p',val:s[0]},function (result) {
-
+                    result=result.data;
                     $.toptip('操作成功', 'success');
                 });
                 $.post('/member_data/edit',{key:'c',val:s[1]},function (result) {
-
+                    result=result.data;
                     $.toptip('操作成功', 'success');
                 });
                 $.post('/member_data/edit',{key:'cc',val:s[2]},function (result) {
-
+                    result=result.data;
                     $.toptip('操作成功', 'success');
                 });
             }

@@ -282,7 +282,7 @@
 
     var commentArr={};
     $.post('/comment',{uid:'<%= allow_uid %>'},function (result) {
-        console.log(result);
+        result=result.data;
         page.shop_name=result["0"].shop_name;
         var goods_list=result["0"].goods_list;
         goods_list.forEach(function(item,index,xx){
@@ -367,6 +367,7 @@
             console.log(JSON.stringify(commentArr));
 //        $.param()
             $.post("./comment/comment",{xx:JSON.stringify(commentArr)},function (res) {
+                res=res.data;
                 if(res=='success')
                 {
                     $.modal({

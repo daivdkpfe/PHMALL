@@ -318,7 +318,7 @@
                 this.ps_name=ps_name;
                 this.start=0;
                 $.post('/news/list',{ps_name:t.ps_name,start:t.start},function (results) {
-                    console.log(results);
+                    result=result.data;
                     t.news_list=[];
                     results.forEach(function (item,index) {
                         t.news_list.push(item);
@@ -330,12 +330,12 @@
         mounted:function () {
             var t=this;
             $.post("./news",{},function (result) {
-
+                result=result.data;
                 t.news_cate=result;
                 t.ps_name=result["0"].board_name_code;
                 console.log(t.ps_name);
                 $.post('/news/list',{ps_name:t.ps_name,start:t.start},function (results) {
-                    console.log(results);
+                    result=result.data;
                     results.forEach(function (item,index) {
                         t.news_list.push(item);
                         t.start++;

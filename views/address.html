@@ -179,6 +179,7 @@
             selects:function (uid,index) {
                 var x=index;
                 $.post('/address/edit',{uid:uid},function (result) {
+                    result=result.data;
                     $('.weui-switch').removeAttr('checked');
                     $('.weui-switch').eq(x).prop('checked','checked');
                 });
@@ -188,6 +189,7 @@
                 var x=this;
                 var bl=false;
                 $.post('/address/delete',{uid:uid},function (result) {
+                    result=result.data;
                     if(result=='1')
                     {
                         $.toptip('删除成功','success');

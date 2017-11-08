@@ -111,7 +111,7 @@
     });
 
     $.post("/member_data",{},function (result) {
-        console.log(result);
+        result=result.data;
         page.phone=result[0].member_tel1;
 
         page.email=result[0].member_email;

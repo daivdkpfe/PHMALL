@@ -163,6 +163,7 @@
         mounted:function () {
             var t=this;
             $.post('./account',{},function (result) {
+                result=result.data;
                 t.money=result[0].member_money;
             });
         }

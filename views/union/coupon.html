@@ -287,6 +287,7 @@
         methods:{
             receive:function (uid) {
                $.post('./coupon/receive',{uid:uid,supid:'<%= supid %>'},function (result) {
+                result=result.data;
                    if(result==1)
                    {
                        $.notification({
@@ -310,7 +311,7 @@
         }
     });
     $.post("./coupon",{supid:'<%= supid %>'},function (result) {
-
+        result=result.data;
         page.coupon_list=result;
     });
 

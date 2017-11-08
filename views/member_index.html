@@ -313,7 +313,7 @@
     {
         page.login=true;
         $.post("./member_index/get_member_info",{},function(result){
-            console.log(result+'sssssss');
+            result=result.data;
 //            $(".login_div").css("background","url(http://www.phmall.com.ph/union/"+result["0"].member_image+")");
             page.img=result["0"].member_image;
             page.m_id=result["0"].member_id;
@@ -340,7 +340,7 @@
                 className: "color-warning",
                 onClick: function() {
                     $.post('./login/login_out',function (result) {
-
+                        result=result.data;
                         if(result.status=='success')
                         {
                             $.notification({

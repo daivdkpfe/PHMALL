@@ -123,6 +123,7 @@
                     if(!this.sock)
                     {
                         $.post('/change_email/send',{email:this.email},function (result) {
+                            result=result.data;
                             if(result=='1')
                             {
                                 page.sock=true;
