@@ -364,55 +364,22 @@
 
 
 
-		.ppl {
-			width: 355px;
-			margin: 0 auto;
-		}
-
-		.right_top_ad {
-			width: 172px;
-			height: 200px;
-		}
-
-		.ppl_goods_div {
-			width: 172px;
-			border-radius: 12px;
-			background: white;
-			overflow: hidden;
-		}
-
-		.ppl_goods_div img {
-			width: 172px;
-			height: 172px;
-			float: left;
-		}
-
-		.ppl_goods_title {
-			width: 152px;
-			padding-left: 10px;
-			font-size: 13px;
-			color: #454545;
-		}
-
-		.ppl_goods_price {
-			width: 152px;
-			padding-left: 10px;
-			font-size: 15px;
-			color: #b80a2f;
-		}
+		
 	</style>
 	<div class="big_div">
 
 
-		<div class="header h44">
-			<img class="index_logo" src="images/default_wap/index_logo.png" alt="">
-			<div class="header_top h44">
-				<a href="./search">
-					<img src="images/default_wap/index_search.png" class="fl" alt="">
-				</a>
-				<img @click="changeLang()" src="images/default_wap/index_change.png" class="fr" alt="">
-			</div>
-		</div>
+		<header>
+				<div class="header h44">
+						<img class="index_logo" src="images/default_wap/index_logo.png" alt="">
+						<div class="header_top h44">
+							<a href="./search">
+								<img src="images/default_wap/index_search.png" class="fl" alt="">
+							</a>
+							<img @click="changeLang()" src="images/default_wap/index_change.png" class="fr" alt="">
+						</div>
+					</div>
+		</header>
 		<!--头部-->
 		<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
 			<div class="swiper-wrapper">
@@ -527,6 +494,12 @@
 		<!--限时秒杀-->
 
 		
+		<!-- 中间的两个广告，组件化 -->
+		<ad v-for="ad in ad2s" :val='ad' :imgurl="config.img_url">
+
+		</ad>
+
+
 		<div class="ppl">
 			<div class="left" id="left">
 				<product v-for="product in left_product" :productname="product.goods_name" :price="product.goods_price" :url="'./union/product?setp=1&uid='+product.goods_id"
@@ -556,105 +529,12 @@
 
 	</div>
 
-
+	<script src="dist/index.bundle.js"></script>
 	<script>
-		var left = 0;
-		var right = 1;
-
-		function add_to_ppl(str) {
-			if (left < right) {
-				page.left_product.push(str)
-				left++;
-			} else {
-				page.right_product.push(str)
-				right++;
-			}
-
-		}
-
-		var page = new Vue({
-			el: '.big_div',
-			data: {
-				flashs: [],
-				coupon: "",
-				left: '',
-				right: "",
-				flash_sales: [],
-				goods_num: 0,
-				ad1: '',
-				ad2s: '',
-				ad3: '',
-				ad4: '',
-				cate1: '',
-				cate2: '',
-				cate3: '',
-				cate4: '',
-				cate5: '',
-				cate6: '',
-				cate7: '',
-				cate8: '',
-				cate9: '',
-				cate10: '',
-				cate11: '',
-				cate12: '',
-				config: <%- JSON.stringify(config) %>,
-				left_product: [],
-				right_product: [],
-				right_top_ad_url:'',
-				right_top_ad_img:''
-			},
-			mounted: function () {
-				console.log(this.config);
-			}
-		});
-		Vue.component('product', {
-			props: ['productname', 'price', 'url', 'img'],
-			template: '<div class="ppl_goods_div"><a :href="url"><img class="right_top_ad" src="images/default_wap/load.png" :data-src="img" alt=""><p class="ppl_goods_title"> {{productname}}</p><p class="ppl_goods_price"> {{price}} </p></a></div>',
-		});
-		//商品列表組件
-		
-		/*開始處理數據*/
-
-		$.post("./index", {}, function (result) {
-			result = result.data;
-			page.flashs = result.default_wap_flash;
-			page.coupon = result.default_wap_coupon["0"];
-			page.ad1 = result.default_wap_ad_1["0"];
-			page.ad2s = result.default_wap_ad_2;
-			page.ad3 = result.default_wap_ad_3['0'];
-			page.cate1 = result.default_wap_categroy_1["0"];
-			page.cate2 = result.default_wap_categroy_2["0"];
-			page.cate3 = result.default_wap_categroy_3["0"];
-			page.cate4 = result.default_wap_categroy_4["0"];
-			page.cate5 = result.default_wap_categroy_5["0"];
-			page.cate6 = result.default_wap_categroy_6["0"];
-			page.cate7 = result.default_wap_categroy_7["0"];
-			page.cate8 = result.default_wap_categroy_8["0"];
-			page.cate9 = result.default_wap_categroy_9["0"];
-			page.cate10 = result.default_wap_categroy_10["0"];
-			page.cate11 = result.default_wap_categroy_11["0"];
-			page.cate12 = result.default_wap_categroy_12["0"];
-			page.ad4 = result.default_wap_ad_4['0'];
-			
-			page.right_top_ad_url=page.config.img_url+result.default_wap_ad_5['0'].url
-			page.right_top_ad_img=page.config.img_url+ result.default_wap_ad_5['0'].pic;
-			result.default_wap_hot_shop.forEach(function (item, index) {
-				add_to_ppl(item);
-			});
-
-
-		});
-		$.post("./index/get_onsale", {}, function (result) {
-			result = result.data;
-			page.flash_sales = result;
-			page.goods_num = result.length * 110 + 20 * 2;
-		});
-		$(".weui-tabbar").find("a").eq(0).addClass('weui-bar__item--on').find('img').attr('src',
-			'./images/default_wap/index1.png')
-		/*開始處理數據*/
-	</script>
-
+	Vue.use(bundle);
+	</script>	
 	<script>
+	 	
 		var t = 53709; //秒数
 		function showtime() {
 			var d = parseInt(t / 3600 / 24);
@@ -684,20 +564,6 @@
 		showtime();
 		setInterval("showtime()", 1000);
 	</script>
-	<script>
-		$(document).ready(function () {
-			$(".swiper-container").swiper({
-				loop: true,
-				autoplay: 3000,
-				//        observer: true,//修改swiper自己或子元素时，自动初始化swiper
-				//        observeParents: true//修改swiper的父元素时，自动初始化swiper
-				observer: true, //修改swiper自己或子元素时，自动初始化swiper
-				observeParents: false, //修改swiper的父元素时，自动初始化swiper
-				onSlideChangeEnd: function (swiper) {
-					swiper.update();
-				}
-			});
-		});
-	</script>
+
 
 	<% include footer.html %>

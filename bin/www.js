@@ -976,7 +976,7 @@ config.web_src="../../phpStudy/WWW/english/xx/";
 config.img_url="http://192.168.0.105/english/";
 config.union_img_url="http://192.168.0.105/english/union/";
 config.update_url="http://192.168.0.105:88/update_cache";
-config
+
 
 
 global.SendEmail=function(to,subject,contect,callback)
