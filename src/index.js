@@ -69,13 +69,13 @@ export function install(Vue) {
 			}else{
 				this.lang=lang_en
 			}
-			console.log(this.lang);
+			
 			window.addEventListener('scroll', this.handleScroll);
 		},
 		methods:{
 			handleScroll () {
 				this.scrolled = window.scrollY > 215;
-				console.log(this.scrolled);
+				
 			  },
 
 			  setcookie: function (name, value, days) {

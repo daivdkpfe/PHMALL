@@ -13209,3 +13209,22 @@
 [2017-11-09 15:43:50.955] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
 [2017-11-09 15:43:50.960] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
 [2017-11-09 15:43:50.963] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:56:34.876] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-09 15:56:41.173] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:56:41.239] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:56:41.239] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:56:41.240] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:56:45.053] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-09 15:56:50.060] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2017-11-09 15:59:47.397] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:00:43.664] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:01:26.877] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:02:10.367] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:04:23.062] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:04:50.841] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:05:02.467] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2017-11-09 16:09:37.221] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2017-11-09 16:09:55.213] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2017-11-09 16:10:01.453] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:13:08.402] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2017-11-09 16:13:30.781] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1

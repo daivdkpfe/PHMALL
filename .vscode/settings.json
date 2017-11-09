@@ -1,6 +1,7 @@
 {
     "favorites.resources": [
         "app.js",
-        "bin\\www.js"
+        "bin\\www.js",
+        "lanuage\\lanuage_ch.js"
     ]
 }

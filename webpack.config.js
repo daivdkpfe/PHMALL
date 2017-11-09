@@ -6,7 +6,8 @@ module.exports = {
     index:'./src/index.js',
     header:'./src/header.js',
     top:'./src/top.js',
-    product:'./src/product.js'
+    product:'./src/product.js',
+    address_add:'./src/address_add.js'
   },
   devServer: {
          contentBase: './dist',

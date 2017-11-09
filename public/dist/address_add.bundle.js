@@ -61,7 +61,7 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11551,8 +11551,55 @@ module.exports = function listToStyles (parentId, list) {
 /* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */,
-/* 15 */,
+/* 14 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Administrator on 2017/9/15.
+ */
+module.exports = {
+    //index.js
+    //index
+    data_err:"數據錯誤",
+    _001:'服装鞋包',
+    _002:'美妆护理',
+    _003:'珠宝手表',
+    _004:'母婴玩具',
+    _005:'数码家电',
+    _006:'家居装修',
+    _007:'户外运动',
+    _010:'旅游度假',
+    _011:'吃喝玩乐',
+    _012:'更多分类',
+    _013:'限时秒杀',
+    index_ad_title:['折/扣/区','精/选/区'],
+    //address_add
+    _014:'管理收货地址',
+    _015:'收货人',
+    _016:'手机号码',
+    _017:'所属地区',
+    _018:'邮政编码',
+    _019:'街道地区',
+    _020:'保存',
+    _021:'添加失败',
+    _022:'超过地址数量',
+    _023:'添加成功'
+}
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Administrator on 2017/9/15.
+ */
+module.exports = {
+    data_err:"數據錯誤"
+}
+
+
+/***/ }),
 /* 16 */,
 /* 17 */,
 /* 18 */,
@@ -11575,25 +11622,7 @@ module.exports = function listToStyles (parentId, list) {
 /* 35 */,
 /* 36 */,
 /* 37 */,
-/* 38 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["install"] = install;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_header_vue__ = __webpack_require__(39);
-
-
-
-
-
-
-function install(Vue) {
-    Vue.component("top", __WEBPACK_IMPORTED_MODULE_1__components_header_vue__["a" /* default */]);
-}
-
-/***/ }),
+/* 38 */,
 /* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11771,6 +11800,146 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-71999695", esExports)
   }
 }
+
+/***/ }),
+/* 44 */,
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["install"] = install;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_ch__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_ch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_en__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_en__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_header_vue__ = __webpack_require__(39);
+
+
+
+
+
+
+
+
+
+
+var lang=__WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_ch___default.a;
+
+
+
+function install(Vue) {
+    Vue.component("top", __WEBPACK_IMPORTED_MODULE_3__components_header_vue__["a" /* default */]);
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            p: '',
+            c: '',
+            cc: '',
+            receiver: '',
+            phone_num: '',
+            address: '',
+            zipcode: '',
+            ssx: '',
+            lang:{}
+        },
+        methods: {
+            setcookie: function (name, value, days) {
+				
+					var d = new Date;
+				
+					d.setTime(d.getTime() + 24*60*60*1000*days);
+				
+					window.document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+				},
+				
+				getsetcookie: function (name) {
+				
+					var v = window.document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+				
+					return v ? v[2] : null;
+				
+				},
+				
+				deletesetcookie: function (name) {
+				
+					this.set(name, '', -1);
+				
+				},
+            submits: function () {
+var t=this;
+                $.post("/address_add/edit", {
+                    uid: '<%= uid %>',
+                    consignee: this.receiver,
+                    address: page.address,
+                    zipcode: page.zipcode,
+                    mobile: page.phone_num,
+                    province: page.p,
+                    city: page.c,
+                    county: page.cc
+                }, function (result) {
+                    result = result.data;
+                    if (result == 0) {
+                        $.toptip(t.lang._021, 'error');
+                    } else if (result == -1) {
+                        $.toptip(t.lang._022, 'error');
+                    } else if (result == 1) {
+                        $.toptip(t.lang._023, 'success');
+                        window.history.back(); //返回上一页
+                    }
+                })
+            }
+        },
+        mounted:function(){
+            	
+			if(this.getsetcookie('lang')!='en')
+			{
+				this.lang=__WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_ch___default.a
+			}else{
+				this.lang=__WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_en___default.a
+            }
+            
+        }
+    });
+
+
+    $(function () {
+        $("#ssx").cityPicker({
+            title: "选择省市县",
+            onClose: function (p) {
+                var s = p.value;
+                page.p = s[0];
+                page.c = s[1];
+                page.cc = s[2];
+            }
+        });
+        if (false) {
+            //           没有uid，是添加
+        } else {
+            //            有UID,获取信息
+            $.post('./address_add', {
+                uid: '<%= uid %>'
+            }, function (result) {
+                result = result.data;
+                if (result != '0') {
+                    page.receiver = result["0"].consignee;
+                    page.phone_num = result["0"].mobile;
+                    page.address = result["0"].address;
+                    page.zipcode = result["0"].zipcode;
+                    var ssx = '';
+                    page.p = result["0"].province;
+                    page.c = result["0"].city;
+                    page.cc = result["0"].county;
+                    ssx = page.p + " " + page.c + " " + page.cc;
+                    page.ssx = ssx;
+                }
+            })
+        }
+    });
+}
+
+
 
 /***/ })
 /******/ ]);
