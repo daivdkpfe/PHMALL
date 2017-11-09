@@ -6,10 +6,10 @@
             </div>
         </div>
         <div class="ad_div">
-            <img src="images/default_wap/load.png" alt="" class="ad_img_left" :data-src="imgurl+val.left.pic">
-            <img src="images/default_wap/load.png" alt="" class="ad_img_right_top" :data-src="imgurl+val.right_top.pic">
-            <img src="images/default_wap/load.png" alt="" class="ad_img_right_bottom"  :data-src="imgurl+val.right_bottom1.pic">
-            <img src="images/default_wap/load.png" alt="" class="ad_img_right_bottom" :data-src="imgurl+val.right_bottom2.pic">
+            <a :href="val.left.url"><img src="images/default_wap/load.png" alt="" class="ad_img_left" :data-src="imgurl+val.left.pic"></a>
+            <a :href="val.left.url"><img src="images/default_wap/load.png" alt="" class="ad_img_right_top" :data-src="imgurl+val.right_top.pic"></a>
+            <a :href="val.left.url"><img src="images/default_wap/load.png" alt="" class="ad_img_right_bottom"  :data-src="imgurl+val.right_bottom1.pic"></a>
+            <a :href="val.left.url"><img src="images/default_wap/load.png" alt="" class="ad_img_right_bottom" :data-src="imgurl+val.right_bottom2.pic"></a>
         </div>
     </div>
 </template>

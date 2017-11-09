@@ -1,12 +1,19 @@
 import Vue from 'vue'
 import product from '../components/product.vue'
 import index_ad from '../components/index_ad.vue'
+import index_header from '../components/index_header.vue'
+import lang_ch from '../lanuage/lanuage_ch'
+import lang_en from '../lanuage/lanuage_en'
 import config from '../include/global'
-import lang_ch from '../include/lang_ch'
+
 var lang=lang_ch;
+
+
+
 export function install(Vue) {
 	Vue.component("product",product);
 	Vue.component("ad",index_ad);
+	Vue.component("top",index_header);
 	var left = 0;
 	var right = 1;
 	
@@ -18,7 +25,6 @@ export function install(Vue) {
 			page.right_product.push(str)
 			right++;
 		}
-	
 	}
 	
 	
@@ -51,15 +57,54 @@ export function install(Vue) {
 			left_product: [],
 			right_product: [],
 			right_top_ad_url:'',
-			right_top_ad_img:''
+			right_top_ad_img:'',
+			scrolled:false,
+			lang:{}
 		},
 		mounted: function () {
-			console.log(this.config);
+			
+			if(this.getsetcookie('lang')!='en')
+			{
+				this.lang=lang_ch
+			}else{
+				this.lang=lang_en
+			}
+			console.log(this.lang);
+			window.addEventListener('scroll', this.handleScroll);
+		},
+		methods:{
+			handleScroll () {
+				this.scrolled = window.scrollY > 215;
+				console.log(this.scrolled);
+			  },
+
+			  setcookie: function (name, value, days) {
+				
+					var d = new Date;
+				
+					d.setTime(d.getTime() + 24*60*60*1000*days);
+				
+					window.document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+				
+				},
+				
+				getsetcookie: function (name) {
+				
+					var v = window.document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+				
+					return v ? v[2] : null;
+				
+				},
+				
+				deletesetcookie: function (name) {
+				
+					this.set(name, '', -1);
+				
+				}
 		}
+		
 	});
 	/*開始處理數據*/
-	
-	
 	$.post("./index", {}, function (result) {
 		result = result.data;
 		page.flashs = result.default_wap_flash;
@@ -104,7 +149,7 @@ export function install(Vue) {
 			}
 		})
 
-		console.log(page.ad2s);
+		
 
 		page.right_top_ad_url=page.config.img_url+result.default_wap_ad_5['0'].url
 		page.right_top_ad_img=page.config.img_url+ result.default_wap_ad_5['0'].pic;
@@ -119,6 +164,8 @@ export function install(Vue) {
 		page.flash_sales = result;
 		page.goods_num = result.length * 110 + 20 * 2;
 	});
+	
+	
 	$(".weui-tabbar").find("a").eq(0).addClass('weui-bar__item--on').find('img').attr('src',
 		'./images/default_wap/index1.png')
 	/*開始處理數據*/

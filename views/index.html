@@ -7,11 +7,6 @@
 			overflow-x: hidden;
 		}
 
-		.header {
-			width: 100vw;
-			background: linear-gradient(to right, #ffbb07, #ff8000);
-		}
-
 		.index_logo {
 			width: 35px;
 			display: block;
@@ -42,7 +37,7 @@
 
 		.swiper-slide img {
 			width: 100vw;
-			height: 180px;
+			height: 215px;
 		}
 		/*.swiper_bottom img{*/
 		/*width: 100vw;*/
@@ -113,8 +108,8 @@
 		}
 
 		.zxrd_img {
-			width: 38px;
-			height: 40px;
+			margin-top: 5px;
+			height: 30px;
 			margin-left: 20px;
 			float: left;
 		}
@@ -124,7 +119,7 @@
 			font-size: 13px;
 			float: left;
 			margin-left: 34px;
-			line-height: 20px;
+			line-height: 40px;
 			width: 200px;
 		}
 
@@ -133,7 +128,6 @@
 			height: 210px;
 			width: 100vw;
 			float: left;
-			border-radius: 12px 12px 0 0;
 			overflow: hidden;
 		}
 
@@ -156,7 +150,7 @@
 			margin-left: 20px;
 			line-height: 40px;
 			font-size: 18px;
-			color: #b80a2f;
+			color: #fe9b0c;
 			float: left;
 		}
 
@@ -198,7 +192,7 @@
 
 		.goods_sale_price {
 			font-size: 15px;
-			color: #b80a2f;
+			color: #fe9b0c;
 			width: 95px;
 			text-align: left;
 			margin: 0 auto;
@@ -337,6 +331,7 @@
 
 		.swiper-container {
 			width: 100vw;
+			height: 215px;
 		}
 
 		.swiper-slide {
@@ -356,30 +351,18 @@
 		}
 
 		.countdown span {
-			background: linear-gradient(to right, rgba(255, 11, 53, 1), rgba(173, 17, 50, 1));
+			background: linear-gradient(to right, #fe9b0c, #ff8000);
 			color: #fff;
 			border-radius: 5px;
 			padding: 3px;
 		}
-
-
-
-		
 	</style>
 	<div class="big_div">
 
 
-		<header>
-				<div class="header h44">
-						<img class="index_logo" src="images/default_wap/index_logo.png" alt="">
-						<div class="header_top h44">
-							<a href="./search">
-								<img src="images/default_wap/index_search.png" class="fl" alt="">
-							</a>
-							<img @click="changeLang()" src="images/default_wap/index_change.png" class="fr" alt="">
-						</div>
-					</div>
-		</header>
+		<top :opcity='scrolled'></top>
+
+
 		<!--头部-->
 		<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
 			<div class="swiper-wrapper">
@@ -401,61 +384,61 @@
 				<div class="cagegroy">
 					<a href="./category?cat=1">
 						<img src="images/default_wap/categroy01.png" alt="">
-						<p>服装鞋包</p>
+						<p>{{lang._001}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=2">
 						<img src="images/default_wap/categroy02.png" alt="">
-						<p>美妆护理</p>
+						<p>{{lang._002}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=3">
 						<img src="images/default_wap/categroy03.png" alt="">
-						<p>珠宝手表</p>
+						<p>{{lang._003}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=4">
 						<img src="images/default_wap/categroy04.png" alt="">
-						<p>母婴玩具</p>
+						<p>{{lang._004}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=5">
 						<img src="images/default_wap/categroy05.png" alt="">
-						<p>数码家电</p>
+						<p>{{lang._005}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=6">
 						<img src="images/default_wap/categroy06.png" alt="">
-						<p>家居装修</p>
+						<p>{{lang._006}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=7">
 						<img src="images/default_wap/categroy07.png" alt="">
-						<p>户外运动</p>
+						<p>{{lang._007}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=8">
 						<img src="images/default_wap/categroy08.png" alt="">
-						<p>旅游度假</p>
+						<p>{{lang._010}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=9">
 						<img src="images/default_wap/categroy09.png" alt="">
-						<p>吃喝玩乐</p>
+						<p>{{lang._011}}</p>
 					</a>
 				</div>
 				<div class="cagegroy">
 					<a href="./category?cat=0">
 						<img src="images/default_wap/categroy10.png" alt="">
-						<p>更多分类</p>
+						<p>{{lang._012}}</p>
 					</a>
 				</div>
 			</div>
@@ -466,14 +449,13 @@
 				<img class="zxrd_img" src="images/default_wap/zxrd.png" alt="">
 			</a>
 			<p class="zxrd_title">真皮沙发 VS 布艺沙发</p>
-			<p class="zxrd_title">真皮沙发 VS 布艺沙发</p>
 		</div>
 		<!--咨询热点-->
 
 		<div class="flash_sale">
 			<div class="flash_sale_header">
 				<img class="flash_sale_ico" src="images/default_wap/flash_sale_ico.png" alt="">
-				<p class="flash_sale_title">限时秒杀</p>
+				<p class="flash_sale_title">{{lang._013}}</p>
 				<div class="page-bd-15">
 					<div class="countdown"></div>
 				</div>
@@ -493,7 +475,7 @@
 		</div>
 		<!--限时秒杀-->
 
-		
+
 		<!-- 中间的两个广告，组件化 -->
 		<ad v-for="ad in ad2s" :val='ad' :imgurl="config.img_url">
 
@@ -512,11 +494,11 @@
 
 
 				<div style="width: 172px;">
-					<a  :href="right_top_ad_url">
+					<a :href="right_top_ad_url">
 						<img class="right_top_ad" src="images/default_wap/load.png" :data-src="right_top_ad_img" alt="">
 					</a>
 				</div>
-				
+
 
 				<product v-for="product in right_product" :productname="product.goods_name" :price="product.goods_price" :url="'./union/product?setp=1&uid='+product.goods_id"
 				    :img="config.img_url+product.goods_pic">
@@ -531,10 +513,9 @@
 
 	<script src="dist/index.bundle.js"></script>
 	<script>
-	Vue.use(bundle);
-	</script>	
+		Vue.use(bundle);
+	</script>
 	<script>
-	 	
 		var t = 53709; //秒数
 		function showtime() {
 			var d = parseInt(t / 3600 / 24);
@@ -553,7 +534,6 @@
 			if (s < 10) {
 				s = "0" + s;
 			}
-
 			var a = (d == "00") ? "" : '';
 			var b = (h == "00") ? "" : '<span>' + h + '</span> :';
 			var c = (m == "00") ? "" : '<span>' + m + '</span> :';

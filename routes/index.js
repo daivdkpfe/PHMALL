@@ -209,7 +209,7 @@ router.post("/get_onsale", function (req, res, next) {
   var sql = [];
 
   var end = (new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000) / 1000;
-  end = end - 3600 * 8;
+  end = end;
   var start = end - 3600 * 24;
   sql.push(start);
   sql.push(end - 1);

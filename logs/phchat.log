@@ -12941,3 +12941,271 @@
 [2017-11-09 11:52:39.157] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
 [2017-11-09 11:54:14.582] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
 [2017-11-09 11:55:45.406] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:32:14.543] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-09 13:32:14.545] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-09 13:32:14.546] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-09 13:32:14.546] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-09 13:32:14.547] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-09 13:32:14.547] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-09 13:32:14.548] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-09 13:32:14.548] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-09 13:32:14.549] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-09 13:32:14.550] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-09 13:32:14.552] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-09 13:32:14.553] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-09 13:32:14.554] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-09 13:32:14.555] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-09 13:32:14.555] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-09 13:32:14.556] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-09 13:32:14.556] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-09 13:32:14.557] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-09 13:32:14.557] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-09 13:32:14.558] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-09 13:32:14.558] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-09 13:32:14.559] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-09 13:32:14.561] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-09 13:32:14.561] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-09 13:36:00.368] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:37:35.847] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:39:53.937] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:40:21.521] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:42:48.113] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:43:02.562] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:43:49.336] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:45:05.322] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:46:36.639] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:47:03.296] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:47:12.151] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:47:32.970] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:58:37.024] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:58:56.861] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:59:06.874] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:59:26.840] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 13:59:45.501] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:00:51.536] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:00:56.083] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:01:30.477] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:02:16.840] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:03:13.672] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:03:15.579] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:04:52.983] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:05:07.201] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:05:13.652] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:05:26.746] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510128000,1510214399
+[2017-11-09 14:08:04.058] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-09 14:08:04.060] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-09 14:08:04.061] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-09 14:08:04.061] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-09 14:08:04.062] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-09 14:08:04.062] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-09 14:08:04.063] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-09 14:08:04.064] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-09 14:08:04.064] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-09 14:08:04.067] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-09 14:08:04.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-09 14:08:04.071] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-09 14:08:04.072] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-09 14:08:04.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-09 14:08:04.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-09 14:08:04.074] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-09 14:08:04.075] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-09 14:08:04.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-09 14:08:04.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-09 14:08:04.077] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-09 14:08:04.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-09 14:08:04.080] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-09 14:08:04.083] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-09 14:08:04.088] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-09 14:08:06.209] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:08:06.220] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:08:06.220] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:08:06.221] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:08:29.955] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:08:29.968] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:08:29.971] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:08:29.971] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:09:26.308] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:09:26.326] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:09:26.326] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:09:26.340] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:10:50.964] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:10:50.975] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:10:50.982] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:10:50.982] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:17:51.092] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:17:51.109] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:17:51.109] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:17:51.110] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:19:18.210] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:19:18.227] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:19:18.232] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:19:18.242] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:20:26.028] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:20:26.042] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:20:26.043] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:20:26.043] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:21:43.298] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:21:43.312] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:21:43.313] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:21:43.313] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:22:09.657] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:22:09.669] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:22:09.672] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:22:09.673] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:22:38.066] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:22:38.084] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:22:38.085] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:22:38.085] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:23:00.536] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:23:00.542] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:23:00.545] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:23:00.547] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:24:22.065] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:24:22.151] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:24:22.152] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:24:22.153] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:25:59.254] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:25:59.281] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:25:59.285] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:25:59.292] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:34:15.546] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:34:15.581] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:34:15.581] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:34:15.582] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:35:01.776] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:35:01.789] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:35:01.790] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:35:01.791] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:35:19.762] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:35:19.771] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:35:19.772] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:35:19.775] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:38:58.633] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:38:58.643] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:38:58.647] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:38:58.647] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:40:10.995] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:40:11.119] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:40:11.184] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:40:11.199] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:41:12.847] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:41:12.867] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:41:12.872] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:41:12.874] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:42:12.762] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:42:12.773] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:42:12.776] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:42:12.777] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:42:27.990] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:42:27.995] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:42:27.996] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:42:27.996] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:42:43.416] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:42:43.427] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:42:43.428] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:42:43.428] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:43:00.122] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:43:00.141] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:43:00.142] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:43:00.143] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:43:34.340] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:43:34.383] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:43:34.385] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:43:34.386] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:44:20.636] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:44:20.668] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:44:20.668] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:44:20.669] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:47:36.322] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:47:36.332] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:47:36.333] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:47:36.333] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:47:38.368] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:47:38.376] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:47:38.381] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:47:38.383] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:47:51.594] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2017-11-09 14:47:51.623] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-11-09 14:47:51.630] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-11-09 14:47:53.782] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 14:47:53.792] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 14:47:53.795] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 14:47:53.796] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 14:47:54.658] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2017-11-09 14:47:54.666] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-11-09 14:47:54.667] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-11-09 14:47:56.231] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    2
+[2017-11-09 14:47:56.564] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    3
+[2017-11-09 14:47:57.143] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2017-11-09 15:16:18.263] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:16:18.303] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:16:18.304] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:16:18.304] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:16:29.059] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:16:29.062] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:16:29.063] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:16:29.064] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:17:00.051] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:17:00.054] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:17:00.055] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:17:00.055] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:17:18.105] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:17:18.115] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:17:18.115] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:17:18.116] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:17:54.538] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:17:54.547] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:17:54.548] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:17:54.549] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:18:34.674] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:18:34.682] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:18:34.683] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:18:34.683] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:19:05.323] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:19:05.339] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:19:05.341] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:19:05.341] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:19:45.570] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:19:45.574] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:19:45.574] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:19:45.574] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:20:42.980] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:20:42.987] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:20:42.987] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:20:42.988] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:33:11.820] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:33:11.829] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:33:11.829] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:33:11.830] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:36:25.327] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:36:25.335] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:36:25.341] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:36:25.346] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:37:14.752] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:37:14.759] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:37:14.760] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:37:14.760] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:37:43.092] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:37:43.102] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:37:43.102] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:37:43.103] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:38:45.829] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:38:45.833] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:38:45.835] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:38:45.838] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:39:14.838] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:39:14.847] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:39:14.850] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:39:14.851] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:40:07.715] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:40:07.741] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:40:07.741] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:40:07.742] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:40:24.714] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:40:24.715] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:40:24.716] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:40:24.719] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
+[2017-11-09 15:43:50.951] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510156800,1510243199
+[2017-11-09 15:43:50.955] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    19
+[2017-11-09 15:43:50.960] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    21
+[2017-11-09 15:43:50.963] [INFO] log_file - select goods_market_price from `mvm_goods_onsale_detail` where g_uid=?    22
