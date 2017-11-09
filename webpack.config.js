@@ -31,8 +31,6 @@ module.exports = {
           },
   plugins: [
         new CleanWebpackPlugin(['dist']),
-        
-        
        ],
        output: {
         filename: '[name].bundle.js',

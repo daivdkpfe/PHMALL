@@ -98,10 +98,11 @@
 
 		.coupon_div {
 			width: 100vw;
-			height: 40px;
+			height: 160px;
 			float: left;
 			background: white;
 			margin-top: 10px;
+			border-radius: 12px 12px 0 0;
 			overflow: hidden;
 		}
 
@@ -189,6 +190,7 @@
 		::-webkit-scrollbar {
 			/*隐藏滚轮*/
 			display: none;
+			
 		}
 
 		.goods_img {
@@ -335,35 +337,6 @@
 		}
 		/*瀑布流*/
 
-		.swiper-container {
-			width: 100vw;
-		}
-
-		.swiper-slide {
-			width: 100vw;
-		}
-
-		.swiper-wrapper {
-			width: 100vw;
-		}
-
-		.countdown {
-			width: 100%;
-			color: #000;
-			line-height: 20px;
-			font-size: 14px;
-			padding-top: 10px;
-		}
-
-		.countdown span {
-			background: linear-gradient(to right, rgba(255, 11, 53, 1), rgba(173, 17, 50, 1));
-			color: #fff;
-			border-radius: 5px;
-			padding: 3px;
-		}
-
-
-
 		.ppl {
 			width: 355px;
 			margin: 0 auto;
@@ -399,6 +372,34 @@
 			padding-left: 10px;
 			font-size: 15px;
 			color: #b80a2f;
+		}
+
+
+		.swiper-container {
+			width: 100vw;
+		}
+
+		.swiper-slide {
+			width: 100vw;
+		}
+
+		.swiper-wrapper {
+			width: 100vw;
+		}
+
+		.countdown {
+			width: 100%;
+			color: #000;
+			line-height: 20px;
+			font-size: 14px;
+			padding-top: 10px;
+		}
+
+		.countdown span {
+			background: linear-gradient(to right, rgba(255, 11, 53, 1), rgba(173, 17, 50, 1));
+			color: #fff;
+			border-radius: 5px;
+			padding: 3px;
 		}
 	</style>
 	<div class="big_div">
@@ -495,6 +496,9 @@
 		</div>
 		<!--分类-->
 		<div class="coupon_div">
+			<a v-bind:href="coupon.url">
+				<img class="add_img" src="images/default_wap/load.png" v-bind:data-src="config.img_url+coupon.pic" alt="">
+			</a>
 			<a href="news">
 				<img class="zxrd_img" src="images/default_wap/zxrd.png" alt="">
 			</a>
@@ -515,7 +519,8 @@
 				<div class="container" v-bind:style="'width:'+goods_num+'px;'">
 					<div class="inner" v-for="flash_sale in flash_sales">
 						<a v-bind:href="'./union/product?uid='+flash_sale.uid+'&setp=2'">
-							<img class="goods_img" v-bind:data-src="config.union_img_url+flash_sale.goods_file1" src="images/default_wap/load.png" alt="">
+							<img class="goods_img" v-bind:data-src="config.union_img_url+flash_sale.goods_file1" src="images/default_wap/load.png"
+							    alt="">
 							<p class="goods_sale_price sl1">₱ {{flash_sale.goods_sale_price}}</p>
 							<p class="goods_price sl1">₱ {{flash_sale.price}}</p>
 						</a>
@@ -526,29 +531,153 @@
 		</div>
 		<!--限时秒杀-->
 
-		
+		<div class="ad_div1">
+			<a v-bind:href="ad1.url">
+				<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic" alt="">
+			</a>
+		</div>
+
+		<div class="ad_div2">
+			<a v-for="ad2 in ad2s" v-bind:href="ad2.url">
+				<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+ad2.pic" alt="">
+			</a>
+		</div>
+
+		<div class="ad_div3">
+			<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+ad3.pic" alt="">
+		</div>
+
+		<div class="categroy2_div">
+			<div class="categroy2_header">
+				<div class="categroy2_header_ico"></div>
+				<p class="categroy2_header_lable">分类专栏</p>
+			</div>
+			<div class="weui-grids">
+				<a href="category?cat=1" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						服装鞋包
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate1.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=2" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						美妆护理
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate2.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=3" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						珠宝手表
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate3.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=4" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						母婴玩具
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate4.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=5" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						数码家电
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate5.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=6" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						家居装修
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate6.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=7" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						户外运动
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate7.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=8" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						旅游度假
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate8.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=9" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						吃喝玩乐
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate9.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=10" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						阅读娱乐
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate10.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=11" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						车辆交通
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate11.pic" alt="">
+					</div>
+
+				</a>
+				<a href="category?cat=12" class="weui-grid js_grid">
+					<p class="weui-grid__label">
+						生活服务
+					</p>
+					<div class="weui-grid__icon">
+						<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+cate12.pic" alt="">
+					</div>
+
+				</a>
+
+			</div>
+		</div>
+		<!--分类专栏-->
+
+
+		<div class="ad_div4">
+			<a v-bind:href="ad4.url">
+				<img src="images/default_wap/load.png" v-bind:data-src="config.img_url+ad1.pic+ad4.pic" alt="">
+			</a>
+		</div>
+		<!--广告-->
+
+
 		<div class="ppl">
-			<div class="left" id="left">
-				<product v-for="product in left_product" :productname="product.goods_name" :price="product.goods_price" :url="'./union/product?setp=1&uid='+product.goods_id"
-				    :img="config.img_url+product.goods_pic">
-
-				</product>
-			</div>
-			<div class="right" id="right">
-
-
-
-				<div style="width: 172px;">
-					<a  :href="right_top_ad_url">
-						<img class="right_top_ad" src="images/default_wap/load.png" :data-src="right_top_ad_img" alt="">
-					</a>
-				</div>
-				
-
-				<product v-for="product in right_product" :productname="product.goods_name" :price="product.goods_price" :url="'./union/product?setp=1&uid='+product.goods_id"
-				    :img="config.img_url+product.goods_pic">
-				</product>
-			</div>
+			<div class="left" id="left" v-html="left"></div>
+			<div class="right" id="right" v-html="right"></div>
 		</div>
 		<!--瀑布流-->
 
@@ -559,14 +688,15 @@
 
 	<script>
 		var left = 0;
-		var right = 1;
+		var right = 0;
 
 		function add_to_ppl(str) {
 			if (left < right) {
-				page.left_product.push(str)
+				page.left = page.left + str;
 				left++;
 			} else {
-				page.right_product.push(str)
+				page.right = page.right + str;
+
 				right++;
 			}
 
@@ -597,26 +727,19 @@
 				cate10: '',
 				cate11: '',
 				cate12: '',
-				config: <%- JSON.stringify(config) %>,
-				left_product: [],
-				right_product: [],
-				right_top_ad_url:'',
-				right_top_ad_img:''
+				config:<%- JSON.stringify(config) %>,
+				
 			},
-			mounted: function () {
+			mounted:function(){
 				console.log(this.config);
 			}
 		});
-		Vue.component('product', {
-			props: ['productname', 'price', 'url', 'img'],
-			template: '<div class="ppl_goods_div"><a :href="url"><img class="right_top_ad" src="images/default_wap/load.png" :data-src="img" alt=""><p class="ppl_goods_title"> {{productname}}</p><p class="ppl_goods_price"> {{price}} </p></a></div>',
-		});
-		//商品列表組件
-		
+
 		/*開始處理數據*/
 
 		$.post("./index", {}, function (result) {
-			result = result.data;
+			result=result.data;
+			console.log(result);
 			page.flashs = result.default_wap_flash;
 			page.coupon = result.default_wap_coupon["0"];
 			page.ad1 = result.default_wap_ad_1["0"];
@@ -636,16 +759,22 @@
 			page.cate12 = result.default_wap_categroy_12["0"];
 			page.ad4 = result.default_wap_ad_4['0'];
 			
-			page.right_top_ad_url=page.config.img_url+result.default_wap_ad_5['0'].url
-			page.right_top_ad_img=page.config.img_url+ result.default_wap_ad_5['0'].pic;
+			add_to_ppl('<div style="width: 172px;"><a href="' + result.default_wap_ad_5['0'].url +
+				'"><img class="right_top_ad" src="images/default_wap/load.png" data-src="' +config.img_url+ad1.pic+ result
+				.default_wap_ad_5['0'].pic + '" alt=""></div></a>');
 			result.default_wap_hot_shop.forEach(function (item, index) {
-				add_to_ppl(item);
-			});
 
+				add_to_ppl('<div class="ppl_goods_div"><a href="./union/product?uid=' + item.goods_id +
+					'&setp=1"><img class="right_top_ad" data-src="'+config.img_url+ad1.pic + item.goods_pic +
+					'" src="images/default_wap/load.png" alt=""><p class="ppl_goods_title">' + item.goods_name +
+					'</p><p class="ppl_goods_price">' + item.goods_price + '</p></a></div>');
+
+			});
+			
 
 		});
 		$.post("./index/get_onsale", {}, function (result) {
-			result = result.data;
+			result=result.data;
 			page.flash_sales = result;
 			page.goods_num = result.length * 110 + 20 * 2;
 		});
@@ -698,6 +827,6 @@
 				}
 			});
 		});
-	</script>
-
+	</script> 
+	
 	<% include footer.html %>
