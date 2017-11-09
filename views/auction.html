@@ -168,15 +168,7 @@
     }
 </style>
 <div class="big_div">
-    <div class="h44 header">
-        <div class="header_div h44">
-            <img src="images/default_wap/return.png" class="back fl" alt="">
-            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
-            <p>
-                拍卖疯抢
-            </p>
-        </div>
-    </div>
+    <top title="拍卖疯抢"></top>
 
 
     <div class="rq">
@@ -185,13 +177,10 @@
             <div class="hide1">
                 <div class="hide">
                     <div class="show" >
-
                         <div class="categroy" v-for="(cate,index) in cates" v-if="!down" v-bind:class="{selected:select==index+1}"  v-on:click="get_cate(index,cate.uid)">
                             {{cate.category_name}}
                             <img src="images/default_wap/select.png" alt="">
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -213,82 +202,9 @@
         </div>
     </div>
 </div>
-
+<script src="dist/auction.bundle.js"></script>
 <script>
-    var page = new Vue({
-        el: '.big_div',
-        data: {
-            select:1,
-            down:false,
-            index:0,
-            cat:'',
-            start:0,
-            cates:[],
-            t:100,
-            auction_list:[]
-        },
-        methods:{
-            get_cate:function (index,cate_uid) {
-                this.select=index+1;
-            }
-        },
-        mounted:function () {
-            var t=this;
-            $.post("./category",{},function (result) {
-                result=result.data;
-                page.cates=result;
-                page.cat=result[0].uid;
-
-                $.post('./auction',{cat:t.cat,start:t.start},function (result) {
-                    result=result.data;
-                    console.log(result);
-                    if(result!=0 && result.length>0)
-                    {
-                        result.forEach(function (item,index) {
-                            t.auction_list.push(item);
-                            t.start++;
-                        })
-                    }
-                })
-
-            });
-
-        }
-    });
-
-
-
-
-    var t =page.t;//秒数
-    function showtime(){
-
-        var d = parseInt(t/3600/24);
-        if(d<10){
-            d="0"+d;
-        }
-        var h = parseInt((t%(3600*24))/3600);
-        if(h<10){
-            h="0"+h;
-        }
-        var m = parseInt((t%(3600*24))%3600/60);
-        if(m<10){
-            m="0"+m;
-        }
-        var s = parseInt((t%(3600*24))%60);
-        if(s<10){
-            s="0"+s;
-        }
-        var a=(d=="00")?"":'<span>'+d+' </span>天 ';
-        var b=(h=="00")?"":'<span>'+ h+' </span> 时 ';
-        var c=(m=="00")?"":'<span>'+m+' </span> 分 ';
-        var d=(s=="00")?"":'<span>'+s+' </span> 秒';
-        $('.countdown').html('剩余时间:  '+a+b+c+d);
-        t = t -1;
-    }
-    showtime();
-    setInterval("showtime()",1000);
-
-
+    Vue.use(bundle);
 </script>
 
 

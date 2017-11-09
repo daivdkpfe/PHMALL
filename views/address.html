@@ -143,41 +143,34 @@
         }
     </style>
     <div class="big_div">
-        <div class="h44 header">
-            <div class="header_div h44">
-                <img src="images/default_wap/return.png" class="back fl" alt="">
-                <img src="images/default_wap/moreblack.png" class="back fr" alt="">
-                <p>
-                    管理收货地址
-                </p>
-            </div>
-        </div>
+        <top :title="lang._024"></top>
 
 
 
         <div class="address_list" v-for="(address,index) in address_list">
             <div class="address_div">
                 <div class="top">
-                    <p class="recever m10">收货人：{{address.consignee}}
+                    <p class="recever m10">{{lang._025}}：{{address.consignee}}
                         <d class="fr">address.mobile</d>
                     </p>
-                    <p class="address_txt sl2 m10">收货地址：{{address.province}} {{address.city}} {{address.county}} {{address.address}}</p>
+                    <p class="address_txt sl2 m10">{{lang._026}}：{{address.province}} {{address.city}} {{address.county}} {{address.address}}</p>
                 </div>
                 <div class="bottom">
                     <div class="fr left">
                         <a @click="deletes(address.uid,index)">
                             <img src="images/default_wap/delete.png" class="fl" alt="">
-                            <p class="detele fl">删除</p>
+                            <p class="detele fl">{{lang._027}}</p>
                         </a>
                         <a v-bind:href="'/address_add?uid='+address.uid">
                             <img src="images/default_wap/edit1.png" class="fl" alt="">
-                            <p class="detele fl">编辑</p>
+                            <p class="detele fl">{{lang._028}}</p>
                         </a>
                     </div>
                     <div class="fl right">
-                        <p class="fr">默认地址</p>
+                        <p class="fr">{{lang._029}}</p>
                         <div class="weui-cell__ft fr">
-                            <input class="weui-switch" type="checkbox" @click="selects(address.uid,index)">
+                            <input checked="checked" class="xx weui-switch"  type="checkbox"  v-if="address.is_buy==1" disabled="disabled">
+                            <input class="weui-switch" type="checkbox" @click="selects(address.uid,index)" v-if="address.is_buy!=1">
                         </div>
                     </div>
                 </div>
@@ -187,7 +180,7 @@
 
         <a href="./address_add">
             <div class="h44 bottom_div">
-                添加新地址
+                {{lang._030}}
             </div>
         </a>
 
@@ -195,47 +188,9 @@
 
     </div>
 
+    <script src="dist/address.bundle.js"></script>
     <script>
-        var page = new Vue({
-            el: '.big_div',
-            data: {
-                select: 1,
-                address_list: []
-            },
-            methods: {
-                selects: function (uid, index) {
-                    var x = index;
-                    $.post('/address/edit', {
-                        uid: uid
-                    }, function (result) {
-                        result = result.data;
-                        $('.weui-switch').removeAttr('checked');
-                        $('.weui-switch').eq(x).prop('checked', 'checked');
-                    });
-
-                },
-                deletes: function (uid, index) {
-                    var x = this;
-                    var bl = false;
-                    $.post('/address/delete', {
-                        uid: uid
-                    }, function (result) {
-                        result = result.data;
-                        if (result == '1') {
-                            $.toptip('删除成功', 'success');
-                            x.address_list.splice(index, 1);
-                        } else {
-                            $.toptip('删除失败', 'error');
-                        }
-                    });
-                }
-
-            }
-        });
-
-        $.post('/address', {}, function (result) {
-            page.address_list = result;
-        })
+       Vue.use(bundle);
     </script>
 
 

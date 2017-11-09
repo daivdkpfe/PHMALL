@@ -7,7 +7,9 @@ module.exports = {
     header:'./src/header.js',
     top:'./src/top.js',
     product:'./src/product.js',
-    address_add:'./src/address_add.js'
+    address_add:'./src/address_add.js',
+    address:'./src/address.js',
+    auction:'./src/auction.js'
   },
   devServer: {
          contentBase: './dist',

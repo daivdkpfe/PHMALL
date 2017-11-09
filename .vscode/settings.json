@@ -2,6 +2,7 @@
     "favorites.resources": [
         "app.js",
         "bin\\www.js",
-        "lanuage\\lanuage_ch.js"
+        "lanuage\\lanuage_ch.js",
+        "webpack.config.js"
     ]
 }
