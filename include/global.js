@@ -5,5 +5,4 @@ module.exports = {
     img_url:"http://192.168.0.105/english/",
     union_img_url:"http://192.168.0.105/english/union/",
     update_url:"http://192.168.0.105:88/update_cache",
-    
 }

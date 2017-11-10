@@ -1,4 +1,4 @@
-import Vue from 'vue'
+
 import header from '../components/header.vue'
 
 

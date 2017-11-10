@@ -1,3 +1,4 @@
+<!--一級分類的頂部栏-->
 <template>
   <div class="header" v-bind:class="{orange:opcity}">
       <div class="mb10">

@@ -1,4 +1,4 @@
-import Vue from 'vue'
+
 import product from '../components/product.vue'
 import index_ad from '../components/index_ad.vue'
 import index_header from '../components/index_header.vue'

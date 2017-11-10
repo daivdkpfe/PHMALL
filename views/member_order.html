@@ -157,7 +157,7 @@
     .pj{
         color: #feba03;
     }
-    .button_fk,.button_qrsh,.button_pj,.button_qx,.button_sq{
+    .button_fk,.button_qrsh,.button_pj,.button_qx,.button_sq,.button_ckwl{
         display: none;
     }
     .status_1 .button_fk{
@@ -175,7 +175,7 @@
     {
         display: block;
     }
-    .status_4 .button_qrsh
+    .status_4 .button_qrsh,.status_4 .button_ckwl
     {
         display: block;
     }
@@ -254,6 +254,7 @@
                             <div class="button button_pj pj" v-if="order.allow_uid>0" ><a v-bind:href="'./comment?allow_uid='+order.allow_uid" >评价</a></div>
                             <div class="button button_qrsh" v-on:click="qrsh(order.uid)">确认收货</div>
                             <div class="button button_fk">付款</div>
+                            <a :href="'./logistics?uid='+order.uid"><div class="button button_ckwl">查看物流</div></a>
                             <div class="button button_qx">取消订单</div>
                             <div class="button button_sq">申请退款</div>
                         </div>

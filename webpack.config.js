@@ -9,7 +9,8 @@ module.exports = {
     product:'./src/product.js',
     address_add:'./src/address_add.js',
     address:'./src/address.js',
-    auction:'./src/auction.js'
+    auction:'./src/auction.js',
+    logistics:'./src/logistics.js'
   },
   devServer: {
          contentBase: './dist',
@@ -24,8 +25,9 @@ module.exports = {
                 {
                   test: /\.vue$/,
                   loader: 'vue-loader'
-                }
-              
+                },
+                { test: /iview.src.*?js$/, loader: 'babel-loader' },
+                { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
              ]
            },
            resolve: {

@@ -1,3 +1,4 @@
+<!--商品列表-->
 <template>
     <div class="ppl_goods_div">
         <a :href="url">

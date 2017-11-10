@@ -58,6 +58,7 @@ var supply_edit=require('./routes/supply_edit');
 var msg_detail=require('./routes/msg_detail');
 var share=require('./routes/share');
 var point_list=require('./routes/point_list');
+var logistics=require('./routes/logistics');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -144,6 +145,7 @@ app.use('/supply_edit',supply_edit);
 app.use('/msg_detail',msg_detail);
 app.use('/share',share);
 app.use('/point_list',point_list);
+app.use('/logistics',logistics);
 //
 
 app.use('/union/product',unionProduct);
