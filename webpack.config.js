@@ -10,7 +10,9 @@ module.exports = {
     address_add:'./src/address_add.js',
     address:'./src/address.js',
     auction:'./src/auction.js',
-    logistics:'./src/logistics.js'
+    logistics:'./src/logistics.js',
+    refund:'./src/refund.js',
+    regrefund:'./src/regrefund.js'
   },
   devServer: {
          contentBase: './dist',

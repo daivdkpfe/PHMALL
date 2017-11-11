@@ -21,6 +21,7 @@
         font-size: 16px;
         float: left;
         color: #454545;
+        text-indent: 10px;
         
     }
     .logistics_status::before{
@@ -53,12 +54,122 @@
         margin: 10px;
     }
     .logistic_num{
+        margin-top: 14px;
+        float: left;
+        font-size: 15px;
+        width: 200px;
+        
+    }
+    .logistic_num d{
+        content: "636999";
+        color:#fe9b0c;
+        text-indent: 10px;
+        font-size: 15px;
+    }
+    .logistic_type{
+        font-size: 13px;
+        color: #adadad;
+        margin-top: 10px;
+        line-height: 20px;
+        width: 200px;
+    }
+    .logistic_phone{
+        font-size: 13px;
+        color: #adadad;
+        line-height: 20px;
+        width: 200px;
+    }
+    .mask{
+        width: 100vw;
+        height: 30px;
+        background: rgba(0,0,0,0.8);
+        float: left;
+        position: relative;
+        top: -30px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 13px;
+    }
+    .log_top_div{
+        width: 100vw;
+        height: 44px;
+        background: white;
+        float: left;
+        font-size: 15px;
+        line-height: 44px;
+        text-indent: 10px;
+    }
+    .log_top_div d{
+        color: #fe9b0c;
+    }
+    .log_top_div::before{
+        content: "";
+        background:url('images/default_wap/phexpress.png');
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+        margin-top: 9.5px;
+        margin-left: 10px;
         float: left;
     }
-    .logistic_num::after{
-
-        content: "636999";
-        color:red
+    .logistics_log{
+        width: 100vw;
+        float: left;
+        position: relative;
+        top: -20px;
+    }
+    .log{
+        float: left;
+        width: 100vw;
+        background: white;
+    }
+    .ivu-icon{
+        color: red;
+    }
+    .ivu-timeline-item-head-custom{
+        margin-left: 10px;
+        background: none !important;
+        font-size: 13px;
+        color: #adadad;
+    }
+    .ivu-timeline-item-content{
+        padding-left: 44px;
+        height: 44px;
+    }
+    .ivu-timeline-item-head{
+       background: rgb(178,178,178);
+    }
+    .ivu-timeline-item-head-blue{
+        margin-left: 10px;
+        border-color: rgb(178,178,178)
+    }
+    .ivu-timeline-item-tail{
+        margin-left: 10px;
+    }
+    .ss{
+        color: #7c5a00;
+    }
+    .buttom_div{
+        width: 100vw;
+        height: 49px;
+        background: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .button{
+        width: 80px;
+        height: 30px;
+        border-radius: 6px;
+        border: 1px solid rgba(115,115,115,0.37);
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 30px;
+        color: #5a5a5a;
+        font-size: 13px;
     }
 </style>
 <div class="big_div">
@@ -75,7 +186,36 @@
         </div>
         <div class="bottom">
             <img src="images/default_wap/load.png" class="goods_img fl" alt="">
-            <p class="logistic_num fl">运单编号</p>
+            <p class="logistic_num fl" >运单编号：<d>66666666</d></p>
+            <p class="logistic_type fl" >承运快递：999999</p>
+            <p class="logistic_phone fl" >快递电话：999999</p>
+        </div>
+        <div class="mask">
+            <!-- 遮罩 -->
+            共1件商品
+        </div>
+    </div>
+
+    <div class="logistics_log">
+        <div class="log_top_div">
+            本数据由<d>菲快递</d>提供
+        </div>
+        <div class="log">
+            <Timeline>
+                <Timeline-Item color="green" class="ss">
+                    <Icon type="ios-location" slot="dot" size="20"></Icon>
+                    <span>发布里程碑版本</span>
+                </Timeline-Item>
+                <Timeline-Item>发布1.0版本</Timeline-Item>
+                <Timeline-Item>发布2.0版本</Timeline-Item>
+            </Timeline>
+        </div>
+        
+    </div>
+    <div style="height:50px;"></div>
+    <div class="buttom_div">
+        <div class="button">
+            联系商家
         </div>
     </div>
 </div>
