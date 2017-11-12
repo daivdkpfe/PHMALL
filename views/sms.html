@@ -1,0 +1,25 @@
+<% include header_index_iview.html %>
+<style>
+    body{
+        background: rgb(239,239,244);
+    }
+    .content_list{
+        width: 100vw;
+        background: white;
+        float: left;
+        margin-top: 10px;
+    }
+    
+</style>
+<div class="big_div">
+    <top title="消息中心"></top>
+    <!-- <button @touchstart="start" v-on:touchmove.prevent="sb" @touchend="end" v-bind:style="'top:'+y+'px;left:'+x+'px;position:fixed'">
+        sndhufhuhbgf
+    </button> -->
+    <div class="content_list">
+        <contentuser></contentuser>
+    </div>
+</div>
+<script src="dist/sms.bundle.js"></script>
+
+<% include footer.html %>

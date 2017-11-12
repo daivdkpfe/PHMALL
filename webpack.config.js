@@ -12,7 +12,8 @@ module.exports = {
     auction:'./src/auction.js',
     logistics:'./src/logistics.js',
     refund:'./src/refund.js',
-    regrefund:'./src/regrefund.js'
+    regrefund:'./src/regrefund.js',
+    sms:'./src/sms.js'
   },
   devServer: {
          contentBase: './dist',

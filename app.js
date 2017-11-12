@@ -61,6 +61,7 @@ var point_list=require('./routes/point_list');
 var logistics=require('./routes/logistics');
 var refund=require('./routes/refund');
 var regrefund=require('./routes/reg_refund');
+var sms=require('./routes/sms');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -150,6 +151,7 @@ app.use('/point_list',point_list);
 app.use('/logistics',logistics);
 app.use('/refund',refund);
 app.use('/regrefund',regrefund);
+app.use('/sms',sms);
 //
 
 app.use('/union/product',unionProduct);
