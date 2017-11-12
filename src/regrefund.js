@@ -11,6 +11,8 @@ import order from '../components/order.vue'
 import ordertop from '../components/ordertop.vue'
 import ActionSheet from '../components/ActionSheet.vue'
 
+
+Vue.use(iView);
 var lang=lang_ch;
 
     Vue.component("order",order);
@@ -20,6 +22,57 @@ var lang=lang_ch;
     var page=new Vue({
         el:'.big_div',
         data:{
-            ss:'xx'
+            ss:'xx',
+            value6:'',
+            defaultList: [
+               
+            ],
+            imgName: '',
+            visible: false,
+            uploadList: []
+        },
+        methods: {
+            handleView (name) {
+                
+                this.imgName = name;
+                this.visible = true;
+            },
+            handleRemove (file) {
+                
+                const fileList = this.$refs.upload.fileList;
+                this.$refs.upload.fileList.splice(fileList.indexOf(file), 1);
+            },
+            handleSuccess (res, file) {
+                
+                file.url = 'http://192.168.0.105/english/xx/'+res;
+                file.name = 'http://192.168.0.105/english/xx/'+res;
+            },
+            handleFormatError (file) {
+               
+                this.$Notice.warning({
+                    title: 'The file format is incorrect',
+                    desc: 'File format of ' + file.name + ' is incorrect, please select jpg or png.'
+                });
+            },
+            handleMaxSize (file) {
+                
+                this.$Notice.warning({
+                    title: 'Exceeding file size limit',
+                    desc: 'File  ' + file.name + ' is too large, no more than 2M.'
+                });
+            },
+            handleBeforeUpload () {
+                
+                const check = this.uploadList.length < 3;
+                if (!check) {
+                    this.$Notice.warning({
+                        title: 'Up to five pictures can be uploaded.'
+                    });
+                }
+                return check;
+            }
+        },
+        mounted () {
+            this.uploadList = this.$refs.upload.fileList;
         }
     })
