@@ -61,7 +61,7 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 96);
+/******/ 	return __webpack_require__(__webpack_require__.s = 106);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -45878,153 +45878,16 @@ module.exports = { render: function render() {
 /* 30 */,
 /* 31 */,
 /* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_iview__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_iview___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_iview__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_en__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_en__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util_js__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__util_util_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__include_global__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_header_vue__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_content_vue__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_gxc_touch_vue__ = __webpack_require__(102);
-
-
-
-
-
-
-
-
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_iview___default.a);
-var lang = __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch___default.a;
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component("top", __WEBPACK_IMPORTED_MODULE_6__components_header_vue__["a" /* default */]);
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component("contentuser", __WEBPACK_IMPORTED_MODULE_7__components_content_vue__["a" /* default */]);
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component("touch", __WEBPACK_IMPORTED_MODULE_8__components_gxc_touch_vue__["a" /* default */]);
-
-var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
-    el: '.big_div',
-    data: {
-        x: 0,
-        y: 0,
-        startx: 0,
-        starty: 0
-    },
-    methods: {
-        sss: function () {
-            alert("sss");
-        },
-        sb: function (x) {
-            this.x = x.changedTouches["0"].clientX;
-            this.y = x.changedTouches["0"].clientY;
-        },
-        start: function (x, a) {
-            this.startx = x.changedTouches["0"].clientX;
-            this.starty = x.changedTouches["0"].clientY;
-        },
-        end: function (x, a) {
-            if (this.startx - x.changedTouches["0"].clientX > 0) {
-                alert("左移");
-            } else if (this.startx - x.changedTouches["0"].clientX < 0) {
-                alert("右移");
-            }
-            if (this.starty - x.changedTouches["0"].clientY > 0) {
-                alert("上移");
-            } else if (this.starty - x.changedTouches["0"].clientY < 0) {
-                alert("下移");
-            }
-        }
-    }
-});
-
-/***/ }),
-/* 97 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_content_vue__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6672f0a1_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_content_vue__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_content_vue__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6672f0a1_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_content_vue__ = __webpack_require__(37);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(98)
+  __webpack_require__(34)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -46070,13 +45933,13 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 98 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(99);
+var content = __webpack_require__(35);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -46096,7 +45959,7 @@ if(false) {
 }
 
 /***/ }),
-/* 99 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -46104,13 +45967,13 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nbody {\n    overflow: hidden;\n}\n.touch {\n    position: relative;\n}\n.content_div {\n    width: calc(100vw + 50px);\n    position: relative;\n    left: 0px;\n    transition:left 0.5s;\n    -moz-transition:left 0.5s; /* Firefox 4 */\n    -webkit-transition:left 0.5s; /* Safari and Chrome */\n    -o-transition:left 0.5s; /* Opera */\n}\n.content {\n    width: 100vw;\n    height: 70px;\n    float: right;\n    background: white;\n    float: left;\n    border-bottom: 1px solid #EEE;\n}\n.touch_btn {\n    width: 50px;\n    height: 70px;\n    float: right;\n    color: white;\n    text-align: center;\n    line-height: 70px;\n    background: #ff8000;\n}\n.content_id {\n    font-size: 15px;\n    margin-top: 13px;\n    line-height: 18px;\n    text-indent: 10px;\n    float: left;\n    color: #454545;\n}\n.content_time {\n    font-size: 13px;\n    margin-top: 13px;\n    line-height: 18px;\n    float: right;\n    margin-right: 10px;\n    color: #adadad;\n}\n.content_right {\n    width: 305px;\n    height: 70px;\n    float: left;\n}\n.content_value {\n    width: 305px;\n    height: 18px;\n    line-height: 18px;\n    position: relative;\n    top: 9px;\n    color: #adadad;\n    text-indent: 10px;\n}\n.content_img {\n    width: 50px;\n    float: left;\n    height: 50px;\n    margin: 10px;\n}\n.istouch {\n    left: -50px;\n}\n\n\n", ""]);
+exports.push([module.i, "\nbody {\n    overflow: hidden;\n}\n.touch {\n    position: relative !important;\n}\n.content_div {\n    width: calc(100vw + 50px);\n    position: relative;\n    left: 0px;\n    transition:left 0.5s;\n    -moz-transition:left 0.5s; /* Firefox 4 */\n    -webkit-transition:left 0.5s; /* Safari and Chrome */\n    -o-transition:left 0.5s; /* Opera */\n}\n.content {\n    width: 100vw;\n    height: 70px;\n    float: right;\n    background: white;\n    float: left;\n    border-bottom: 1px solid #EEE;\n}\n.touch_btn {\n    width: 50px;\n    height: 70px;\n    float: right;\n    color: white;\n    text-align: center;\n    line-height: 70px;\n    background: #ff8000;\n}\n.content_id {\n    font-size: 15px;\n    margin-top: 13px;\n    line-height: 18px;\n    text-indent: 10px;\n    float: left;\n    color: #454545;\n}\n.content_time {\n    font-size: 13px;\n    margin-top: 13px;\n    line-height: 18px;\n    float: right;\n    margin-right: 10px;\n    color: #adadad;\n}\n.content_right {\n    width: 305px;\n    height: 70px;\n    float: left;\n}\n.content_value {\n    width: 305px;\n    height: 18px;\n    line-height: 18px;\n    position: relative;\n    top: 9px;\n    color: #adadad;\n    text-indent: 10px;\n}\n.content_img {\n    width: 50px;\n    float: left;\n    height: 50px;\n    margin: 10px;\n}\n.istouch {\n    left: -50px;\n}\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 100 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46258,7 +46121,7 @@ exports.push([module.i, "\nbody {\n    overflow: hidden;\n}\n.touch {\n    posit
 });
 
 /***/ }),
-/* 101 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46332,16 +46195,16 @@ if (false) {
 }
 
 /***/ }),
-/* 102 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_touch_vue__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_050ae7ac_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_touch_vue__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_touch_vue__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_050ae7ac_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_touch_vue__ = __webpack_require__(42);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(103)
+  __webpack_require__(39)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -46387,13 +46250,13 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 103 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(104);
+var content = __webpack_require__(40);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -46413,7 +46276,7 @@ if(false) {
 }
 
 /***/ }),
-/* 104 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -46427,7 +46290,7 @@ exports.push([module.i, "\n.touch{\r\n  position: fixed;\n}\r\n", ""]);
 
 
 /***/ }),
-/* 105 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46463,7 +46326,7 @@ exports.push([module.i, "\n.touch{\r\n  position: fixed;\n}\r\n", ""]);
 });
 
 /***/ }),
-/* 106 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46498,6 +46361,143 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-050ae7ac", esExports)
   }
 }
+
+/***/ }),
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_iview__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_iview___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_iview__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_en__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_en__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util_js__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__util_util_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__include_global__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_header_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_content_vue__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_gxc_touch_vue__ = __webpack_require__(38);
+
+
+
+
+
+
+
+
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_iview___default.a);
+var lang = __WEBPACK_IMPORTED_MODULE_2__lanuage_lanuage_ch___default.a;
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component("top", __WEBPACK_IMPORTED_MODULE_6__components_header_vue__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component("contentuser", __WEBPACK_IMPORTED_MODULE_7__components_content_vue__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component("touch", __WEBPACK_IMPORTED_MODULE_8__components_gxc_touch_vue__["a" /* default */]);
+
+var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
+    el: '.big_div',
+    data: {
+        x: 0,
+        y: 0,
+        startx: 0,
+        starty: 0
+    },
+    methods: {
+        sss: function () {
+            alert("sss");
+        },
+        sb: function (x) {
+            this.x = x.changedTouches["0"].clientX;
+            this.y = x.changedTouches["0"].clientY;
+        },
+        start: function (x, a) {
+            this.startx = x.changedTouches["0"].clientX;
+            this.starty = x.changedTouches["0"].clientY;
+        },
+        end: function (x, a) {
+            if (this.startx - x.changedTouches["0"].clientX > 0) {
+                alert("左移");
+            } else if (this.startx - x.changedTouches["0"].clientX < 0) {
+                alert("右移");
+            }
+            if (this.starty - x.changedTouches["0"].clientY > 0) {
+                alert("上移");
+            } else if (this.starty - x.changedTouches["0"].clientY < 0) {
+                alert("下移");
+            }
+        }
+    }
+});
 
 /***/ })
 /******/ ]);

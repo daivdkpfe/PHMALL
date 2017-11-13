@@ -13,7 +13,8 @@ module.exports = {
     logistics:'./src/logistics.js',
     refund:'./src/refund.js',
     regrefund:'./src/regrefund.js',
-    sms:'./src/sms.js'
+    sms:'./src/sms.js',
+    content:'./src/content.js'
   },
   devServer: {
          contentBase: './dist',

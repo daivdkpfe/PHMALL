@@ -62,6 +62,7 @@ var logistics=require('./routes/logistics');
 var refund=require('./routes/refund');
 var regrefund=require('./routes/reg_refund');
 var sms=require('./routes/sms');
+var content=require('./routes/content');
 //
 
 var unionProduct=require('./routes/union/product');
@@ -152,6 +153,7 @@ app.use('/logistics',logistics);
 app.use('/refund',refund);
 app.use('/regrefund',regrefund);
 app.use('/sms',sms);
+app.use('/content',content);
 //
 
 app.use('/union/product',unionProduct);

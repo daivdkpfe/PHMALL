@@ -30,7 +30,7 @@
     }
 
     .touch {
-        position: relative;
+        position: relative !important;
     }
 
     .content_div {
