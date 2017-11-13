@@ -9,7 +9,7 @@ import config from '../include/global'
 import header from '../components/header.vue'
 import order from '../components/order.vue'
 import ordertop from '../components/ordertop.vue'
-import ActionSheet from '../components/ActionSheet.vue'
+import ActionSheet from '../components/gxc/ActionSheet.vue'
 
 
 Vue.use(iView);
@@ -29,9 +29,14 @@ var lang=lang_ch;
             ],
             imgName: '',
             visible: false,
-            uploadList: []
+            uploadList: [],
+            list:['我不想买了','信息填错，重新拍','卖家迟迟不发货','误点，拍错','其他原因']//ActionSheet
         },
         methods: {
+            clickActionSheet:function(){
+                
+                 this.$refs.ActionSheet.show=!this.$refs.ActionSheet.show;
+               },
             handleView (name) {
                 
                 this.imgName = name;

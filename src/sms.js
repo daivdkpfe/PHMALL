@@ -8,7 +8,7 @@ import config from '../include/global'
 
 import header from '../components/header.vue'
 import content from '../components/content.vue'
-
+import touch from '../components/gxc/touch.vue'
 
 
 Vue.use(iView);
@@ -16,7 +16,8 @@ var lang=lang_ch;
 
     Vue.component("top", header);
     Vue.component("contentuser", content);
-    
+    Vue.component("touch", touch);
+
     var page=new Vue({
         el:'.big_div',
         data:{

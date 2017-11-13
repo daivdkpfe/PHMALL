@@ -114,6 +114,14 @@
         .submit_info d{
             color: #fe9b0c;
         }
+        .ivu-input:focus { 
+    outline: none !important;
+}   
+.ivu-input:hover{
+  border:none;
+  box-shadow:none;
+  outline: none !important;
+}
     </style>
     <div class="big_div">
         <top title="申请售后"></top>
@@ -122,7 +130,9 @@
         <ordertop>
         </ordertop>
 
-        <div class="h44 chose_reg">请选择退款及原因</div>
+        <action-sheet @click.native="clickActionSheet" ref="ActionSheet" v-on:cancel="cancel" :menulist="list" v-on:selected="chosed">
+            <div class="h44 chose_reg" slot="value">请选择退款及原因</div>
+        </action-sheet>
 
         <div class="reg_reason">
             <i-input v-model="value6" type="textarea" :rows="4" placeholder="退款说明："></i-input>
