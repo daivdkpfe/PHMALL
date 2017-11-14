@@ -10,6 +10,9 @@ import header from '../components/header.vue'
 import touch from '../components/gxc/touch.vue'
 import search from '../components/search.vue'
 import gbutton from '../components/gxc/g-button.vue'
+import contact from '../components/contact.vue'
+
+
 
 Vue.use(iView);
 var lang=lang_ch;
@@ -18,7 +21,7 @@ var lang=lang_ch;
     Vue.component("touch", touch);
     Vue.component('search',search);
     Vue.component('gbutton',gbutton);
-
+    Vue.component('contact',contact);
     var page=new Vue({
         el:'.big_div'
     })
