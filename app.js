@@ -62,6 +62,7 @@ var logistics=require('./routes/logistics');
 var refund=require('./routes/refund');
 var regrefund=require('./routes/reg_refund');
 var sms=require('./routes/sms');
+var sms_send=require('./routes/sms_send');
 var content=require('./routes/content');
 //
 
@@ -153,6 +154,7 @@ app.use('/logistics',logistics);
 app.use('/refund',refund);
 app.use('/regrefund',regrefund);
 app.use('/sms',sms);
+app.use('/sms_send',sms_send);
 app.use('/content',content);
 //
 

@@ -14,6 +14,7 @@ module.exports = {
     refund:'./src/refund.js',
     regrefund:'./src/regrefund.js',
     sms:'./src/sms.js',
+    sms_send:'./src/sms_send.js',
     content:'./src/content.js'
   },
   devServer: {
@@ -47,7 +48,6 @@ module.exports = {
         path: path.resolve(__dirname, './public/dist'),
         library: 'bundle',
              libraryTarget: 'var',
-        
            },
            externals: {
              Vue: {

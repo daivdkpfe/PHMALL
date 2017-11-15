@@ -1,6 +1,6 @@
 <!--左下角发布按钮 release-->
 <template>
-  <a href="./sms_release"><img src="images/default_wap/release.png"  class="release" alt=""></a>
+  <a href="./sms_send"><img src="images/default_wap/release.png"  class="release" alt=""></a>
 </template>
 <style>
 .release{

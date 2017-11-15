@@ -1,0 +1,93 @@
+<% include header_index_iview.html %>
+<style>
+    body{
+        background: rgb(239,239,244);
+    }
+    .media_bd{
+        width: 100vw;
+        height: 44px;
+        font-size: 15px;
+        color: #454545;
+        text-align: left;
+        text-indent: 10px;
+        background: white;
+        line-height: 44px;
+    }
+    .media_title_p{
+        float: left;
+        width: 100px;
+        height: 44px;
+        font-size: 15px;
+        color: #454545;
+        text-align: left;
+        text-indent: 10px;
+        background: white;
+        line-height: 44px;
+    }
+    .media_receiver::after{
+        content: '>';
+        float: right;
+        margin-right: 10px;
+    }
+    .media_title_input{
+        border: none;
+        float: left;
+        width: 250px;
+    }
+    .media_value_p{
+        float: left;
+        width: 100px;
+        height: 44px;
+        font-size: 15px;
+        color: #454545;
+        text-align: left;
+        text-indent: 10px;
+        background: white;
+        line-height: 44px;
+    }
+    .media_value_input{
+        border: none;
+        float: left;
+        width: 250px;
+        resize: none;
+    }
+    .h100{
+        height: 100px;
+    }
+    .bottom_button{
+        height: 49px;
+        line-height: 49px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        color: #FFF;
+        font-size: 18px;
+        text-align: center;
+        background: linear-gradient(to right,#fe9b0c,#ff8000);
+    }
+</style>
+<div class="big_div">
+    <top title="发送短消息"></top>
+    <div class="h44 media_bd media_receiver" @click="fullpage">收件人</div>
+    <div class="h44 media_bd">
+        <p class="media_title_p">标题</p>
+        <input class="media_title_input" placeholder="请输入标题" type="text"> 
+    </div>
+    <div class="h100 media_bd">
+            <p class="media_value_p">内容</p>
+            <textarea class="media_value_input" placeholder="请输入内容" type="text"> </textarea>
+    </div>
+
+    <div class="bottom_button">发送</div>
+    <!-- 上面的是一开始显示的 -->
+    <!-- 下面的是右边duang出来的 -->
+    <full-page ref="full_page">
+            <top title="好友"></top>
+            <contact></contact>
+    </full-page>
+</div>
+
+
+<script src="dist/sms_send.bundle.js"></script>
+<% include footer.html %>

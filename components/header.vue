@@ -15,8 +15,10 @@
 <style>
 
     .header{
+        box-shadow: 0px 10px 125px rgba(0,0,0,0.1);
         width: 100vw;
         background: white;
+        position: relative;
     }
     .header_div{
         width: 355px;
@@ -28,7 +30,7 @@
         margin-top: 12px;
     }
     .header_div p{
-        font-size: 15px;
+        font-size: 18px;
         color: #181818;
         line-height: 44px;
         text-align: center;

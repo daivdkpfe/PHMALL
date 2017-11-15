@@ -1283,3 +1283,106 @@
 [2017-11-15 13:13:49.671] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
 [2017-11-15 13:14:33.426] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510704000,1510790399
 [2017-11-15 13:14:37.357] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510704000,1510790399
+[2017-11-15 13:19:57.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-15 13:19:57.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-15 13:19:57.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-15 13:19:57.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-15 13:19:57.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-15 13:19:57.592] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-15 13:19:57.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-15 13:37:55.408] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510704000,1510790399
+[2017-11-15 13:38:05.104] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-15 13:38:06.330] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510704000,1510790399
+[2017-11-15 13:38:07.848] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-15 13:38:09.912] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-11-15 13:38:25.028] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-11-15 13:38:25.030] [INFO] log_file - select * from `mvm_point_table` where point_id=?  and point_add >0  order by register_date desc limit 0,20     admin
+[2017-11-15 13:38:25.031] [INFO] log_file - select * from `mvm_point_table` where point_id=?  order by register_date desc limit 0,20     admin
+[2017-11-15 13:38:27.829] [INFO] log_file - select uid,member_id,member_money,member_point  from `mvm_member_table` where uid=? and member_id=? limit 1    1,admin
+[2017-11-15 16:45:53.944] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510704000,1510790399
+[2017-11-15 16:46:01.561] [INFO] log_file - select * from `mvm_order_share` order by register_date desc  limit 0,20    
+[2017-11-15 16:46:01.579] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:01.584] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    476
+[2017-11-15 16:46:01.591] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:01.596] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    443
+[2017-11-15 16:46:01.605] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:01.607] [INFO] log_file - select goods_file1 from `mvm_goods_group` where uid =? limit 1    25
+[2017-11-15 16:46:01.612] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:01.615] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    487
+[2017-11-15 16:46:01.620] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    31
+[2017-11-15 16:46:01.624] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    463
+[2017-11-15 16:46:01.629] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    43
+[2017-11-15 16:46:01.631] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    481
+[2017-11-15 16:46:01.634] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    40
+[2017-11-15 16:46:01.636] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    420
+[2017-11-15 16:46:01.638] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    39
+[2017-11-15 16:46:13.290] [INFO] log_file - select * from `mvm_order_share` order by register_date desc  limit 0,20    
+[2017-11-15 16:46:13.292] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:13.294] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    476
+[2017-11-15 16:46:13.295] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:13.297] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    443
+[2017-11-15 16:46:13.299] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:13.301] [INFO] log_file - select goods_file1 from `mvm_goods_group` where uid =? limit 1    25
+[2017-11-15 16:46:13.303] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:13.305] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    487
+[2017-11-15 16:46:13.306] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    31
+[2017-11-15 16:46:13.308] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    463
+[2017-11-15 16:46:13.311] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    43
+[2017-11-15 16:46:13.312] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    481
+[2017-11-15 16:46:13.314] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    40
+[2017-11-15 16:46:13.316] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    420
+[2017-11-15 16:46:13.322] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    39
+[2017-11-15 16:46:18.093] [INFO] log_file - select * from `mvm_order_share` order by register_date desc  limit 0,20    
+[2017-11-15 16:46:18.097] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:18.099] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    476
+[2017-11-15 16:46:18.100] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:18.102] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    443
+[2017-11-15 16:46:18.104] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:18.106] [INFO] log_file - select goods_file1 from `mvm_goods_group` where uid =? limit 1    25
+[2017-11-15 16:46:18.107] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:46:18.110] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    487
+[2017-11-15 16:46:18.115] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    31
+[2017-11-15 16:46:18.116] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    463
+[2017-11-15 16:46:18.118] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    43
+[2017-11-15 16:46:18.121] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    481
+[2017-11-15 16:46:18.123] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    40
+[2017-11-15 16:46:18.126] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    420
+[2017-11-15 16:46:18.128] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    39
+[2017-11-15 16:46:30.005] [INFO] log_file - update `mvm_order_share` set love=love+1 where uid =?    7
+[2017-11-15 16:46:35.453] [INFO] log_file - update `mvm_order_share` set love=love+1 where uid =?    6
+[2017-11-15 16:46:46.804] [INFO] log_file - update `mvm_order_share` set love=love+1 where uid =?    4
+[2017-11-15 16:46:52.356] [INFO] log_file - select * from `mvm_order_share` order by register_date desc  limit 8,20    
+[2017-11-15 16:46:53.107] [INFO] log_file - update `mvm_order_share` set love=love+1 where uid =?    1
+[2017-11-15 16:47:02.719] [INFO] log_file - select * from `mvm_order_share` order by register_date desc  limit 0,20    
+[2017-11-15 16:47:02.723] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:47:02.728] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    476
+[2017-11-15 16:47:02.740] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:47:02.743] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    443
+[2017-11-15 16:47:02.746] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:47:02.748] [INFO] log_file - select goods_file1 from `mvm_goods_group` where uid =? limit 1    25
+[2017-11-15 16:47:02.750] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    1
+[2017-11-15 16:47:02.751] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    487
+[2017-11-15 16:47:02.755] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    31
+[2017-11-15 16:47:02.757] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    463
+[2017-11-15 16:47:02.761] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    43
+[2017-11-15 16:47:02.766] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    481
+[2017-11-15 16:47:02.769] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    40
+[2017-11-15 16:47:02.770] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    420
+[2017-11-15 16:47:02.772] [INFO] log_file - select member_id,member_image from `mvm_member_table` where uid=? limit 1    39

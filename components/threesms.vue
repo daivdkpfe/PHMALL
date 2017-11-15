@@ -22,7 +22,7 @@
                 <slot name="slot1">我是1</slot> 
             </div>
             <div v-if="select==1">
-               <slot name="slot2">我是2</slot> 
+               <slot name="slot2">我是2</slot>
             </div>
             <div v-if="select==2">
                 <slot name="slot3">我是3</slot> 
