@@ -5,6 +5,7 @@
                     删除
                 </div>
                 <div class="content">
+                     <slot name="slide">
                     <img src="images/default_wap/load.png" class="content_img" alt="">
 
                     <div class="content_right">
@@ -18,6 +19,7 @@
                             垃圾来及来及打算速度vdfvfvasvf 是否色调风格和健康劳动法规和巨亏i
                         </p>
                     </div>
+                     </slot>
                 </div>
            
         </div>
@@ -133,8 +135,8 @@
                 if (x - this.x > 20) {
                     
                     this.istouch = false;
-                } else if (x - this.x < 20) {
-                    
+                } else if (this.x-x > 20) {
+                  
                     this.istouch = true;
                 }
                 console.log('我结束拖动了');

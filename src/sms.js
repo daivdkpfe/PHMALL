@@ -9,7 +9,8 @@ import config from '../include/global'
 import header from '../components/header.vue'
 import content from '../components/content.vue'
 import touch from '../components/gxc/touch.vue'
-
+import threesms from '../components/threesms.vue'
+import release from '../components/release.vue'
 
 Vue.use(iView);
 var lang=lang_ch;
@@ -17,6 +18,8 @@ var lang=lang_ch;
     Vue.component("top", header);
     Vue.component("contentuser", content);
     Vue.component("touch", touch);
+    Vue.component('three',threesms);
+    Vue.component('release',release);
 
     var page=new Vue({
         el:'.big_div',

@@ -9,18 +9,75 @@
         float: left;
         margin-top: 5px;
     }
-    
+    .notice_title{
+        width: calc(100vw - 20px);
+        height: 36px;
+        margin: 0 auto;
+        line-height: 18px;
+        font-size: 15px;
+        color: #454545;
+        margin-top: 9px;
+    }
+    .notice_value{
+        width: calc(100vw - 20px);
+        height: 18px;
+        margin: 0 auto;
+        line-height: 18px;
+        font-size: 13px;
+        color: #adadad;
+        margin-top: 7px;
+    }
+    .notice_div .content{
+        height: 100px;
+    }
+    .notice_div .touch_btn{
+        height: 100px;
+        line-height: 100px;
+    }
+    .notice_time{
+        width: calc(100vw - 20px);
+        height: 18px;
+        margin: 0 auto;
+        line-height: 18px;
+        font-size: 13px;
+        color: #adadad;
+        margin-top: 5px;
+    }
 </style>
 <div class="big_div">
-    <top title="消息中心"></top>
+    <top title="短消息"></top>
     <!-- <button @touchstart="start" v-on:touchmove.prevent="sb" @touchend="end" v-bind:style="'top:'+y+'px;left:'+x+'px;position:fixed'">
         sndhufhuhbgf
     </button> -->
-    <div class="content_list">
-        <contentuser></contentuser>
-        <contentuser></contentuser>
-        <contentuser></contentuser>
-    </div>
+    <three>
+        <div class="content_list" slot="slot1">
+            <contentuser></contentuser>
+            <contentuser></contentuser>
+            <contentuser></contentuser>
+        </div>
+        <div class="content_list" slot="slot2">
+            <contentuser></contentuser>
+            <contentuser></contentuser>
+            <contentuser></contentuser>
+        </div>
+        <div class="content_list notice_div" slot="slot3">
+            <contentuser>
+                <div slot="slide">
+                    <p class="notice_title sl1"> 
+                        dfuihgiuhidfughuishbu ifgvbiusdg bfyuasd bfuyhvgsab yhufvys uafdyaujsg vfyujsa  fyugavsuf gbasuifgbs aufgbsdugfu iagbsdfasfsbvf uvsdyfvdsyfv sduvfy usavdfusai kbdlsadjoa dnssfydv safdysagf si
+                     </p>
+                     <p class="notice_value sl2">
+                        我是内容我是内容我是内容我是内容我是内容我是内容
+                     </p>
+                     <p class="notice_time">
+                            2017-12-31 12:00
+                     </p>
+                </div>
+            </contentuser>
+        </div>
+    </three>
+    
+    <release></release>
 </div>
 <script src="dist/sms.bundle.js"></script>
 
