@@ -157,7 +157,7 @@
     .pj{
         color: #feba03;
     }
-    .button_fk,.button_qrsh,.button_pj,.button_qx,.button_sq,.button_ckwl{
+    .button_fk,.button_qrsh,.button_pj,.button_qx,.button_sq,.button_ckwl,.button_share{
         display: none;
     }
     .status_1 .button_fk{
@@ -169,6 +169,9 @@
     }
     .status_3 .button_sq ,.status_4 .button_sq,.status_5 .button_sq
     {
+        display: block;
+    }
+    .status_5 .button_share{
         display: block;
     }
     .status_3 .button_qrsh
@@ -251,6 +254,7 @@
                             共 <c class="goods_num">{{order.all_number}}</c> 件商品，合计（含运费）<c class="ready_price">₱{{order.goods_amount}}</c>
                         </p>
                         <div class="order_button">
+                            <a :href="'member_share?uid='+order.uid"><div class="button button_share">分享</div></a> 
                             <div class="button button_pj pj" v-if="order.allow_uid>0" ><a v-bind:href="'./comment?allow_uid='+order.allow_uid" >评价</a></div>
                             <div class="button button_qrsh" v-on:click="qrsh(order.uid)">确认收货</div>
                             <div class="button button_fk">付款</div>
@@ -281,7 +285,7 @@
     var app = new Vue({
         el: '.BigDiv',
         data: {
-            shop_name: 'sss',
+            shop_name: '',
             title:"订单中心",
             orders:[]
         },

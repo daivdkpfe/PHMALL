@@ -25,12 +25,25 @@ Vue.component("full-page",fullpage);
 Vue.component('contact',contact);
 var page=new Vue({
     el:'.big_div',
+    data:{
+        user_list:[{selected:true},{selected:false}],
+        all_selected:true
+    },
     methods:{
         fullpage:function(){
             this.$refs.full_page.full_page_show=true;
+        },
+        all_select:function(){
+            this.all_selected=!this.all_selected;
+            var t=this;
+            this.user_list.forEach(function(item,index){
+                t.user_list[index].selected=t.all_selected;
+            });
+           
+
         }
     },
     mounted:function(){
-
+        
     }
 })

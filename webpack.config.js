@@ -1,61 +1,83 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+
+var fileLoaderOption = {
+    loader: 'file-loader',
+    options: {
+        name: '[path][name].[ext]',
+        outputPath: function(path) {
+            // console.log(arguments);
+            // console.log(path);
+            // console.log("【路径↑】");
+            return path.replace(/^src/g, ".");
+        }
+    }
+};
+
+
 module.exports = {
-  entry:{
-    index:'./src/index.js',
-    header:'./src/header.js',
-    top:'./src/top.js',
-    product:'./src/product.js',
-    address_add:'./src/address_add.js',
-    address:'./src/address.js',
-    auction:'./src/auction.js',
-    logistics:'./src/logistics.js',
-    refund:'./src/refund.js',
-    regrefund:'./src/regrefund.js',
-    sms:'./src/sms.js',
-    sms_send:'./src/sms_send.js',
-    content:'./src/content.js'
-  },
-  devServer: {
-         contentBase: './dist',
-         hot: true
-       },
-       module: {
-             rules: [
-               {
-                 test: /\.css$/,
-                 use: ['style-loader', 'css-loader']
-               },
-                {
-                  test: /\.vue$/,
-                  loader: 'vue-loader'
-                },
-                { test: /iview.src.*?js$/, loader: 'babel-loader' },
-                { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
-             ]
-           },
-           resolve: {
-            alias: {
-              'vue$': 'vue/dist/vue.esm.js'
+    entry: {
+        index: './src/index.js',
+        header:'./src/header.js',
+        top:'./src/top.js',
+        product:'./src/product.js',
+        address_add:'./src/address_add.js',
+        address:'./src/address.js',
+        auction:'./src/auction.js',
+        logistics:'./src/logistics.js',
+        refund:'./src/refund.js',
+        regrefund:'./src/regrefund.js',
+        sms:'./src/sms.js',
+        sms_send:'./src/sms_send.js',
+        content:'./src/content.js',
+        member_share:'./src/member_share.js'
+    },
+    devServer: {
+        contentBase: './dist',
+        hot: true
+    },
+    module: {
+        rules: [{
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options:{
+                  // loader:[fileLoaderOption]
+                }
+            },
+            { test: /iview.src.*?js$/, loader: 'babel-loader' },
+            { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [fileLoaderOption]
             }
-          },
-  plugins: [
+        ]
+    },
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    },
+    plugins: [
         new CleanWebpackPlugin(['dist']),
-       ],
-       output: {
+    ],
+    output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, './public/dist'),
         library: 'bundle',
-             libraryTarget: 'var',
-           },
-           externals: {
-             Vue: {
-               commonjs: 'Vue',
-               commonjs2: 'Vue',
-               amd: 'Vue',
-               root: '_'
-             }
-           }
-  
+        libraryTarget: 'var',
+    },
+    externals: {
+        Vue: {
+            commonjs: 'Vue',
+            commonjs2: 'Vue',
+            amd: 'Vue',
+            root: '_'
+        }
+    }
+
 };

@@ -1,21 +1,27 @@
 <template>
-  <div class="contact_contact_div">
-      <div class="check-bok"></div>
-      <img class="contact_contact_img" src="images/default_wap/load.png" alt="">
+  <div class="contact_contact_div" @click="check_box_select()">
+      <div class="check-bok" v-bind:class="{'check-bok-selected':user_info.selected}" ></div>
+      <img class="contact_contact_img" src="images/default_wap/1.png"  alt="">
       <p class="contact_contact_name">巴德</p>
   </div>
 </template>
 <style>
+
+
+.check-bok.check-bok-selected,.all-check-box-div .check-bok-selected{
+    background: url('/images/default_wap/selected_check_box.png');
+    background-size:100% 100%;
+    border: none !important;
+}
 .check-bok{
     width: 15px;
     height: 15px;
-    border: 1px solid #EEE;
+    border: 1px solid #adadad;
     border-radius: 15px;
     float: left;
     margin-top: 14px;
     margin-left: 10px;
-    background: url('../public/images/default_wap/selected_check_box.png');
-    background-size: 15px 15px;
+   
 }
 .contact_contact_div{
     height: 44px;
@@ -42,7 +48,15 @@
 </style>
 <script>
 export default {
-  
+  methods:{
+      check_box_select:function() {
+          
+            this.user_info.selected=!this.user_info.selected;
+           this.$emit('update:user_info', this.user_info);
+           
+      }
+  },
+    props:['user_info']
 }
 </script>
 

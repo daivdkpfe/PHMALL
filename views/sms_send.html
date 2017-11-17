@@ -66,6 +66,20 @@
         text-align: center;
         background: linear-gradient(to right,#fe9b0c,#ff8000);
     }
+    .all-check-box-div{
+        width: 100vw;
+        height: 44px;
+        background: rgb(239,239,244);
+    }
+    .all_check_div{
+        width: 15px;
+        height: 15px;
+        border: 1px solid rgba(69, 69, 69, 0.52);
+        border-radius: 15px;
+        float: left;
+        margin-top: 14px;
+        margin-left: 10px;
+    }
 </style>
 <div class="big_div">
     <top title="发送短消息"></top>
@@ -84,7 +98,12 @@
     <!-- 下面的是右边duang出来的 -->
     <full-page ref="full_page">
             <top title="好友"></top>
-            <contact></contact>
+            <div class="all-check-box-div" @click="all_select">
+                <div class="all_check_div" v-bind:class="{'check-bok-selected':all_selected}" >
+                </div>
+                <p class="contact_contact_name">全选</p>
+            </div>
+            <contact v-for="list in user_list" :user_info.sync="list"></contact>
     </full-page>
 </div>
 
