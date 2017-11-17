@@ -31,7 +31,8 @@ module.exports = {
         sms:'./src/sms.js',
         sms_send:'./src/sms_send.js',
         content:'./src/content.js',
-        member_share:'./src/member_share.js'
+        member_share:'./src/member_share.js',
+        myshare:'./src/myshare.js'
     },
     devServer: {
         contentBase: './dist',

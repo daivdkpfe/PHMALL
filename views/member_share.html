@@ -1,5 +1,207 @@
 <% include header_index_iview.html %>
+    <style>
+        .demo-upload-list {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #fff;
+            position: relative;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+            margin-right: 4px;
+        }
+
+        .demo-upload-list img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .demo-upload-list-cover {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .demo-upload-list:hover .demo-upload-list-cover {
+            display: block;
+        }
+
+        .demo-upload-list-cover i {
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+
+        body {
+            background: rgb(239, 239, 244);
+        }
+
+        .chose_reg {
+            width: 100vw;
+            line-height: 44px;
+            height: 44px;
+            font-size: 15px;
+            color: #454545;
+            text-align: left;
+            text-indent: 10px;
+            margin: 10px 0;
+            background: white;
+            float: left;
+        }
+
+        .chose_reg::after {
+            content: ">";
+            float: right;
+            margin-right: 10px;
+        }
+
+        .ivu-input {
+            resize: none;
+            border: none;
+        }
+
+        .ivu-btn {
+            margin: 10px;
+        }
+
+        .upload_div {
+            width: 100vw;
+            float: left;
+            background: white;
+        }
+
+        .notice {
+            height: 44px;
+            line-height: 44px;
+            color: #454545;
+            font-size: 13px;
+            text-indent: 10px;
+            margin: 0 10px;
+        }
+
+        .ivu-icon {
+            color: #fe9b0c;
+            margin-top: 12px;
+        }
+
+        .bottom_div {
+            width: 100vw;
+            height: 49px;
+            background: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .submit_button {
+            width: 160px;
+            height: 49px;
+            float: right;
+            background: linear-gradient(to right, rgb(251, 101, 121), rgb(251, 48, 77));
+            color: white;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        .submit_info {
+            width: 215px;
+            float: left;
+            height: 49px;
+            line-height: 49px;
+            font-size: 15px;
+            text-indent: 10px;
+            color: #454545;
+        }
+
+        .submit_info d {
+            color: #fe9b0c;
+        }
+
+        .ivu-input:focus {
+            outline: none !important;
+        }
+
+        .ivu-input:hover {
+            border: none;
+            box-shadow: none;
+            outline: none !important;
+        }
+
+        .reg_reason {
+            margin-top: 10px;
+            float: left;
+            width: 100vw;
+        }
+        .bottom_btn{
+            height: 49px;
+            color: white;
+            line-height: 49px;
+            background: linear-gradient(to right,#fe9b0c,#ff8000);
+            width: 100vw;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: 15pz;
+            text-align: center;
+        }
+    </style>
+    <div class="big_div">
+        <top title="編輯"></top>
+        <ordertop></ordertop>
+
+        <div class="reg_reason">
+            <i-input v-model="value6" type="textarea" :rows="4" placeholder="晒单理由："></i-input>
+        </div>
+        <div class="upload_div">
 
 
-<script src="member_share.bundle.js"></script>
-<% include footer.html %>
+
+
+            <div class="demo-upload-list" v-for="item in uploadList">
+                <template v-if="item.status === 'finished'">
+                    <img :src="item.url">
+                    <div class="demo-upload-list-cover">
+                        <Icon type="ios-eye-outline" @click.native="handleView(item.name)"></Icon>
+                        <Icon type="ios-trash-outline" @click.native="handleRemove(item)"></Icon>
+                    </div>
+                </template>
+                <template v-else>
+                    <Progress v-if="item.showProgress" :percent="item.percentage" hide-info></Progress>
+                </template>
+            </div>
+            <Upload ref="upload" :show-upload-list="false" :default-file-list="defaultList" :on-success="handleSuccess" :format="['jpg','jpeg','png']"
+                :max-size="2048" :on-format-error="handleFormatError" :on-exceeded-size="handleMaxSize" :before-upload="handleBeforeUpload"
+                multiple type="drag" action="./upload/refund_upload" style="display: inline-block;width:58px;">
+                <div style="width: 58px;height:58px;line-height: 58px;">
+                    <Icon type="camera" size="20"></Icon>
+                </div>
+            </Upload>
+            <Modal title="View Image" v-model="visible">
+                <img :src="imgName" v-if="visible" style="width: 100%">
+            </Modal>
+        </div>
+
+        <div class="notice">
+            <Icon type="ios-lightbulb" class="fl"></Icon>
+            <p class="fl">上传图片最多三张，支持jpg、gif、png格式</p>
+        </div>
+
+
+        <div class="bottom_btn">
+            晒单分享
+        </div>
+    </div>
+
+
+
+    <script src="dist/member_share.bundle.js"></script>
+    <% include footer.html %>

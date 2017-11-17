@@ -1,0 +1,85 @@
+<% include header_index_iview.html %>
+<style>
+    body{
+        background: rgb(239,239,244);
+    }
+    .share_div{
+        width: calc(100vw - 20px);
+        height: 151px;
+        background: white;
+        margin: 0 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+    .share_div .goods_img{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        margin: 10px;
+        float: left;
+    }
+    .share_div .top{
+        height: 120px;
+        border-bottom:1px solid rgb(239,239,244);
+    }
+    .share_div .goods_title{
+        line-height: 18px;
+        width: calc(100% - 130px);
+        float: left;
+        font-size: 15px;
+        margin-top: 12px;
+        color: #454545;
+    }
+    .share_div .goods_value{
+        width:  calc(100% - 130px);
+        float: left;
+        font-size: 13px;
+        color: #adadad;
+        line-height: 18px;
+        margin-top: 8px;
+        -webkit-line-clamp: 3;
+    }
+    .share-favorite{
+        width: 15px;
+        height: 15px;
+        margin: 7.5px;
+        float: left;
+    }
+    .share_div .favorite-num,.share_div .price{
+        color: #adadad;
+        font-size: 13px;
+        float: left;
+        line-height: 30px;
+    }
+    .share_div .detele{
+        height: 15px;
+        width: 15px;
+        border: 7.5px solid rgba(0,0,0,0);
+        box-sizing: content-box;
+    }
+</style>
+<div class="big_div">
+    <top title="我的分享"></top>
+    <div class="share_div">
+        <div class="top">
+            <img src="images/default_wap/1.png" class="goods_img" alt="">
+            <p class="goods_title sl2">狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊</p>
+            <p class="goods_value sl2">狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊狗幣蘇寧吃屎的嗎啊</p>
+        </div>
+            <grow>
+                <gcol>
+                    <img src="images/default_wap/sharefavorite.png" class="share-favorite" alt="">
+                    <p class="favorite-num">1000人喜歡</p>
+                </gcol>    
+                <gcol>
+                    <p class="price">价格：P666.99</p>
+                </gcol>
+                <gcol>
+                    <img src="images/default_wap/share-detele.png" class="fr detele" alt="">
+                </gcol>
+            </grow>    
+        
+    </div>
+</div>
+<script src="dist/myshare.bundle.js"></script>
+<% include footer.html %>
