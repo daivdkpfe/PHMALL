@@ -18,13 +18,13 @@
             </div>
         </div>
         <div class="g-temp">
-            <div v-if="select==0">
+            <div v-show="select==0">
                 <slot name="slot1">我是1</slot> 
             </div>
-            <div v-if="select==1">
+            <div v-show="select==1">
                <slot name="slot2">我是2</slot>
             </div>
-            <div v-if="select==2">
+            <div v-show="select==2">
                 <slot name="slot3">我是3</slot> 
             </div>
         </div>
@@ -101,6 +101,7 @@
                 this.select = index;
                 this.$emit('change-status', index);
                 //   更改状态列表
+                this.$nextTick(function () {});
             }
         }
     }

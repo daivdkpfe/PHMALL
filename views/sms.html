@@ -51,14 +51,11 @@
     </button> -->
     <three>
         <div class="content_list" slot="slot1">
-            <contentuser></contentuser>
-            <contentuser></contentuser>
-            <contentuser></contentuser>
+            <contentuser v-for="sms in sms_list" :smsdata="sms"></contentuser>
         </div>
         <div class="content_list" slot="slot2">
-            <contentuser></contentuser>
-            <contentuser></contentuser>
-            <contentuser></contentuser>
+                <contentuser v-for="sms in sms_list" :smsdata="sms"></contentuser>
+            
         </div>
         <div class="content_list notice_div" slot="slot3">
             <contentuser>

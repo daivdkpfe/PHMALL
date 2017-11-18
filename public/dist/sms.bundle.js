@@ -46137,7 +46137,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nbody {\n    overflow: hidden;\n}\n.touch {\n    position: relative !important;\n}\n.content_div {\n    width: calc(100vw + 50px);\n    position: relative;\n    left: 0px;\n    transition:left 0.5s;\n    -moz-transition:left 0.5s; /* Firefox 4 */\n    -webkit-transition:left 0.5s; /* Safari and Chrome */\n    -o-transition:left 0.5s; /* Opera */\n}\n.content {\n    width: 100vw;\n    height: 70px;\n    float: right;\n    background: white;\n    float: left;\n    border-bottom: 1px solid #EEE;\n}\n.touch_btn {\n    width: 50px;\n    height: 70px;\n    float: right;\n    color: white;\n    text-align: center;\n    line-height: 70px;\n    background: #ff8000;\n}\n.content_id {\n    font-size: 15px;\n    margin-top: 13px;\n    line-height: 18px;\n    text-indent: 10px;\n    float: left;\n    color: #454545;\n}\n.content_time {\n    font-size: 13px;\n    margin-top: 13px;\n    line-height: 18px;\n    float: right;\n    margin-right: 10px;\n    color: #adadad;\n}\n.content_right {\n    width: 305px;\n    height: 70px;\n    float: left;\n}\n.content_value {\n    width: 305px;\n    height: 18px;\n    line-height: 18px;\n    position: relative;\n    top: 9px;\n    color: #adadad;\n    text-indent: 10px;\n}\n.content_img {\n    width: 50px;\n    float: left;\n    height: 50px;\n    margin: 10px;\n}\n.istouch {\n    left: -50px;\n}\n\n\n", ""]);
+exports.push([module.i, "\nbody {\n    overflow-x: hidden;\n}\n.touch {\n    position: relative !important;\n}\n.content_div {\n    width: calc(100vw + 50px);\n    position: relative;\n    left: 0px;\n    transition:left 0.5s;\n    -moz-transition:left 0.5s; /* Firefox 4 */\n    -webkit-transition:left 0.5s; /* Safari and Chrome */\n    -o-transition:left 0.5s; /* Opera */\n}\n.content {\n    width: 100vw;\n    height: 70px;\n    float: right;\n    background: white;\n    float: left;\n    border-bottom: 1px solid #EEE;\n}\n.touch_btn {\n    width: 50px;\n    height: 70px;\n    float: right;\n    color: white;\n    text-align: center;\n    line-height: 70px;\n    background: #ff8000;\n}\n.content_id {\n    font-size: 15px;\n    margin-top: 13px;\n    line-height: 18px;\n    text-indent: 10px;\n    float: left;\n    color: #454545;\n}\n.content_time {\n    font-size: 13px;\n    margin-top: 13px;\n    line-height: 18px;\n    float: right;\n    margin-right: 10px;\n    color: #adadad;\n}\n.content_right {\n    width: 305px;\n    height: 70px;\n    float: left;\n}\n.content_value {\n    width: 305px;\n    height: 18px;\n    line-height: 18px;\n    position: relative;\n    top: 9px;\n    color: #adadad;\n    text-indent: 10px;\n}\n.content_img {\n    width: 50px;\n    float: left;\n    height: 50px;\n    margin: 10px;\n}\n.istouch {\n    left: -50px;\n}\n\n\n", ""]);
 
 // exports
 
@@ -46260,35 +46260,35 @@ exports.push([module.i, "\nbody {\n    overflow: hidden;\n}\n.touch {\n    posit
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
+    props: ['smsdata'],
     data: function () {
         return {
             x: '',
             y: '',
             left: '',
             top: '',
-            istouch: false,
-            notouch: false
+            istouch: false
+            // notouch:false
         };
     },
     methods: {
         touchstart: function (x, y) {
             this.x = x;
-            console.log('我开始拖动了');
         }, //touch
         touching: function (x, y) {},
         touchend: function (x, y) {
             if (x - this.x > 20) {
-
                 this.istouch = false;
             } else if (this.x - x > 20) {
-
                 this.istouch = true;
             }
-            console.log('我结束拖动了');
         }
+    },
+    mounted: function () {
+
+        console.log(this.smsdata);
     }
 });
 
@@ -46338,18 +46338,26 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "content_right" }, [
                   _c("p", { staticClass: "content_id" }, [
-                    _vm._v("\n                        苏弃\n                    ")
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.smsdata.from_id) +
+                        "\n                    "
+                    )
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "content_time" }, [
                     _vm._v(
-                      "\n                        2017-14-25 14:30\n                    "
+                      "\n                      " +
+                        _vm._s(_vm.smsdata.title) +
+                        "\n                    "
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "content_value sl1" }, [
                     _vm._v(
-                      "\n                        垃圾来及来及打算速度vdfvfvasvf 是否色调风格和健康劳动法规和巨亏i\n                    "
+                      "\n                        " +
+                        _vm._s(_vm.smsdata.content) +
+                        "\n                    "
                     )
                   ])
                 ])
@@ -46576,6 +46584,7 @@ exports.push([module.i, "\n.g-temp{\n    width: 100vw;\n    float: left;\n}\n.we
             this.select = index;
             this.$emit('change-status', index);
             //   更改状态列表
+            this.$nextTick(function () {});
         }
     }
 });
@@ -46655,17 +46664,53 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "g-temp" }, [
-      _vm.select == 0
-        ? _c("div", [_vm._t("slot1", [_vm._v("我是1")])], 2)
-        : _vm._e(),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.select == 0,
+              expression: "select==0"
+            }
+          ]
+        },
+        [_vm._t("slot1", [_vm._v("我是1")])],
+        2
+      ),
       _vm._v(" "),
-      _vm.select == 1
-        ? _c("div", [_vm._t("slot2", [_vm._v("我是2")])], 2)
-        : _vm._e(),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.select == 1,
+              expression: "select==1"
+            }
+          ]
+        },
+        [_vm._t("slot2", [_vm._v("我是2")])],
+        2
+      ),
       _vm._v(" "),
-      _vm.select == 2
-        ? _c("div", [_vm._t("slot3", [_vm._v("我是3")])], 2)
-        : _vm._e()
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.select == 2,
+              expression: "select==2"
+            }
+          ]
+        },
+        [_vm._t("slot3", [_vm._v("我是3")])],
+        2
+      )
     ])
   ])
 }
@@ -46950,7 +46995,9 @@ var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
         x: 0,
         y: 0,
         startx: 0,
-        starty: 0
+        starty: 0,
+        sms_list: [],
+        arr: ['1', '2', 3]
     },
     methods: {
         sss: function () {
@@ -46976,6 +47023,27 @@ var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
                 alert("下移");
             }
         }
+    },
+    mounted: function () {
+        var that = this;
+
+        $.post('./sms', {}, function (data) {
+
+            console.log(data);
+
+            data = data.data;
+            alert(data.length);
+
+            for (var i = 0; i < data.length; i++) {
+                alert(i);
+            }
+            /* data.forEach(function(val,index){
+                data[index].reg_date=return_date(val.reg_date);
+               
+            });
+            
+            that.sms_list=data; */
+        });
     }
 });
 

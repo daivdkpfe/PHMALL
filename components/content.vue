@@ -10,13 +10,13 @@
 
                     <div class="content_right">
                         <p class="content_id">
-                            苏弃
+                            {{smsdata.from_id}}
                         </p>
                         <p class="content_time">
-                            2017-14-25 14:30
+                          {{smsdata.title}}
                         </p>
                         <p class="content_value sl1">
-                            垃圾来及来及打算速度vdfvfvasvf 是否色调风格和健康劳动法规和巨亏i
+                            {{smsdata.content}}
                         </p>
                     </div>
                      </slot>
@@ -28,7 +28,7 @@
 </template>
 <style>
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .touch {
@@ -107,13 +107,13 @@
 
     .istouch {
         left: -50px;
-
     }
 
     
 </style>
 <script>
     export default {
+        props:['smsdata'],
         data: function () {
             return {
                 x: '',
@@ -121,26 +121,26 @@
                 left: '',
                 top: '',
                 istouch: false,
-                notouch:false
+                // notouch:false
             }
         },
         methods: {
             touchstart: function (x, y) {
                 this.x = x;
-                console.log('我开始拖动了');
             }, //touch
             touching: function (x, y) {
             },
             touchend: function (x, y) {
                 if (x - this.x > 20) {
-                    
                     this.istouch = false;
                 } else if (this.x-x > 20) {
-                  
                     this.istouch = true;
                 }
-                console.log('我结束拖动了');
             }
+        },
+        mounted:function(){
+            
+            console.log(this.smsdata);
         }
     }
 </script>

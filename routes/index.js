@@ -224,8 +224,6 @@ router.post("/get_onsale", function (req, res, next) {
           if (errs) logger.info("Caught exception:" + errs);
           vals[index]['price'] = valss[0].goods_market_price;
           s++;
-          console.log(vals.length);
-          console.log(s);
           if (s == vals.length) {
             var respod = {
               ret: '200',

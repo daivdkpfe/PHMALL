@@ -12,6 +12,7 @@ import touch from '../components/gxc/touch.vue'
 import threesms from '../components/threesms.vue'
 import release from '../components/release.vue'
 
+
 Vue.use(iView);
 var lang=lang_ch;
 
@@ -26,8 +27,10 @@ var lang=lang_ch;
         data:{
             x:0,
             y:0,
-            startx:0,
-            starty:0
+            startx:0, 
+            starty:0,
+            sms_list:[],
+            arr:['1','2',3]
         },
         methods:{
             sss:function(){
@@ -57,5 +60,29 @@ var lang=lang_ch;
                 
                 
             }
+        },
+        mounted:function(){
+            var that=this;
+           
+           $.post('./sms',{},function(data){
+            
+            console.log(data);  
+                 
+                data=data.data;
+                alert(data.length); 
+                
+                for (var i=0;i<data.length;i++)
+                {
+                    alert(i);
+                }
+               /* data.forEach(function(val,index){
+                   data[index].reg_date=return_date(val.reg_date);
+                  
+               });
+               
+               that.sms_list=data; */
+               
+
+           })
         }
     })
