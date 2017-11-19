@@ -2710,3 +2710,1371 @@
 [2017-11-18 13:44:28.093] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
 [2017-11-18 13:45:15.158] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
 [2017-11-18 13:45:48.252] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:47:10.742] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:47:20.238] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:50:18.430] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:50:25.694] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:50:35.781] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:53:54.627] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:55:25.786] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:56:15.672] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 13:57:00.200] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:01:20.158] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:01:24.089] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:01:36.844] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:02:42.690] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:03:12.906] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:05:50.430] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:07:36.047] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:07:39.523] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:17:26.967] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:17:46.119] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:19:40.485] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:20:08.070] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:20:09.859] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:20:31.265] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:21:41.429] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:21:51.243] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:22:46.893] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:23:00.694] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:23:42.627] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:25:16.359] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:26:27.985] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:26:41.595] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:28:51.959] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:29:32.899] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:29:49.353] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:30:54.710] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:31:37.569] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:31:57.652] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:32:43.363] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:33:08.192] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:33:25.356] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:33:26.540] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:34:31.588] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:35:20.020] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:36:31.504] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:37:12.057] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-18 14:37:12.060] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-18 14:37:12.065] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-18 14:37:12.066] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-18 14:37:12.066] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-18 14:37:12.067] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-18 14:37:12.068] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-18 14:37:12.068] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-18 14:37:12.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-18 14:37:12.071] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-18 14:37:12.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-18 14:37:12.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-18 14:37:12.074] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-18 14:37:12.075] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-18 14:37:12.075] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-18 14:37:12.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-18 14:37:12.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-18 14:37:12.077] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-18 14:37:12.077] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-18 14:37:12.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-18 14:37:12.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-18 14:37:12.079] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-18 14:37:12.081] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-18 14:37:12.082] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-18 14:37:16.582] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:37:20.031] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 14:37:21.424] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:37:22.385] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 14:37:24.462] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:37:25.069] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:37:36.809] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:37:37.422] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:37:42.997] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-18 14:37:43.000] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-18 14:37:43.000] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-18 14:37:43.001] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-18 14:37:43.002] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-18 14:37:43.002] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-18 14:37:43.002] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-18 14:37:43.003] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-18 14:37:43.004] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-18 14:37:43.005] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-18 14:37:43.006] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-18 14:37:43.007] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-18 14:37:43.009] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-18 14:37:43.010] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-18 14:37:43.011] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-18 14:37:43.012] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-18 14:37:43.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-18 14:37:43.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-18 14:37:43.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-18 14:37:43.014] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-18 14:37:43.015] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-18 14:37:43.016] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-18 14:37:43.017] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-18 14:37:43.017] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-18 14:37:46.135] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:37:49.539] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 14:37:50.706] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:37:52.033] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 14:37:52.826] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:38:13.459] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-18 14:38:13.468] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-18 14:38:13.470] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-18 14:38:13.472] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-18 14:38:13.473] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-18 14:38:13.473] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-18 14:38:13.475] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-18 14:38:13.477] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-18 14:38:13.479] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-18 14:38:13.482] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-18 14:38:13.484] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-18 14:38:13.489] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-18 14:38:13.492] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-18 14:38:13.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-18 14:38:13.503] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-18 14:38:13.504] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-18 14:38:13.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-18 14:38:13.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-18 14:38:13.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-18 14:38:13.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-18 14:38:13.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-18 14:38:13.507] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-18 14:38:13.511] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-18 14:38:13.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-18 14:38:36.467] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 14:38:37.728] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:38:40.099] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 14:38:41.685] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:39:21.257] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:39:59.731] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:40:12.078] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:40:30.713] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:40:45.502] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:41:03.940] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:41:19.334] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:41:39.707] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:42:44.240] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:43:04.722] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:43:24.239] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:44:10.805] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:44:36.146] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:53:54.845] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:53:57.756] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:54:06.236] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    55503903@qq.com,f328204a9507f18aa76d06cc21f0ae80,Z3hjMTYwMjI4
+[2017-11-18 14:54:18.491] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 14:54:31.494] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 14:54:32.740] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:54:34.756] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 14:54:44.027] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 14:54:52.096] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:55:10.327] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 14:58:50.399] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 14:59:09.488] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:07:47.660] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 15:08:54.829] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,31650aae61c83486338abfb105917517,cGhhbGw=
+[2017-11-18 15:09:34.960] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 15:09:42.501] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 15:10:12.289] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:17:39.385] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 15:17:47.386] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 15:17:58.113] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:30:21.814] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 15:30:42.786] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 15:30:44.493] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 15:30:46.301] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 15:30:50.415] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:31:58.168] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:32:37.626] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:32:43.059] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:33:23.990] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:33:27.981] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:34:04.775] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:43:29.292] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:47:08.883] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:53:30.951] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:53:49.274] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 15:57:39.506] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:04:29.064] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:09:09.012] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:09:11.559] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:10:40.561] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:11:55.922] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:12:03.668] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:12:07.969] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:12:11.652] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:12:15.731] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:13:06.707] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:14:46.053] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:14:52.082] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:14:54.184] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:18:53.789] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:20:11.069] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:21:36.071] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:21:45.693] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:21:47.192] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:21:48.327] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:21:50.639] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:22:30.411] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:23:25.326] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:24:10.303] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:24:46.370] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:25:23.745] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:30:40.695] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:30:42.237] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:31:42.378] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:32:13.161] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:32:28.960] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:33:28.960] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:42:47.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-18 16:42:47.079] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-18 16:42:47.080] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-18 16:42:47.080] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-18 16:42:47.085] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-18 16:42:47.086] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-18 16:42:47.087] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-18 16:42:47.089] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-18 16:42:47.090] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-18 16:42:47.091] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-18 16:42:47.092] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-18 16:42:47.096] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-18 16:42:47.104] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-18 16:42:47.106] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-18 16:42:47.109] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-18 16:42:47.111] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-18 16:42:47.112] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-18 16:42:47.112] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-18 16:42:47.114] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-18 16:42:47.119] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-18 16:42:47.120] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-18 16:42:47.124] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-18 16:42:47.125] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-18 16:42:47.127] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-18 16:45:08.442] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:45:25.287] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:45:26.725] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:45:28.443] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:45:30.454] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:46:44.097] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 16:47:02.724] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,a8affc088cbca89fa20dbd98c91362e4,Y2xpY2s=
+[2017-11-18 16:47:11.812] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:47:13.292] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:47:15.665] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:47:17.996] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:47:26.406] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 16:47:33.759] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:47:37.867] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:49:42.079] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:51:02.181] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 16:51:28.105] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:53:05.853] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 16:57:21.043] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:01:50.008] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:02:02.539] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:02:11.213] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-18 17:02:11.215] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-18 17:02:11.216] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-18 17:02:11.216] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-18 17:02:11.217] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-18 17:02:11.217] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-18 17:02:11.218] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-18 17:02:11.218] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-18 17:02:11.218] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-18 17:02:11.219] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-18 17:02:11.220] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-18 17:02:11.220] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-18 17:02:11.221] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-18 17:02:11.222] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-18 17:02:11.224] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-18 17:02:11.224] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-18 17:02:11.225] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-18 17:02:11.225] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-18 17:02:11.226] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-18 17:02:11.226] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-18 17:02:11.227] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-18 17:02:11.228] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-18 17:02:11.228] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-18 17:02:11.228] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-18 17:02:22.208] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 17:02:29.014] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,5e4b07a65d6d52be16604a6297e243ce,b2htbGw=
+[2017-11-18 17:02:36.240] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 17:02:36.484] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 17:02:40.663] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 17:02:41.756] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 17:02:43.992] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2017-11-18 17:02:45.583] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 17:02:47.074] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:02:47.077] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id='?' AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:02:47.090] [INFO] log_file - Caught exception:Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'admin'' AND send_del='0' ORDER BY uid DESC' at line 1
+[2017-11-18 17:03:34.131] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-18 17:03:34.133] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-18 17:03:34.134] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-18 17:03:34.134] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-18 17:03:34.135] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-18 17:03:34.135] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-18 17:03:34.136] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-18 17:03:34.136] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-18 17:03:34.136] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-18 17:03:34.137] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-18 17:03:34.139] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-18 17:03:34.140] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-18 17:03:34.142] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-18 17:03:34.142] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-18 17:03:34.144] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-18 17:03:34.145] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-18 17:03:34.146] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-18 17:03:34.147] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-18 17:03:34.147] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-18 17:03:34.147] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-18 17:03:34.148] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-18 17:03:34.149] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-18 17:03:34.150] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-18 17:03:34.151] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-18 17:03:41.249] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-18 17:03:42.438] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1510963200,1511049599
+[2017-11-18 17:03:43.981] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-18 17:03:45.705] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:03:45.709] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:08:59.194] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:08:59.199] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:13:08.506] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:13:08.510] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:13:27.348] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:13:27.350] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:17:22.962] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:17:22.965] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:17:22.966] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:18:34.873] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:18:34.874] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:18:34.876] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:20:47.279] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:20:47.280] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-18 17:20:47.282] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:00:19.549] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 10:00:19.552] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 10:00:19.553] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 10:00:19.553] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 10:00:19.554] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 10:00:19.554] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 10:00:19.555] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 10:00:19.555] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 10:00:19.555] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 10:00:19.556] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 10:00:19.557] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 10:00:19.558] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 10:00:19.559] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 10:00:19.560] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 10:00:19.560] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 10:00:19.561] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 10:00:19.561] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 10:00:19.562] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 10:00:19.562] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 10:00:19.562] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 10:00:19.563] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 10:00:19.564] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 10:00:19.564] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 10:00:19.565] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 10:00:44.726] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 10:00:47.965] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 10:00:51.820] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 10:00:53.143] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 10:01:47.059] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 10:02:04.843] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:02:04.852] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:02:04.855] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:14:11.569] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 10:14:11.571] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 10:14:11.572] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 10:14:11.572] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 10:14:11.573] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 10:14:11.573] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 10:14:11.574] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 10:14:11.574] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 10:14:11.574] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 10:14:11.575] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 10:14:11.576] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 10:14:11.577] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 10:14:11.578] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 10:14:11.578] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 10:14:11.579] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 10:14:11.580] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 10:14:11.581] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 10:14:11.581] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 10:14:11.582] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 10:14:11.583] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 10:14:11.583] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 10:14:11.584] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 10:14:11.584] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 10:14:11.585] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 10:16:35.310] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 10:16:37.750] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 10:16:39.226] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 10:16:40.775] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:16:40.777] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:16:40.778] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:16:53.090] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:16:53.095] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:16:53.098] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:17:14.683] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:17:14.689] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:17:14.691] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:17:18.021] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:17:18.035] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:17:18.036] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:25.919] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:25.921] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:25.921] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:28.006] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:28.007] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:28.010] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:37.819] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:37.821] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:18:37.822] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:12.611] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:12.617] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:12.621] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:27.134] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:27.139] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:27.140] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:37.060] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:37.064] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:19:37.066] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:20:32.422] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 10:20:52.640] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 10:20:54.906] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 10:20:56.662] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 10:21:00.959] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:21:00.963] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:21:00.964] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:25:20.675] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:25:20.677] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:25:20.685] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:27:05.347] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:27:05.350] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:27:05.352] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:27:49.204] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:27:49.208] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:27:49.209] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:28:01.493] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:28:01.496] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:28:01.497] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:28:38.190] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:28:38.191] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:28:38.195] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:32:31.261] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:32:31.262] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:32:31.264] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:34:33.988] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:34:33.996] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:34:34.001] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:35:12.806] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:35:12.809] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:35:12.811] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:36:32.875] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:36:32.882] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:36:32.883] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:37:33.453] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:37:33.456] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:37:33.457] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:39:29.260] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:39:29.263] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:39:29.266] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:10.490] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:10.504] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:10.511] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:44.311] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:44.312] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:44.313] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:48.962] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:48.964] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:43:48.965] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:44:15.820] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:44:15.822] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:44:15.826] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:45:32.484] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:45:32.492] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:45:32.496] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:45:44.903] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:45:44.907] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:45:44.918] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:47:03.080] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:47:03.085] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:47:03.099] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:49:08.813] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:49:08.817] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:49:08.822] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:51:53.039] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:51:53.041] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:51:53.044] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:57:54.686] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:57:54.687] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:57:54.688] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:58:20.286] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:58:20.290] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:58:20.291] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:58:43.904] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:58:43.910] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:58:43.917] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:04.088] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:04.099] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:04.101] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:12.085] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:12.094] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:12.095] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:45.406] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:45.409] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 10:59:45.411] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:00:54.048] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:00:54.050] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:00:54.055] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:01:16.970] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:01:16.973] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:01:16.978] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:24.583] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:24.585] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:24.587] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:35.895] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:35.896] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:35.896] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:48.005] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:48.007] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:02:48.008] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:17:36.909] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 11:17:36.912] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 11:17:36.924] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 11:17:36.925] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 11:17:36.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 11:17:36.927] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 11:17:36.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 11:17:36.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 11:17:36.934] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 11:17:36.936] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 11:17:36.938] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 11:17:36.940] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 11:17:36.942] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 11:17:36.943] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 11:17:36.944] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 11:17:36.945] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 11:17:36.946] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 11:17:36.946] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 11:17:36.947] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 11:17:36.949] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 11:17:36.950] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 11:17:36.952] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 11:17:36.956] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 11:17:36.958] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 11:18:08.972] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 11:18:19.231] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 11:18:20.516] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 11:18:22.280] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 11:18:24.511] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:18:24.513] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:18:24.515] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:20:00.114] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:20:00.119] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:20:00.121] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:20:46.216] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:20:46.217] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:20:46.218] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:21:15.972] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:21:15.975] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:21:15.976] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:21:45.303] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:21:45.307] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:21:45.308] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:22:10.350] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:22:10.353] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:22:10.359] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:26:18.259] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:26:18.265] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:26:18.268] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:27:01.181] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:27:01.183] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:27:01.184] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:46:39.668] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 11:46:39.671] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 11:46:39.671] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 11:46:39.671] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 11:46:39.672] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 11:46:39.672] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 11:46:39.672] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 11:46:39.673] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 11:46:39.673] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 11:46:39.674] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 11:46:39.676] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 11:46:39.677] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 11:46:39.678] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 11:46:39.678] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 11:46:39.679] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 11:46:39.680] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 11:46:39.680] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 11:46:39.680] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 11:46:39.681] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 11:46:39.681] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 11:46:39.682] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 11:46:39.683] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 11:46:39.684] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 11:46:39.685] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 11:46:54.136] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 11:47:12.732] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 11:47:14.733] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 11:47:22.153] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 11:47:24.753] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:47:24.755] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:47:24.757] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:54:19.765] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:54:19.768] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 11:54:19.771] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:15:16.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 13:15:16.611] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 13:15:16.611] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 13:15:16.612] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 13:15:16.612] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 13:15:16.612] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 13:15:16.613] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 13:15:16.613] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 13:15:16.614] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 13:15:16.615] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 13:15:16.616] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 13:15:16.616] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 13:15:16.618] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 13:15:16.618] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 13:15:16.618] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 13:15:16.619] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 13:15:16.620] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 13:15:16.620] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 13:15:16.621] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 13:15:16.621] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 13:15:16.622] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 13:15:16.623] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 13:15:16.624] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 13:15:16.625] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 13:18:15.700] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 13:18:20.652] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 13:18:21.836] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 13:18:23.528] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 13:18:25.856] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:18:25.859] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:18:25.860] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:10.841] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:10.847] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:10.852] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:18.359] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:18.365] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:18.367] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:28.679] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:28.685] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:28.686] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:59.659] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:59.660] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:22:59.661] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:23:53.998] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:23:54.002] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:23:54.003] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:24:23.622] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:24:23.625] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:24:23.626] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:24:29.976] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:24:29.978] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:24:29.980] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:28:24.999] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:28:25.000] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:28:25.000] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:28:47.166] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:28:47.168] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:28:47.172] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:30:04.396] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:30:04.398] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:30:04.399] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:30:23.601] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:30:23.602] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:30:23.606] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:31:21.294] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:31:21.303] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:31:21.307] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:37:32.116] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:37:32.124] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:37:32.125] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:38:44.517] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:38:44.518] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:38:44.520] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:39:48.446] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:39:48.447] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:39:48.449] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:40:31.736] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:40:31.741] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:40:31.742] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:41:35.260] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:41:35.261] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:41:35.264] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:42:57.443] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:42:57.446] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:42:57.448] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:45:50.986] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:45:50.999] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:45:51.006] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 13:45:51.055] [INFO] log_file - Caught exception:Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE is_broadcast='1' ORDER BY uid DESC' at line 1
+[2017-11-19 13:48:09.648] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 13:48:09.650] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 13:48:09.651] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 13:48:09.651] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 13:48:09.651] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 13:48:09.652] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 13:48:09.652] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 13:48:09.653] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 13:48:09.653] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 13:48:09.654] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 13:48:09.655] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 13:48:09.656] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 13:48:09.657] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 13:48:09.657] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 13:48:09.657] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 13:48:09.658] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 13:48:09.659] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 13:48:09.660] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 13:48:09.661] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 13:48:09.661] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 13:48:09.662] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 13:48:09.665] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 13:48:09.665] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 13:48:09.666] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 13:48:15.684] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 13:48:20.537] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 13:48:21.874] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 13:48:22.921] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 13:48:24.928] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:48:24.932] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 13:48:24.935] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:01:30.873] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:01:30.875] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:01:30.876] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:01:30.876] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:01:30.877] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:01:30.877] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:01:30.878] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:01:30.878] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:01:30.878] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:01:30.879] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:01:30.880] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:01:30.881] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:01:30.882] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:01:30.883] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:01:30.885] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:01:30.885] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:01:30.886] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:01:30.886] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:01:30.887] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:01:30.887] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:01:30.888] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:01:30.889] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:01:30.890] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:01:30.891] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:01:40.717] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:01:45.854] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:01:46.941] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:01:48.535] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:01:50.066] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:01:50.068] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:01:50.069] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:07:54.075] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:07:54.078] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:07:54.082] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:13:14.040] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:13:14.043] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:13:14.045] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:13:14.045] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:13:14.045] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:13:14.046] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:13:14.046] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:13:14.047] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:13:14.048] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:13:14.049] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:13:14.051] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:13:14.052] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:13:14.053] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:13:14.054] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:13:14.055] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:13:14.057] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:13:14.058] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:13:14.060] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:13:14.060] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:13:14.061] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:13:14.062] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:13:14.064] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:13:14.067] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:13:14.068] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:15:43.857] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:15:44.930] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:15:45.960] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:15:47.383] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:15:47.389] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:15:47.390] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:16:11.134] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:16:11.141] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:16:11.142] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:17:50.200] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    41,admin
+[2017-11-19 14:18:14.550] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    41,admin
+[2017-11-19 14:18:22.836] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:18:22.838] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:18:22.839] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:18:25.504] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    40,admin
+[2017-11-19 14:23:39.813] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:23:39.818] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:23:39.820] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:23:47.813] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    39,admin
+[2017-11-19 14:23:52.125] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    38,admin
+[2017-11-19 14:23:54.858] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    37,admin
+[2017-11-19 14:23:57.973] [INFO] log_file - UPDATE `mvm_sms` SET to_del='1' WHERE uid=? AND to_id=?    36,admin
+[2017-11-19 14:26:01.680] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:26:01.683] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:26:01.689] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:27:13.162] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:27:13.167] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:27:13.168] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:30:12.481] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:30:12.488] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:30:12.489] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:40:35.052] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:40:35.054] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:40:35.055] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:40:35.057] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:40:35.059] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:40:35.059] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:40:35.062] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:40:35.065] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:40:35.066] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:40:35.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:40:35.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:40:35.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:40:35.071] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:40:35.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:40:35.075] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:40:35.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:40:35.083] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:40:35.085] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:40:35.085] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:40:35.086] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:40:35.090] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:40:35.092] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:40:35.095] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:40:35.103] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:40:41.143] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:40:42.321] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:40:43.938] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:40:47.206] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:40:47.210] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:40:47.213] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:40:47.223] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:42:40.887] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:42:40.889] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:42:40.890] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:42:40.890] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:42:40.891] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:42:40.891] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:42:40.892] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:42:40.893] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:42:40.894] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:42:40.895] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:42:40.900] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:42:40.900] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:42:40.901] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:42:40.902] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:42:40.903] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:42:40.903] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:42:40.904] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:42:40.905] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:42:40.905] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:42:40.906] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:42:40.907] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:42:40.909] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:42:40.910] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:42:40.911] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:42:43.734] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:42:45.059] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:42:47.802] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:42:51.771] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:42:51.776] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:42:51.778] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:42:51.796] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:44:54.010] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:44:54.014] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:44:54.015] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:44:54.015] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:44:54.016] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:44:54.016] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:44:54.017] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:44:54.017] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:44:54.018] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:44:54.018] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:44:54.019] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:44:54.021] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:44:54.022] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:44:54.022] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:44:54.023] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:44:54.023] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:44:54.024] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:44:54.024] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:44:54.024] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:44:54.025] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:44:54.025] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:44:54.026] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:44:54.027] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:44:54.028] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:44:55.890] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:45:01.159] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:45:02.740] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:45:04.579] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:45:06.542] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:45:06.543] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:45:06.545] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:45:06.561] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:31.416] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:45:31.425] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:45:31.426] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:45:31.433] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:45:31.434] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:45:31.436] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:45:31.437] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:45:31.439] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:45:31.441] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:45:31.443] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:45:31.446] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:45:31.448] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:45:31.449] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:45:31.454] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:45:31.454] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:45:31.455] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:45:31.455] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:45:31.456] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:45:31.456] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:45:31.457] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:45:31.458] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:45:31.459] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:45:31.460] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:45:31.460] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:45:33.464] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:45:38.053] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:45:39.717] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:45:40.952] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:45:42.958] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:45:42.963] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:45:42.969] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:45:42.979] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:42.988] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:42.997] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:42.999] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.001] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.003] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.009] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.011] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.015] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.017] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:45:43.023] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:47:26.576] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:48:09.110] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:48:10.910] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:48:10.916] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:48:10.918] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:48:10.921] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.933] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.937] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.943] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.947] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.950] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.952] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.954] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.963] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.975] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:48:10.980] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.929] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:49:42.931] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:49:42.935] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:49:42.942] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.958] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.959] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.961] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.964] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.976] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.978] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.985] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.990] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.993] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:49:42.994] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:38.809] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 14:50:38.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 14:50:38.812] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 14:50:38.813] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 14:50:38.813] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 14:50:38.814] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 14:50:38.815] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 14:50:38.815] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 14:50:38.815] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 14:50:38.816] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 14:50:38.817] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 14:50:38.819] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 14:50:38.820] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 14:50:38.820] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 14:50:38.821] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 14:50:38.821] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 14:50:38.822] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 14:50:38.822] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 14:50:38.823] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 14:50:38.823] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 14:50:38.823] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 14:50:38.825] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 14:50:38.825] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 14:50:38.826] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 14:50:43.507] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 14:50:44.936] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 14:50:45.898] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 14:50:47.648] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:50:47.661] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 14:50:47.663] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 14:50:47.667] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.674] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.680] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.703] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.710] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.721] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.726] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.732] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.733] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.739] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.746] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.752] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.753] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.755] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.761] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.766] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.767] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.768] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.769] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.770] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.772] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.774] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.789] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.793] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.796] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.798] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.801] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 14:50:47.803] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.092] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 15:15:16.094] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 15:15:16.097] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 15:15:16.118] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.120] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.125] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.126] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.127] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.138] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.141] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.142] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.145] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.151] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.159] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.161] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.173] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.176] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.183] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.184] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.186] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.187] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.190] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.192] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.198] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.204] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.205] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.210] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.211] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.216] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.220] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 15:15:16.222] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:24.487] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 16:37:24.490] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 16:37:24.491] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 16:37:24.491] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 16:37:24.492] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 16:37:24.492] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 16:37:24.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 16:37:24.493] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 16:37:24.494] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 16:37:24.495] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 16:37:24.497] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 16:37:24.498] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 16:37:24.499] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 16:37:24.500] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 16:37:24.500] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 16:37:24.501] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 16:37:24.502] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 16:37:24.503] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 16:37:24.503] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 16:37:24.504] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 16:37:24.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 16:37:24.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 16:37:24.507] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 16:37:24.508] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 16:37:40.053] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 16:37:48.610] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 16:37:48.651] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 16:37:54.469] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 16:37:57.342] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:37:57.350] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:37:57.351] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 16:37:57.384] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.388] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.409] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.412] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.414] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.419] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.421] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.423] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.425] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.428] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.429] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.431] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.432] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.436] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.438] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.441] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.443] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.446] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.448] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.450] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.450] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.452] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.458] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.460] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.462] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.464] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.467] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:37:57.472] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:39:16.033] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:40:43.736] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:41:53.273] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:43:20.915] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:44:30.415] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:44:35.629] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:44:35.632] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:44:35.637] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 16:44:35.644] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.646] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.648] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.649] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.656] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.657] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.659] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.661] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.665] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.666] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.668] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.669] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.670] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.671] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.673] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.676] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.680] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.682] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.685] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.687] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.695] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.709] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.718] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.744] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.747] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.749] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.751] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:35.755] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:44:40.457] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:54:55.982] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-11-19 16:54:55.985] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-11-19 16:54:55.986] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-11-19 16:54:55.987] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-11-19 16:54:55.987] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-11-19 16:54:55.991] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-11-19 16:54:55.991] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-11-19 16:54:55.992] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-11-19 16:54:55.994] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-11-19 16:54:55.996] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-11-19 16:54:55.998] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-11-19 16:54:55.999] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-11-19 16:54:56.000] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-11-19 16:54:56.000] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-11-19 16:54:56.001] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-11-19 16:54:56.002] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-11-19 16:54:56.002] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-11-19 16:54:56.003] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-11-19 16:54:56.004] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-11-19 16:54:56.005] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-11-19 16:54:56.006] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-11-19 16:54:56.007] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-11-19 16:54:56.009] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-11-19 16:54:56.009] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-11-19 16:55:00.994] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-11-19 16:55:02.153] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1511049600,1511135999
+[2017-11-19 16:55:03.393] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-11-19 16:55:04.806] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:55:04.811] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:55:04.814] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 16:55:04.833] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.840] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.853] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.856] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.872] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.875] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.878] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.883] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.889] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.890] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.893] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.894] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.899] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.900] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.906] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.907] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.910] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.911] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.915] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.916] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.918] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.920] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.929] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.932] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.937] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.940] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.942] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:04.945] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:55:07.292] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:55:07.295] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 16:55:07.298] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 16:56:03.822] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:56:03.825] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 16:56:03.827] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 16:56:11.003] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:56:11.008] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 16:56:11.023] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 16:56:17.746] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:56:17.750] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 16:56:17.757] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 16:56:29.069] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:56:29.072] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 16:56:29.074] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 16:57:04.389] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:57:04.391] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 16:57:04.393] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 16:57:04.398] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.400] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.403] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.404] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.406] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.409] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.411] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.412] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.413] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.416] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.420] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.421] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.423] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.424] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.427] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.428] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.432] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.433] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.440] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.441] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.443] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.445] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.451] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.469] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.480] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.492] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.496] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:04.502] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 16:57:12.269] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 16:57:12.273] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 16:57:12.276] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:00:58.143] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:00:58.149] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:00:58.152] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:02:32.611] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:02:32.617] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:02:32.619] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:02:35.309] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 17:02:35.312] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 17:02:35.315] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 17:02:35.319] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.322] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.326] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.331] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.334] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.335] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.337] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.340] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.345] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.346] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.350] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.352] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.355] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.357] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.361] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.364] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.386] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.389] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.391] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.393] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.396] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.399] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.403] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.416] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.420] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.424] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.427] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:35.429] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.284] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2017-11-19 17:02:37.287] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2017-11-19 17:02:37.292] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2017-11-19 17:02:37.297] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.315] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.342] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.347] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.358] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.360] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.366] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.367] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.373] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.375] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.378] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.380] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.386] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.388] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.390] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.390] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.392] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.393] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.394] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.395] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.396] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.397] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.410] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.413] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.420] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.422] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.424] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:37.425] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-11-19 17:02:38.659] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:02:38.661] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:02:38.663] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:20:50.638] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:20:50.651] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:20:50.655] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:25:16.921] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:25:16.929] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:25:16.933] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:41:19.818] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:41:19.832] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:41:19.835] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:52:29.467] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:52:29.507] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:52:29.532] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 17:52:44.479] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 17:52:44.482] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 17:52:44.484] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-11-19 18:01:41.336] [INFO] log_file - select * from `mvm_friend` where belong_uid=?    1
+[2017-11-19 18:01:41.344] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    ava
+[2017-11-19 18:01:41.348] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College

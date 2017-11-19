@@ -922,6 +922,8 @@ exports.push([module.i, "\n.header{\n    box-shadow: 0px 10px 125px rgba(0,0,0,0
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
    props: ['title']
@@ -938,19 +940,26 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "big_div" }, [
     _c("div", { staticClass: "h44 header" }, [
-      _c("div", { staticClass: "header_div h44" }, [
-        _c("img", {
-          staticClass: "back fl",
-          attrs: { src: "images/default_wap/return.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "back fr",
-          attrs: { src: "images/default_wap/moreblack.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("p", [_vm._v("\n" + _vm._s(_vm.title) + "\n            ")])
-      ])
+      _c(
+        "div",
+        { staticClass: "header_div h44" },
+        [
+          _c("img", {
+            staticClass: "back fl",
+            attrs: { src: "images/default_wap/return.png", alt: "" }
+          }),
+          _vm._v(" "),
+          _vm._t("right", [
+            _c("img", {
+              staticClass: "back fr",
+              attrs: { src: "images/default_wap/moreblack.png", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("\n" + _vm._s(_vm.title) + "\n            ")])
+        ],
+        2
+      )
     ])
   ])
 }
@@ -46017,14 +46026,7 @@ var render = function() {
     "div",
     {
       staticClass: "touch",
-      on: {
-        touchstart: _vm.start,
-        touchmove: function($event) {
-          $event.preventDefault()
-          _vm.touching($event)
-        },
-        touchend: _vm.end
-      }
+      on: { touchstart: _vm.start, touchmove: _vm.touching, touchend: _vm.end }
     },
     [_vm._t("touch")],
     2
@@ -46249,10 +46251,16 @@ var render = function() {
       _vm._v(" "),
       _c("img", {
         staticClass: "contact_contact_img",
-        attrs: { src: "images/default_wap/1.png", alt: "" }
+        attrs: {
+          src: "images/default_wap/load.png",
+          "data-src": "http://www.phmall.com.ph/union/" + _vm.user_info.img,
+          alt: ""
+        }
       }),
       _vm._v(" "),
-      _c("p", { staticClass: "contact_contact_name" }, [_vm._v("巴德")])
+      _c("p", { staticClass: "contact_contact_name" }, [
+        _vm._v(_vm._s(_vm.user_info.member_id))
+      ])
     ]
   )
 }

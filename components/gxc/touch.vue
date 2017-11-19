@@ -1,5 +1,5 @@
 <template>
-  <div class="touch"  @touchstart="start" v-on:touchmove.prevent="touching" @touchend="end">
+  <div class="touch"  @touchstart="start" v-on:touchmove="touching" @touchend="end">
       <slot name='touch'>
            
       </slot>

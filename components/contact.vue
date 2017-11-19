@@ -1,8 +1,8 @@
 <template>
   <div class="contact_contact_div" @click="check_box_select()">
       <div class="check-bok" v-bind:class="{'check-bok-selected':user_info.selected}" ></div>
-      <img class="contact_contact_img" src="images/default_wap/1.png"  alt="">
-      <p class="contact_contact_name">巴德</p>
+      <img class="contact_contact_img" src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+user_info.img" alt="">
+      <p class="contact_contact_name">{{user_info.member_id}}</p>
   </div>
 </template>
 <style>

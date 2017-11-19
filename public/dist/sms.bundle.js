@@ -922,6 +922,8 @@ exports.push([module.i, "\n.header{\n    box-shadow: 0px 10px 125px rgba(0,0,0,0
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
    props: ['title']
@@ -938,19 +940,26 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "big_div" }, [
     _c("div", { staticClass: "h44 header" }, [
-      _c("div", { staticClass: "header_div h44" }, [
-        _c("img", {
-          staticClass: "back fl",
-          attrs: { src: "images/default_wap/return.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "back fr",
-          attrs: { src: "images/default_wap/moreblack.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("p", [_vm._v("\n" + _vm._s(_vm.title) + "\n            ")])
-      ])
+      _c(
+        "div",
+        { staticClass: "header_div h44" },
+        [
+          _c("img", {
+            staticClass: "back fl",
+            attrs: { src: "images/default_wap/return.png", alt: "" }
+          }),
+          _vm._v(" "),
+          _vm._t("right", [
+            _c("img", {
+              staticClass: "back fr",
+              attrs: { src: "images/default_wap/moreblack.png", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("\n" + _vm._s(_vm.title) + "\n            ")])
+        ],
+        2
+      )
     ])
   ])
 }
@@ -46017,14 +46026,7 @@ var render = function() {
     "div",
     {
       staticClass: "touch",
-      on: {
-        touchstart: _vm.start,
-        touchmove: function($event) {
-          $event.preventDefault()
-          _vm.touching($event)
-        },
-        touchend: _vm.end
-      }
+      on: { touchstart: _vm.start, touchmove: _vm.touching, touchend: _vm.end }
     },
     [_vm._t("touch")],
     2
@@ -46137,7 +46139,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nbody {\n    overflow-x: hidden;\n}\n.touch {\n    position: relative !important;\n}\n.content_div {\n    width: calc(100vw + 50px);\n    position: relative;\n    left: 0px;\n    transition:left 0.5s;\n    -moz-transition:left 0.5s; /* Firefox 4 */\n    -webkit-transition:left 0.5s; /* Safari and Chrome */\n    -o-transition:left 0.5s; /* Opera */\n}\n.content {\n    width: 100vw;\n    height: 70px;\n    float: right;\n    background: white;\n    float: left;\n    border-bottom: 1px solid #EEE;\n}\n.touch_btn {\n    width: 50px;\n    height: 70px;\n    float: right;\n    color: white;\n    text-align: center;\n    line-height: 70px;\n    background: #ff8000;\n}\n.content_id {\n    font-size: 15px;\n    margin-top: 13px;\n    line-height: 18px;\n    text-indent: 10px;\n    float: left;\n    color: #454545;\n}\n.content_time {\n    font-size: 13px;\n    margin-top: 13px;\n    line-height: 18px;\n    float: right;\n    margin-right: 10px;\n    color: #adadad;\n}\n.content_right {\n    width: 305px;\n    height: 70px;\n    float: left;\n}\n.content_value {\n    width: 305px;\n    height: 18px;\n    line-height: 18px;\n    position: relative;\n    top: 9px;\n    color: #adadad;\n    text-indent: 10px;\n}\n.content_img {\n    width: 50px;\n    float: left;\n    height: 50px;\n    margin: 10px;\n}\n.istouch {\n    left: -50px;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.notice_div .nodown{\r\n  height: 100px !important;\n}\n.content_div .nodown {\r\n    height: 70px;\n}\n.content_div .full-info{\r\n    background: white;\n}\n.content_div .full-info .from_id {\r\n    height: 18px;\r\n    line-height: 18px;\r\n    margin-top: 77px;\r\n    color: #adadad;\r\n    font-size: 13px;\r\n    padding-left: 10px;\n}\n.notice_div .full-info .from_id {\r\n    height: 18px;\r\n    line-height: 18px;\r\n    margin-top: 7px;\r\n    color: #adadad;\r\n    font-size: 13px;\r\n    padding-left: 10px;\n}\n.content_div .full-info .to_id {\r\n    height: 18px;\r\n    line-height: 18px;\r\n    margin-top: 4px;\r\n    color: #adadad;\r\n    font-size: 13px;\r\n    padding-left: 10px;\n}\n.content_div .full-info .content_title {\r\n    height: 18px;\r\n    line-height: 18px;\r\n    margin-top: 4px;\r\n    color: #adadad;\r\n    font-size: 13px;\r\n    padding-left: 10px;\n}\n.content_div .full-info .content_value {\r\n    width: 285px;\r\n    line-height: 18px;\r\n    position: relative;\r\n    color: #adadad;\r\n    text-indent: 0;\r\n    top: 0;\r\n    height: inherit;\r\n    color: #adadad;\r\n    font-size: 13px;\r\n    padding-left: 10px;\n}\nbody {\r\n    overflow-x: hidden !important;\r\n        height: 100vh;\n}\nhtml {\r\n    overflow-x: hidden;\n}\n.touch {\r\n    position: relative !important;\n}\n.content_div {\r\n    width: calc(100vw + 50px);\r\n    position: relative;\r\n    left: 0px;\r\n    transition: left 0.5s;\r\n    -moz-transition: left 0.5s;\r\n    /* Firefox 4 */\r\n    -webkit-transition: left 0.5s;\r\n    /* Safari and Chrome */\r\n    -o-transition: left 0.5s;\r\n    /* Opera */\n}\n.content_div .down {\r\n    width: 15px;\r\n    height: 15px;\r\n    float: right;\r\n    margin-right: 10px;\n}\n.content_div .notice_down {\r\n    width: 15px;\r\n    height: 15px;\r\n    float: right;\r\n    margin-right: 10px;\r\n    position: relative;\r\n    top: -15px;\n}\n.content {\r\n    width: 100vw;\r\n    float: right;\r\n    background: white;\r\n    float: left;\r\n    border-bottom: 1px solid #eee;\n}\n.touch_btn {\r\n    width: 50px;\r\n    height: 70px;\r\n    float: right;\r\n    color: white;\r\n    text-align: center;\r\n    line-height: 70px;\r\n    background: #ff8000;\n}\n.content_id {\r\n    font-size: 15px;\r\n    margin-top: 13px;\r\n    line-height: 18px;\r\n    text-indent: 10px;\r\n    float: left;\r\n    color: #454545;\n}\n.content_time {\r\n    font-size: 13px;\r\n    margin-top: 13px;\r\n    line-height: 18px;\r\n    float: right;\r\n    margin-right: 10px;\r\n    color: #adadad;\n}\n.content_right {\r\n    width: 305px;\r\n    height: 70px;\r\n    float: left;\n}\n.content_value {\r\n    width: 285px;\r\n    height: 18px;\r\n    line-height: 18px;\r\n    position: relative;\r\n    top: 9px;\r\n    color: #adadad;\r\n    text-indent: 10px;\n}\n.content_img {\r\n    width: 50px;\r\n    float: left;\r\n    height: 50px;\r\n    margin: 10px;\n}\n.istouch {\r\n    left: -50px;\n}\r\n", ""]);
 
 // exports
 
@@ -46260,36 +46262,185 @@ exports.push([module.i, "\nbody {\n    overflow-x: hidden;\n}\n.touch {\n    pos
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-    props: ['smsdata'],
-    data: function () {
-        return {
-            x: '',
-            y: '',
-            left: '',
-            top: '',
-            istouch: false
-            // notouch:false
-        };
-    },
-    methods: {
-        touchstart: function (x, y) {
-            this.x = x;
-        }, //touch
-        touching: function (x, y) {},
-        touchend: function (x, y) {
-            if (x - this.x > 20) {
-                this.istouch = false;
-            } else if (this.x - x > 20) {
-                this.istouch = true;
-            }
-        }
-    },
-    mounted: function () {
-
-        console.log(this.smsdata);
+  props: ["smsdata", 'sms_type'],
+  data: function () {
+    return {
+      x: "",
+      y: "",
+      left: "",
+      top: "",
+      istouch: false,
+      nodown: true,
+      deted: false
+      // notouch:false
+    };
+  },
+  watch: {
+    nodown: function () {
+      this.istouch = false;
     }
+  },
+  methods: {
+    touchstart: function (x, y) {
+      this.x = x;
+    }, //touch
+    touching: function (x, y) {},
+    touchend: function (x, y) {
+      if (x - this.x > 20) {
+        this.istouch = false;
+        if (e && e.preventDefault) e.preventDefault();else
+          //IE
+          window.event.returnValue = false;
+      } else if (this.x - x > 20) {
+        this.istouch = true;
+        this.nodown = true;
+        if (e && e.preventDefault) e.preventDefault();else
+          //IE
+          window.event.returnValue = false;
+      }
+    },
+    det: function (uid, type) {
+      var that = this;
+      $.post('./sms/det', { uid: uid, type: type }, function (data) {
+        console.log(data);
+        var respond = data.data;
+        if (data.ret == '200') {
+          if (respond.status == 1) {
+            that.deted = true;
+          } else {}
+        } else {
+          window.location.href = './login';
+        }
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -46301,74 +46452,284 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "touch",
-    {
-      ref: "touchdiv",
-      attrs: { monitor: "true" },
-      on: {
-        touchstart: _vm.touchstart,
-        touching: _vm.touching,
-        touchend: _vm.touchend
-      }
-    },
-    [
-      _c(
-        "div",
+  return !_vm.deted
+    ? _c(
+        "touch",
         {
-          staticClass: "content_div",
-          class: { istouch: _vm.istouch },
-          attrs: { slot: "touch", id: "touch" },
-          slot: "touch"
+          ref: "touchdiv",
+          attrs: { monitor: "true" },
+          on: {
+            touchstart: _vm.touchstart,
+            touching: _vm.touching,
+            touchend: _vm.touchend
+          }
         },
         [
-          _c("div", { staticClass: "touch_btn" }, [
-            _vm._v("\n                删除\n            ")
-          ]),
-          _vm._v(" "),
           _c(
             "div",
-            { staticClass: "content" },
+            {
+              staticClass: "content_div",
+              class: { istouch: _vm.istouch },
+              attrs: { slot: "touch", id: "touch" },
+              slot: "touch"
+            },
             [
-              _vm._t("slide", [
-                _c("img", {
-                  staticClass: "content_img",
-                  attrs: { src: "images/default_wap/load.png", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "content_right" }, [
-                  _c("p", { staticClass: "content_id" }, [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(_vm.smsdata.from_id) +
-                        "\n                    "
+              _c(
+                "div",
+                {
+                  staticClass: "touch_btn",
+                  on: {
+                    click: function($event) {
+                      _vm.det(_vm.smsdata.uid, _vm.sms_type)
+                    }
+                  }
+                },
+                [_vm._v("\n      删除\n    ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "content", class: { nodown: _vm.nodown } },
+                [
+                  _vm._t("slide", [
+                    _c("img", {
+                      staticClass: "content_img",
+                      attrs: {
+                        src: "images/default_wap/load.png",
+                        "data-src":
+                          "http://www.phmall.com.ph/union/" + _vm.smsdata.img,
+                        alt: ""
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "content_right" }, [
+                      _c("p", { staticClass: "content_id" }, [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(_vm.smsdata.from_id) +
+                            "\n          "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "content_time" }, [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(_vm.smsdata.reg_date) +
+                            "\n          "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "content_value sl1" }, [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(_vm.smsdata.title) +
+                            "\n          "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("img", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: _vm.nodown,
+                            expression: "nodown"
+                          }
+                        ],
+                        staticClass: "down",
+                        attrs: { src: "images/default_wap/down.png", alt: "" },
+                        on: {
+                          click: function($event) {
+                            _vm.nodown = false
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: !_vm.nodown,
+                            expression: "!nodown"
+                          }
+                        ],
+                        staticClass: "down",
+                        attrs: { src: "images/default_wap/up.png", alt: "" },
+                        on: {
+                          click: function($event) {
+                            _vm.nodown = true
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: !_vm.nodown,
+                            expression: "!nodown"
+                          }
+                        ],
+                        staticClass: "full-info"
+                      },
+                      [
+                        _c("p", { staticClass: "from_id" }, [
+                          _vm._v(
+                            "\n            发件人：" +
+                              _vm._s(_vm.smsdata.from_id) +
+                              "\n          "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "to_id" }, [
+                          _vm._v(
+                            "\n            收件人：" +
+                              _vm._s(_vm.smsdata.to_id) +
+                              "\n          "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "content_title" }, [
+                          _vm._v(
+                            "\n            标题：" +
+                              _vm._s(_vm.smsdata.title) +
+                              "\n          "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "content_value" }, [
+                          _vm._v(
+                            "\n            内容：" +
+                              _vm._s(_vm.smsdata.content) +
+                              "\n          "
+                          )
+                        ])
+                      ]
                     )
                   ]),
                   _vm._v(" "),
-                  _c("p", { staticClass: "content_time" }, [
-                    _vm._v(
-                      "\n                      " +
-                        _vm._s(_vm.smsdata.title) +
-                        "\n                    "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "content_value sl1" }, [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(_vm.smsdata.content) +
-                        "\n                    "
+                  _vm._t("notice", [
+                    _c("p", { staticClass: "notice_title sl1" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.smsdata.title) +
+                          "\n        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "notice_value sl2" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.smsdata.content) +
+                          "\n        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "notice_time" }, [
+                      _vm._v(
+                        "\n         " +
+                          _vm._s(_vm.smsdata.reg_date) +
+                          "\n        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.nodown,
+                          expression: "nodown"
+                        }
+                      ],
+                      staticClass: "notice_down",
+                      attrs: { src: "images/default_wap/down.png", alt: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.nodown = false
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("img", {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: !_vm.nodown,
+                          expression: "!nodown"
+                        }
+                      ],
+                      staticClass: "notice_down",
+                      attrs: { src: "images/default_wap/up.png", alt: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.nodown = true
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: !_vm.nodown,
+                            expression: "!nodown"
+                          }
+                        ],
+                        staticClass: "full-info"
+                      },
+                      [
+                        _c("p", { staticClass: "from_id" }, [
+                          _vm._v(
+                            "\n            发件人：" +
+                              _vm._s(_vm.smsdata.from_id) +
+                              "\n          "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "to_id" }, [
+                          _vm._v(
+                            "\n            收件人：" +
+                              _vm._s(_vm.smsdata.to_id) +
+                              "\n          "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "content_title" }, [
+                          _vm._v(
+                            "\n            标题：" +
+                              _vm._s(_vm.smsdata.title) +
+                              "\n          "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "content_value" }, [
+                          _vm._v(
+                            "\n            内容：" +
+                              _vm._s(_vm.smsdata.content) +
+                              "\n          "
+                          )
+                        ])
+                      ]
                     )
                   ])
-                ])
-              ])
-            ],
-            2
+                ],
+                2
+              )
+            ]
           )
         ]
       )
-    ]
-  )
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -46997,7 +47358,9 @@ var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
         startx: 0,
         starty: 0,
         sms_list: [],
-        arr: ['1', '2', 3]
+        sms_send_list: [],
+        notice: [],
+        sms_notice_list: []
     },
     methods: {
         sss: function () {
@@ -47026,25 +47389,51 @@ var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
     },
     mounted: function () {
         var that = this;
-
+        var t = this;
         $.post('./sms', {}, function (data) {
-
             console.log(data);
+            var datas = data.data;
+            if (data.ret == "200") {
+                datas.forEach((val, index) => {
+                    datas[index].reg_date = return_date(val.reg_date);
+                });
 
-            data = data.data;
-            alert(data.length);
+                t.sms_list = datas;
 
-            for (var i = 0; i < data.length; i++) {
-                alert(i);
+                console.log(t.sms_list);
+            } else {
+                window.location.href = './login';
             }
-            /* data.forEach(function(val,index){
-                data[index].reg_date=return_date(val.reg_date);
-               
-            });
-            
-            that.sms_list=data; */
+        });
+        $.post('./sms/send', {}, function (data) {
+
+            if (data.ret == "200") {
+
+                var datas = data.data;
+                datas.forEach((val, index) => {
+                    datas[index].reg_date = return_date(val.reg_date);
+                });
+
+                t.sms_send_list = datas;
+                console.log(t.sms_send_list);
+            } else {
+                window.location.href = './login';
+            }
+        });
+        $.post('./sms/notice', {}, function (data) {
+
+            if (data.ret == "200") {
+                var datas = data.data;
+                datas.forEach((val, index) => {
+                    datas[index].reg_date = return_date(val.reg_date);
+                });
+                t.sms_notice_list = datas;
+            } else {
+                window.location.href = './login';
+            }
         });
     }
+
 });
 
 /***/ })

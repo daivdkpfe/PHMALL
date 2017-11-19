@@ -458,6 +458,8 @@ var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
    props: ['title']
@@ -475,19 +477,26 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "big_div" }, [
     _c("div", { staticClass: "h44 header" }, [
-      _c("div", { staticClass: "header_div h44" }, [
-        _c("img", {
-          staticClass: "back fl",
-          attrs: { src: "images/default_wap/return.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "back fr",
-          attrs: { src: "images/default_wap/moreblack.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("p", [_vm._v("\n" + _vm._s(_vm.title) + "\n            ")])
-      ])
+      _c(
+        "div",
+        { staticClass: "header_div h44" },
+        [
+          _c("img", {
+            staticClass: "back fl",
+            attrs: { src: "images/default_wap/return.png", alt: "" }
+          }),
+          _vm._v(" "),
+          _vm._t("right", [
+            _c("img", {
+              staticClass: "back fr",
+              attrs: { src: "images/default_wap/moreblack.png", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("\n" + _vm._s(_vm.title) + "\n            ")])
+        ],
+        2
+      )
     ])
   ])
 }

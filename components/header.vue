@@ -4,7 +4,9 @@
     <div class="h44 header">
         <div class="header_div h44">
             <img src="images/default_wap/return.png" class="back fl" alt="">
+            <slot name="right">
             <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+            </slot>
             <p>
 {{title}}
             </p>

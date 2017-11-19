@@ -1,81 +1,82 @@
 <% include header_index_iview.html %>
-<style>
-    body{
-        background: rgb(239,239,244);
-    }
-    .content_list{
-        width: 100vw;
-        background: white;
-        float: left;
-        margin-top: 5px;
-    }
-    .notice_title{
-        width: calc(100vw - 20px);
-        height: 36px;
-        margin: 0 auto;
-        line-height: 18px;
-        font-size: 15px;
-        color: #454545;
-        margin-top: 9px;
-    }
-    .notice_value{
-        width: calc(100vw - 20px);
-        height: 18px;
-        margin: 0 auto;
-        line-height: 18px;
-        font-size: 13px;
-        color: #adadad;
-        margin-top: 7px;
-    }
-    .notice_div .content{
-        height: 100px;
-    }
-    .notice_div .touch_btn{
-        height: 100px;
-        line-height: 100px;
-    }
-    .notice_time{
-        width: calc(100vw - 20px);
-        height: 18px;
-        margin: 0 auto;
-        line-height: 18px;
-        font-size: 13px;
-        color: #adadad;
-        margin-top: 5px;
-    }
-</style>
-<div class="big_div">
-    <top title="短消息"></top>
-    <!-- <button @touchstart="start" v-on:touchmove.prevent="sb" @touchend="end" v-bind:style="'top:'+y+'px;left:'+x+'px;position:fixed'">
+    <style>
+        body {
+            background: rgb(239, 239, 244);
+        }
+        
+        .content_list {
+            width: 100vw;
+            background: white;
+            float: left;
+            margin-top: 5px;
+        }
+        
+        .notice_title {
+            width: calc(100vw - 20px);
+            height: 36px;
+            margin: 0 auto;
+            line-height: 18px;
+            font-size: 15px;
+            color: #454545;
+            margin-top: 9px;
+        }
+        
+        .notice_value {
+            width: calc(100vw - 20px);
+            height: 18px;
+            margin: 0 auto;
+            line-height: 18px;
+            font-size: 13px;
+            color: #adadad;
+            margin-top: 7px;
+        }
+        
+        .notice_div .content {
+            /* height: 100px; */
+        }
+        
+        .notice_div .touch_btn {
+            height: 100px;
+            line-height: 100px;
+        }
+        
+        .notice_time {
+            width: calc(100vw - 20px);
+            height: 18px;
+            margin: 0 auto;
+            line-height: 18px;
+            font-size: 13px;
+            color: #adadad;
+            margin-top: 5px;
+        }
+    </style>
+    <div class="big_div">
+        <top title="短消息"></top>
+        <!-- <button @touchstart="start" v-on:touchmove.prevent="sb" @touchend="end" v-bind:style="'top:'+y+'px;left:'+x+'px;position:fixed'">
         sndhufhuhbgf
     </button> -->
-    <three>
-        <div class="content_list" slot="slot1">
-            <contentuser v-for="sms in sms_list" :smsdata="sms"></contentuser>
-        </div>
-        <div class="content_list" slot="slot2">
-                <contentuser v-for="sms in sms_list" :smsdata="sms"></contentuser>
-            
-        </div>
-        <div class="content_list notice_div" slot="slot3">
-            <contentuser>
-                <div slot="slide">
-                    <p class="notice_title sl1"> 
-                        dfuihgiuhidfughuishbu ifgvbiusdg bfyuasd bfuyhvgsab yhufvys uafdyaujsg vfyujsa  fyugavsuf gbasuifgbs aufgbsdugfu iagbsdfasfsbvf uvsdyfvdsyfv sduvfy usavdfusai kbdlsadjoa dnssfydv safdysagf si
-                     </p>
-                     <p class="notice_value sl2">
-                        我是内容我是内容我是内容我是内容我是内容我是内容
-                     </p>
-                     <p class="notice_time">
-                            2017-12-31 12:00
-                     </p>
-                </div>
-            </contentuser>
-        </div>
-    </three>
-    
-    <release></release>
-</div>
-<script src="dist/sms.bundle.js"></script>
+        <three>
+            <div class="content_list" slot="slot1">
+                <contentuser v-for="sms in sms_list" :smsdata="sms" sms_type="receive">
+                    <div slot="notice"></div>
+                </contentuser>
+            </div>
+            <div class="content_list" slot="slot2">
+                <contentuser v-for="sms in sms_send_list" :smsdata="sms" sms_type="send">
+                    <div slot="notice"></div>
+                </contentuser>
 
-<% include footer.html %>
+            </div>
+            <div class="content_list notice_div" slot="slot3">
+                <contentuser v-for="sms in sms_notice_list" :smsdata="sms" sms_type="admin">
+                    <div slot="slide"></div>
+                </contentuser>
+
+            </div>
+        </three>
+
+        <release></release>
+    </div>
+    <script src="dist/sms.bundle.js"></script>
+
+    <% include footer.html %>
