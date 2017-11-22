@@ -14,11 +14,32 @@ router.get('/', function(req, res, next) {
     }
     run(); */
     res.render('member_share', { title: 'PHMALL' });
+
 });
-/* router.get('/index', function(req, res, next) {
-  res.render('admin/index', { title: 'Express' });
-});
-router.get('/setting', function(req, res, next) {
-  res.render('admin/setting', { title: 'Express' });
-}); */
+router.post('/', function(req, res, next) {
+    if (req.session.sign && req.session.m_id) {
+        var uid = req.session.uid;
+        async function run() {
+            var order_share = await sqlaysnc('select * from `mvm_order_share` where uid=?', [uid]);
+            console.log(order_share);
+            if (order_share != 0 && order_share.length > 0) {
+                // var order_goods =　await sqlasync('select * ')
+
+            } else {
+                var respod = {
+                    ret: '205',
+                    data: {}
+                }
+                res.json(respod);
+            }
+        }
+        run();
+    } else {
+        var respod = {
+            ret: '201',
+            data: {}
+        }
+        res.json(respod);
+    }
+})
 module.exports = router;

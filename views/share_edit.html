@@ -1,4 +1,5 @@
 <% include header_index_iview.html %>
+
     <style>
         .demo-upload-list {
             display: inline-block;
@@ -96,10 +97,14 @@
         .bottom_div {
             width: 100vw;
             height: 49px;
-            background: white;
+            background: linear-gradient(to right, #fe9b0c, #FFB800);
             position: fixed;
             bottom: 0;
+            color: white;
+            text-align: center;
+            line-height: 49px;
             left: 0;
+            font-size: 15px;
         }
         
         .submit_button {
@@ -136,33 +141,20 @@
             outline: none !important;
         }
         
-        .reg_reason {
-            margin-top: 10px;
+        .ordertop {
+            margin-bottom: 10px;
             float: left;
-            width: 100vw;
-        }
-        
-        .bottom_btn {
-            height: 49px;
-            color: white;
-            line-height: 49px;
-            background: linear-gradient(to right, #fe9b0c, #ff8000);
-            width: 100vw;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            font-size: 15pz;
-            text-align: center;
         }
     </style>
     <div class="big_div">
-        <top title="編輯"></top>
-        <ordertop>
+        <top title="分享"></top>
 
+
+        <ordertop class="ordertop">
         </ordertop>
 
         <div class="reg_reason">
-            <i-input v-model="value6" type="textarea" :rows="4" placeholder="晒单理由："></i-input>
+            <i-input v-model="value6" type="textarea" :rows="4" placeholder="分享理由："></i-input>
         </div>
         <div class="upload_div">
 
@@ -198,12 +190,10 @@
         </div>
 
 
-        <div class="bottom_btn">
+        <div class="bottom_div">
             晒单分享
         </div>
     </div>
-
-
-
-    <script src="dist/member_share.bundle.js"></script>
+    <script src="dist/regrefund.bundle.js">
+    </script>
     <% include footer.html %>

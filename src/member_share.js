@@ -11,51 +11,52 @@ Vue.use(iView);
 Vue.component("top", header);
 Vue.component("order", order);
 Vue.component("ordertop", ordertop);
-var page=new Vue({
-    el:'.big_div',
-    data:{
-        value6:'',
+var page = new Vue({
+    el: '.big_div',
+    data: {
+        value6: '',
         defaultList: [
-           
+
         ],
         imgName: '',
         visible: false,
         uploadList: [],
-    },mounted () {
+    },
+    mounted() {
         this.uploadList = this.$refs.upload.fileList;
     },
-    methods:{
-        handleView (name) {
-            
+    methods: {
+        handleView(name) {
+
             this.imgName = name;
             this.visible = true;
         },
-        handleRemove (file) {
-            
+        handleRemove(file) {
+
             const fileList = this.$refs.upload.fileList;
             this.$refs.upload.fileList.splice(fileList.indexOf(file), 1);
         },
-        handleSuccess (res, file) {
-            
-            file.url = 'http://192.168.0.105/english/xx/'+res;
-            file.name = 'http://192.168.0.105/english/xx/'+res;
+        handleSuccess(res, file) {
+
+            file.url = 'http://192.168.0.105/english/xx/' + res;
+            file.name = 'http://192.168.0.105/english/xx/' + res;
         },
-        handleFormatError (file) {
-           
+        handleFormatError(file) {
+
             this.$Notice.warning({
                 title: 'The file format is incorrect',
                 desc: 'File format of ' + file.name + ' is incorrect, please select jpg or png.'
             });
         },
-        handleMaxSize (file) {
-            
+        handleMaxSize(file) {
+
             this.$Notice.warning({
                 title: 'Exceeding file size limit',
                 desc: 'File  ' + file.name + ' is too large, no more than 2M.'
             });
         },
-        handleBeforeUpload () {
-            
+        handleBeforeUpload() {
+
             const check = this.uploadList.length < 3;
             if (!check) {
                 this.$Notice.warning({
@@ -64,5 +65,10 @@ var page=new Vue({
             }
             return check;
         }
+    },
+    mounted: function() {
+        $.post('/member_share', { uid: 281 }, function(data) {
+            console.log(data);
+        })
     }
 })
