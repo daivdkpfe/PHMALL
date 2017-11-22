@@ -157,7 +157,7 @@
     </style>
     <div class="big_div">
         <top title="編輯"></top>
-        <ordertop>
+        <ordertop :info="goods">
 
         </ordertop>
 
@@ -198,12 +198,101 @@
         </div>
 
 
-        <div class="bottom_btn">
+        <div class="bottom_btn" @click="share()">
             晒单分享
         </div>
     </div>
 
 
-
+    <script src="images/default_wap/vue.js"></script>
     <script src="dist/member_share.bundle.js"></script>
+    <script>
+        Vue.use(bundle);
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                value6: '',
+                defaultList: [],
+                imgName: '',
+                visible: false,
+                uploadList: [],
+                goods: {},
+                share_info: {}
+            },
+            mounted() {
+                this.uploadList = this.$refs.upload.fileList;
+            },
+            methods: {
+                share: function() {
+
+                    var that = this;
+                    console.log(that.goods);
+                    $.post('/member_share/release', {
+                        goods_name: that.goods[0].goods_name
+                    }, function(data) {
+                        console.log(data);
+
+                    })
+                },
+                handleView(name) {
+
+                    this.imgName = name;
+                    this.visible = true;
+                },
+                handleRemove(file) {
+
+                    const fileList = this.$refs.upload.fileList;
+                    this.$refs.upload.fileList.splice(fileList.indexOf(file), 1);
+                },
+                handleSuccess(res, file) {
+
+                    file.url = 'http://192.168.0.105/english/xx/' + res;
+                    file.name = 'http://192.168.0.105/english/xx/' + res;
+                    this.uploadList.push(file);
+
+                    console.log(file.url);
+                },
+                handleFormatError(file) {
+
+                    this.$Notice.warning({
+                        title: 'The file format is incorrect',
+                        desc: 'File format of ' + file.name + ' is incorrect, please select jpg or png.'
+                    });
+                },
+                handleMaxSize(file) {
+
+                    this.$Notice.warning({
+                        title: 'Exceeding file size limit',
+                        desc: 'File  ' + file.name + ' is too large, no more than 2M.'
+                    });
+                },
+                handleBeforeUpload() {
+
+                    const check = this.uploadList.length < 3;
+                    if (!check) {
+                        this.$Notice.warning({
+                            title: 'Up to five pictures can be uploaded.'
+                        });
+                    }
+                    return check;
+                }
+            },
+            mounted: function() {
+                var that = this;
+                $.post('/member_share', {
+                    uid: '<%= uid %>'
+                }, function(data) {
+
+                    if (data.ret == '200') {
+                        var datas = data.data;
+                        that.goods = datas.goods;
+                        console.log(that.goods);
+                    } else if (data.ret == '201') {
+                        window.location.href = "./login";
+                    }
+
+                })
+            }
+        })
+    </script>
     <% include footer.html %>

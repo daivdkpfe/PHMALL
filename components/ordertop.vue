@@ -2,9 +2,9 @@
 <template>
     <div>
         <div class="order_top">
-            订单号：696944812349654
+            订单号：{{info["0"].ordersn}}
         </div>
-        <order>
+        <order :goods='info[0]'>
             <slot name="refund_detail">
                    <div slot="refund_detail"></div>
             </slot>
@@ -28,3 +28,11 @@
     text-indent: 10px;
 }
 </style>
+<script>
+export default {
+  props:['info'],
+  mounted:function(){
+      console.log(this.info);
+  }
+}
+</script>

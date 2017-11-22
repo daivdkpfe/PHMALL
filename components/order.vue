@@ -1,9 +1,9 @@
 <!--订单栏-->
 <template>
   <div class="order_div">
-      <img src="images/default_wap/load.png" class="goods_img" alt="">
-      <p class="goods_name sl2 fl">不便宜的ipad王八蛋客服不买了真的不买了</p>
-      <p class="goods_attr fl sl1">颜色：红色</p>
+      <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+goods.img" class="goods_img" alt="">
+      <p class="goods_name sl2 fl">{{goods.goods_name}}</p>
+      <p class="goods_attr fl sl1">{{attr}}</p>
       
       <slot name="refund_detail">
         <div class="order_button">退款详情</div>
@@ -55,3 +55,23 @@
     margin-right: 10px;
 }
 </style>
+<script>
+export default {
+    data:function(){
+        return{
+            attr:''
+        }
+    },
+  props:['goods'],
+  mounted:function(){
+      var i=this.goods.goods_attr.split("|");
+        i.pop();
+        console.log(i);
+        var str='';
+        for(let s in i){
+            str+=' '+i[s];
+        }
+     this.attr=str;
+  }
+}
+</script>
