@@ -1,0 +1,126 @@
+<% include header_index_iview.html %>
+    <style>
+        body {
+            background: rgb(239, 239, 244);
+        }
+        
+        .media_bd {
+            width: 100vw;
+            height: 44px;
+            font-size: 15px;
+            color: #454545;
+            text-align: left;
+            text-indent: 10px;
+            background: white;
+            line-height: 44px;
+        }
+        
+        .media_title_p {
+            float: left;
+            width: 100px;
+            height: 44px;
+            font-size: 15px;
+            color: #454545;
+            text-align: left;
+            text-indent: 10px;
+            background: white;
+            line-height: 44px;
+        }
+        /* .media_receiver::after {
+            content: '>';
+            float: right;
+            margin-right: 10px;
+        } */
+        
+        .media_title_input {
+            border: none;
+            float: left;
+            width: 250px;
+        }
+        
+        .media_value_p {
+            float: left;
+            width: 100px;
+            height: 44px;
+            font-size: 15px;
+            color: #454545;
+            text-align: left;
+            text-indent: 10px;
+            background: white;
+            line-height: 44px;
+        }
+        
+        .media_value_input {
+            border: none;
+            float: left;
+            width: 250px;
+            resize: none;
+        }
+        
+        .h100 {
+            height: 100px;
+        }
+        
+        .bottom_button {
+            height: 49px;
+            line-height: 49px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            color: #FFF;
+            font-size: 18px;
+            text-align: center;
+            background: linear-gradient(to right, #fe9b0c, #ff8000);
+        }
+        
+        .all-check-box-div {
+            width: 100vw;
+            height: 44px;
+            background: rgb(239, 239, 244);
+        }
+        
+        .all_check_div {
+            width: 15px;
+            height: 15px;
+            border: 1px solid rgba(69, 69, 69, 0.52);
+            border-radius: 15px;
+            float: left;
+            margin-top: 14px;
+            margin-left: 10px;
+        }
+        
+        .ok_btn {
+            display: inline-block;
+            float: right;
+        }
+        
+        .selected_friend_list {
+            position: absolute;
+            right: 30px;
+            width: 150px;
+            float: right;
+            text-align: right;
+        }
+    </style>
+    <div class="big_div">
+        <top title="发送短消息"></top>
+        <div class="h44 media_bd media_receiver">
+            <p class="fl">收件人</p>
+            <c class="selected_friend_list sl1">All members</c>
+        </div>
+        <div class="h44 media_bd">
+            <p class="media_title_p">标题</p>
+            <input class="media_title_input" placeholder="请输入标题" v-model="title" type="text">
+        </div>
+        <div class="h100 media_bd">
+            <p class="media_value_p">内容</p>
+            <textarea class="media_value_input" placeholder="请输入内容" v-model="content" type="text"> </textarea>
+        </div>
+
+        <div class="bottom_button" @click="send('notice')">发送</div>
+        <!-- 上面的是一开始显示的 -->
+
+    </div>
+    <script src="dist/sms_send.bundle.js"></script>
+    <% include footer.html %>

@@ -15,10 +15,13 @@ router.get('/', function(req, res, next) {
     run(); */
     res.render('myshare', { title: 'PHMALL' });
 });
-/* router.get('/index', function(req, res, next) {
-  res.render('admin/index', { title: 'Express' });
-});
-router.get('/setting', function(req, res, next) {
-  res.render('admin/setting', { title: 'Express' });
-}); */
+
+router.post('/', function(req, res, next) {
+    var m_uid = req.session.m_uid;
+    async function run() {
+        var a = await sqlasnyc("select * from `mvm_order_share` where m_uid=?", [m_uid]);
+        console.log(a);
+    }
+    run();
+})
 module.exports = router;

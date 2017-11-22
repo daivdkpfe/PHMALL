@@ -47,7 +47,7 @@
     background: rgba(0,0,0,0.8);
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 501;
 }
 .menu_list{
     width: 100vw;
@@ -79,7 +79,7 @@ export default {
           this.$emit('cancel');
       },
       select:function(index,val){
-        alert("你点击了第"+index+'的按钮，他的内容是'+val);
+       
         this.$emit('selected',index,val);
     
       }

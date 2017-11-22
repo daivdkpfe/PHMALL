@@ -64,14 +64,22 @@ router.post('/send', function(req, res, next) {
             var m_uid = req.session.m_uid;
             var sql = "SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC";
             var sms = await sqlasnyc(sql, [m_id]);
+
             if (sms != 0 && sms.length > 0) {
                 for (let i in sms) {
-                    var img = await sqlasnyc('select member_image from `mvm_member_table` where member_id=?', [sms[i].to_id]);
-                    console.log(img);
-                    sms[i].img = img[0].member_image;
+                    if (sms[i].to_id.includes(',')) {
+
+                    } else {
+                        var img = await sqlasnyc('select member_image from `mvm_member_table` where member_id=?', [sms[i].to_id]);
+                        console.log(sms[i].to_id);
+                        console.log(img);
+                        if (img == '0') {} else {
+                            sms[i].img = img[0].member_image;
+                        }
+
+                    }
+
                 }
-
-
             }
             var respod = {
                 ret: '200',

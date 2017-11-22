@@ -14,11 +14,17 @@ router.get('/', function(req, res, next) {
     }
     run();  */
     if (req.session.sign && req.session.m_id) {
-        res.render('sms_send', { title: 'PHMALL' });
+        console.log("sssssssssssssssss:" + req.query.type);
+        if ('notice' == req.query.type) {
+            res.render('sms_send_notice', { title: 'PHMALL', type: req.query.type });
+        } else {
+            res.render('sms_send_sms', { title: 'PHMALL', type: req.query.type });
+        }
     } else {
         res.redirect('./login'); //重定向
     }
 });
+
 router.post('/', function(req, res, next) {
     if (req.session.sign && req.session.m_id) {
         var m_uid = req.session.m_uid;
@@ -47,5 +53,31 @@ router.post('/', function(req, res, next) {
         res.json(respod);
     }
 })
+router.post('/send', function(req, res, next) {
+    if (req.session.sign && req.session.m_id) {
+        var post = req.body;
+        var m_uid = req.session.m_uid;
+        var m_id = req.session.m_id;
+        var to_id = req.body.to_id;
+        var title = req.body.title;
+        var content = req.body.content;
+        var is_broadcast = req.body.is_broadcast;
+        async function run() {
+            await sqlasnyc('insert into `mvm_sms` set from_id=?,to_id=?,title=?,content=?,is_broadcast=?', [m_id, to_id, title, content, is_broadcast]);
+            var respod = {
+                ret: '200',
+                data: 1
+            }
+            res.json(respod);
+        }
+        run();
+    } else {
 
+        var respod = {
+            ret: '201',
+            data: {}
+        }
+        res.json(respod);
+    }
+})
 module.exports = router;

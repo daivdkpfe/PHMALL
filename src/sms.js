@@ -11,8 +11,8 @@ import content from '../components/content.vue'
 import touch from '../components/gxc/touch.vue'
 import threesms from '../components/threesms.vue'
 import release from '../components/release.vue'
-
-
+import ActionSheet from '../components/gxc/ActionSheet.vue'
+Vue.component('actionsheet', ActionSheet);
 Vue.use(iView);
 var lang = lang_ch;
 
@@ -32,12 +32,10 @@ var page = new Vue({
         sms_list: [],
         sms_send_list: [],
         notice: [],
-        sms_notice_list: []
+        sms_notice_list: [],
+        menu_list: ['发送短消息', '发送广播'] //ActionSheet列表
     },
     methods: {
-        sss: function() {
-            alert("sss");
-        },
         sb: function(x) {
             this.x = x.changedTouches["0"].clientX;
             this.y = x.changedTouches["0"].clientY;
@@ -59,13 +57,29 @@ var page = new Vue({
             }
 
 
+        },
+        clickActionSheet: function() {
+            this.$refs.ActionSheet.show = !this.$refs.ActionSheet.show;
+
+        }, //外部触发ActionSheet
+        chosed: function(index, val) {
+            var that = this;
+
+            if ('1' == index) {
+                window.location.href = "./sms_send?type=notice"
+            } else {
+                window.location.href = "./sms_send?type=sms"
+
+            }
+
+
         }
     },
     mounted: function() {
         var that = this;
         var t = this;
         $.post('./sms', {}, function(data) {
-            console.log(data);
+
             var datas = data.data;
             if (data.ret == "200") {
                 datas.forEach((val, index) => {
@@ -74,14 +88,14 @@ var page = new Vue({
 
                 t.sms_list = datas;
 
-                console.log(t.sms_list);
+
             } else {
                 window.location.href = './login';
             }
 
         });
         $.post('./sms/send', {}, function(data) {
-
+            console.log('sss' + data);
             if (data.ret == "200") {
 
                 var datas = data.data;
@@ -90,7 +104,6 @@ var page = new Vue({
                 });
 
                 t.sms_send_list = datas;
-                console.log(t.sms_send_list);
             } else {
                 window.location.href = './login';
             }

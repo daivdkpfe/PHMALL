@@ -16,12 +16,17 @@ import gCol from '../components/gxc/Col.vue'
 
 
 /* Vue.use(iView); */
-var lang=lang_ch;
+var lang = lang_ch;
 Vue.component("top", header);
 Vue.component("grow", gRow);
 Vue.component("gcol", gCol);
 
 
-var page=new Vue({
-    el:'.big_div'
+var page = new Vue({
+    el: '.big_div',
+    mounted: function() {
+        $.post('/myshare', {}, function() {
+
+        })
+    }
 })

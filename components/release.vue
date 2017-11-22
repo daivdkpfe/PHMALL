@@ -7,8 +7,8 @@
     width: 50px;
     height: 50px;
     position: fixed;
-    left: 10px;
-    bottom: 10px;
+    left: 20px;
+    bottom: 20px;
 }
 
 </style>

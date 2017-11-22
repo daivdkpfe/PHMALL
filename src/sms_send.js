@@ -16,6 +16,8 @@ import release from '../components/release.vue'
 import fullpage from '../components/full-page.vue'
 import contact from '../components/contact.vue'
 
+import Toast from '../components/gxc/Toast/Toast'
+
 
 
 /* Vue.use(iView); */
@@ -23,13 +25,18 @@ var lang = lang_ch;
 Vue.component("top", header);
 Vue.component("full-page", fullpage);
 Vue.component('contact', contact);
+
+Vue.use(Toast);
 var page = new Vue({
     el: '.big_div',
     data: {
         all_selected: false,
         friend_list: [],
         selected_user: '',
-        selected_txt: ''
+        selected_txt: '',
+        title: '',
+        content: '',
+        is_broadcast: 0
     },
     methods: {
         fullpage: function() {
@@ -43,24 +50,51 @@ var page = new Vue({
             });
         },
         ok: function() {
-            this.$refs.full_page.full_page_show = false;
-
-            console.log(this.friend_list);
-        },
-        send: function() {
             var that = this;
-
-            console.log(this.friend_list);
+            this.$refs.full_page.full_page_show = false;
             that.selected_txt = "";
             this.friend_list.forEach((item, index) => {
                 if (item.selected) {
                     that.selected_txt += item.member_id + ',';
                 }
             });
-            console.log(that.selected_txt.substr(0, that.selected_txt.length - 1));
-            console.log(that.title);
-            console.log(that.content);
-        }
+            that.selected_txt = that.selected_txt.substr(0, that.selected_txt.length - 1)
+            console.log(this.friend_list);
+        },
+        send: function(val) {
+
+            var that = this;
+            if (that.title == "" || that.content == "") {
+                that.$Toast("標題或內容不能为空");
+                return;
+            }
+            if (val == "notice") {
+                that.selected_txt = 'All members'
+                that.is_broadcast = 1
+            }
+            if (that.selected_txt == "") {
+                that.$Toast("请选择收件人");
+                return;
+            }
+            $.post('./sms_send/send', {
+                to_id: that.selected_txt,
+                title: that.title,
+                content: that.content,
+                is_broadcast: that.is_broadcast
+            }, function(data) {
+                var respond = data.data;
+
+                if (data.ret = '200') {
+                    that.$Toast('发送成功');
+                    setTimeout(() => {
+                        window.history.back();
+                    }, 1000);
+
+                }
+            })
+            that.selected_txt = "";
+        },
+
     },
     mounted: function() {
         var that = this;

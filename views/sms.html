@@ -51,6 +51,9 @@
         }
     </style>
     <div class="big_div">
+        <actionsheet :menulist="menu_list" v-on:selected="chosed" ref="ActionSheet">
+            <div slot="value"></div>
+        </actionsheet>
         <top title="短消息"></top>
         <!-- <button @touchstart="start" v-on:touchmove.prevent="sb" @touchend="end" v-bind:style="'top:'+y+'px;left:'+x+'px;position:fixed'">
         sndhufhuhbgf
@@ -75,7 +78,7 @@
             </div>
         </three>
 
-        <release></release>
+        <release @click.native.prevent="clickActionSheet"></release>
     </div>
     <script src="dist/sms.bundle.js"></script>
 
