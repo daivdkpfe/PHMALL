@@ -1,375 +1,409 @@
 <% include header_index.html %>
-<style>
-    .top{
-        position: fixed;
-        top:0;
-        height: 100vh;
-        overflow-y: scroll;
-    }
-    body{
-        background: #EFEFF4;
-    }
-    .header{
-        width: 100vw;
-        background:linear-gradient(to right,#ffbb07,#ff8000);
-        /*background: red;*/
-    }
-
-    .more{
-        width:20px;
-        height:20px;
-        margin-right: 20px;
-        background: url("images/default_wap/more.png");
-        background-size: 20px 20px;
-        background-repeat: no-repeat;
-        border-top: 12px solid rgba(0,0,0,0);
-        float: right;
-    }
-    .bottom{
-        height:60px;
-    }
-    .header .input_div{
-        height: 28px;
-        overflow: hidden;
-        border: 1px solid #adadad;
-        border-radius: 6px;
-        float: left;
-        width: 246px;
-        margin-left: 20px;
-        margin-top: 7px;
-        line-height: 30px;
-    }
-    .header .input_txt{
-        height: 28px;
-        float: left;
-        width: 206px;
-        border: none !important;
-        line-height: 28px;
-        margin-left: 10px;
-    }
-    .weui-tabbar__label{
-        color: #999 !important;
-    }
-    .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
-        color: #ff9302 !important;
-    }
-    .weui-tabbar{
-        background:#f7f7fa !important;
-    }
-    .weui-tab{
-        height:auto;
-        width: 100vw;
-        position: fixed;
-        bottom: 0;
-        left:0;
-    }
-    .login_div{
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        /*background: linear-gradient(to right,#ffa401,#ff802a);*/
-        filter: blur(100px);
-        position: fixed;
-    }
-    .login_div_top{
-        background:linear-gradient(to right,#ffbb07,#ff8000);
-        width: 100vw;
-        height: 150px;
-        overflow: hidden;
-    }
-    .login_div_top button{
-        width: 160px;
-        height:40px;
-        margin: auto;
-        border: none;
-        color: white;
-        font-size: 18px;
-        line-height: 40px;
-        border-radius: 6px;
-        display:block;
-        margin-top: 55px;
-        background: #ffa401;
-    }
-    .main{
-        width: 100vw;
-        height:120px;
-        background: white;
-        margin-top: 10px;
-    }
-    .main_top{
-        width: 355px;
-        margin: 0 auto;
-        border-bottom: 1px solid #d6d6d6;
-    }
-    .my_order{
-        width: auto;
-        line-height: 44px;
-        color: #121212;
-        font-size: 15px;
-        float: left;
-    }
-    .more_order{
-        line-height: 44px;
-        color: #c6c6c6;
-        font-size: 13px;
-        float: right;
-    }
-    .main_buttom div{
-        float: left;
-        width: 20vw;
-    }
-    .main_buttom img{
-        width: 25px;
-        height:25px;
-        margin: 0 auto;
-        display: block;
-        margin-top: 10px;
-    }
-    .main_buttom p{
-        text-align: center;
-        font-size: 13px;
-        color: #535353;
-        margin-top: 10px;
-    }
-    .weui-grids{
-        width: 100vw;
-        background: white;
-    }
-    .member_logo{
-        width: 60px;
-        height:60px;
-        margin: 0 auto;
-        margin-top: 20px;
-        border-radius: 4px;
-        display: block;
-    }
-    .member_title{
-        font-size: 15px;
-        color: #121212;
-        width: 100vw;
-        text-align: center;
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }
-    .member_point{
-        font-size: 15px;
-        color: rgba(83,83,83,0.64);
-        width: 100vw;
-        text-align: center;
-    }
-
-</style>
-<div class="big_div">
-
-
-    <div class="h44"></div>
-    <div class="login_div">
-    </div>
-
-    <div class="top">
-    <div class="header h44">
-        <div class="more" v-if="login"></div>
-    </div>
-    <!--头部-->
-
-
-
-    <div class="login_div_top" v-if="!login">
-        <a href="./login"><button>登录/注册</button></a>
-    </div>
-        <!--未登录-->
-    <div class="login_div_top" v-if="login">
-        <img v-bind:src="'http://www.phmall.com.ph/union/'+img" class="member_logo" alt="">
-        <p class="member_title">{{m_id}}</p>
-        <p class="member_point">积分:  <c>{{member_point}}</c></p>
-    </div>
-        <!--已登录-->
-    <div class="main">
-        <div class="main_top h44">
-            <p class="my_order">我的订单</p>
-            <a href="./member_order"><p class="more_order">全部订单></p></a>
-        </div>
-        <div class="main_buttom">
-            <div>
-                <a href="./member_order?status=1"><img src="images/default_wap/dzf.png" alt="">
-                <p>待支付</p></a>
-            </div>
-            <div><a href="./member_order?status=2"><img src="images/default_wap/dfh.png" alt=""><p>待發貨</p></a></div>
-            <div><a href="./member_order?status=3"><img src="images/default_wap/dsh.png" alt=""><p>待收貨</p></a></div>
-            <div><a href="./member_order?status=4"><img src="images/default_wap/dpj.png" alt=""><p>待評價</p></a></div>
-            <div><img src="images/default_wap/shtk.png" alt=""><p>售後/退款</p></a></div>
-
-        </div>
-    </div>
-    <!--中間的-->
-        <div class="h10"></div>
-
-        <div class="weui-grids">
-            <a href="./address" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/shdz.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    收货地址
-                </p>
-            </a>
-            <a href="" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/jfsc.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    积分商城
-                </p>
-            </a>
-            <a href="./favorite_list?type=0" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/scdp.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    我的收藏
-                </p>
-            </a>
-            <a href="./sms" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/sms.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    短消息
-                </p>
-            </a>
-
-            <a href="" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/yhq.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    优惠券
-                </p>
-            </a>
-            <a href="./social_contact" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/wdfx.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    我的分享
-                </p>
-            </a>
-
-
-            <a href="./social_contact" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/xygl.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    信用管理
-                </p>
-            </a>
-            <a href="account" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/yhk.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                    我的资金
-                </p>
-            </a>
-
-            <a href="./social_contact" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <img src="images/default_wap/wdsj.png" alt="">
-                </div>
-                <p class="weui-grid__label">
-                     我的社交
-                </p>
-            </a>
-
-
-
-
-
-
-
-        </div>
-        <!--九宮格-->
-
-        <% include bottom_div.html %>
-        <!--底部栏-->
-    </div>
-
-</div>
-
-
-<script>
-    var page = new Vue({
-        el: '.big_div',
-        data: {
-            login:false,
-            img:"",
-            m_id:"",
-            member_point:0
+    <style>
+        .top {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            overflow-y: scroll;
         }
-    });
-    if('<%= login %>'=='true')
-    {
-        page.login=true;
-        $.post("./member_index/get_member_info",{},function(result){
-            result=result.data;
-//            $(".login_div").css("background","url(http://www.phmall.com.ph/union/"+result["0"].member_image+")");
-            page.img=result["0"].member_image;
-            page.m_id=result["0"].member_id;
-            page.member_point=result["0"].member_point;
-        });
-    }
-    else
-    {
         
-        page.login=false;
-    }
-    $('body').on('click','.more',function () {
-        $.actions({
-            actions: [
-                {
-                    text:'修改个人资料',
-                    className: "color-primary",
-                    onClick: function(){
-                        window.location.href='./member_data';
-                    }
-                },
-                {
-                text: "退出登录",
-                className: "color-warning",
-                onClick: function() {
-                    $.post('./login/login_out',function (result) {
-                        result=result.data;
-                        if(result.status=='success')
-                        {
-                            $.notification({
-                                title: "Login",
-                                text: "退出成功",
-                                onClose: function(data) {
-                                    location.href='./member_index';
-                                }
-                            });
-                        }
-                        else
-                        {
-                            $.notification({
-                                title: 'Error',
-                                text: result.err,
-                                onClose: function(data) {
+        body {
+            background: #EFEFF4;
+        }
+        
+        .header {
+            width: 100vw;
+            background: linear-gradient(to right, #ffbb07, #ff8000);
+            /*background: red;*/
+        }
+        
+        .more {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            background: url("images/default_wap/more.png");
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            border-top: 12px solid rgba(0, 0, 0, 0);
+            float: right;
+        }
+        
+        .bottom {
+            height: 60px;
+        }
+        
+        .header .input_div {
+            height: 28px;
+            overflow: hidden;
+            border: 1px solid #adadad;
+            border-radius: 6px;
+            float: left;
+            width: 246px;
+            margin-left: 20px;
+            margin-top: 7px;
+            line-height: 30px;
+        }
+        
+        .header .input_txt {
+            height: 28px;
+            float: left;
+            width: 206px;
+            border: none !important;
+            line-height: 28px;
+            margin-left: 10px;
+        }
+        
+        .weui-tabbar__label {
+            color: #999 !important;
+        }
+        
+        .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+            color: #ff9302 !important;
+        }
+        
+        .weui-tabbar {
+            background: #f7f7fa !important;
+        }
+        
+        .weui-tab {
+            height: auto;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .login_div {
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            /*background: linear-gradient(to right,#ffa401,#ff802a);*/
+            filter: blur(100px);
+            position: fixed;
+        }
+        
+        .login_div_top {
+            background: linear-gradient(to right, #ffbb07, #ff8000);
+            width: 100vw;
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        .login_div_top button {
+            width: 160px;
+            height: 40px;
+            margin: auto;
+            border: none;
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+            border-radius: 6px;
+            display: block;
+            margin-top: 55px;
+            background: #ffa401;
+        }
+        
+        .main {
+            width: 100vw;
+            height: 120px;
+            background: white;
+            margin-top: 10px;
+        }
+        
+        .main_top {
+            width: 355px;
+            margin: 0 auto;
+            border-bottom: 1px solid #d6d6d6;
+        }
+        
+        .my_order {
+            width: auto;
+            line-height: 44px;
+            color: #121212;
+            font-size: 15px;
+            float: left;
+        }
+        
+        .more_order {
+            line-height: 44px;
+            color: #c6c6c6;
+            font-size: 13px;
+            float: right;
+        }
+        
+        .main_buttom div {
+            float: left;
+            width: 20vw;
+        }
+        
+        .main_buttom img {
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .main_buttom p {
+            text-align: center;
+            font-size: 13px;
+            color: #535353;
+            margin-top: 10px;
+        }
+        
+        .weui-grids {
+            width: 100vw;
+            background: white;
+        }
+        
+        .member_logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 4px;
+            display: block;
+        }
+        
+        .member_title {
+            font-size: 15px;
+            color: #121212;
+            width: 100vw;
+            text-align: center;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        
+        .member_point {
+            font-size: 15px;
+            color: rgba(83, 83, 83, 0.64);
+            width: 100vw;
+            text-align: center;
+        }
+    </style>
+    <div class="big_div">
 
-                                }
-                            });
-                        }
-                    });
-                }
+
+        <div class="h44"></div>
+        <div class="login_div">
+        </div>
+
+        <div class="top">
+            <div class="header h44">
+                <div class="more" v-if="login"></div>
+            </div>
+            <!--头部-->
+
+
+
+            <div class="login_div_top" v-if="!login">
+                <a href="./login"><button>登录/注册</button></a>
+            </div>
+            <!--未登录-->
+            <div class="login_div_top" v-if="login">
+                <img v-bind:src="'http://www.phmall.com.ph/union/'+img" class="member_logo" alt="">
+                <p class="member_title">{{m_id}}</p>
+                <p class="member_point">积分:
+                    <c>{{member_point}}</c>
+                </p>
+            </div>
+            <!--已登录-->
+            <div class="main">
+                <div class="main_top h44">
+                    <p class="my_order">我的订单</p>
+                    <a href="./member_order">
+                        <p class="more_order">全部订单></p>
+                    </a>
+                </div>
+                <div class="main_buttom">
+                    <div>
+                        <a href="./member_order?status=1"><img src="images/default_wap/dzf.png" alt="">
+                            <p>待支付</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./member_order?status=2"><img src="images/default_wap/dfh.png" alt="">
+                            <p>待發貨</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./member_order?status=3"><img src="images/default_wap/dsh.png" alt="">
+                            <p>待收貨</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./member_order?status=4"><img src="images/default_wap/dpj.png" alt="">
+                            <p>待評價</p>
+                        </a>
+                    </div>
+                    <div><img src="images/default_wap/shtk.png" alt="">
+                        <p>售後/退款</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!--中間的-->
+            <div class="h10"></div>
+
+            <div class="weui-grids">
+                <a href="./address" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/shdz.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        收货地址
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/jfsc.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        积分商城
+                    </p>
+                </a>
+                <a href="./favorite_list?type=0" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/scdp.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        我的收藏
+                    </p>
+                </a>
+                <a href="./sms" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/sms.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        短消息
+                    </p>
+                </a>
+
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/yhq.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        优惠券
+                    </p>
+                </a>
+                <a href="./myshare" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/wdfx.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        我的分享
+                    </p>
+                </a>
+
+
+                <a href="./social_contact" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/xygl.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        信用管理
+                    </p>
+                </a>
+                <a href="account" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/yhk.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        我的资金
+                    </p>
+                </a>
+
+                <a href="./social_contact" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="images/default_wap/wdsj.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        我的社交
+                    </p>
+                </a>
+
+
+
+
+
+
+
+            </div>
+            <!--九宮格-->
+
+            <% include bottom_div.html %>
+                <!--底部栏-->
+        </div>
+
+    </div>
+
+
+    <script>
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                login: false,
+                img: "",
+                m_id: "",
+                member_point: 0
             }
-
-            ],
-            buttonCancel: "取消"
-
         });
-    });
-    $(".weui-tabbar").find("a").eq(4).addClass('weui-bar__item--on').find('img').attr('src','./images/default_wap/me1.png');
-</script>
-<% include footer.html %>
+        if ('<%= login %>' == 'true') {
+            page.login = true;
+            $.post("./member_index/get_member_info", {}, function(result) {
+                result = result.data;
+                //            $(".login_div").css("background","url(http://www.phmall.com.ph/union/"+result["0"].member_image+")");
+                page.img = result["0"].member_image;
+                page.m_id = result["0"].member_id;
+                page.member_point = result["0"].member_point;
+            });
+        } else {
+
+            page.login = false;
+        }
+        $('body').on('click', '.more', function() {
+            $.actions({
+                actions: [{
+                        text: '修改个人资料',
+                        className: "color-primary",
+                        onClick: function() {
+                            window.location.href = './member_data';
+                        }
+                    }, {
+                        text: "退出登录",
+                        className: "color-warning",
+                        onClick: function() {
+                            $.post('./login/login_out', function(result) {
+                                result = result.data;
+                                if (result.status == 'success') {
+                                    $.notification({
+                                        title: "Login",
+                                        text: "退出成功",
+                                        onClose: function(data) {
+                                            location.href = './member_index';
+                                        }
+                                    });
+                                } else {
+                                    $.notification({
+                                        title: 'Error',
+                                        text: result.err,
+                                        onClose: function(data) {
+
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    }
+
+                ],
+                buttonCancel: "取消"
+
+            });
+        });
+        $(".weui-tabbar").find("a").eq(4).addClass('weui-bar__item--on').find('img').attr('src', './images/default_wap/me1.png');
+    </script>
+    <% include footer.html %>
