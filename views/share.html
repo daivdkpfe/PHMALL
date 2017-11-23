@@ -6,39 +6,39 @@
             width: 100vw;
             background: linear-gradient(to right, #fe9b0c, #ff8000);
         }
-
+        
         body {
             background: rgb(239, 239, 244);
         }
-
+        
         .header_l {
             width: 50vw;
             float: left;
             height: 44px;
             line-height: 44px;
         }
-
+        
         .header_r {
             width: 50vw;
             float: left;
             height: 44px;
             line-height: 44px;
         }
-
+        
         .header_l_title {
             float: right;
             margin-right: 10px;
             font-size: 15px;
             color: white;
         }
-
+        
         .header_r_title {
             float: left;
             margin-left: 10px;
             font-size: 15px;
             color: white;
         }
-
+        
         .gelan_l {
             position: relative;
             width: 20px;
@@ -48,7 +48,7 @@
             right: -155px;
             float: left;
         }
-
+        
         .gelan_r {
             float: right;
             position: relative;
@@ -58,32 +58,32 @@
             top: 33px;
             right: 155px;
         }
-
+        
         .share_div_list {
             width: 100vw;
         }
-
+        
         .share_div {
             background: white;
             margin-top: 10px;
             float: left;
             width: 100vw;
         }
-
+        
         .share_top {
             width: 100vw;
             height: 70px;
             margin-top: 10px;
             background: white;
         }
-
+        
         .member_img {
             width: 50px;
             height: 50px;
             margin: 10px;
             float: left;
         }
-
+        
         .member_id {
             width: 200px;
             height: 20px;
@@ -93,7 +93,7 @@
             color: #454545;
             float: left;
         }
-
+        
         .register_date {
             width: 200px;
             line-height: 18px;
@@ -103,7 +103,7 @@
             font-size: 13px;
             padding-top: 15px;
         }
-
+        
         .add_btn {
             width: 80px;
             height: 25px;
@@ -114,12 +114,12 @@
             float: left;
             color: #fe9b0c;
         }
-
+        
         .share_main {
             width: 100vw;
             height: 102px;
         }
-
+        
         .goods_name {
             margin: 0 10px;
             font-size: 15px;
@@ -128,18 +128,16 @@
             margin-top: 10px;
             height: 40px;
         }
-
+        
         .share_res {
             margin: 0 10px;
             font-size: 13px;
             color: #adadad;
             line-height: 18px;
-            
             margin-top: 10px;
         }
-
+        
         .share_img_div {
-
             border-bottom: 1px solid rgb(239, 239, 244);
             background: white;
             width: 365px;
@@ -147,15 +145,15 @@
             padding: 0 5px;
             padding-bottom: 20px;
         }
-
+        
         .two {
             height: 240px !important;
         }
-
+        
         .one {
             height: 115px;
         }
-
+        
         .share_img {
             width: 115px;
             height: 115px;
@@ -163,24 +161,24 @@
             margin-left: 5px;
             margin-top: 10px;
         }
-
+        
         .share_bottom {
             width: 100vw;
             background: white;
             height: 40px;
         }
-
+        
         .zan {
             width: 15px;
             margin: 12.5px 10px;
         }
-
+        
         .zan_num {
             line-height: 40px;
             font-size: 15px;
             color: #fe9b0c;
         }
-
+        
         .shop {
             width: 52px;
             height: 20px;
@@ -210,8 +208,7 @@
         <div class="share_div_list">
             <div class="share_div" v-for="(share,index) in share_list">
                 <div class="share_top">
-                    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+share.member_image" class="member_img"
-                        alt="">
+                    <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+share.member_image" class="member_img" alt="">
                     <p class="member_id">
                         {{share.member_id}}
                     </p>
@@ -240,68 +237,87 @@
         <div class="weui-loadmore">
             <i class="weui-loading"></i>
             <span class="weui-loadmore__tips">正在加载</span>
-          </div>
+        </div>
     </div>
+    <% include bottom_div.html %>
 
-
-    <script>
-        var page = new Vue({
-            el: '.big_div',
-            data: {
-                type: '<%= type %>',
-                start: 0,
-                share_list: []
-            },
-            methods: {
-                love: function (uid, index) {
-                    var t = this;
-
-
-                    if (localStorage.getItem("love_" + uid)) {
-
-                    } else {
-                        localStorage.setItem("love_" + uid, true);
-                        $.post("./share/love", {
-                            uid: uid
-                        }, function (result) {
-                            result=result.data;
-                            if (result == 1) {
-                                t.share_list[index].love++;
-                            } else {
-                                localStorage.setItem("love_" + uid, false);
-                            }
-
-                        })
-                    }
-
+        <script>
+            var page = new Vue({
+                el: '.big_div',
+                data: {
+                    type: '<%= type %>',
+                    start: 0,
+                    share_list: []
                 },
-                friend: function (uid) {
-                    $.post('/share/friend', {
-                        uid: uid
-                    }, function (result) {
-                        result=result.data;
-                        if (result == 0) {
-                            $.toptip("您和对方已经是好友了哦~", 'error');
-                        } else if (result == 1) {
-                            $.toptip('添加好友成功', 'success');
+                methods: {
+                    love: function(uid, index) {
+                        var t = this;
+
+
+                        if (localStorage.getItem("love_" + uid)) {
+
                         } else {
-                            window.location.href = "./login";
-                        }
-                    });
-                },
-                change_type: function (type) {
+                            localStorage.setItem("love_" + uid, true);
+                            $.post("./share/love", {
+                                uid: uid
+                            }, function(result) {
+                                result = result.data;
+                                if (result == 1) {
+                                    t.share_list[index].love++;
+                                } else {
+                                    localStorage.setItem("love_" + uid, false);
+                                }
 
-                    this.type = type;
-                    this.share_list = [];
+                            })
+                        }
+
+                    },
+                    friend: function(uid) {
+                        $.post('/share/friend', {
+                            uid: uid
+                        }, function(result) {
+                            result = result.data;
+                            if (result == 0) {
+                                $.toptip("您和对方已经是好友了哦~", 'error');
+                            } else if (result == 1) {
+                                $.toptip('添加好友成功', 'success');
+                            } else {
+                                window.location.href = "./login";
+                            }
+                        });
+                    },
+                    change_type: function(type) {
+
+                        this.type = type;
+                        this.share_list = [];
+                        var t = this;
+                        this.start = 0;
+                        $.post('/share', {
+                            type: this.type,
+                            start: this.start
+                        }, function(result) {
+                            result = result.data;
+                            if (result != 0 && result.length > 0) {
+                                result.forEach(function(item, index) {
+                                    item.register_date = return_date(item.register_date);
+                                    t.share_list.push(item);
+                                    t.start++;
+                                }, this);
+                            }
+                        });
+                    }
+                },
+                mounted: function() {
+                    $(".weui-tabbar").find("a").eq(2).addClass('weui-bar__item--on').find('img').attr('src', './images/default_wap/fx1.png');
                     var t = this;
-                    this.start = 0;
                     $.post('/share', {
                         type: this.type,
                         start: this.start
-                    }, function (result) {
-                        result=result.data;
+                    }, function(result) {
+                        console.log(result);
+                        result = result.data;
                         if (result != 0 && result.length > 0) {
-                            result.forEach(function (item, index) {
+                            result.forEach(function(item, index) {
                                 item.register_date = return_date(item.register_date);
                                 t.share_list.push(item);
                                 t.start++;
@@ -309,41 +325,24 @@
                         }
                     });
                 }
-            },
-            mounted: function () {
-                var t = this;
+            });
+
+
+
+            $(document.body).infinite();
+            var loading = false; //状态标记
+            $(document.body).infinite().on("infinite", function() {
+                if (loading) return;
+                loading = true;
+                var t = page;
+
                 $.post('/share', {
-                    type: this.type,
-                    start: this.start
-                }, function (result) {
-                    result=result.data;
-                    if (result != 0 && result.length > 0) {
-                        result.forEach(function (item, index) {
-                            item.register_date = return_date(item.register_date);
-                            t.share_list.push(item);
-                            t.start++;
-                        }, this);
-                    }
-                });
-            }
-        });
-
-
-
-        $(document.body).infinite();
-        var loading = false;  //状态标记
-        $(document.body).infinite().on("infinite", function() {
-        if(loading) return;
-        loading = true;
-        var t=page;
-       
-        $.post('/share', {
                     type: t.type,
                     start: t.start
-                }, function (result) {
-                    result=result.data;
+                }, function(result) {
+                    result = result.data;
                     if (result != 0 && result.length > 0) {
-                        result.forEach(function (item, index) {
+                        result.forEach(function(item, index) {
                             item.register_date = return_date(item.register_date);
                             t.share_list.push(item);
                             t.start++;
@@ -351,7 +350,7 @@
                         loading = false;
                     }
                 });
-        
-        });
-    </script>
-    <% include footer.html %>
+
+            });
+        </script>
+        <% include footer.html %>

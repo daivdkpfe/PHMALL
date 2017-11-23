@@ -70,11 +70,13 @@
     <div class="big_div">
         <top title="我的分享"></top>
         <div class="share_div" v-for="(myshare,index) in myshare_list">
-            <div class="top">
-                <img src="images/default_wap/load.png" class="goods_img" :data-src="'http://www.phmall.com.ph/'+myshare.pics[0]" alt="">
-                <p class="goods_title sl2">{{myshare.goods_name}}</p>
-                <p class="goods_value sl2">{{myshare.comment}}</p>
-            </div>
+            <a :href="'./member_share?uid='+myshare.og_uid">
+                <div class="top">
+                    <img src="images/default_wap/load.png" class="goods_img" :data-src="'http://www.phmall.com.ph/'+myshare.pics[0]" alt="">
+                    <p class="goods_title sl2">{{myshare.goods_name}}</p>
+                    <p class="goods_value sl2">{{myshare.comment}}</p>
+                </div>
+            </a>
             <grow>
                 <gcol>
                     <img src="images/default_wap/sharefavorite.png" class="share-favorite" alt="">
@@ -87,7 +89,6 @@
                     <img src="images/default_wap/share-detele.png" class="fr detele" @click="del(myshare.uid,index)" alt="">
                 </gcol>
             </grow>
-
         </div>
     </div>
     <script src="dist/myshare.bundle.js"></script>

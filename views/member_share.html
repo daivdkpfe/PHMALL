@@ -171,7 +171,7 @@
 
             <div class="demo-upload-list" v-for="item in uploadList">
                 <template v-if="item.status === 'finished'">
-                    <img :src="item.url">
+                    <img :src="'http://192.168.0.105/english/'+item.url">
                     <div class="demo-upload-list-cover">
                         <Icon type="ios-eye-outline" @click.native="handleView(item.name)"></Icon>
                         <Icon type="ios-trash-outline" @click.native="handleRemove(item)"></Icon>
@@ -182,7 +182,7 @@
                 </template>
             </div>
             <Upload ref="upload" :show-upload-list="false" :default-file-list="defaultList" :on-success="handleSuccess" :format="['jpg','jpeg','png']" :max-size="2048" :on-format-error="handleFormatError" :on-exceeded-size="handleMaxSize" :before-upload="handleBeforeUpload"
-                multiple type="drag" action="./upload/refund_upload" style="display: inline-block;width:58px;">
+                multiple type="drag" action="./upload/share_img_upload" style="display: inline-block;width:58px;">
                 <div style="width: 58px;height:58px;line-height: 58px;">
                     <Icon type="camera" size="20"></Icon>
                 </div>
@@ -219,19 +219,42 @@
                 goods: {},
                 share_info: {}
             },
-            mounted() {
-                this.uploadList = this.$refs.upload.fileList;
-            },
             methods: {
                 share: function() {
 
                     var that = this;
-                    console.log(that.goods);
-                    $.post('/member_share/release', {
-                        goods_name: that.goods[0].goods_name
-                    }, function(data) {
-                        console.log(data);
 
+                    var arr = [];
+                    that.uploadList.forEach((item, index) => {
+                        arr.push(item.url);
+                    });
+                    var pictxt = arr.join("|");
+                    $.post('/member_share/release', {
+                        // goods_name: that.goods[0].goods_name,
+                        og_uid: '<%- uid %>',
+                        // g_uid: that.goods[0].g_uid,
+                        // goods_table: that.goods[0].goods_table,
+                        // module: that.goods[0].module,
+                        // goods_category: '',
+                        // attr: that.goods[0].goods_attr,
+                        // buy_price: that.goods[0].buy_price,
+                        comment: that.value6,
+                        pics: pictxt
+                            // supplier_id: that.goods[0].supplier_id
+
+                    }, function(data) {
+                        if (data.ret == '200' && data.data.status == 1) {
+                            that.$alertshow({
+                                title: '恭喜',
+                                value: '分享成功',
+                                btn: ['确定'],
+                                okcallback: function(index) {
+                                    window.history.back();
+                                },
+
+                            })
+
+                        }
                     })
                 },
                 handleView(name) {
@@ -245,12 +268,12 @@
                     this.$refs.upload.fileList.splice(fileList.indexOf(file), 1);
                 },
                 handleSuccess(res, file) {
+                    console.log("aaa");
+                    file.url = 'union/shopimg/user_img/wap/' + res;
+                    file.name = 'union/shopimg/user_img/wap/' + res;
 
-                    file.url = 'http://192.168.0.105/english/xx/' + res;
-                    file.name = 'http://192.168.0.105/english/xx/' + res;
-                    this.uploadList.push(file);
+                    console.log(this.uploadList);
 
-                    console.log(file.url);
                 },
                 handleFormatError(file) {
 
@@ -278,15 +301,31 @@
                 }
             },
             mounted: function() {
+                this.uploadList = this.$refs.upload.fileList;
                 var that = this;
                 $.post('/member_share', {
                     uid: '<%= uid %>'
                 }, function(data) {
+                    console.log(data);
 
                     if (data.ret == '200') {
+
                         var datas = data.data;
                         that.goods = datas.goods;
-                        console.log(that.goods);
+
+                        if (datas.share.length > 0) {
+
+                            datas.share[0].shareimg.forEach((item, index) => {
+                                var s = {};
+                                s.url = item;
+                                s.status = "finished";
+                                that.uploadList.push(s);
+                            });
+
+                            that.share_info = datas.share[0];
+                            that.value6 = datas.share[0].comment;
+                        }
+
                     } else if (data.ret == '201') {
                         window.location.href = "./login";
                     }

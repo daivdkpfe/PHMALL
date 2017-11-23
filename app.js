@@ -23,6 +23,7 @@ var member_index = require('./routes/member_index');
 var config_order = require('./routes/config_order');
 var comment = require('./routes/comment');
 var coupon = require('./routes/coupon');
+var mycoupon = require('./routes/mycoupon');
 var category = require('./routes/category');
 var favorite = require('./routes/favorite');
 var favorite_list = require('./routes/favorite_list');
@@ -119,6 +120,7 @@ app.use('/member_index', member_index); //用户首页
 app.use('/config_order', config_order); //确认订单
 app.use('/comment', comment); //评价
 app.use('/coupon', coupon); //优惠卷
+app.use('/mycoupon', mycoupon); //我的优惠卷
 app.use('/category', category); //分类
 app.use('/favorite', favorite); //收藏
 app.use('/favorite_list', favorite_list); //收藏列表
