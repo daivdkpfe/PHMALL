@@ -1,2 +1,43 @@
 <% include header_index_iview.html %>
+    <style>
+        body {
+            background: rgb(239, 239, 244);
+        }
+        
+        .header {
+            box-shadow: none;
+        }
+        
+        .Navbar .selected_div {
+            height: 3px;
+        }
+        
+        .Navbar .menu {
+            background: white;
+        }
+        
+        .Navbar .Row {
+            box-shadow: 0px 10px 125px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <div class="big_div">
+        <top title="我的优惠卷"></top>
+        <navbar :menulist="menu">
+            <div slot="Navbar_page_0">
+                <coupon></coupon>
+            </div>
+        </navbar>
+    </div>
+
+    <script src="images/default_wap/vue.js"></script>
+    <script src="./dist/mycoupon.bundle.js"></script>
+    <script>
+        Vue.use(bundle);
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                menu: ['未使用', '已过期', '已使用']
+            }
+        })
+    </script>
     <% include footer.html %>

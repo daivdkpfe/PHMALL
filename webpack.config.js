@@ -19,20 +19,21 @@ var fileLoaderOption = {
 module.exports = {
     entry: {
         index: './src/index.js',
-        header:'./src/header.js',
-        top:'./src/top.js',
-        product:'./src/product.js',
-        address_add:'./src/address_add.js',
-        address:'./src/address.js',
-        auction:'./src/auction.js',
-        logistics:'./src/logistics.js',
-        refund:'./src/refund.js',
-        regrefund:'./src/regrefund.js',
-        sms:'./src/sms.js',
-        sms_send:'./src/sms_send.js',
-        content:'./src/content.js',
-        member_share:'./src/member_share.js',
-        myshare:'./src/myshare.js'
+        header: './src/header.js',
+        top: './src/top.js',
+        product: './src/product.js',
+        address_add: './src/address_add.js',
+        address: './src/address.js',
+        auction: './src/auction.js',
+        logistics: './src/logistics.js',
+        refund: './src/refund.js',
+        regrefund: './src/regrefund.js',
+        sms: './src/sms.js',
+        sms_send: './src/sms_send.js',
+        content: './src/content.js',
+        member_share: './src/member_share.js',
+        myshare: './src/myshare.js',
+        mycoupon: './src/mycoupon.js'
     },
     devServer: {
         contentBase: './dist',
@@ -46,8 +47,8 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
-                options:{
-                  // loader:[fileLoaderOption]
+                options: {
+                    // loader:[fileLoaderOption]
                 }
             },
             { test: /iview.src.*?js$/, loader: 'babel-loader' },
