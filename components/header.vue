@@ -3,7 +3,9 @@
   <div class="big_div">
     <div class="h44 header">
         <div class="header_div h44">
+            <slot name="left">
             <img src="images/default_wap/return.png" class="back fl" alt="">
+            </slot>
             <slot name="right">
             <img src="images/default_wap/moreblack.png" class="back fr" alt="">
             </slot>
@@ -15,7 +17,6 @@
 </div>
 </template>
 <style>
-
     .header{
         box-shadow: 0px 10px 125px rgba(0,0,0,0.1);
         width: 100vw;
@@ -36,6 +37,7 @@
         color: #181818;
         line-height: 44px;
         text-align: center;
+        background: url('images/default_wap/load.png')
     }
 </style>
 

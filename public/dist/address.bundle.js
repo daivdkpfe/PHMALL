@@ -61,7 +61,7 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 94);
+/******/ 	return __webpack_require__(__webpack_require__.s = 109);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -385,10 +385,12 @@ var render = function() {
         "div",
         { staticClass: "header_div h44" },
         [
-          _c("img", {
-            staticClass: "back fl",
-            attrs: { src: "images/default_wap/return.png", alt: "" }
-          }),
+          _vm._t("left", [
+            _c("img", {
+              staticClass: "back fl",
+              attrs: { src: "images/default_wap/return.png", alt: "" }
+            })
+          ]),
           _vm._v(" "),
           _vm._t("right", [
             _c("img", {
@@ -413,6 +415,95 @@ if (false) {
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-71999695", esExports)
   }
+}
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["install"] = install;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_header_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util_js__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__util_util_js__);
+
+
+
+
+
+
+var lang = __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default.a;
+
+function install(Vue) {
+    Vue.component("top", __WEBPACK_IMPORTED_MODULE_2__components_header_vue__["a" /* default */]);
+    var page = new Vue({
+        el: '.big_div',
+        data: {
+            select: 1,
+            address_list: [],
+            lang: {}
+        },
+        methods: {
+            selects: function (uid, index) {
+                var x = index;
+                var t = this;
+                $.post('/address/edit', {
+                    uid: uid
+                }, function (result) {
+                    result = result.data;
+                    $('.weui-switch').removeAttr('checked');
+                    $('.weui-switch').eq(x).prop('checked', 'checked');
+
+                    t.address_list[x].is_buy = 1;
+
+                    t.address_list.forEach(function (item, index) {
+                        if (item.is_buy == 1) {
+                            item.is_buy = 0;
+                        }
+                        if (index == x) {
+                            item.is_buy = 1;
+                        }
+                        Vue.set(t.address_list, index, item);
+                    });
+                });
+            },
+            deletes: function (uid, index) {
+                var x = this;
+                var bl = false;
+                $.post('/address/delete', {
+                    uid: uid
+                }, function (result) {
+                    result = result.data;
+                    if (result == '1') {
+                        $.toptip(t.lang._031, 'success');
+                        x.address_list.splice(index, 1);
+                    } else {
+                        $.toptip(t.lang._032, 'error');
+                    }
+                });
+            }
+        },
+        mounted: function () {
+            var t = this;
+            if (__WEBPACK_IMPORTED_MODULE_3__util_util_js___default.a.getsetcookie('lang') != 'en') {
+                this.lang = __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default.a;
+            } else {
+                this.lang = __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en___default.a;
+            }
+
+            $.post('/address', {}, function (result) {
+
+                result = result.data;
+                t.address_list = result;
+            });
+        }
+    });
 }
 
 /***/ }),
@@ -450,6 +541,13 @@ module.exports = {
         return Math.round(validity / 1000); //有效期
     }
 };
+
+/***/ }),
+
+/***/ 186:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "public/images/default_wap/load.png";
 
 /***/ }),
 
@@ -747,7 +845,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.header{\n    box-shadow: 0px 10px 125px rgba(0,0,0,0.1);\n    width: 100vw;\n    background: white;\n    position: relative;\n}\n.header_div{\n    width: 355px;\n    margin: 0 auto;\n}\n.header_div img{\n    width: 20px;\n    height:20px;\n    margin-top: 12px;\n}\n.header_div p{\n    font-size: 18px;\n    color: #181818;\n    line-height: 44px;\n    text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.header{\n    box-shadow: 0px 10px 125px rgba(0,0,0,0.1);\n    width: 100vw;\n    background: white;\n    position: relative;\n}\n.header_div{\n    width: 355px;\n    margin: 0 auto;\n}\n.header_div img{\n    width: 20px;\n    height:20px;\n    margin-top: 12px;\n}\n.header_div p{\n    font-size: 18px;\n    color: #181818;\n    line-height: 44px;\n    text-align: center;\n    background: url(" + __webpack_require__(186) + ")\n}\n", ""]);
 
 // exports
 
@@ -799,99 +897,12 @@ exports.push([module.i, "\n.header{\n    box-shadow: 0px 10px 125px rgba(0,0,0,0
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
    props: ['title']
 });
-
-/***/ }),
-
-/***/ 94:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["install"] = install;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_header_vue__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util_js__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__util_util_js__);
-
-
-
-
-
-
-var lang = __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default.a;
-
-function install(Vue) {
-    Vue.component("top", __WEBPACK_IMPORTED_MODULE_2__components_header_vue__["a" /* default */]);
-    var page = new Vue({
-        el: '.big_div',
-        data: {
-            select: 1,
-            address_list: [],
-            lang: {}
-        },
-        methods: {
-            selects: function (uid, index) {
-                var x = index;
-                var t = this;
-                $.post('/address/edit', {
-                    uid: uid
-                }, function (result) {
-                    result = result.data;
-                    $('.weui-switch').removeAttr('checked');
-                    $('.weui-switch').eq(x).prop('checked', 'checked');
-
-                    t.address_list[x].is_buy = 1;
-
-                    t.address_list.forEach(function (item, index) {
-                        if (item.is_buy == 1) {
-                            item.is_buy = 0;
-                        }
-                        if (index == x) {
-                            item.is_buy = 1;
-                        }
-                        Vue.set(t.address_list, index, item);
-                    });
-                });
-            },
-            deletes: function (uid, index) {
-                var x = this;
-                var bl = false;
-                $.post('/address/delete', {
-                    uid: uid
-                }, function (result) {
-                    result = result.data;
-                    if (result == '1') {
-                        $.toptip(t.lang._031, 'success');
-                        x.address_list.splice(index, 1);
-                    } else {
-                        $.toptip(t.lang._032, 'error');
-                    }
-                });
-            }
-        },
-        mounted: function () {
-            var t = this;
-            if (__WEBPACK_IMPORTED_MODULE_3__util_util_js___default.a.getsetcookie('lang') != 'en') {
-                this.lang = __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default.a;
-            } else {
-                this.lang = __WEBPACK_IMPORTED_MODULE_1__lanuage_lanuage_en___default.a;
-            }
-
-            $.post('/address', {}, function (result) {
-
-                result = result.data;
-                t.address_list = result;
-            });
-        }
-    });
-}
 
 /***/ })
 

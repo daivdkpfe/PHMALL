@@ -1,0 +1,286 @@
+<% include header_index_iview.html %>
+    <style>
+        body{
+            background: rgb(239,239,244);
+        }
+        .header_div p {
+            color: white !important;
+        }
+        
+        .header {
+            background: none;
+            box-shadow: none;
+        }
+        
+        .top_div {
+            background: linear-gradient(to top, #fe9b0c, #ff8000)
+        }
+        .Navbar .selected p{
+            
+            color: white;
+        }
+        .Navbar .selected_div{
+            display: none;
+        }
+        .Navbar .menu{
+            color: rgba(255,255,255,0.5);
+            border-bottom: 1px solid rgb(255,172,80);
+        }
+        .Navbar {
+            float: none;
+        }
+        
+        .Navbar .page {
+            float: none;
+        }
+        .Navbar .num-row{
+            height: 209px;
+            width: 100%;
+        }
+        .Navbar .num-row .tags{
+            width: 100%;
+            text-align: center;
+            line-height: 44px;
+            color: white;
+            font-size: 13px;
+            height: 44px;
+        }
+        .Navbar .num-row .wrap{
+            width: 19px;
+            height: 1px;
+            transform:rotate(180deg);
+            margin: 0 auto;
+            position: relative;
+            top:129px;
+        }
+        .Navbar .num-row .graph{
+            height: 50px;
+            width: 19px;
+            background: white;
+        }
+        .Navbar .graph .Line{
+            height: 130px;
+            width: 1px;
+            background: white;
+            margin: 0 auto; 
+        }
+        .Navbar .num{
+            line-height: 33px;
+            height: 33px;
+            position: relative;
+            top:129px;
+            text-align: center;
+            color: white;
+        }
+        .good-title{
+            background: white;
+            
+            width: 100%;
+        }
+        .good-title .title .fl{
+            margin-left: 10px;
+            line-height: 44px;
+            color: #454545;
+            font-size: 13px;
+        }
+        .good-title .title .fr{
+            margin-right: 10px;
+            line-height: 44px;
+            color: #adadad;
+            font-size: 13px;
+        }
+        .good-title .num{
+            height: 80px;
+            background: white;
+            
+            width: 100%;
+        }
+        .good-title .num p{
+            line-height: 18px;
+            font-size: 15px;
+            color: #adadad;
+            text-align: center;
+        }
+        .good-title .num .percentage{
+            font-size: 24px;
+            color: #fe9b0c;
+            line-height: 22px;
+            margin: 0 0 6px 0;
+            padding-top: 17px;
+        }
+        .evaluate-log{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .evaluate-log .header{
+            height: 44px;
+            width: 100%;
+            background: white;
+        }
+        .evaluate-log .header{
+            line-height: 44px;
+            font-size: 15px;
+            text-indent: 10px;
+            color: #454545;
+        }
+    </style>
+
+    <div class="big_div">
+        <div class="top_div">
+            <top title="信用管理">
+                <div slot="left">
+                    <img src="images/default_wap/return-white.png" class="back fl" alt="">
+                </div>
+                <div slot="right">
+                    <img src="images/default_wap/more.png" class="back fr" alt="">
+                </div>
+            </top>
+            <!-- 标题 -->
+            <navbar :menulist="Navbar_menu">
+
+                <div slot="Navbar_page_0">
+                    <grow>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                    </grow>
+                </div>
+                <div slot="Navbar_page_1">
+                    <grow>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                    </grow>
+                </div>
+                <div slot="Navbar_page_2">
+                    <grow>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                        <gcol class="Col">
+                            <div class="num-row">
+                                <p class="tags">好评</p>
+                                <div class="wrap">
+                                    <div class="graph">
+                                        <div class="Line"></div>
+                                    </div>
+                                </div>
+                                <p class="num">33</p>
+                            </div>
+                        </gcol>
+                    </grow>
+                </div>
+                <!-- 分页一 -->
+            </navbar>
+            <!-- 分页 -->
+        </div>
+        <div class="good-title">
+            <div class="h44 title">
+                <p class="fl">累计：</p>
+                <p class="fr">44条</p>
+            </div>
+            <div class="num">
+                <p class="percentage">80%</p>
+                <p>好评率</p>
+            </div>
+        </div>
+        <!-- 好评标题 -->
+
+        <div class="evaluate-log">
+            <div class="header">
+                <p>评价情况</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="images/default_wap/vue.js"></script>
+    <script src="dist/creditmanagement.bundle.js"></script>
+    <script>
+        Vue.use(bundle);
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                Navbar_menu: ['全部', '最近一周', '最近三月']
+            }
+        })
+    </script>
+    <% include footer.html %>

@@ -16,10 +16,18 @@ router.get('/', function(req, res, next) {
  */
     res.render('mycoupon', { title: 'PHMALL' });
 });
-/* router.get('/index', function(req, res, next) {
-  res.render('admin/index', { title: 'Express' });
-});
-router.get('/setting', function(req, res, next) {
-  res.render('admin/setting', { title: 'Express' });
-}); */
+router.post('/', function(req, res, next) {
+
+        async function run() {
+            var mycoupon = await sqlasnyc("select * from `mvm_coupon`");
+            console.log(a);
+        }
+        run();
+    })
+    /* router.get('/index', function(req, res, next) {
+      res.render('admin/index', { title: 'Express' });
+    });
+    router.get('/setting', function(req, res, next) {
+      res.render('admin/setting', { title: 'Express' });
+    }); */
 module.exports = router;

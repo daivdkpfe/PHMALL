@@ -69,7 +69,10 @@ var regrefund = require('./routes/reg_refund');
 var sms = require('./routes/sms');
 var sms_send = require('./routes/sms_send');
 var content = require('./routes/content');
+var creditmanagement = require('./routes/creditmanagement');
+var status = require('./routes/status');
 //
+
 
 var unionProduct = require('./routes/union/product');
 var unionIndex = require('./routes/union/index');
@@ -165,6 +168,8 @@ app.use('/regrefund', regrefund);
 app.use('/sms', sms);
 app.use('/sms_send', sms_send);
 app.use('/content', content);
+app.use('/credit_management', creditmanagement);
+app.use('/status', status);
 //
 
 app.use('/union/product', unionProduct);

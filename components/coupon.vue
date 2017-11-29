@@ -26,80 +26,78 @@
 </template>
 <style>
     .coupon_div{
-        /* height: 144px; */
-        width: calc(100% - 20px);
-        overflow: hidden;
-        background:#FFF;
-        margin: 10px;
-        border-radius: 6px;
+            /* height: 144px; */
+            width: calc(100% - 20px);
+            overflow: hidden;
+            background:#FFF;
+            margin: 10px;
+            border-radius: 6px;
     }
     .coupon_div .top{
-        height: 76px;
-        overflow: hidden;
-        width: 100%;
-        background: rgb(188,188,188);
+            height: 76px;
+            overflow: hidden;
+            width: 100%;
+            background: rgb(188,188,188);
     }
     .coupon_div .bottom{
-        height: auto;
-        width: 100%;
-        background: white;
+            height: auto;
+            width: 100%;
+            background: white;
     }
     .coupon_div .coupon_img{
-        width: 58px;
-        height: 58px;
-        background: green;
-        border: 2px solid #FFF;
-        border-radius: 30px;
-        margin: 10px;
-        float: left;
+            width: 58px;
+            height: 58px;
+            background: green;
+            border: 2px solid #FFF;
+            border-radius: 30px;
+            margin: 10px;
+            float: left;
     }
     .coupon_div .top .coupon_info{
-        width: calc(100% - 170px);
-        height: 100%;
-        float: left;
+            width: calc(100% - 170px);
+            height: 100%;
+            float: left;
     }
     .coupon_div .top .coupon_info p{
-        height: 50%;
-        line-height: 38px;
-        font-size: 15px;
-        color: #FFF;
+            height: 50%;
+            line-height: 38px;
+            font-size: 15px;
+            color: #FFF;
     }
     .coupon_div .bottom .bl_div{
-        width: 100%;
-        background: rgb(188,188,188);
+            width: 100%;
+            background: rgb(188,188,188);
     }
     .coupon_div .bottom .bl_div img{
-        width: 100%;
-        height: 100%;
-        background: rgb(188,188,188);
-        float: left;
+            width: 100%;
+            height: 100%;
+            background: rgb(188,188,188);
+            float: left;
     }
     .coupon_div .bottom .coupon_info ul{
-        width: 100%;
-        background: #FFF;
-        float: left;
-        padding-left: 20px !important;
+            width: 100%;
+            background: #FFF;
+            float: left;
+            padding-left: 20px !important;
     }
     .coupon_div .bottom .coupon_info li{
-        line-height: 18px;
-        margin-top: 4px;
-        list-style-type:disc;
-        font-size: 13px;
-        color: #adadad;
+            line-height: 18px;
+            margin-top: 4px;
+            list-style-type:disc;
+            font-size: 13px;
+            color: #adadad;
     }
     .coupon_div .bottom .coupon_price{
             width: 100%;
             line-height: 48px;
-    font-size: 24px;
-    color: #adadad;
-    background: white;
-    text-align: right;
-    text-indent: 10px;
-    float: right;
-
-
+            font-size: 24px;
+            color: #adadad;
+            background: white;
+            text-align: right;
+            text-indent: 10px;
+            float: right;
     }
     .coupon_div .bottom .coupon_price p{
-        margin-right: 10px;
+            margin-right: 10px;
     }
 </style>

@@ -61,11 +61,12 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 71);
+/******/ 	return __webpack_require__(__webpack_require__.s = 86);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, exports) {
 
 /*
@@ -147,7 +148,8 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 1 */
+
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -368,7 +370,22 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 2 */
+
+/***/ 14:
+/***/ (function(module, exports) {
+
+module.exports = {
+    email_fromName: "PHMALL",
+    email_subject: "PHMALL:My Website,My Decision .Let \'s Create Your Own Online Shop !.Verification code for email modification",
+    web_src: "../../phpStudy/WWW/english/xx/",
+    img_url: "http://192.168.0.105/english/",
+    union_img_url: "http://192.168.0.105/english/union/",
+    update_url: "http://192.168.0.105:88/update_cache"
+};
+
+/***/ }),
+
+/***/ 2:
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -477,7 +494,8 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 3 */
+
+/***/ 3:
 /***/ (function(module, exports) {
 
 /**
@@ -510,104 +528,8 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports) {
 
-/**
- * Created by Administrator on 2017/9/15.
- */
-module.exports = {
-    //index.js
-    //index
-    data_err: "數據錯誤",
-    _001: '服装鞋包',
-    _002: '美妆护理',
-    _003: '珠宝手表',
-    _004: '母婴玩具',
-    _005: '数码家电',
-    _006: '家居装修',
-    _007: '户外运动',
-    _010: '旅游度假',
-    _011: '吃喝玩乐',
-    _012: '更多分类',
-    _013: '限时秒杀',
-    index_ad_title: ['折/扣/区', '精/选/区'],
-    //address_add
-    _014: '管理收货地址',
-    _015: '收货人',
-    _016: '手机号码',
-    _017: '所属地区',
-    _018: '邮政编码',
-    _019: '街道地区',
-    _020: '保存',
-    _021: '添加失败',
-    _022: '超过地址数量',
-    _023: '添加成功',
-    //address
-    _024: '管理收货地址',
-    _025: '收货人',
-    _026: '收货地址',
-    _027: '删除',
-    _028: '编辑',
-    _029: '默认地址',
-    _030: '添加新地址',
-    _031: '删除成功',
-    _032: '删除失败'
-};
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-/**
- * Created by Administrator on 2017/9/15.
- */
-module.exports = {
-  data_err: "數據錯誤"
-};
-
-/***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = {
-    email_fromName: "PHMALL",
-    email_subject: "PHMALL:My Website,My Decision .Let \'s Create Your Own Online Shop !.Verification code for email modification",
-    web_src: "../../phpStudy/WWW/english/xx/",
-    img_url: "http://192.168.0.105/english/",
-    union_img_url: "http://192.168.0.105/english/union/",
-    update_url: "http://192.168.0.105:88/update_cache"
-};
-
-/***/ }),
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */
+/***/ 34:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -662,7 +584,8 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 35 */
+
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -688,7 +611,8 @@ if(false) {
 }
 
 /***/ }),
-/* 36 */
+
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -702,7 +626,8 @@ exports.push([module.i, "\n.ppl {\n    width: 355px;\n    margin: 0 auto;\n}\n.r
 
 
 /***/ }),
-/* 37 */
+
+/***/ 37:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -760,7 +685,8 @@ exports.push([module.i, "\n.ppl {\n    width: 355px;\n    margin: 0 auto;\n}\n.r
 });
 
 /***/ }),
-/* 38 */
+
+/***/ 38:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -801,47 +727,75 @@ if (false) {
 }
 
 /***/ }),
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */
+
+/***/ 4:
+/***/ (function(module, exports) {
+
+/**
+ * Created by Administrator on 2017/9/15.
+ */
+module.exports = {
+    //index.js
+    //index
+    data_err: "數據錯誤",
+    _001: '服装鞋包',
+    _002: '美妆护理',
+    _003: '珠宝手表',
+    _004: '母婴玩具',
+    _005: '数码家电',
+    _006: '家居装修',
+    _007: '户外运动',
+    _010: '旅游度假',
+    _011: '吃喝玩乐',
+    _012: '更多分类',
+    _013: '限时秒杀',
+    index_ad_title: ['折/扣/区', '精/选/区'],
+    //address_add
+    _014: '管理收货地址',
+    _015: '收货人',
+    _016: '手机号码',
+    _017: '所属地区',
+    _018: '邮政编码',
+    _019: '街道地区',
+    _020: '保存',
+    _021: '添加失败',
+    _022: '超过地址数量',
+    _023: '添加成功',
+    //address
+    _024: '管理收货地址',
+    _025: '收货人',
+    _026: '收货地址',
+    _027: '删除',
+    _028: '编辑',
+    _029: '默认地址',
+    _030: '添加新地址',
+    _031: '删除成功',
+    _032: '删除失败'
+};
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+/**
+ * Created by Administrator on 2017/9/15.
+ */
+module.exports = {
+  data_err: "數據錯誤"
+};
+
+/***/ }),
+
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["install"] = install;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_product_vue__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index_ad_vue__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_index_header_vue__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index_ad_vue__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_index_header_vue__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_ch__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_ch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lanuage_lanuage_en__ = __webpack_require__(5);
@@ -1016,16 +970,17 @@ function install(Vue) {
 }
 
 /***/ }),
-/* 72 */
+
+/***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_index_ad_vue__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44f46d38_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_index_ad_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_index_ad_vue__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44f46d38_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_index_ad_vue__ = __webpack_require__(91);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(73)
+  __webpack_require__(88)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -1071,13 +1026,14 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 73 */
+
+/***/ 88:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(74);
+var content = __webpack_require__(89);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1097,7 +1053,8 @@ if(false) {
 }
 
 /***/ }),
-/* 74 */
+
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -1111,7 +1068,8 @@ exports.push([module.i, "\n.ad_img_left{\n    width: 160px;\n    height: 230px;\
 
 
 /***/ }),
-/* 75 */
+
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1206,7 +1164,8 @@ exports.push([module.i, "\n.ad_img_left{\n    width: 160px;\n    height: 230px;\
 });
 
 /***/ }),
-/* 76 */
+
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1282,16 +1241,17 @@ if (false) {
 }
 
 /***/ }),
-/* 77 */
+
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_index_header_vue__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_61048fbc_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_index_header_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_index_header_vue__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_61048fbc_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_index_header_vue__ = __webpack_require__(96);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(78)
+  __webpack_require__(93)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -1337,13 +1297,14 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 78 */
+
+/***/ 93:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(79);
+var content = __webpack_require__(94);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1363,7 +1324,8 @@ if(false) {
 }
 
 /***/ }),
-/* 79 */
+
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -1377,7 +1339,8 @@ exports.push([module.i, "\n.change{\r\n    width: 20px;\r\n    height: 20px;\r\n
 
 
 /***/ }),
-/* 80 */
+
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1449,7 +1412,8 @@ exports.push([module.i, "\n.change{\r\n    width: 20px;\r\n    height: 20px;\r\n
 });
 
 /***/ }),
-/* 81 */
+
+/***/ 96:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1495,4 +1459,5 @@ if (false) {
 }
 
 /***/ })
-/******/ ]);
+
+/******/ });

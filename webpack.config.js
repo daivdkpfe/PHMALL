@@ -5,13 +5,7 @@ const webpack = require('webpack');
 var fileLoaderOption = {
     loader: 'file-loader',
     options: {
-        name: '[path][name].[ext]',
-        outputPath: function(path) {
-            // console.log(arguments);
-            // console.log(path);
-            // console.log("【路径↑】");
-            return path.replace(/^src/g, ".");
-        }
+        name: './[name].[ext]',
     }
 };
 
@@ -33,7 +27,8 @@ module.exports = {
         content: './src/content.js',
         member_share: './src/member_share.js',
         myshare: './src/myshare.js',
-        mycoupon: './src/mycoupon.js'
+        mycoupon: './src/mycoupon.js',
+        creditmanagement: './src/creditmanagement.js'
     },
     devServer: {
         contentBase: './dist',
@@ -44,6 +39,10 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
+            {
+                test: /\.less$/,
+                use:  ['style-loader', 'css-loader', 'less-loader']
+            }
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
