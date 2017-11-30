@@ -71,6 +71,8 @@ var sms_send = require('./routes/sms_send');
 var content = require('./routes/content');
 var creditmanagement = require('./routes/creditmanagement');
 var status = require('./routes/status');
+var evaluation=require('./routes/evaluation');
+var evaluation_list=require('./routes/evaluation_list');
 //
 
 
@@ -170,6 +172,8 @@ app.use('/sms_send', sms_send);
 app.use('/content', content);
 app.use('/credit_management', creditmanagement);
 app.use('/status', status);
+app.use('/evaluation',evaluation)
+app.use('/evaluation_list',evaluation_list)
 //
 
 app.use('/union/product', unionProduct);

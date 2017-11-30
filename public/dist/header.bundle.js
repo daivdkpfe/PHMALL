@@ -259,14 +259,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(39)(content, options);
+var update = __webpack_require__(49)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./jquery-weui.min.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./jquery-weui.min.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!./jquery-weui.min.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!./jquery-weui.min.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -306,14 +306,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(39)(content, options);
+var update = __webpack_require__(49)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./public.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./public.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!./public.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!./public.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -349,7 +349,7 @@ var return_date = function (date) {
 
 /***/ }),
 
-/***/ 39:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -758,14 +758,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(39)(content, options);
+var update = __webpack_require__(49)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./weui.min.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./weui.min.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!./weui.min.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!./weui.min.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});

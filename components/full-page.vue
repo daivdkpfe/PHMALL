@@ -1,3 +1,4 @@
+<!--单页-->
 <template>
   <div class="full-page-div" v-bind:class="{full_page_show:full_page_show}">
       <slot></slot>

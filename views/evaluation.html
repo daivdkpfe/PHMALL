@@ -1,0 +1,80 @@
+<% include header_index_iview.html %>
+<style>
+    body{
+        background: rgb(239,239,244);
+    }
+    .evaluation_detail{
+        background: white;
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+    }
+    .evaluation_detail .title{
+        height: 44px;
+        line-height: 44px;
+        font-size: 15px;
+        color: #454545;
+        text-indent: 10px;
+        width: 100%;
+        border-bottom: 1px solid #EEE;
+    }
+    .evaluation_detail .detail{
+        width: 100%;
+    }
+    .evaluation_detail .detail p{
+        width: calc(100% - 20px);
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: #445544;
+        line-height: 18px;
+    }
+    .evaluation_detail .detail img{
+        width: 90%;
+        height:70px;
+        margin: 0 5%;
+    }
+</style>
+<div class="big_div">
+    <top title="评价"></top>
+    <ordertop :info="order"></ordertop>
+
+    <div class="evaluation_div">
+        
+    </div>
+    <div class="evaluation_detail">
+        <div class="title">
+            <p>评价内容</p>
+        </div>
+        <div class="detail">
+            <p>狗币苏宁全是差评全是差评差评差评差评差评狗币苏宁全是差评全是差评差评差评差评差评狗币苏宁全是差评全是差评差评差评差评差评狗币苏宁全是差评全是差评差评差评差评差评狗币苏宁全是差评全是差评差评差评差评差评狗币苏宁全是差评全是差评差评差评差评差评狗币苏宁全是差评全是差评差评差评差评差评</p>
+            <grow>
+                <gcol><img src="images/default_wap/1.png" alt=""></gcol>
+                <gcol><img src="images/default_wap/1.png" alt=""></gcol>
+                <gcol><img src="images/default_wap/1.png" alt=""></gcol>
+                <gcol><img src="images/default_wap/1.png" alt=""></gcol>
+                <gcol><img src="images/default_wap/1.png" alt=""></gcol>            
+            </grow>
+        </div>
+    </div>
+</div>
+
+<script src="images/default_wap/vue.js"></script>
+<script src="./dist/evaluation.bundle.js"></script>
+<script>
+      Vue.use(bundle);
+      var page = new Vue({
+            el: '.big_div',
+            data: {
+               order:[{
+                   ordersn:'1111',
+                   img:'images/default_wap/1.png',
+                   goods_name:'11233',
+                   goods_attr:'5566'
+               }]
+            }
+        })
+</script>
+<% include footer.html %>

@@ -306,6 +306,7 @@
                 $.post('/member_share', {
                     uid: '<%= uid %>'
                 }, function(data) {
+                    console.log('aaa');
                     console.log(data);
 
                     if (data.ret == '200') {

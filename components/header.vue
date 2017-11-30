@@ -37,7 +37,6 @@
         color: #181818;
         line-height: 44px;
         text-align: center;
-        background: url('images/default_wap/load.png')
     }
 </style>
 

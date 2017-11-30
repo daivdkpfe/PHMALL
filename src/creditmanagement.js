@@ -10,10 +10,12 @@ import header from '../components/header.vue'
 import navbar from '../components/gxc/Navbar.vue';
 import grow from '../components/gxc/Flex/Row.vue'
 import gcol from '../components/gxc/Flex/Col.vue'
+import evaluation from '../components/evaluation_item.vue'
 
 export function install(Vue) {
     Vue.component("top", header);
     Vue.component('navbar', navbar);
     Vue.component('grow', grow);
     Vue.component('gcol', gcol);
+    Vue.component('evaluation',evaluation);
 }

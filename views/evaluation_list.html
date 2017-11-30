@@ -1,0 +1,37 @@
+<% include header_index_iview.html %>
+<style>
+    .header{
+        box-shadow: none;
+    }
+</style>
+<div class="big_div">
+    <top title="我的评价"></top>
+    <navbar :menulist="navbar_menu">
+        <div slot="Navbar_page_0">
+                <evaluation></evaluation>
+        </div>
+        <div slot="Navbar_page_1">
+                <evaluation></evaluation>
+                <evaluation></evaluation>
+        </div>
+        <div slot="Navbar_page_2">
+                <evaluation></evaluation>
+                <evaluation></evaluation>
+                <evaluation></evaluation>
+        </div>
+    </navbar>
+</div>
+
+
+<script src="images/default_wap/vue.js"></script>
+<script src="dist/evaluation_list.bundle.js"></script>
+<script>
+    Vue.use(bundle)
+    var page = new Vue({
+        el:'.big_div',
+        data:{
+            navbar_menu:['好评','中评','差评']
+        }
+    })
+</script>
+<% include footer.html %>

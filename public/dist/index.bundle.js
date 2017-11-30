@@ -371,7 +371,7 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
-/***/ 14:
+/***/ 11:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -529,16 +529,63 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 34:
+/***/ 4:
+/***/ (function(module, exports) {
+
+/**
+ * Created by Administrator on 2017/9/15.
+ */
+module.exports = {
+    //index.js
+    //index
+    data_err: "數據錯誤",
+    _001: '服装鞋包',
+    _002: '美妆护理',
+    _003: '珠宝手表',
+    _004: '母婴玩具',
+    _005: '数码家电',
+    _006: '家居装修',
+    _007: '户外运动',
+    _010: '旅游度假',
+    _011: '吃喝玩乐',
+    _012: '更多分类',
+    _013: '限时秒杀',
+    index_ad_title: ['折/扣/区', '精/选/区'],
+    //address_add
+    _014: '管理收货地址',
+    _015: '收货人',
+    _016: '手机号码',
+    _017: '所属地区',
+    _018: '邮政编码',
+    _019: '街道地区',
+    _020: '保存',
+    _021: '添加失败',
+    _022: '超过地址数量',
+    _023: '添加成功',
+    //address
+    _024: '管理收货地址',
+    _025: '收货人',
+    _026: '收货地址',
+    _027: '删除',
+    _028: '编辑',
+    _029: '默认地址',
+    _030: '添加新地址',
+    _031: '删除成功',
+    _032: '删除失败'
+};
+
+/***/ }),
+
+/***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_product_vue__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_24bc5e17_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_product_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_product_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_24bc5e17_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_product_vue__ = __webpack_require__(48);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(35)
+  __webpack_require__(45)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -585,13 +632,13 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 35:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(36);
+var content = __webpack_require__(46);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -612,7 +659,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 36:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -627,7 +674,7 @@ exports.push([module.i, "\n.ppl {\n    width: 355px;\n    margin: 0 auto;\n}\n.r
 
 /***/ }),
 
-/***/ 37:
+/***/ 47:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -686,7 +733,7 @@ exports.push([module.i, "\n.ppl {\n    width: 355px;\n    margin: 0 auto;\n}\n.r
 
 /***/ }),
 
-/***/ 38:
+/***/ 48:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -728,53 +775,6 @@ if (false) {
 
 /***/ }),
 
-/***/ 4:
-/***/ (function(module, exports) {
-
-/**
- * Created by Administrator on 2017/9/15.
- */
-module.exports = {
-    //index.js
-    //index
-    data_err: "數據錯誤",
-    _001: '服装鞋包',
-    _002: '美妆护理',
-    _003: '珠宝手表',
-    _004: '母婴玩具',
-    _005: '数码家电',
-    _006: '家居装修',
-    _007: '户外运动',
-    _010: '旅游度假',
-    _011: '吃喝玩乐',
-    _012: '更多分类',
-    _013: '限时秒杀',
-    index_ad_title: ['折/扣/区', '精/选/区'],
-    //address_add
-    _014: '管理收货地址',
-    _015: '收货人',
-    _016: '手机号码',
-    _017: '所属地区',
-    _018: '邮政编码',
-    _019: '街道地区',
-    _020: '保存',
-    _021: '添加失败',
-    _022: '超过地址数量',
-    _023: '添加成功',
-    //address
-    _024: '管理收货地址',
-    _025: '收货人',
-    _026: '收货地址',
-    _027: '删除',
-    _028: '编辑',
-    _029: '默认地址',
-    _030: '添加新地址',
-    _031: '删除成功',
-    _032: '删除失败'
-};
-
-/***/ }),
-
 /***/ 5:
 /***/ (function(module, exports) {
 
@@ -793,14 +793,14 @@ module.exports = {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["install"] = install;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_product_vue__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_product_vue__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index_ad_vue__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_index_header_vue__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_ch__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_ch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__lanuage_lanuage_ch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lanuage_lanuage_en__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lanuage_lanuage_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__lanuage_lanuage_en__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__include_global__);
 
 

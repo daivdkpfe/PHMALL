@@ -1,14 +1,15 @@
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
+const path = require('path');  //路径
+const CleanWebpackPlugin = require('clean-webpack-plugin'); //清除已经打包的
+const webpack = require('webpack');  
 
 var fileLoaderOption = {
     loader: 'file-loader',
     options: {
-        name: './[name].[ext]',
+        name: '[name].[ext]',
+        publicPath:'dist/'
     }
 };
-
+//文件加载配置
 
 module.exports = {
     entry: {
@@ -28,21 +29,26 @@ module.exports = {
         member_share: './src/member_share.js',
         myshare: './src/myshare.js',
         mycoupon: './src/mycoupon.js',
-        creditmanagement: './src/creditmanagement.js'
-    },
+        creditmanagement: './src/creditmanagement.js',
+        evaluation:'./src/evaluation.js',
+        evaluation_list:'./src/evaluation_list.js'
+    },  //入口
     devServer: {
         contentBase: './dist',
         hot: true
-    },
+    },//服务器，其实这个应该可以不用
     module: {
         rules: [{
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', {
+                    loader: 'css-loader',
+                    options: { root: './dist/' }
+                }]
             },
             {
                 test: /\.less$/,
-                use:  ['style-loader', 'css-loader', 'less-loader']
-            }
+                use: ['style-loader', 'css-loader', 'less-loader']
+            },
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
@@ -57,7 +63,7 @@ module.exports = {
                 use: [fileLoaderOption]
             }
         ]
-    },
+    },//处理规则
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
@@ -65,13 +71,13 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-    ],
+    ],//清除哪个目录
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, './public/dist'),
         library: 'bundle',
         libraryTarget: 'var',
-    },
+    },//输出
     externals: {
         Vue: {
             commonjs: 'Vue',
