@@ -53,14 +53,12 @@ export default {
     },
   props:['menulist','selected'],
   watch:{
-      watch:function(){
-          this.select=this.selected;
-      }
+      
   },
   mounted:function(){
      
-      this.selected=typeof(this.selected)=='undefined'||this.selected>this.menulist.length?0:this.selected;
-      this.select=this.selected;
+   
+      this.select=typeof(this.selected)=='undefined'||this.selected>this.menulist.length?0:this.selected;
   }
 }
 </script>

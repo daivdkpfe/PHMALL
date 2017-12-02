@@ -1,8 +1,8 @@
 <!--评价item-->
 <template>
   <div class="evaluation_item">
-    <img src="images/default_wap/load.png" class="fl" alt="">
-    <p class="sl1">狗币苏宁吃屎去吧</p>
+    <img :src="img" data-src="images/default_wap/load.png"  class="fl" alt="">
+    <p class="sl1">{{content}}</p>
   </div>
 </template>
 <style>
@@ -15,7 +15,7 @@
 }
 .evaluation_item img{
   width: 35px;
-  height: 35px;
+  height: 34px;
   margin: 10px;
 }
 .evaluation_item p{
@@ -24,7 +24,11 @@
   line-height: 55px;
   font-size: 15px;
   color: #454545;
-
 }
 </style>
+<script>
+export default {
+  props:['content','img']
+}
+</script>
 

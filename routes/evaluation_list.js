@@ -6,20 +6,40 @@ var fs = require("fs");
 
 
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
 
     /* async function run() {
         var a = await sqlasnyc("select * from `mvm_config` limit 1");
         console.log(a);
     }
     run(); */
-    
-    res.render('evaluation_list', { title: 'PHMALL' });
+
+    res.render('evaluation_list', {
+        title: 'PHMALL'
+    });
 });
-/* router.get('/index', function(req, res, next) {
-  res.render('admin/index', { title: 'Express' });
-});
-router.get('/setting', function(req, res, next) {
-  res.render('admin/setting', { title: 'Express' });
-}); */
+router.post('/buyer', function (req, res, next) {
+    async function run() {
+        var evaluation = await sqlasnyc("select * from `mvm_order_goods_comment` where from_id=?", ['admin']);
+        var respond = {
+            ret: 200,
+            data: evaluation
+        }
+        res.json(respond);
+    }
+    run();
+})
+router.post('/seller', function (req, res, next) {
+    async function run() {
+        var evaluation = await sqlasnyc("select * from `mvm_order_goods_comment` where to_id=?", ['admin']);
+        var respond = {
+            ret: 200,
+            data: evaluation
+        }
+        res.json(respond);
+    }
+    run();
+})
+
+
 module.exports = router;

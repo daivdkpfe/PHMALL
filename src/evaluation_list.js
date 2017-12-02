@@ -18,4 +18,5 @@ export function install(Vue) {
     Vue.component('grow', grow);
     Vue.component('gcol', gcol);
     Vue.component('navbar',navbar);
+    
 }

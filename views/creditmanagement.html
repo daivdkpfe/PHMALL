@@ -1,43 +1,50 @@
 <% include header_index_iview.html %>
     <style>
-        body{
-            background: rgb(239,239,244);
+        body {
+            background: rgb(239, 239, 244);
         }
+
         .header_div p {
             color: white !important;
         }
-        
+
         .header {
             background: none;
             box-shadow: none;
         }
-        
+
         .top_div {
             background: linear-gradient(to top, #fe9b0c, #ff8000)
         }
-        .Navbar .selected p{
-            
+
+        .Navbar .selected p {
+
             color: white;
         }
-        .Navbar .selected_div{
+
+        .Navbar .selected_div {
             display: none;
         }
-        .Navbar .menu{
-            color: rgba(255,255,255,0.5);
-            border-bottom: 1px solid rgb(255,172,80);
+
+        .Navbar .menu {
+            color: rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgb(255, 172, 80);
         }
+
         .Navbar {
             float: none;
         }
-        
+
         .Navbar .page {
             float: none;
         }
-        .Navbar .num-row{
+
+        .Navbar .num-row {
             height: 209px;
             width: 100%;
         }
-        .Navbar .num-row .tags{
+
+        .Navbar .num-row .tags {
             width: 100%;
             text-align: center;
             line-height: 44px;
@@ -45,86 +52,105 @@
             font-size: 13px;
             height: 44px;
         }
-        .Navbar .num-row .wrap{
+
+        .Navbar .num-row .wrap {
             width: 19px;
             height: 1px;
-            transform:rotate(180deg);
+            transform: rotate(180deg);
             margin: 0 auto;
             position: relative;
-            top:129px;
+            top: 129px;
         }
-        .Navbar .num-row .graph{
-            height: 50px;
+
+        .Navbar .num-row .graph {
+            height:0;
             width: 19px;
             background: white;
+
+            transition: height 1s;
+            -moz-transition: height 1s;	/* Firefox 4 */
+            -webkit-transition: height 1s;	/* Safari 和 Chrome */
+            -o-transition: height 1s;
         }
-        .Navbar .graph .Line{
+
+        .Navbar .graph .Line {
             height: 130px;
             width: 1px;
             background: white;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
-        .Navbar .num{
+
+        .Navbar .num {
             line-height: 33px;
             height: 33px;
             position: relative;
-            top:129px;
+            top: 129px;
             text-align: center;
             color: white;
         }
-        .good-title{
+
+        .good-title {
             background: white;
-            
+
             width: 100%;
         }
-        .good-title .title .fl{
+
+        .good-title .title .fl {
             margin-left: 10px;
             line-height: 44px;
             color: #454545;
             font-size: 13px;
         }
-        .good-title .title .fr{
+
+        .good-title .title .fr {
             margin-right: 10px;
             line-height: 44px;
             color: #adadad;
             font-size: 13px;
         }
-        .good-title .num{
+
+        .good-title .num {
             height: 80px;
             background: white;
-            
+
             width: 100%;
         }
-        .good-title .num p{
+
+        .good-title .num p {
             line-height: 18px;
             font-size: 15px;
             color: #adadad;
             text-align: center;
         }
-        .good-title .num .percentage{
+
+        .good-title .num .percentage {
             font-size: 24px;
             color: #fe9b0c;
             line-height: 22px;
             margin: 0 0 6px 0;
             padding-top: 17px;
         }
-        .evaluate-log{
+
+        .evaluate-log {
             width: 100%;
             margin-top: 10px;
         }
-        .evaluate-log .header{
+
+        .evaluate-log .header {
             height: 44px;
             width: 100%;
             background: white;
         }
-        .evaluate-log .header{
+
+        .evaluate-log .header {
             line-height: 44px;
             font-size: 15px;
             text-indent: 10px;
             color: #454545;
         }
-        .evaluate-log .header a{
-            color:#454545;
+
+        .evaluate-log .header a {
+            color: #454545;
         }
     </style>
 
@@ -147,33 +173,33 @@
                             <div class="num-row">
                                 <p class="tags">好评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph" :style="'height:'+total.goodheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{total.good}}</p>
                             </div>
                         </gcol>
                         <gcol class="Col">
                             <div class="num-row">
-                                <p class="tags">好评</p>
+                                <p class="tags">中评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph" :style="'height:'+total.normalheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{total.normal}}</p>
                             </div>
                         </gcol>
                         <gcol class="Col">
                             <div class="num-row">
-                                <p class="tags">好评</p>
+                                <p class="tags">差评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph" :style="'height:'+total.badheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{total.bad}}</p>
                             </div>
                         </gcol>
                     </grow>
@@ -184,33 +210,33 @@
                             <div class="num-row">
                                 <p class="tags">好评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph" :style="'height:'+week.goodheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{week.good}}</p>
                             </div>
                         </gcol>
                         <gcol class="Col">
                             <div class="num-row">
-                                <p class="tags">好评</p>
+                                <p class="tags">中评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph"  :style="'height:'+week.normalheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{week.normal}}</p>
                             </div>
                         </gcol>
                         <gcol class="Col">
                             <div class="num-row">
-                                <p class="tags">好评</p>
+                                <p class="tags">差评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph"  :style="'height:'+week.badheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{week.bad}}</p>
                             </div>
                         </gcol>
                     </grow>
@@ -221,33 +247,33 @@
                             <div class="num-row">
                                 <p class="tags">好评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph" :style="'height:'+half_year.goodheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{half_year.good}}</p>
                             </div>
                         </gcol>
                         <gcol class="Col">
                             <div class="num-row">
-                                <p class="tags">好评</p>
+                                <p class="tags">中评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph"  :style="'height:'+half_year.normalheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{half_year.normal}}</p>
                             </div>
                         </gcol>
                         <gcol class="Col">
                             <div class="num-row">
-                                <p class="tags">好评</p>
+                                <p class="tags">差评</p>
                                 <div class="wrap">
-                                    <div class="graph">
+                                    <div class="graph" :style="'height:'+half_year.badheight+'px;'">
                                         <div class="Line"></div>
                                     </div>
                                 </div>
-                                <p class="num">33</p>
+                                <p class="num">{{half_year.bad}}</p>
                             </div>
                         </gcol>
                     </grow>
@@ -259,21 +285,33 @@
         <div class="good-title">
             <div class="h44 title">
                 <p class="fl">累计：</p>
-                <p class="fr">44条</p>
+                <p class="fr">{{total.all}}条</p>
             </div>
             <div class="num">
-                <p class="percentage">80%</p>
+                <p class="percentage">{{this.total.all > 0 ? this.total.good / this.total.all*100:0}}%</p>
                 <p>好评率</p>
             </div>
         </div>
-        <!-- 好评标题 -->
+        
 
         <div class="evaluate-log">
             <div class="header">
-                <a href="./evaluation_list"><p>评价情况</p></a>
+                <a href="./evaluation_list">
+                    <p>给卖家的评价</p>
+                </a>
             </div>
         </div>
-        <evaluation></evaluation>
+
+        <div class="evaluate-log">
+            <div class="header">
+                <a href="./evaluation_list">
+                    <p>来自卖家的评价</p>
+                </a>
+            </div>
+        </div>
+        <!-- 好评标题 -->
+        <!-- <evaluation></evaluation> -->
+        <!-- 单条评价 -->
     </div>
 
     <script src="images/default_wap/vue.js"></script>
@@ -283,7 +321,98 @@
         var page = new Vue({
             el: '.big_div',
             data: {
-                Navbar_menu: ['全部', '最近一周', '最近三月']
+                Navbar_menu: ['全部', '最近一周', '最近半年'],
+                total: {
+                    good: 0,
+                    bad: 0,
+                    normal: 0,
+                    all: 0,
+                    goodheight: 0,
+                    normalheight: 0,
+                    badheight: 0
+                },
+                week: {
+                    good: 0,
+                    bad: 0,
+                    normal: 0,
+                    all: 0,
+                    goodheight: 0,
+                    normalheight: 0,
+                    badheight: 0
+                },
+                half_year: {
+                    good: 0,
+                    bad: 0,
+                    normal: 0,
+                    all: 0,
+                    goodheight: 0,
+                    normalheight: 0,
+                    badheight: 0
+                }
+            },
+            watch: {
+                total: {
+                    handler: function (val, oldVal) {
+
+                        this.total.all = this.total.good + this.total.bad + this.total.normal;
+                        this.total.goodheight = this.total.all > 0 ? this.total.good / this.total.all * 130 :
+                            0
+                        this.total.normalheight = this.total.all > 0 ? this.total.normal / this.total.all *
+                            130 : 0
+                        this.total.badheight = this.total.all > 0 ? this.total.bad / this.total.all * 130 :
+                            0
+
+                    },
+                    deep: true
+                },
+
+                week: {
+                    handler: function (val, oldVal) {
+                        this.week.all = this.week.good + this.week.bad + this.week.normal;
+                        this.week.goodheight = this.week.all > 0 ? this.week.good / this.week.all * 130 : 0;
+                        this.week.normalheight = this.week.all > 0 ? this.week.normal / this.week.all * 130 :
+                            0;
+                        this.week.badheight = this.week.all > 0 ? this.week.bad / this.week.all * 130 : 0;
+                        this.normalheight=0;
+                    },
+                    deep: true
+                },
+                half_year: {
+                    handler: function (val, oldVal) {
+                        
+                        this.half_year.all = this.half_year.good + this.half_year.bad+this.half_year.normal;
+                       
+                        this.half_year.goodheight = this.half_year.all > 0 ? this.half_year.good / this.half_year
+                            .all * 130 : 0;
+                        this.half_year.normalheight = this.half_year.all > 0 ? this.half_year.normal / this
+                            .half_year.all * 130 : 0
+                        this.half_year.badheight = this.half_year.all > 0 ? this.half_year.bad / this.half_year
+                            .all * 130 : 0
+                    },
+                    deep: true
+                },
+
+            },
+            mounted: function () {
+                var that = this;
+
+                $.post('./credit_management', {}, function (data) {
+                    var data=data.data;
+                    console.log(data);
+                    that.$set(that.total, 'good', data["0"].comment_data.seller.good.total);
+                    that.$set(that.total, 'normal', data["0"].comment_data.seller.normal.total);
+                    that.$set(that.total, 'bad', data["0"].comment_data.seller.bad.total);
+
+
+                    that.$set(that.week, 'good', data["0"].comment_data.seller.good.week);
+                    that.$set(that.week, 'normal', data["0"].comment_data.seller.normal.week);
+                    that.$set(that.week, 'bad', data["0"].comment_data.seller.bad.week);
+
+
+                    that.$set(that.half_year, 'good', data["0"].comment_data.seller.good.half_year);
+                    that.$set(that.half_year, 'normal', data["0"].comment_data.seller.normal.half_year);
+                    that.$set(that.half_year, 'bad', data["0"].comment_data.seller.bad.half_year);
+                })
             }
         })
     </script>

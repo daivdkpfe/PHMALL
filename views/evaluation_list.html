@@ -8,14 +8,9 @@
     <top title="我的评价"></top>
     <navbar :menulist="navbar_menu">
         <div slot="Navbar_page_0">
-                <evaluation></evaluation>
+                <evaluation v-for="evaluation in to_seller" :content="evaluation.to_id" img="./images/default_wap/1.png"></evaluation>
         </div>
         <div slot="Navbar_page_1">
-                <evaluation></evaluation>
-                <evaluation></evaluation>
-        </div>
-        <div slot="Navbar_page_2">
-                <evaluation></evaluation>
                 <evaluation></evaluation>
                 <evaluation></evaluation>
         </div>
@@ -30,8 +25,21 @@
     var page = new Vue({
         el:'.big_div',
         data:{
-            navbar_menu:['好评','中评','差评']
-        }
+            navbar_menu:['给卖家的评论','来自卖家的评论'],
+            to_seller:[]
+        },
+        mounted:function(){
+            var that=this;
+            $.post('./evaluation_list/buyer',{},function(data){
+                
+                console.log(data);
+                datas= data.data;
+
+                datas.forEach(element => {
+                    that.to_seller.push(element);
+                });
+            });
+        }           
     })
 </script>
 <% include footer.html %>
