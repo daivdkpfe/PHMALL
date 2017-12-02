@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=375px, user-scalable=no">
+	<meta name="google-signin-scope" content="profile email">
+	<meta name="google-signin-client_id" content="1006860404577-vbkc1737ds3jfme5ghk76v6gnetm4ltr.apps.googleusercontent.com">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title><%= title %></title>
+
+	
+	<link rel="stylesheet" href="images/default_wap/public.css">
+
+
+	
+
+	<script src="images/default_wap/jquery.min.js"></script>
+	<script src="images/default_wap/public.js"></script>
+
+
+
+
+
+	<script src="images/default_wap/lazyimg.js"></script>
+
+	<script>
+		$(function(){
+			var lazyloadImg = new LazyloadImg({
+				el: 'body [data-src]', //匹配元素
+				top: 0, //元素在顶部伸出长度触发加载机制
+				right: 0, //元素在右边伸出长度触发加载机制
+				bottom: 0, //元素在底部伸出长度触发加载机制
+				left: 0, //元素在左边伸出长度触发加载机制
+				qriginal: false, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高
+				load: function(el) {
+					el.style.cssText += '-webkit-animation: fadeIn 01s ease 0.2s 1 both;animation: fadeIn 1s ease 0.2s 1 both;';
+				},
+				error: function(el) {
+					
+				}
+			});
+		});
+	</script> 
+
+</head>
+
+<body>
+

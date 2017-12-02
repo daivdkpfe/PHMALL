@@ -6,8 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Document</title>
+
 </head>
 <body>
-    <i class="icon ion-home"></i>
+        <script src="./public/images/default_wap/jquery.min.js"></script>
+        <script src="./public/images/default_wap/vue.js"></script> 
+        <script src="./public/images/default_wap/lazyimg.js"></script>
+    
+       
+    <script src="./public/dist/evaluation_list.bundle.js"></script>
+    
+    <div class="temp">
+            <evaluation img="./public/images/default_wap/1.png" data_img="./public/images/default_wap/load.png">
+                    
+            </evaluation>
+    </div>
+    
+    
 </body>
+<script>
+        Vue.use(bundle);
+        var page= new Vue({
+            el:'.temp'
+           
+        })
+        $(function(){
+			var lazyloadImg = new LazyloadImg({
+				el: 'body [data-src]', //匹配元素
+				top: 50, //元素在顶部伸出长度触发加载机制
+				right: 50, //元素在右边伸出长度触发加载机制
+				bottom: 50, //元素在底部伸出长度触发加载机制
+				left: 50, //元素在左边伸出长度触发加载机制
+				qriginal: false, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高
+				load: function(el) {
+					el.style.cssText += '-webkit-animation: fadeIn 01s ease 0.2s 1 both;animation: fadeIn 1s ease 0.2s 1 both;';
+				},
+				error: function(el) {
+
+				}
+			});
+		});
+    </script>
 </html>

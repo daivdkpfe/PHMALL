@@ -510,6 +510,13 @@ function install(Vue) {
 
 /***/ }),
 
+/***/ 193:
+/***/ (function(module, exports) {
+
+module.exports = "dist/load.png";
+
+/***/ }),
+
 /***/ 2:
 /***/ (function(module, exports) {
 
@@ -1465,7 +1472,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 100%;\r\n    height: 55px;\r\n    background: white;\r\n    border-top: 1px solid #EEE;\n}\n.evaluation_item img{\r\n  width: 35px;\r\n  height: 34px;\r\n  margin: 10px;\n}\n.evaluation_item p{\r\n  width: 220px;\r\n\r\n  line-height: 55px;\r\n  font-size: 15px;\r\n  color: #454545;\n}\r\n", ""]);
+exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 100%;\r\n    height: 55px;\r\n    background: white;\r\n    border-top: 1px solid #EEE;\n}\n.evaluation_item img{\r\n  width: 35px;\r\n  height: 34px;\r\n  margin: 10px;\r\n  background: url(" + __webpack_require__(193) + ")\n}\n.evaluation_item p{\r\n  width: 220px;\r\n  line-height: 55px;\r\n  font-size: 15px;\r\n  color: #454545;\n}\n.evaluation_item .type{\r\n  width: 50px;\r\n  text-align: right;\n}\n.evaluation_item .typeimg{\r\n  margin: 0;\r\n  width: 20px;\r\n  height:20px;\r\n  margin-top: 17.5px;\r\n  transform: rotate(180deg);\r\n  -ms-transform: rotate(180deg);\t\t/* IE 9 */\r\n  -webkit-transform: rotate(180deg);\t/* Safari and Chrome */\r\n  -o-transform: rotate(180deg);\t\t/* Opera */\r\n  -moz-transform: rotate(180deg);\r\n  margin-right: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -1504,9 +1511,29 @@ exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 1
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  props: ['content', 'img']
+  props: ['content', 'img', 'data_img', 'href', 'type']
 });
 
 /***/ }),
@@ -1572,17 +1599,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "evaluation_item" }, [
-    _c("img", {
-      staticClass: "fl",
-      attrs: {
-        src: _vm.img,
-        "data-src": "images/default_wap/load.png",
-        alt: ""
-      }
-    }),
-    _vm._v(" "),
-    _c("p", { staticClass: "sl1" }, [_vm._v(_vm._s(_vm.content))])
+  return _c("a", { attrs: { href: _vm.href } }, [
+    _c("div", { staticClass: "evaluation_item" }, [
+      _c("img", { staticClass: "fl", attrs: { src: _vm.img, alt: "" } }),
+      _vm._v(" "),
+      _c("p", { staticClass: "sl1 fl" }, [_vm._v(_vm._s(_vm.content))]),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "fr typeimg",
+        attrs: { src: "images/default_wap/return.png", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("p", { staticClass: "fr type" }, [_vm._v(_vm._s(_vm.type))])
+    ])
   ])
 }
 var staticRenderFns = []

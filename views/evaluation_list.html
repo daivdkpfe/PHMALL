@@ -1,45 +1,83 @@
 <% include header_index_iview.html %>
-<style>
-    .header{
-        box-shadow: none;
-    }
-</style>
-<div class="big_div">
-    <top title="我的评价"></top>
-    <navbar :menulist="navbar_menu">
-        <div slot="Navbar_page_0">
-                <evaluation v-for="evaluation in to_seller" :content="evaluation.to_id" img="./images/default_wap/1.png"></evaluation>
-        </div>
-        <div slot="Navbar_page_1">
-                <evaluation></evaluation>
-                <evaluation></evaluation>
-        </div>
-    </navbar>
-</div>
+    <style>
+        .header {
+            box-shadow: none;
+        }
+    </style>
+    <div class="big_div">
+        <top title="我的评价"></top>
+        <navbar :menulist="navbar_menu">
+            <div slot="Navbar_page_0">
+                <evaluation v-for="evaluation in to_seller" :href="'./evaluation?roll=0&uid='+evaluation.uid" :content="evaluation.to_id"
+                    :img="'http://www.phmall.com.ph/union/images/'+evaluation.img['0'].member_image" :type="evaluation.level"></evaluation>
+            </div>
+            <div slot="Navbar_page_1">
+                <evaluation v-for="evaluation in to_buyer" :href="'./evaluation?roll=1&uid='+evaluation.uid" :content="evaluation.from_id"
+                    :img="'http://www.phmall.com.ph/union/images/'+evaluation.img['0'].member_image" :type="evaluation.level"></evaluation>
+            </div>
+        </navbar>
+    </div>
 
 
-<script src="images/default_wap/vue.js"></script>
-<script src="dist/evaluation_list.bundle.js"></script>
-<script>
-    Vue.use(bundle)
-    var page = new Vue({
-        el:'.big_div',
-        data:{
-            navbar_menu:['给卖家的评论','来自卖家的评论'],
-            to_seller:[]
-        },
-        mounted:function(){
-            var that=this;
-            $.post('./evaluation_list/buyer',{},function(data){
-                
-                console.log(data);
-                datas= data.data;
-
-                datas.forEach(element => {
-                    that.to_seller.push(element);
+    <script src="images/default_wap/vue.js"></script>
+    <script src="dist/evaluation_list.bundle.js"></script>
+    <script>
+        Vue.use(bundle)
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                navbar_menu: ['给卖家的评论', '来自卖家的评论'],
+                to_seller: [],
+                to_buyer: []
+            },
+            mounted: function () {
+                var that = this;
+                $.post('./evaluation_list/buyer', {}, function (data) {
+                    if (data.ret == '200') {
+                        datas = data.data;
+                        datas.forEach(element => {
+                            switch(element.level){
+                                case 1:
+                                element.level='好评'
+                                break;
+                                case 0:
+                                element.level='中评'
+                                break;
+                                case -1:
+                                element.level='差评'
+                            }
+                            that.to_seller.push(element);
+                        });
+                    } else if (data.ret == '201') {
+                        window.location.href = "./login"
+                    }
                 });
-            });
-        }           
-    })
-</script>
-<% include footer.html %>
+                $.post('./evaluation_list/seller', {}, function (data) {
+                    if (data.ret == '200') {
+                        datas = data.data;
+                        datas.forEach(element => {
+                            switch(element.level){
+                                case 1:
+                                element.level='好评'
+                                break;
+                                case 0:
+                                element.level='中评'
+                                break;
+                                case -1:
+                                element.level='差评'
+                            }
+                            that.to_buyer.push(element);
+                        });
+                    } else if (data.ret == '201') {
+                        window.location.href = "./login"
+                    }
+
+
+
+
+                });
+
+            }
+        })
+    </script>
+    <% include footer.html %>
