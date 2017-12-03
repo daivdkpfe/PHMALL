@@ -57,7 +57,7 @@ router.post('/buyer', function (req, res, next) {
     if (req.session.sign && req.session.m_id) {
         var m_id=req.session.m_id;
         async function run() {
-            var evaluation = await sqlasnyc("select * from `mvm_order_goods_comment` where from_id=? ", [m_id]);
+            var evaluation = await sqlasnyc("select * from `mvm_order_user_comment` where  from_id=? and roll='0'", [m_id]);
             for (let i in evaluation) {
                 evaluation[i].img = await sqlasnyc('select member_image from `mvm_member_table` where member_id=?', [evaluation[i].to_id]);
             }

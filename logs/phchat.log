@@ -5495,3 +5495,462 @@
 [2017-12-02 16:04:04.817] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
 [2017-12-02 16:04:04.819] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
 [2017-12-02 16:04:04.821] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.618] [INFO] log_file - select * from `mvm_order_goods_comment` where from_id=?     admin
+[2017-12-02 16:21:32.620] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 16:21:32.628] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 16:21:32.629] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.632] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 16:21:32.636] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 16:21:32.637] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.639] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.642] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.643] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.645] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.646] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.647] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.649] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.651] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.652] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.655] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.656] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.658] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.659] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.660] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.663] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.664] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.666] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.669] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.670] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.672] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.673] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.674] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.677] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.678] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.680] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.683] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.687] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.688] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.690] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.691] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.692] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.694] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.695] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.697] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.698] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.700] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.701] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.702] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.704] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.705] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.706] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.708] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.709] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.710] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.712] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 16:21:32.714] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:09.250] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-12-02 17:12:09.252] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-12-02 17:12:09.253] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-12-02 17:12:09.253] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-12-02 17:12:09.253] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-12-02 17:12:09.253] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-12-02 17:12:09.254] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-12-02 17:12:09.254] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-12-02 17:12:09.254] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-12-02 17:12:09.255] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-12-02 17:12:09.255] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-12-02 17:12:09.255] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-12-02 17:12:09.256] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-12-02 17:12:09.257] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-12-02 17:12:09.257] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-12-02 17:12:09.257] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-12-02 17:12:09.257] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-12-02 17:12:09.257] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-12-02 17:12:09.258] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-12-02 17:12:09.258] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-12-02 17:12:09.258] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-12-02 17:12:09.260] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-12-02 17:12:09.261] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-12-02 17:12:09.261] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-02 17:12:13.960] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-12-02 17:12:15.074] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1512144000,1512230399
+[2017-12-02 17:12:16.227] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-12-02 17:12:18.655] [INFO] log_file - select * from `mvm_member_statistics` where m_uid=1 and m_id='admin' limit 1    
+[2017-12-02 17:12:19.876] [INFO] log_file - select * from `mvm_order_goods_comment` where from_id=?     admin
+[2017-12-02 17:12:19.877] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:12:19.881] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:12:19.882] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.886] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:12:19.889] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:12:19.891] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.892] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.894] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.896] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.897] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.902] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.903] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.905] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.907] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.910] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.913] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.916] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.917] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.919] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.920] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.922] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.923] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.926] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.928] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.931] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.933] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.935] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.937] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.939] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.940] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.942] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.943] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.945] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.946] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.948] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.950] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.952] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.957] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.959] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.960] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.962] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.964] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.965] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.967] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.968] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.969] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.971] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.973] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.975] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.976] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.978] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:12:19.980] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.323] [INFO] log_file - select * from `mvm_order_goods_comment` where from_id=?     admin
+[2017-12-02 17:38:42.325] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:38:42.331] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:42.333] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.337] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:42.340] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:42.342] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.344] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.346] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.352] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.355] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.357] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.364] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.374] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.377] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.379] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.382] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.385] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.395] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.397] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.400] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.402] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.404] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.405] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.407] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.409] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.411] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.412] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.414] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.417] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.418] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.421] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.422] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.424] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.426] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.427] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.428] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.430] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.432] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.434] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.435] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.438] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.444] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.448] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.456] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.458] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.460] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.465] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.472] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.480] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.489] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.508] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:42.536] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:43.076] [INFO] log_file - select * from `mvm_member_statistics` where m_uid=1 and m_id='admin' limit 1    
+[2017-12-02 17:38:44.947] [INFO] log_file - select * from `mvm_order_goods_comment` where from_id=?     admin
+[2017-12-02 17:38:44.948] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:38:44.952] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:44.953] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.957] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:44.960] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:44.963] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.965] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.966] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.968] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.969] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.970] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.972] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.973] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.974] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.976] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.977] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.979] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.980] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.981] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.983] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.985] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.986] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.988] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.990] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.992] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.994] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.995] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.998] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:44.999] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.001] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.002] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.003] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.005] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.006] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.008] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.010] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.011] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.013] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.014] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.016] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.017] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.018] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.020] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.021] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.022] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.023] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.024] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.026] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.027] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.028] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.030] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:45.031] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.167] [INFO] log_file - select * from `mvm_order_goods_comment` where from_id=?     admin
+[2017-12-02 17:38:46.175] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:38:46.176] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:46.181] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.182] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:46.185] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:38:46.187] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.189] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.190] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.197] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.200] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.202] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.204] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.205] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.207] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.209] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.210] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.211] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.213] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.214] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.215] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.217] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.219] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.221] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.222] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.224] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.225] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.226] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.228] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.229] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.230] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.231] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.236] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.238] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.239] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.241] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.242] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.244] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.245] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.246] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.247] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.249] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.250] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.251] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.252] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.254] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.255] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.256] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.258] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.259] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.260] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.261] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:46.263] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:38:51.922] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-12-02 17:38:51.925] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-12-02 17:38:51.925] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-12-02 17:38:51.925] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-12-02 17:38:51.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-12-02 17:38:51.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-12-02 17:38:51.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-12-02 17:38:51.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-12-02 17:38:51.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-12-02 17:38:51.927] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-12-02 17:38:51.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-12-02 17:38:51.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-12-02 17:38:51.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-12-02 17:38:51.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-12-02 17:38:51.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-12-02 17:38:51.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-12-02 17:38:51.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-12-02 17:38:51.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-12-02 17:38:51.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-12-02 17:38:51.932] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-12-02 17:38:51.932] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-12-02 17:38:51.932] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-12-02 17:38:51.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-12-02 17:38:51.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-02 17:39:02.678] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-12-02 17:39:03.714] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1512144000,1512230399
+[2017-12-02 17:39:04.523] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-12-02 17:39:05.829] [INFO] log_file - select * from `mvm_member_statistics` where m_uid=1 and m_id='admin' limit 1    
+[2017-12-02 17:39:06.774] [INFO] log_file - select * from `mvm_order_user_comment` where  from=? and roll='0'    admin
+[2017-12-02 17:39:06.775] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:39:06.781] [INFO] log_file - Caught exception:Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='admin' and roll='0'' at line 1
+[2017-12-02 17:39:08.002] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-12-02 17:39:08.004] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-12-02 17:39:08.005] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-12-02 17:39:08.005] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-12-02 17:39:08.005] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-12-02 17:39:08.006] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-12-02 17:39:08.006] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-12-02 17:39:08.007] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-12-02 17:39:08.007] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-12-02 17:39:08.008] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-12-02 17:39:08.009] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-12-02 17:39:08.010] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-12-02 17:39:08.011] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-12-02 17:39:08.011] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-12-02 17:39:08.012] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-12-02 17:39:08.012] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-12-02 17:39:08.012] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-12-02 17:39:08.013] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-12-02 17:39:08.014] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-12-02 17:39:08.015] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-12-02 17:39:08.016] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-12-02 17:39:08.017] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-12-02 17:39:08.018] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-12-02 17:39:08.018] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-02 17:39:37.758] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-12-02 17:39:38.851] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1512144000,1512230399
+[2017-12-02 17:39:39.607] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-12-02 17:39:40.627] [INFO] log_file - select * from `mvm_member_statistics` where m_uid=1 and m_id='admin' limit 1    
+[2017-12-02 17:39:41.657] [INFO] log_file - select * from `mvm_order_user_comment` where  from=? and roll='0'    admin
+[2017-12-02 17:39:41.661] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:39:41.665] [INFO] log_file - Caught exception:Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='admin' and roll='0'' at line 1
+[2017-12-02 17:39:42.918] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-12-02 17:39:42.920] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-12-02 17:39:42.921] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-12-02 17:39:42.921] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-12-02 17:39:42.921] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-12-02 17:39:42.922] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-12-02 17:39:42.922] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-12-02 17:39:42.922] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-12-02 17:39:42.923] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-12-02 17:39:42.924] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-12-02 17:39:42.925] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-12-02 17:39:42.926] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-12-02 17:39:42.927] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-12-02 17:39:42.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-12-02 17:39:42.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-12-02 17:39:42.928] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-12-02 17:39:42.929] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-12-02 17:39:42.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-12-02 17:39:42.930] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-12-02 17:39:42.931] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-12-02 17:39:42.931] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-12-02 17:39:42.932] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-12-02 17:39:42.933] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-12-02 17:39:42.934] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-02 17:39:48.746] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2017-12-02 17:39:50.008] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1512144000,1512230399
+[2017-12-02 17:39:50.780] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2017-12-02 17:39:51.856] [INFO] log_file - select * from `mvm_member_statistics` where m_uid=1 and m_id='admin' limit 1    
+[2017-12-02 17:39:53.187] [INFO] log_file - select * from `mvm_order_user_comment` where  from_id=? and roll='0'    admin
+[2017-12-02 17:39:53.188] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:39:53.194] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.195] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.205] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.210] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.212] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.214] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.217] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.219] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.222] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.226] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.228] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.230] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:39:53.232] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:49:52.844] [INFO] log_file - select * from `mvm_order_user_comment` where  from_id=? and roll='0'    admin
+[2017-12-02 17:49:52.846] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:49:52.858] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.859] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.861] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.863] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.865] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.867] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.869] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.872] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.876] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.878] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.881] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.884] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:49:52.886] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:53:55.470] [INFO] log_file - select * from `mvm_order_user_comment` where  from_id=? and roll='0'    admin
+[2017-12-02 17:53:55.471] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:53:55.480] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.481] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.486] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.489] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.491] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.493] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.501] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.503] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.509] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.514] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.518] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.520] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:53:55.522] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:54:00.223] [INFO] log_file - select * from `mvm_order_user_comment` where  from_id=? and roll='0'    admin
+[2017-12-02 17:54:00.223] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:54:00.226] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.227] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.230] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.236] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.239] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.243] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.244] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.246] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.248] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.250] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.253] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.255] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:00.257] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College
+[2017-12-02 17:54:57.481] [INFO] log_file - select * from `mvm_order_user_comment` where  from_id=? and roll='0'    admin
+[2017-12-02 17:54:57.484] [INFO] log_file - select * from `mvm_order_user_comment` where  to_id=? and roll='1'    admin
+[2017-12-02 17:54:57.486] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.490] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.494] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.502] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.504] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.508] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.510] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.513] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.515] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.519] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.521] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.523] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2017-12-02 17:54:57.526] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    College

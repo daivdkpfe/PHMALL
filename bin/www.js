@@ -99,7 +99,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-http.get("http://192.168.0.105:88/update_cache");
+http.get("http://127.0.0.1:88/update_cache");
 var io = socketio.listen(server);
 /**
  * Listen on provided port, on all network interfaces.
@@ -1039,7 +1039,7 @@ config.web_src = "../../phpStudy/WWW/english/xx/";
 config.share_img_src = '../../phpStudy/WWW/english/union/shopimg/user_img/wap/'
 config.img_url = "http://192.168.0.105/english/";
 config.union_img_url = "http://192.168.0.105/english/union/";
-config.update_url = "http://192.168.0.105:88/update_cache";
+config.update_url = "http://127.0.0.1:88/update_cache";
 
 
 

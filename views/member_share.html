@@ -171,7 +171,7 @@
 
             <div class="demo-upload-list" v-for="item in uploadList">
                 <template v-if="item.status === 'finished'">
-                    <img :src="'http://192.168.0.105/english/'+item.url">
+                    <img :src="'http://127.0.0.1/english/'+item.url">
                     <div class="demo-upload-list-cover">
                         <Icon type="ios-eye-outline" @click.native="handleView(item.name)"></Icon>
                         <Icon type="ios-trash-outline" @click.native="handleRemove(item)"></Icon>

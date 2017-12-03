@@ -581,7 +581,7 @@ module.exports = {
     web_src: "../../phpStudy/WWW/english/xx/",
     img_url: "http://192.168.0.105/english/",
     union_img_url: "http://192.168.0.105/english/union/",
-    update_url: "http://192.168.0.105:88/update_cache"
+    update_url: "http://127.0.0.1:88/update_cache"
 };
 
 /***/ }),

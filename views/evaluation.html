@@ -74,6 +74,17 @@
                    goods_name:'11233',
                    goods_attr:'5566'
                }]
+            },
+            mounted:function(){
+                $.post('./evaluation',{type:'<%- type %>'},function(data){
+                    if(data.ret=='201'){
+                        window.location.href="./login"
+                    }
+                    else{
+                        var datas=data;
+                        
+                    }
+                })
             }
         })
 </script>

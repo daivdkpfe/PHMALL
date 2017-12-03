@@ -15,7 +15,7 @@
 //                     ."" '<  '.___\_<|>_/___.'  >' "".
 //                    | | :  `- \`.:`\ _ /`:.`/ -`  : | |
 //                    \  \ `-.   \_ __\ /__ _/   .-` /  /
-//                =====`-.____`.___ \_____/ ___.`____.-`=====
+//                =====-.____`.___ \_____/ ___.`____.-`=====
 //                                  `=---=`
 // 
 //   			天灵灵，地灵灵，奉请祖师来显灵。
@@ -38,15 +38,22 @@ var fs = require("fs");
 
 
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
 
-    /* async function run() {
-        var a = await sqlasnyc("select * from `mvm_config` limit 1");
-        console.log(a);
-    }
-    run(); */
-    
-    res.render('evaluation', { title: 'PHMALL' });
+  /* async function run() {
+      var a = await sqlasnyc("select * from `mvm_config` limit 1");
+      console.log(a);
+  }
+  run(); */
+  if (req.session.sign && req.session.m_id) {
+    res.render('evaluation', {
+      title: 'PHMALL',
+      type: req.query.roll
+    });
+  } else {
+    res.redirect('../login'); //重定向
+  }
+
 });
 /* router.get('/index', function(req, res, next) {
   res.render('admin/index', { title: 'Express' });
