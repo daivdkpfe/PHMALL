@@ -61,7 +61,7 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 192);
+/******/ 	return __webpack_require__(__webpack_require__.s = 193);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -428,7 +428,7 @@ module.exports = {
     web_src: "../../phpStudy/WWW/english/xx/",
     img_url: "http://192.168.0.105/english/",
     union_img_url: "http://192.168.0.105/english/union/",
-    update_url: "http://192.168.0.105:88/update_cache"
+    update_url: "http://127.0.0.1:88/update_cache"
 };
 
 /***/ }),
@@ -469,7 +469,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 192:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -541,13 +541,6 @@ function install(Vue) {
     Vue.component('gcol', __WEBPACK_IMPORTED_MODULE_6__components_gxc_Flex_Col_vue__["a" /* default */]);
     Vue.component('navbar', __WEBPACK_IMPORTED_MODULE_7__components_gxc_Navbar_vue__["a" /* default */]);
 }
-
-/***/ }),
-
-/***/ 193:
-/***/ (function(module, exports) {
-
-module.exports = "dist/load.png";
 
 /***/ }),
 
@@ -1419,8 +1412,8 @@ exports.push([module.i, "\n.header{\n    box-shadow: 0px 10px 125px rgba(0,0,0,0
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_evaluation_item_vue__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0954d7de_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_evaluation_item_vue__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_evaluation_item_vue__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0954d7de_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_evaluation_item_vue__ = __webpack_require__(91);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1506,7 +1499,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 100%;\r\n    height: 55px;\r\n    background: white;\r\n    border-top: 1px solid #EEE;\n}\n.evaluation_item img{\r\n  width: 35px;\r\n  height: 34px;\r\n  margin: 10px;\r\n  background: url(" + __webpack_require__(193) + ")\n}\n.evaluation_item p{\r\n  width: 220px;\r\n  line-height: 55px;\r\n  font-size: 15px;\r\n  color: #454545;\n}\n.evaluation_item .type{\r\n  width: 50px;\r\n  text-align: right;\n}\n.evaluation_item .typeimg{\r\n  margin: 0;\r\n  width: 20px;\r\n  height:20px;\r\n  margin-top: 17.5px;\r\n  transform: rotate(180deg);\r\n  -ms-transform: rotate(180deg);\t\t/* IE 9 */\r\n  -webkit-transform: rotate(180deg);\t/* Safari and Chrome */\r\n  -o-transform: rotate(180deg);\t\t/* Opera */\r\n  -moz-transform: rotate(180deg);\r\n  margin-right: 10px;\n}\r\n", ""]);
+exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 100%;\r\n    height: 55px;\r\n    background: white;\r\n    border-top: 1px solid #EEE;\n}\n.evaluation_item img{\r\n  width: 35px;\r\n  height: 34px;\r\n  margin: 10px;\r\n  background: url(" + __webpack_require__(89) + ")\n}\n.evaluation_item p{\r\n  width: 220px;\r\n  line-height: 55px;\r\n  font-size: 15px;\r\n  color: #454545;\n}\n.evaluation_item .type{\r\n  width: 50px;\r\n  text-align: right;\n}\n.evaluation_item .typeimg{\r\n  margin: 0;\r\n  width: 20px;\r\n  height:20px;\r\n  margin-top: 17.5px;\r\n  transform: rotate(180deg);\r\n  -ms-transform: rotate(180deg);\t\t/* IE 9 */\r\n  -webkit-transform: rotate(180deg);\t/* Safari and Chrome */\r\n  -o-transform: rotate(180deg);\t\t/* Opera */\r\n  -moz-transform: rotate(180deg);\r\n  margin-right: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -1514,6 +1507,66 @@ exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 1
 /***/ }),
 
 /***/ 89:
+/***/ (function(module, exports) {
+
+module.exports = "dist/load.png";
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+   props: ['title']
+});
+
+/***/ }),
+
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1572,60 +1625,7 @@ exports.push([module.i, "\n.evaluation_item{\r\n    /* 佈局 */\r\n    width: 1
 
 /***/ }),
 
-/***/ 9:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-   props: ['title']
-});
-
-/***/ }),
-
-/***/ 90:
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

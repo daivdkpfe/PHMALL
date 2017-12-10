@@ -177,6 +177,13 @@
         background: linear-gradient(to right,#ffa500,#ff802a);
         text-align: center;
     }
+    .settlement_now input[type='submit']{
+        border:none;
+        background: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
     .settlement_now p,.favorite_now p,.det_now p{
         width: 100px;
         text-align: center;
@@ -237,76 +244,80 @@
     <p class="cart_title h44">购物车({{cart_num}})</p>
     <img src="images/default_wap/edit.png" alt="" v-on:click="edit_cart()">
 </div>
-
-<div class="have_product">
-<div class="weui-cells weui-cells_checkbox shop_list" v-for="cart_list in carts_list">
-    <label class="weui-cell weui-check__label shop_div">
-        <div class="weui-cell__hd">
-
-        </div>
-        <div class="weui-cell__bd">
-            <img class="shop_ico" src="images/default_wap/shop.png" alt="">
-            <p>{{cart_list["0"].shop_name}}</p>
-        </div>
-    </label>
-
-    <label class="weui-cell weui-check__label goods_list shop_11" v-for="goods in cart_list" v-bind:for="goods.uid+goods.module">
-        <div class="weui-cell__hd">
-            <input type="checkbox" class="weui-check" name="checkbox1" v-bind:id="goods.uid+goods.module" v-on:click="prices()" v-bind:module="goods.module"  v-bind:uid="goods.uid" v-bind:g_uid="goods.g_uid">
-            <i class="weui-icon-checked"></i>
-        </div>
-        <div class="weui-cell__bd goods_value">
-            <img class="goods_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+goods.goods_file1" alt="">
-            <p class="goods_name sl2">{{goods.goods_name}}</p>
-            <p class="goods_attr sl1">{{goods.attr}}</p>
-            <p class="goods_price sl1 fl">₱ <d class="good_price">{{goods.cart_price}}</d></p>
-            <p class="fr goods_num">*<d class="good_num">{{goods.cart_num}}</d>  </p>
-        </div>
-    </label>
-
-</div>
-</div>
-<!--一家店鋪-->
-<div class="cnxh">
-    <hr><p>收藏夹</p><hr>
-</div>
-<!--猜你喜欢 文字-->
-<div class="cnxh_goods_list">
-    <div class="goods_list_div" v-for="favorite in favorites">
-        <a v-bind:href="'./union/product?uid='+favorite.f_uid+'&setp=1'">
-        <img src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+favorite.goods_file1" class="goods_list_img" alt="">
-        <p class="goods_list_name sl2">{{favorite.goods_name}}</p>
-        <p class="goods_list_price">₱ {{favorite.goods_sale_price}}</p>
-        </a>
-    </div>
-</div>
-<!--猜你喜欢商品列表-->
-
-
-
-
-<div class="settlement_div" v-if="!edit">
-    <div class="weui-cells weui-cells_checkbox shop_list">
-        <label class="weui-cell weui-check__label goods_list fl" for="settlement">
+<form action="./cart_buy" method="get">
+    <input type="hidden" value="1" name="setp">
+    <div class="have_product">
+    <div class="weui-cells weui-cells_checkbox shop_list" v-for="cart_list in carts_list">
+        <label class="weui-cell weui-check__label shop_div">
             <div class="weui-cell__hd">
-                <input type="checkbox" class="weui-check all_checked" name="checkbox1" id="settlement" v-on:click="all_prices()">
+
+            </div>
+            <div class="weui-cell__bd">
+                <img class="shop_ico" src="images/default_wap/shop.png" alt="">
+                <p>{{cart_list["0"].shop_name}}</p>
+            </div>
+        </label>
+
+        <label class="weui-cell weui-check__label goods_list shop_11" v-for="goods in cart_list" v-bind:for="goods.uid+goods.module">
+            <div class="weui-cell__hd">
+                
+                <input type="checkbox" class="weui-check" name="cart_uids" v-bind:id="goods.uid+goods.module" v-on:click="prices()" :value="goods.uid" v-bind:module="goods.module"  v-bind:uid="goods.uid" v-bind:g_uid="goods.g_uid">
                 <i class="weui-icon-checked"></i>
             </div>
             <div class="weui-cell__bd goods_value">
-                <p class="all_select">全选</p>
-
+                <img class="goods_img" src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+goods.goods_file1" alt="">
+                <p class="goods_name sl2">{{goods.goods_name}}</p>
+                <p class="goods_attr sl1">{{goods.attr}}</p>
+                <p class="goods_price sl1 fl">₱ <d class="good_price">{{goods.cart_price}}</d></p>
+                <p class="fr goods_num">*<d class="good_num">{{goods.cart_num}}</d></p>
             </div>
         </label>
-        <div class="settlement_now fr">
-            <p>结算</p>
-        </div>
-        <div class="settlement_info fr">
-            <p class="freight">不含运费</p>
-            <p class="all_goods_num">合计 <c>₱ {{price}}</c></p>
+
+    </div>
+    </div>
+
+    <!--一家店鋪-->
+    <div class="cnxh">
+        <hr><p>收藏夹</p><hr>
+    </div>
+    <!--猜你喜欢 文字-->
+    <div class="cnxh_goods_list">
+        <div class="goods_list_div" v-for="favorite in favorites">
+            <a v-bind:href="'./union/product?uid='+favorite.f_uid+'&setp=1'">
+            <img src="images/default_wap/load.png" v-bind:data-src="'http://www.phmall.com.ph/union/'+favorite.goods_file1" class="goods_list_img" alt="">
+            <p class="goods_list_name sl2">{{favorite.goods_name}}</p>
+            <p class="goods_list_price">₱ {{favorite.goods_sale_price}}</p>
+            </a>
         </div>
     </div>
-</div>
-<!--结算栏-->
+    <!--猜你喜欢商品列表-->
+
+
+
+
+    <div class="settlement_div" v-if="!edit">
+        <div class="weui-cells weui-cells_checkbox shop_list">
+            <label class="weui-cell weui-check__label goods_list fl" for="settlement">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check all_checked" name="checkbox1" id="settlement" v-on:click="all_prices()">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd goods_value">
+                    <p class="all_select">全选</p>
+                    
+                </div>
+            </label>
+            <div class="settlement_now fr">
+                <input type="submit" value="结算">
+            </div>
+            <div class="settlement_info fr">
+                <p class="freight">不含运费</p>
+                <p class="all_goods_num">合计 <c>₱ {{price}}</c></p>
+            </div>
+        </div>
+    </div>
+    <!--结算栏-->
+</form>
 <div class="edit_div" v-if="edit">
         <div class="weui-cells weui-cells_checkbox shop_list">
             <label class="weui-cell weui-check__label goods_list fl" for="edit">
@@ -456,6 +467,7 @@
 <!--VUE-->
 <script>
     $.post('./cart',{},function (result) {
+        console.log(result);
         result=result.data;
        if(result[0].length>0)
        {

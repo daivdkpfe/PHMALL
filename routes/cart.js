@@ -42,11 +42,12 @@ router.post('/', function(req, res, next) {
 
     async function run() {
 
-        var cart_list = await sqlasnyc("SELECT uid,cart_price,supplier_id,rest_price,cart_point,g_uid,cart_num,goods_table,module,attr,g_type refer_g_uid FROM `mvm_cart_table` WHERE m_id='"+req.session.m_id+"'");
+        var cart_list = await sqlasnyc("SELECT uid,cart_price,supplier_id,rest_price,cart_point,g_uid,cart_num,goods_table,module,attr,g_type refer_g_uid FROM `mvm_cart_table` WHERE m_id='"+req.session.m_id+"' order by supplier_id");
         for(let i in cart_list){//遍历每条数据
 
             var sql=[];
             sql.push(cart_list[i].supplier_id);
+            console.log(cart_list[i].supplier_id);
             var supplier = await sqlasnyc("select * from `mvm_member_shop` where m_uid=? limit 1",sql);
             cart_list[i].shop_name=supplier[0].shop_name;
             cart_list[i].shop_uid=supplier[0].m_uid;

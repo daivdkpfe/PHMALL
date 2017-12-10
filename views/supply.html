@@ -385,6 +385,7 @@
                 page.cates=result;
             });
             $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
+                console.log(result);
                 result=result.data;
                 if(result!=0 && result.length>0)
                 {
@@ -432,6 +433,7 @@
         {
             $.post("./supply",{type:t.supply_type,start:t.supply_start},function (result) {
                 result=result.data;
+                
                 if(result!=0 && result.length>0)
                 {
                     result.forEach(function (item,index) {
@@ -450,6 +452,7 @@
         else
         {
             $.post("./supply/buy",{type:t.buy_type,start:t.buy_start},function (result) {
+                
                 result=result.data;
                 if(result!=0 && result.length>0)
                 {

@@ -61,7 +61,7 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 191);
+/******/ 	return __webpack_require__(__webpack_require__.s = 192);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -428,7 +428,7 @@ module.exports = {
     web_src: "../../phpStudy/WWW/english/xx/",
     img_url: "http://192.168.0.105/english/",
     union_img_url: "http://192.168.0.105/english/union/",
-    update_url: "http://192.168.0.105:88/update_cache"
+    update_url: "http://127.0.0.1:88/update_cache"
 };
 
 /***/ }),
@@ -525,7 +525,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 191:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -991,6 +991,8 @@ exports.push([module.i, "\n.order_top{\r\n    background: white;\r\n    margin-t
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   props: ['info'],
@@ -1012,9 +1014,18 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("div", { staticClass: "order_top" }, [
-        _vm._v("\n        订单号：" + _vm._s(_vm.info["0"].ordersn) + "\n    ")
-      ]),
+      _c(
+        "div",
+        { staticClass: "order_top" },
+        [
+          _vm._t("title", [
+            _vm._v(
+              "\n        订单号：" + _vm._s(_vm.info["0"].ordersn) + "\n        "
+            )
+          ])
+        ],
+        2
+      ),
       _vm._v(" "),
       _c(
         "order",

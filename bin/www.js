@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
  * Module dependencies.
  */
@@ -17,12 +15,18 @@ var request = require('request');
 var zlib = require('zlib');
 global.lang_ch = require('../lanuage/lanuage_ch');
 global.lang_en = require("../lanuage/lanuage_en");
-
+global.buy_arr={};
 
 
 global.memcached = new Memcached('127.0.0.1:11211');
 global.unserialize = require('locutus/php/var/unserialize');
-global.serialize = require('locutus/php/var/serialize')
+global.serialize = require('locutus/php/var/serialize');
+global.in_array = require('locutus/php/array/in_array');
+global.intval = require('locutus/php/var/intval')
+global.trim = require('locutus/php/strings/trim');
+
+
+
 global.goods_table = new Array();
 goods_table[0] = "xx";
 goods_table[1] = "mvm_goods_table";
@@ -110,13 +114,15 @@ server.on('error', onError);
 server.on('listening', onListening);
 // 监听
 
-io.sockets.on('connection', function(socket) {
+io.sockets.on('connection', function (socket) {
     //链接后开始监听
-    socket.on("check_id", function(id) {
+    socket.on("check_id", function (id) {
         var sqldata = [];
         sqldata.push(id);
-        sqlQueryMore("select uid from `mvm_member_table` where member_id=?", sqldata, function(err, vals, xx) {
-            if (err) { throw err }
+        sqlQueryMore("select uid from `mvm_member_table` where member_id=?", sqldata, function (err, vals, xx) {
+            if (err) {
+                throw err
+            }
             if (vals.length <= 0) {
                 socket.emit("check_id", 0);
             } else {
@@ -124,27 +130,27 @@ io.sockets.on('connection', function(socket) {
             }
         })
     }); //验证用户名
-    socket.on("check_phone", function(phone) {
+    socket.on("check_phone", function (phone) {
         console.log(phone);
         phone = '0' + parseInt(phone);
         var sqldata = [];
         sqldata.push(phone);
-        sqlQueryMore("select uid from `mvm_member_table` where member_tel1=?", sqldata, function(err, vals, xx) {
-            if (err) { throw err }
-            console.log(vals);
+        sqlQueryMore("select uid from `mvm_member_table` where member_tel1=?", sqldata, function (err, vals, xx) {
+            if (err) {
+                throw err
+            }
             if (vals.length <= 0) {
                 // socket.emit("check_phone",0);
                 var sqldata = [];
                 sqldata.push('63' + phone);
 
-                sqlQueryMore("SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0", sqldata, function(err, vals, xx) {
+                sqlQueryMore("SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0", sqldata, function (err, vals, xx) {
                     if (vals.length > 0) { //已经发送过的
-                        console.log("you");
                         if (vals[0]['click_number'] < 10) { //还可以发送
                             var code = get_num(6);
                             console.log('jieguo :');
                             console.log(vals);
-                            SendSms(vals[0]['uid'], '63' + phone, vals[0]['click_number'] + 1, code, 0, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function(result) {
+                            SendSms(vals[0]['uid'], '63' + phone, vals[0]['click_number'] + 1, code, 0, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function (result) {
                                 socket.emit("check_phone", -9); //发送成功
                             });
                         } else {
@@ -152,8 +158,7 @@ io.sockets.on('connection', function(socket) {
                         }
                     } else { //没发送过的
                         var code = get_num(7);
-                        console.log(code);
-                        SendSms(null, '63' + phone, 1, code, 0, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function(result) {
+                        SendSms(null, '63' + phone, 1, code, 0, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function (result) {
                             console.log(result);
                             socket.emit("check_phone", -9); //发送成功
                         });
@@ -164,11 +169,11 @@ io.sockets.on('connection', function(socket) {
             }
         })
     }); //发送验证码
-    socket.on("get_order_goods", function(uid, index) {
+    socket.on("get_order_goods", function (uid, index) {
         var result = {};
         var sql = [];
         sql.push(uid);
-        sqlQueryMore("SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?", sql, function(err, vals, xx) {
+        sqlQueryMore("SELECT uid,g_uid,goods_name,goods_attr,module,supplier_id,buy_price,rest_price,buy_number,buy_point,goods_table,status FROM `mvm_order_goods` where order_id=?", sql, function (err, vals, xx) {
             if (err) throw err;
             socket.emit('return_order_goods', vals, index);
         });
@@ -251,25 +256,25 @@ function onListening() {
 
 
 // 这里写全局方法
-global.get_num = function(n) {
-        var chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-        var res = "";
-        for (var i = 0; i < n; i++) {
-            var id = Math.ceil(Math.random() * 9);
-            res += chars[id];
-        }
-        return res;
-    } //獲取随机数
-global.generateMixed = function(n) {
-        var chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+global.get_num = function (n) {
+    var chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    var res = "";
+    for (var i = 0; i < n; i++) {
+        var id = Math.ceil(Math.random() * 9);
+        res += chars[id];
+    }
+    return res;
+} //獲取随机数
+global.generateMixed = function (n) {
+    var chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-        var res = "";
-        for (var i = 0; i < n; i++) {
-            var id = Math.ceil(Math.random() * 61);
-            res += chars[id];
-        }
-        return res;
-    } //长度为n的随机字符串
+    var res = "";
+    for (var i = 0; i < n; i++) {
+        var id = Math.ceil(Math.random() * 61);
+        res += chars[id];
+    }
+    return res;
+} //长度为n的随机字符串
 
 
 // 日志
@@ -298,7 +303,10 @@ log4js.configure({
         }
     },
     categories: {
-        default: { appenders: ['file', 'dateFile', 'out'], level: 'trace' }
+        default: {
+            appenders: ['file', 'dateFile', 'out'],
+            level: 'trace'
+        }
     }
 });
 global.logger = log4js.getLogger('log_file');
@@ -312,14 +320,14 @@ global.pool = mysql.createPool({
     database: 'english',
     charset: 'utf8_general_ci'
 }); //全局方法，打开数据库连接池
-global.sqlQuery = function(sql, callback) {
+global.sqlQuery = function (sql, callback) {
 
-    pool.getConnection(function(err, conn) {
+    pool.getConnection(function (err, conn) {
         if (err) {
             callback(err, null, null);
         } else {
 
-            conn.query(sql, function(qerr, vals, fields) {
+            conn.query(sql, function (qerr, vals, fields) {
 
                 //释放连接
                 conn.release();
@@ -329,14 +337,14 @@ global.sqlQuery = function(sql, callback) {
         }
     });
 }; //全局方法，查询
-global.sqlQuery1 = function(sql, arr, callback) {
+global.sqlQuery1 = function (sql, arr, callback) {
 
-    pool.getConnection(function(err, conn) {
+    pool.getConnection(function (err, conn) {
         if (err) {
             callback(err, null, null);
         } else {
 
-            conn.query(sql, conn.escape(arr), function(qerr, vals, fields) {
+            conn.query(sql, conn.escape(arr), function (qerr, vals, fields) {
 
                 //释放连接
                 conn.release();
@@ -346,22 +354,22 @@ global.sqlQuery1 = function(sql, arr, callback) {
         }
     });
 }; //全局方法，查询
-global.sqlQueryMore = function(sql, arr, callback) {
+global.sqlQueryMore = function (sql, arr, callback) {
     logger.info(sql + "    " + arr);
-    pool.getConnection(function(err, conn) {
+    pool.getConnection(function (err, conn) {
         if (err) {
             callback(err, null, null);
         } else {
 
             // var afterEscaps =  arr.map((e)=>conn.escape(e));
-            var afterEscaps = arr.map(function(item) {
+            var afterEscaps = arr.map(function (item) {
                 // return escape(item);
                 return item;
             });
 
             // console.log(afterEscaps);
 
-            conn.query(sql, afterEscaps, function(qerr, vals, fields) {
+            conn.query(sql, afterEscaps, function (qerr, vals, fields) {
 
                 //释放连接
                 conn.release();
@@ -372,9 +380,9 @@ global.sqlQueryMore = function(sql, arr, callback) {
         }
     });
 }; //全局方法，查询
-global.SendSms = function(uid, phonenumber, click_number, code, type, message, callback) {
+global.SendSms = function (uid, phonenumber, click_number, code, type, message, callback) {
     console.log('send:' + phonenumber);
-    var send = new Promise(function(resolve, reject) {
+    var send = new Promise(function (resolve, reject) {
         var username = urlencode('phmall');
         var password = urlencode('85765461');
         var sender_id = urlencode("PHMALL");
@@ -393,12 +401,12 @@ global.SendSms = function(uid, phonenumber, click_number, code, type, message, c
 
 
 
-        request(fp, function(error, response, body) {
+        request(fp, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 console.log(body);
                 if (body == '2000 = SUCCESS') {
 
-                    sqlQueryMore("replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);", ins_data, function(err, vals, xx) {
+                    sqlQueryMore("replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);", ins_data, function (err, vals, xx) {
                         if (err) {
                             logger.info("replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);" + "    " + ins_data);
                             throw err;
@@ -415,7 +423,7 @@ global.SendSms = function(uid, phonenumber, click_number, code, type, message, c
             }
         });
     });
-    send.then(function(result) {
+    send.then(function (result) {
         callback(result);
     })
 
@@ -423,11 +431,11 @@ global.SendSms = function(uid, phonenumber, click_number, code, type, message, c
 
 //數據庫
 /*我自己加的代碼*/
-global.md5 = function(text) {
+global.md5 = function (text) {
     return crypto.createHash('md5').update(text).digest('hex');
 }; //MD5加密
 
-global.getShopClass = function(score) {
+global.getShopClass = function (score) {
     var level = 0;
     score = score % 1;
     if (score >= 1 && score <= 10) level = 1;
@@ -453,203 +461,203 @@ global.getShopClass = function(score) {
     return "lv_" + level;
 }; //全局方法获取等级
 
-global.serialize = function(mixedValue) {
-        //  discuss at: http://locutus.io/php/serialize/
-        // original by: Arpad Ray (mailto:arpad@php.net)
-        // improved by: Dino
-        // improved by: Le Torbi (http://www.letorbi.de/)
-        // improved by: Kevin van Zonneveld (http://kvz.io/)
-        // bugfixed by: Andrej Pavlovic
-        // bugfixed by: Garagoth
-        // bugfixed by: Russell Walker (http://www.nbill.co.uk/)
-        // bugfixed by: Jamie Beck (http://www.terabit.ca/)
-        // bugfixed by: Kevin van Zonneveld (http://kvz.io/)
-        // bugfixed by: Ben (http://benblume.co.uk/)
-        // bugfixed by: Codestar (http://codestarlive.com/)
-        //    input by: DtTvB (http://dt.in.th/2008-09-16.string-length-in-bytes.html)
-        //    input by: Martin (http://www.erlenwiese.de/)
-        //      note 1: We feel the main purpose of this function should be to ease
-        //      note 1: the transport of data between php & js
-        //      note 1: Aiming for PHP-compatibility, we have to translate objects to arrays
-        //   example 1: serialize(['Kevin', 'van', 'Zonneveld'])
-        //   returns 1: 'a:3:{i:0;s:5:"Kevin";i:1;s:3:"van";i:2;s:9:"Zonneveld";}'
-        //   example 2: serialize({firstName: 'Kevin', midName: 'van'})
-        //   returns 2: 'a:2:{s:9:"firstName";s:5:"Kevin";s:7:"midName";s:3:"van";}'
-        var val, key, okey
-        var ktype = ''
-        var vals = ''
-        var count = 0
-        var _utf8Size = function(str) {
-            var size = 0
-            var i = 0
-            var l = str.length
-            var code = ''
-            for (i = 0; i < l; i++) {
-                code = str.charCodeAt(i)
-                if (code < 0x0080) {
-                    size += 1
-                } else if (code < 0x0800) {
-                    size += 2
-                } else {
-                    size += 3
-                }
-            }
-            return size
-        }
-        var _getType = function(inp) {
-            var match
-            var key
-            var cons
-            var types
-            var type = typeof inp
-            if (type === 'object' && !inp) {
-                return 'null'
-            }
-            if (type === 'object') {
-                if (!inp.constructor) {
-                    return 'object'
-                }
-                cons = inp.constructor.toString()
-                match = cons.match(/(\w+)\(/)
-                if (match) {
-                    cons = match[1].toLowerCase()
-                }
-                types = ['boolean', 'number', 'string', 'array']
-                for (key in types) {
-                    if (cons === types[key]) {
-                        type = types[key]
-                        break
-                    }
-                }
-            }
-            return type
-        }
-        var type = _getType(mixedValue)
-        switch (type) {
-            case 'function':
-                val = ''
-                break
-            case 'boolean':
-                val = 'b:' + (mixedValue ? '1' : '0')
-                break
-            case 'number':
-                val = (Math.round(mixedValue) === mixedValue ? 'i' : 'd') + ':' + mixedValue
-                break
-            case 'string':
-                val = 's:' + _utf8Size(mixedValue) + ':"' + mixedValue + '"'
-                break
-            case 'array':
-            case 'object':
-                val = 'a'
-                    /*
-                    if (type === 'object') {
-                      var objname = mixedValue.constructor.toString().match(/(\w+)\(\)/);
-                      if (objname === undefined) {
-                        return;
-                      }
-                      objname[1] = serialize(objname[1]);
-                      val = 'O' + objname[1].substring(1, objname[1].length - 1);
-                    }
-                    */
-                for (key in mixedValue) {
-                    if (mixedValue.hasOwnProperty(key)) {
-                        ktype = _getType(mixedValue[key])
-                        if (ktype === 'function') {
-                            continue
-                        }
-                        okey = (key.match(/^[0-9]+$/) ? parseInt(key, 10) : key)
-                        vals += serialize(okey) + serialize(mixedValue[key])
-                        count++
-                    }
-                }
-                val += ':' + count + ':{' + vals + '}'
-                break
-            case 'undefined':
-            default:
-                // Fall-through
-                // if the JS object has a property which contains a null value,
-                // the string cannot be unserialized by PHP
-                val = 'N'
-                break
-        }
-        if (type !== 'object' && type !== 'array') {
-            val += ';'
-        }
-        return val
-    }
-    //序列化
-global.get_now_time = function() {
-        var validity = new Date().getTime();
-        return Math.round(validity / 1000); //有效期
-    } //獲取現在的時間
-
-
-
-
-global.transform = function(obj) {
-        var arr = [];
-        for (var item in obj) {
-            arr.push(obj[item]);
-        }
-        return arr;
-    } //對象轉數組
-
-
-
-global.urlencode = function(clearString) {
-        var output = '';
-        var x = 0;
-
-        clearString = utf16to8(clearString.toString());
-        var regex = /(^[a-zA-Z0-9-_.]*)/;
-
-        while (x < clearString.length) {
-            var match = regex.exec(clearString.substr(x));
-            if (match != null && match.length > 1 && match[1] != '') {
-                output += match[1];
-                x += match[1].length;
+global.serialize = function (mixedValue) {
+    //  discuss at: http://locutus.io/php/serialize/
+    // original by: Arpad Ray (mailto:arpad@php.net)
+    // improved by: Dino
+    // improved by: Le Torbi (http://www.letorbi.de/)
+    // improved by: Kevin van Zonneveld (http://kvz.io/)
+    // bugfixed by: Andrej Pavlovic
+    // bugfixed by: Garagoth
+    // bugfixed by: Russell Walker (http://www.nbill.co.uk/)
+    // bugfixed by: Jamie Beck (http://www.terabit.ca/)
+    // bugfixed by: Kevin van Zonneveld (http://kvz.io/)
+    // bugfixed by: Ben (http://benblume.co.uk/)
+    // bugfixed by: Codestar (http://codestarlive.com/)
+    //    input by: DtTvB (http://dt.in.th/2008-09-16.string-length-in-bytes.html)
+    //    input by: Martin (http://www.erlenwiese.de/)
+    //      note 1: We feel the main purpose of this function should be to ease
+    //      note 1: the transport of data between php & js
+    //      note 1: Aiming for PHP-compatibility, we have to translate objects to arrays
+    //   example 1: serialize(['Kevin', 'van', 'Zonneveld'])
+    //   returns 1: 'a:3:{i:0;s:5:"Kevin";i:1;s:3:"van";i:2;s:9:"Zonneveld";}'
+    //   example 2: serialize({firstName: 'Kevin', midName: 'van'})
+    //   returns 2: 'a:2:{s:9:"firstName";s:5:"Kevin";s:7:"midName";s:3:"van";}'
+    var val, key, okey
+    var ktype = ''
+    var vals = ''
+    var count = 0
+    var _utf8Size = function (str) {
+        var size = 0
+        var i = 0
+        var l = str.length
+        var code = ''
+        for (i = 0; i < l; i++) {
+            code = str.charCodeAt(i)
+            if (code < 0x0080) {
+                size += 1
+            } else if (code < 0x0800) {
+                size += 2
             } else {
-                if (clearString[x] == ' ')
-                    output += '+';
-                else {
-                    var charCode = clearString.charCodeAt(x);
-                    var hexVal = charCode.toString(16);
-                    output += '%' + (hexVal.length < 2 ? '0' : '') + hexVal.toUpperCase();
-                }
-                x++;
+                size += 3
             }
         }
-
-        function utf16to8(str) {
-            var out, i, len, c;
-
-            out = "";
-            len = str.length;
-            for (i = 0; i < len; i++) {
-                c = str.charCodeAt(i);
-                if ((c >= 0x0001) && (c <= 0x007F)) {
-                    out += str.charAt(i);
-                } else if (c > 0x07FF) {
-                    out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
-                    out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
-                    out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
-                } else {
-                    out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
-                    out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
-                }
-            }
-            return out;
-        }
-
-        return output;
+        return size
     }
-    // 解密
+    var _getType = function (inp) {
+        var match
+        var key
+        var cons
+        var types
+        var type = typeof inp
+        if (type === 'object' && !inp) {
+            return 'null'
+        }
+        if (type === 'object') {
+            if (!inp.constructor) {
+                return 'object'
+            }
+            cons = inp.constructor.toString()
+            match = cons.match(/(\w+)\(/)
+            if (match) {
+                cons = match[1].toLowerCase()
+            }
+            types = ['boolean', 'number', 'string', 'array']
+            for (key in types) {
+                if (cons === types[key]) {
+                    type = types[key]
+                    break
+                }
+            }
+        }
+        return type
+    }
+    var type = _getType(mixedValue)
+    switch (type) {
+        case 'function':
+            val = ''
+            break
+        case 'boolean':
+            val = 'b:' + (mixedValue ? '1' : '0')
+            break
+        case 'number':
+            val = (Math.round(mixedValue) === mixedValue ? 'i' : 'd') + ':' + mixedValue
+            break
+        case 'string':
+            val = 's:' + _utf8Size(mixedValue) + ':"' + mixedValue + '"'
+            break
+        case 'array':
+        case 'object':
+            val = 'a'
+            /*
+            if (type === 'object') {
+              var objname = mixedValue.constructor.toString().match(/(\w+)\(\)/);
+              if (objname === undefined) {
+                return;
+              }
+              objname[1] = serialize(objname[1]);
+              val = 'O' + objname[1].substring(1, objname[1].length - 1);
+            }
+            */
+            for (key in mixedValue) {
+                if (mixedValue.hasOwnProperty(key)) {
+                    ktype = _getType(mixedValue[key])
+                    if (ktype === 'function') {
+                        continue
+                    }
+                    okey = (key.match(/^[0-9]+$/) ? parseInt(key, 10) : key)
+                    vals += serialize(okey) + serialize(mixedValue[key])
+                    count++
+                }
+            }
+            val += ':' + count + ':{' + vals + '}'
+            break
+        case 'undefined':
+        default:
+            // Fall-through
+            // if the JS object has a property which contains a null value,
+            // the string cannot be unserialized by PHP
+            val = 'N'
+            break
+    }
+    if (type !== 'object' && type !== 'array') {
+        val += ';'
+    }
+    return val
+}
+//序列化
+global.get_now_time = function () {
+    var validity = new Date().getTime();
+    return Math.round(validity / 1000); //有效期
+} //獲取現在的時間
 
 
 
-global.unserialize = function(data) {
+
+global.transform = function (obj) {
+    var arr = [];
+    for (var item in obj) {
+        arr.push(obj[item]);
+    }
+    return arr;
+} //對象轉數組
+
+
+
+global.urlencode = function (clearString) {
+    var output = '';
+    var x = 0;
+
+    clearString = utf16to8(clearString.toString());
+    var regex = /(^[a-zA-Z0-9-_.]*)/;
+
+    while (x < clearString.length) {
+        var match = regex.exec(clearString.substr(x));
+        if (match != null && match.length > 1 && match[1] != '') {
+            output += match[1];
+            x += match[1].length;
+        } else {
+            if (clearString[x] == ' ')
+                output += '+';
+            else {
+                var charCode = clearString.charCodeAt(x);
+                var hexVal = charCode.toString(16);
+                output += '%' + (hexVal.length < 2 ? '0' : '') + hexVal.toUpperCase();
+            }
+            x++;
+        }
+    }
+
+    function utf16to8(str) {
+        var out, i, len, c;
+
+        out = "";
+        len = str.length;
+        for (i = 0; i < len; i++) {
+            c = str.charCodeAt(i);
+            if ((c >= 0x0001) && (c <= 0x007F)) {
+                out += str.charAt(i);
+            } else if (c > 0x07FF) {
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            } else {
+                out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            }
+        }
+        return out;
+    }
+
+    return output;
+}
+// 解密
+
+
+
+global.unserialize = function (data) {
     var $global = (typeof window !== 'undefined' ? window : global)
-    var utf8Overhead = function(str) {
+    var utf8Overhead = function (str) {
         var s = str.length
         for (var i = str.length - 1; i >= 0; i--) {
             var code = str.charCodeAt(i)
@@ -665,11 +673,11 @@ global.unserialize = function(data) {
         }
         return s - 1
     }
-    var error = function(type,
+    var error = function (type,
         msg, filename, line) {
         throw new $global[type](msg, filename, line)
     }
-    var readUntil = function(data, offset, stopchr) {
+    var readUntil = function (data, offset, stopchr) {
         var i = 2
         var buf = []
         var chr = data.slice(offset, offset + 1)
@@ -683,7 +691,7 @@ global.unserialize = function(data) {
         }
         return [buf.length, buf.join('')]
     }
-    var readChrs = function(data, offset, length) {
+    var readChrs = function (data, offset, length) {
         var i, chr, buf
         buf = []
         for (i = 0; i < length; i++) {
@@ -714,7 +722,7 @@ global.unserialize = function(data) {
         var vchrs
         var value
         var chrs = 0
-        var typeconvert = function(x) {
+        var typeconvert = function (x) {
             return x
         }
         if (!offset) {
@@ -724,7 +732,7 @@ global.unserialize = function(data) {
         dataoffset = offset + 2
         switch (dtype) {
             case 'i':
-                typeconvert = function(x) {
+                typeconvert = function (x) {
                     return parseInt(x, 10)
                 }
                 readData = readUntil(data, dataoffset, ';')
@@ -733,7 +741,7 @@ global.unserialize = function(data) {
                 dataoffset += chrs + 1
                 break
             case 'b':
-                typeconvert = function(x) {
+                typeconvert = function (x) {
                     return parseInt(x, 10) !== 0
                 }
                 readData = readUntil(data, dataoffset, ';')
@@ -742,7 +750,7 @@ global.unserialize = function(data) {
                 dataoffset += chrs + 1
                 break
             case 'd':
-                typeconvert = function(x) {
+                typeconvert = function (x) {
                     return parseFloat(x)
                 }
                 readData = readUntil(data, dataoffset, ';')
@@ -807,7 +815,7 @@ global.unserialize = function(data) {
 };
 //反向序列化
 
-global.ad_unzip = function(strs, callback) {
+global.ad_unzip = function (strs, callback) {
     const buffer = Buffer.from(strs, 'base64');
 
     zlib.unzip(buffer, (err, buffer) => {
@@ -821,37 +829,37 @@ global.ad_unzip = function(strs, callback) {
 };
 //廣告的解密
 
-global.getClientIp = function(req) {
+global.getClientIp = function (req) {
     return req.headers['x-forwarded-for'] ||
         req.connection.remoteAddress ||
         req.socket.remoteAddress ||
         req.connection.socket.remoteAddress;
 };
 //獲取IP
-global.sqlasnyc = function(sql, arr = []) {
-        var p = new Promise(function(resolve) {
-            sqlQueryMore(sql, arr, function(err, vals, xx) {
-                if (err) logger.info("Caught exception:" + err);
-                if (vals.length <= 0) {
-                    resolve(vals.length);
-                } else {
-                    resolve(vals);
-                }
+global.sqlasnyc = function (sql, arr = []) {
+    var p = new Promise(function (resolve) {
+        sqlQueryMore(sql, arr, function (err, vals, xx) {
+            if (err) logger.info("Caught exception:" + err);
+            if (vals.length <= 0) {
+                resolve(vals.length);
+            } else {
+                resolve(vals);
+            }
 
-            });
         });
+    });
 
-        return p
-    }
-    //sql 查詢
+    return p
+}
+//sql 查詢
 
 
 
-global.add_score = function(m_uid, point, type, reason, session_id, ip, point_sess = '', other_info = '') {
+global.add_score = function (m_uid, point, type, reason, session_id, ip, point_sess = '', other_info = '') {
     async function run() {
-
         point = parseInt(point);
         if (point == 0) return; //沒有分值
+
         m_uid = parseInt(m_uid);
         if (m_uid <= 0) return;
         var sql = [];
@@ -893,7 +901,7 @@ global.add_score = function(m_uid, point, type, reason, session_id, ip, point_se
 }
 
 
-global.add_money = function(m_uid, money, type, reason, session_id, ip, money_sess = '', $other_info = '') {
+global.add_money = function (m_uid, money, type, reason, session_id, ip, money_sess = '', $other_info = '') {
     async function run() {
         money = parseFloat(money);
         if (money == 0) return;
@@ -944,13 +952,268 @@ global.add_money = function(m_uid, money, type, reason, session_id, ip, money_se
     }
     run();
 };
-global.return_date = function(date) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
+  
+    return function () {
+       
+        return new Promise(async function (resolve) {
+            
+            var sign = req.sign;
+            var m_check_id = req.m_id;
+            var m_check_uid = req.m_uid;
+            var ret;
+            if (sign && m_check_id) {
+
+                str_uids = str_uids.trim();
+                if (!str_uids) {
+                    return false;
+                }
+                var arr_uids = str_uids.split(',');
+                arr_uids.forEach(function (val, key) {
+
+                    val = parseInt(val);
+
+                    if (val <= 0) {
+                        arr_uids.splice(key, 1);
+                    } else {
+                        arr_uids[key] = val;
+                    }
+                });
+
+                if (!arr_uids) return false;
+
+                str_uids = arr_uids.join(',');
+
+                var arr_cart = {};
+                var arr_supplier_id = [];
+
+                var q = await sqlasnyc('SELECT uid,cart_price,rest_price,cart_point,g_uid,cart_num,goods_table,module,attr,g_type,refer_g_uid,goods_table,module FROM `mvm_cart_table` WHERE uid IN ('+str_uids+') AND m_id=?', [m_check_id]);
+
+
+                for (let i in q) {
+                    var val = q[i];
+                    var index = i;
+                    var g = await sqlasnyc("SELECT uid,goods_name,goods_file1,supplier_id,type,goods_status FROM `" + val.goods_table + "` WHERE uid=? LIMIT 1", [val.g_uid]);
+
+                    if (!g) continue;
+
+                    g[0].goods_kg = 0;
+                    if (!(g[0].goods_status & 4)) {
+                        var detail_table = goods_detail_table(g[0].type);
+                        var detail = await sqlasnyc("SELECT goods_kg FROM `" + detail_table + "` WHERE g_uid=? LIMIT 1", [g[0].uid]);
+                        g[0].goods_kg = intval(detail[0].goods_kg);
+                        
+                    }
+
+                    if (!in_array(g[0].supplier_id, arr_supplier_id)) {
+
+                        arr_supplier_id.push(g[0].supplier_id);
+                    }
+
+                    
+
+                    arr_cart.cart_list =typeof(arr_cart.cart_list)=='undefined'?[]:arr_cart.cart_list;
+                    
+
+                    arr_cart.cart_list[g[0].supplier_id]=typeof(arr_cart.cart_list[g[0].supplier_id])=='undefined'?[]:arr_cart.cart_list[g[0].supplier_id]
+                    
+                    arr_cart.cart_list[g[0].supplier_id].push({
+                        uid: val.uid,
+                        cart_price: val.cart_price,
+                        rest_price: val.rest_price,
+                        cart_point: val.cart_point,
+                        total_price: val.cart_price * val.cart_num,
+                        cart_num: val.cart_num,
+                        attr: val.attr,
+                        goods_name: g[0].goods_name,
+                        goods_file1: g[0].goods_file1,
+                        url: val.module + val.g_uid,
+                        g_uid: val.g_uid,
+                        g_type: val.g_type,
+                        refer_g_uid: val.refer_g_uid,
+                        supplier_id: g[0].supplier_id,
+                        goods_table: val.goods_table,
+                        module: val.module
+                    });
+                    
+                    arr_cart.cart_info = typeof(arr_cart.cart_info)=='undefined'?[]:arr_cart.cart_info;
+                    arr_cart.cart_info[g[0].supplier_id] =typeof(arr_cart.cart_info[g[0].supplier_id] )=='undefined'? {}:arr_cart.cart_info[g[0].supplier_id] ;
+                    
+                    
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_price >0) arr_cart.cart_info[g[0].supplier_id].total_price = 0;
+                    arr_cart.cart_info[g[0].supplier_id].total_price += parseFloat(val.cart_price * val.cart_num);
+                    
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_num >0) arr_cart.cart_info[g[0].supplier_id].total_num = 0;
+                    arr_cart.cart_info[g[0].supplier_id].total_num +=val.cart_num;
+                  
+                    
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_point >0) arr_cart.cart_info[g[0].supplier_id].total_point = 0;
+                    arr_cart.cart_info[g[0].supplier_id].total_point += parseInt(val.cart_point * val.cart_num);
+    
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_kg>0) arr_cart.cart_info[g[0].supplier_id].total_kg = 0;
+
+                    arr_cart.cart_info[g[0].supplier_id].total_kg += parseInt(g[0].goods_kg * val.cart_num);
+               
+                    
+
+                    if (arr_cart.cart_info[g[0].supplier_id].is_preorder) {
+                        arr_cart.cart_info[g[0].supplier_id].is_preorder = val.rest_price > 0 ? true : false
+                    }
+                }
+                    if (!with_shop_info) return arr_cart;
+                    if (!arr_supplier_id) return arr_cart;
+
+                    str_supplier_id = arr_supplier_id.join(',');
+
+                
+                var q = await sqlasnyc("SELECT m_uid,shop_name FROM `mvm_member_shop` WHERE m_uid IN (" + str_supplier_id + ")", );
+                
+                for (let i in q) {
+
+                    var val = q[i];
+                    var key = i;
+                    val.url = val.url;
+                    //获取店铺信息
+                    console.log(q);
+                    var cfg = await sqlasnyc('select cf_value from `mvm_config` where supplier_id=? and cf_name="mm_client_qq1" limit 1', [val.m_uid]);
+                    console.log(cfg);
+                    val['qq'] = cfg[0].cf_value;
+   
+
+                    var val_m_uid = val.m_uid;
+                    arr_cart.shop_info = typeof(arr_cart.shop_info)=='undefined'?[]:arr_cart.shop_info;
+                    arr_cart.shop_info[val_m_uid] = val;
+                    
+                    arr_cart.coupon = typeof(arr_cart.coupon) == 'undefined'?[]:arr_cart.coupon;
+                    //获取优惠卷
+                    arr_cart.coupon[val_m_uid] = {};
+     
+                    var q_tmp = await sqlasnyc("SELECT uid,name,discount FROM `mvm_coupon` FORCE INDEX (`supplier_id`) WHERE m_uid=? AND supplier_id=? AND start_date<=? AND price_lbound<=?", [m_check_uid, val.m_uid, get_now_time(), arr_cart.cart_info[val_m_uid].total_price]);
+                    
+                    
+                    if (q_tmp != 0) {
+                        arr_cart.coupon[val_m_uid] =q_tmp;
+                    }
+                    
+
+                }
+
+                ret = arr_cart;
+                
+
+                resolve(ret);
+                
+
+
+            } else {
+
+                console.log('aaaa');
+                await sqlasnyc('select * from test');
+                console.log('bbbb');
+
+            }
+
+
+        });
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+global.goods_detail_table = function (type, by_table = false) {
+
+    type = parseInt(type);
+    if (by_table) {
+        if (type == "mvm_goods_table") return "mvm_goods_detail";
+        else if (type == "mvm_goods_onsale") return "mvm_goods_onsale_detail";
+        else if (type == "mvm_goods_group") return "mvm_goods_group_detail";
+        else if (type == "mvm_goods_change") return "mvm_goods_change_detail";
+        else if (type == "mvm_goods_auction") return "mvm_goods_auction_detail";
+        else if (type == "mvm_goods_show") return "mvm_goods_show_detail";
+    } else {
+        var tmp_arr = [0, 1, 2, 3, 9];
+        console.log("type:" + type);
+        if (in_array(type, tmp_arr)) return "mvm_goods_detail";
+        else if (type == 4) return "mvm_goods_onsale_detail";
+        else if (type == 5) return "mvm_goods_group_detail";
+        else if (type == 6) return "mvm_goods_change_detail";
+        else if (type == 7) return "mvm_goods_auction_detail";
+        else if (type == 8) return "mvm_goods_show_detail";
+        console.log('ok');
+    }
+
+    return "mvm_goods_detail";
+}
+
+global.return_date = function (date) {
     var s = new Date(parseInt(date) * 1000).toLocaleString().replace(/\d{1,2}:\d{1,2}:\d{1,2}$/, '').replace(' ', '');
     return s;
 };
 
 
-global.post = function(host, path, data, callback) {
+global.post = function (host, path, data, callback) {
 
     var http = require('http');
     var querystring = require('querystring');
@@ -967,21 +1230,21 @@ global.post = function(host, path, data, callback) {
             'Content-Length': Buffer.byteLength(postData)
         }
     }
-    var req = http.request(options, function(res) {
+    var req = http.request(options, function (res) {
 
         /*console.log('Status:',res.statusCode);
         console.log('headers:',JSON.stringify(res.headers));*/
         res.setEncoding('utf-8');
-        res.on('data', function(chun) {
+        res.on('data', function (chun) {
 
             // console.log(chun);
             callback(chun);
         });
-        res.on('end', function() {
+        res.on('end', function () {
 
         });
     });
-    req.on('error', function(err) {
+    req.on('error', function (err) {
         console.error(err);
     });
     req.write(postData);
@@ -989,7 +1252,7 @@ global.post = function(host, path, data, callback) {
 
 }
 
-global.post3000 = function(host, path, data, callback) {
+global.post3000 = function (host, path, data, callback) {
 
     var http = require('http');
     var querystring = require('querystring');
@@ -1006,26 +1269,25 @@ global.post3000 = function(host, path, data, callback) {
             'Content-Length': Buffer.byteLength(postData)
         }
     }
-    var req = http.request(options, function(res) {
+    var req = http.request(options, function (res) {
 
         /*console.log('Status:',res.statusCode);
         console.log('headers:',JSON.stringify(res.headers));*/
         res.setEncoding('utf-8');
-        res.on('data', function(chun) {
+        res.on('data', function (chun) {
 
             // console.log(chun);
             callback(chun);
         });
-        res.on('end', function() {
+        res.on('end', function () {
 
         });
     });
-    req.on('error', function(err) {
+    req.on('error', function (err) {
         console.error(err);
     });
     req.write(postData);
     req.end();
-
 }
 
 
@@ -1043,7 +1305,7 @@ config.update_url = "http://127.0.0.1:88/update_cache";
 
 
 
-global.SendEmail = function(to, subject, contect, callback) {
+global.SendEmail = function (to, subject, contect, callback) {
     post('api.sendcloud.net', '/apiv2/mail/send', {
         apiUser: config.email_apiUser,
         apiKey: config.email_apiKey,
@@ -1052,54 +1314,56 @@ global.SendEmail = function(to, subject, contect, callback) {
         subject: subject,
         fromName: config.email_fromName,
         html: contect
-    }, function(result) {
+    }, function (result) {
         callback(result);
     });
 }
 
 
-global.SendCode = function(phone, type, callback) {
+global.SendCode = function (phone, type, callback) {
 
-        console.log(phone);
-        phone = '0' + parseInt(phone);
-        var sqldata = [];
-        sqldata.push(phone);
-        console.log(sqldata);
-        sqlQueryMore("select uid from `mvm_member_table` where member_tel1=?", sqldata, function(err, vals, xx) {
-                if (err) { throw err }
-                console.log('select uid from `mvm_member_table` where member_tel1=' + vals);
-                if (vals.length <= 0) {
-                    // socket.emit("check_phone",0);
-                    var sqldata = [];
-                    sqldata.push('63' + phone);
+    console.log(phone);
+    phone = '0' + parseInt(phone);
+    var sqldata = [];
+    sqldata.push(phone);
 
-                    sqlQueryMore("SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= " + type, sqldata, function(err, vals, xx) {
-                        if (vals.length > 0) { //已经发送过的
+    sqlQueryMore("select uid from `mvm_member_table` where member_tel1=?", sqldata, function (err, vals, xx) {
+        if (err) {
+            throw err
+        }
+        console.log('select uid from `mvm_member_table` where member_tel1=' + vals);
+        if (vals.length <= 0) {
+            // socket.emit("check_phone",0);
+            var sqldata = [];
+            sqldata.push('63' + phone);
 
-                            if (vals[0]['click_number'] < 10) { //还可以发送
-                                var code = get_num(6);
+            sqlQueryMore("SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= " + type, sqldata, function (err, vals, xx) {
+                if (vals.length > 0) { //已经发送过的
 
-                                SendSms(vals[0]['uid'], '63' + phone, vals[0]['click_number'] + 1, code, type, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function(result) {
-                                    callback(-9); //发送成功
-                                });
-                            } else {
-                                callback(-1); //发送次数过多
-                            }
-                        } else { //没发送过的
-                            var code = get_num(7);
+                    if (vals[0]['click_number'] < 10) { //还可以发送
+                        var code = get_num(6);
 
-                            SendSms(null, '63' + phone, 1, code, type, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function(result) {
-                                callback(-9); //发送成功
-                            });
-                        }
+                        SendSms(vals[0]['uid'], '63' + phone, vals[0]['click_number'] + 1, code, type, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function (result) {
+                            callback(-9); //发送成功
+                        });
+                    } else {
+                        callback(-1); //发送次数过多
+                    }
+                } else { //没发送过的
+                    var code = get_num(7);
+
+                    SendSms(null, '63' + phone, 1, code, type, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function (result) {
+                        callback(-9); //发送成功
                     });
-                } else {
-                    callback(2); //已存在
                 }
-            })
-            //发送验证码
-    }
-    //这里写全局方法
+            });
+        } else {
+            callback(2); //已存在
+        }
+    })
+    //发送验证码
+}
+//这里写全局方法
 
 
 // SendSms(103,'15659529682',2,856123,1,'nihoa',function (result) {

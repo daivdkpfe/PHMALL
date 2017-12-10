@@ -61,7 +61,7 @@ var bundle =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 156);
+/******/ 	return __webpack_require__(__webpack_require__.s = 157);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -428,7 +428,7 @@ module.exports = {
     web_src: "../../phpStudy/WWW/english/xx/",
     img_url: "http://192.168.0.105/english/",
     union_img_url: "http://192.168.0.105/english/union/",
-    update_url: "http://192.168.0.105:88/update_cache"
+    update_url: "http://127.0.0.1:88/update_cache"
 };
 
 /***/ }),
@@ -11257,7 +11257,7 @@ Vue$3.compile = compileToFunctions;
 
 /***/ }),
 
-/***/ 156:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11275,8 +11275,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__include_global___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__include_global__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_header_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_gxc_touch_vue__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_search_vue__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_gxc_g_button_vue__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_search_vue__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_gxc_g_button_vue__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_contact_vue__ = __webpack_require__(75);
 
 
@@ -11306,16 +11306,16 @@ var page = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
 
 /***/ }),
 
-/***/ 157:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_search_vue__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5d3bd7a0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_search_vue__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_search_vue__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5d3bd7a0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_search_vue__ = __webpack_require__(162);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(158)
+  __webpack_require__(159)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -11362,13 +11362,13 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(159);
+var content = __webpack_require__(160);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11386,21 +11386,6 @@ if(false) {
  // When the module is disposed, remove the <style> tags
  module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-
-/***/ 159:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* placeholder样式 */\n.search_input::-webkit-input-placeholder{\r\ntext-indent: 10px;\n}\n.search_input::-moz-input-placeholder{\r\ntext-indent: 10px;\n}\n.search_input::-ms-input-placeholder{\r\n  text-indent: 10px;\n}\r\n/* placeholder样式 */\n.search_button{\r\n  width: 0px;\r\n  height: 30px !important;\r\n  margin-top: 7px;\r\n  float: left;\r\n  position: relative;\r\n    left: -10px;\r\n visible:none;\r\n  border: none;\r\n  color: #454545;\r\n  opacity:0;\r\n  overflow: hidden;\r\n  background: rgba(0,0,0,0) !important;\r\n    transition: all 0.5s;\r\n-moz-transition: all 0.5s;\t/* Firefox 4 */\r\n-webkit-transition: all 0.5s;\t/* Safari 和 Chrome */\r\n-o-transition: all 0.5s;\n}\n.show{\r\n  visibility: visible;\r\n  width: 50px;\r\n opacity:100;\n}\n.ivu-icon-search{\r\n  width: 40px;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  float: left;\n}\n.search_div{\r\n  width: 100vw;\r\n  height: 44px;\r\n  \r\n  background: white;\r\n  float: left;\n}\n.input_div{\r\n  height: 30px;\r\n  float: left;\r\n  width: 355px;\r\n  border-radius: 6px;\r\n  background: #efeff4;\r\n  margin: 7px 10px;\r\n  transition: width 0.5s;\r\n-moz-transition: width 0.5s;\t/* Firefox 4 */\r\n-webkit-transition: width 0.5s;\t/* Safari 和 Chrome */\r\n-o-transition: width 0.5s;\n}\n.search_input{\r\n  width: 315px;\r\n  border: none;\r\n  height: 30px;\r\n  float: left;\r\n  background:none;\r\n  text-indent: 10px;\r\n    transition: width 0.5s;\r\n-moz-transition: width 0.5s;\t/* Firefox 4 */\r\n-webkit-transition: width 0.5s;\t/* Safari 和 Chrome */\r\n-o-transition: width 0.5s;\n}\n.isbtn_input{\r\n  width: 265px;\n}\n.isbtn{\r\n  width: 305px;\n}\r\n", ""]);
-
-// exports
-
 
 /***/ }),
 
@@ -11465,6 +11450,21 @@ exports.clearImmediate = clearImmediate;
 /***/ }),
 
 /***/ 160:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* placeholder样式 */\n.search_input::-webkit-input-placeholder{\r\ntext-indent: 10px;\n}\n.search_input::-moz-input-placeholder{\r\ntext-indent: 10px;\n}\n.search_input::-ms-input-placeholder{\r\n  text-indent: 10px;\n}\r\n/* placeholder样式 */\n.search_button{\r\n  width: 0px;\r\n  height: 30px !important;\r\n  margin-top: 7px;\r\n  float: left;\r\n  position: relative;\r\n    left: -10px;\r\n visible:none;\r\n  border: none;\r\n  color: #454545;\r\n  opacity:0;\r\n  overflow: hidden;\r\n  background: rgba(0,0,0,0) !important;\r\n    transition: all 0.5s;\r\n-moz-transition: all 0.5s;\t/* Firefox 4 */\r\n-webkit-transition: all 0.5s;\t/* Safari 和 Chrome */\r\n-o-transition: all 0.5s;\n}\n.show{\r\n  visibility: visible;\r\n  width: 50px;\r\n opacity:100;\n}\n.ivu-icon-search{\r\n  width: 40px;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  float: left;\n}\n.search_div{\r\n  width: 100vw;\r\n  height: 44px;\r\n  \r\n  background: white;\r\n  float: left;\n}\n.input_div{\r\n  height: 30px;\r\n  float: left;\r\n  width: 355px;\r\n  border-radius: 6px;\r\n  background: #efeff4;\r\n  margin: 7px 10px;\r\n  transition: width 0.5s;\r\n-moz-transition: width 0.5s;\t/* Firefox 4 */\r\n-webkit-transition: width 0.5s;\t/* Safari 和 Chrome */\r\n-o-transition: width 0.5s;\n}\n.search_input{\r\n  width: 315px;\r\n  border: none;\r\n  height: 30px;\r\n  float: left;\r\n  background:none;\r\n  text-indent: 10px;\r\n    transition: width 0.5s;\r\n-moz-transition: width 0.5s;\t/* Firefox 4 */\r\n-webkit-transition: width 0.5s;\t/* Safari 和 Chrome */\r\n-o-transition: width 0.5s;\n}\n.isbtn_input{\r\n  width: 265px;\n}\n.isbtn{\r\n  width: 305px;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11571,7 +11571,7 @@ exports.clearImmediate = clearImmediate;
 
 /***/ }),
 
-/***/ 161:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11621,16 +11621,16 @@ if (false) {
 
 /***/ }),
 
-/***/ 162:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_g_button_vue__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_65747f3d_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_g_button_vue__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_g_button_vue__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_65747f3d_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_g_button_vue__ = __webpack_require__(167);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(163)
+  __webpack_require__(164)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -11677,13 +11677,13 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 163:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(164);
+var content = __webpack_require__(165);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11704,7 +11704,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 164:
+/***/ 165:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -11719,7 +11719,7 @@ exports.push([module.i, "\n.lager{\r\n  width: 95vw !important;\n}\n.button_div{
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11772,7 +11772,7 @@ exports.push([module.i, "\n.lager{\r\n  width: 95vw !important;\n}\n.button_div{
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

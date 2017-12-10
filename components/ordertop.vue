@@ -2,7 +2,9 @@
 <template>
     <div>
         <div class="order_top">
+            <slot name="title">
             订单号：{{info["0"].ordersn}}
+            </slot>
         </div>
         <order :goods='info[0]'>
             <slot name="refund_detail">

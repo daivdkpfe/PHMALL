@@ -74,6 +74,7 @@ var status = require('./routes/status');
 var evaluation=require('./routes/evaluation');
 var evaluation_list=require('./routes/evaluation_list');
 var respond=require('./routes/respond');
+var cartBuy=require('./routes/cart_buy');
 //
 
 
@@ -176,13 +177,13 @@ app.use('/status', status);
 app.use('/evaluation',evaluation);
 app.use('/evaluation_list',evaluation_list);
 app.use('/respond',respond);
+app.use('/cart_buy',cartBuy);
 //
 
 app.use('/union/product', unionProduct);
 app.use('/union/index', unionIndex);
 app.use('/union/coupon', unionCoupon);
 app.use('/union/auction_detail', unionAuction_detail);
-
 // 路由
 
 

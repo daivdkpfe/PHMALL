@@ -154,6 +154,7 @@ router.post('/phchat', function (req, res, next) {
 
 });
 router.post('/', function (req, res, next) {
+    res.json(req.body);
     console.log('post:' + req.body.member_tel11);
     if (req.session.sign) {
         var token_data = {};

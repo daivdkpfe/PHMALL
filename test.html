@@ -6,10 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    div{
+        height: 100vh;
+        width: 100vw;
+    }
+</style>
 <body>
-    <form action="http://192.168.0.105:88/respond/1" method="post">
-        <input type="text" name="xx">
-        <input type="submit">
-    </form>
+    <script>
+     function getRun() {
+        return function() {
+          
+                return new Promise(async function(resolve) {
+                    resolve();
+                });
+        }
+    }
+    
+    var run = getRun(); 
+    
+    async function main() {
+        await run();
+        await run();
+        await run();
+        await run();
+    }
+    
+    async function runs(){
+        await main();
+    }
+    runs();
+    </script>
 </body>
 </html>
