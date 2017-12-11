@@ -256,6 +256,10 @@
         <input type="password" class="PassInput" placeholder="密碼">
         <div class="DaGeLan"></div>
         <div class="LoginButtons">登錄</div>
+        <fb:login-button 
+        scope="public_profile,email"
+        onlogin="checkLoginState();">
+      </fb:login-button>
         <div class="raf">
             <!--register and find password-->
             <p>
@@ -342,7 +346,7 @@
       }
       js = d.createElement(s);
       js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11"
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10"
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
@@ -354,7 +358,7 @@
         autoLogAppEvents: true,
         status: true,
         xfbml: true,
-        version: 'v2.11' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
+        version: 'v2.10' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
       });
       FB.AppEvents.logPageView();
 
