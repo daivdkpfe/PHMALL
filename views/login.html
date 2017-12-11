@@ -195,11 +195,12 @@
         </div>
         <div class="oauth_login">
             <!--FACEBOOK-->
-            <a href="https://www.facebook.com/v2.4/dialog/oauth?client_id=709821129223343&amp;state=4af2a37c60e3046e74ef035e753fe965&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=http%3A%2F%2Fphmall.ganxiaochuan.top%2Flogin&amp;scope="
+            
+            <a class="FB"
                 title="Facebook">
                 <div class="oauth_f"></div>
             </a>
-            <fb:login-button 
+            <fb:login-button style="display:none" 
             scope="public_profile,email"
             onlogin="checkLoginState();">
           </fb:login-button>
@@ -333,6 +334,9 @@
         })
     </script>
  <script>
+     $('.FB').click(function(){
+         FB.login();
+     })
     function checkLoginState() {
       FB.getLoginStatus(function (response) {
           console.log(response);
@@ -364,7 +368,6 @@
       FB.AppEvents.logPageView();
       FB.getLoginStatus(function (response) {
           console.log(response);
-        
       });
     };
   </script>
