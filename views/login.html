@@ -199,6 +199,10 @@
                 title="Facebook">
                 <div class="oauth_f"></div>
             </a>
+            <fb:login-button 
+            scope="public_profile,email"
+            onlogin="checkLoginState();">
+          </fb:login-button>
             <!--FACEBOOK-->
             <!--GOOGLE-->
             <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -256,10 +260,6 @@
         <input type="password" class="PassInput" placeholder="密碼">
         <div class="DaGeLan"></div>
         <div class="LoginButtons">登錄</div>
-        <fb:login-button 
-        scope="public_profile,email"
-        onlogin="checkLoginState();">
-      </fb:login-button>
         <div class="raf">
             <!--register and find password-->
             <p>
