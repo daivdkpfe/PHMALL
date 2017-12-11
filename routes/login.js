@@ -151,7 +151,7 @@ router.post('/login_out',function (req,res,next) {
 
 
 router.get('/', function(req, res, next) {
-    res.render('login', { title: lanuage_ch });
+    res.render('login', { title:'PHMALL' });
 });
 
 module.exports = router;
