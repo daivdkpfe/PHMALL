@@ -1,0 +1,54 @@
+<% include header_index_iview.html %>
+<style>
+    .logo{
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 156px;
+    }
+    .bottom-input{
+        width:90%;
+        margin: 0 auto;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #fe9b0c;
+        height: 44px;
+        margin-top: 20px;
+        text-indent: 10px;
+    }
+    .bind-button{
+        width: 345px;
+        height: 44px;
+        background: linear-gradient(to right,#fe9b0c,#ff8000);
+        border: none;
+        display: block;        
+        border-radius: 6px;
+        color: white;
+        text-align: center;
+        line-height: 44px;
+        margin: 0 auto;
+        margin-top: 45px;
+        font-size: 15px;
+    }
+</style>
+<div class="big_div">
+    <top title="找回密码"></top>
+    <img src="images/default_wap/login_logo.png" class="logo" alt="">
+    <form action="./findpass" method="post">
+        <input type="text" name="user" class="bottom-input" placeholder="用户名">
+        <input type="text" name="email" class="bottom-input" placeholder="邮箱">
+        <input class="bind-button" type="submit" value="发送验证">
+    </form>
+</div>
+
+
+<script src="images/default_wap/vue.js"></script>
+<script src="./dist/findpass.bundle.js"></script>
+<script>
+      Vue.use(bundle);
+      var page=new Vue({
+          el:'.big_div'
+      })
+</script>
+<% include footer.html %>

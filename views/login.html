@@ -1,296 +1,365 @@
 <% include header_index.html %>
 
 
-<style>
-    .head{
-        height: 44px;
-        width: 100vw;
-        position: fixed;
-        z-index: 2;
-        top:10px;
-    }
-    body{
-        /*background: url("images/default_wap/login_bg.png");*/
-        /*background-size: 100vw 100vh;*/
-    }
-    .head img{
-        width: 25px;
-        height:25px;
-        margin: 9.5px 20px;
-    }
-    .main{
-        width: 100vw;
-        height:100vh;
-
-    }
-    .LoginMain{
-        width:100vw;
-        height:100vh;
-        display: none;
-    }
-    .main img,.LoginMain img{
-        display: block;
-        width: 70px;
-        margin:0 auto;
-        padding-top: 100px;
-        margin-bottom: 20px;
-    }
-    .PHMALL_TITLE{
-        height:30px;
-        line-height: 30px;
-        text-align: center;
-        font-size: 24px;
-        color: rgb(255,147,2);
-        margin-bottom: 30px;
-    }
-    .LoginButton,.LoginButtons{
-        width: 335px;
-        margin: 0 auto;
-        height:44px;
-        background: linear-gradient(to right,rgb(255,187,6),rgb(255,127,0));
-        color: white;
-        line-height:44px;
-        text-align: center;
-        border-radius: 6px;
-        font-size: 18px;
-    }
-    .LoginButtons{
-        background: linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,0.6)) ;
-    }
-    .RegisterButton{
-        width: 331px;
-        margin:30px auto;
-        height:40px;
-        text-align: center;
-        border-radius: 6px;
-        border: 2px solid rgb(255,174,70);
-        line-height:40px;
-        color: rgb(255,148,0);
-        font-size: 18px;
-        margin-bottom: 90px;
-    }
-    .oauth_div{
-        height:20px;
-        width: 297px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-    .GeLan{
-        height:1px;
-        width: 100px;
-        margin: 9.5px 0;
-        float: left;
-        background: rgb(173,173,173);
-    }
-    .oauth_div p{
-        float: left;
-        margin: 0 10px;
-        font-size: 15px;
-        line-height: 20px;
-        color: rgb(191,191,191);
-    }
-    .oauth_login{
-        height:50px;
-        width: 230px;
-        margin: 0 auto;
-    }
-    .oauth_f,.oauth_g,.oauth_p{
-        width: 50px;
-        height:50px;
-        border-radius: 50px;
-        background: red;
-        float: left;
-    }
-    .oauth_f{
-        background: url("images/default_wap/Facebook.png");
-        background-size: 50px 50px;
-    }
-    .oauth_g{
-        margin: 0 40px;
-        background: url("images/default_wap/Google.png");
-        background-size: 50px 50px;
-    }
-    .oauth_p{
-        background: url("images/default_wap/phchat.png");
-        background-size: 50px 50px;
-    }
-    .NameInput,.PassInput{
-        width: 335px;
-        display: block;
-        background: none;
-        margin: 0 auto;
-        height: 45px;
-        border: none;
-        color: #454545;
-        outline: none;
-        font-size: 18px;
-        text-indent: 10px;
-    }
-    .DaGeLan{
-        width: 335px;
-        height:1px;
-        background: linear-gradient(to right,rgba(255,187,6,0.5),rgba(255,127,0,0.6));
-        margin: 0 auto;
-        margin-bottom: 30px;
-    }
-    ::-webkit-input-placeholder {
-        text-indent: 10px;
-        background: none;
-        color: #adadad;
-        font-size: 18px;
-    }
-    .RegisterButton a{
-        color: rgb(255,148,0);
-    }
-    input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
-    .raf p a{
-        color: #454545;
-        font-size: 15px;
-        margin: 20px;
-    }
-</style>
-<div class="head">
-    <img src="images/default_wap/help.png" class="fr" alt="">
-</div>
-<div class="main">
-    <img src="images/default_wap/login_logo.png" alt="">
-    <p class="PHMALL_TITLE">PHMALL 菲淘</p>
-    <div class="LoginButton">登錄</div>
-    <div class="RegisterButton"><a href="../register">新用戶註冊</a></div>
-    <div class="oauth_div"><div class="GeLan"></div><p>第三方登錄</p><div class="GeLan"></div></div>
-    <div class="oauth_login">
-        <!--FACEBOOK-->
-        <a href="https://www.facebook.com/v2.4/dialog/oauth?client_id=709821129223343&amp;state=4af2a37c60e3046e74ef035e753fe965&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=http%3A%2F%2Fphmall.ganxiaochuan.top%2Fregister&amp;scope=" title="Facebook">
-            <div class="oauth_f"></div>
-        </a>
-        <!--FACEBOOK-->
-        <!--GOOGLE-->
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <a title="google" onclick="onSignIn_click()" >
-            <div class="oauth_g"></div>
-        </a>
-
-        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" style="float: left;width: 0px;height: 0px; margin-top: 11px;"></div>
-        <script>
-            var id_token ="";
-            var allow='';
-            function onSignIn(googleUser) {
-                // Useful data for your client-side scripts:
-                var profile = googleUser.getBasicProfile();
-                console.log("D: " + profile.getId()); // Don't send this directly to your server!
-                console.log('Full Name: ' + profile.getName());
-                console.log('Given Name: ' + profile.getGivenName());
-                console.log('Family Name: ' + profile.getFamilyName());
-                console.log("Image URL: " + profile.getImageUrl());
-                console.log("Email: " + profile.getEmail());
-
-                // The ID token you need to pass to your backend:
-                //id_token = googleUser.getAuthResponse().id_token;
-                //console.log("ID Token: " + id_token);
-
-                // The ID token you need to pass to your backend:
-                id_token = googleUser.getAuthResponse().id_token;
-
-                console.log('token:  '+id_token);
-
-                if(allow==1&&id_token!="")
-                {
-                    window.location = 'oauth_back.php?oauth_type=google&token='+id_token;
-                }
-            }
-            function onSignIn_click(){
-                allow=1;
-                if(id_token=='')
-                {
-                    $('.abcRioButtonIcon').trigger("click");
-                    //window.location = 'oauth_back.php?oauth_type=google&token='+id_token;
-                }
-                else
-                {
-                    window.location = 'oauth_back.php?oauth_type=google&token='+id_token;
-                }
-            }
-        </script>
-        <!--GOOGLE-->
-        <div class="oauth_p"></div>
-    </div>
-</div>
-<div class="LoginMain">
-    <img src="images/default_wap/login_logo.png" alt="">
-    <input type="text" class="NameInput" placeholder="用戶名">
-    <div class="DaGeLan"></div>
-    <input type="password" class="PassInput" placeholder="密碼">
-    <div class="DaGeLan"></div>
-    <div class="LoginButtons">登錄</div>
-    <div class="raf">
-        <!--register and find password-->
-        <p><a href="" class="fl">新用戶註冊</a></p>
-        <p><a href="" class="fr">找回密碼?</a></p>
-    </div>
-</div>
-<script>
-    $(".LoginButton").click(function () {
-//        localStorage.setItem("data", "sb");
-//        var ss=localStorage.getItem("data");
-//        alert(ss);
-        $(".main").hide();
-        $(".LoginMain").show();
-    });
-    $(".head").find("img").eq(0).click(function () {
-        if($(".LoginMain").is(':visible'))
-        {
-            $(".main").show();
-            $(".LoginMain").hide();
+    <style>
+        .head {
+            height: 44px;
+            width: 100vw;
+            position: fixed;
+            z-index: 2;
+            top: 10px;
         }
-    });
-    $('.LoginButtons').click(function () {
-        var name=$('.NameInput').val();
-        var pass=$('.PassInput').val();
-        $.post("./login",{username:name,password:pass},function(result){
-            
-            result=result.data;
-            if(result.status=="Success" && result.m_uid>0)
-            {
-                $.notification({
-                    title: "Login",
-                    text: "登录成功",
-                    onClose: function(data) {
-                        location.href='./index';
+
+        body {
+            /*background: url("images/default_wap/login_bg.png");*/
+            /*background-size: 100vw 100vh;*/
+        }
+
+        .head img {
+            width: 25px;
+            height: 25px;
+            margin: 9.5px 20px;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .LoginMain {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+        }
+
+        .main img,
+        .LoginMain img {
+            display: block;
+            width: 70px;
+            margin: 0 auto;
+            padding-top: 100px;
+            margin-bottom: 20px;
+        }
+
+        .PHMALL_TITLE {
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(255, 147, 2);
+            margin-bottom: 30px;
+        }
+
+        .LoginButton,
+        .LoginButtons {
+            width: 335px;
+            margin: 0 auto;
+            height: 44px;
+            background: linear-gradient(to right, rgb(255, 187, 6), rgb(255, 127, 0));
+            color: white;
+            line-height: 44px;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+
+        .LoginButtons {
+            background: linear-gradient(to right, rgba(255, 187, 6, 0.6), rgba(255, 127, 0, 0.6));
+        }
+
+        .RegisterButton {
+            width: 331px;
+            margin: 30px auto;
+            height: 40px;
+            text-align: center;
+            border-radius: 6px;
+            border: 2px solid rgb(255, 174, 70);
+            line-height: 40px;
+            color: rgb(255, 148, 0);
+            font-size: 18px;
+            margin-bottom: 90px;
+        }
+
+        .oauth_div {
+            height: 20px;
+            width: 297px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .GeLan {
+            height: 1px;
+            width: 100px;
+            margin: 9.5px 0;
+            float: left;
+            background: rgb(173, 173, 173);
+        }
+
+        .oauth_div p {
+            float: left;
+            margin: 0 10px;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgb(191, 191, 191);
+        }
+
+        .oauth_login {
+            height: 50px;
+            width: 230px;
+            margin: 0 auto;
+        }
+
+        .oauth_f,
+        .oauth_g,
+        .oauth_p {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: red;
+            float: left;
+        }
+
+        .oauth_f {
+            background: url("images/default_wap/Facebook.png");
+            background-size: 50px 50px;
+        }
+
+        .oauth_g {
+            margin: 0 40px;
+            background: url("images/default_wap/Google.png");
+            background-size: 50px 50px;
+        }
+
+        .oauth_p {
+            background: url("images/default_wap/phchat.png");
+            background-size: 50px 50px;
+        }
+
+        .NameInput,
+        .PassInput {
+            width: 335px;
+            display: block;
+            background: none;
+            margin: 0 auto;
+            height: 45px;
+            border: none;
+            color: #454545;
+            outline: none;
+            font-size: 18px;
+            text-indent: 10px;
+        }
+
+        .DaGeLan {
+            width: 335px;
+            height: 1px;
+            background: linear-gradient(to right, rgba(255, 187, 6, 0.5), rgba(255, 127, 0, 0.6));
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+         ::-webkit-input-placeholder {
+            text-indent: 10px;
+            background: none;
+            color: #adadad;
+            font-size: 18px;
+        }
+
+        .RegisterButton a {
+            color: rgb(255, 148, 0);
+        }
+
+        input:-webkit-autofill {
+            box-shadow: 0 0 0px 1000px white inset !important;
+        }
+
+        .raf p a {
+            color: #454545;
+            font-size: 15px;
+            margin: 20px;
+        }
+    </style>
+    <div class="head">
+        <img src="images/default_wap/help.png" class="fr" alt="">
+    </div>
+    <div class="main">
+        <img src="images/default_wap/login_logo.png" alt="">
+        <p class="PHMALL_TITLE">PHMALL 菲淘</p>
+        <div class="LoginButton">登錄</div>
+        <div class="RegisterButton">
+            <a href="../register">新用戶註冊</a>
+        </div>
+        <div class="oauth_div">
+            <div class="GeLan"></div>
+            <p>第三方登錄</p>
+            <div class="GeLan"></div>
+        </div>
+        <div class="oauth_login">
+            <!--FACEBOOK-->
+            <a href="https://www.facebook.com/v2.4/dialog/oauth?client_id=709821129223343&amp;state=4af2a37c60e3046e74ef035e753fe965&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=http%3A%2F%2Fphmall.ganxiaochuan.top%2Fregister&amp;scope="
+                title="Facebook">
+                <div class="oauth_f"></div>
+            </a>
+            <!--FACEBOOK-->
+            <!--GOOGLE-->
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <a title="google" onclick="onSignIn_click()">
+                <div class="oauth_g"></div>
+            </a>
+
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" style="float: left;width: 0px;height: 0px; margin-top: 11px;"></div>
+            <script>
+                var id_token = "";
+                var allow = '';
+
+                function onSignIn(googleUser) {
+                    // Useful data for your client-side scripts:
+                    var profile = googleUser.getBasicProfile();
+                    console.log("D: " + profile.getId()); // Don't send this directly to your server!
+                    console.log('Full Name: ' + profile.getName());
+                    console.log('Given Name: ' + profile.getGivenName());
+                    console.log('Family Name: ' + profile.getFamilyName());
+                    console.log("Image URL: " + profile.getImageUrl());
+                    console.log("Email: " + profile.getEmail());
+
+                    // The ID token you need to pass to your backend:
+                    //id_token = googleUser.getAuthResponse().id_token;
+                    //console.log("ID Token: " + id_token);
+
+                    // The ID token you need to pass to your backend:
+                    id_token = googleUser.getAuthResponse().id_token;
+
+                    console.log('token:  ' + id_token);
+
+                    if (allow == 1 && id_token != "") {
+                        window.location = 'oauth_back.php?oauth_type=google&token=' + id_token;
                     }
-                });
-            }
-            else
-            {
-                $.notification({
-                    title: "Login",
-                    text: "登录失败",
-                    onClose: function(data) {
-                        $.alert("失败了，有没有限制登录次数什么的");
+                }
+
+                function onSignIn_click() {
+                    allow = 1;
+                    if (id_token == '') {
+                        $('.abcRioButtonIcon').trigger("click");
+                        //window.location = 'oauth_back.php?oauth_type=google&token='+id_token;
+                    } else {
+                        window.location = 'oauth_back.php?oauth_type=google&token=' + id_token;
                     }
-                });
+                }
+            </script>
+            <!--GOOGLE-->
+            <div class="oauth_p"></div>
+        </div>
+    </div>
+    <div class="LoginMain">
+        <img src="images/default_wap/login_logo.png" alt="">
+        <input type="text" class="NameInput" placeholder="用戶名">
+        <div class="DaGeLan"></div>
+        <input type="password" class="PassInput" placeholder="密碼">
+        <div class="DaGeLan"></div>
+        <div class="LoginButtons">登錄</div>
+        <div class="raf">
+            <!--register and find password-->
+            <p>
+                <a href="./register" class="fl">新用戶註冊</a>
+            </p>
+            <p>
+                <a href="./findpass" class="fr">找回密碼?</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        $(".LoginButton").click(function () {
+            //        localStorage.setItem("data", "sb");
+            //        var ss=localStorage.getItem("data");
+            //        alert(ss);
+            $(".main").hide();
+            $(".LoginMain").show();
+        });
+        $(".head").find("img").eq(0).click(function () {
+            if ($(".LoginMain").is(':visible')) {
+                $(".main").show();
+                $(".LoginMain").hide();
             }
         });
+        $('.LoginButtons').click(function () {
+            var name = $('.NameInput').val();
+            var pass = $('.PassInput').val();
+            $.post("./login", {
+                username: name,
+                password: pass
+            }, function (result) {
 
-    });
-    $(".NameInput").blur(function () {
-        if($(".NameInput").val()!="" && $(".PassInput").val()!="")
-        {
-            $(".LoginButtons").css("background","linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,1))");
-        }
-        else
-        {
-            $(".LoginButtons").css("background","linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,0.6))");
-        }
-    })
-    $(".PassInput").blur(function () {
-        if($(".NameInput").val()!="" && $(".PassInput").val()!="")
-        {
-            $(".LoginButtons").css("background","linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,1))");
-        }
-        else
-        {
-            $(".LoginButtons").css("background","linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,0.6))");
-        }
-    })
-</script>
-<% include footer.html %>
+                result = result.data;
+                if (result.status == "Success" && result.m_uid > 0) {
+                    $.notification({
+                        title: "Login",
+                        text: "登录成功",
+                        onClose: function (data) {
+                            location.href = './index';
+                        }
+                    });
+                } else {
+                    $.notification({
+                        title: "Login",
+                        text: "登录失败",
+                        onClose: function (data) {
+                            $.alert("失败了，有没有限制登录次数什么的");
+                        }
+                    });
+                }
+            });
+
+        });
+        $(".NameInput").blur(function () {
+            if ($(".NameInput").val() != "" && $(".PassInput").val() != "") {
+                $(".LoginButtons").css("background",
+                    "linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,1))");
+            } else {
+                $(".LoginButtons").css("background",
+                    "linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,0.6))");
+            }
+        })
+        $(".PassInput").blur(function () {
+            if ($(".NameInput").val() != "" && $(".PassInput").val() != "") {
+                $(".LoginButtons").css("background",
+                    "linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,1))");
+            } else {
+                $(".LoginButtons").css("background",
+                    "linear-gradient(to right,rgba(255,187,6,0.6),rgba(255,127,0,0.6))");
+            }
+        })
+    </script>
+    <script>
+        function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '709821129223343',
+                cookie: true,
+                xfbml: true,
+                version: '2.10'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+    </script>
+    <% include footer.html %>

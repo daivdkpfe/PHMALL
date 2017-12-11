@@ -32,7 +32,8 @@ module.exports = {
         creditmanagement: './src/creditmanagement.js',
         evaluation:'./src/evaluation.js',
         evaluation_list:'./src/evaluation_list.js',
-        cart_buy:'./src/cart_buy.js'
+        cart_buy:'./src/cart_buy.js',
+        findpass:'./src/findpass.js'
     },  //入口
     devServer: {
         contentBase: './dist',

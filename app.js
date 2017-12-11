@@ -75,6 +75,7 @@ var evaluation=require('./routes/evaluation');
 var evaluation_list=require('./routes/evaluation_list');
 var respond=require('./routes/respond');
 var cartBuy=require('./routes/cart_buy');
+var findpass=require('./routes/findpass');
 //
 
 
@@ -178,6 +179,7 @@ app.use('/evaluation',evaluation);
 app.use('/evaluation_list',evaluation_list);
 app.use('/respond',respond);
 app.use('/cart_buy',cartBuy);
+app.use('/findpass',findpass);
 //
 
 app.use('/union/product', unionProduct);

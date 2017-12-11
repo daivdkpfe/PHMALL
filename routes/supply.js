@@ -49,11 +49,9 @@ router.get('/', function (req, res, next) {
 router.post('/', function (req, res, next) {
     var type = req.body.type;
     var start = parseInt(req.body.start);
-
     if (!start) {
         start = 0;
     }
-
     async function run() {
 
         var want_supply = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT " + start + ",15", [type]);
@@ -69,7 +67,6 @@ router.post('/', function (req, res, next) {
 router.post('/buy', function (req, res, next) {
     var type = req.body.type;
     var start = parseInt(req.body.start);
-
     if (!start) {
         start = 0;
     }

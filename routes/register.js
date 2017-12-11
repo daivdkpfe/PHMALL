@@ -214,7 +214,6 @@ router.post('/', function (req, res, next) {
                     } else {
 
                         sqlQueryMore("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)", insdata, function (err, vals, xx) {
-
                             if (err) {
                                 var errarr = {};
                                 logger.info("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)" + "    " + insdata);
@@ -224,7 +223,6 @@ router.post('/', function (req, res, next) {
                                     data: errarr
                                 };
                                 res.json(respod);
-
                             } else {
                                 //插入成功，我想要不直接給他綁定了第三方登錄好了
                                 var token_data = {};

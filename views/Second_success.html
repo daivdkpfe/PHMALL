@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=375px, user-scalable=no">
+	<meta name="google-signin-scope" content="profile email">
+	<meta name="google-signin-client_id" content="1006860404577-vbkc1737ds3jfme5ghk76v6gnetm4ltr.apps.googleusercontent.com">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title><%= title %></title>
+
+	<link rel="stylesheet" href="../images/default_wap/weui.min.css">
+	<link rel="stylesheet" href="../images/default_wap/jquery-weui.min.css">
+	<link rel="stylesheet" href="../images/default_wap/public.css">
+
+	<script src="../images/default_wap/vue.js"></script>
+
+
+	<script src="../images/default_wap/jquery.min.js"></script>
+		<script src="../images/default_wap/jquery-weui.js"></script>
+	<script src="../images/default_wap/public.js"></script>
+
+
+	<script>
+
+		$.modal.prototype.defaults = {
+			title: "提示",
+			text: undefined,
+			buttonOK: "OK",
+			buttonCancel: "取消",
+			buttons: [{
+				text: "OK",
+				className: "primary"
+			}],
+			autoClose: true //点击按钮自动关闭对话框，如果你不希望点击按钮就关闭对话框，可以把这个设置为false
+		};
+	</script>
+
+	<script src="../images/default_wap/zepto.min.js"></script>
+	<script src="../images/default_wap/lazyimg.js"></script>
+
+	<script>
+		$(function(){
+			var lazyloadImg = new LazyloadImg({
+				el: 'body [data-src]', //匹配元素
+				top: 50, //元素在顶部伸出长度触发加载机制
+				right: 50, //元素在右边伸出长度触发加载机制
+				bottom: 50, //元素在底部伸出长度触发加载机制
+				left: 50, //元素在左边伸出长度触发加载机制
+				qriginal: false, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高
+				load: function(el) {
+					el.style.cssText += '-webkit-animation: fadeIn 01s ease 0.2s 1 both;animation: fadeIn 1s ease 0.2s 1 both;';
+				},
+				error: function(el) {
+
+				}
+			});
+		});
+	</script>
+	<script type='text/javascript' src='../images/default_wap/swiper.js' charset='utf-8'></script>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="weui-msg">
+    <div class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></div>
+    <div class="weui-msg__text-area">
+        <h2 class="weui-msg__title">操作成功</h2>
+        <p class="weui-msg__desc"><%= type %></p>
+    </div>
+    <div class="weui-msg__opr-area">
+        <p class="weui-btn-area">
+            <a href="javascript:;" class="weui-btn weui-btn_primary back">确定</a>
+
+        </p>
+    </div>
+
+</div>
+
+
+
+
+<!--底部栏-->
+<% include footer.html %>
