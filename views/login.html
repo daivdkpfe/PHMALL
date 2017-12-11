@@ -336,7 +336,7 @@
     function checkLoginState() {
       FB.getLoginStatus(function (response) {
           console.log(response);
-        statusChangeCallback(response);
+        
       });
     }
 
@@ -362,7 +362,10 @@
         version: 'v2.10' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
       });
       FB.AppEvents.logPageView();
-
+      FB.getLoginStatus(function (response) {
+          console.log(response);
+        
+      });
     };
   </script>
  
