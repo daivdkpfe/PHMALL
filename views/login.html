@@ -328,36 +328,38 @@
             }
         })
     </script>
-    <script>
-        function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '709821129223343',
-                cookie: true,
-                xfbml: true,
-                version: '2.11'
-            });
+ <script>
+    function checkLoginState() {
+      FB.getLoginStatus(function (response) {
+        console.log(response);
+        statusChangeCallback(response);
+      });
+    }
 
-            FB.AppEvents.logPageView();
-            FB.getLoginStatus(function (response) {
-            statusChangeCallback(response);
-            });
-        };
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11"
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+
+    window.fbAsyncInit = function () {
+
+      FB.init({
+        appId: '709821129223343',
+        autoLogAppEvents: true,
+        status: true,
+        xfbml: true,
+        version: 'v2.04' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
+      });
+      FB.AppEvents.logPageView();
+
+    };
+  </script>
  
     <% include footer.html %>
