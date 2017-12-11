@@ -331,7 +331,6 @@
  <script>
     function checkLoginState() {
       FB.getLoginStatus(function (response) {
-        console.log(response);
         statusChangeCallback(response);
       });
     }
@@ -355,7 +354,7 @@
         autoLogAppEvents: true,
         status: true,
         xfbml: true,
-        version: 'v2.04' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
+        version: 'v2.11' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
       });
       FB.AppEvents.logPageView();
 
