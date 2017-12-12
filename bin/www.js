@@ -413,7 +413,7 @@ global.SendSms = function (uid, phonenumber, click_number, code, type, message, 
                             throw err;
                         } else {
                             resolve(1);
-                        }
+                        } 
                     });
 
                 } else {
