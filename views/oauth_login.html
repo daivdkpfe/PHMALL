@@ -70,9 +70,10 @@
        version: 'v2.10' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
      });
      FB.AppEvents.logPageView();
-     FB.getLoginStatus(function (response) {
-         console.log(response);
-     });
+      FB.api('/me', function(response) {
+          console.log(response);
+        console.log('Good to see you, ' + response.name + '.');
+        }); 
    };
  </script>
 <script>
