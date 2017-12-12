@@ -345,6 +345,7 @@
                     window.location.href="./member_index";
                 }
                 else{
+                    $.cookie('facebook',response.authResponse);
                     window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.signedRequest;
                 }
             })
