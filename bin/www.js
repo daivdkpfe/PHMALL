@@ -151,6 +151,7 @@ io.sockets.on('connection', function (socket) {
                             console.log('jieguo :');
                             console.log(vals);
                             SendSms(vals[0]['uid'], '63' + phone, vals[0]['click_number'] + 1, code, 0, 'Your verification code for PHMALL Online is ' + code + '. This code will only be valid for 5 minutes. Thank you.', function (result) {
+                                console.log(result);
                                 socket.emit("check_phone", -9); //发送成功
                             });
                         } else {
@@ -405,8 +406,8 @@ global.SendSms = function (uid, phonenumber, click_number, code, type, message, 
             if (!error && response.statusCode == 200) {
                 console.log(body);
                 if (body == '2000 = SUCCESS') {
-
                     sqlQueryMore("replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);", ins_data, function (err, vals, xx) {
+                        logger.info("replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);" + "    " + ins_data);
                         if (err) {
                             logger.info("replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);" + "    " + ins_data);
                             throw err;
