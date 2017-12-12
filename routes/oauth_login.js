@@ -40,7 +40,7 @@ var fs = require("fs");
 router.post('/', function(req, res, next) {
     var post=req.body;
    async function run() {
-      var oauth=await sqlasnyc('select * from `mvm_member_oauth` where type=? and token=? and oauth_uid=?',[post.type,post.token,post.oauth_uid]);
+      var oauth=await sqlasnyc('select * from `mvm_member_oauth` where type=? and oauth_uid=?',[post.type,post.oauth_uid]);
       if(oauth==0){
         var respond={
           ret:200,

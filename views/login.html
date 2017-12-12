@@ -341,7 +341,7 @@
             $.post('/oauth_login',{token:response.authResponse.signedRequest,oauth_uid:response.authResponse.userID,type:'facebook'},function(data){
                 console.log(data);
                 var data=data.data;
-                if(data==1){
+                if(data=='1'){
                     window.location.href="./member_index";
                 }
                 else{
