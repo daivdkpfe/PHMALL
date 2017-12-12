@@ -336,6 +336,7 @@
  <script>
      $('.FB').click(function(){
         FB.login(function(response) {
+            console.log(response);
         if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
         FB.api('/me', function(response) {
@@ -344,7 +345,7 @@
         } else {
         console.log('User cancelled login or did not fully authorize.');
         }
-});
+    });
      })
     function checkLoginState() {
       FB.getLoginStatus(function (response) {
@@ -374,9 +375,7 @@
         version: 'v2.10' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
       });
       FB.AppEvents.logPageView();
-      FB.getLoginStatus(function (response) {
-          console.log(response);
-      });
+      
     };
   </script>
  
