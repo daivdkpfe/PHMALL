@@ -1,0 +1,84 @@
+<% include header_index_iview.html %>
+<style>
+    .logo{
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 156px;
+    }
+    .bottom-input{
+        width:90%;
+        margin: 0 auto;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #fe9b0c;
+        height: 44px;
+        margin-top: 20px;
+        text-indent: 10px;
+    }
+    .bind-button{
+        width: 345px;
+        height: 44px;
+        background: linear-gradient(to right,#fe9b0c,#ff8000);
+        border: none;
+        display: block;        
+        border-radius: 6px;
+        color: white;
+        text-align: center;
+        line-height: 44px;
+        margin: 0 auto;
+        margin-top: 45px;
+        font-size: 15px;
+    }
+</style>
+<div class="big_div">
+    <top title="绑定FACEBOOK帐号"></top>
+    <img src="images/default_wap/login_logo.png" class="logo" alt="">
+    <a href="./login">
+        <input class="bind-button" type="submit" value="已有PHMALL帐号">
+    </a>
+    <a href="./register">
+        <input class="bind-button" type="submit" value="新用户注册">
+    </a>
+</div>
+
+
+<script src="images/default_wap/vue.js"></script>
+<script src="./dist/findpass.bundle.js"></script>
+<script>
+
+   (function (d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {
+       return;
+     }
+     js = d.createElement(s);
+     js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10"
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+   window.fbAsyncInit = function () {
+
+     FB.init({
+       appId: '709821129223343',
+       autoLogAppEvents: true,
+       status: true,
+       xfbml: true,
+       version: 'v2.10' // or v2.8, v2.7, v2.6, v2.5, v2.4, v2.3,
+     });
+     FB.AppEvents.logPageView();
+     FB.getLoginStatus(function (response) {
+         console.log(response);
+     });
+   };
+ </script>
+<script>
+      Vue.use(bundle);
+      var page=new Vue({
+          el:'.big_div'
+      })
+</script>
+<% include footer.html %>
