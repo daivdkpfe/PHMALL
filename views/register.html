@@ -519,7 +519,8 @@
                 var member_tel11=$(".PhoneNumber").val();
                 var code=$(".PhoneCode").val();
                 var data={login_id:login_id,pass1:pass1,member_tel11:member_tel11,code:code};
-                if($.cookie('oauth').length>0){
+                console.log((typeof($.cookie('oauth'))!='undefined'));
+                if(typeof($.cookie('oauth'))!='undefined'){
                     data.type=$.cookie('oauth');
                     data.oauth_uid=$.cookie('oauth_uid');
                     data.token=$.cookir('token');
