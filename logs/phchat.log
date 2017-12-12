@@ -3563,3 +3563,87 @@
 [2017-12-12 09:29:28.505] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
 [2017-12-12 09:29:28.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
 [2017-12-12 09:29:28.506] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-12 14:30:28.640] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-12-12 14:30:28.643] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-12-12 14:30:28.644] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-12-12 14:30:28.644] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-12-12 14:30:28.645] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-12-12 14:30:28.645] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-12-12 14:30:28.646] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-12-12 14:30:28.647] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-12-12 14:30:28.647] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-12-12 14:30:28.648] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-12-12 14:30:28.650] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-12-12 14:30:28.651] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-12-12 14:30:28.652] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-12-12 14:30:28.653] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-12-12 14:30:28.659] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-12-12 14:30:28.660] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-12-12 14:30:28.661] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-12-12 14:30:28.662] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-12-12 14:30:28.663] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-12-12 14:30:28.663] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-12-12 14:30:28.664] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-12-12 14:30:28.666] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-12-12 14:30:28.667] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-12-12 14:30:28.667] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-12 14:31:21.664] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1513036800,1513123199
+[2017-12-12 14:37:34.546] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 14:37:36.988] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxx
+[2017-12-12 14:37:38.915] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxxxxxxxx
+[2017-12-12 15:27:45.614] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 15:29:10.298] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09157509353
+[2017-12-12 15:29:10.302] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309157509353
+[2017-12-12 15:29:12.106] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    ,6309157509353,1513063750,1513064050,1,4635935,0
+[2017-12-12 15:31:01.428] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 15:40:25.552] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 15:41:10.047] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09157509353
+[2017-12-12 15:41:10.054] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309157509353
+[2017-12-12 15:41:11.079] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    4,6309157509353,1513064470,1513064770,2,959512,0
+[2017-12-12 15:48:52.644] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09157509352
+[2017-12-12 15:48:52.651] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309157509352
+[2017-12-12 15:48:53.832] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    ,6309157509352,1513064933,1513065233,1,1943763,0
+[2017-12-12 15:48:58.365] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxs
+[2017-12-12 15:52:37.457] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2017-12-12 15:52:37.461] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2017-12-12 15:52:37.461] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2017-12-12 15:52:37.462] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2017-12-12 15:52:37.462] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2017-12-12 15:52:37.463] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2017-12-12 15:52:37.463] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2017-12-12 15:52:37.464] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2017-12-12 15:52:37.465] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2017-12-12 15:52:37.466] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2017-12-12 15:52:37.467] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2017-12-12 15:52:37.472] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2017-12-12 15:52:37.472] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2017-12-12 15:52:37.474] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2017-12-12 15:52:37.474] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2017-12-12 15:52:37.475] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2017-12-12 15:52:37.476] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2017-12-12 15:52:37.477] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2017-12-12 15:52:37.478] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2017-12-12 15:52:37.479] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2017-12-12 15:52:37.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2017-12-12 15:52:37.482] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2017-12-12 15:52:37.483] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2017-12-12 15:52:37.483] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-12 15:52:51.807] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1513036800,1513123199
+[2017-12-12 15:54:37.632] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 15:54:54.194] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456789
+[2017-12-12 16:00:52.499] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 16:01:09.795] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456789
+[2017-12-12 16:03:19.999] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 16:03:30.056] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456789
+[2017-12-12 16:04:15.415] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 16:04:17.600] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 16:04:30.106] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456777
+[2017-12-12 16:04:38.470] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminxxx
+[2017-12-12 16:04:55.044] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09998844556
+[2017-12-12 16:04:55.047] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309998844556
+[2017-12-12 16:05:00.675] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    ,6309998844556,1513065895,1513066195,1,4767168,0
+[2017-12-12 16:05:38.512] [INFO] log_file - select uid from `mvm_member_table` where member_tel1 =? or member_id=?    09998844556,adminxxx
+[2017-12-12 16:05:38.517] [INFO] log_file - select * from `mvm_send_code` where type=0 and phone_number=? and end_time>? and code=?    6309998844556,1513065939,4767168
+[2017-12-12 16:05:38.520] [INFO] log_file - INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)    adminxxx,f328204a9507f18aa76d06cc21f0ae80,Z3hjMTYwMjI4,09998844556,1513065939
+[2017-12-12 16:05:38.524] [INFO] log_file - INSERT INTO `mvm_member_oauth` (`m_uid`, `oauth_uid`, `token`, `type`) VALUES ( ?, ?, ?,'facebook')    188,,,
+[2017-12-12 16:05:38.532] [INFO] log_file - INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)    adminxxx,f328204a9507f18aa76d06cc21f0ae80,Z3hjMTYwMjI4,09998844556,1513065939

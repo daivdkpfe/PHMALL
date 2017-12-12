@@ -200,9 +200,7 @@ router.post('/', function (req, res, next) {
             } else {
 
                 sqlQueryMore("select * from `mvm_send_code` where type=0 and phone_number=? and end_time>? and code=?", sql, function (err, vals, xx) {
-                    console.log(vals);
                     if (vals.length <= 0) {
-
                         var err = {};
                         err['err'] = "驗證碼錯誤";
                         var respod = {
