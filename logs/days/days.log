@@ -195,3 +195,30 @@
 [2017-12-12 16:16:46.144] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
 [2017-12-12 16:16:46.145] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
 [2017-12-12 16:16:46.146] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2017-12-12 16:21:37.740] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 16:21:45.569] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminssss
+[2017-12-12 16:21:51.254] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456999
+[2017-12-12 16:21:51.264] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309123456999
+[2017-12-12 16:21:53.807] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    ,6309123456999,1513066911,1513067211,1,9199853,0
+[2017-12-12 16:21:53.816] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);    ,6309123456999,1513066911,1513067211,1,9199853,0
+[2017-12-12 16:24:08.432] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456999
+[2017-12-12 16:24:08.436] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309123456999
+[2017-12-12 16:24:09.353] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    9,6309123456999,1513067048,1513067348,2,912755,0
+[2017-12-12 16:24:09.362] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);    9,6309123456999,1513067048,1513067348,2,912755,0
+[2017-12-12 16:25:11.082] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminx
+[2017-12-12 16:25:15.330] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminx
+[2017-12-12 16:27:37.319] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 16:27:40.787] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 16:27:43.298] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminx
+[2017-12-12 16:32:46.893] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 16:32:55.173] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin999
+[2017-12-12 16:33:04.337] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123333333
+[2017-12-12 16:33:04.344] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309123333333
+[2017-12-12 16:33:05.989] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    ,6309123333333,1513067584,1513067884,1,1545499,0
+[2017-12-12 16:33:05.998] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);    ,6309123333333,1513067584,1513067884,1,1545499,0
+[2017-12-12 16:35:36.549] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    admin
+[2017-12-12 16:35:40.772] [INFO] log_file - select uid from `mvm_member_table` where member_id=?    adminsss
+[2017-12-12 16:35:49.004] [INFO] log_file - select uid from `mvm_member_table` where member_tel1=?    09123456999
+[2017-12-12 16:35:49.017] [INFO] log_file - SELECT * FROM  `mvm_send_code` WHERE  `phone_number` =? and type= 0    6309123456999
+[2017-12-12 16:35:50.331] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?,  ?);    9,6309123456999,1513067749,1513068049,3,839259,0
+[2017-12-12 16:35:50.351] [INFO] log_file - replace INTO  `mvm_send_code` ( `uid` , `phone_number` , `start_time` , `end_time` , `click_number` , `code` , `type`) VALUES (? ,  ?,  ?,  ?,  ?,  ?, ?);    9,6309123456999,1513067749,1513068049,3,839259,0

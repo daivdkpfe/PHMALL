@@ -132,6 +132,7 @@ io.sockets.on('connection', function (socket) {
     }); //验证用户名
     socket.on("check_phone", function (phone) {
         console.log(phone);
+        
         phone = '0' + parseInt(phone);
         var sqldata = [];
         sqldata.push(phone);

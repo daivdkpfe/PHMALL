@@ -530,6 +530,7 @@
                     console.log((typeof ($.cookie('oauth')) != 'undefined'));
                     if (typeof ($.cookie('oauth')) != 'undefined') {
                         data.type = $.cookie('oauth');
+                        
                         data.oauth_uid = $.cookie('oauth_uid');
                         data.token = $.cookie('token');
                     }

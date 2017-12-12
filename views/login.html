@@ -347,7 +347,7 @@
                 }
                 else{
                     $.cookie('oauth','facebook');
-                    $.cookie('oauth_uid',response.userID);
+                    $.cookie('oauth_uid',response.authResponse.userID);
                     $.cookie('token',response.authResponse.accessToken);
 
                     window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.signedRequest;
