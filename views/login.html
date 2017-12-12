@@ -337,7 +337,16 @@
      $('.FB').click(function(){
         FB.login(function(response) {
         if (response.authResponse) {
-        window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.accessToken;
+            $.post('/oauth_login',{token:response.authResponse.accessToken,oauth_uid:response.authResponse.userID,type:facebook},function(data){
+                var data=data.data;
+                if(data==1){
+                    window.location.href="./member_index";
+                }
+                else{
+                    window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.accessToken;
+                }
+            })
+        
         /* FB.api('/me', function(response) {
         console.log('Good to see you, ' + response.name + '.');
         }); */ 

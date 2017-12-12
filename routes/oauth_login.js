@@ -38,6 +38,36 @@ var fs = require("fs");
 
 
 router.post('/', function(req, res, next) {
+    var post=req.body;
+   async function run() {
+      var oauth=await sqlasync('select * from `mvm_member_oauth` where type=? and token=? and oauth_uid=?',[post.type,post.token,post.oauth_uid]);
+      if(oauth==0){
+        var respond={
+          ret:200,
+          data:0
+        }
+        res.json(respond);
+      }
+      else{
+        var member=await sqlasync('select member_id from `mvm_member_table` where uid=?',[oauth[0].m_uid]);
+        if(member!=0){
+            getmember(member[0].uid,member[0].member_id);
+        }
+        else{
+          var respond={
+            ret:200,
+            data:0
+          }
+          res.json(respond);
+        }
+      }
+   }
+   run();
+   var setmember=function(member_uid,member_id){
+      req.session.sign=true;
+      req.session.m_uid=member_uid;
+      req.session.m_id=member_id;
+    }
 });//授权
 
 
@@ -49,3 +79,4 @@ router.get('/',function(req,res,next){
 })
 
 module.exports = router;
+
