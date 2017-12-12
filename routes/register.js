@@ -154,7 +154,7 @@ router.post('/phchat', function (req, res, next) {
 
 });
 router.post('/', function (req, res, next) {
-    res.json(req.body);
+    
     console.log('post:' + req.body.member_tel11);
     if (req.session.sign) {
         var token_data = {};
@@ -212,7 +212,7 @@ router.post('/', function (req, res, next) {
                         res.json(respod);
 
                     } else {
-
+                        
                         sqlQueryMore("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)", insdata, function (err, vals, xx) {
                             if (err) {
                                 var errarr = {};
@@ -225,6 +225,11 @@ router.post('/', function (req, res, next) {
                                 res.json(respod);
                             } else {
                                 //插入成功，我想要不直接給他綁定了第三方登錄好了
+                                sqlQueryMore("INSERT INTO `mvm_member_oauth` (`m_uid`, `oauth_uid`, `token`, `type`) VALUES ( ?, ?, ?,'facebook')",[vals.insertId,req.body.oauth_uid,req.body.token,req.body.oauth] , function (err, vals, xx) {
+                                    if(err){
+                                        logger.info("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)" + "    " + insdata);
+                                    }
+                                });
                                 var token_data = {};
                                 token_data['m_id'] = req.body.login_id; //用户ID
                                 token_data['m_uid'] = vals.insertId; //用户UID
