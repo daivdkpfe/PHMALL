@@ -50,7 +50,7 @@ router.post('/', function(req, res, next) {
         res.json(respond);
       }
       else{
-        var member=await sqlasnyc('select member_id from `mvm_member_table` where uid=?',[oauth[0].m_uid]);
+        var member=await sqlasnyc('select member_id,uid from `mvm_member_table` where uid=?',[oauth[0].m_uid]);
         if(member!=0){
           session.sign=true;
           session.m_uid=member[0].uid;
