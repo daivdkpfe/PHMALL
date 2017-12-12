@@ -52,6 +52,11 @@ router.post('/', function(req, res, next) {
         var member=await sqlasync('select member_id from `mvm_member_table` where uid=?',[oauth[0].m_uid]);
         if(member!=0){
             getmember(member[0].uid,member[0].member_id);
+            var respond={
+              ret:200,
+              data:1
+            }
+            res.json(respond);
         }
         else{
           var respond={
