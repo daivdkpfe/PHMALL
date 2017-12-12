@@ -345,7 +345,7 @@
                     window.location.href="./member_index";
                 }
                 else{
-                    window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.accessToken;
+                    window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.signedRequest;
                 }
             })
         
