@@ -337,7 +337,9 @@
      $('.FB').click(function(){
         FB.login(function(response) {
         if (response.authResponse) {
+            console.log(response);
             $.post('/oauth_login',{token:response.authResponse.accessToken,oauth_uid:response.authResponse.userID,type:'facebook'},function(data){
+                console.log(data);
                 var data=data.data;
                 if(data==1){
                     window.location.href="./member_index";
