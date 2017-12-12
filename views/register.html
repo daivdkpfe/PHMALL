@@ -531,7 +531,7 @@
                     if (typeof ($.cookie('oauth')) != 'undefined') {
                         data.type = $.cookie('oauth');
                         data.oauth_uid = $.cookie('oauth_uid');
-                        data.token = $.cookir('token');
+                        data.token = $.cookie('token');
                     }
                     $.post("./register", data, function (result) {
                         result = result.data;
