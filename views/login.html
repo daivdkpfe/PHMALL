@@ -337,7 +337,7 @@
      $('.FB').click(function(){
         FB.login(function(response) {
         if (response.authResponse) {
-        windows.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.accessToken;
+        window.location.href="./oauth_login?type=FACEBOOK&token="+response.authResponse.accessToken;
         /* FB.api('/me', function(response) {
         console.log('Good to see you, ' + response.name + '.');
         }); */ 
