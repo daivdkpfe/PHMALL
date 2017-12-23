@@ -59,8 +59,7 @@ router.post('/', function (req, res, next) {
             ret:'200',
             data:want_supply
         };
-        res.json(respod);
-        
+        res.json(respod);     
     }
     run();
 });

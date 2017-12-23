@@ -239,12 +239,13 @@ router.post("/", function (req, res, next) {
 
 router.post("/get_onsale", function (req, res, next) {
   var sql = [];
-
+  console.log('time:');
+console.log((new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000) / 1000);
   var end = (new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000) / 1000;
-  end = end;
+  end=end-3600*8;
   var start = end - 3600 * 24;
   sql.push(start);
-  sql.push(end - 1);
+  sql.push(end-1);
   sqlQueryMore('select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1', sql, function (err, vals, xx) {
     if (err) logger.info("Caught exception:" + err);
     var s = 0;

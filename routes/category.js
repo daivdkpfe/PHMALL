@@ -78,6 +78,9 @@ router.post('/get_goods',function (req,res,next) {
                 sql.push(req.body.cat);
             }
             var categroy=await sqlasnyc(sqlstr,sql);
+            if(categroy==0){
+                categroy=[];
+            }
             var respod={
                 ret:'200',
                 data:categroy

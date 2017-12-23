@@ -1,3 +1,5 @@
 logs/*
 ./logs/*
 test.html
+logs/phchat.log
+logs/days/days.log
