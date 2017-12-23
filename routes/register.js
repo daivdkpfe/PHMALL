@@ -188,7 +188,6 @@ router.post('/', function (req, res, next) {
         sql.push(req.body.code);
 
         sqlQueryMore("select uid from `mvm_member_table` where member_tel1 =? or member_id=?", sqldata, function (err, vals, xx) {
-            console.log(vals);
             if (err) logger.info("Caught exception:" + err);
             if (vals.length > 0) {
                 var respod = {
