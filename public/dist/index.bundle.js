@@ -1041,18 +1041,18 @@ function install(Vue) {
 		page.flashs = result.default_wap_flash;
 		/* 		page.coupon = result.default_wap_coupon["0"]; */
 
-		page.cate1 = result.default_wap_categroy_1["0"];
-		page.cate2 = result.default_wap_categroy_2["0"];
-		page.cate3 = result.default_wap_categroy_3["0"];
-		page.cate4 = result.default_wap_categroy_4["0"];
-		page.cate5 = result.default_wap_categroy_5["0"];
-		page.cate6 = result.default_wap_categroy_6["0"];
-		page.cate7 = result.default_wap_categroy_7["0"];
-		page.cate8 = result.default_wap_categroy_8["0"];
-		page.cate9 = result.default_wap_categroy_9["0"];
-		page.cate10 = result.default_wap_categroy_10["0"];
-		page.cate11 = result.default_wap_categroy_11["0"];
-		page.cate12 = result.default_wap_categroy_12["0"];
+		/* 		page.cate1 = result.default_wap_categroy_1["0"];
+  		page.cate2 = result.default_wap_categroy_2["0"];
+  		page.cate3 = result.default_wap_categroy_3["0"];
+  		page.cate4 = result.default_wap_categroy_4["0"];
+  		page.cate5 = result.default_wap_categroy_5["0"];
+  		page.cate6 = result.default_wap_categroy_6["0"];
+  		page.cate7 = result.default_wap_categroy_7["0"];
+  		page.cate8 = result.default_wap_categroy_8["0"];
+  		page.cate9 = result.default_wap_categroy_9["0"];
+  		page.cate10 = result.default_wap_categroy_10["0"];
+  		page.cate11 = result.default_wap_categroy_11["0"];
+  		page.cate12 = result.default_wap_categroy_12["0"]; */
 
 		var list = {};
 		result.default_wap_ad_2.forEach(function (item, index) {
@@ -1071,8 +1071,8 @@ function install(Vue) {
 			}
 		});
 
-		page.right_top_ad_url = page.config.img_url + result.default_wap_ad_5['0'].url;
-		page.right_top_ad_img = page.config.img_url + result.default_wap_ad_5['0'].pic;
+		/* 		page.right_top_ad_url=page.config.img_url+result.default_wap_ad_5['0'].url
+  		page.right_top_ad_img=page.config.img_url+ result.default_wap_ad_5['0'].pic; */
 		result.default_wap_hot_shop.forEach(function (item, index) {
 			add_to_ppl(item);
 		});

@@ -212,9 +212,9 @@ router.get("/", function (req, res, next) {
 
 router.post("/", function (req, res, next) {
 
-  memcached.getMulti(['default_wap_flash', 'default_wap_ad_2', 'default_wap_categroy_1', 'default_wap_categroy_2', 'default_wap_categroy_3', 'default_wap_categroy_4', 'default_wap_categroy_5', 'default_wap_categroy_6', 'default_wap_categroy_7', 'default_wap_categroy_8', 'default_wap_categroy_9', 'default_wap_categroy_10', 'default_wap_categroy_11', 'default_wap_categroy_12','default_wap_hot_shop'], function (err, data) {
+  memcached.getMulti(['default_wap_flash', 'default_wap_ad_2','default_wap_hot_shop'], function (err, data) {
     var categroys = [];
-    categroys.push(data.default_wap_categroy_1[0]);
+ /*    categroys.push(data.default_wap_categroy_1[0]);
     categroys.push(data.default_wap_categroy_2[0]);
     categroys.push(data.default_wap_categroy_3[0]);
     categroys.push(data.default_wap_categroy_4[0]);
@@ -225,7 +225,7 @@ router.post("/", function (req, res, next) {
     categroys.push(data.default_wap_categroy_9[0]);
     categroys.push(data.default_wap_categroy_10[0]);
     categroys.push(data.default_wap_categroy_11[0]);
-    categroys.push(data.default_wap_categroy_12[0]);
+    categroys.push(data.default_wap_categroy_12[0]); */
     data['categroys'] = categroys;
     var respod = {
       ret: '200',
