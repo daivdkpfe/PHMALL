@@ -300,12 +300,6 @@
         methods:{
             sub:function () {
                 var t=this;
-                console.log(this.name);
-                console.log(this.tel);
-                console.log(this.address);
-                console.log(this.msg);
-                console.log(this.supply_uid);
-                console.log(this.supply_m_uid);
                 return false;
                 $.post('/supply_detail/submit',{name:this.name,tel:this.tel,address:this.address,msg:this.msg,supply_uid:this.supply_uid,supply_m_uid:this.supply_m_uid},function (result) {
                     result=result.data;

@@ -212,7 +212,7 @@ router.get("/", function (req, res, next) {
 
 router.post("/", function (req, res, next) {
 
-  memcached.getMulti(['default_wap_flash', 'default_wap_coupon', 'default_wap_hot_info', 'default_wap_ad_1', 'default_wap_ad_2', 'default_wap_ad_3', 'default_wap_categroy_1', 'default_wap_categroy_2', 'default_wap_categroy_3', 'default_wap_categroy_4', 'default_wap_categroy_5', 'default_wap_categroy_6', 'default_wap_categroy_7', 'default_wap_categroy_8', 'default_wap_categroy_9', 'default_wap_categroy_10', 'default_wap_categroy_11', 'default_wap_categroy_12', 'default_wap_ad_4', 'default_wap_ad_5', 'default_wap_hot_shop'], function (err, data) {
+  memcached.getMulti(['default_wap_flash', 'default_wap_ad_2', 'default_wap_categroy_1', 'default_wap_categroy_2', 'default_wap_categroy_3', 'default_wap_categroy_4', 'default_wap_categroy_5', 'default_wap_categroy_6', 'default_wap_categroy_7', 'default_wap_categroy_8', 'default_wap_categroy_9', 'default_wap_categroy_10', 'default_wap_categroy_11', 'default_wap_categroy_12','default_wap_hot_shop'], function (err, data) {
     var categroys = [];
     categroys.push(data.default_wap_categroy_1[0]);
     categroys.push(data.default_wap_categroy_2[0]);
@@ -240,12 +240,12 @@ router.post("/", function (req, res, next) {
 router.post("/get_onsale", function (req, res, next) {
   var sql = [];
   console.log('time:');
-console.log((new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000) / 1000);
+  console.log((new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000) / 1000);
   var end = (new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000) / 1000;
-  end=end-3600*8;
+  end = end - 3600 * 8;
   var start = end - 3600 * 24;
   sql.push(start);
-  sql.push(end-1);
+  sql.push(end - 1);
   sqlQueryMore('select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1', sql, function (err, vals, xx) {
     if (err) logger.info("Caught exception:" + err);
     var s = 0;

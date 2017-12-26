@@ -108,10 +108,8 @@ export function install(Vue) {
 	$.post("./index", {}, function (result) {
 		result = result.data;
 		page.flashs = result.default_wap_flash;
-		page.coupon = result.default_wap_coupon["0"];
-		page.ad1 = result.default_wap_ad_1["0"];
-		
-		page.ad3 = result.default_wap_ad_3['0'];
+/* 		page.coupon = result.default_wap_coupon["0"]; */
+
 		page.cate1 = result.default_wap_categroy_1["0"];
 		page.cate2 = result.default_wap_categroy_2["0"];
 		page.cate3 = result.default_wap_categroy_3["0"];
@@ -124,7 +122,7 @@ export function install(Vue) {
 		page.cate10 = result.default_wap_categroy_10["0"];
 		page.cate11 = result.default_wap_categroy_11["0"];
 		page.cate12 = result.default_wap_categroy_12["0"];
-		page.ad4 = result.default_wap_ad_4['0'];
+
 		
 		var list={}
 		result.default_wap_ad_2.forEach(function(item,index){
