@@ -843,7 +843,7 @@ global.sqlasnyc = function (sql, arr = []) {
         sqlQueryMore(sql, arr, function (err, vals, xx) {
             if (err) logger.info("Caught exception:" + err);
             if (vals.length <= 0) {
-                resolve(vals.length);
+                resolve([]);
             } else {
                 resolve(vals);
             }

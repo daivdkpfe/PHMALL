@@ -123,8 +123,6 @@ router.post('/love',function(req,res,next){
                 data:1
             };
             res.json(respod);
-            
-            
         }
         run();
     }
@@ -190,7 +188,10 @@ router.post('/friend',function(req,res,next){
         run();
     }
     else{
-        res.json(-1)
+        res.json({
+            ret:'201',
+            data:0
+        })
     }
 });
 module.exports = router;
