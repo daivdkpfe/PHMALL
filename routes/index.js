@@ -212,9 +212,9 @@ router.get("/", function (req, res, next) {
 
 router.post("/", function (req, res, next) {
 
-  memcached.getMulti(['default_wap_flash', 'default_wap_ad_2','default_wap_hot_shop'], function (err, data) {
+  memcached.getMulti(['default_wap_flash', 'default_wap_ad_2', 'default_wap_ad_4', 'default_wap_ad_5', 'default_wap_hot_shop'], function (err, data) {
     var categroys = [];
- /*    categroys.push(data.default_wap_categroy_1[0]);
+/*     categroys.push(data.default_wap_categroy_1[0]);
     categroys.push(data.default_wap_categroy_2[0]);
     categroys.push(data.default_wap_categroy_3[0]);
     categroys.push(data.default_wap_categroy_4[0]);

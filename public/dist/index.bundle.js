@@ -1071,8 +1071,8 @@ function install(Vue) {
 			}
 		});
 
-		/* 		page.right_top_ad_url=page.config.img_url+result.default_wap_ad_5['0'].url
-  		page.right_top_ad_img=page.config.img_url+ result.default_wap_ad_5['0'].pic; */
+		page.right_top_ad_url = page.config.img_url + result.default_wap_ad_5['0'].url;
+		page.right_top_ad_img = page.config.img_url + result.default_wap_ad_5['0'].pic;
 		result.default_wap_hot_shop.forEach(function (item, index) {
 			add_to_ppl(item);
 		});
