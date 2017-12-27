@@ -120,7 +120,7 @@ router.post('/love',function(req,res,next){
             await sqlasnyc("update `mvm_order_share` set love=love+1 where uid =?",[uid]);
             var respod={
                 ret:'200',
-                data:1
+                data:"1"
             };
             res.json(respod);
         }

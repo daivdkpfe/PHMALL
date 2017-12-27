@@ -26,8 +26,6 @@ export function install(Vue) {
 			right++;
 		}
 	}
-	
-	
 	var page = new Vue({
 		el: '.big_div',
 		data: {

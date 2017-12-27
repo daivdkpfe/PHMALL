@@ -1,305 +1,353 @@
-
 <% include header_index.html %>
 
-<style>
+    <style>
+        .header {
+            width: 100vw;
+            background: white;
+        }
 
-    .header{
-        width: 100vw;
-        background: white;
-    }
-    .header_div{
-        width: 355px;
-        margin: 0 auto;
-    }
-    .header_div img{
-        width: 20px;
-        height:20px;
-        margin-top: 12px;
-    }
-    .header_div p{
-        font-size: 15px;
-        color: #181818;
-        line-height: 44px;
-        text-align: center;
-    }
-    .weui-navbar{
-        overflow: scroll;
-        height:44px;
-        background: white;
-    }
-    .weui-navbar__item.weui-bar__item--on{
-        background: white;
-        color: #ff8000;
-    }
-    .weui-navbar__item{
-        width: 80px;
-    }
-    .weui-navbar__item:after{
-        border: none;
-    }
-    .weui-navbar:after{
-        border:none;
-    }
-    .weui-navbar__item{
-        color: #181818;
-        font-size: 13px;
-    }
-    body{
-        background: rgb(243,243,243);
-        width: 100vw;
-        overflow-x: hidden;
-    }
-    .weui-navbar__item img{
-        height:4px;
-        display: none;
-    }
-    .weui-bar__item--on img{
-        display: block;
-        margin: 0 auto;
-        margin-top: 7px;
-    }
-    .weui-tab__bd{
-        width: 100vw;
-    }
-    .hide1{
-        width: 327px;
-        float: left;
-        height: 44px;
-        overflow: hidden;
-    }
-    .hide{
-        width: 100vw;
-        overflow:hidden;
-        overflow: scroll;
-        height:44px;
+        .header_div {
+            width: 355px;
+            margin: 0 auto;
+        }
 
-    }
-    ::-webkit-scrollbar {/*隐藏滚轮*/
-        display: none !important;
-    }
-    .show{
-        width: 1200px;
-        height:44px;
-    }
-    .categroy{
-        width:68px;
-        margin-left: 20px;
-        height: 44px;
-        line-height: 44px;
-        float: left;
-        text-align: center;
-        font-size: 13px;
-        color: #181818;
+        .header_div img {
+            width: 20px;
+            height: 20px;
+            margin-top: 12px;
+        }
 
-    }
-    .rq{
-        background: white;
-        height: 44px;
-        width: 100vw;
-    }
-    .selected{
-        font-size: 13px;
-        color: #ff8000;
-    }
-    .categroy img{
-        height: 4px;
-        position: relative;
-        top: -4px;
-        margin: 0 auto;
-        display: none;
-    }
-    .selected img{
-        display: block;
-    }
-    .down{
-        float: left;
-        height:15px;
-        margin: 14.5px 16.5px;
-    }
-    .down_div{
-        float: left;
-        width:48px;
-        height: 44px;
-    }
+        .header_div p {
+            font-size: 15px;
+            color: #181818;
+            line-height: 44px;
+            text-align: center;
+        }
 
+        .weui-navbar {
+            overflow: scroll;
+            height: 44px;
+            background: white;
+        }
 
+        .weui-navbar__item.weui-bar__item--on {
+            background: white;
+            color: #ff8000;
+        }
 
+        .weui-navbar__item {
+            width: 80px;
+        }
 
+        .weui-navbar__item:after {
+            border: none;
+        }
 
+        .weui-navbar:after {
+            border: none;
+        }
 
-    .supply_list_div,.buy_list_div{
-        width:100%;
-        background: white;
-    }
-    .supply_div,.buy_div{
-        width: 100vw;
-        height:120px;
-        background: rgb(248,250,253);
+        .weui-navbar__item {
+            color: #181818;
+            font-size: 13px;
+        }
 
-    }
-    .supply_pic,.buy_pic{
-        width: 100px;
-        height:100px;
-        margin: 10px;
+        body {
+            background: rgb(243, 243, 243);
+            width: 100vw;
+            overflow-x: hidden;
+        }
 
-    }
-    .supply_title,.buy_title{
-        width: 220px;
-        height:40px;
-        line-height: 20px;
-        font-size: 15px;
-        color: #5a5a5a;
-        margin-top: 10px;
-    }
-    .supply_status,.buy_status{
-        width: 245px;
-        height:40px;
-        line-height: 40px;
-        font-size: 13px;
-        color: #adadad;
-        float: left;
-    }
-    .supply_price,.buy_price{
-        font-size: 15px;
-        color: #B70029;
-        text-align: left;
-        width: 122.5px;
-        float: left;
-        line-height: 20px;
-        height:20px;
-    }
-    .supply_num,.buy_num{
-        width: 122.5px;
-        font-size: 13px;
-        color: #adadad;
-        text-align: right;
-        float: left;
-    }
-    .btn_div{
-        width: 20px;
-        height:20px;
-        background: red;
-        margin-top: 10px;
-        background: url("images/default_wap/edit1.png");
-        background-size: 20px 20px;
-        margin-left: 5px;
-    }
-    .fabu_div{
-        width: 50px;
-        height: 50px;
-        background: url('images/default_wap/submit.jpg');
-        border-radius: 50px;
-        background-size: 50px 50px;
-        position: fixed;
-        bottom: 20px;
-        left: 10px;
-    }
+        .weui-navbar__item img {
+            height: 4px;
+            display: none;
+        }
+
+        .weui-bar__item--on img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 7px;
+        }
+
+        .weui-tab__bd {
+            width: 100vw;
+        }
+
+        .hide1 {
+            width: 327px;
+            float: left;
+            height: 44px;
+            overflow: hidden;
+        }
+
+        .hide {
+            width: 100vw;
+            overflow: hidden;
+            overflow: scroll;
+            height: 44px;
+        }
+
+         ::-webkit-scrollbar {
+            /*隐藏滚轮*/
+            display: none !important;
+        }
+
+        .show {
+            width: 1200px;
+            height: 44px;
+        }
+
+        .categroy {
+            width: 68px;
+            margin-left: 20px;
+            height: 44px;
+            line-height: 44px;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+            color: #181818;
+        }
+
+        .rq {
+            background: white;
+            height: 44px;
+            width: 100vw;
+        }
+
+        .selected {
+            font-size: 13px;
+            color: #ff8000;
+        }
+
+        .categroy img {
+            height: 4px;
+            position: relative;
+            top: -4px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .selected img {
+            display: block;
+        }
+
+        .down {
+            float: left;
+            height: 15px;
+            margin: 14.5px 16.5px;
+        }
+
+        .down_div {
+            float: left;
+            width: 48px;
+            height: 44px;
+        }
 
 
 
 
 
 
+        .supply_list_div,
+        .buy_list_div {
+            width: 100%;
+            background: white;
+        }
+
+        .supply_div,
+        .buy_div {
+            width: 100vw;
+            height: 120px;
+            background: rgb(248, 250, 253);
+        }
+
+        .supply_pic,
+        .buy_pic {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .supply_title,
+        .buy_title {
+            width: 220px;
+            height: 40px;
+            line-height: 20px;
+            font-size: 15px;
+            color: #5a5a5a;
+            margin-top: 10px;
+        }
+
+        .supply_status,
+        .buy_status {
+            width: 245px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px;
+            color: #adadad;
+            float: left;
+        }
+
+        .supply_price,
+        .buy_price {
+            font-size: 15px;
+            color: #B70029;
+            text-align: left;
+            width: 122.5px;
+            float: left;
+            line-height: 20px;
+            height: 20px;
+        }
+
+        .supply_num,
+        .buy_num {
+            width: 122.5px;
+            font-size: 13px;
+            color: #adadad;
+            text-align: right;
+            float: left;
+        }
+
+        .btn_div {
+            width: 20px;
+            height: 20px;
+            background: red;
+            margin-top: 10px;
+            background: url("images/default_wap/edit1.png");
+            background-size: 20px 20px;
+            margin-left: 5px;
+        }
+
+        .fabu_div {
+            width: 50px;
+            height: 50px;
+            background: url('images/default_wap/submit.jpg');
+            border-radius: 50px;
+            background-size: 50px 50px;
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+        }
 
 
 
 
 
-    .msg_from_me,.msg_to_me{
-        
-        width: 100vw;
-        background: white;
-        margin-bottom: 10px;
-    }
-    .msg_top{
-        width: 100vw;
-        height: 70px;
-        border-bottom: 1px solid rgb(239, 239, 244);
-    }
-    .member_logo{
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
-    .member_id{
-        width: 250px;
-        line-height: 20px;
-        padding-top: 10px;
-        font-size: 15px;
-        color: #454545;
-    }
-    .register_time{
-        width: 250px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 15px;
-        color: #adadad;
-    }
-    .detele_ico{
-        width: 15px;
-        float: right;
-        margin-right: 10px;
-    }
-    .msg_title{
-        margin: 0 10px;
-        margin-top: 10px;
-        font-size: 15px;
-        color: #454545;
-    }
-    .msg_type{
-        color: #fe9b0c;
-    }
-    .msg{
-        font-size: 13px;
-        color: #adadad;
-        margin: 0 10px;
-        line-height: 18px;
-        margin-top: 7px;
-        border-bottom: 1px solid rgb(239, 239, 244);
-    }
-    .msg_bottom{
-        width: 100vw;
-    }
-    .msg_bottom p{
-        margin-left: 10px;
-        font-size: 15px;
-        color: #454545;
-        line-height: 44px;
-        float: left;
-    }
-    .msg_bottom img{
-        width: 20px;
-        margin: 12px;
-        float: left;
-    }
-    .to_detail{
-        font-size: 15px;
-        color: #454545;
-        line-height: 44px;
-        height: 44px;
-        float: right;
-        margin-right: 10px;
-        text-align: right;
-        position: absolute;
-        right: 10px;
-        font-weight: bold;
-    }
-    .msg_bottom a{
-        width: 100vw;
-        height: 44px;
-        float: left;
-    }
-</style>
-<div class="big_div">
-    <div class="h44 header">
-        <div class="header_div h44">
-            <img src="images/default_wap/return.png" class="back fl" alt="">
-            <img src="images/default_wap/moreblack.png" class="back fr" alt="">
-            <p>
-                我的社交
-            </p>
+
+
+
+
+
+
+        .msg_from_me,
+        .msg_to_me {
+
+            width: 100vw;
+            background: white;
+            margin-bottom: 10px;
+        }
+
+        .msg_top {
+            width: 100vw;
+            height: 70px;
+            border-bottom: 1px solid rgb(239, 239, 244);
+        }
+
+        .member_logo {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .member_id {
+            width: 250px;
+            line-height: 20px;
+            padding-top: 10px;
+            font-size: 15px;
+            color: #454545;
+        }
+
+        .register_time {
+            width: 250px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            color: #adadad;
+        }
+
+        .detele_ico {
+            width: 15px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        .msg_title {
+            margin: 0 10px;
+            margin-top: 10px;
+            font-size: 15px;
+            color: #454545;
+        }
+
+        .msg_type {
+            color: #fe9b0c;
+        }
+
+        .msg {
+            font-size: 13px;
+            color: #adadad;
+            margin: 0 10px;
+            line-height: 18px;
+            margin-top: 7px;
+            border-bottom: 1px solid rgb(239, 239, 244);
+        }
+
+        .msg_bottom {
+            width: 100vw;
+        }
+
+        .msg_bottom p {
+            margin-left: 10px;
+            font-size: 15px;
+            color: #454545;
+            line-height: 44px;
+            float: left;
+        }
+
+        .msg_bottom img {
+            width: 20px;
+            margin: 12px;
+            float: left;
+        }
+
+        .to_detail {
+            font-size: 15px;
+            color: #454545;
+            line-height: 44px;
+            height: 44px;
+            float: right;
+            margin-right: 10px;
+            text-align: right;
+            position: absolute;
+            right: 10px;
+            font-weight: bold;
+        }
+
+        .msg_bottom a {
+            width: 100vw;
+            height: 44px;
+            float: left;
+        }
+    </style>
+    <div class="big_div">
+        <div class="h44 header">
+            <div class="header_div h44">
+                <img src="images/default_wap/return.png" class="back fl" alt="">
+                <img src="images/default_wap/moreblack.png" class="back fr" alt="">
+                <p>
+                    我的社交
+                </p>
+            </div>
         </div>
-    </div>
 
 
 
@@ -325,7 +373,7 @@
             </div>
             <div class="weui-tab__bd">
                 <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-                    
+
                     <div class="supply_list_div">
                         <div class="supply_div" v-for="supply in supply_list">
                             <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+supply.pic" class="supply_pic fl" alt="">
@@ -340,34 +388,40 @@
                     </div>
                 </div>
                 <div id="tab2" class="weui-tab__bd-item">
-                        
-                        <div class="buy_list_div">
-                            <div class="buy_div" v-for="buy in buy_list">
-                                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+buy.pic" class="buy_pic fl" alt="">
-                                <p class="buy_title fl sl2">
-                                    {{buy.goods_name}}
-                                </p>
-                                <div class="btn_div fl" @click="change_buy(buy.uid)"></div>
-                                <p class="buy_status sl1">状态：{{buy.status}}</p>
-                                <p class="buy_price sl1">价格：{{buy.price}}</p>
-                                <p class="buy_num sl1">数量：{{buy.num}}件</p>
-                            </div>
+
+                    <div class="buy_list_div">
+                        <div class="buy_div" v-for="buy in buy_list">
+                            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/'+buy.pic" class="buy_pic fl" alt="">
+                            <p class="buy_title fl sl2">
+                                {{buy.goods_name}}
+                            </p>
+                            <div class="btn_div fl" @click="change_buy(buy.uid)"></div>
+                            <p class="buy_status sl1">状态：{{buy.status}}</p>
+                            <p class="buy_price sl1">价格：{{buy.price}}</p>
+                            <p class="buy_num sl1">数量：{{buy.num}}件</p>
                         </div>
+                    </div>
                 </div>
                 <div id="tab3" class="weui-tab__bd-item">
                     <div class="msg_from_me" v-for="msg in from_me_list">
                         <div class="msg_top">
-                                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+msg.member_image" class="member_logo fl" alt="">
-                                <p class="member_id sl1 fl">{{msg.m_id}}</p>
-                                <p class="register_time sl1 fl">发布时间：{{msg.register_date}}</p>
-                                <img src="images/default_wap/clear.png" class="detele_ico" alt="" @click="del_from_me(msg.uid,msg.type)">
+                            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+msg.member_image" class="member_logo fl"
+                                alt="">
+                            <p class="member_id sl1 fl">{{msg.m_id}}</p>
+                            <p class="register_time sl1 fl">发布时间：{{msg.register_date}}</p>
+                            <img src="images/default_wap/clear.png" class="detele_ico" alt="" @click="del_from_me(msg.uid,msg.type)">
                         </div>
                         <div class="msg_main">
-                            <p class="sl2 msg_title"><d class="msg_type">[{{msg.types}}]</d>{{msg.info.goods_name}}</p>
+                            <p class="sl2 msg_title">
+                                <d class="msg_type">[{{msg.types}}]</d>{{msg.info.goods_name}}</p>
                             <p class="msg">{{msg.msg}}</p>
                         </div>
                         <div class="msg_bottom h44">
-                            <a :href="'msg_detail?uid='+msg.uid+'&type='+msg.type"><p>联系方式<d class="to_detail">></d> </p></a>
+                            <a :href="'msg_detail?uid='+msg.uid+'&type='+msg.type">
+                                <p>联系方式
+                                    <d class="to_detail">></d>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="weui-loadmore">
@@ -378,17 +432,23 @@
                 <div id="tab4" class="weui-tab__bd-item">
                     <div class="msg_from_me" v-for="msg in to_me_list">
                         <div class="msg_top">
-                                <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+msg.member_image" class="member_logo fl" alt="">
-                                <p class="member_id sl1 fl">{{msg.m_id}}</p>
-                                <p class="register_time sl1 fl">发布时间：{{msg.register_date}}</p>
-                                <img src="images/default_wap/edit1.png" class="detele_ico" alt="" @click="change_from_me(msg.uid,msg.type)">
+                            <img src="images/default_wap/load.png" :data-src="'http://www.phmall.com.ph/union/'+msg.member_image" class="member_logo fl"
+                                alt="">
+                            <p class="member_id sl1 fl">{{msg.m_id}}</p>
+                            <p class="register_time sl1 fl">发布时间：{{msg.register_date}}</p>
+                            <img src="images/default_wap/edit1.png" class="detele_ico" alt="" @click="change_from_me(msg.uid,msg.type)">
                         </div>
                         <div class="msg_main">
-                            <p class="sl2 msg_title"><d class="msg_type">[{{msg.types}}]</d>{{msg.info.goods_name}}</p>
+                            <p class="sl2 msg_title">
+                                <d class="msg_type">[{{msg.types}}]</d>{{msg.info.goods_name}}</p>
                             <p class="msg">{{msg.msg}}</p>
                         </div>
                         <div class="msg_bottom h44">
-                            <a :href="'msg_detail?uid='+msg.uid+'&type='+msg.type"><p>联系方式<d class="to_detail">></d> </p></a>
+                            <a :href="'msg_detail?uid='+msg.uid+'&type='+msg.type">
+                                <p>联系方式
+                                    <d class="to_detail">></d>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="weui-loadmore">
@@ -400,339 +460,317 @@
         </div>
 
 
-    <!--滚动栏-->
+        <!--滚动栏-->
 
 
 
-</div>
+    </div>
 
-<script>
-    var page = new Vue({
-        el: '.big_div',
-        data: {
-            supply_list:[],
-            buy_list:[],
-            from_me_start:0,
-            to_me_start:0,
-            from_me_list:[],
-            to_me_list:[],
-            msg_type:'',
-        },
-        methods:{
-            change_supply:function(uid){
-               
-                $.actions({
-            actions: [
-                {
-                    text:'查看',
-                    onClick: function(){
-                        window.location.href='./supply_detail?uid='+uid;
-                    }
-                },
-                {
-                    text:'結束',
-                    onClick: function(){
-                        $.post("./social_contact/supply/end",{uid:uid},function(result){
-                            result=result.data;
-                                if(result==1)
-                                {
-                                    $.toptip('修改成功','success');
-                                }
-                        })
-                    }
-                },
-                {
-                    text:'刪除',
-                    onClick: function(){
-                        $.post("./social_contact/supply/del",{uid:uid},function(result){
-                            result=result.data;
-                            if(result==1)
-                                {
-                                    $.toptip('刪除成功','success');
-                                }
-                        })
-                    }
-                }
-            ],
-            buttonCancel: "取消"
-        });
+    <script>
+        var page = new Vue({
+            el: '.big_div',
+            data: {
+                supply_list: [],
+                buy_list: [],
+                from_me_start: 0,
+                to_me_start: 0,
+                from_me_list: [],
+                to_me_list: [],
+                msg_type: '',
             },
-            change_buy:function(uid){
-               
-                $.actions({
-            actions: [
-                {
-                    text:'查看',
-                    onClick: function(){
-                        window.location.href='./buy_detail?uid='+uid;
-                    }
-                },
-                {
-                    text:'結束',
-                    onClick: function(){
-                        $.post("./social_contact/buy/end",{uid:uid},function(result){
-                            result=result.data;
-                                if(result==1)
-                                {
-                                    $.toptip('修改成功','success');
+            methods: {
+                change_supply: function (uid) {
+
+                    $.actions({
+                        actions: [{
+                                text: '查看',
+                                onClick: function () {
+                                    window.location.href = './supply_detail?uid=' + uid;
                                 }
-                        })
-                    }
-                },
-                {
-                    text:'刪除',
-                    onClick: function(){
-                        $.post("./social_contact/buy/del",{uid:uid},function(result){
-                            result=result.data;
-                            if(result==1)
-                                {
-                                    $.toptip('刪除成功','success');
-                                }
-                        })
-                    }
-                }
-            ],
-            buttonCancel: "取消"
-        });
-            },
-            del_from_me:function(uid,type){
-               
-                if(type==1)
-                {
-                    $.post('./social_contact/del_msg/sup',{uid:uid},function(result){
-                        result=result.data;
-                        if(result==1)
+                            },
                             {
+                                text: '結束',
+                                onClick: function () {
+                                    $.post("./social_contact/supply/end", {
+                                        uid: uid
+                                    }, function (result) {
+                                        result = result.data;
+                                        if (result == 1) {
+                                            $.toptip('修改成功', 'success');
+                                        }
+                                    })
+                                }
+                            },
+                            {
+                                text: '刪除',
+                                onClick: function () {
+                                    $.post("./social_contact/supply/del", {
+                                        uid: uid
+                                    }, function (result) {
+                                        result = result.data;
+                                        if (result == 1) {
+                                            $.toptip('刪除成功', 'success');
+                                        }
+                                    })
+                                }
+                            }
+                        ],
+                        buttonCancel: "取消"
+                    });
+                },
+                change_buy: function (uid) {
+
+                    $.actions({
+                        actions: [{
+                                text: '查看',
+                                onClick: function () {
+                                    window.location.href = './buy_detail?uid=' + uid;
+                                }
+                            },
+                            {
+                                text: '結束',
+                                onClick: function () {
+                                    $.post("./social_contact/buy/end", {
+                                        uid: uid
+                                    }, function (result) {
+                                        result = result.data;
+                                        if (result == 1) {
+                                            $.toptip('修改成功', 'success');
+                                        }
+                                    })
+                                }
+                            },
+                            {
+                                text: '刪除',
+                                onClick: function () {
+                                    $.post("./social_contact/buy/del", {
+                                        uid: uid
+                                    }, function (result) {
+                                        result = result.data;
+                                        if (result == 1) {
+                                            $.toptip('刪除成功', 'success');
+                                        }
+                                    })
+                                }
+                            }
+                        ],
+                        buttonCancel: "取消"
+                    });
+                },
+                del_from_me: function (uid, type) {
+
+                    if (type == 1) {
+                        $.post('./social_contact/del_msg/sup', {
+                            uid: uid
+                        }, function (result) {
+                            result = result.data;
+                            if (result == 1) {
                                 $.toptip('删除成功');
                             }
-                    })
-                }
-                else
-                {
-                    $.post('./social_contact/del_msg/buy',{uid:uid},function(result){
-                        result=result.data;
-                            if(result==1)
-                            {
+                        })
+                    } else {
+                        $.post('./social_contact/del_msg/buy', {
+                            uid: uid
+                        }, function (result) {
+                            result = result.data;
+                            if (result == 1) {
                                 $.toptip('删除成功');
                             }
-                    })
-                }
-                
-            },
-            change_from_me:function(uid,type)
-            {
-                $.actions({
-            actions: [
-                {
-                    text:'采纳',
-                    onClick: function(){
-                        if(type==1)
-                        {
-                            $.post('./social_contact/use_msg/sup',{uid:uid},function(result){
-                                result=result.data;
-                                if(result==1)
-                                    {
-                                        $.toptip('采纳成功','success');
-                                    }
-                            })
-                        }
-                        else
-                        {
-                            $.post('./social_contact/use_msg/buy',{uid:uid},function(result){
-                                result=result.data;
-                                    if(result==1)
-                                    {
-                                        $.toptip('采纳成功','success');
-                                    }
-                            })
-                        }
+                        })
                     }
+
                 },
-                {
-                    text:'刪除',
-                    onClick: function(){
-                        if(type==1)
-                        {
-                            $.post('./social_contact/del_msg/sup',{uid:uid},function(result){
-                                result=result.data;
-                                if(result==1)
-                                    {
-                                        $.toptip('删除成功');
+                change_from_me: function (uid, type) {
+                    $.actions({
+                        actions: [{
+                                text: '采纳',
+                                onClick: function () {
+                                    if (type == 1) {
+                                        $.post('./social_contact/use_msg/sup', {
+                                            uid: uid
+                                        }, function (result) {
+                                            result = result.data;
+                                            if (result == 1) {
+                                                $.toptip('采纳成功', 'success');
+                                            }
+                                        })
+                                    } else {
+                                        $.post('./social_contact/use_msg/buy', {
+                                            uid: uid
+                                        }, function (result) {
+                                            result = result.data;
+                                            if (result == 1) {
+                                                $.toptip('采纳成功', 'success');
+                                            }
+                                        })
                                     }
-                            })
-                        }
-                        else
-                        {
-                            $.post('./social_contact/del_msg/buy',{uid:uid},function(result){
-                                result=result.data;
-                                if(result==1)
-                                    {
-                                        $.toptip('删除成功');
+                                }
+                            },
+                            {
+                                text: '刪除',
+                                onClick: function () {
+                                    if (type == 1) {
+                                        $.post('./social_contact/del_msg/sup', {
+                                            uid: uid
+                                        }, function (result) {
+                                            result = result.data;
+                                            if (result == 1) {
+                                                $.toptip('删除成功');
+                                            }
+                                        })
+                                    } else {
+                                        $.post('./social_contact/del_msg/buy', {
+                                            uid: uid
+                                        }, function (result) {
+                                            result = result.data;
+                                            if (result == 1) {
+                                                $.toptip('删除成功');
+                                            }
+                                        })
                                     }
-                            })
-                        }
-                    }
+                                }
+                            }
+                        ],
+                        buttonCancel: "取消"
+                    });
                 }
-            ],
-            buttonCancel: "取消"
-        });
+            },
+            mounted: function () {
+                var t = this;
+                $.post('./social_contact/supply', {}, function (result) {
+                    console.log('1');
+                    console.log(result);
+                    result = result.data;
+                    if (result != 0 && result.length>0) {
+                        result.forEach(function (item, index) {
+                            if (item.approval_date == 0) {
+                                item.status = '未審核';
+
+                            } else if (item.approval_date == 10) {
+                                item.status = '已結束';
+                            } else {
+                                item.status = '進行中';
+                            }
+
+                            if (item.price == 0 || item.price == "" || item.price == null) {
+                                item.price = '商議';
+                            }
+                            t.supply_list.push(item);
+                        });
+
+                    }
+                });
+                $.post('./social_contact/buy', {}, function (result) {
+                    result = result.data;
+                    if (result != 0 && result.length>0) {
+                        result.forEach(function (item, index) {
+                            if (item.approval_date == 0) {
+                                item.status = '未審核';
+
+                            } else if (item.approval_date == 10) {
+                                item.status = '已結束';
+                            } else {
+                                item.status = '進行中';
+                            }
+
+                            if (item.price == 0 || item.price == "" || item.price == null) {
+                                item.price = '商議';
+                            }
+                            t.buy_list.push(item);
+                        });
+
+                    }
+                });
+                $.post('./social_contact/msg_from_me', {
+                    start: t.from_me_start
+                }, function (result) {
+                    result = result.data;
+                    if (result != 0 && result.length > 0) {
+                        result.forEach(function (item, index) {
+                            t.from_me_start++;
+                            item.register_date = return_date(item.register_date);
+                            if (item.type == 1) {
+                                item.types = '供应';
+                            } else {
+                                item.types = '需求'
+                            }
+                            t.from_me_list.push(item);
+                        })
+                    }
+                });
+                $.post('./social_contact/msg_to_me', {
+                    start: t.to_me_start
+                }, function (result) {
+                    result = result.data;
+                    if (result != 0 && result.length > 0) {
+                        result.forEach(function (item, index) {
+                            t.to_me_start++;
+                            item.register_date = return_date(item.register_date);
+                            if (item.type == 1) {
+                                item.types = '供应';
+                            } else {
+                                item.types = '需求'
+                            }
+                            t.to_me_list.push(item);
+                        })
+                    }
+                });
             }
-        },
-        mounted:function () {
-            var t=this;
-            $.post('./social_contact/supply',{},function (result) {
-                result=result.data;
-                if(result!=0)
-                {
-                    result.forEach(function(item,index) {
-                     if(item.approval_date==0){
-                         item.status='未審核';
+        });
 
-                     }   
-                     else if(item.approval_date==10)
-                     {
-                         item.status='已結束';
-                     }
-                     else{
-                         item.status='進行中';
-                     }
+        $(document.body).infinite();
+        var loading = false; //状态标记
+        $(document.body).infinite().on("infinite", function () {
+            if (loading) return;
+            loading = true;
+            var t = page;
+            if (page.msg_type == 'from_me') {
+                $.post('./social_contact/msg_from_me', {
+                    start: t.from_me_start
+                }, function (result) {
+                    result = result.data;
+                    if (result != 0 && result.length > 0) {
+                        result.forEach(function (item, index) {
+                            t.from_me_start++;
+                            item.register_date = return_date(item.register_date);
+                            if (item.type == 1) {
+                                item.types = '供应';
+                            } else {
+                                item.types = '需求'
+                            }
+                            t.from_me_list.push(item);
+                        });
+                        loading = false;
+                    }
+                });
+            } else if (page.msg_type == 'to_me') {
+                $.post('./social_contact/msg_to_me', {
+                    start: t.to_me_start
+                }, function (result) {
+                    result = result.data;
+                    if (result != 0 && result.length > 0) {
+                        result.forEach(function (item, index) {
+                            t.to_me_start++;
+                            item.register_date = return_date(item.register_date);
+                            if (item.type == 1) {
+                                item.types = '供应';
+                            } else {
+                                item.types = '需求'
+                            }
+                            t.to_me_list.push(item);
+                        });
+                        loading = false;
+                    }
+                });
+            }
 
-                     if(item.price==0||item.price==""|| item.price==null)
-                     {
-                         item.price='商議';
-                     }
-                     t.supply_list.push(item);
-                    });
-                    
-                }
-            });
-            $.post('./social_contact/buy',{},function (result) {
-                result=result.data;
-                if(result!=0)
-                {
-                    result.forEach(function(item,index) {
-                     if(item.approval_date==0){
-                         item.status='未審核';
-
-                     }   
-                     else if(item.approval_date==10)
-                     {
-                         item.status='已結束';
-                     }
-                     else{
-                         item.status='進行中';
-                     }
-
-                     if(item.price==0||item.price==""|| item.price==null)
-                     {
-                         item.price='商議';
-                     }
-                     t.buy_list.push(item);
-                    });
-                    
-                }
-            });
-            $.post('./social_contact/msg_from_me',{start:t.from_me_start},function(result){
-                result=result.data;
-                if(result!=0 && result.length>0)
-                {
-                    result.forEach(function(item,index){
-                        t.from_me_start++;
-                        item.register_date=return_date(item.register_date);
-                        if(item.type==1)
-                        {
-                            item.types='供应';
-                        }
-                        else
-                        {
-                            item.types='需求'
-                        }
-                        t.from_me_list.push(item);
-                    })
-                }
-            });
-            $.post('./social_contact/msg_to_me',{start:t.to_me_start},function(result){
-                result=result.data;
-                if(result!=0 && result.length>0)
-                {
-                    result.forEach(function(item,index){
-                        t.to_me_start++;
-                        item.register_date=return_date(item.register_date);
-                        if(item.type==1)
-                        {
-                            item.types='供应';
-                        }
-                        else
-                        {
-                            item.types='需求'
-                        }
-                        t.to_me_list.push(item);
-                    })
-                }
-            });
-        }
-    });
-
-    $(document.body).infinite();
-    var loading = false;  //状态标记
-$(document.body).infinite().on("infinite", function() {
-  if(loading) return;
-  loading = true;
-  var t=page;
-  if(page.msg_type=='from_me')
-  {
-    $.post('./social_contact/msg_from_me',{start:t.from_me_start},function(result){
-        result=result.data;
-                if(result!=0 && result.length>0)
-                {
-                    result.forEach(function(item,index){
-                        t.from_me_start++;
-                        item.register_date=return_date(item.register_date);
-                        if(item.type==1)
-                        {
-                            item.types='供应';
-                        }
-                        else
-                        {
-                            item.types='需求'
-                        }
-                        t.from_me_list.push(item);
-                    });
-                    loading = false;
-                }
-            });
-  }
-  else if(page.msg_type=='to_me')
-  {
-    $.post('./social_contact/msg_to_me',{start:t.to_me_start},function(result){
-        result=result.data;
-                if(result!=0 && result.length>0)
-                {
-                    result.forEach(function(item,index){
-                        t.to_me_start++;
-                        item.register_date=return_date(item.register_date);
-                        if(item.type==1)
-                        {
-                            item.types='供应';
-                        }
-                        else
-                        {
-                            item.types='需求'
-                        }
-                        t.to_me_list.push(item);
-                    });
-                    loading = false;
-                }
-            });
-  }
- 
-});
-</script>
+        });
+    </script>
 
 
 
 
 
 
-<!--底部栏-->
-<% include footer.html %>
+    <!--底部栏-->
+    <% include footer.html %>
