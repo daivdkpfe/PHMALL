@@ -56,7 +56,10 @@ router.get('/', function (req, res, next) {
     });
 });
 router.post('/', function (req, res, next) {
-
+    let m_uid=-1;
+    if(req.session.m_uid){
+        m_uid=req.session.m_uid;
+    }
     var type = req.body.type;
     var start = parseInt(req.body.start);
     var sqlstr = '';
@@ -82,10 +85,80 @@ router.post('/', function (req, res, next) {
             // 如果没有图片，给他商品图
 
             if (order_share[i].m_uid > 0) {
-
-
                 var member_table = await sqlasnyc("select member_id,member_image from `mvm_member_table` where uid=? limit 1", [order_share[i].m_uid]);
+                if(m_uid>0){
+                    var is_friend = await sqlasnyc('select uid from `mvm_friend` where member_uid=? and belong_uid=?',[order_share[i].m_uid,m_uid]);
+                    if(is_friend.length>0){
+                        order_share[i].is_friend='1';
+                    }
+                    else{
+                        order_share[i].is_friend='0';
+                    }
+                }
+                else{
+                    order_share[i].is_friend='0';
+                }
+                if (member_table != 0) {
+                    console.log("id:" + member_table[0].member_id);
+                    order_share[i].member_id = member_table[0].member_id;
+                    order_share[i].member_image = member_table[0].member_image;
+                } else {
+                    order_share[i].member_id = 'null';
+                }
 
+            }
+            // 获取用户头像和用户名
+            goods_table.forEach(function(item,index) {
+                if(item==order_share[i].goods_table)
+                {
+                    order_share[i].url="./union/product?setp="+index+"&uid=";
+                }
+            }, this);
+        }
+        var respod={
+            ret:'200',
+            data:order_share
+        };
+        res.json(respod);
+        
+    }
+    run();
+});
+router.post('/detail', function (req, res, next) {
+    let m_uid=-1;
+    if(req.session.m_uid){
+        m_uid=req.session.m_uid;
+    }
+    let uid=req.body.uid;
+    async function run() {
+        var order_share = await sqlasnyc("select * from `mvm_order_share` where uid=?",[uid]);
+        for (let i in order_share) {
+            order_share[i].pics = unserialize(order_share[i].pics);
+            // 序列化图片
+            if (order_share[i].pics.length <= 0) {
+                var goods = await sqlasnyc("select goods_file1 from `" + order_share[i].goods_table + "` where uid =? limit 1", [order_share[i].g_uid]);
+                if (goods != 0) {
+                    order_share[i].pics = [];
+                    order_share[i].pics.push('union/' + goods[0].goods_file1);
+                    console.log(goods[0].goods_file1);
+                }
+            }
+            // 如果没有图片，给他商品图
+
+            if (order_share[i].m_uid > 0) {
+                var member_table = await sqlasnyc("select member_id,member_image from `mvm_member_table` where uid=? limit 1", [order_share[i].m_uid]);
+                if(m_uid>0){
+                    var is_friend = await sqlasnyc('select uid from `mvm_friend` where member_uid=? and belong_uid=?',[order_share[i].m_uid,m_uid]);
+                    if(is_friend.length>0){
+                        order_share[i].is_friend='1';
+                    }
+                    else{
+                        order_share[i].is_friend='0';
+                    }
+                }
+                else{
+                    order_share[i].is_friend='0';
+                }
                 if (member_table != 0) {
                     console.log("id:" + member_table[0].member_id);
                     order_share[i].member_id = member_table[0].member_id;
