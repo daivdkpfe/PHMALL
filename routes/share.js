@@ -133,7 +133,6 @@ router.post('/detail', function (req, res, next) {
     async function run() {
         var count = await sqlasnyc('select count(*) as count from `mvm_order_shatr`');
         var order_share = await sqlasnyc("select * from `mvm_order_share` where uid=?",[uid]);
-        order_share[0].count=count[0].count;
         for (let i in order_share) {
             order_share[i].pics = unserialize(order_share[i].pics);
             // 序列化图片
@@ -180,7 +179,8 @@ router.post('/detail', function (req, res, next) {
         }
         var respod={
             ret:'200',
-            data:order_share
+            data:order_share,
+            coutn:count
         };
         res.json(respod);
         

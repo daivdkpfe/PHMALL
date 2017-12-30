@@ -55,10 +55,10 @@ router.post('/', function (req, res, next) {
     async function run() {
         var count=await sqlasnyc('select count(*) as count FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=?',[type]);
         var want_supply = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT " + start + ",15", [type]);
-        want_supply[0].count=count[0].count;
         var respod={
             ret:'200',
-            data:want_supply
+            data:want_supply,
+            count:count
         };
         res.json(respod);     
     }
@@ -74,10 +74,11 @@ router.post('/buy', function (req, res, next) {
     async function run() {
         var count=await sqlasnyc('select count(*) as count  FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=?',[type]);
         var want_buy = await sqlasnyc("SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT " + start + ",15", [type]);
-        want_buy[0].count=count[0].count;
+        
         var respod={
             ret:'200',
-            data:want_buy
+            data:want_buy,
+            count:count
         };
         res.json(respod);
         
