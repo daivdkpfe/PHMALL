@@ -58,7 +58,7 @@ router.post('/', function (req, res, next) {
         var respod={
             ret:'200',
             data:want_supply,
-            count:count
+            count:count[0].count
         };
         res.json(respod);     
     }
@@ -78,7 +78,7 @@ router.post('/buy', function (req, res, next) {
         var respod={
             ret:'200',
             data:want_buy,
-            count:count
+            count:count[0].count
         };
         res.json(respod);
         

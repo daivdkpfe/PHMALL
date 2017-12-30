@@ -180,7 +180,7 @@ router.post('/detail', function (req, res, next) {
         var respod={
             ret:'200',
             data:order_share,
-            coutn:count
+            coutn:count[0].count
         };
         res.json(respod);
         
