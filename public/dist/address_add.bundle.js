@@ -434,7 +434,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
+var uid = window.location.href.replace('http://phmall.ganxiaochaun.top/address_add?uid=', '');
+uid = uid.replace('http://192.168.0.105:88/address_add?uid=', '');
+console.log(uid);
 var lang = __WEBPACK_IMPORTED_MODULE_0__lanuage_lanuage_ch___default.a;
 
 function install(Vue) {
@@ -476,7 +478,7 @@ function install(Vue) {
             submits: function () {
                 var t = this;
                 $.post("/address_add/edit", {
-                    uid: '<%= uid %>',
+                    uid: uid,
                     consignee: this.receiver,
                     address: page.address,
                     zipcode: page.zipcode,
@@ -517,15 +519,16 @@ function install(Vue) {
                 page.cc = s[2];
             }
         });
-        if (false) {
+        if (uid == '') {
             //           没有uid，是添加
         } else {
             //            有UID,获取信息
             $.post('./address_add', {
-                uid: '<%= uid %>'
+                uid: uid
             }, function (result) {
+                console.log(result);
                 result = result.data;
-                if (result != '0') {
+                if (result != '0' || result.length > 0) {
                     page.receiver = result["0"].consignee;
                     page.phone_num = result["0"].mobile;
                     page.address = result["0"].address;

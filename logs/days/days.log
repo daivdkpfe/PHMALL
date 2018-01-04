@@ -1,58 +1,123 @@
-[2017-12-30 09:23:11.955] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-12-30 09:23:11.958] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-12-30 09:23:11.959] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-12-30 09:23:11.960] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-12-30 09:23:11.960] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-12-30 09:23:11.961] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-12-30 09:23:11.961] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-12-30 09:23:11.961] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-12-30 09:23:11.962] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-12-30 09:23:11.963] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-12-30 09:23:11.964] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-12-30 09:23:11.964] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-12-30 09:23:11.967] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-12-30 09:23:11.968] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-12-30 09:23:11.969] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-12-30 09:23:11.970] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-12-30 09:23:11.971] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-12-30 09:23:11.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-12-30 09:23:11.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-12-30 09:23:11.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-12-30 09:23:11.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-12-30 09:23:11.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-12-30 09:23:11.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-12-30 09:23:11.976] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-12-30 09:23:23.038] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1514563200,1514649599
-[2017-12-30 09:23:25.536] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
-[2017-12-30 09:23:25.566] [INFO] log_file - select count(*) as count FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=?    
-[2017-12-30 09:23:25.568] [INFO] log_file - select count(*) as count  FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=?    
-[2017-12-30 09:23:25.666] [INFO] log_file - Caught exception:Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-[2017-12-30 09:23:52.608] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2017-12-30 09:23:52.610] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2017-12-30 09:23:52.611] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2017-12-30 09:23:52.611] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2017-12-30 09:23:52.611] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2017-12-30 09:23:52.612] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2017-12-30 09:23:52.612] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2017-12-30 09:23:52.613] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2017-12-30 09:23:52.614] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2017-12-30 09:23:52.615] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2017-12-30 09:23:52.615] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2017-12-30 09:23:52.616] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2017-12-30 09:23:52.617] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2017-12-30 09:23:52.617] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2017-12-30 09:23:52.623] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2017-12-30 09:23:52.624] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2017-12-30 09:23:52.624] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2017-12-30 09:23:52.624] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2017-12-30 09:23:52.625] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2017-12-30 09:23:52.625] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2017-12-30 09:23:52.626] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2017-12-30 09:23:52.627] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2017-12-30 09:23:52.627] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2017-12-30 09:23:52.628] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2017-12-30 09:23:53.416] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
-[2017-12-30 09:23:53.437] [INFO] log_file - select count(*) as count FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=?    1
-[2017-12-30 09:23:53.440] [INFO] log_file - select count(*) as count  FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=?    1
-[2017-12-30 09:23:53.455] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
-[2017-12-30 09:23:53.462] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2018-01-04 08:45:14.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-04 08:45:14.824] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-04 08:45:14.915] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-04 08:45:15.001] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-04 08:45:15.052] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-04 08:45:15.108] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-04 08:45:15.115] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-04 08:45:15.129] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-04 08:45:15.133] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-04 08:45:15.148] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-04 08:45:15.169] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-04 08:45:15.183] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-04 08:45:15.192] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-04 08:45:15.204] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-04 08:45:15.225] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-04 08:45:15.226] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-04 08:45:15.227] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-04 08:45:15.227] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-04 08:45:15.234] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-04 08:45:15.235] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-04 08:45:15.241] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-04 08:45:15.251] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-04 08:45:15.271] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-04 08:45:15.283] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-04 08:48:10.153] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-04 08:48:10.156] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-04 08:48:10.157] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-04 08:48:10.160] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-04 08:48:10.161] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-04 08:48:10.162] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-04 08:48:10.163] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-04 08:48:10.163] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-04 08:48:10.164] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-04 08:48:10.165] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-04 08:48:10.167] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-04 08:48:10.168] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-04 08:48:10.170] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-04 08:48:10.171] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-04 08:48:10.176] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-04 08:48:10.177] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-04 08:48:10.177] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-04 08:48:10.178] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-04 08:48:10.178] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-04 08:48:10.178] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-04 08:48:10.179] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-04 08:48:10.180] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-04 08:48:10.181] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-04 08:48:10.181] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-04 08:48:23.697] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1514966400,1515052799
+[2018-01-04 08:48:28.112] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-04 08:48:29.429] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1514966400,1515052799
+[2018-01-04 08:48:31.928] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-04 08:48:33.643] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 08:48:35.416] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2018-01-04 08:48:57.524] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2018-01-04 08:49:15.026] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2018-01-04 08:52:15.717] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2018-01-04 08:52:35.283] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2018-01-04 08:52:52.324] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
+[2018-01-04 08:53:22.740] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <% uid %>,1
+[2018-01-04 08:53:28.121] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 08:55:35.299] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 08:57:44.552] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 08:57:44.553] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 08:57:49.623] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:03:44.251] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:03:56.129] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:08.317] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    12,1
+[2018-01-04 09:04:12.562] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:04:13.892] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:04:13.898] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:04:14.260] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:17.595] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:04:22.553] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:04:26.968] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:28.129] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:29.798] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    23,1
+[2018-01-04 09:04:34.832] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:37.200] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:04:38.794] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:04:38.798] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:04:39.168] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:43.109] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
+[2018-01-04 09:04:44.212] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
+[2018-01-04 09:04:48.016] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
+[2018-01-04 09:04:51.757] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
+[2018-01-04 09:04:53.525] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:04:55.865] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:04:59.995] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:05:00.007] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:05:00.372] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:05:04.938] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    25,1
+[2018-01-04 09:05:06.293] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:05:09.616] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:05:11.468] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:05:11.477] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:05:11.842] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:05:30.162] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    26,1
+[2018-01-04 09:05:30.834] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:05:33.052] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:05:34.284] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:05:34.287] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:05:34.627] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:05:48.553] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    27,1
+[2018-01-04 09:05:53.687] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:06:02.786] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:06:07.169] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:06:07.178] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:06:07.547] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:08:15.982] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:10:36.175] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:10:47.369] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    /address_add?uid=6,1
+[2018-01-04 09:10:57.358] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    /address_add?uid=6,1
+[2018-01-04 09:11:22.848] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    /address_add?uid=6,1
+[2018-01-04 09:11:39.789] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:11:52.871] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:11:56.783] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:11:57.916] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    28,1
+[2018-01-04 09:12:00.591] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-04 09:12:02.737] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
+[2018-01-04 09:12:19.740] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
+[2018-01-04 09:12:19.747] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    6,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
+[2018-01-04 09:12:20.119] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1

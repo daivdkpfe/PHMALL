@@ -69,7 +69,6 @@ router.post('/get_member_info', function (req, res, next) {
                 data:vals
             };
             res.json(respod);
-            
         });
         
     } 
@@ -77,7 +76,7 @@ router.post('/get_member_info', function (req, res, next) {
         var rets=[];
         rets.push({status:0});
         var respod={
-            ret:'200',
+            ret:'201',
             data:rets
         };
         res.json(respod);

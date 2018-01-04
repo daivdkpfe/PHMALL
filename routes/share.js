@@ -131,7 +131,7 @@ router.post('/detail', function (req, res, next) {
     }
     let uid=req.body.uid;
     async function run() {
-        var count = await sqlasnyc('select count(*) as count from `mvm_order_shatr`');
+        var count = await sqlasnyc('select count(*) as count from `mvm_order_share`');
         var order_share = await sqlasnyc("select * from `mvm_order_share` where uid=?",[uid]);
         for (let i in order_share) {
             order_share[i].pics = unserialize(order_share[i].pics);
@@ -182,8 +182,7 @@ router.post('/detail', function (req, res, next) {
             data:order_share,
             coutn:count[0].count
         };
-        res.json(respod);
-        
+        res.json(respod);  
     }
     run();
 });

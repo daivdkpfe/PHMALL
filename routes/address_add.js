@@ -62,24 +62,14 @@ router.post('/',function (req,res,next) {
         if(req.session.sign && req.session.m_id)
         {
             var address=await sqlasnyc('select * from `mvm_address` where uid=? and m_uid=?',[uid,m_uid]);
-            if(address=='0')
-            {
-                var respod={
-                    ret:'205',
-                    data:'0'
-                };
-                res.json(respod);
-                
-            }
-            else
-            {
+            
                 var respod={
                     ret:'200',
                     data:address
                 };
                 res.json(respod);
                 
-            }
+            
         }
         else
         {

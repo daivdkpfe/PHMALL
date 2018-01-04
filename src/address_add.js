@@ -1,4 +1,3 @@
-
 import lang_ch from '../lanuage/lanuage_ch'
 import lang_en from '../lanuage/lanuage_en'
 import header from '../components/header.vue'
@@ -6,9 +5,10 @@ import header from '../components/header.vue'
 
 
 
-
-
-var lang=lang_ch;
+var uid=window.location.href.replace('http://phmall.ganxiaochaun.top/address_add?uid=','');
+uid=uid.replace('http://192.168.0.105:88/address_add?uid=','');
+console.log(uid);
+var lang = lang_ch;
 
 
 
@@ -25,35 +25,35 @@ export function install(Vue) {
             address: '',
             zipcode: '',
             ssx: '',
-            lang:{}
+            lang: {}
         },
         methods: {
             setcookie: function (name, value, days) {
-				
-					var d = new Date;
-				
-					d.setTime(d.getTime() + 24*60*60*1000*days);
-				
-					window.document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
-				},
-				
-				getsetcookie: function (name) {
-				
-					var v = window.document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-				
-					return v ? v[2] : null;
-				
-				},
-				
-				deletesetcookie: function (name) {
-				
-					this.set(name, '', -1);
-				
-				},
+
+                var d = new Date;
+
+                d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
+
+                window.document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+            },
+
+            getsetcookie: function (name) {
+
+                var v = window.document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+
+                return v ? v[2] : null;
+
+            },
+
+            deletesetcookie: function (name) {
+
+                this.set(name, '', -1);
+
+            },
             submits: function () {
-var t=this;
+                var t = this;
                 $.post("/address_add/edit", {
-                    uid: '<%= uid %>',
+                    uid: uid,
                     consignee: this.receiver,
                     address: page.address,
                     zipcode: page.zipcode,
@@ -74,15 +74,14 @@ var t=this;
                 })
             }
         },
-        mounted:function(){
-            	
-			if(this.getsetcookie('lang')!='en')
-			{
-				this.lang=lang_ch
-			}else{
-				this.lang=lang_en
+        mounted: function () {
+
+            if (this.getsetcookie('lang') != 'en') {
+                this.lang = lang_ch
+            } else {
+                this.lang = lang_en
             }
-            
+
         }
     });
 
@@ -97,15 +96,16 @@ var t=this;
                 page.cc = s[2];
             }
         });
-        if ('<%= uid %>' == '') {
+        if (uid == '') {
             //           没有uid，是添加
         } else {
             //            有UID,获取信息
             $.post('./address_add', {
-                uid: '<%= uid %>'
+                uid: uid
             }, function (result) {
+                console.log(result);
                 result = result.data;
-                if (result != '0') {
+                if (result != '0' || result.length > 0) {
                     page.receiver = result["0"].consignee;
                     page.phone_num = result["0"].mobile;
                     page.address = result["0"].address;
@@ -121,4 +121,3 @@ var t=this;
         }
     });
 }
-
