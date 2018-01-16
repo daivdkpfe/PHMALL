@@ -102,18 +102,20 @@ router.post('/edit',function (req,res,next) {
 
         var count=await sqlasnyc('select uid from `mvm_address` where m_uid=?',[m_uid]);
         console.log(count.length);
-        if(count.length>2)
+        if(count.length<4 && uid>0)
         {
+            
+        }
+        else{
             var respod={
                 ret:'206',
                 data:'-1'
             };
             res.json(respod);
-            
             return;
         }
-
-
+        
+        var sqlStr='';
         var sql=[];
         sql.push(uid);
         sql.push(consignee);
@@ -124,7 +126,14 @@ router.post('/edit',function (req,res,next) {
         sql.push(city);
         sql.push(county);
         sql.push(m_uid);
-        await sqlasnyc('replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?',sql);
+        if(uid>0){
+            var is_buy=await sqlasnyc('select is_buy from `mvm_address` where uid=? and is_buy=1',[uid]);
+            if(is_buy.length>0){
+                sqlStr=",is_buy=?";
+                sql.push(1);
+            }
+        }
+        await sqlasnyc('replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?'+sqlStr,sql);
         var respod={
             ret:'200',
             data:'1'

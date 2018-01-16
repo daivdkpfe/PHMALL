@@ -127,6 +127,7 @@ router.post('/set_favorite', function(req, res, next) {
 
 });
 router.post('/del_favorite', function(req, res, next) {
+    
     if(req.session.sign && req.session.m_id) {
         var sql = [];
         sql.push(req.session.m_uid);
@@ -140,6 +141,7 @@ router.post('/del_favorite', function(req, res, next) {
             sqlstr = " and module=? ";
         }
     }
+    
     sqlQueryMore("select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=? "+sqlstr,sql,function (err,check_favorite,xx) {
         if(err){ logger.info("Caught exception:"+err);}
         else
@@ -154,21 +156,25 @@ router.post('/del_favorite', function(req, res, next) {
                 //已經沒了
             }
             else
-            {
-                if (req.body.t > 0) {
+            {   
+
+                
+                /* if (req.body.t > 0) {
                     sql.push(goods_table[req.body.setp]);
                     sqlstr = "and module=? and goods_table=?";
-                }
+                } */
                 sqlQueryMore("delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?"+sqlstr,sql,function (err,ins_favorite,xx) {
                     if(err) {
                         logger.info("Caught exception:" + err);
                     }else
-                    {
+                    {   
+                        console.log('我有删除成功');
                         var respod={
                             ret:'200',
                             data:1
                         };
                         res.json(respod);
+                        console.log('我执行到这了');
                         //刪除成功
                     }
                 })

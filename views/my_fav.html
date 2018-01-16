@@ -212,11 +212,11 @@
     <!-- 容器 -->
     <div class="weui-tab">
         <div class="weui-navbar">
-            <a class="weui-navbar__item" v-bind:class="{'weui-bar__item--on':type==1}" @click="type=1" href="#tab1">
+            <a class="weui-navbar__item" v-bind:class="{'weui-bar__item--on':type==1}" @click="type=1" href="./favorite_list?type=1#tab1">
                 收藏商品
                 <img src="images/default_wap/select.png" alt="">
             </a>
-            <a class="weui-navbar__item" href="#tab2" @click="type=0" v-bind:class="{'weui-bar__item--on':type==0}" >
+            <a class="weui-navbar__item" href="/favorite_list?type=0#tab2" @click="type=0" v-bind:class="{'weui-bar__item--on':type==0}" >
                 收藏店鋪
                 <img src="images/default_wap/select.png" alt="">
             </a>
@@ -242,7 +242,7 @@
                         {{shop.shop_name}}
                     </p>
                     <p class="sl1 w-100 shop_level fl"><d>信用: </d><img src="images/default_wap/lv_20.png" alt=""></p>
-                    <img src="images/default_wap/clear.png" @click="delete_shop(shop.f_uid)" class="detele" alt="">
+                    <img src="images/default_wap/clear.png" @click.stop="delete_shop(shop.f_uid)" class="detele" alt="">
                     <p class="sl1 w-100 shop_content fl">消保金额:{{shop.xb}}</p>
                     </a>
                 </div>
@@ -272,6 +272,7 @@
         methods:{
             delete_shop:function (uid) {
                 $.post('/favorite/del_favorite',{f:uid,t:0},function (result) {
+                    console.log(result);
                     result=result.data;
                     if(result==1)
                     {
@@ -290,7 +291,7 @@
                     {
 
                         if(result!=0 && result.length>0)
-                        {
+                        {   
                             result.forEach(function (item,index) {
                                 t.start++;
                                 t.shop_list.push(item);
@@ -318,7 +319,6 @@
                     result=result.data;
                     if(t.type==1)
                     {
-
                         if(result!=0 && result.length>0)
                         {
                             result.forEach(function (item,index) {

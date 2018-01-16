@@ -1,123 +1,695 @@
-[2018-01-04 08:45:14.078] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2018-01-04 08:45:14.824] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2018-01-04 08:45:14.915] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2018-01-04 08:45:15.001] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2018-01-04 08:45:15.052] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2018-01-04 08:45:15.108] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2018-01-04 08:45:15.115] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2018-01-04 08:45:15.129] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2018-01-04 08:45:15.133] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2018-01-04 08:45:15.148] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2018-01-04 08:45:15.169] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2018-01-04 08:45:15.183] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2018-01-04 08:45:15.192] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2018-01-04 08:45:15.204] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2018-01-04 08:45:15.225] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2018-01-04 08:45:15.226] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2018-01-04 08:45:15.227] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2018-01-04 08:45:15.227] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2018-01-04 08:45:15.234] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2018-01-04 08:45:15.235] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2018-01-04 08:45:15.241] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2018-01-04 08:45:15.251] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2018-01-04 08:45:15.271] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2018-01-04 08:45:15.283] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2018-01-04 08:48:10.153] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
-[2018-01-04 08:48:10.156] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
-[2018-01-04 08:48:10.157] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
-[2018-01-04 08:48:10.160] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
-[2018-01-04 08:48:10.161] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
-[2018-01-04 08:48:10.162] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
-[2018-01-04 08:48:10.163] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
-[2018-01-04 08:48:10.163] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
-[2018-01-04 08:48:10.164] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
-[2018-01-04 08:48:10.165] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
-[2018-01-04 08:48:10.167] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
-[2018-01-04 08:48:10.168] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
-[2018-01-04 08:48:10.170] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
-[2018-01-04 08:48:10.171] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
-[2018-01-04 08:48:10.176] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
-[2018-01-04 08:48:10.177] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
-[2018-01-04 08:48:10.177] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
-[2018-01-04 08:48:10.178] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
-[2018-01-04 08:48:10.178] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
-[2018-01-04 08:48:10.178] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
-[2018-01-04 08:48:10.179] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
-[2018-01-04 08:48:10.180] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
-[2018-01-04 08:48:10.181] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
-[2018-01-04 08:48:10.181] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
-[2018-01-04 08:48:23.697] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1514966400,1515052799
-[2018-01-04 08:48:28.112] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
-[2018-01-04 08:48:29.429] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1514966400,1515052799
-[2018-01-04 08:48:31.928] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
-[2018-01-04 08:48:33.643] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 08:48:35.416] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
-[2018-01-04 08:48:57.524] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
-[2018-01-04 08:49:15.026] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
-[2018-01-04 08:52:15.717] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
-[2018-01-04 08:52:35.283] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
-[2018-01-04 08:52:52.324] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <%= uid %>,1
-[2018-01-04 08:53:22.740] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    <% uid %>,1
-[2018-01-04 08:53:28.121] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 08:55:35.299] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 08:57:44.552] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 08:57:44.553] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 08:57:49.623] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:03:44.251] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:03:56.129] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:08.317] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    12,1
-[2018-01-04 09:04:12.562] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:04:13.892] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:04:13.898] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:04:14.260] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:17.595] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:04:22.553] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:04:26.968] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:28.129] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:29.798] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    23,1
-[2018-01-04 09:04:34.832] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:37.200] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:04:38.794] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:04:38.798] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:04:39.168] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:43.109] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
-[2018-01-04 09:04:44.212] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
-[2018-01-04 09:04:48.016] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
-[2018-01-04 09:04:51.757] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    24,1
-[2018-01-04 09:04:53.525] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:04:55.865] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:04:59.995] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:05:00.007] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:05:00.372] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:05:04.938] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    25,1
-[2018-01-04 09:05:06.293] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:05:09.616] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:05:11.468] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:05:11.477] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:05:11.842] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:05:30.162] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    26,1
-[2018-01-04 09:05:30.834] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:05:33.052] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:05:34.284] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:05:34.287] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:05:34.627] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:05:48.553] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    27,1
-[2018-01-04 09:05:53.687] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:06:02.786] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:06:07.169] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:06:07.178] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    <%= uid %>,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:06:07.547] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:08:15.982] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:10:36.175] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:10:47.369] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    /address_add?uid=6,1
-[2018-01-04 09:10:57.358] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    /address_add?uid=6,1
-[2018-01-04 09:11:22.848] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    /address_add?uid=6,1
-[2018-01-04 09:11:39.789] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:11:52.871] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:11:56.783] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:11:57.916] [INFO] log_file - delete from `mvm_address` where uid=? and m_uid=?    28,1
-[2018-01-04 09:12:00.591] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
-[2018-01-04 09:12:02.737] [INFO] log_file - select * from `mvm_address` where uid=? and m_uid=?    6,1
-[2018-01-04 09:12:19.740] [INFO] log_file - select uid from `mvm_address` where m_uid=?    1
-[2018-01-04 09:12:19.747] [INFO] log_file - replace into `mvm_address` set uid=?,consignee=?,address=?,zipcode=?,mobile=?,province=?,city=?,county=?,m_uid=?    6,llege,Vic-marie Compound, Palm Road, Baesa, Quezon City 1476， Metro-Manila, Philipines.,256954,11478569547,Mindanao,Region 11 (Davao Reg,Davao Oriental,1
-[2018-01-04 09:12:20.119] [INFO] log_file - select * from `mvm_address` where m_uid=? limit 3     1
+[2018-01-07 08:34:06.667] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 08:34:06.670] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 08:34:06.670] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 08:34:06.671] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 08:34:06.671] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 08:34:06.672] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 08:34:06.672] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 08:34:06.672] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 08:34:06.673] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 08:34:06.674] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 08:34:06.675] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 08:34:06.676] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 08:34:06.677] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 08:34:06.682] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 08:34:06.684] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 08:34:06.684] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 08:34:06.685] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 08:34:06.685] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 08:34:06.686] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 08:34:06.686] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 08:34:06.687] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 08:34:06.688] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 08:34:06.689] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 08:34:06.689] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 08:34:41.539] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 08:34:47.043] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 08:34:48.237] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 08:34:49.874] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 08:34:51.455] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0' AND to_id=? AND to_del='0' ORDER BY uid DESC    admin
+[2018-01-07 08:34:51.463] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms` WHERE is_broadcast='0'  AND from_id=? AND send_del='0' ORDER BY uid DESC    admin
+[2018-01-07 08:34:51.466] [INFO] log_file - SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC    admin
+[2018-01-07 08:41:00.713] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 08:41:11.625] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 08:41:12.954] [INFO] log_file - select uid,goods_name,og_uid,g_uid,goods_table,attr,buy_price,comment,pics,love,m_uid,register_date from `mvm_order_share` where m_uid=?    1
+[2018-01-07 08:41:12.959] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    1583
+[2018-01-07 08:41:35.309] [INFO] log_file - select uid,goods_name,og_uid,g_uid,goods_table,attr,buy_price,comment,pics,love,m_uid,register_date from `mvm_order_share` where m_uid=?    1
+[2018-01-07 08:41:35.311] [INFO] log_file - select goods_file1 from `mvm_goods_table` where uid =? limit 1    1583
+[2018-01-07 08:46:33.574] [INFO] log_file - delete from `mvm_order_share` where uid=? and m_uid=?    29,1
+[2018-01-07 10:23:54.224] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:23:54.228] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:23:54.229] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:23:54.229] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:23:54.230] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:23:54.230] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:23:54.231] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:23:54.232] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:23:54.232] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:23:54.234] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:23:54.235] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:23:54.236] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:23:54.239] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:23:54.240] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:23:54.248] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:23:54.248] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:23:54.249] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:23:54.251] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:23:54.252] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:23:54.253] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:23:54.254] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:23:54.256] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:23:54.257] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:23:54.258] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:24:00.842] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:24:02.161] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:24:03.067] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:24:04.326] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:24:04.333] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    38
+[2018-01-07 10:24:04.338] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    39
+[2018-01-07 10:24:04.340] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    40
+[2018-01-07 10:24:04.345] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    41
+[2018-01-07 10:24:04.352] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:24:04.355] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    68
+[2018-01-07 10:24:04.357] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:24:04.359] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:24:04.361] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:24:04.364] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:24:08.885] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,38,0
+[2018-01-07 10:24:08.905] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,38,0
+[2018-01-07 10:24:34.574] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:24:34.578] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    39
+[2018-01-07 10:24:34.581] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    40
+[2018-01-07 10:24:34.596] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    41
+[2018-01-07 10:24:34.601] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:24:34.606] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    68
+[2018-01-07 10:24:34.608] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:24:34.611] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:24:34.613] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:24:34.615] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:24:34.618] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:24:50.589] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,39,0
+[2018-01-07 10:24:50.607] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,39,0
+[2018-01-07 10:26:06.702] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:26:06.706] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    40
+[2018-01-07 10:26:06.709] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    41
+[2018-01-07 10:26:06.711] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:26:06.713] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    68
+[2018-01-07 10:26:06.715] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:26:06.718] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:26:06.722] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:26:06.725] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:26:06.727] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:26:06.729] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:26:14.339] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,68,0
+[2018-01-07 10:26:14.343] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,68,0
+[2018-01-07 10:28:44.085] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:28:44.087] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:28:44.088] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:28:44.088] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:28:44.089] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:28:44.089] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:28:44.089] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:28:44.090] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:28:44.090] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:28:44.091] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:28:44.092] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:28:44.092] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:28:44.094] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:28:44.095] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:28:44.101] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:28:44.102] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:28:44.102] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:28:44.103] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:28:44.103] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:28:44.104] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:28:44.104] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:28:44.105] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:28:44.105] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:28:44.106] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:28:49.668] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:28:54.028] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:28:55.118] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:28:55.968] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:28:57.378] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:28:57.382] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    40
+[2018-01-07 10:28:57.385] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    41
+[2018-01-07 10:28:57.386] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:28:57.389] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:28:57.398] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:28:57.401] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:28:57.404] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:28:57.406] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:28:57.422] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:28:57.430] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:29:01.692] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,40,0
+[2018-01-07 10:29:01.716] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,40,0
+[2018-01-07 10:29:42.864] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:29:42.867] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:29:42.868] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:29:42.868] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:29:42.869] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:29:42.869] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:29:42.870] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:29:42.871] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:29:42.871] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:29:42.872] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:29:42.873] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:29:42.874] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:29:42.876] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:29:42.876] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:29:42.881] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:29:42.882] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:29:42.884] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:29:42.885] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:29:42.886] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:29:42.886] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:29:42.887] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:29:42.888] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:29:42.889] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:29:42.889] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:29:44.790] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:29:49.162] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:29:50.431] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:29:51.231] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:29:52.404] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:29:52.410] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    41
+[2018-01-07 10:29:52.414] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:29:52.415] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:29:52.418] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:29:52.420] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:29:52.423] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:29:52.425] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:29:52.427] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:29:52.431] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:29:52.433] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:29:55.787] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,41,0
+[2018-01-07 10:29:55.804] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,41,0
+[2018-01-07 10:30:10.257] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:30:10.260] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:30:10.264] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:30:10.267] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:30:10.269] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:30:10.270] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:30:10.272] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:30:10.276] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:30:10.281] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:30:10.289] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:30:10.297] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:32:15.066] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:32:15.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:32:15.069] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:32:15.070] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:32:15.071] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:32:15.072] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:32:15.072] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:32:15.073] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:32:15.074] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:32:15.076] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:32:15.077] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:32:15.079] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:32:15.081] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:32:15.081] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:32:15.087] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:32:15.089] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:32:15.089] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:32:15.090] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:32:15.090] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:32:15.091] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:32:15.091] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:32:15.093] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:32:15.093] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:32:15.094] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:32:19.554] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:32:23.384] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:32:27.277] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:32:28.751] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:32:29.990] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:32:29.994] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    66
+[2018-01-07 10:32:29.997] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:32:29.999] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:32:30.001] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:32:30.005] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:32:30.007] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:32:30.009] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:32:30.011] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:32:30.014] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:32:30.016] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:32:34.012] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,66,0
+[2018-01-07 10:32:34.039] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,66,0
+[2018-01-07 10:34:59.020] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:34:59.022] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:34:59.023] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:34:59.024] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:34:59.024] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:34:59.025] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:34:59.025] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:34:59.026] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:34:59.026] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:34:59.029] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:34:59.030] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:34:59.032] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:34:59.033] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:34:59.033] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:34:59.040] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:34:59.041] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:34:59.042] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:34:59.042] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:34:59.042] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:34:59.043] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:34:59.044] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:34:59.045] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:34:59.046] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:34:59.047] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:35:01.457] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:35:04.759] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:35:05.789] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:35:06.678] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:35:07.851] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:35:07.856] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:35:07.859] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:35:07.862] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:35:07.867] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:35:07.871] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:35:07.874] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:35:07.878] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:35:07.880] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:35:07.882] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:35:07.885] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:35:11.091] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:35:11.094] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:35:11.096] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:35:11.098] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:35:11.100] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:35:11.105] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:35:11.109] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:35:11.111] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:35:11.117] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:35:11.121] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:35:11.123] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:35:15.111] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:35:16.450] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:35:30.475] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:35:30.477] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:35:30.478] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:35:30.478] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:35:30.478] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:35:30.479] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:35:30.479] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:35:30.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:35:30.480] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:35:30.481] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:35:30.482] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:35:30.482] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:35:30.484] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:35:30.485] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:35:30.490] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:35:30.490] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:35:30.491] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:35:30.491] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:35:30.494] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:35:30.495] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:35:30.495] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:35:30.496] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:35:30.497] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:35:30.498] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:35:33.028] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:35:36.507] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:35:37.822] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:35:38.760] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:35:40.346] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:35:40.352] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:35:40.355] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:35:40.357] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:35:40.359] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:35:40.363] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:35:40.365] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:35:40.366] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:35:40.368] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:35:40.370] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:35:40.372] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:35:43.977] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:35:43.981] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:35:43.984] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:35:43.989] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:35:43.993] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:35:43.997] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:35:44.000] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:35:44.002] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:35:44.005] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:35:44.009] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:35:44.011] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:35:46.712] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:35:48.864] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:36:09.215] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:36:10.671] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:36:15.428] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:36:15.431] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:36:15.432] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:36:15.432] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:36:15.433] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:36:15.433] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:36:15.434] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:36:15.434] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:36:15.435] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:36:15.436] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:36:15.438] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:36:15.439] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:36:15.440] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:36:15.441] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:36:15.449] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:36:15.449] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:36:15.450] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:36:15.450] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:36:15.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:36:15.451] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:36:15.452] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:36:15.456] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:36:15.457] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:36:15.457] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:36:17.479] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:36:21.581] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:36:22.854] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:36:23.781] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:36:25.136] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:36:25.142] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:36:25.147] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:36:25.150] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:36:25.152] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:36:25.158] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:36:25.160] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:36:25.162] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:36:25.164] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:36:25.166] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:36:25.167] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:36:26.381] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,73,0
+[2018-01-07 10:36:30.591] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:36:31.872] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:36:49.879] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:36:51.285] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:36:55.951] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:36:55.954] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:36:55.954] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:36:55.955] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:36:55.955] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:36:55.956] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:36:55.956] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:36:55.957] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:36:55.957] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:36:55.958] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:36:55.959] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:36:55.960] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:36:55.961] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:36:55.962] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:36:55.968] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:36:55.972] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:36:55.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:36:55.973] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:36:55.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:36:55.974] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:36:55.975] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:36:55.976] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:36:55.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:36:55.977] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:37:04.996] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:37:13.748] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:37:14.961] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:37:15.812] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:37:18.704] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:37:18.706] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    73
+[2018-01-07 10:37:18.710] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:37:18.712] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:37:18.715] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:37:18.717] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:37:18.721] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:37:18.723] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:37:18.728] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:37:18.731] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:37:18.733] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:37:19.848] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,73,0
+[2018-01-07 10:37:19.859] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,73,0
+[2018-01-07 10:37:26.332] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:37:27.517] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:37:50.511] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash'    
+[2018-01-07 10:37:50.513] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='coupon'    
+[2018-01-07 10:37:50.514] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_info'    
+[2018-01-07 10:37:50.515] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='flash_sale'    
+[2018-01-07 10:37:50.515] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_1'    
+[2018-01-07 10:37:50.516] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_2'    
+[2018-01-07 10:37:50.516] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_3'    
+[2018-01-07 10:37:50.517] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_1'    
+[2018-01-07 10:37:50.517] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_2'    
+[2018-01-07 10:37:50.518] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_3'    
+[2018-01-07 10:37:50.519] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_4'    
+[2018-01-07 10:37:50.520] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_5'    
+[2018-01-07 10:37:50.522] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_6'    
+[2018-01-07 10:37:50.522] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_7'    
+[2018-01-07 10:37:50.527] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_8'    
+[2018-01-07 10:37:50.528] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_9'    
+[2018-01-07 10:37:50.529] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_10'    
+[2018-01-07 10:37:50.530] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_11'    
+[2018-01-07 10:37:50.530] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='categroy_12'    
+[2018-01-07 10:37:50.531] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_4'    
+[2018-01-07 10:37:50.532] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='ad_5'    
+[2018-01-07 10:37:50.534] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='hot_shop'    
+[2018-01-07 10:37:50.535] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='supply'    
+[2018-01-07 10:37:50.535] [INFO] log_file - select * from mvm_ad_table where module='default_wap' and pos='point_list'    
+[2018-01-07 10:37:52.809] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:38:45.256] [INFO] log_file - select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?    admin,aa1fe13d4798d295cd28af3ecd94084e,cGhtYWxs
+[2018-01-07 10:38:46.574] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:38:48.007] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:39:01.668] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:39:01.672] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:39:01.674] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:39:01.676] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:39:01.679] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:39:01.682] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:39:01.684] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:39:01.685] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:39:01.687] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:39:01.688] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:39:01.690] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:39:05.889] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,77,0
+[2018-01-07 10:39:05.905] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,77,0
+[2018-01-07 10:39:09.800] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:39:10.985] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:39:13.321] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:39:13.328] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    78
+[2018-01-07 10:39:13.332] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:39:13.336] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:39:13.342] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:39:13.345] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:39:13.351] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:39:13.353] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:39:13.356] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:39:13.368] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:39:13.373] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:39:14.599] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,78,0
+[2018-01-07 10:39:14.616] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,78,0
+[2018-01-07 10:39:17.577] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:39:18.902] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:39:20.579] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:39:20.584] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:39:20.588] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    84
+[2018-01-07 10:39:20.589] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:39:20.591] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:39:20.594] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:39:20.596] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:39:20.600] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:39:20.606] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:39:20.607] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:39:20.609] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:39:21.985] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,84,0
+[2018-01-07 10:39:21.998] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,84,0
+[2018-01-07 10:39:25.027] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:39:26.519] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:39:28.627] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:39:28.630] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    82
+[2018-01-07 10:39:28.632] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:39:28.641] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:39:28.644] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:39:28.646] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:39:28.647] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:39:28.649] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:39:28.650] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:39:28.651] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:39:28.653] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    94
+[2018-01-07 10:39:39.312] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,82,0
+[2018-01-07 10:39:39.395] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,82,0
+[2018-01-07 10:39:42.443] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:39:43.765] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:39:45.325] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:39:45.330] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    85
+[2018-01-07 10:39:45.332] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:39:45.335] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:39:45.337] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:39:45.342] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:39:45.343] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:39:45.345] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:39:45.347] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:39:45.349] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    94
+[2018-01-07 10:39:45.351] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    95
+[2018-01-07 10:39:46.254] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,85,0
+[2018-01-07 10:39:46.273] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,85,0
+[2018-01-07 10:39:50.938] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:39:52.181] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:39:53.525] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:39:53.532] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    86
+[2018-01-07 10:39:53.534] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:39:53.536] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:39:53.537] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:39:53.539] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:39:53.549] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:39:53.552] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:39:53.553] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    94
+[2018-01-07 10:39:53.555] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    95
+[2018-01-07 10:39:53.557] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    98
+[2018-01-07 10:39:55.434] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,86,0
+[2018-01-07 10:39:55.440] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,86,0
+[2018-01-07 10:40:00.316] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 10:40:01.713] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 10:42:12.375] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:42:12.377] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:42:12.379] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:42:12.381] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:42:12.383] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:42:12.389] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:42:12.391] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:42:12.394] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    94
+[2018-01-07 10:42:12.396] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    95
+[2018-01-07 10:42:12.399] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    98
+[2018-01-07 10:42:12.408] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    101
+[2018-01-07 10:47:30.036] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:47:30.039] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    77
+[2018-01-07 10:47:30.042] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:47:30.053] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:47:30.059] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:47:30.061] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:47:30.063] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:47:30.066] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:47:30.067] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    94
+[2018-01-07 10:47:30.069] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    95
+[2018-01-07 10:47:30.071] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    98
+[2018-01-07 10:47:33.029] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,77,0
+[2018-01-07 10:47:33.061] [INFO] log_file - delete from `mvm_favorite` where m_uid=? and f_uid=? and t=?    1,77,0
+[2018-01-07 10:47:35.731] [INFO] log_file - select * from `mvm_favorite` where m_uid=? and t=? and module=? limit 0, 10    1,0,
+[2018-01-07 10:47:35.733] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    87
+[2018-01-07 10:47:35.743] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    89
+[2018-01-07 10:47:35.746] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    90
+[2018-01-07 10:47:35.748] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    91
+[2018-01-07 10:47:35.752] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    92
+[2018-01-07 10:47:35.754] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    93
+[2018-01-07 10:47:35.755] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    94
+[2018-01-07 10:47:35.757] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    95
+[2018-01-07 10:47:35.760] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    98
+[2018-01-07 10:47:35.763] [INFO] log_file - select m_uid,shop_level,up_logo,shop_name,xb_money from `mvm_member_shop` where m_uid =? and shop_step>0 limit 1    101
+[2018-01-07 10:47:38.197] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 11:16:03.066] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 11:16:04.548] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2018-01-07 11:16:04.551] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2018-01-07 11:16:04.553] [INFO] log_file - SELECT * from `mvm_want_buy_msg` where m_id=? union all SELECT * from `mvm_want_supply_msg` where m_id=? order by register_date desc limit 0,10    admin,admin
+[2018-01-07 11:16:04.554] [INFO] log_file - SELECT * from `mvm_want_buy_msg` where buy_m_uid=? union all SELECT * from `mvm_want_supply_msg` where supply_m_uid=? order by register_date desc limit 0,10    1,1
+[2018-01-07 11:16:04.569] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.571] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.579] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.581] [INFO] log_file - select * from `mvm_want_supply` where uid=?    0
+[2018-01-07 11:16:04.584] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.585] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.586] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.587] [INFO] log_file - select * from `mvm_want_supply` where uid=?    103
+[2018-01-07 11:16:04.589] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.590] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.593] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.594] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.601] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.603] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.604] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.605] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.611] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.612] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.614] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.616] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.618] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.619] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.621] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.623] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.626] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.630] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.646] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.647] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.649] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.651] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.653] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.653] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.659] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.662] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.665] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.668] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.671] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.671] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:04.674] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:04.676] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:08.466] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 11:16:11.303] [INFO] log_file - select * from `mvm_member_statistics` where m_uid=1 and m_id='admin' limit 1    
+[2018-01-07 11:16:16.363] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 11:16:19.121] [INFO] log_file - select * from `mvm_want_supply` where m_uid=?    1
+[2018-01-07 11:16:19.124] [INFO] log_file - select * from `mvm_want_buy` where m_uid=?    1
+[2018-01-07 11:16:19.125] [INFO] log_file - SELECT * from `mvm_want_buy_msg` where m_id=? union all SELECT * from `mvm_want_supply_msg` where m_id=? order by register_date desc limit 0,10    admin,admin
+[2018-01-07 11:16:19.126] [INFO] log_file - SELECT * from `mvm_want_buy_msg` where buy_m_uid=? union all SELECT * from `mvm_want_supply_msg` where supply_m_uid=? order by register_date desc limit 0,10    1,1
+[2018-01-07 11:16:19.134] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.137] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.151] [INFO] log_file - select * from `mvm_want_supply` where uid=?    0
+[2018-01-07 11:16:19.152] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.157] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.161] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.163] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.163] [INFO] log_file - select * from `mvm_want_supply` where uid=?    103
+[2018-01-07 11:16:19.172] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.173] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.174] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.176] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.177] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.178] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.181] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.186] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.187] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.188] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.189] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.189] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.190] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.191] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.192] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.193] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.194] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.199] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.200] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.202] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.204] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.205] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.206] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.207] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.211] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.211] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.213] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.218] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.221] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.222] [INFO] log_file - select member_image from `mvm_member_table` where member_id=?    admin
+[2018-01-07 11:16:19.229] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:19.233] [INFO] log_file - select * from `mvm_want_supply` where uid=?    152
+[2018-01-07 11:16:48.098] [INFO] log_file - select * from `mvm_member_table` where uid=?    1
+[2018-01-07 11:16:50.380] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 11:16:51.185] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2018-01-07 11:16:51.192] [INFO] log_file - select count(*) as count FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=?    1
+[2018-01-07 11:16:51.198] [INFO] log_file - select count(*) as count  FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=?    1
+[2018-01-07 11:16:51.210] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_supply` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2018-01-07 11:16:51.227] [INFO] log_file - SELECT uid,goods_name,intro,price,province,city,county,register_date,pic FROM `mvm_want_buy` WHERE approval_date>10 AND goods_cat=? ORDER BY approval_date DESC LIMIT 0,15    1
+[2018-01-07 11:24:41.275] [INFO] log_file - select * from `mvm_goods_onsale` where start_date<=? and end_date=? and goods_stock>0 and show_status=1    1515225600,1515311999
+[2018-01-07 11:24:43.870] [INFO] log_file - select category_name,category_name_ch,uid from `mvm_category` where supplier_id=0 and category_id=0    
+[2018-01-07 11:24:43.873] [INFO] log_file -  SELECT uid,goods_name,goods_sale_price,goods_file1,goods_status,goods_stock,supplier_id,goods_hit FROM `mvm_goods_table` WHERE goods_cat=?  ORDER BY register_date DESC LIMIT 0, 20    1
+[2018-01-07 11:24:45.448] [INFO] log_file - select t.*,d.* from `mvm_goods_table` t left join `mvm_goods_detail` d on t.uid=d.g_uid where t.uid = ?  LIMIT 1    1585
+[2018-01-07 11:24:45.451] [INFO] log_file - select shop_name,up_logo from `mvm_member_shop` where m_uid = ?    1
+[2018-01-07 11:24:45.469] [INFO] log_file - SELECT * FROM `mvm_goods_table` AS t1 JOIN (SELECT ROUND(RAND() * (SELECT MAX(uid) FROM `mvm_goods_table`)) AS uids) AS t2 WHERE t1.uid >= t2.uids and t1.supplier_cat3=? ORDER BY t1.uid ASC LIMIT 4    1099
+[2018-01-07 11:24:45.492] [INFO] log_file - select * from `mvm_gallery` where goods_id = ?    1585
+[2018-01-07 11:24:45.509] [INFO] log_file - select * from `mvm_order_goods_comment` where g_uid=? and goods_table=?  and level=1 and module='product' order by reg_date DESC limit 1    1585,mvm_goods_table
+[2018-01-07 11:24:45.525] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?  and module=?     1,1585,1,product
+[2018-01-07 11:26:26.809] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,1,0
+[2018-01-07 11:26:38.771] [INFO] log_file - select f_uid from `mvm_favorite` where m_uid=? and f_uid=? and t=?     1,1,0

@@ -40,9 +40,9 @@ var fs = require("fs");
 router.post('/', function(req, res, next) {
     var post=req.body;
     var session=req.session;
-   async function run() {
+    async function run() {
       var oauth=await sqlasnyc('select * from `mvm_member_oauth` where type=? and oauth_uid=?',[post.type,post.oauth_uid]);
-      if(oauth==0){
+      if(oauth==0 || oauth.length==0){
         var respond={
           ret:200,
           data:0
@@ -51,7 +51,7 @@ router.post('/', function(req, res, next) {
       }
       else{
         var member=await sqlasnyc('select member_id,uid from `mvm_member_table` where uid=?',[oauth[0].m_uid]);
-        if(member!=0){
+        if(member.length>0){
           session.sign=true;
           session.m_uid=member[0].uid;
           session.m_id=member[0].member_id;

@@ -5,7 +5,7 @@ import header from '../components/header.vue'
 
 
 
-var uid=window.location.href.replace('http://phmall.ganxiaochaun.top/address_add?uid=','');
+var uid=window.location.href.replace('http://phmall.ganxiaochuan.top/address_add?uid=','');
 uid=uid.replace('http://192.168.0.105:88/address_add?uid=','');
 console.log(uid);
 var lang = lang_ch;

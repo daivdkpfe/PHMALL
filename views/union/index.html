@@ -465,7 +465,7 @@
 	$.ajaxSettings.async = false;
 	$.getJSON("../index/<%= uid %>/1/get_shop_info/lan",
 			function(data) {
-
+				data=data.data;
 				app.shop_name=data[0]['shop_name'];
 				app.shop_tel=data[0]['tel'];
 				app.shop_logo='http://www.phmall.com.ph/union/'+data[0]['up_logo'];
@@ -473,13 +473,13 @@
 			});
 	$.getJSON("../index/<%= uid %>/1/get_categroy/lan",
 			function(data) {
-
+				data=data.data;
 				app.cate=data;
 			});
     $.getJSON("../index/<%= uid %>/1/get_shop_new/lan",
         function(data) {
 //           console.log(data);
-
+data=data.data;
 			var register_data="";
             var s="";
 			if(data.length>0)
