@@ -15,7 +15,7 @@ var request = require('request');
 var zlib = require('zlib');
 global.lang_ch = require('../lanuage/lanuage_ch');
 global.lang_en = require("../lanuage/lanuage_en");
-global.buy_arr={};
+global.buy_arr = {};
 
 
 global.memcached = new Memcached('127.0.0.1:11211');
@@ -132,7 +132,7 @@ io.sockets.on('connection', function (socket) {
     }); //验证用户名
     socket.on("check_phone", function (phone) {
         console.log(phone);
-        
+
         phone = '0' + parseInt(phone);
         var sqldata = [];
         sqldata.push(phone);
@@ -414,7 +414,7 @@ global.SendSms = function (uid, phonenumber, click_number, code, type, message, 
                             throw err;
                         } else {
                             resolve(1);
-                        } 
+                        }
                     });
 
                 } else {
@@ -1007,11 +1007,11 @@ global.add_money = function (m_uid, money, type, reason, session_id, ip, money_s
 
 
 global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
-  
+
     return function () {
-       
+
         return new Promise(async function (resolve) {
-            
+
             var sign = req.sign;
             var m_check_id = req.m_id;
             var m_check_uid = req.m_uid;
@@ -1041,7 +1041,7 @@ global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
                 var arr_cart = {};
                 var arr_supplier_id = [];
 
-                var q = await sqlasnyc('SELECT uid,cart_price,rest_price,cart_point,g_uid,cart_num,goods_table,module,attr,g_type,refer_g_uid,goods_table,module FROM `mvm_cart_table` WHERE uid IN ('+str_uids+') AND m_id=?', [m_check_id]);
+                var q = await sqlasnyc('SELECT uid,cart_price,rest_price,cart_point,g_uid,cart_num,goods_table,module,attr,g_type,refer_g_uid,goods_table,module FROM `mvm_cart_table` WHERE uid IN (' + str_uids + ') AND m_id=?', [m_check_id]);
 
 
                 for (let i in q) {
@@ -1056,7 +1056,7 @@ global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
                         var detail_table = goods_detail_table(g[0].type);
                         var detail = await sqlasnyc("SELECT goods_kg FROM `" + detail_table + "` WHERE g_uid=? LIMIT 1", [g[0].uid]);
                         g[0].goods_kg = intval(detail[0].goods_kg);
-                        
+
                     }
 
                     if (!in_array(g[0].supplier_id, arr_supplier_id)) {
@@ -1064,13 +1064,13 @@ global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
                         arr_supplier_id.push(g[0].supplier_id);
                     }
 
-                    
 
-                    arr_cart.cart_list =typeof(arr_cart.cart_list)=='undefined'?[]:arr_cart.cart_list;
-                    
 
-                    arr_cart.cart_list[g[0].supplier_id]=typeof(arr_cart.cart_list[g[0].supplier_id])=='undefined'?[]:arr_cart.cart_list[g[0].supplier_id]
-                    
+                    arr_cart.cart_list = typeof (arr_cart.cart_list) == 'undefined' ? [] : arr_cart.cart_list;
+
+
+                    arr_cart.cart_list[g[0].supplier_id] = typeof (arr_cart.cart_list[g[0].supplier_id]) == 'undefined' ? [] : arr_cart.cart_list[g[0].supplier_id]
+
                     arr_cart.cart_list[g[0].supplier_id].push({
                         uid: val.uid,
                         cart_price: val.cart_price,
@@ -1089,39 +1089,39 @@ global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
                         goods_table: val.goods_table,
                         module: val.module
                     });
-                    
-                    arr_cart.cart_info = typeof(arr_cart.cart_info)=='undefined'?[]:arr_cart.cart_info;
-                    arr_cart.cart_info[g[0].supplier_id] =typeof(arr_cart.cart_info[g[0].supplier_id] )=='undefined'? {}:arr_cart.cart_info[g[0].supplier_id] ;
-                    
-                    
-                    if (!arr_cart.cart_info[g[0].supplier_id].total_price >0) arr_cart.cart_info[g[0].supplier_id].total_price = 0;
+
+                    arr_cart.cart_info = typeof (arr_cart.cart_info) == 'undefined' ? [] : arr_cart.cart_info;
+                    arr_cart.cart_info[g[0].supplier_id] = typeof (arr_cart.cart_info[g[0].supplier_id]) == 'undefined' ? {} : arr_cart.cart_info[g[0].supplier_id];
+
+
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_price > 0) arr_cart.cart_info[g[0].supplier_id].total_price = 0;
                     arr_cart.cart_info[g[0].supplier_id].total_price += parseFloat(val.cart_price * val.cart_num);
-                    
-                    if (!arr_cart.cart_info[g[0].supplier_id].total_num >0) arr_cart.cart_info[g[0].supplier_id].total_num = 0;
-                    arr_cart.cart_info[g[0].supplier_id].total_num +=val.cart_num;
-                  
-                    
-                    if (!arr_cart.cart_info[g[0].supplier_id].total_point >0) arr_cart.cart_info[g[0].supplier_id].total_point = 0;
+
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_num > 0) arr_cart.cart_info[g[0].supplier_id].total_num = 0;
+                    arr_cart.cart_info[g[0].supplier_id].total_num += val.cart_num;
+
+
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_point > 0) arr_cart.cart_info[g[0].supplier_id].total_point = 0;
                     arr_cart.cart_info[g[0].supplier_id].total_point += parseInt(val.cart_point * val.cart_num);
-    
-                    if (!arr_cart.cart_info[g[0].supplier_id].total_kg>0) arr_cart.cart_info[g[0].supplier_id].total_kg = 0;
+
+                    if (!arr_cart.cart_info[g[0].supplier_id].total_kg > 0) arr_cart.cart_info[g[0].supplier_id].total_kg = 0;
 
                     arr_cart.cart_info[g[0].supplier_id].total_kg += parseInt(g[0].goods_kg * val.cart_num);
-               
-                    
+
+
 
                     if (arr_cart.cart_info[g[0].supplier_id].is_preorder) {
                         arr_cart.cart_info[g[0].supplier_id].is_preorder = val.rest_price > 0 ? true : false
                     }
                 }
-                    if (!with_shop_info) return arr_cart;
-                    if (!arr_supplier_id) return arr_cart;
+                if (!with_shop_info) return arr_cart;
+                if (!arr_supplier_id) return arr_cart;
 
-                    str_supplier_id = arr_supplier_id.join(',');
+                str_supplier_id = arr_supplier_id.join(',');
 
-                
+
                 var q = await sqlasnyc("SELECT m_uid,shop_name FROM `mvm_member_shop` WHERE m_uid IN (" + str_supplier_id + ")", );
-                
+
                 for (let i in q) {
 
                     var val = q[i];
@@ -1132,31 +1132,31 @@ global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
                     var cfg = await sqlasnyc('select cf_value from `mvm_config` where supplier_id=? and cf_name="mm_client_qq1" limit 1', [val.m_uid]);
                     console.log(cfg);
                     val['qq'] = cfg[0].cf_value;
-   
+
 
                     var val_m_uid = val.m_uid;
-                    arr_cart.shop_info = typeof(arr_cart.shop_info)=='undefined'?[]:arr_cart.shop_info;
+                    arr_cart.shop_info = typeof (arr_cart.shop_info) == 'undefined' ? [] : arr_cart.shop_info;
                     arr_cart.shop_info[val_m_uid] = val;
-                    
-                    arr_cart.coupon = typeof(arr_cart.coupon) == 'undefined'?[]:arr_cart.coupon;
+
+                    arr_cart.coupon = typeof (arr_cart.coupon) == 'undefined' ? [] : arr_cart.coupon;
                     //获取优惠卷
                     arr_cart.coupon[val_m_uid] = {};
-     
+
                     var q_tmp = await sqlasnyc("SELECT uid,name,discount FROM `mvm_coupon` FORCE INDEX (`supplier_id`) WHERE m_uid=? AND supplier_id=? AND start_date<=? AND price_lbound<=?", [m_check_uid, val.m_uid, get_now_time(), arr_cart.cart_info[val_m_uid].total_price]);
-                    
-                    
+
+
                     if (q_tmp != 0) {
-                        arr_cart.coupon[val_m_uid] =q_tmp;
+                        arr_cart.coupon[val_m_uid] = q_tmp;
                     }
-                    
+
 
                 }
 
                 ret = arr_cart;
-                
+
 
                 resolve(ret);
-                
+
 
 
             } else {
@@ -1364,6 +1364,144 @@ global.SendCode = function (phone, type, callback) {
         }
     })
     //发送验证码
+}
+
+
+global.sqlQueryStr = function (table, wantData, object) {
+    var str = "select " + wantData + ' from `' + table + '`';
+    var arr = [];
+    if (object.length != {}) {
+        str = str + ' where ';
+        for (let i in object) {
+            str = str + i + '=?,';
+            arr.push(object[i]);
+        };
+        str = str.substring(0, str.length - 1);
+    }
+    return {
+        str: str,
+        arr: arr
+    };
+}
+
+//SQL查询语句
+/*
+sqlQuery('member_table','*',{},function(result){
+  console.log(JSON.stringify(result));
+})
+*/
+
+global.sqlInsStr = function (table, object) {
+    var str = 'insert into `' + table + '` set ';
+    var array = [];
+    for (let i in object) {
+        str = str + i + '=?,';
+        array.push(object[i]);
+    }
+    console.log(str);
+    console.log(JSON.stringify(array));
+    str = str.substring(0, str.length - 1);
+    return {
+        str: str,
+        arr: array
+    };
+}
+//SQL插入
+/* sqlIns('member_table',{member_id:req.body.member_id},function(result){
+  console.log(result);
+}) */
+
+
+global.sqlUpdateStr = function (table, object, where) {
+    var str = 'update `' + table + '` set ';
+    var array = [];
+    for (let i in object) {
+        str = str + i + '=?,';
+        array.push(object[i]);
+    }
+    str = str.substring(0, str.length - 1) + ' ' + where;
+    console.log(str);
+    console.log(JSON.stringify(array));
+    return {
+        str: str,
+        arr: array
+    };
+}
+//SQL更新
+/* sqlUpdate('member_table',{member_id:req.body.member_id}, where,function(result){
+  console.log(result);
+}) */
+
+
+
+
+// 事务
+global.Transaction = function (strArrObject, TransactionCallback) {
+    var TransactionArr = [];
+    var db = {};
+    var resultArr = [];
+    db.getConnection = function (callback) {
+        pool.getConnection(function (err, connection) {
+            if (err) {
+                callback(null);
+                return;
+            }
+            callback(connection);
+        });
+    }
+
+
+    db.getConnection(function (connection) {
+        connection.beginTransaction(function (err) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            strArrObject.forEach((element, index) => {
+
+                var task = function (callback) {
+
+                    connection.query(element.str, element.arr, function (err, result) {
+                        if (err) {
+                            console.log(err);
+                            callback(err, null);
+                            return;
+                        }
+                        resultArr.push(result);
+                        console.log('第' + parseInt(index) + 1 + '次插入成功!');
+                        callback(null, result);
+                    })
+                }
+                TransactionArr.push(task);
+            });
+
+            async.series(TransactionArr, function (err, result) {
+                if (err) {
+                    console.log(err);
+                    //回滚  
+                    connection.rollback(function () {
+                        console.log('出现错误,回滚!');
+                        //释放资源  
+                        TransactionCallback([]);
+                        connection.release();
+                    });
+                    return;
+                }
+                //提交  
+                connection.commit(function (err) {
+                    if (err) {
+                        console.log(err);
+                        return;
+                    }
+
+                    console.log('成功,提交!');
+                    TransactionCallback(result);
+                    //释放资源  
+                    connection.release();
+                });
+            })
+        });
+    })
 }
 //这里写全局方法
 

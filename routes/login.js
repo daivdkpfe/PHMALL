@@ -154,4 +154,87 @@ router.get('/', function(req, res, next) {
     res.render('login', { title:'PHMALL' });
 });
 
+router.post('/bind', function(req, res, next) {
+    
+    if(req.session.sign)
+    {
+        var token_data = {};
+        token_data['m_id'] = "None";//用户ID
+        token_data['m_uid'] = "None";//用户UID
+        token_data['register_time'] = "None"//注册时间
+        token_data['status'] = "Logined";
+        var respod={
+            ret:'200',
+            data:token_data
+        };
+        res.json(respod);
+        
+    }
+    else
+    {
+
+    }
+
+    var sqldata=[];
+
+
+    var username=req.body.username;
+    var password=req.body.password;
+    
+    
+    var md5data=(md5(password));
+
+    var base64=new Buffer(password).toString('base64');
+
+
+    sqldata.push(username);
+    sqldata.push(md5data);
+    sqldata.push(base64);
+
+
+    var QueryOne=new Promise(function (resolve,reject) {
+        sqlQueryMore("select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?",sqldata,function (err,vals,xxx) {
+            if(err) {
+                logger.info("select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?"+"    "+sqldata);
+                logger.info("Caught exception:"+err);
+            }
+            sqlQueryMore("INSERT INTO `mvm_member_oauth` (`m_uid`, `oauth_uid`, `token`, `type`) VALUES ( ?, ?, ?,?)",[vals[0].uid,req.body.oauth_uid,req.body.token,req.body.type] , function (err, valss, xx) {
+                if(err){
+                    logger.info("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)" + "    " + insdata);
+                }
+                resolve(vals);
+            });
+           
+        });
+    });
+
+    QueryOne.then(function (results) {
+        if(results.length!=0) {
+
+            var token_data = {};
+            token_data['m_id'] = results[0]['member_id'];//用户ID
+            token_data['m_uid'] = results[0]['uid'];//用户UID
+            token_data['register_time'] = results[0]['register_date']//注册时间
+            token_data['status'] = "Success";
+            req.session.sign = true;
+            req.session.m_id = results[0]['member_id'];
+            req.session.m_uid=results[0]['uid'];
+            console.log(req.session.m_id);
+        }
+        else
+        {
+            var token_data = {};
+            token_data['m_id'] = "None";//用户ID
+            token_data['m_uid'] = "None";//用户UID
+            token_data['register_time'] = "None";//注册时间
+            token_data['status'] = "Fail";
+        }
+        var respod={
+            ret:'200',
+            data:token_data
+        };
+        res.json(respod);
+        
+        });
+});
 module.exports = router;
