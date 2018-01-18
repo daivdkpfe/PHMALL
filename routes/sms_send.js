@@ -46,7 +46,6 @@ router.get('/', function(req, res, next) {
     }
     run();  */
     if (req.session.sign && req.session.m_id) {
-        console.log("sssssssssssssssss:" + req.query.type);
         if ('notice' == req.query.type) {
             res.render('sms_send_notice', { title: 'PHMALL', type: req.query.type });
         } else {
@@ -95,7 +94,7 @@ router.post('/send', function(req, res, next) {
         var content = req.body.content;
         var is_broadcast = req.body.is_broadcast;
         async function run() {
-            await sqlasnyc('insert into `mvm_sms` set from_id=?,to_id=?,title=?,content=?,is_broadcast=?', [m_id, to_id, title, content, is_broadcast]);
+            await sqlasnyc('insert into `mvm_sms` set from_id=?,to_id=?,title=?,content=?,is_broadcast=?,reg_date=?', [m_id, to_id, title, content, is_broadcast,get_now_time()]);
             var respod = {
                 ret: '200',
                 data: 1

@@ -100,7 +100,7 @@ router.post('/send', function(req, res, next) {
             if (sms != 0 && sms.length > 0) {
                 for (let i in sms) {
                     if (sms[i].to_id.includes(',')) {
-
+                        sms[i].img='';
                     } else {
                         var img = await sqlasnyc('select member_image from `mvm_member_table` where member_id=?', [sms[i].to_id]);
                         console.log(sms[i].to_id);
@@ -137,6 +137,7 @@ router.post('/notice', function(req, res, next) {
             var m_uid = req.session.m_uid;
             var sql = "SELECT uid,from_id,to_id,title,reg_date,content FROM `mvm_sms`   WHERE is_broadcast='1' ORDER BY uid DESC";
             var sms = await sqlasnyc(sql, [m_id]);
+            
             var respod = {
                 ret: '200',
                 data: sms
