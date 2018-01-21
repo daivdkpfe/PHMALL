@@ -155,9 +155,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/bind', function(req, res, next) {
-    
+
     if(req.session.sign)
     {
+        console.log('xxx');
         var token_data = {};
         token_data['m_id'] = "None";//用户ID
         token_data['m_uid'] = "None";//用户UID
@@ -181,7 +182,7 @@ router.post('/bind', function(req, res, next) {
     var username=req.body.username;
     var password=req.body.password;
     
-    
+  
     var md5data=(md5(password));
 
     var base64=new Buffer(password).toString('base64');
@@ -190,7 +191,6 @@ router.post('/bind', function(req, res, next) {
     sqldata.push(username);
     sqldata.push(md5data);
     sqldata.push(base64);
-
 
     var QueryOne=new Promise(function (resolve,reject) {
         sqlQueryMore("select * from `mvm_member_table` where member_id=? and member_pass=? and base_pass=?",sqldata,function (err,vals,xxx) {
@@ -202,6 +202,7 @@ router.post('/bind', function(req, res, next) {
                 if(err){
                     logger.info("INSERT INTO `mvm_member_table` (`member_class`, `member_id`, `member_pass`, `base_pass`,  `member_tel1`, `register_date`) VALUES ('1', ?, ?, ?, ?, ?)" + "    " + insdata);
                 }
+                console.log('x999xx');
                 resolve(vals);
             });
            
