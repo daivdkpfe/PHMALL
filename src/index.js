@@ -60,7 +60,7 @@ export function install(Vue) {
 			lang:{}
 		},
 		mounted: function () {
-			
+		
 			if(this.getsetcookie('lang')!='en')
 			{
 				this.lang=lang_ch
@@ -103,6 +103,7 @@ export function install(Vue) {
 		
 	});
 	/*開始處理數據*/
+	console.log('xxx');
 	$.post("./index", {}, function (result) {
 		result = result.data;
 		page.flashs = result.default_wap_flash;

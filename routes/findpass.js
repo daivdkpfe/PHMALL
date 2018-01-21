@@ -39,20 +39,33 @@ var fs = require("fs");
 router.post('/', function (req, res, next) {
     var m_id = req.body.user;
     var m_email = req.body.email;
+    var model=req.body.model;
     async function run() {
 
         var member = await sqlasnyc('select uid,member_id,member_email from `mvm_member_table` where member_id=? and member_email=?', [m_id, m_email]);
         if (member == 0) {
-            res.render('./errors', {
-                title: 'PHMALL',
-                type: '您的账户可能未绑定邮箱'
-            });
+            if(model=='ios'){
+                var respond={
+                    ret:'200',
+                    data:{
+                        status:0
+                    }
+                }
+                res.json(respond);
+            }
+            else{
+                res.render('./errors', {
+                    title: 'PHMALL',
+                    type: '您的账户可能未绑定邮箱'
+                });
+            }
+            
             return;
         } else {
             var rnd = get_num(6);
             var mail_content = m_id + ": Retrieve password<br />";
             mail_content += "User ID :  " + m_id + "<br />";
-            mail_content += "Password modification link >>>：<a href=\"http://127.0.0.1:88/findpass?action=set&login_id=" + urlencode(m_id) + "&str=" + rnd + "\" target=\"_blank\">Click here to reset shopping mall user password</a><br />";//邮件文本
+            mail_content += "Password modification link >>>：<a href=\"http://phmall.jiushiyouyong.top/findpass?action=set&login_id=" + urlencode(m_id) + "&str=" + rnd + "\" target=\"_blank\">Click here to reset shopping mall user password</a><br />";//邮件文本
 
 
             var lost=await sqlasnyc('select * from `mvm_lostpass` where user_id=? and lost_type=1',[m_id]);
@@ -63,10 +76,22 @@ router.post('/', function (req, res, next) {
                 await sqlasnyc('replace into `mvm_lostpass` set user_id=?,lost_type=1,lost_str=?,lost_time=?,lost_id=?', [member[0].member_id, rnd, get_now_time(),lost[0].lost_id]);            
            }
             SendEmail(member[0].member_email, "PHMALL Retrieve password", '<div style="background:rgb(251,250,222);width:100%;height:600px;"><div style="width:400px;height:400px;margin:0 auto;background:white;border:100px solid rgb(251,250,222);"><p style="text-align: left;width:300px;line-height: 30px;margin:10px;margin-left:30px;float: left;">' + mail_content + '</p>&nbsp;<p style="text-align: left;width:300px;line-height: 30px;margin:10px;margin-left:30px;float: left;">Thank you</p><p><br /><br /><br /><br />&nbsp;</p><p>&nbsp;</p><p style="text-align: right;width:300px;line-height: 30px;margin:10px;margin-left:30px;float: left;">From:PHMALL</p></div></div>', function (result) {
-                res.render('./success', {
-                    title: 'PHMALL',
-                    type: '发送成功'
-                })
+                
+                if(model=='ios'){
+                    var respond={
+                        ret:'200',
+                        data:{
+                            status:1
+                        }
+                    }
+                    res.json(respond);
+                }
+                else{
+                    res.render('./success', {
+                        title: 'PHMALL',
+                        type: '发送成功'
+                    })
+                }
             });
         }
     }
@@ -99,7 +124,7 @@ router.get('/', function (req, res, next) {
         var str= req.query.str;
 
         async function run() {
-            var lost=await sqlasnyc('select * from `mvm_lostpass` where lost_type=1 and lost_str=? and lost_id=? and lost_time<?',[str,login_id,get_now_time+600]);
+            var lost=await sqlasnyc('select * from `mvm_lostpass` where lost_type=1 and lost_str=? and user_id=? and lost_time<?',[str,login_id,get_now_time()+600]);
             {
                 if(lost==0){
                     res.render('./errors', {
