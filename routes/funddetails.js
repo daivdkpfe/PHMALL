@@ -69,7 +69,7 @@ router.post('/',function (req,res,next) {
     {
         var sqlstr=' and money_add >0 ';
     }
-    else if(req.session.type==-1)
+    else if(req.body.type==-1)
     {
         var sqlstr=' and money_add <0 ';
     }
