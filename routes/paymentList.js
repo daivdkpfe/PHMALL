@@ -1,5 +1,3 @@
-
-
 //  
 //                                  _oo8oo_
 //                                 o8888888o
@@ -36,54 +34,18 @@ var express = require('express');
 var router = express.Router();
 var io = require('socket.io');
 var fs = require("fs");
-var array_keys=require('locutus/php/array/array_keys');
 /* GET home page. */
 
 
-router.post('/',function(req,res,next){
-    console.log(5);
-    if (req.session.sign && req.session.m_id) {
-    console.log(6);
-        console.log(req.body.cart_uids);
-        if(req.body.cart_uids.length>0){
-    console.log(7);            
-            var str_cart_uids=req.body.cart_uids;
-            console.log(1);
-            var buy_arr={};
-            buy_arr.req={};
-            buy_arr.req.sign=req.session.sign;
-            buy_arr.req.m_id=req.session.m_id;
-            buy_arr.req.m_uid=req.session.m_uid;
-            console.log(2);
-            
-            buy_arr.str_uids=str_cart_uids;
-            var ss = cart_spec_list(buy_arr.req,buy_arr.str_uids);
-            async function main() {
-                var s = await ss();
-                res.json(s);
-            }
-            main();
-            console.log(3);            
-        }
-        else{
-            var respond={
-                ret:200,
-                data:{
-                    status:-1
-                }
-            }
-            res.json(respond);
-        }
+
+router.post('/', function(req, res, next) {
+
+    async function run() {
+        var request = await sqlasnyc("select id,class_name,name,pay_desc from `mvm_payment_table`");
+        res.json({ret:200,data:request});
     }
-    else{
-        var respond={
-            ret:201,
-            data:{}
-        }
-        res.json(respond);  
-    }
+    run();
+
 });
-router.get('/',function(req,res,next){
-    res.render('./cart_buy', { title: 'PHMALL',setp:req.query.setp,str_uids:req.query.cart_uids});
-})
+
 module.exports = router;

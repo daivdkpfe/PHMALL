@@ -34,26 +34,25 @@ var express = require('express');
 var router = express.Router();
 var io = require('socket.io');
 var fs = require("fs");
-var array_keys=require('locutus/php/array/array_keys');
 var http = require('http');
 var querystring = require('querystring');
-router.post('/',function(req,res,next){
-    /* if (req.session.sign && req.session.m_id) {
-        var str_cart_uids=req.body.cart_uids;
-        var buy_arr={};
-            buy_arr.req={};
-            buy_arr.req.sign=req.session.sign;
-            buy_arr.req.m_id=req.session.m_id;
-            buy_arr.req.m_uid=req.session.m_uid;
-            buy_arr.str_uids=str_cart_uids;
-            console.log('xxxxx');
-        cart_to_order(buy_arr.req,buy_arr.str_uids);
-    } */
+/* GET home page. */
 
-    if (req.session.sign && req.session.m_id) {
-       
-        const http = require('http');  
-  
+
+
+router.get('/', function(req, res, next) {
+
+/*     async function run() {
+        var a = await sqlasnyc("select * from `mvm_config` limit 1");
+        console.log(a);
+    }
+    run();
+ */
+
+});
+
+router.post('/',function(req,res,next){
+    const http = require('http');
     var data = req.body;
     data.api=1;
     data.m_check_uid=req.session.m_uid;
@@ -67,7 +66,7 @@ router.post('/',function(req,res,next){
                 method: "POST",    
                 host: "localhost",    
                 port: 80,    
-                path: "/english/cart.php?action=pay",    
+                path: "/english/ajax.php?action=cart_add&rnd=",    
                 headers: {    
                     "Content-Type": 'application/x-www-form-urlencoded',    
                     "Content-Length": postData.length    
@@ -99,7 +98,5 @@ router.post('/',function(req,res,next){
         }  
     
     form();  
-    }
-
-});
+})
 module.exports = router;

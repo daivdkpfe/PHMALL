@@ -24,6 +24,7 @@ global.serialize = require('locutus/php/var/serialize');
 global.in_array = require('locutus/php/array/in_array');
 global.intval = require('locutus/php/var/intval')
 global.trim = require('locutus/php/strings/trim');
+global.array_keys=require('locutus/php/array/array_keys');
 
 
 
@@ -1007,7 +1008,7 @@ global.add_money = function (m_uid, money, type, reason, session_id, ip, money_s
 
 
 global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
-
+    
     return function () {
 
         return new Promise(async function (resolve) {
@@ -1171,10 +1172,29 @@ global.cart_spec_list = function (req, str_uids, with_shop_info = true) {
         });
     }
 
+}//购物车结算
+
+/* global.cart_to_order = function(req,cart_uid){
+    var arr_ordersn=[];
+    var combine_tag='CT'+get_now_time()+parseInt(Math.random()*100);
+    var salt=$salt=parseInt(Math.random()*10000);
+    var arr_supplier_id=array_keys(cart_uid);
+    var total_price=0;
+    var total_point=0;
+    var code=parseInt(Math.random()*1000000);
+    var arr_order_info=[];
+    arr_supplier_id.forEach(function(supid){
+        
+        var ss =cart_spec_list(req,cart_uid,false);
+            async function main() {
+                var cart_ret = await ss();
+                res.json(cart_ret);
+            }
+            main();
+            console.log(cart_uid);
+    })
 }
-
-
-
+ */
 
 
 

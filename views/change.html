@@ -125,7 +125,7 @@
                             pass2: $('.inputs').eq(1).val()
                         }, function (result) {
                             result = result.data;
-                            if (result == 1) {
+                            if (result.status == 1) {
                                 $.modal({
                                     title: "恭喜",
                                     text: "修改密碼成功",

@@ -111,7 +111,9 @@ router.post('/', function(req, res, next) {
                    arrs.push(cart_list[items]);
                }
            });
-           arr.push(arrs);
+           if(arrs.length>0){
+               arr.push(arrs);
+           }
         });
 
         var respod={
@@ -211,14 +213,18 @@ router.post('/add',function (req,res,next) {
             var g_d=await sqlasnyc("select * from `"+gd+"` where g_uid=? limit 1",[g_uid]);
             var g_t=await sqlasnyc("select * from `"+gt+"` where uid=? limit 1",[g_uid]);
 
-
+            console.log('s');
             var zz=g_d[0].attr_store;
-            zz=zz.match(attr);
-            zz=zz[0];
-
+            console.log('ss');            
+            zz=zz.match(attr)?zz.match(attr):zz;
+            console.log('sss');
+            
+            zz=zz.match(attr)?zz[0]:zz;
+            console.log('ssss');
+            
             var store=zz.split("|");
             var storeLength=store.length;
-            if(store[storeLength-1]<goods_num)
+            if(g_d[0].attr_store!='' && store[storeLength-1]<goods_num)
             {
                 var respod={
                     ret:'200',
@@ -230,7 +236,7 @@ router.post('/add',function (req,res,next) {
             else
             {
                
-                var cart_price=parseFloat(g_t[0].goods_sale_price)+parseFloat(store[storeLength-2]);
+                var cart_price=g_d[0].attr_store!='' ?parseFloat(g_t[0].goods_sale_price)+parseFloat(store[storeLength-2]):parseFloat(g_t[0].goods_sale_price);
 
 
 

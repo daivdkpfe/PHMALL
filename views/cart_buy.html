@@ -235,7 +235,24 @@
         el:'.big_div',
         data:{
             cart_list:{},
-            address:[]
+            address:[],
+            //提交订单用的变量
+            province:'',//确认订单用的省
+            city:'',//确认订单用的城市
+            county:'',//确认订单用的国家
+            address:'',//确认订单用的详细地址
+            consignee:'',//确认订单用的收件人
+            mobile:'',//确认订单用的手机号码
+            zipcode:'',//确认订单用的邮编
+            advance:'',//提交订单用的商品说明
+            pay_pass:'',//支付密码
+            pay_id:'',//
+            cart_uid:'',//购物车的商品uid
+            memo:'',//
+            invoice:'',//
+            ship_uid:'',//
+            ship_price:'',//
+            coupon_uid:'',//优惠卷uid
         },
         computed:{
             total_price:function(){
@@ -293,7 +310,12 @@
         },
         methods:{
             pay:function(){
-                $.post('./cart_pay',{},function(data){
+                /* $.post('http://localhost/english/cart.php?action=pay',{province:'aaa',city:'bbbb',county:'cccc',address:'address info',consignee:'su',mobile:'17750935360',zipcode:'363100',advance:'1',pay_pass:'phmall',pay_id:'16','cart_uid[31]':'766','memo[31]':'','invoice[31]':'','ship_uid[31]':'0','ship_price[31]':'0','coupon_uid[31]':'0','m_check_uid':1,m_check_id:'admin',api:'1'},function(data){
+                    console.log('pay');
+                    console.log(data);
+                }) */
+                $.post('./cart_pay',{province:'aaa',city:'bbbb',county:'cccc',address:'address info',consignee:'su',mobile:'17750935360',zipcode:'363100',advance:'1',pay_pass:'phmall',pay_id:'16','cart_uid[31]':'768','memo[31]':'','invoice[31]':'','ship_uid[31]':'0','ship_price[31]':'0','coupon_uid[31]':'0'},function(data){
+                    console.log('pay');
                     console.log(data);
                 })
             }

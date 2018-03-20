@@ -510,6 +510,8 @@ router.get('/', function(req, res, next) {
 
       });
       sqlQueryMore("select * from mvm_ad_table where module='default_wap' and pos='point_list'",adsql,function (err,vals,xx) {
+        console.log('xx');
+        console.log(vals);
         if(err) logger.info("Caught exception:"+err);
       console.log("val:"+vals[0]);
 

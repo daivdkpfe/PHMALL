@@ -75,7 +75,10 @@ var evaluation=require('./routes/evaluation');
 var evaluation_list=require('./routes/evaluation_list');
 var respond=require('./routes/respond');
 var cartBuy=require('./routes/cart_buy');
+var cartPay=require('./routes/cart_pay');
 var findpass=require('./routes/findpass');
+var payment_list=require('./routes/paymentList');
+var cart_add=require('./routes/cart_add');
 //
 
 
@@ -142,10 +145,10 @@ app.use('/change_email', change_email);
 app.use('/area', area);
 app.use('/address', address);
 app.use('/address_add', address_add);
-app.use('/brand', brand);
-app.use('/brand_product', brand_product);
-app.use('/news', news);
-app.use('/news_detail', news_detail);
+app.use('/brand', brand);//品牌列表
+app.use('/brand_product', brand_product);//品牌内商品列表
+app.use('/news', news);//资讯
+app.use('/news_detail', news_detail);//资讯详情
 app.use('/account', account); //我的账户
 app.use('/withdraw', withdraw); //提现
 app.use('/auction', auction); //拍卖
@@ -179,7 +182,10 @@ app.use('/evaluation',evaluation);
 app.use('/evaluation_list',evaluation_list);
 app.use('/respond',respond);
 app.use('/cart_buy',cartBuy);
+app.use('/cart_pay',cartPay);
 app.use('/findpass',findpass);
+app.use('/payment_list',payment_list);
+app.use('/cart_add',cart_add);
 //
 
 app.use('/union/product', unionProduct);

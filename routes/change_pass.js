@@ -86,21 +86,45 @@ router.post('/',function (req,res,next) {
                     console.log(sql);
                     var update_pass=await sqlasnyc("update `mvm_member_table` set member_pass=? , base_pass=? where uid=? and member_id=? and member_pass=? and base_pass=?",sql);
                     console.log(update_pass);
-                    res.json(1);
+                    var rsspond={
+                        ret:200,
+                        data:{
+                            status:1
+                        }
+                    }
+                    res.json(respond);
                 }
                 else
                 {
-                    res.json(0);
+                    var rsspond={
+                        ret:200,
+                        data:{
+                            status:0
+                        }
+                    }
+                    res.json(respond);
                 }
             }
             else
             {
-                res.json(0);
+                var rsspond={
+                    ret:200,
+                    data:{
+                        status:0
+                    }
+                }
+                res.json(respond);
             }
         }
         else
         {
-            res.json('no login');
+            var rsspond={
+                ret:201,
+                data:{
+                  
+                }
+            }
+            res.json(respond);
         }
     }
     run();
